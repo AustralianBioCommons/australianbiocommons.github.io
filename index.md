@@ -1,5 +1,5 @@
 Australian BioCommons GitHub Pages Index
 
-[Documentation Guidelines](https://australianbiocommons.github.io/doc_guidelines/)
+- [Documentation Guidelines](https://australianbiocommons.github.io/doc_guidelines/)
+- [Canu](https://australianbiocommons.github.io/doc_guidelines/Canu/)
 
-<a href="https://australianbiocommons.github.io/doc_guidelines/">Documentation Guidelines</a>
