@@ -2,7 +2,7 @@
 #see attributions page for links
 
 name: "Australian BioCommons"
-output_dir: docs
+output_dir: "docs"
 navbar:
   title: "Home"
   left:
