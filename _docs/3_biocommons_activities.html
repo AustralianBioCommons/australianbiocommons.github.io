@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Featured tools &amp; workflows</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Home</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="1_compute_systems.html">Compute systems</a>
+</li>
+<li>
+  <a href="2_tools.html">Tools &amp; workflows</a>
+</li>
+<li>
+  <a href="3_biocommons_activities.html">Featured tools &amp; workflows</a>
+</li>
+<li>
+  <a href="4_help.html">Help!</a>
+</li>
+<li>
+  <a href="5_attributions.html">Attributions</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Featured tools &amp; workflows</h1>
+
+</div>
+
+
+<p>A list of public repositories on the <a href="https://github.com/AustralianBioCommons">Australian BioCommons GitHub</a>, that contain documentation about tool &amp; workflow install, testing and optimisation on <a href="./1_compute_systems.html">partner infrastructures</a>.</p>
+<hr />
+<hr />
+<div id="how-are-the-tools-and-workflows-selected" class="section level1">
+<h1>How are the tools and workflows selected?</h1>
+<p>The list below includes tools identified through consultations with the <a href="https://www.biocommons.org.au/get-involved">BioCommons Communities</a>, as well as active <a href="https://bioplatforms.com/projects/">Bioplatforms Australia Framework Initiatives</a>.</p>
+<hr />
+<hr />
+</div>
+<div id="tools-and-workflows" class="section level1">
+<h1>Tools and workflows</h1>
+<ul>
+<li>Software documentation is linked from the <em>Tool / workflow name</em> in the first column.</li>
+<li>More information about a tool can be found by following the link in the <a href="https://bio.tools/">bio.tools</a> column.</li>
+<li>When a tool has been containerised to for easier installation on any compute infrastructure, a link to the containerised software is shown in the <a href="https://biocontainers.pro/#/">BioContainers</a> column.</li>
+</ul>
+<p><font size="-1.5"></p>
+<table>
+<colgroup>
+<col width="44%" />
+<col width="18%" />
+<col width="14%" />
+<col width="22%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="center">Tool / workflow name</th>
+<th align="center">BioCommons Documentation</th>
+<th align="center">bio.tools</th>
+<th align="center">BioContainers</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="center"><a href="https://github.com/Gaius-Augustus/BRAKER">BRAKER</a></td>
+<td align="center"><a href="https://github.com/AustralianBioCommons/braker" class="uri">https://github.com/AustralianBioCommons/braker</a></td>
+<td align="center"><a href="https://bio.tools/braker1">●</a></td>
+<td align="center"><a href="https://biocontainers.pro/#/tools/braker">●</a></td>
+</tr>
+<tr class="even">
+<td align="center"><a href="https://github.com/marbl/canu">Canu</a></td>
+<td align="center"><a href="https://github.com/AustralianBioCommons/Canu" class="uri">https://github.com/AustralianBioCommons/Canu</a></td>
+<td align="center"><a href="https://bio.tools/canu">●</a></td>
+<td align="center"><a href="https://biocontainers.pro/#/tools/canu">●</a></td>
+</tr>
+<tr class="odd">
+<td align="center"><a href="https://github.com/PacificBiosciences/pb-assembly">Falcon</a></td>
+<td align="center"><a href="https://github.com/AustralianBioCommons/falcon" class="uri">https://github.com/AustralianBioCommons/falcon</a></td>
+<td align="center"></td>
+<td align="center"><a href="https://biocontainers.pro/#/tools/pb-assembly">●</a></td>
+</tr>
+<tr class="even">
+<td align="center"><a href="https://github.com/PacificBiosciences/pb-assembly">Falcon (pb-assembly)</a></td>
+<td align="center"><a href="https://github.com/AustralianBioCommons/falcon" class="uri">https://github.com/AustralianBioCommons/falcon</a></td>
+<td align="center"></td>
+<td align="center"><a href="https://biocontainers.pro/#/tools/pb-assembly">●</a></td>
+</tr>
+<tr class="odd">
+<td align="center"><a href="https://github.com/PacificBiosciences/pbbioconda/wiki/Improved-Phased-Assembler">Improved Phased Assembler (pbipa)</a></td>
+<td align="center"><a href="https://github.com/AustralianBioCommons/ipa" class="uri">https://github.com/AustralianBioCommons/ipa</a></td>
+<td align="center"></td>
+<td align="center"><a href="https://biocontainers.pro/#/tools/pbipa">●</a></td>
+</tr>
+<tr class="even">
+<td align="center"><a href="https://peterbeerli.com/migrate-html5/index.html">MIGRATE</a></td>
+<td align="center"><a href="https://github.com/AustralianBioCommons/migrate" class="uri">https://github.com/AustralianBioCommons/migrate</a></td>
+<td align="center"><a href="https://bio.tools/MIGRATE">●</a></td>
+<td align="center"><a href="https://biocontainers.pro/#/tools/migrate-n">●</a></td>
+</tr>
+<tr class="odd">
+<td align="center"><a href="https://github.com/AustralianBioCommons/xml4ena">xml4ena</a></td>
+<td align="center"><a href="https://github.com/AustralianBioCommons/xml4ena" class="uri">https://github.com/AustralianBioCommons/xml4ena</a></td>
+<td align="center"></td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<p></font></p>
+<hr />
+<hr />
+</div>
+<div id="what-do-the-repositories-contain" class="section level1">
+<h1>What do the repositories contain?</h1>
+<p>Each repository is structured using our <a href="https://github.com/AustralianBioCommons/doc_guidelines/releases">documentation guidelines</a> (for <a href="https://github.com/AustralianBioCommons/doc_guidelines/blob/master/docs/tools.md">Tools</a>, <a href="https://github.com/AustralianBioCommons/doc_guidelines/blob/master/docs/workflows.md">Workflows</a> or <a href="https://github.com/AustralianBioCommons/doc_guidelines/blob/master/docs/infrastructure_optimisation.md">Infrastructure</a>) that have been developed through engagement with community bioinformaticians. Real-world use cases informed iterative development to produce a first version of these guidelines.</p>
+<p>We will continue to work together with the community to build a fit-for-purpose and standardised approach for presenting tool and workflow documentation which contains information specific to Australian HPC and Cloud infrastructure. These guidelines and the documentation therein will be developed in line with community requirements, and will align closely to global efforts (e.g. that being undertaken by the <a href="https://elixir-europe.org/platforms/tools">ELIXIR tools platform</a>).</p>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

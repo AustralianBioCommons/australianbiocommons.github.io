@@ -1,0 +1,62 @@
+---
+title: "Australian BioCommons Technical Documentation"
+---
+
+<center>
+![](./images/Australian-Biocommons-Logo-Horizontal-300dpi.jpg){width=40%}
+</center>
+
+-----
+
+-----
+
+# What resources are available on the [BioCommons GitHub](https://github.com/AustralianBioCommons)?
+
+**Note:** you can reach this information using the tabs at the top of the page as well.
+
+- [What compute systems exist](1_compute_systems.html) at the [BioCommons partner infrastructures?](https://www.biocommons.org.au/pathfinder-biocloud)
+- [Tool & workflow registry information and install status](2_tools.html) on BioCommons partner infrastructures?
+- [Documentation from activities that have installed, tested and optimised tools and workflows](3_biocommons_activities.html)
+- [Help!](4_help.html)
+
+-----
+
+-----
+
+# Please let us know via a [GoogleForm](https://forms.gle/BgbBeGfAV6396p797), or [GitHub issues](https://github.com/AustralianBioCommons/australianbiocommons.github.io/issues), if...
+
+* Any information is missing: for example, you have installed a tool or workflow successfully on your project allocation at a partner infrastructure and would like to tell the world.
+* You have ideas / suggestions to improve the information offered here.
+
+-----
+
+-----
+
+# What is the Australian BioCommons?
+
+The Australian BioCommons is an ambitious new digital infrastructure capability that is enhancing Australian research in its ability to understand the molecular basis of life across environmental, agricultural and biomedical science. 
+
+This large-scale investment in digital infrastructure is ensuring Australian life science research remains globally competitive, providing access to the tools, methods and training researchers require to respond to national challenges such as food security, environmental conservation and disease treatments.
+
+The BioCommons is informing the development of a new capability for the estimated 30,000 publicly funded bioscience researchers in Australia, and investigating and providing recommendations for the services and tools that are needed to make sense of data on subjects such as DNA sequencing, proteomic and metabolic analysis at scale.
+
+-----
+
+-----
+
+# Acknowledgements
+
+The information presented here is part of [collaborative activities](https://www.biocommons.org.au/activities) coordinated by the Australian BioCommons. These activities draw upon the expertise and enthusiasm of the BioCommons partner infrastructures and the Australian bioinformatics community, which includes:
+
+- The BioCommons [communities of practice](https://www.biocommons.org.au/get-involved) (e.g. genome assembly, metabolomics)
+- The [Bioplatforms Australia](https://bioplatforms.com/) Framework Initiatives (e.g. [Oz Mammals Genomics](https://ozmammalsgenomics.com/), [Genomics for Australian Plants](https://www.genomicsforaustralianplants.com/))
+
+The website and its contents have been built using [Rstudio](https://rstudio.com/), [R](https://www.r-project.org/) and the [tidyverse](https://www.tidyverse.org/) (dplyr *et al.*), with [references included](5_attributions.html), and additional attributions embedded in the Rmarkdown scripts.
+
+-----
+
+```{r echo = FALSE, message = FALSE}
+#see https://bookdown.org/yihui/rmarkdown-cookbook/write-bib.html
+library(knitr)
+write_bib(c(.packages()), "./outputs/index_packages.bib")
+```

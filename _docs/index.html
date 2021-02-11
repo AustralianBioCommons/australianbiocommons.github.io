@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Australian BioCommons Technical Documentation</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Home</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="1_compute_systems.html">Compute systems</a>
+</li>
+<li>
+  <a href="2_tools.html">Tools &amp; workflows</a>
+</li>
+<li>
+  <a href="3_biocommons_activities.html">Featured tools &amp; workflows</a>
+</li>
+<li>
+  <a href="4_help.html">Help!</a>
+</li>
+<li>
+  <a href="5_attributions.html">Attributions</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Australian BioCommons Technical Documentation</h1>
+
+</div>
+
+
+<center>
+<img src="images/Australian-Biocommons-Logo-Horizontal-300dpi.jpg" style="width:40.0%" />
+</center>
+<hr />
+<hr />
+<div id="what-resources-are-available-on-the-biocommons-github" class="section level1">
+<h1>What resources are available on the <a href="https://github.com/AustralianBioCommons">BioCommons GitHub</a>?</h1>
+<p><strong>Note:</strong> you can reach this information using the tabs at the top of the page as well.</p>
+<ul>
+<li><a href="1_compute_systems.html">What compute systems exist</a> at the <a href="https://www.biocommons.org.au/pathfinder-biocloud">BioCommons partner infrastructures?</a></li>
+<li><a href="2_tools.html">Tool &amp; workflow registry information and install status</a> on BioCommons partner infrastructures?</li>
+<li><a href="3_biocommons_activities.html">Documentation from activities that have installed, tested and optimised tools and workflows</a></li>
+<li><a href="4_help.html">Help!</a></li>
+</ul>
+<hr />
+<hr />
+</div>
+<div id="please-let-us-know-via-a-googleform-or-github-issues-if" class="section level1">
+<h1>Please let us know via a <a href="https://forms.gle/BgbBeGfAV6396p797">GoogleForm</a>, or <a href="https://github.com/AustralianBioCommons/australianbiocommons.github.io/issues">GitHub issues</a>, if…</h1>
+<ul>
+<li>Any information is missing: for example, you have installed a tool or workflow successfully on your project allocation at a partner infrastructure and would like to tell the world.</li>
+<li>You have ideas / suggestions to improve the information offered here.</li>
+</ul>
+<hr />
+<hr />
+</div>
+<div id="what-is-the-australian-biocommons" class="section level1">
+<h1>What is the Australian BioCommons?</h1>
+<p>The Australian BioCommons is an ambitious new digital infrastructure capability that is enhancing Australian research in its ability to understand the molecular basis of life across environmental, agricultural and biomedical science.</p>
+<p>This large-scale investment in digital infrastructure is ensuring Australian life science research remains globally competitive, providing access to the tools, methods and training researchers require to respond to national challenges such as food security, environmental conservation and disease treatments.</p>
+<p>The BioCommons is informing the development of a new capability for the estimated 30,000 publicly funded bioscience researchers in Australia, and investigating and providing recommendations for the services and tools that are needed to make sense of data on subjects such as DNA sequencing, proteomic and metabolic analysis at scale.</p>
+<hr />
+<hr />
+</div>
+<div id="acknowledgements" class="section level1">
+<h1>Acknowledgements</h1>
+<p>The information presented here is part of <a href="https://www.biocommons.org.au/activities">collaborative activities</a> coordinated by the Australian BioCommons. These activities draw upon the expertise and enthusiasm of the BioCommons partner infrastructures and the Australian bioinformatics community, which includes:</p>
+<ul>
+<li>The BioCommons <a href="https://www.biocommons.org.au/get-involved">communities of practice</a> (e.g. genome assembly, metabolomics)</li>
+<li>The <a href="https://bioplatforms.com/">Bioplatforms Australia</a> Framework Initiatives (e.g. <a href="https://ozmammalsgenomics.com/">Oz Mammals Genomics</a>, <a href="https://www.genomicsforaustralianplants.com/">Genomics for Australian Plants</a>)</li>
+</ul>
+<p>The website and its contents have been built using <a href="https://rstudio.com/">Rstudio</a>, <a href="https://www.r-project.org/">R</a> and the <a href="https://www.tidyverse.org/">tidyverse</a> (dplyr <em>et al.</em>), with <a href="5_attributions.html">references included</a>, and additional attributions embedded in the Rmarkdown scripts.</p>
+<hr />
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
