@@ -21,6 +21,8 @@ library(lubridate)
 source("functions.R")
 ```
 
+<a name="tool_request"></a>
+
 # Requesting tool installations
 
 Tool installs can be requested for the infrastructures listed in the table:
@@ -106,6 +108,8 @@ COMPLETE <- join_and_process_tools(matrix_data = data,
 -----
 
 -----
+
+<a name="tool_information"></a>
 
 # Tool information {.tabset .tabset-pills}
 
