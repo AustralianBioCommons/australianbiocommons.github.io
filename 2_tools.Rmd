@@ -16,6 +16,7 @@ library(kableExtra)
 #lubridate included to allow for automated provision of date for tool list update
 #see https://r4ds.had.co.nz/dates-and-times.html
 library(lubridate)
+library(DT)
 
 #see https://stackoverflow.com/questions/13548266/define-all-functions-in-one-r-file-call-them-from-another-r-file-how-if-pos
 source("functions.R")
@@ -145,7 +146,11 @@ installs <- COMPLETE %>%
          )
 
 #see https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html
-kable(installs, format = "pipe", align = "c")
+#kable(installs, format = "pipe", align = "c")
+
+#https://bookdown.org/yihui/rmarkdown/interactive-documents.html
+#https://rstudio.github.io/DT/
+datatable(installs, filter = 'top', class = 'cell-border stripe', style = 'bootstrap', escape = FALSE)
 
 ```
 </font>
@@ -178,7 +183,10 @@ info <- COMPLETE %>%
          `bio.tools`, 
          `BioContainers`)
 
-kable(info, format = "pipe", align = "c")
+#https://bookdown.org/yihui/rmarkdown/interactive-documents.html
+#https://rstudio.github.io/DT/
+datatable(info, class = 'cell-border stripe', escape = FALSE)
+
 ```
 </font>
 

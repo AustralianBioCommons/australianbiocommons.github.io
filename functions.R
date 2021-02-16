@@ -56,25 +56,35 @@ join_and_process_tools <- function(matrix_data, gadi_data, zeus_data, magnus_dat
     #see post by Max @ https://stackoverflow.com/a/55708065
     mutate(`Tool / workflow name` = coalesce(`Tool / workflow name`, toolID)) %>%
     arrange(`Tool / workflow name`) %>%
+    
+    #https://www.sitepoint.com/use-unicode-create-bullet-points-trademarks-arrows/
+    #see post by SLaks @ https://stackoverflow.com/a/4521389
+    #https://www.w3schools.com/jsref/prop_anchor_text.asp
+    #https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_anchor_text2
+    ###example
+    #<p><a href="url">&#x25cf;</a></p>
+    
     mutate(
       `Galaxy Australia` = case_when(grepl("^y$", on_galaxy_australia) ~ "&#9679;"),
       `Available in Galaxy toolshed` = case_when(
         !is.na(galaxy_search_term) ~
           #see post by Hao @ https://stackoverflow.com/a/48512819
-          paste("[", galaxy_search_term, "](https://toolshed.g2.bx.psu.edu/repository/browse_repositories?f-free-text-search=", 
-                galaxy_search_term, "&sort=name)", sep = ""))
+          #see post by jrdnmdhl @ https://stackoverflow.com/a/30901774
+          paste0("<a href='https://toolshed.g2.bx.psu.edu/repository/browse_repositories?f-free-text-search=", galaxy_search_term, "'>", galaxy_search_term, "</a>"))
+      #paste("[", galaxy_search_term, "](https://toolshed.g2.bx.psu.edu/repository/browse_repositories?f-free-text-search=", 
+      #      galaxy_search_term, "&sort=name)", sep = ""))
     ) %>%
   
     #see post by Akrun @ https://stackoverflow.com/a/43696252
     #question url https://stackoverflow.com/questions/43696227/mutate-with-case-when-and-contains
     mutate(
       `Tool / workflow name` = case_when(
-        grepl("https?://", `Info URL`) ~ paste("[", `Tool / workflow name`, "](", `Info URL`, ")", sep = ""),
+        grepl("https?://", `Info URL`) ~ paste0("<a href='", `Info URL`, "'>", `Tool / workflow name`, "</a>"),
         grepl("", `Info URL`) | is.na(`Info URL`) ~ `Tool / workflow name`),
     
-      `bio.tools` = case_when(grepl("https?://", biotools_link) ~ paste("[&#9679;](", biotools_link, ")", sep = "")),
+      `bio.tools` = case_when(grepl("https?://", biotools_link) ~ paste0("<a href='", biotools_link, "'>&#9679;</a>")),
     
-      `BioContainers` = case_when(grepl("https?://", biocontainers_link) ~ paste("[&#9679;](", biocontainers_link, ")", sep = ""))
+      `BioContainers` = case_when(grepl("https?://", biocontainers_link) ~ paste0("<a href='", biocontainers_link, "'>&#9679;</a>"))
       )
   
   write_tsv(COMPLETE_tibble, "../../external_GitHub_inputs/complete_processed_tool_matrix.tsv")

@@ -19,6 +19,8 @@ For site construction:
 - [Rmarkdown lesson 13](https://rmarkdown.rstudio.com/lesson-13.html)
 - [GitHub & Rstudio whitepaper](https://resources.github.com/whitepapers/github-and-rstudio/)
 - [HTML anchors](https://stackoverflow.com/a/7015050)
+- [Interactive documents](https://bookdown.org/yihui/rmarkdown/interactive-documents.html)
+- [DT](https://rstudio.github.io/DT/)
 
 See also:
 
