@@ -14,7 +14,7 @@ title: "Australian BioCommons Technical Documentation"
 
 **Note:** you can reach this information using the tabs at the top of the page as well.
 
-- [What compute systems exist](1_compute_systems.html) at the [BioCommons partner infrastructures?](https://www.biocommons.org.au/pathfinder-biocloud)
+- [What compute systems exist](1_compute_systems.html) at the [BioCommons partner infrastructures?](https://www.biocommons.org.au/biocloud)
 - [Tool & workflow registry information and install status](2_tools.html) on BioCommons partner infrastructures?
 - [Documentation from activities that have installed, tested and optimised tools and workflows](3_biocommons_activities.html)
 - [Help!](4_help.html)
@@ -48,7 +48,7 @@ The BioCommons is informing the development of a new capability for the estimate
 
 The information presented here is part of [collaborative activities](https://www.biocommons.org.au/activities) coordinated by the Australian BioCommons. These activities draw upon the expertise and enthusiasm of the BioCommons partner infrastructures and the Australian bioinformatics community, which includes:
 
-- The BioCommons [communities of practice](https://www.biocommons.org.au/get-involved) (e.g. genome assembly, metabolomics)
+- The BioCommons [communities](https://www.biocommons.org.au/get-involved) (e.g. genome assembly, metabolomics)
 - The [Bioplatforms Australia](https://bioplatforms.com/) Framework Initiatives (e.g. [Oz Mammals Genomics](https://ozmammalsgenomics.com/), [Genomics for Australian Plants](https://www.genomicsforaustralianplants.com/))
 
 The website and its contents have been built using [Rstudio](https://rstudio.com/), [R](https://www.r-project.org/) and the [tidyverse](https://www.tidyverse.org/) (dplyr *et al.*), with [references included](5_attributions.html), and additional attributions embedded in the Rmarkdown scripts.

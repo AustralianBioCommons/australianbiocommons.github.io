@@ -83,6 +83,8 @@ join_and_process_tools <- function(matrix_data, gadi_data, zeus_data, magnus_dat
         grepl("", `Info URL`) | is.na(`Info URL`) ~ `Tool / workflow name`),
     
       `bio.tools` = case_when(grepl("https?://", biotools_link) ~ paste0("<a href='", biotools_link, "'>&#9679;</a>")),
+      
+      `BioCommons Documentation` = case_when(grepl("https?://", `BioCommons Documentation`) ~ paste0("<a href='", `BioCommons Documentation`, "'>&#9679;</a>")),
     
       `BioContainers` = case_when(grepl("https?://", biocontainers_link) ~ paste0("<a href='", biocontainers_link, "'>&#9679;</a>"))
       )
