@@ -65,7 +65,7 @@ join_and_process_tools <- function(matrix_data, gadi_data, zeus_data, magnus_dat
     #<p><a href="url">&#x25cf;</a></p>
     
     mutate(
-      `Galaxy Australia` = case_when(grepl("^y$", on_galaxy_australia) ~ "&#9679;"),
+      `Galaxy Australia` = case_when(grepl("^y$", on_galaxy_australia) ~ "Yes"),
       `Available in Galaxy toolshed` = case_when(
         !is.na(galaxy_search_term) ~
           #see post by Hao @ https://stackoverflow.com/a/48512819

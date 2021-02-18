@@ -51,6 +51,12 @@ tool_request %>%
 ```
 </font>
 
+### FAQ: can I get a HPC allocation through the BioCommons?
+
+Allocation of computational resources to individual researchers on partner HPC and cloud infrastructures is through the usual channels offered via each partner (see instructions for each by following these links: [NCI](https://nci.org.au/users/how-access-nci), [Pawsey](https://support.pawsey.org.au/documentation/display/US/Getting+Access), [QCIF](https://www.qcif.edu.au/services/computing/), [ARDC-Nectar](http://cloud.nectar.org.au/start-now/)). The [BioCommons BioCloud](https://www.biocommons.org.au/biocloud) activity is working with these partners to examine ways to make it easier for life science researchers to receive HPC and HTC allocations.
+
+Note that access to computational resources via the [Galaxy Australia](https://usegalaxy.org.au/) hosted web platform is unlimited for Australian researchers thanks to our computational partners (ARDC-Nectar Cloud, University of Queensland, QCIF, University of Melbourne and Pawsey) who underpin the Galaxy Australia service.  
+
 ```{r}
 ######################
 ###load matrix data###
@@ -130,15 +136,15 @@ COMPLETE <- join_and_process_tools(matrix_data = data,
 installs <- COMPLETE %>%
   #see https://tidyr.tidyverse.org/reference/replace_na.html
   replace_na(list(`Galaxy Australia` = "",
-                  `Available in Galaxy toolshed` = "",
                   `Pawsey (Zeus)` = "",
                   `Pawsey (Magnus)` = "",
                   `QRIScloud / UQ-RCC (Flashlite, Awoonga, Tinaroo)` = "",
-                  `NCI (Gadi)` = ""
+                  `NCI (Gadi)` = "",
+                  `Primary purpose (EDAM, if available)` = ""
                   )) %>%
-  select(`Tool / workflow name`, 
+  select(`Tool / workflow name`,
+         `Primary purpose (EDAM, if available)`,
          `Galaxy Australia`, 
-         `Available in Galaxy toolshed`, 
          `NCI (Gadi)`, 
          `Pawsey (Zeus)`, 
          `Pawsey (Magnus)`, 
@@ -150,7 +156,7 @@ installs <- COMPLETE %>%
 
 #https://bookdown.org/yihui/rmarkdown/interactive-documents.html
 #https://rstudio.github.io/DT/
-datatable(installs, filter = 'top', class = 'cell-border stripe', style = 'bootstrap', escape = FALSE)
+datatable(installs, options = list(pageLength = 20), class = 'cell-border stripe', style = 'bootstrap', escape = FALSE)
 
 ```
 </font>
@@ -177,9 +183,11 @@ info <- COMPLETE %>%
   #see https://tidyr.tidyverse.org/reference/replace_na.html
   replace_na(list(`bio.tools` = "",
                   `BioContainers` = "",
+                  `Available in Galaxy toolshed` = "",
                   `Primary purpose (EDAM, if available)` = "")) %>%
   select(`Tool / workflow name`, 
-         `Primary purpose (EDAM, if available)`, 
+         `Primary purpose (EDAM, if available)`,
+         `Available in Galaxy toolshed`,
          `bio.tools`, 
          `BioContainers`)
 

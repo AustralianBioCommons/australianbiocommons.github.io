@@ -3,14 +3,14 @@ title: "Australian BioCommons Technical Documentation"
 ---
 
 <center>
-![](./images/Australian-Biocommons-Logo-Horizontal-300dpi.jpg){width=40%}
+[![](./images/Australian-Biocommons-Logo-Horizontal-300dpi.jpg){width=40%}](https://www.biocommons.org.au/)
 </center>
 
 -----
 
 -----
 
-# What resources are available on the [BioCommons GitHub](https://github.com/AustralianBioCommons)?
+# What resources are available here?
 
 **Note:** you can reach this information using the tabs at the top of the page as well.
 
@@ -32,9 +32,9 @@ title: "Australian BioCommons Technical Documentation"
 
 -----
 
-# What is the Australian BioCommons?
+# What is the [Australian BioCommons](https://www.biocommons.org.au/)?
 
-The Australian BioCommons is an ambitious new digital infrastructure capability that is enhancing Australian research in its ability to understand the molecular basis of life across environmental, agricultural and biomedical science. 
+The [Australian BioCommons](https://www.biocommons.org.au/) is an ambitious new digital infrastructure capability that is enhancing Australian research in its ability to understand the molecular basis of life across environmental, agricultural and biomedical science. 
 
 This large-scale investment in digital infrastructure is ensuring Australian life science research remains globally competitive, providing access to the tools, methods and training researchers require to respond to national challenges such as food security, environmental conservation and disease treatments.
 
