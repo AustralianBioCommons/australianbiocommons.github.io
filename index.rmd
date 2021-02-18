@@ -2,6 +2,8 @@
 title: "Australian BioCommons Technical Documentation"
 ---
 
+This site presents a landscape view of tools, workflows and compute systems available across Australian BioCommons partners.
+
 <center>
 [![](./images/Australian-Biocommons-Logo-Horizontal-300dpi.jpg){width=40%}](https://www.biocommons.org.au/)
 </center>
