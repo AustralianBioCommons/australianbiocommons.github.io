@@ -22,6 +22,7 @@ For site construction:
 - [Interactive documents](https://bookdown.org/yihui/rmarkdown/interactive-documents.html)
 - [DT](https://rstudio.github.io/DT/)
 - [Image hyperlinks](https://stackoverflow.com/a/42235353)
+- [CSS page width](https://stackoverflow.com/a/46564977)
 
 See also:
 

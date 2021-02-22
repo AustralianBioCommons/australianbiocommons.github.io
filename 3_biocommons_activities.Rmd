@@ -2,6 +2,15 @@
 title: "Featured tools & workflows"
 ---
 
+<style type="text/css">
+.main-container {
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
+
 A list of public repositories on the [Australian BioCommons GitHub](https://github.com/AustralianBioCommons), that contain documentation about tool & workflow install, testing and optimisation on [partner infrastructures](./1_compute_systems.html).
 
 -----
