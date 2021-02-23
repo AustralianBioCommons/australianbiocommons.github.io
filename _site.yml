@@ -20,3 +20,5 @@ output:
   html_document:
     theme: cosmo
     highlight: monochrome
+    includes:
+      in_header: header.html
