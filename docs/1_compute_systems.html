@@ -21,6 +21,8 @@
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
 
 <!DOCTYPE html>
 <link rel="shortcut icon" href="./images/Australian-Biocommons-Favicon.png" />
@@ -314,72 +316,204 @@ $(document).ready(function () {
 <p>Below is a list of the Australian BioCommons infrastructure partners and some of their available compute systems. This list is not intended to be exhaustive, and will grow as the BioCommons develops.</p>
 <hr />
 <hr />
-<div id="faq-can-i-get-a-hpc-allocation-through-the-biocommons" class="section level1">
-<h1>FAQ: can I get a HPC allocation through the BioCommons?</h1>
-<p>Allocation of computational resources to individual researchers on partner HPC and cloud infrastructures is through the usual channels offered via each partner (see instructions for each by following these links: <a href="https://nci.org.au/users/how-access-nci">NCI</a>, <a href="https://support.pawsey.org.au/documentation/display/US/Getting+Access">Pawsey</a>, <a href="https://www.qcif.edu.au/services/computing/">QCIF</a>, <a href="http://cloud.nectar.org.au/start-now/">ARDC-Nectar</a>). The <a href="https://www.biocommons.org.au/biocloud">BioCommons BioCloud</a> activity is working with these partners to examine ways to make it easier for life science researchers to receive HPC and HTC allocations.</p>
-<p>Note that access to computational resources via the <a href="https://usegalaxy.org.au/">Galaxy Australia</a> hosted web platform is unlimited for Australian researchers thanks to our computational partners (ARDC-Nectar Cloud, University of Queensland, QCIF, University of Melbourne and Pawsey) who underpin the Galaxy Australia service.</p>
-<hr />
-<hr />
-</div>
 <div id="graphical-user-interface-accessible-systems" class="section level1">
 <h1>Graphical user interface accessible systems</h1>
 <ul>
-<li><a href="https://usegalaxy.org.au/"><strong>Galaxy Australia</strong></a></li>
-<li><a href="https://support.aarnet.edu.au/hc/en-us/sections/360000129695-CloudStor-SWAN"><strong>SWAN</strong> (Rstudio &amp; JupyterLab accessible via AARNet’s CloudStor)</a></li>
+<li><a href="https://usegalaxy.org.au/">Galaxy Australia</a></li>
+<li><a href="https://support.aarnet.edu.au/hc/en-us/sections/360000129695-CloudStor-SWAN">SWAN (Rstudio &amp; JupyterLab accessible via AARNet’s CloudStor)</a></li>
 </ul>
 <hr />
 <hr />
 </div>
 <div id="command-line-accessible-systems" class="section level1">
 <h1>Command-line accessible systems</h1>
-<div id="partner-high-performance-computing-hpc-systems" class="section level2">
-<h2>Partner High Performance Computing (HPC) systems</h2>
-<ul>
-<li><a href="https://nci.org.au/"><strong>National Computational Infrastructure (NCI)</strong></a>
-<ul>
-<li><a href="https://opus.nci.org.au/display/Help/Gadi+User+Guide">Gadi</a></li>
-</ul></li>
-<li><a href="https://pawsey.org.au/"><strong>Pawsey Supercomputing Centre</strong></a>
-<ul>
-<li><a href="https://pawsey.org.au/systems/magnus/">Magnus</a></li>
-<li><a href="https://pawsey.org.au/systems/zeus/">Zeus</a></li>
-<li><a href="https://pawsey.org.au/systems/topaz/">Topaz</a></li>
-</ul></li>
-<li><a href="https://rcc.uq.edu.au/"><strong>Queensland Cyber Infrastructure Foundation (QCIF) / University of Queensland - Research Computing Centre (RCC)</strong></a>
-<ul>
-<li><a href="https://rcc.uq.edu.au/flashlite">Flashlite</a></li>
-<li><a href="https://rcc.uq.edu.au/tinaroo">Tinaroo</a></li>
-<li><a href="https://rcc.uq.edu.au/awoonga">Awoonga</a></li>
-</ul></li>
-<li><a href="https://www.sydney.edu.au/"><strong>University of Sydney</strong></a>
-<ul>
-<li><a href="https://www.sydney.edu.au/research/facilities/sydney-informatics-hub/digital-research-infrastructure.html">Artemis</a></li>
-</ul></li>
-<li><a href="https://www.unimelb.edu.au/"><strong>University of Melbourne</strong></a>
-<ul>
-<li><a href="https://dashboard.hpc.unimelb.edu.au/">Spartan</a></li>
-</ul></li>
-</ul>
-</div>
-<div id="partner-cloud-compute-systems" class="section level2">
-<h2>Partner Cloud compute systems</h2>
-<ul>
-<li><a href="https://pawsey.org.au/"><strong>Pawsey Supercomputing Centre</strong></a>
-<ul>
-<li><a href="https://pawsey.org.au/systems/nimbus-cloud-service/">Nimbus research cloud</a></li>
-</ul></li>
-<li><a href="https://rcc.uq.edu.au/"><strong>Queensland Cyber Infrastructure Foundation (QCIF) / University of Queensland - Research Computing Centre (RCC)</strong></a>
-<ul>
-<li><a href="https://rcc.uq.edu.au/qriscloud">QRISCloud</a></li>
-</ul></li>
-<li><a href="https://ardc.edu.au/"><strong>Australian Research Data Commons (ARDC)</strong></a>
-<ul>
-<li><a href="https://ardc.edu.au/services/nectar-research-cloud/">Nectar Research cloud</a></li>
-</ul></li>
-</ul>
+<div id="high-performance-computing" class="section level2">
+<h2>High Performance Computing</h2>
+<font size="-1.5">
+<table class="table table-striped" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+System name
+</th>
+<th style="text-align:left;">
+Partner organisation
+</th>
+<th style="text-align:left;">
+State
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+<a href="https://www.sydney.edu.au/research/facilities/sydney-informatics-hub/digital-research-infrastructure.html">Artemis</a>
+</td>
+<td style="text-align:left;">
+<a href="https://www.sydney.edu.au/">University of Sydney</a>
+</td>
+<td style="text-align:left;">
+New South Wales
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://rcc.uq.edu.au/awoonga">Awoonga</a>
+</td>
+<td style="text-align:left;">
+<a href="https://www.qcif.edu.au/">Queensland Cyber Infrastructure Foundation (QCIF)</a> | <a href="https://rcc.uq.edu.au/">University of Queensland - Research Computing Centre (RCC)</a>
+</td>
+<td style="text-align:left;">
+Queensland
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://rcc.uq.edu.au/flashlite">Flashlite</a>
+</td>
+<td style="text-align:left;">
+<a href="https://www.qcif.edu.au/">Queensland Cyber Infrastructure Foundation (QCIF)</a> | <a href="https://rcc.uq.edu.au/">University of Queensland - Research Computing Centre (RCC)</a>
+</td>
+<td style="text-align:left;">
+Queensland
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://opus.nci.org.au/display/Help/Gadi+User+Guide">Gadi</a>
+</td>
+<td style="text-align:left;">
+<a href="https://nci.org.au/">National Computational Infrastructure (NCI)</a>
+</td>
+<td style="text-align:left;">
+Australian Capital Territory
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://pawsey.org.au/systems/magnus/">Magnus</a>
+</td>
+<td style="text-align:left;">
+<a href="https://pawsey.org.au/">Pawsey Supercomputing Centre</a>
+</td>
+<td style="text-align:left;">
+Western Australia
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://dashboard.hpc.unimelb.edu.au/">Spartan</a>
+</td>
+<td style="text-align:left;">
+<a href="https://www.unimelb.edu.au/">University of Melbourne</a>
+</td>
+<td style="text-align:left;">
+Victoria
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://rcc.uq.edu.au/tinaroo">Tinaroo</a>
+</td>
+<td style="text-align:left;">
+<a href="https://www.qcif.edu.au/">Queensland Cyber Infrastructure Foundation (QCIF)</a> | <a href="https://rcc.uq.edu.au/">University of Queensland - Research Computing Centre (RCC)</a>
+</td>
+<td style="text-align:left;">
+Queensland
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://pawsey.org.au/systems/topaz/">Topaz</a>
+</td>
+<td style="text-align:left;">
+<a href="https://pawsey.org.au/">Pawsey Supercomputing Centre</a>
+</td>
+<td style="text-align:left;">
+Western Australia
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://pawsey.org.au/systems/zeus/">Zeus</a>
+</td>
+<td style="text-align:left;">
+<a href="https://pawsey.org.au/">Pawsey Supercomputing Centre</a>
+</td>
+<td style="text-align:left;">
+Western Australia
+</td>
+</tr>
+</tbody>
+</table>
+<p></font></p>
 <hr />
 <hr />
 </div>
+<div id="cloud" class="section level2">
+<h2>Cloud</h2>
+<font size="-1.5">
+<table class="table table-striped" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+System name
+</th>
+<th style="text-align:left;">
+Partner organisation
+</th>
+<th style="text-align:left;">
+State
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+<a href="https://ardc.edu.au/services/nectar-research-cloud/">Nectar Research cloud</a>
+</td>
+<td style="text-align:left;">
+<a href="https://ardc.edu.au/">Australian Research Data Commons (ARDC)</a>
+</td>
+<td style="text-align:left;">
+National
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://pawsey.org.au/systems/nimbus-cloud-service/">Nimbus research cloud</a>
+</td>
+<td style="text-align:left;">
+<a href="https://pawsey.org.au/">Pawsey Supercomputing Centre</a>
+</td>
+<td style="text-align:left;">
+Western Australia
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+<a href="https://rcc.uq.edu.au/qriscloud">QRISCloud</a>
+</td>
+<td style="text-align:left;">
+<a href="https://www.qcif.edu.au/">Queensland Cyber Infrastructure Foundation (QCIF)</a> | <a href="https://rcc.uq.edu.au/">University of Queensland - Research Computing Centre (RCC)</a>
+</td>
+<td style="text-align:left;">
+Queensland
+</td>
+</tr>
+</tbody>
+</table>
+<p></font></p>
+<hr />
+<hr />
+</div>
+</div>
+<div id="faq-how-can-i-get-a-hpc-allocation" class="section level1">
+<h1>FAQ: How can I get a HPC allocation??</h1>
+<p>Allocation of computational resources to individual researchers on partner HPC and cloud infrastructures is through the usual channels offered via each partner (see instructions for each by following these links: <a href="https://nci.org.au/users/how-access-nci">NCI</a>, <a href="https://support.pawsey.org.au/documentation/display/US/Getting+Access">Pawsey</a>, <a href="https://www.qcif.edu.au/services/computing/">QCIF</a>, <a href="http://cloud.nectar.org.au/start-now/">ARDC’s Nectar Research Cloud</a>). The <a href="https://www.biocommons.org.au/biocloud">BioCommons BioCloud</a> activity is working with these partners to examine ways to make it easier for life science researchers to receive HPC and HTC allocations.</p>
+<p>Note that access to computational resources via the <a href="https://usegalaxy.org.au/">Galaxy Australia</a> hosted web platform is unlimited for Australian researchers thanks to our computational partners (ARDC’s Nectar Research Cloud, University of Queensland, QCIF, University of Melbourne and Pawsey) who underpin the Galaxy Australia service.</p>
+<hr />
+<hr />
 </div>
 
 
