@@ -4,6 +4,8 @@ title: "Australian BioCommons Technical Documentation"
 
 This site presents a landscape view of tools, workflows and compute systems available across Australian BioCommons partners.
 
+This site uses Cookies. By proceeding, you are agreeing to our [Cookies Policy](https://www.biocommons.org.au/cookies). We use cookies to help the website run effectively.
+
 <center>
 [![](./images/Australian-Biocommons-Logo-Horizontal-300dpi.jpg){width=40%}](https://www.biocommons.org.au/)
 </center>
@@ -16,8 +18,8 @@ This site presents a landscape view of tools, workflows and compute systems avai
 
 **Note:** you can reach this information using the tabs at the top of the page as well.
 
-- [What compute systems exist](1_compute_systems.html) at the [BioCommons partner infrastructures?](https://www.biocommons.org.au/biocloud)
-- [Tool & workflow registry information and install status](2_tools.html) on BioCommons partner infrastructures?
+- [The compute systems ](1_compute_systems.html) at the [BioCommons partner infrastructures](https://www.biocommons.org.au/biocloud)
+- [Tool & workflow registry information and install status](2_tools.html) on BioCommons partner infrastructures
 - [Documentation from activities that have installed, tested and optimised tools and workflows](3_biocommons_activities.html)
 - [Help!](4_help.html)
 

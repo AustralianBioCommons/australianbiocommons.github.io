@@ -24,6 +24,7 @@ For site construction:
 - [Image hyperlinks](https://stackoverflow.com/a/42235353)
 - [CSS page width](https://stackoverflow.com/a/46564977)
 - [Favicon](https://bookdown.org/yihui/rmarkdown-cookbook/favicon.html)
+- [Google Analytics](https://stackoverflow.com/a/45169407)
 
 See also:
 
