@@ -6,17 +6,18 @@ nocite: '@*'
 
 # General references 
 
-EDAM was used for tool list categorisation:
+### EDAM was used for tool list categorisation
 
 - Ison, J., Kalaš, M., Jonassen, I., Bolser, D., Uludag, M., McWilliam, H., Malone, J., Lopez, R., Pettifer, S. and Rice, P. 2013. EDAM: an ontology of bioinformatics operations, types of data and identifiers, topics and formats. Bioinformatics, 29(10): 1325-1332. [DOI](https://doi.org/10.1093/bioinformatics/btt113) PMID: 23479348 *Open Access*
 - [EDAM ontology GitHub](https://github.com/edamontology/edamontology)
 
-For site construction:
+### For site construction
 
-- [Rmarkdown cookbook](https://bookdown.org/yihui/rmarkdown-cookbook/)
-- [Rmarkdown site](https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html)
-- [Rmarkdown appearance & style](https://bookdown.org/yihui/rmarkdown/html-document.html#appearance-and-style)
-- [Rmarkdown lesson 13](https://rmarkdown.rstudio.com/lesson-13.html)
+- Rmarkdown
+     - [Cookbook](https://bookdown.org/yihui/rmarkdown-cookbook/)
+     - [Site](https://bookdown.org/yihui/rmarkdown/rmarkdown-site.html)
+     - [Appearance & style](https://bookdown.org/yihui/rmarkdown/html-document.html#appearance-and-style)
+     - [Rstudio lesson for rmarkdown: lesson 13](https://rmarkdown.rstudio.com/lesson-13.html)
 - [GitHub & Rstudio whitepaper](https://resources.github.com/whitepapers/github-and-rstudio/)
 - [HTML anchors](https://stackoverflow.com/a/7015050)
 - [Interactive documents](https://bookdown.org/yihui/rmarkdown/interactive-documents.html)
@@ -26,11 +27,10 @@ For site construction:
 - [Favicon](https://bookdown.org/yihui/rmarkdown-cookbook/favicon.html)
 - [Google Analytics](https://stackoverflow.com/a/45169407)
 - [Add footer](https://bookdown.org/yihui/rmarkdown-cookbook/include-html.html)
-
-See also:
-
-- [Rstudio lesson for rmarkdown: lesson 13](https://rmarkdown.rstudio.com/lesson-13.html)
-- [GitHub resource: GitHub & Rstudio](https://resources.github.com/whitepapers/github-and-rstudio/)
+     - [General structure](https://github.com/rstudio/rmarkdown/issues/1761#issuecomment-574875775)
+     - [CSS colors](https://www.w3schools.com/cssref/css_colors.asp)
+     - [CSS background colors](https://stackoverflow.com/a/38387051)
+     - [CSS text align](https://www.w3schools.com/cssref/pr_text_text-align.ASP)
 - [HTML-tabsets](https://bookdown.org/yihui/rmarkdown-cookbook/html-tabs.html)
 - [Code folding](https://bookdown.org/yihui/rmarkdown-cookbook/fold-show.html)
 - [Write .bib](https://bookdown.org/yihui/rmarkdown-cookbook/write-bib.html)

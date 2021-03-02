@@ -20,6 +20,7 @@ output:
   html_document:
     theme: cosmo
     highlight: monochrome
+    css: styles.css
     includes:
       in_header: header.html
       after_body: after.html

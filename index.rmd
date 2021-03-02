@@ -57,8 +57,10 @@ The website and its contents have been built using [Rstudio](https://rstudio.com
 
 -----
 
+
 ```{r echo = FALSE, message = FALSE}
 #see https://bookdown.org/yihui/rmarkdown-cookbook/write-bib.html
 library(knitr)
 write_bib(c(.packages()), "./outputs/index_packages.bib")
 ```
+
