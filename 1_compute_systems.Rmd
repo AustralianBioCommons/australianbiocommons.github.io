@@ -18,9 +18,9 @@ QCIF_UQ <- read_tsv("../../external_GitHub_inputs/systems.tsv") %>%
   #question url https://stackoverflow.com/questions/43696227/mutate-with-case-when-and-contains
   mutate(
     QCIF = case_when(
-      grepl("^https", QCIF_url) ~ paste0("<a href='", QCIF_url, "'>", QCIF, "</a>")),
+      grepl("^https", QCIF_url) ~ paste0("<a href='", QCIF_url, "' target='_blank' rel='noopener noreferrer'>", QCIF, "</a>")),
     UQ = case_when(
-      grepl("^https", UQ_url) ~ paste0("<a href='", UQ_url, "'>", UQ, "</a>"))
+      grepl("^https", UQ_url) ~ paste0("<a href='", UQ_url, "' target='_blank' rel='noopener noreferrer'>", UQ, "</a>"))
   ) %>%
   mutate(`Partner organisation` = paste(QCIF, UQ, sep = " | ")) %>%
   select(`Partner organisation`, State, `System name`, Cloud, HPC, System_link)
@@ -29,14 +29,14 @@ systems <- read_tsv("../../external_GitHub_inputs/systems.tsv") %>%
   filter(!grepl("\\|", `Partner organisation`)) %>%
   mutate(
     `Partner organisation` = case_when(
-      grepl("^https", URL) ~ paste0("<a href='", URL, "'>", `Partner organisation`, "</a>"))
+      grepl("^https", URL) ~ paste0("<a href='", URL, "'  target='_blank' rel='noopener noreferrer'>", `Partner organisation`, "</a>"))
     ) %>%
   select(-URL) %>%
   bind_rows(QCIF_UQ) %>% 
   arrange(`System name`) %>%
   mutate(
     `System name` = case_when(
-      grepl("^https", System_link) ~ paste0("<a href='", System_link, "'>", `System name`, "</a>"))
+      grepl("^https", System_link) ~ paste0("<a href='", System_link, "'  target='_blank' rel='noopener noreferrer'>", `System name`, "</a>"))
   )
 
 ```

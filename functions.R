@@ -70,7 +70,7 @@ join_and_process_tools <- function(matrix_data, gadi_data, zeus_data, magnus_dat
         !is.na(galaxy_search_term) ~
           #see post by Hao @ https://stackoverflow.com/a/48512819
           #see post by jrdnmdhl @ https://stackoverflow.com/a/30901774
-          paste0("<a href='https://toolshed.g2.bx.psu.edu/repository/browse_repositories?f-free-text-search=", galaxy_search_term, "'>", galaxy_search_term, "</a>"))
+          paste0("<a href='https://toolshed.g2.bx.psu.edu/repository/browse_repositories?f-free-text-search=", galaxy_search_term, "'  target='_blank'  rel='noopener noreferrer'>", galaxy_search_term, "</a>"))
       #paste("[", galaxy_search_term, "](https://toolshed.g2.bx.psu.edu/repository/browse_repositories?f-free-text-search=", 
       #      galaxy_search_term, "&sort=name)", sep = ""))
     ) %>%
@@ -79,14 +79,14 @@ join_and_process_tools <- function(matrix_data, gadi_data, zeus_data, magnus_dat
     #question url https://stackoverflow.com/questions/43696227/mutate-with-case-when-and-contains
     mutate(
       `Tool / workflow name` = case_when(
-        grepl("https?://", `Info URL`) ~ paste0("<a href='", `Info URL`, "'>", `Tool / workflow name`, "</a>"),
+        grepl("https?://", `Info URL`) ~ paste0("<a href='", `Info URL`, "' target='_blank'  rel='noopener noreferrer'>", `Tool / workflow name`, "</a>"),
         grepl("", `Info URL`) | is.na(`Info URL`) ~ `Tool / workflow name`),
     
-      `bio.tools` = case_when(grepl("https?://", biotools_link) ~ paste0("<a href='", biotools_link, "'>&#9679;</a>")),
+      `bio.tools` = case_when(grepl("https?://", biotools_link) ~ paste0("<a href='", biotools_link, "' target='_blank'  rel='noopener noreferrer'>&#9679;</a>")),
       
-      `BioCommons Documentation` = case_when(grepl("https?://", `BioCommons Documentation`) ~ paste0("<a href='", `BioCommons Documentation`, "'>&#9679;</a>")),
+      `BioCommons Documentation` = case_when(grepl("https?://", `BioCommons Documentation`) ~ paste0("<a href='", `BioCommons Documentation`, "' target='_blank'  rel='noopener noreferrer'>&#9679;</a>")),
     
-      `BioContainers` = case_when(grepl("https?://", biocontainers_link) ~ paste0("<a href='", biocontainers_link, "'>&#9679;</a>"))
+      `BioContainers` = case_when(grepl("https?://", biocontainers_link) ~ paste0("<a href='", biocontainers_link, "' target='_blank'  rel='noopener noreferrer'>&#9679;</a>"))
       )
   
   write_tsv(COMPLETE_tibble, "../../external_GitHub_inputs/complete_processed_tool_matrix.tsv")
