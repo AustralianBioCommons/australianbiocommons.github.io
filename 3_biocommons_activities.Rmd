@@ -10,27 +10,13 @@ title: "Featured tools & workflows"
 }
 </style>
 
-
-A list of public repositories on the [Australian BioCommons GitHub](https://github.com/AustralianBioCommons), that contain documentation about tool & workflow install, testing and optimisation on [partner infrastructures](./1_compute_systems.html).
-
------
-
------
-
-# How are the tools and workflows selected?
-
-The list below includes tools identified through consultations with the [BioCommons Communities](https://www.biocommons.org.au/get-involved), as well as active [Bioplatforms Australia Framework Initiatives](https://bioplatforms.com/projects/).
+A list of Australian BioCommons documentation repositories is provided below. The tools and workflows documented were initially identified through consultations with the [BioCommons Communities of practice](https://www.biocommons.org.au/get-involved), as well as active [Bioplatforms Australia Framework Initiatives](https://bioplatforms.com/projects/).
 
 -----
 
 -----
 
 # Tools and workflows
-
-- Software documentation is linked from the *Tool / workflow name* in the first column.
-- More information about a tool can be found by following the link in the [bio.tools](https://bio.tools/) column.
-- When a tool has been containerised to for easier installation on any compute infrastructure, a link to the containerised software is shown in the [BioContainers](https://biocontainers.pro/#/) column.
-
 
 ```{r setup, include = FALSE, warning = FALSE}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
@@ -53,11 +39,18 @@ kable(biocommons, format = "pipe", align = "c")
 ```
 </font>
 
------
+
+**Please note**:
+
+- Software documentation is linked from the *Tool / workflow name* in the first column.
+- More information about a tool can be found by following the link in the [bio.tools](https://bio.tools/) column.
+- When a tool has been containerised to for easier installation on any compute infrastructure, a link to the containerised software is shown in the [BioContainers](https://biocontainers.pro/#/) column.
 
 -----
 
-# What do the repositories contain?
+-----
+
+# What do each of the listed tool and workflow repositories contain?
 
 Each repository is structured using our [documentation guidelines](https://github.com/AustralianBioCommons/doc_guidelines/releases) (for [Tools](https://github.com/AustralianBioCommons/doc_guidelines/blob/master/docs/tools.md), [Workflows](https://github.com/AustralianBioCommons/doc_guidelines/blob/master/docs/workflows.md) or [Infrastructure](https://github.com/AustralianBioCommons/doc_guidelines/blob/master/docs/infrastructure_optimisation.md)) that have been developed through engagement with community bioinformaticians. Real-world use cases informed iterative development to produce a first version of these guidelines.
 
