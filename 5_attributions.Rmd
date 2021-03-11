@@ -24,6 +24,7 @@ nocite: '@*'
 - [HTML anchors](https://stackoverflow.com/a/7015050)
 - [Interactive documents](https://bookdown.org/yihui/rmarkdown/interactive-documents.html)
 - [DT](https://rstudio.github.io/DT/)
+- [DT extensions (e.g. buttons)](https://rstudio.github.io/DT/extensions.html)
 - [Image hyperlinks](https://stackoverflow.com/a/42235353)
 - [CSS page width](https://stackoverflow.com/a/46564977)
 - [Favicon](https://bookdown.org/yihui/rmarkdown-cookbook/favicon.html)

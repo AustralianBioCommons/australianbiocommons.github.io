@@ -127,9 +127,7 @@ COMPLETE <- join_and_process_tools(matrix_data = data,
 
 <a name="tool_information"></a>
 
-# Tool information {.tabset .tabset-pills}
-
-## Tool install status and version availability
+# Tool information
 
 <font size="-1.5">
 ```{r}
@@ -141,17 +139,23 @@ installs <- COMPLETE %>%
                   `Pawsey (Magnus)` = "",
                   `QRIScloud / UQ-RCC (Flashlite, Awoonga, Tinaroo)` = "",
                   `NCI (Gadi)` = "",
-                  `Primary purpose (EDAM, if available)` = ""
+                  `Primary purpose (EDAM, if available)` = "",
+                  `bio.tools` = "",
+                  `BioContainers` = "",
+                  `Available in Galaxy toolshed` = ""
                   )) %>%
   rename(`Tool identifier (module name / bio.tools ID / placeholder)` = toolID) %>%
   select(`Tool / workflow name`,
          `Tool identifier (module name / bio.tools ID / placeholder)`,
          `Primary purpose (EDAM, if available)`,
          `Galaxy Australia`, 
+         `Available in Galaxy toolshed`,
          `NCI (Gadi)`, 
          `Pawsey (Zeus)`, 
          `Pawsey (Magnus)`, 
-         `QRIScloud / UQ-RCC (Flashlite, Awoonga, Tinaroo)`
+         `QRIScloud / UQ-RCC (Flashlite, Awoonga, Tinaroo)`,
+         `bio.tools`, 
+         `BioContainers`
          )
 
 #see https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html
@@ -159,45 +163,9 @@ installs <- COMPLETE %>%
 
 #https://bookdown.org/yihui/rmarkdown/interactive-documents.html
 #https://rstudio.github.io/DT/
-datatable(installs, options = list(pageLength = 20), class = 'cell-border stripe', style = 'bootstrap', escape = FALSE)
-
-```
-</font>
-
-**Note:** 
-
-- Table last updated ```r today()```.
-- Software documentation is linked from the *Tool / workflow name* in the first column.
-- The *Tool identifier* column contains an identifier for the tool / workflow: typically either the module name (used for matching to HPC lists), a bio.tools ID, or a  placeholder value.
-- For tools which are not currently installed on [Galaxy Australia](https://usegalaxy.org.au/), but which are available [in the Galaxy app store (aka toolshed)](https://toolshed.g2.bx.psu.edu/), the *Available in Galaxy toolshed* column launches a toolshed search using the link label as the search term.
-- The list currently includes some tools that are not used for bioinformatics.
-- The source material for the table is currently manually curated, and while we endeavour to keep the information as current as possible, there is a natural limit to the volume of information maintained here. Production of this information will be automated during 2021, and tools that are not relevant for bioinformatics analyses removed.
-
------
-
------
-
-## Tool information
-
-<font size="-1.5">
-```{r}
-info <- COMPLETE %>%
-  #see https://tidyr.tidyverse.org/reference/replace_na.html
-  replace_na(list(`bio.tools` = "",
-                  `BioContainers` = "",
-                  `Available in Galaxy toolshed` = "",
-                  `Primary purpose (EDAM, if available)` = "")) %>%
-  rename(`Tool identifier (module name / bio.tools ID / placeholder)` = toolID) %>%
-  select(`Tool / workflow name`,
-         `Tool identifier (module name / bio.tools ID / placeholder)`,
-         `Primary purpose (EDAM, if available)`,
-         `Available in Galaxy toolshed`,
-         `bio.tools`, 
-         `BioContainers`)
-
-#https://bookdown.org/yihui/rmarkdown/interactive-documents.html
-#https://rstudio.github.io/DT/
-datatable(info, class = 'cell-border stripe', escape = FALSE)
+#https://rstudio.github.io/DT/extensions.html
+datatable(installs, extensions = 'Buttons', options = list(pageLength = 20, dom = 'Bfrtip', buttons = I('colvis')), 
+          class = 'cell-border stripe', escape = FALSE)
 
 ```
 </font>
@@ -208,6 +176,7 @@ datatable(info, class = 'cell-border stripe', escape = FALSE)
 - Software documentation is linked from the *Tool / workflow name* in the first column.
 - The *Tool identifier* column contains an identifier for the tool / workflow: typically either the module name (used for matching to HPC lists), a bio.tools ID, or a  placeholder value.
 - The *Primary purpose* column categorises the tools by purpose, using an [EDAM](https://github.com/edamontology/edamontology) *topic* where possible.
+- For tools which are not currently installed on [Galaxy Australia](https://usegalaxy.org.au/), but which are available [in the Galaxy app store (aka toolshed)](https://toolshed.g2.bx.psu.edu/), the *Available in Galaxy toolshed* column launches a toolshed search using the link label as the search term.
 - More information about a tool can be found by following the link in the [bio.tools](https://bio.tools/) column.
 - When a tool has been containerised to allow for easier installation on any compute infrastructure, a link to the containerised software that can be downloaded  is shown in the [BioContainers](https://biocontainers.pro/#/) column.
 - The list currently includes some tools that are not used for bioinformatics.
