@@ -35,6 +35,7 @@ nocite: '@*'
      - [CSS background colors](https://stackoverflow.com/a/38387051)
      - [CSS text align](https://www.w3schools.com/cssref/pr_text_text-align.ASP)
 - [HTML-tabsets](https://bookdown.org/yihui/rmarkdown-cookbook/html-tabs.html)
+- [HTML-text sizing](https://stackoverflow.com/a/44906182)
 - [Code folding](https://bookdown.org/yihui/rmarkdown-cookbook/fold-show.html)
 - [Write .bib](https://bookdown.org/yihui/rmarkdown-cookbook/write-bib.html)
 
