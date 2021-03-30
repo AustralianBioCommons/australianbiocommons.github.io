@@ -36,7 +36,7 @@ source("functions.R")
 
 Tool installs can be requested for the infrastructures listed in the table:
 
-<font size="-1.5">
+<font size="2">
 ```{r}
 
 tool_request <- tibble(
@@ -129,7 +129,7 @@ COMPLETE <- join_and_process_tools(matrix_data = data,
 
 # Tool information
 
-<font size="-1.5">
+<font size="2">
 ```{r}
 
 installs <- COMPLETE %>%
@@ -200,7 +200,7 @@ RStudio (see session info at the bottom of this page) was used for processing.
 
 The broad steps are described here:
 
-<font size="-1.5">
+<font size="2">
 
 1. The manually curated tool list and separate tool lists provided by the BioCommons partner infrastructures were parsed (Galaxy Australia, NCI, Pawsey and QRISCloud - RCC). 
 2. The complete set of tool lists were joined using the ```toolID``` as a key, and 

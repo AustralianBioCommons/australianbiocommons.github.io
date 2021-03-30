@@ -24,7 +24,7 @@ library(tidyverse)
 library(kableExtra)
 ```
 
-<font size="-1.5">
+<font size="2">
 ```{r}
 biocommons <- read_tsv("../../external_GitHub_inputs/complete_processed_tool_matrix.tsv") %>%
   filter(grepl("github", `BioCommons Documentation`)) %>%
