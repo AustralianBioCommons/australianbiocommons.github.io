@@ -104,6 +104,7 @@ read_qris <- function(qriscloud_file){
   qris_tibble <- read_tsv(qriscloud_file, col_names = FALSE)
   
   fix_qris <- qris_tibble %>%
+    #see https://stackoverflow.com/a/28860172
     filter(grepl("/[A-Za-z0-9]+/", X1)) %>%
     #  mutate(X1 = str_replace(X1, pattern = "^[A-Za-z0-9]+/", "")) 
     mutate(X1 = case_when(grepl("/[A-Za-z0-9]+/", X1) ~ str_replace(X1, pattern = "/{1}", "-")))
@@ -111,6 +112,7 @@ read_qris <- function(qriscloud_file){
   qris_final <- fix_qris %>%
     bind_rows(qris_tibble) %>%
     arrange(X1) %>%
+    #see https://stackoverflow.com/a/28860172
     filter(!grepl("/[A-Za-z0-9]+/", X1)) %>%
     #see post by aosmith @ https://community.rstudio.com/t/tidyr-separate-at-first-whitespace/26269/3  
     #separate(X1, c("toolID", "version"), sep = "/") %>%
