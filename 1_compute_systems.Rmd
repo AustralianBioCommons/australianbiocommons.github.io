@@ -41,7 +41,7 @@ systems <- read_tsv("../../external_GitHub_inputs/systems.tsv") %>%
 
 ```
 
-Below is a list of the Australian BioCommons infrastructure partners and some of their available compute systems. This list is not intended to be exhaustive, and will grow as the BioCommons develops.
+Below is a list of the Australian BioCommons infrastructure partners and some of their available compute systems. This list is not intended to be exhaustive, and will be added over time.
 
 -----
 

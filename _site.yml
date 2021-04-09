@@ -5,6 +5,7 @@ name: "Australian BioCommons"
 output_dir: "docs"
 navbar:
   title: "Home"
+  type: inverse
   left:
     - text: "Compute systems"
       href: 1_compute_systems.html
