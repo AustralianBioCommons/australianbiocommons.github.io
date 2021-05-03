@@ -156,9 +156,16 @@ read_hpc <- function(hpc_file){
   
 }
 
-read_gadi <- function(gadi_file){
+read_gadi <- function(key_location){
   
-  gadi_tibble <- read_csv(gadi_file, col_names = c("toolID", "version")) %>%
+  key <- read_file(key_location) %>%
+    str_extract(" .+$") %>%
+    str_trim(side = "left")
+  
+  response <- GET("http://gadi-test-apps.nci.org.au:5000/dump", add_headers(Authorization = key))
+  
+  gadi_tibble <- content(response, "text") %>%
+    read_csv(col_names = c("toolID", "version")) %>%
     arrange(toolID) %>%
     #see post by G. Grothendieck @ https://stackoverflow.com/a/56810604
     #see post by Damian @ https://stackoverflow.com/a/45200648
