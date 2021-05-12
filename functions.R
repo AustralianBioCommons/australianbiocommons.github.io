@@ -158,23 +158,55 @@ read_hpc <- function(hpc_file){
 
 read_gadi <- function(key_location){
   
-  key <- read_file(key_location) %>%
-    str_extract(" .+$") %>%
-    str_trim(side = "left")
-  
-  response <- GET("http://gadi-test-apps.nci.org.au:5000/dump", add_headers(Authorization = key))
-  
-  gadi_tibble <- content(response, "text") %>%
-    read_csv(col_names = c("toolID", "version")) %>%
-    arrange(toolID) %>%
-    #see post by G. Grothendieck @ https://stackoverflow.com/a/56810604
-    #see post by Damian @ https://stackoverflow.com/a/45200648
-    mutate(toolID = tolower(toolID)) %>%
-    group_by(toolID) %>%
-    summarize(version = toString(version)) %>%
-    ungroup() %>%
-    #see post by Chris @ https://stackoverflow.com/a/33191810
-    mutate(version = str_replace_all(version, pattern = ", " , "<br />"))
+  #see https://stackoverflow.com/questions/12193779/how-to-write-trycatch-in-r
+  #see also https://stackoverflow.com/a/12195574
+  gadi_tibble <- tryCatch(
+    
+    {
+      key <- read_file(key_location) %>%
+        str_extract(" .+$") %>%
+        str_trim(side = "left")
+      
+      response <- GET("http://gadi-test-apps.nci.org.au:5000/dump", add_headers(Authorization = key))
+      
+      if(response$status_code == 200){
+        
+        gadi_tibble_temp <- content(response, "text") %>%
+          read_csv(col_names = c("toolID", "version"))
+        
+        write_csv(gadi_tibble_temp, "../../external_GitHub_inputs/gadi.csv")
+        
+      } else {
+        
+        gadi_tibble_temp <- read_csv("../../external_GitHub_inputs/gadi.csv", col_names = c("toolID", "version"))
+        
+      }
+      
+    },
+    
+    error=function(error) {
+      print(error)
+    },
+    
+    warning=function(warning) {
+      print(warning)
+    },
+    
+    finally={
+      
+      gadi_tibble <- gadi_tibble_temp %>%
+        arrange(toolID) %>%
+        #see post by G. Grothendieck @ https://stackoverflow.com/a/56810604
+        #see post by Damian @ https://stackoverflow.com/a/45200648
+        mutate(toolID = tolower(toolID)) %>%
+        group_by(toolID) %>%
+        summarize(version = toString(version)) %>%
+        ungroup() %>%
+        #see post by Chris @ https://stackoverflow.com/a/33191810
+        mutate(version = str_replace_all(version, pattern = ", " , "<br />"))
+      
+    }
+  )
   
   return(gadi_tibble)
   
