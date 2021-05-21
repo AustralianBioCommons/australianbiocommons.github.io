@@ -163,33 +163,72 @@ read_gadi <- function(key_location){
   gadi_tibble <- tryCatch(
     
     {
-      key <- read_file(key_location) %>%
-        str_extract(" .+$") %>%
-        str_trim(side = "left")
       
+      key <- read_file(key_location) %>% str_extract(" .+$") %>% str_trim(side = "left")
       response <- GET("http://gadi-test-apps.nci.org.au:5000/dump", add_headers(Authorization = key))
       
-      if(response$status_code == 200){
+      #see https://stackoverflow.com/a/46147957
+      if(file.exists("../../external_GitHub_inputs/gadi.csv")){
         
-        gadi_tibble_temp <- content(response, "text") %>%
-          read_csv(col_names = c("toolID", "version"))
+        #see https://stackoverflow.com/a/28771203
+        #see also ?file.info in base R
+        if(difftime(Sys.time(), file.info("../../external_GitHub_inputs/gadi.csv")$mtime, units = "days") > 7){
+          
+          if(response$status_code == 200){
+            
+            gadi_tibble_temp <- content(response, "text") %>%
+              read_csv(col_names = c("toolID", "version"))
+            
+            #see https://cran.r-project.org/web/packages/uuid/uuid.pdf
+            uuid_file_name <- paste0("../../external_GitHub_inputs/", UUIDgenerate(), ".csv")
+            write_csv(gadi_tibble_temp, uuid_file_name)
+            file.rename(uuid_file_name, "../../external_GitHub_inputs/gadi.csv")
+            
+          } else {
+            
+            print("Response status is not equal to 200. Using existing Gadi *.csv file!")  
+            gadi_tibble_temp <- read_csv("../../external_GitHub_inputs/gadi.csv")
+            
+          }
+          
+        } else {
+          
+          print("File does not need to be replaced yet. Using existing Gadi *.csv file!")  
+          gadi_tibble_temp <- read_csv("../../external_GitHub_inputs/gadi.csv")
+          
+        }
         
-        write_csv(gadi_tibble_temp, "../../external_GitHub_inputs/gadi.csv")
+      } else if (!file.exists("../../external_GitHub_inputs/gadi.csv")){
         
-      } else {
-        
-        gadi_tibble_temp <- read_csv("../../external_GitHub_inputs/gadi.csv", col_names = c("toolID", "version"))
-        
+        if (response$status_code == 200){
+          
+          gadi_tibble_temp <- content(response, "text") %>%
+            read_csv(col_names = c("toolID", "version"))
+          
+          #see https://cran.r-project.org/web/packages/uuid/uuid.pdf
+          uuid_file_name <- paste0("../../external_GitHub_inputs/", UUIDgenerate(), ".csv")
+          write_csv(gadi_tibble_temp, uuid_file_name)
+          file.rename(uuid_file_name, "../../external_GitHub_inputs/gadi.csv")
+          
+        } else {
+          
+          print("Response status is not equal to 200. Please try again!")  
+          
+        }
       }
       
     },
     
     error=function(error) {
+      print("Error occurred: existing Gadi *.csv file being used!")
       print(error)
+      gadi_tibble_temp <- read_csv("../../external_GitHub_inputs/gadi.csv")
     },
     
     warning=function(warning) {
+      print("Warning occurred: existing Gadi *.csv file being used!")
       print(warning)
+      gadi_tibble_temp <- read_csv("../../external_GitHub_inputs/gadi.csv")
     },
     
     finally={
