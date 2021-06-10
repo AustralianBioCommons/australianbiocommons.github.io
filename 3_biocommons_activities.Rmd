@@ -26,14 +26,14 @@ library(kableExtra)
 
 <font size="2">
 ```{r}
-biocommons <- read_tsv("../../external_GitHub_inputs/complete_processed_tool_matrix.tsv") %>%
-  filter(grepl("github", `BioCommons Documentation`)) %>%
+biocommons <- read_csv("../../external_GitHub_inputs/featured_workflows_input.csv") %>%
+  #filter(grepl("github", `BioCommons Documentation`)) %>%
   #see https://tidyr.tidyverse.org/reference/replace_na.html
   replace_na(list(`bio.tools` = "",
-                  `BioContainers` = "",
+                  #`BioContainers` = "",
                   `BioCommons Documentation` = "",
                   `Primary purpose (EDAM, if available)` = "")) %>%
-  select(`Tool / workflow name`, `Primary purpose (EDAM, if available)`, `BioCommons Documentation`, `bio.tools`, `BioContainers`)
+  select(`Tool / workflow name`, `Primary purpose (EDAM, if available)`, `BioCommons Documentation`, `bio.tools`)
 
 kable(biocommons, format = "pipe", align = "c")
 ```
@@ -44,7 +44,6 @@ kable(biocommons, format = "pipe", align = "c")
 
 - Software documentation is linked from the *Tool / workflow name* in the first column.
 - More information about a tool can be found by following the link in the [bio.tools](https://bio.tools/) column.
-- When a tool has been containerised to for easier installation on any compute infrastructure, a link to the containerised software is shown in the [BioContainers](https://biocontainers.pro/#/) column.
 
 -----
 

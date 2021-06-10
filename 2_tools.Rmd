@@ -27,6 +27,7 @@ library(lubridate)
 library(DT)
 #see https://cran.r-project.org/web/packages/httr/vignettes/quickstart.html
 library(httr)
+library(uuid)
 
 #see https://stackoverflow.com/questions/13548266/define-all-functions-in-one-r-file-call-them-from-another-r-file-how-if-pos
 source("functions.R")

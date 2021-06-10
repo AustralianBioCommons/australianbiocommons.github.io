@@ -16,13 +16,15 @@ read_matrix <- function(matrix_file){
            `Galaxy toolshed name / search term`,
            `Info URL`,
            `bio.containers link`, 
-           `bio.tools link`,
-           `GitHub link`) %>%
+           `bio.tools link`
+           #`GitHub link`
+           ) %>%
     
     rename(galaxy_search_term = `Galaxy toolshed name / search term`,
            biocontainers_link = `bio.containers link`, 
-           biotools_link = `bio.tools link`,
-           `BioCommons Documentation` = `GitHub link`) %>%
+           biotools_link = `bio.tools link`
+           #`BioCommons Documentation` = `GitHub link`
+           ) %>%
     
     #see https://community.rstudio.com/t/which-tidyverse-is-the-equivalent-to-search-replace-from-spreadsheets/3548/7
     #mutate_if(is.character, str_replace_all, pattern = '^\\?$', replacement = 'unknown') %>%
@@ -65,7 +67,7 @@ join_and_process_tools <- function(matrix_data, gadi_data, zeus_data, magnus_dat
     #<p><a href="url">&#x25cf;</a></p>
     
     mutate(
-      `Galaxy Australia` = case_when(grepl("^y$", on_galaxy_australia) ~ "Yes"),
+      `Galaxy Australia` = case_when(grepl("^[Yy]e?s?$", on_galaxy_australia) ~ "Yes"),
       `Available in Galaxy toolshed` = case_when(
         !is.na(galaxy_search_term) ~
           #see post by Hao @ https://stackoverflow.com/a/48512819
@@ -84,7 +86,7 @@ join_and_process_tools <- function(matrix_data, gadi_data, zeus_data, magnus_dat
     
       `bio.tools` = case_when(grepl("https?://", biotools_link) ~ paste0("<a href='", biotools_link, "' target='_blank'  rel='noopener noreferrer'>&#9679;</a>")),
       
-      `BioCommons Documentation` = case_when(grepl("https?://", `BioCommons Documentation`) ~ paste0("<a href='", `BioCommons Documentation`, "' target='_blank'  rel='noopener noreferrer'>&#9679;</a>")),
+      #`BioCommons Documentation` = case_when(grepl("https?://", `BioCommons Documentation`) ~ paste0("<a href='", `BioCommons Documentation`, "' target='_blank'  rel='noopener noreferrer'>&#9679;</a>")),
     
       `BioContainers` = case_when(grepl("https?://", biocontainers_link) ~ paste0("<a href='", biocontainers_link, "' target='_blank'  rel='noopener noreferrer'>&#9679;</a>"))
       )
@@ -244,10 +246,11 @@ read_gadi <- function(key_location){
         #see post by Chris @ https://stackoverflow.com/a/33191810
         mutate(version = str_replace_all(version, pattern = ", " , "<br />"))
       
+      return(gadi_tibble)
+      
     }
+    
   )
-  
-  return(gadi_tibble)
   
 }
 
