@@ -16,13 +16,15 @@ read_matrix <- function(matrix_file){
            `Galaxy toolshed name / search term`,
            `Info URL`,
            `bio.containers link`, 
-           `bio.tools link`,
-           `GitHub link`) %>%
+           `bio.tools link`
+           #`GitHub link`
+           ) %>%
     
     rename(galaxy_search_term = `Galaxy toolshed name / search term`,
            biocontainers_link = `bio.containers link`, 
-           biotools_link = `bio.tools link`,
-           `BioCommons Documentation` = `GitHub link`) %>%
+           biotools_link = `bio.tools link`
+           #`BioCommons Documentation` = `GitHub link`
+           ) %>%
     
     #see https://community.rstudio.com/t/which-tidyverse-is-the-equivalent-to-search-replace-from-spreadsheets/3548/7
     #mutate_if(is.character, str_replace_all, pattern = '^\\?$', replacement = 'unknown') %>%
@@ -65,7 +67,7 @@ join_and_process_tools <- function(matrix_data, gadi_data, zeus_data, magnus_dat
     #<p><a href="url">&#x25cf;</a></p>
     
     mutate(
-      `Galaxy Australia` = case_when(grepl("^y$", on_galaxy_australia) ~ "Yes"),
+      `Galaxy Australia` = case_when(grepl("^[Yy]e?s?$", on_galaxy_australia) ~ "Yes"),
       `Available in Galaxy toolshed` = case_when(
         !is.na(galaxy_search_term) ~
           #see post by Hao @ https://stackoverflow.com/a/48512819
@@ -84,7 +86,7 @@ join_and_process_tools <- function(matrix_data, gadi_data, zeus_data, magnus_dat
     
       `bio.tools` = case_when(grepl("https?://", biotools_link) ~ paste0("<a href='", biotools_link, "' target='_blank'  rel='noopener noreferrer'>&#9679;</a>")),
       
-      `BioCommons Documentation` = case_when(grepl("https?://", `BioCommons Documentation`) ~ paste0("<a href='", `BioCommons Documentation`, "' target='_blank'  rel='noopener noreferrer'>&#9679;</a>")),
+      #`BioCommons Documentation` = case_when(grepl("https?://", `BioCommons Documentation`) ~ paste0("<a href='", `BioCommons Documentation`, "' target='_blank'  rel='noopener noreferrer'>&#9679;</a>")),
     
       `BioContainers` = case_when(grepl("https?://", biocontainers_link) ~ paste0("<a href='", biocontainers_link, "' target='_blank'  rel='noopener noreferrer'>&#9679;</a>"))
       )
@@ -156,20 +158,99 @@ read_hpc <- function(hpc_file){
   
 }
 
-read_gadi <- function(gadi_file){
+read_gadi <- function(key_location){
   
-  gadi_tibble <- read_csv(gadi_file, col_names = c("toolID", "version")) %>%
-    arrange(toolID) %>%
-    #see post by G. Grothendieck @ https://stackoverflow.com/a/56810604
-    #see post by Damian @ https://stackoverflow.com/a/45200648
-    mutate(toolID = tolower(toolID)) %>%
-    group_by(toolID) %>%
-    summarize(version = toString(version)) %>%
-    ungroup() %>%
-    #see post by Chris @ https://stackoverflow.com/a/33191810
-    mutate(version = str_replace_all(version, pattern = ", " , "<br />"))
-  
-  return(gadi_tibble)
+  #see https://stackoverflow.com/questions/12193779/how-to-write-trycatch-in-r
+  #see also https://stackoverflow.com/a/12195574
+  gadi_tibble <- tryCatch(
+    
+    {
+      
+      key <- read_file(key_location) %>% str_extract(" .+$") %>% str_trim(side = "left")
+      response <- GET("http://gadi-test-apps.nci.org.au:5000/dump", add_headers(Authorization = key))
+      
+      #see https://stackoverflow.com/a/46147957
+      if(file.exists("../../external_GitHub_inputs/gadi.csv")){
+        
+        #see https://stackoverflow.com/a/28771203
+        #see also ?file.info in base R
+        if(difftime(Sys.time(), file.info("../../external_GitHub_inputs/gadi.csv")$mtime, units = "days") > 7){
+          
+          if(response$status_code == 200){
+            
+            gadi_tibble_temp <- content(response, "text") %>%
+              read_csv(col_names = c("toolID", "version"))
+            
+            #see https://cran.r-project.org/web/packages/uuid/uuid.pdf
+            uuid_file_name <- paste0("../../external_GitHub_inputs/", UUIDgenerate(), ".csv")
+            write_csv(gadi_tibble_temp, uuid_file_name)
+            file.rename(uuid_file_name, "../../external_GitHub_inputs/gadi.csv")
+            
+          } else {
+            
+            print("Response status is not equal to 200. Using existing Gadi *.csv file!")  
+            gadi_tibble_temp <- read_csv("../../external_GitHub_inputs/gadi.csv")
+            
+          }
+          
+        } else {
+          
+          print("File does not need to be replaced yet. Using existing Gadi *.csv file!")  
+          gadi_tibble_temp <- read_csv("../../external_GitHub_inputs/gadi.csv")
+          
+        }
+        
+      } else if (!file.exists("../../external_GitHub_inputs/gadi.csv")){
+        
+        if (response$status_code == 200){
+          
+          gadi_tibble_temp <- content(response, "text") %>%
+            read_csv(col_names = c("toolID", "version"))
+          
+          #see https://cran.r-project.org/web/packages/uuid/uuid.pdf
+          uuid_file_name <- paste0("../../external_GitHub_inputs/", UUIDgenerate(), ".csv")
+          write_csv(gadi_tibble_temp, uuid_file_name)
+          file.rename(uuid_file_name, "../../external_GitHub_inputs/gadi.csv")
+          
+        } else {
+          
+          print("Response status is not equal to 200. Please try again!")  
+          
+        }
+      }
+      
+    },
+    
+    error=function(error) {
+      print("Error occurred: existing Gadi *.csv file being used!")
+      print(error)
+      gadi_tibble_temp <- read_csv("../../external_GitHub_inputs/gadi.csv")
+    },
+    
+    warning=function(warning) {
+      print("Warning occurred: existing Gadi *.csv file being used!")
+      print(warning)
+      gadi_tibble_temp <- read_csv("../../external_GitHub_inputs/gadi.csv")
+    },
+    
+    finally={
+      
+      gadi_tibble <- gadi_tibble_temp %>%
+        arrange(toolID) %>%
+        #see post by G. Grothendieck @ https://stackoverflow.com/a/56810604
+        #see post by Damian @ https://stackoverflow.com/a/45200648
+        mutate(toolID = tolower(toolID)) %>%
+        group_by(toolID) %>%
+        summarize(version = toString(version)) %>%
+        ungroup() %>%
+        #see post by Chris @ https://stackoverflow.com/a/33191810
+        mutate(version = str_replace_all(version, pattern = ", " , "<br />"))
+      
+      return(gadi_tibble)
+      
+    }
+    
+  )
   
 }
 
