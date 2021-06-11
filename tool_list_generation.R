@@ -1,17 +1,4 @@
-#################
-### libraries ###
-#################
-library(tidyverse)
-library(yaml)
-library(kableExtra)
-#lubridate included to allow for automated provision of date for tool list update
-#see https://r4ds.had.co.nz/dates-and-times.html
-library(lubridate)
-library(DT)
-library(httr)
-library(tidyjson)
-#see https://bookdown.org/yihui/rmarkdown-cookbook/write-bib.html
-library(knitr)
+
 
 ###########################
 ### external .R sources ###

@@ -165,7 +165,7 @@ process_tool_and_install_metadata <- function(joined_tool_and_install_data){
       )
     )
   
-  write_tsv(complete_tibble, "../../external_GitHub_inputs/complete_processed_tool_matrix.tsv")
+  write_tsv(complete_tibble, "../external_GitHub_inputs/complete_processed_tool_matrix.tsv")
   
   return(complete_tibble)
   
