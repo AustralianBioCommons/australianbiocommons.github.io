@@ -6,6 +6,11 @@ nocite: '@*'
 
 # General references 
 
+### Tool metadata was sourced from [bio.tools](https://bio.tools/) where possible
+
+- Ison, J. et al. (2015). Tools and data services registry: a community effort to document bioinformatics resources. Nucleic Acids Research. [DOI](https://doi.org/10.1093/nar/gkv1116)
+- [bio.tools API](https://biotools.readthedocs.io/en/latest/api_reference.html)
+
 ### EDAM was used for tool list categorisation
 
 - Ison, J., Kalaš, M., Jonassen, I., Bolser, D., Uludag, M., McWilliam, H., Malone, J., Lopez, R., Pettifer, S. and Rice, P. 2013. EDAM: an ontology of bioinformatics operations, types of data and identifiers, topics and formats. Bioinformatics, 29(10): 1325-1332. [DOI](https://doi.org/10.1093/bioinformatics/btt113) PMID: 23479348 *Open Access*
@@ -41,6 +46,8 @@ nocite: '@*'
 - [Write .bib](https://bookdown.org/yihui/rmarkdown-cookbook/write-bib.html)
 - [httr](https://cran.r-project.org/web/packages/httr/vignettes/quickstart.html)
 - [tryCatch](https://stackoverflow.com/questions/12193779/how-to-write-trycatch-in-r)
+- [tidyjson](https://cran.r-project.org/web/packages/tidyjson/vignettes/introduction-to-tidyjson.html)
+- [uuid](https://cran.r-project.org/web/packages/uuid/uuid.pdf)
 
 
 Xie Yihui, Dervieux Christophe, Riederer Emily. 2020. R Markdown Cookbook. [https://bookdown.org/yihui/rmarkdown-cookbook/](https://bookdown.org/yihui/rmarkdown-cookbook/)

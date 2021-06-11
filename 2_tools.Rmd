@@ -34,7 +34,9 @@ library(httr)
 library(yaml)
 library(tidyjson)
 library(uuid)
+```
 
+```{r cache = TRUE}
 #see https://stackoverflow.com/questions/13548266/define-all-functions-in-one-r-file-call-them-from-another-r-file-how-if-pos
 source("tool_list_generation.R")
 ```
