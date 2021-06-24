@@ -10,7 +10,8 @@ title: "Bioinformatics tools & workflows on BioCommons partner infrastructures"
 }
 </style>
 
-This page details tool request mechanisms and a list of tools and workflows installed across several of the [BioCommons infrastructure partner systems](./1_compute_systems.html). Tool status on other partner infrastructures will be added over time.
+
+This page details a list of tools and workflows installed across several of the [BioCommons infrastructure partner systems](./1_compute_systems.html) and tool installation request mechanisms on these systems. Tool status on other partner infrastructures will be added over time.
 
 -----
 
@@ -40,6 +41,39 @@ library(uuid)
 #see https://stackoverflow.com/questions/13548266/define-all-functions-in-one-r-file-call-them-from-another-r-file-how-if-pos
 source("tool_list_generation.R")
 ```
+
+<a name="tool_information"></a>
+
+<font size="2">
+```{r}
+
+#see https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html
+#kable(installs, format = "pipe", align = "c")
+
+#https://bookdown.org/yihui/rmarkdown/interactive-documents.html
+#https://rstudio.github.io/DT/
+#https://rstudio.github.io/DT/extensions.html
+datatable(installs, extensions = 'Buttons', options = list(pageLength = 20, dom = 'Bfrtip', buttons = I('colvis')), 
+          class = 'cell-border stripe', escape = FALSE)
+
+```
+</font>
+
+**Note:** 
+
+- Table last updated ```r today()```.
+- Software documentation is linked from the *Tool / workflow name* in the first column.
+- The *Tool identifier* column contains an identifier for the tool / workflow: typically either the module name (used for matching to HPC lists) or a  placeholder value.
+- The *Primary purpose* column categorises the tools by purpose, using an [EDAM](https://github.com/edamontology/edamontology) *topic* where possible.
+- For tools which are not currently installed on [Galaxy Australia](https://usegalaxy.org.au/), but which are available [in the Galaxy app store (aka toolshed)](https://toolshed.g2.bx.psu.edu/), the *Available in Galaxy toolshed* column launches a toolshed search using the link label as the search term.
+- More information about a tool can be found by following the link in the [bio.tools](https://bio.tools/) column.
+- When a tool has been containerised to allow for easier installation on any compute infrastructure, a link to the containerised software that can be downloaded  is shown in the [BioContainers](https://biocontainers.pro/#/) column.
+- The list currently includes some tools that are not used for bioinformatics.
+- The source material for the table is currently manually curated, and while we endeavour to keep the information as current as possible, there is a natural limit to the volume of information maintained here. Production of this information will be automated during 2021, and tools that are not relevant for bioinformatics analyses removed.
+
+-----
+
+-----
 
 <a name="tool_request"></a>
 
@@ -75,41 +109,6 @@ tool_request %>%
 Allocation of computational resources to individual researchers on partner HPC and cloud infrastructures is through the usual channels offered via each partner (see instructions for each by following these links: [NCI](https://nci.org.au/users/how-access-nci), [Pawsey](https://support.pawsey.org.au/documentation/display/US/Getting+Access), [QCIF](https://www.qcif.edu.au/services/computing/), [ARDC's Nectar Research Cloud](http://cloud.nectar.org.au/start-now/)). The [BioCommons BioCloud](https://www.biocommons.org.au/biocloud) activity is working with these partners to examine ways to make it easier for life science researchers to receive HPC and HTC allocations.
 
 Note that access to computational resources via the [Galaxy Australia](https://usegalaxy.org.au/) hosted web platform is unlimited for Australian researchers thanks to our computational partners (ARDC's Nectar Research Cloud, University of Queensland, QCIF, University of Melbourne and Pawsey) who underpin the Galaxy Australia service.  
-
------
-
------
-
-<a name="tool_information"></a>
-
-# Tool information
-
-<font size="2">
-```{r}
-
-#see https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html
-#kable(installs, format = "pipe", align = "c")
-
-#https://bookdown.org/yihui/rmarkdown/interactive-documents.html
-#https://rstudio.github.io/DT/
-#https://rstudio.github.io/DT/extensions.html
-datatable(installs, extensions = 'Buttons', options = list(pageLength = 20, dom = 'Bfrtip', buttons = I('colvis')), 
-          class = 'cell-border stripe', escape = FALSE)
-
-```
-</font>
-
-**Note:** 
-
-- Table last updated ```r today()```.
-- Software documentation is linked from the *Tool / workflow name* in the first column.
-- The *Tool identifier* column contains an identifier for the tool / workflow: typically either the module name (used for matching to HPC lists) or a  placeholder value.
-- The *Primary purpose* column categorises the tools by purpose, using an [EDAM](https://github.com/edamontology/edamontology) *topic* where possible.
-- For tools which are not currently installed on [Galaxy Australia](https://usegalaxy.org.au/), but which are available [in the Galaxy app store (aka toolshed)](https://toolshed.g2.bx.psu.edu/), the *Available in Galaxy toolshed* column launches a toolshed search using the link label as the search term.
-- More information about a tool can be found by following the link in the [bio.tools](https://bio.tools/) column.
-- When a tool has been containerised to allow for easier installation on any compute infrastructure, a link to the containerised software that can be downloaded  is shown in the [BioContainers](https://biocontainers.pro/#/) column.
-- The list currently includes some tools that are not used for bioinformatics.
-- The source material for the table is currently manually curated, and while we endeavour to keep the information as current as possible, there is a natural limit to the volume of information maintained here. Production of this information will be automated during 2021, and tools that are not relevant for bioinformatics analyses removed.
 
 -----
 

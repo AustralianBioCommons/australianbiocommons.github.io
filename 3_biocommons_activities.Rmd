@@ -1,5 +1,5 @@
 ---
-title: "Featured tools & workflows"
+title: "Workflows & Documentation"
 ---
 
 <style type="text/css">
@@ -10,13 +10,13 @@ title: "Featured tools & workflows"
 }
 </style>
 
-A list of Australian BioCommons documentation repositories is provided below. The tools and workflows documented were initially identified through consultations with the [BioCommons Communities of practice](https://www.biocommons.org.au/get-involved), as well as active [Bioplatforms Australia Framework Initiatives](https://bioplatforms.com/projects/).
+Documentation from [BioCommons Communities of practice](https://www.biocommons.org.au/get-involved) and [Bioplatforms Australia Framework Initiatives](https://bioplatforms.com/projects/) that have installed, tested and optimised tools and workflows.
 
 -----
 
 -----
 
-# Tools and workflows
+# Australian BioCommons tool and workflow documentation
 
 ```{r setup, include = FALSE, warning = FALSE}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
@@ -49,9 +49,9 @@ kable(biocommons, format = "pipe", align = "c")
 
 -----
 
-# What do each of the listed tool and workflow repositories contain?
+# How is the documentation structured?
 
-Each repository is structured using our [documentation guidelines](https://github.com/AustralianBioCommons/doc_guidelines/releases) (for [Tools](https://github.com/AustralianBioCommons/doc_guidelines/blob/master/docs/tools.md), [Workflows](https://github.com/AustralianBioCommons/doc_guidelines/blob/master/docs/workflows.md) or [Infrastructure](https://github.com/AustralianBioCommons/doc_guidelines/blob/master/docs/infrastructure_optimisation.md)) that have been developed through engagement with community bioinformaticians. Real-world use cases informed iterative development to produce a first version of these guidelines.
+The documentation is structured using our [documentation guidelines](https://github.com/AustralianBioCommons/doc_guidelines/releases) (for [Tools](https://github.com/AustralianBioCommons/doc_guidelines/blob/master/docs/tools.md), [Workflows](https://github.com/AustralianBioCommons/doc_guidelines/blob/master/docs/workflows.md) or [Infrastructure](https://github.com/AustralianBioCommons/doc_guidelines/blob/master/docs/infrastructure_optimisation.md)) that have been developed through engagement with community bioinformaticians. Real-world use cases informed iterative development to produce a first version of these guidelines.
 
 We will continue to work together with the community to build a fit-for-purpose and standardised approach for presenting tool and workflow documentation which contains information specific to Australian HPC and Cloud infrastructure. These guidelines and the documentation therein will be developed in line with community requirements, and will align closely to global efforts (e.g. that being undertaken by the [ELIXIR tools platform](https://elixir-europe.org/platforms/tools)).
 

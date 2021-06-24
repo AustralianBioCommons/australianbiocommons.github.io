@@ -9,9 +9,9 @@ navbar:
   left:
     - text: "Compute systems"
       href: 1_compute_systems.html
-    - text: "Tools & workflows"
+    - text: "ToolFinder"
       href: 2_tools.html
-    - text: "Featured tools & workflows"
+    - text: "Workflows & Documentation"
       href: 3_biocommons_activities.html
     - text: "Help!"
       href: 4_help.html
