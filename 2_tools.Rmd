@@ -18,19 +18,27 @@ This page details tool request mechanisms and a list of tools and workflows inst
 
 ```{r setup, include=FALSE, warning = FALSE}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+#################
+### libraries ###
+#################
 library(tidyverse)
-library(yaml)
 library(kableExtra)
+#see https://bookdown.org/yihui/rmarkdown-cookbook/write-bib.html
+library(knitr)
 #lubridate included to allow for automated provision of date for tool list update
 #see https://r4ds.had.co.nz/dates-and-times.html
 library(lubridate)
 library(DT)
 #see https://cran.r-project.org/web/packages/httr/vignettes/quickstart.html
 library(httr)
+library(yaml)
+library(tidyjson)
 library(uuid)
+```
 
+```{r}
 #see https://stackoverflow.com/questions/13548266/define-all-functions-in-one-r-file-call-them-from-another-r-file-how-if-pos
-source("functions.R")
+source("tool_list_generation.R")
 ```
 
 <a name="tool_request"></a>
@@ -67,62 +75,6 @@ tool_request %>%
 Allocation of computational resources to individual researchers on partner HPC and cloud infrastructures is through the usual channels offered via each partner (see instructions for each by following these links: [NCI](https://nci.org.au/users/how-access-nci), [Pawsey](https://support.pawsey.org.au/documentation/display/US/Getting+Access), [QCIF](https://www.qcif.edu.au/services/computing/), [ARDC's Nectar Research Cloud](http://cloud.nectar.org.au/start-now/)). The [BioCommons BioCloud](https://www.biocommons.org.au/biocloud) activity is working with these partners to examine ways to make it easier for life science researchers to receive HPC and HTC allocations.
 
 Note that access to computational resources via the [Galaxy Australia](https://usegalaxy.org.au/) hosted web platform is unlimited for Australian researchers thanks to our computational partners (ARDC's Nectar Research Cloud, University of Queensland, QCIF, University of Melbourne and Pawsey) who underpin the Galaxy Australia service.  
-  
-
-```{r}
-######################
-###load matrix data###
-######################
-data <- read_matrix("../../external_GitHub_inputs/Matrix of Availability of Bioinformatics Tools across BioCommons - deployment version - Bioinformatics Software Availability.tsv")
-
-######################
-###load galaxy data###
-######################
-galaxy <- parse_GA_yaml(list.files("../../external_GitHub_inputs/usegalaxy.org.au/", full.names = TRUE))
-
-#########################
-###load QRIScloud data###
-#########################
-qris <- read_qris("../../external_GitHub_inputs/qriscloud.txt") %>%
-  rename(`QRIScloud / UQ-RCC (Flashlite, Awoonga, Tinaroo)` = qris_cloud) %>%
-  #see https://community.rstudio.com/t/which-tidyverse-is-the-equivalent-to-search-replace-from-spreadsheets/3548/7
-  mutate_if(is.character, str_replace_all, pattern = 'genomeanalysistk', replacement = 'gatk') %>%
-  mutate_if(is.character, str_replace_all, pattern = '^pacbio$', replacement = 'smrtlink') %>%
-  mutate_if(is.character, str_replace_all, pattern = '^soapdenovo$', replacement = 'soapdenovo2')
-
-####################  
-###load Gadi data###
-####################
-gadi <- read_gadi("../../external_GitHub_inputs/keys/key1.hdr") %>%
-  rename(`NCI (Gadi)` = version)
-
-######################
-###load Pawsey data###
-######################
-zeus <- read_hpc("../../external_GitHub_inputs/zeus.txt") %>%
-  rename(`Pawsey (Zeus)` = version) %>%
-  #see https://community.rstudio.com/t/which-tidyverse-is-the-equivalent-to-search-replace-from-spreadsheets/3548/7
-  mutate_if(is.character, str_replace_all, pattern = 'wgs', replacement = 'celera') %>%
-  mutate_if(is.character, str_replace_all, pattern = 'trinityrnaseq', replacement = 'trinity')
-
-magnus <- read_hpc("../../external_GitHub_inputs/magnus.txt") %>%
-  rename(`Pawsey (Magnus)` = version)
-
-#################################
-###join and process tool lists###
-#################################
-COMPLETE <- join_and_process_tools(matrix_data = data, 
-                                   gadi_data  = gadi, 
-                                   zeus_data = zeus, 
-                                   magnus_data = magnus, 
-                                   qris_data = qris, 
-                                   galaxy_data = galaxy)
-
-###other links
-#see https://stackoverflow.com/a/56683740
-#see https://stackoverflow.com/questions/43696227/mutate-with-case-when-and-contains
-
-```
 
 -----
 
@@ -134,32 +86,6 @@ COMPLETE <- join_and_process_tools(matrix_data = data,
 
 <font size="2">
 ```{r}
-
-installs <- COMPLETE %>%
-  #see https://tidyr.tidyverse.org/reference/replace_na.html
-  replace_na(list(`Galaxy Australia` = "",
-                  `Pawsey (Zeus)` = "",
-                  `Pawsey (Magnus)` = "",
-                  `QRIScloud / UQ-RCC (Flashlite, Awoonga, Tinaroo)` = "",
-                  `NCI (Gadi)` = "",
-                  `Primary purpose (EDAM, if available)` = "",
-                  `bio.tools` = "",
-                  `BioContainers` = "",
-                  `Available in Galaxy toolshed` = ""
-                  )) %>%
-  rename(`Tool identifier (module name / bio.tools ID / placeholder)` = toolID) %>%
-  select(`Tool / workflow name`,
-         `Tool identifier (module name / bio.tools ID / placeholder)`,
-         `Primary purpose (EDAM, if available)`,
-         `Galaxy Australia`, 
-         `Available in Galaxy toolshed`,
-         `NCI (Gadi)`, 
-         `Pawsey (Zeus)`, 
-         `Pawsey (Magnus)`, 
-         `QRIScloud / UQ-RCC (Flashlite, Awoonga, Tinaroo)`,
-         `bio.tools`, 
-         `BioContainers`
-         )
 
 #see https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html
 #kable(installs, format = "pipe", align = "c")
@@ -177,7 +103,7 @@ datatable(installs, extensions = 'Buttons', options = list(pageLength = 20, dom 
 
 - Table last updated ```r today()```.
 - Software documentation is linked from the *Tool / workflow name* in the first column.
-- The *Tool identifier* column contains an identifier for the tool / workflow: typically either the module name (used for matching to HPC lists), a bio.tools ID, or a  placeholder value.
+- The *Tool identifier* column contains an identifier for the tool / workflow: typically either the module name (used for matching to HPC lists) or a  placeholder value.
 - The *Primary purpose* column categorises the tools by purpose, using an [EDAM](https://github.com/edamontology/edamontology) *topic* where possible.
 - For tools which are not currently installed on [Galaxy Australia](https://usegalaxy.org.au/), but which are available [in the Galaxy app store (aka toolshed)](https://toolshed.g2.bx.psu.edu/), the *Available in Galaxy toolshed* column launches a toolshed search using the link label as the search term.
 - More information about a tool can be found by following the link in the [bio.tools](https://bio.tools/) column.
@@ -205,10 +131,11 @@ The broad steps are described here:
 
 <font size="2">
 
-1. The manually curated tool list and separate tool lists provided by the BioCommons partner infrastructures were parsed (Galaxy Australia, NCI, Pawsey and QRISCloud - RCC). 
-2. The complete set of tool lists were joined using the ```toolID``` as a key, and 
-3. Links were embedded, where available, to the original documentation URLs (homepage or GitHub repository, for example) as well as the registry entries on bio.tools and BioContainers. 
-4. Galaxy wrapping often entails that tool suites are separated into their individual tool components. As such, if a Galaxy tool was matched to the manually curated tool list, a tool shed search link was embedded in the ```Available in Galaxy toolshed``` column. This allows a user to search for the tool using a relevant search term (e.g. vcftools) to identify all the component tools available in the toolshed.
+1. The manually curated tool list and separate tool lists provided by the BioCommons partner infrastructures were parsed (Galaxy Australia, NCI, Pawsey and QRISCloud - RCC).
+2. bio.tools metadata was imported for those tools where a biotoolsID was available.
+3. The complete set of tool lists from the BioCommons partner infrastructures were joined using the ```toolID``` as a key, and 
+4. Links were embedded, where available, to the original documentation URLs (homepage or GitHub repository, for example) as well as the registry entries on bio.tools and BioContainers.
+5. Galaxy wrapping often entails that tool suites are separated into their individual tool components. As such, if a Galaxy tool was matched to the manually curated tool list, a tool shed search link was embedded in the ```Available in Galaxy toolshed``` column. This allows a user to search for the tool using a relevant search term (e.g. vcftools) to identify all the component tools available in the toolshed.
 
 </font>
 

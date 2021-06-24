@@ -7,45 +7,103 @@ read_matrix <- function(matrix_file){
   
   matrix_tibble <- read_tsv(matrix_file, skip = 2) %>%
     
-    select(`Tool / workflow name`,
-           toolID,
-           biotoolsID,
-           `include?`,
-           on_galaxy_australia,
-           `Primary purpose (EDAM, if available)`,
-           `Galaxy toolshed name / search term`,
-           `Info URL`,
-           `bio.containers link`, 
-           `bio.tools link`
-           #`GitHub link`
-           ) %>%
-    
-    rename(galaxy_search_term = `Galaxy toolshed name / search term`,
-           biocontainers_link = `bio.containers link`, 
-           biotools_link = `bio.tools link`
-           #`BioCommons Documentation` = `GitHub link`
-           ) %>%
-    
-    #see https://community.rstudio.com/t/which-tidyverse-is-the-equivalent-to-search-replace-from-spreadsheets/3548/7
-    #mutate_if(is.character, str_replace_all, pattern = '^\\?$', replacement = 'unknown') %>%
-    #mutate_if(is.character, str_replace_all, pattern = '^[Yy]$', replacement = '&#9679;') %>%
-    #mutate_if(is.character, str_replace_all, pattern = '^[Nn]ot [Aa]pplicable$', replacement = "") %>%
-    #mutate_if(is.character, str_replace_all, pattern = '^n/a( .+)?$', replacement = "") %>%
-    #mutate_if(is.character, str_replace_all, pattern = '^NA$', replacement = "") %>%
-    #mutate_if(is.character, str_replace_all, pattern = '[Ss]oon', replacement = "install requested") %>%
-    mutate(source_bc = "BioCommons matrix")
+    select(`Tool / workflow name`, toolID, biotoolsID, `include?`, on_galaxy_australia, `Primary purpose (EDAM, if available)`,
+           `Galaxy toolshed name / search term`, `Info URL`) %>%
+    rename(galaxy_search_term = `Galaxy toolshed name / search term`)
   
   return(matrix_tibble)
   
-  }
+}
 
-##################################
-### join and process tool lists###
-##################################
+##########################################################
+### Access bio.tools API using biotoolsIDs from matrix ###
+##########################################################
+#see https://cran.r-project.org/web/packages/httr/vignettes/quickstart.html
+#see https://biotools.readthedocs.io/en/latest/api_reference.html
+#see https://cran.r-project.org/web/packages/urltools/vignettes/urltools.html
+#See https://cran.r-project.org/web/packages/tidyjson/vignettes/introduction-to-tidyjson.html
 
-join_and_process_tools <- function(matrix_data, gadi_data, zeus_data, magnus_data, qris_data, galaxy_data){
+access_biotools_api_biotoolsID <- function(biotoolsID_vector){
   
-  COMPLETE_tibble <- matrix_data %>%
+  biotools <- tibble()
+  
+  # example https://bio.tools/api/t/?biotoolsID=%22signalp%22
+  biotools_URL <- "https://bio.tools/api/t/?biotoolsID="
+  
+  for (i in 1:length(biotoolsID_vector)){
+    
+    biotoolsID <- biotoolsID_vector[i]
+    
+    #see https://www.rdocumentation.org/packages/utils/versions/3.6.2/topics/URLencode
+    #see https://cran.r-project.org/web/packages/urltools/vignettes/urltools.html
+    response <- GET(URLencode(paste0(biotools_URL, '"', biotoolsID, '"')))
+    data <- content(response, as = "text")
+    
+    #see also https://stackoverflow.com/a/62630236
+    #see also https://stackoverflow.com/a/44448208
+    
+    tool_data <- data %>%
+      enter_object(list) %>% 
+      gather_array(column.name = "tool_index") %>%
+      spread_all %>%
+      #see https://datacarpentry.org/r-socialsci/05-json/index.html
+      as_tibble()
+    
+    if(nrow(tool_data) >= 1){
+      
+      topics <- data %>%
+        enter_object(list) %>% 
+        gather_array(column.name = "tool_index") %>%
+        enter_object() %>%
+        gather_object() %>%
+        json_types() %>%
+        filter(name == "topic") %>%
+        enter_object
+      
+      if(nrow(topics) >= 1){
+        
+        topics_temp <- topics %>% 
+          gather_array(column.name = "topic_index") %>%
+          spread_all
+        
+        topics_string <- topics_temp %>%
+          as_tibble() %>%
+          select(tool_index, term) %>%
+          #see post by G. Grothendieck @ https://stackoverflow.com/a/56810604
+          #see post by Damian @ https://stackoverflow.com/a/45200648
+          group_by(tool_index) %>%
+          summarize(terms = toString(term)) %>%
+          ungroup()
+        
+        tool_data_terms <- tool_data %>%
+          full_join(topics_string, by = "tool_index")
+        
+        biotools <- bind_rows(biotools, tool_data_terms)
+        
+      } else {
+        
+        tool_data_terms <- tool_data %>%
+          mutate(terms = "No term available") 
+        
+        biotools <- bind_rows(biotools, tool_data_terms)
+        
+      }
+      
+    } else {}
+    
+  }
+  
+  return(biotools)
+  
+} 
+
+########################################################
+### join tool metadata with facility module installs ###
+########################################################
+
+join_tool_and_install_metadata <- function(matrix_data, gadi_data, zeus_data, magnus_data, qris_data, galaxy_data){
+  
+  complete_join <- matrix_data %>%
     full_join(qris_data, by = "toolID") %>%
     full_join(gadi_data, by = "toolID") %>%
     full_join(zeus_data, by = "toolID") %>%
@@ -57,15 +115,26 @@ join_and_process_tools <- function(matrix_data, gadi_data, zeus_data, magnus_dat
     filter(`include?` == "y" | is.na(`include?`)) %>%
     #see post by Max @ https://stackoverflow.com/a/55708065
     mutate(`Tool / workflow name` = coalesce(`Tool / workflow name`, toolID)) %>%
-    arrange(`Tool / workflow name`) %>%
-    
-    #https://www.sitepoint.com/use-unicode-create-bullet-points-trademarks-arrows/
-    #see post by SLaks @ https://stackoverflow.com/a/4521389
-    #https://www.w3schools.com/jsref/prop_anchor_text.asp
-    #https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_anchor_text2
-    ###example
-    #<p><a href="url">&#x25cf;</a></p>
-    
+    arrange(`Tool / workflow name`)
+  
+  return(complete_join)
+  
+}
+
+#https://www.sitepoint.com/use-unicode-create-bullet-points-trademarks-arrows/
+#see post by SLaks @ https://stackoverflow.com/a/4521389
+#https://www.w3schools.com/jsref/prop_anchor_text.asp
+#https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_anchor_text2
+###example
+#<p><a href="url">&#x25cf;</a></p>
+
+############################################################
+### integrate bio.tools fields homepage/URL, and topics) ###
+############################################################
+
+process_tool_and_install_metadata <- function(joined_tool_and_install_data){
+  
+  complete_tibble <- joined_tool_and_install_data %>%
     mutate(
       `Galaxy Australia` = case_when(grepl("^[Yy]e?s?$", on_galaxy_australia) ~ "Yes"),
       `Available in Galaxy toolshed` = case_when(
@@ -81,19 +150,24 @@ join_and_process_tools <- function(matrix_data, gadi_data, zeus_data, magnus_dat
     #question url https://stackoverflow.com/questions/43696227/mutate-with-case-when-and-contains
     mutate(
       `Tool / workflow name` = case_when(
-        grepl("https?://", `Info URL`) ~ paste0("<a href='", `Info URL`, "' target='_blank'  rel='noopener noreferrer'>", `Tool / workflow name`, "</a>"),
-        grepl("", `Info URL`) | is.na(`Info URL`) ~ `Tool / workflow name`),
-    
-      `bio.tools` = case_when(grepl("https?://", biotools_link) ~ paste0("<a href='", biotools_link, "' target='_blank'  rel='noopener noreferrer'>&#9679;</a>")),
+        is.na(homepage) & grepl("https?://", `Info URL`) ~ paste0("<a href='", `Info URL`, "' target='_blank'  rel='noopener noreferrer'>", `Tool / workflow name`, "</a>"),
+        grepl("https?://", homepage) ~ paste0("<a href='", homepage, "' target='_blank'  rel='noopener noreferrer'>", `Tool / workflow name`, "</a>"),
+        grepl("", `Info URL`) | is.na(`Info URL`) | is.na(homepage) ~ `Tool / workflow name`),
       
-      #`BioCommons Documentation` = case_when(grepl("https?://", `BioCommons Documentation`) ~ paste0("<a href='", `BioCommons Documentation`, "' target='_blank'  rel='noopener noreferrer'>&#9679;</a>")),
-    
-      `BioContainers` = case_when(grepl("https?://", biocontainers_link) ~ paste0("<a href='", biocontainers_link, "' target='_blank'  rel='noopener noreferrer'>&#9679;</a>"))
+      `bio.tools link` = case_when(!is.na(biotoolsID) ~ paste0("<a href='https://bio.tools/", biotoolsID, "' target='_blank'  rel='noopener noreferrer'>", biotoolsID, "</a>")),
+      
+      #example https://biocontainers.pro/tools/canu
+      `BioContainers link` = case_when(!is.na(biotoolsID) ~ paste0("<a href='https://biocontainers.pro/tools/", biotoolsID, "' target='_blank'  rel='noopener noreferrer'>", biotoolsID, "</a>")),
+      
+      `Topic (EDAM, if available)` = case_when(
+        !is.na(terms) ~ terms,
+        is.na(terms) & !is.na(`Primary purpose (EDAM, if available)`) ~ `Primary purpose (EDAM, if available)`
       )
+    )
   
-  write_tsv(COMPLETE_tibble, "../../external_GitHub_inputs/complete_processed_tool_matrix.tsv")
+  write_tsv(complete_tibble, "../../external_GitHub_inputs/complete_processed_tool_matrix.tsv")
   
-  return(COMPLETE_tibble)
+  return(complete_tibble)
   
   }
 
