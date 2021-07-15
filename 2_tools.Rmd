@@ -11,7 +11,7 @@ title: "ToolFinder"
 </style>
 
 
-This page details a list of tools and workflows installed across several of the [BioCommons infrastructure partner systems](./1_compute_systems.html) and tool installation request mechanisms on these systems. Tool status on other partner infrastructures will be added over time.
+This page lists bioinformatics tools installed across several of the [BioCommons infrastructure partner systems](./1_compute_systems.html) and tool installation request mechanisms on these systems. Tool status on other partner infrastructures will be added over time.
 
 -----
 
@@ -68,8 +68,8 @@ container1 = htmltools::withTags(table(
 
 #see https://stackoverflow.com/a/52152409
 headerCallback <- "function( thead, data, start, end, display ) {
-  $(thead).closest('thead').find('th').eq(0).css('background-color', 'lightblue');
-  $(thead).closest('thead').find('th').eq(1).css('background-color', 'lightgrey');
+  $(thead).closest('thead').find('th').eq(0).css('background-color', '#205a86').css('color', '#ffffff');
+  $(thead).closest('thead').find('th').eq(1).css('background-color', '#2cb77c').css('color', '#ffffff');
 }"
 
 #see https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html
