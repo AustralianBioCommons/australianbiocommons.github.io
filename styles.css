@@ -1,7 +1,4 @@
 
-body {
-  margin-bottom: 60px;
-}
 .footer {
   color: black;
   background-color: #F0F8FF;
@@ -11,3 +8,31 @@ body {
   height: 60px;
   padding: 20px 0;
 }
+
+/* 
+https://www.w3schools.com/howto/howto_js_sidenav.asp
+https://www.w3schools.com/css/css_website_layout.asp
+https://bookdown.org/yihui/rmarkdown-cookbook/html-css.html
+https://stackoverflow.com/a/29298407
+https://stackoverflow.com/a/62798548
+*/
+
+body {
+  font-family: Arial;
+  font-size: 11pt;
+  margin-bottom: 60px;
+}
+
+.navbar-inverse {
+  background-color: #000000;
+}
+.navbar-inverse .navbar-brand {
+  color: #ffffff;
+}
+.navbar-inverse .navbar-nav>li>a {
+  color: #ffffff;
+}
+.navbar-inverse .navbar-nav>.active>a {
+  background-color: #205a86;
+}
+

@@ -1,5 +1,5 @@
 ---
-title: "Bioinformatics tools & workflows on BioCommons partner infrastructures"
+title: "ToolFinder"
 ---
 
 <style type="text/css">
@@ -11,7 +11,7 @@ title: "Bioinformatics tools & workflows on BioCommons partner infrastructures"
 </style>
 
 
-This page details a list of tools and workflows installed across several of the [BioCommons infrastructure partner systems](./1_compute_systems.html) and tool installation request mechanisms on these systems. Tool status on other partner infrastructures will be added over time.
+This page lists bioinformatics tools installed across several of the [BioCommons infrastructure partner systems](./1_compute_systems.html) and tool installation request mechanisms on these systems. Tool status on other partner infrastructures will be added over time.
 
 -----
 
@@ -47,13 +47,51 @@ source("tool_list_generation.R")
 <font size="2">
 ```{r}
 
+#see https://rstudio.github.io/DT/
+#a custom table container
+container1 = htmltools::withTags(table(
+  class = 'display',
+  thead(
+    tr(
+      #see https://stackoverflow.com/q/42153218
+      th(class = 'dt-center', style="font-size:11pt", colspan = 8, 'Tool metadata'),
+      th(class = 'dt-center', style="font-size:11pt", colspan = 5, 'Availability on Australian compute infrastructures')
+    ),
+    tr(
+      lapply(c("Tool / workflow name", "bio.tools documentation", "Tool identifier (module name / bio.tools ID / placeholder)",
+               "Description", "EDAM topics", "Containers available? (BioContainers)", "License", "Available in Galaxy toolshed", 
+               "Galaxy Australia", "NCI (Gadi)", "Pawsey (Zeus)", "Pawsey (Magnus)", 
+               "QRIScloud / UQ-RCC (Flashlite, Awoonga, Tinaroo)"), th)
+    )
+  )
+))
+
+#see https://stackoverflow.com/a/52152409
+headerCallback <- "function( thead, data, start, end, display ) {
+  $(thead).closest('thead').find('th').eq(0).css('background-color', '#205a86').css('color', '#ffffff');
+  $(thead).closest('thead').find('th').eq(1).css('background-color', '#2cb77c').css('color', '#ffffff');
+}"
+
 #see https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html
 #kable(installs, format = "pipe", align = "c")
 
 #https://bookdown.org/yihui/rmarkdown/interactive-documents.html
 #https://rstudio.github.io/DT/
 #https://rstudio.github.io/DT/extensions.html
-datatable(installs, extensions = 'Buttons', options = list(pageLength = 20, dom = 'Bfrtip', buttons = I('colvis')), 
+datatable(installs,
+          #see https://rstudio.github.io/DT/
+          container = container1, 
+          extensions = 'Buttons', rownames = FALSE,
+          options = list(
+            #see https://stackoverflow.com/a/52152409
+            headerCallback = JS(headerCallback), 
+            pageLength = 20, 
+            dom = 'Bfrtip', 
+            buttons = c('copy', 'csv', I('colvis')),
+            #see https://stackoverflow.com/a/32428537
+            columnDefs = list(list(visible=FALSE, targets = c(2,6)),
+                              list(className = 'dt-center', targets = c(0:2, 5:12)))
+            ), 
           class = 'cell-border stripe', escape = FALSE)
 
 ```
@@ -64,10 +102,10 @@ datatable(installs, extensions = 'Buttons', options = list(pageLength = 20, dom 
 - Table last updated ```r today()```.
 - Software documentation is linked from the *Tool / workflow name* in the first column.
 - The *Tool identifier* column contains an identifier for the tool / workflow: typically either the module name (used for matching to HPC lists) or a  placeholder value.
-- The *Primary purpose* column categorises the tools by purpose, using an [EDAM](https://github.com/edamontology/edamontology) *topic* where possible.
+- The *EDAM topics* column categorises the tools by purpose, using an [EDAM](https://github.com/edamontology/edamontology) *term* where possible.
 - For tools which are not currently installed on [Galaxy Australia](https://usegalaxy.org.au/), but which are available [in the Galaxy app store (aka toolshed)](https://toolshed.g2.bx.psu.edu/), the *Available in Galaxy toolshed* column launches a toolshed search using the link label as the search term.
-- More information about a tool can be found by following the link in the [bio.tools](https://bio.tools/) column.
-- When a tool has been containerised to allow for easier installation on any compute infrastructure, a link to the containerised software that can be downloaded  is shown in the [BioContainers](https://biocontainers.pro/#/) column.
+- More information about a tool can be found by following the link in the *[bio.tools](https://bio.tools/) documentation* column.
+- When a tool has been containerised to allow for easier installation on any compute infrastructure, a link to the containerised software that can be downloaded from [BioContainers](https://biocontainers.pro/#/) is shown in the *Containers available? (BioContainers)* column.
 - The list currently includes some tools that are not used for bioinformatics.
 - The source material for the table is currently manually curated, and while we endeavour to keep the information as current as possible, there is a natural limit to the volume of information maintained here. Production of this information will be automated during 2021, and tools that are not relevant for bioinformatics analyses removed.
 
