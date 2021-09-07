@@ -1,0 +1,98 @@
+---
+title: "WorkflowFinder"
+---
+
+<style type="text/css">
+.main-container {
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
+
+The interactive table below allows you to search for workflows registered by Australian BioCommons partners on [workflowhub](https://workflowhub.eu/programmes/8).
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE)
+library(tidyverse)
+library(tidyjson)
+library(httr)
+library(DT)
+library(lubridate)
+
+###########################
+### external .R sources ###
+###########################
+#see https://stackoverflow.com/questions/13548266/define-all-functions-in-one-r-file-call-them-from-another-r-file-how-if-pos
+source("workflow_list_generation.R")
+
+```
+
+---
+
+---
+
+<font size="2">
+```{r}
+
+#see https://rstudio.github.io/DT/
+#a custom table container
+container2 = htmltools::withTags(table(
+  class = 'display',
+  thead(
+    tr(
+      #see https://stackoverflow.com/q/42153218
+      th(class = 'dt-center', style="font-size:11pt", colspan = 6, 'Workflow metadata')#,
+      #th(class = 'dt-center', style="font-size:11pt", colspan = 1, 'Deployment')
+    ),
+    tr(
+      lapply(c("Title", "Tag(s)", "Description", "License", "Workflow Class", "Contributing team(s)"), th)
+    )
+  )
+))
+
+#see https://stackoverflow.com/a/52152409
+headerCallback2 <- "function( thead, data, start, end, display ) {
+  $(thead).closest('thead').find('th').eq(0).css('background-color', '#205a86').css('color', '#ffffff');
+}"
+
+#$(thead).closest('thead').find('th').eq(1).css('background-color', '#2cb77c').css('color', '#ffffff');
+
+#https://bookdown.org/yihui/rmarkdown/interactive-documents.html
+#https://rstudio.github.io/DT/
+#https://rstudio.github.io/DT/extensions.html
+formatted %>%
+  datatable(
+    container = container2,
+    extensions = 'Buttons', rownames = FALSE,
+    options = list(
+      #see https://stackoverflow.com/a/52152409
+      headerCallback = JS(headerCallback2), 
+      pageLength = 10, 
+      dom = 'Bfrtip', 
+      buttons = c('copy', 'csv', I('colvis')),
+      #see https://stackoverflow.com/a/32428537
+      #see https://rstudio.github.io/DT/options.html
+      columnDefs = list(list(className = 'dt-center', targets = c(0,3:5)),
+                        list(width = '150px', targets = c(1))
+                        )
+            ), 
+    class = 'cell-border stripe', escape = FALSE)
+
+```
+</font>
+
+**Please note:**
+
+- This table was last updated on ```r today()```.
+
+---
+
+---
+
+```{r echo = FALSE, message = FALSE}
+#see https://bookdown.org/yihui/rmarkdown-cookbook/write-bib.html
+library(knitr)
+write_bib(c(.packages()), "./outputs/workflows_packages.bib")
+```

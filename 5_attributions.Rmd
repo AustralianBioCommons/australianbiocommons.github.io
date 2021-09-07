@@ -16,6 +16,12 @@ nocite: '@*'
 - Ison, J., Kalaš, M., Jonassen, I., Bolser, D., Uludag, M., McWilliam, H., Malone, J., Lopez, R., Pettifer, S. and Rice, P. 2013. EDAM: an ontology of bioinformatics operations, types of data and identifiers, topics and formats. Bioinformatics, 29(10): 1325-1332. [DOI](https://doi.org/10.1093/bioinformatics/btt113) PMID: 23479348 *Open Access*
 - [EDAM ontology GitHub](https://github.com/edamontology/edamontology)
 
+### WorkflowHub was used to register workflows
+
+- Carole Goble; Stian Soiland-Reyes; Finn Bacall; Stuart Owen; Alan Williams; Ignacio Eguinoa; Bert Droesbeke; Simone Leo; Luca Pireddu; Laura Rodríguez-Navas; José Mª Fernández; Salvador Capella-Gutierrez; Hervé Ménager; Björn Grüning; Beatriz Serrano-Solano; Philip Ewels; Frederik Coppens (2021):
+Implementing FAIR Digital Objects in the EOSC-Life Workflow Collaboratory.
+Manuscript in preparation https://doi.org/10.5281/zenodo.4605654
+
 ### For site construction
 
 - Rmarkdown
@@ -75,8 +81,9 @@ compute <- ReadBib("./outputs/compute_systems_packages.bib")
 help <- ReadBib("./outputs/help_packages.bib")
 index <- ReadBib("./outputs/index_packages.bib")
 tools <- ReadBib("./outputs/tools_packages.bib")
+workflows <- ReadBib("./outputs/workflows_packages.bib")
 
-bib_all <- tools + index + biocommons + compute + help
+bib_all <- tools + index + biocommons + compute + help + workflows
 WriteBib(bib_all, "./outputs/bib_all.bib")
 ```
 

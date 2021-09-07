@@ -11,6 +11,8 @@ navbar:
       href: 1_compute_systems.html
     - text: "ToolFinder"
       href: 2_tools.html
+    - text: "WorkflowFinder"
+      href: 2_1_workflows.html
     - text: "Workflows & Documentation"
       href: 3_biocommons_activities.html
     - text: "Help!"

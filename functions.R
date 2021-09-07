@@ -361,3 +361,90 @@ parse_GA_yaml <- function(AU_files){
   return(AU_tools)
 }
 
+
+########################################
+### Find WorkflowHub space workflows ###
+########################################
+
+find_workflows <- function(search_space){
+  
+  space_content <- content(GET(search_space), as = "text") %>%
+    enter_object("data") %>%
+    gather_array() %>%
+    spread_all() %>%
+    as_tibble() %>% 
+    mutate(follow_up_search_term = paste0("https://workflowhub.eu", links.self, ".json"))
+  
+  space_workflows <- tibble()
+  
+  projects <- read_tsv("../../external_GitHub_inputs/biocommons_projects.tsv")
+  
+  for (workflow in (1:nrow(space_content))){
+    
+    #see also https://stackoverflow.com/a/62630236
+    #see also https://stackoverflow.com/a/44448208
+    
+    workflow_id_links <- space_content[workflow,] %>%
+      select(wf_id = id, links.self)
+    
+    data <- content(GET(space_content[workflow,]$follow_up_search_term), as = "text") %>%
+      enter_object("data")
+    
+    attributes_all <- data %>%
+      enter_object("attributes") %>%
+      spread_all %>%
+      #see https://datacarpentry.org/r-socialsci/05-json/index.html
+      as_tibble %>%
+      bind_cols(workflow_id_links) %>%
+      select(wf_id, Title = title, Description = description, License = license, `Workflow Class` = workflow_class.title, links.self)
+    #select(-document.id)
+    
+    attributes_tags <- data %>%
+      enter_object("attributes") %>%
+      enter_object("tags") %>%
+      gather_array() %>%
+      append_values_string("tags") %>%
+      #see https://datacarpentry.org/r-socialsci/05-json/index.html
+      as_tibble() %>%
+      #see post by G. Grothendieck @ https://stackoverflow.com/a/56810604
+      #see post by Damian @ https://stackoverflow.com/a/45200648
+      group_by(document.id) %>%
+      summarize(Tags = toString(tags)) %>%
+      ungroup() %>%
+      bind_cols(workflow_id_links) %>%
+      #see post by Chris @ https://stackoverflow.com/a/33191810
+      mutate(Tags = str_replace_all(Tags, pattern = ", " , ", ")) %>%
+      select(wf_id, Tags)
+    
+    attributes_projects <- data %>%
+      enter_object(relationships) %>%
+      enter_object(projects) %>%
+      gather_object() %>%
+      gather_array() %>%
+      spread_all %>%
+      as_tibble() %>%
+      mutate(project_id = as.numeric(id)) %>%
+      mutate(wf_id = workflow_id_links$wf_id) %>%
+      select(wf_id, project_id) %>%
+      left_join(projects, by = "project_id") %>%
+      #see post by G. Grothendieck @ https://stackoverflow.com/a/56810604
+      #see post by Damian @ https://stackoverflow.com/a/45200648
+      group_by(wf_id) %>%
+      summarize(Teams = toString(project_name)) %>%
+      ungroup() %>%
+      #see post by Chris @ https://stackoverflow.com/a/33191810
+      mutate(Teams = str_replace_all(Teams, pattern = ", " , "<br />"))
+    
+    joins <- attributes_all %>%
+      left_join(attributes_tags, by = "wf_id") %>%
+      left_join(attributes_projects, by = "wf_id")
+    
+    space_workflows <- bind_rows(space_workflows, joins)
+    
+  }
+  
+  return(space_workflows)
+  
+  #print(space_workflows)
+  
+}
