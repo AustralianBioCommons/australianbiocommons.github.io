@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>WorkflowFinder</title>
+
+<script src="site_libs/jquery-3.5.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<script src="site_libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
+<link href="site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
+<script src="site_libs/datatables-binding-0.17/datatables.js"></script>
+<link href="site_libs/dt-core-1.10.20/css/jquery.dataTables.min.css" rel="stylesheet" />
+<link href="site_libs/dt-core-1.10.20/css/jquery.dataTables.extra.css" rel="stylesheet" />
+<script src="site_libs/dt-core-1.10.20/js/jquery.dataTables.min.js"></script>
+<link href="site_libs/dt-ext-buttons-1.10.20/css/buttons.dataTables.min.css" rel="stylesheet" />
+<script src="site_libs/dt-ext-buttons-1.10.20/js/dataTables.buttons.min.js"></script>
+<script src="site_libs/dt-ext-buttons-1.10.20/js/buttons.flash.min.js"></script>
+<script src="site_libs/dt-ext-buttons-1.10.20/js/buttons.html5.min.js"></script>
+<script src="site_libs/dt-ext-buttons-1.10.20/js/buttons.colVis.min.js"></script>
+<script src="site_libs/dt-ext-buttons-1.10.20/js/buttons.print.min.js"></script>
+<link href="site_libs/crosstalk-1.1.1/css/crosstalk.css" rel="stylesheet" />
+<script src="site_libs/crosstalk-1.1.1/js/crosstalk.min.js"></script>
+
+<!DOCTYPE html>
+<link rel="shortcut icon" href="./images/Australian-Biocommons-Favicon.png" />
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T8GWK081T9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-T8GWK081T9');
+</script>
+<!--/html_preserve-->
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-inverse  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Home</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="1_compute_systems.html">Compute systems</a>
+</li>
+<li>
+  <a href="2_tools.html">ToolFinder</a>
+</li>
+<li>
+  <a href="2_1_workflows.html">WorkflowFinder</a>
+</li>
+<li>
+  <a href="3_biocommons_activities.html">Workflows &amp; Documentation</a>
+</li>
+<li>
+  <a href="4_help.html">Help!</a>
+</li>
+<li>
+  <a href="5_attributions.html">Attributions</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">WorkflowFinder</h1>
+
+</div>
+
+
+<style type="text/css">
+.main-container {
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+<p>The interactive table below allows you to search for workflows registered by Australian BioCommons partners on <a href="https://workflowhub.eu/programmes/8">workflowhub</a>.</p>
+<hr />
+<hr />
+<p><font size="2"></p>
+<div id="htmlwidget-92d7119bea643af42fbc" style="width:100%;height:auto;" class="datatables html-widget"></div>
+<script type="application/json" data-for="htmlwidget-92d7119bea643af42fbc">{"x":{"filter":"none","class":"cell-border stripe","extensions":["Buttons"],"data":[["<a href='https://workflowhub.eu/workflows/142' target='_blank'  rel='noopener noreferrer'>16S_biodiversity_BIOM<\/a>","<a href='https://workflowhub.eu/workflows/153' target='_blank'  rel='noopener noreferrer'>Bootstrapping-for-BQSR @ NCI-Gadi<\/a>","<a href='https://workflowhub.eu/workflows/146' target='_blank'  rel='noopener noreferrer'>Fastq-to-bam @ NCI-Gadi<\/a>","<a href='https://workflowhub.eu/workflows/150' target='_blank'  rel='noopener noreferrer'>Flashlite-Juicer<\/a>","<a href='https://workflowhub.eu/workflows/151' target='_blank'  rel='noopener noreferrer'>Flashlite-Supernova<\/a>","<a href='https://workflowhub.eu/workflows/149' target='_blank'  rel='noopener noreferrer'>Flashlite-Trinity<\/a>","<a href='https://workflowhub.eu/workflows/147' target='_blank'  rel='noopener noreferrer'>GATK4 Fastq to joint-called cohort VCF with Cromwell on local cluster (no job scheduler)<\/a>","<a href='https://workflowhub.eu/workflows/144' target='_blank'  rel='noopener noreferrer'>GATK4 Fastq to joint-called cohort VCF with Cromwell on SLURM<\/a>","<a href='https://workflowhub.eu/workflows/143' target='_blank'  rel='noopener noreferrer'>Germline-ShortV @ NCI-Gadi<\/a>","<a href='https://workflowhub.eu/workflows/140' target='_blank'  rel='noopener noreferrer'>microPIPE: a pipeline for high-quality bacterial genome construction using ONT and Illumina sequencing<\/a>","<a href='https://workflowhub.eu/workflows/152' target='_blank'  rel='noopener noreferrer'>RNASeq-DE @ NCI-Gadi<\/a>","<a href='https://workflowhub.eu/workflows/148' target='_blank'  rel='noopener noreferrer'>Somatic-ShortV @ NCI-Gadi<\/a>","<a href='https://workflowhub.eu/workflows/145' target='_blank'  rel='noopener noreferrer'>Trinity @ NCI-Gadi<\/a>","<a href='https://workflowhub.eu/workflows/114' target='_blank'  rel='noopener noreferrer'>Trinity RNA Assembly<\/a>"],["MetaDEGalaxy","Alignment, BQSR, Bootstrapping, DNA, GATK4, Genomics, INDELs, NCI, NCI-Gadi, PBS, SNPs, WGS, illumina, model, non-model, scalable, variant calling","Alignment, BROAD, BWA-mem, DNA, Gadi, Genomics, NCI, PBS, WGS, genome, mapping, scalable","BWA, FASTQ, Flashlite, Hi-C, Juicer, PBS, TAD, map, scalable, topologically associating domains","10X, Flashlite, Supernova, TELLSeq","Assembly, PBS, Transcriptomics, container, de novo, global assemblies, illumina, rna, rna-seq, salmon, scalable, singularity, strandedness, transcriptome, trinity","Alignment, GATK4, Genomics, INDELs, SNPs, variant_calling, workflow","Alignment, GATK4, Genomics, INDELs, SNPs, variant_calling","BROAD, DNA, DNA-seq, GATK4, Genomics, Germline, HaplotyeCaller, INDELs, SNPs, WGS, genome, variant_calling","Assembly, Nextflow, ONT, bacterial-genomics, workflow","BBduk, DE, FASTQ, FastQC, Gadi, HTSeq, MultiQC, NCI, NCI-Gadi, PBS, RNASEQ, RSeQC, SAMTools, STAR, bash, counts, differential expression, differential_expression, expression, illumina, parallel, rna, rna-seq, scalable, workflow","GATK4, Gadi, INDELs, Mutect2, NCI, NCI Gadi, NCI-Gadi, SNPs, Somatic, VCF, cancer, scalable, tumour, variant_calling","Assembly, Gadi, NCI, PBS, RNASEQ, Transcriptomics, rna, rna-seq, scalable, trinity","Assembly, Nextflow, RNASEQ, Transcriptomics"],["This is a Galaxy workflow that uses to convert the16S BIOM file to table and figures. It is part of the metaDEGalaxy workflow MetaDEGalaxy: Galaxy workflow for differential abundance analysis of 16s metagenomic data.  ...","Bootstrapping-for-BQSR @ NCI-Gadi is a pipeline for bootstrapping a variant resource to enable GATK base quality score recalibration (BQSR) for non-model organisms that lack a publicly available variant resource. This implementation is optimised for the National Compute Infrastucture's Gadi HPC. Mul ...","Fastq-to-BAM @ NCI-Gadi is a genome alignment workflow that takes raw FASTQ files, aligns them to a reference genome and outputs analysis ready BAM files. This workflow is designed for the National Computational Infrastructure's (NCI) Gadi supercompter, leveraging multiple nodes on NCI Gadi to run a ...","Flashlite-Juicer is a PBS implementation of [Juicer](https://github.com/aidenlab/juicer) for University of Queensland's Flashlite HPC.<br /> ...","The Flashlite-Supernova pipeline runs Supernova to generate phased whole-genome de novo assemblies from a Chromium prepared library on [University of Queensland's HPC, Flashlite](https://rcc.uq.edu.au/flashlite). <br /> ...","Flashlite-Trinity contains two workflows that run Trinity on the [University of Queensland's HPC, Flashlite](https://rcc.uq.edu.au/flashlite).  Trinity performs de novo transcriptome assembly of RNA-seq data by combining three independent software modules Inchworm, Chrysalis and Butterfly to process ...","# Local Cromwell implementation of GATK4 germline variant calling pipeline<br />See the [GATK](https://gatk.broadinstitute.org/hc/en-us) website for more information on this toolset <br />## Assumptions<br />- Using hg38 human reference genome build<br />- Running 'locally' i.e. not using HPC/SLURM  ...","# SLURM HPC Cromwell implementation of GATK4 germline variant calling pipeline<br />See the [GATK](https://gatk.broadinstitute.org/hc/en-us) website for more information on this toolset <br />## Assumptions<br />- Using hg38 human reference genome build<br />- Running using HPC/SLURM scheduling. Thi ...","Germline-ShortV @ NCI-Gadi is an implementation of the BROAD Institute's best practice workflow for germline short variant discovery. This implementation is optimised for the National Compute Infrastucture's Gadi HPC, utilising scatter-gather parallelism to enable use of multiple nodes with high CPU ...","microPIPE was developed to automate high-quality complete bacterial genome assembly using Oxford Nanopore Sequencing in combination with Illumina sequencing.<br /><br />To build microPIPE we evaluated the performance of several tools at each step of bacterial genome assembly, including basecalling,  ...","RNASeq-DE @ NCI-Gadi processes RNA sequencing data (single, paired and/or multiplexed) for differential expression (raw FASTQ to counts). This pipeline consists of multiple stages and is designed for the National Computational Infrastructure's (NCI) Gadi supercompter, leveraging multiple nodes to ru ...","Somatic-ShortV @ NCI-Gadi is a variant calling pipeline that calls somatic short variants (SNPs and indels) from tumour and matched normal BAM files following [GATK's Best Practice Workflow](https://gatk.broadinstitute.org/hc/en-us/articles/360035894731-Somatic-short-variant-discovery-SNVs-Indels-). ...","Description: Trinity @ NCI-Gadi contains a staged [Trinity](https://github.com/trinityrnaseq/trinityrnaseq/wiki) workflow that can be run on the National Computational Infrastructure’s (NCI) Gadi supercomputer. Trinity performs de novo transcriptome assembly of RNA-seq data by combining three indepe ...","A porting of the Trinity RNA assembly pipeline, https://trinityrnaseq.github.io, that uses Nextflow to handle the underlying sub-tasks.<br />This enables additional capabilities to better use HPC resources, such as packing of tasks to fill up nodes and use of node-local disks to improve I/O.<br />By ..."],["GPL-3.0","GPL-3.0","GPL-3.0","GPL-3.0","GPL-3.0","GPL-3.0","Apache-2.0","Apache-2.0","GPL-3.0","GPL-3.0","GPL-3.0","GPL-3.0","Apache-2.0","GPL-3.0"],["Galaxy","Shell Script","Shell Script","Shell Script","Shell Script","Shell Script","Unrecognized workflow type","Unrecognized workflow type","Shell Script","Nextflow","Shell Script","Shell Script","Shell Script","Nextflow"],["Galaxy Australia","Sydney Informatics Hub","Australian BioCommons<br />Sydney Informatics Hub","Sydney Informatics Hub","Australian BioCommons<br />Sydney Informatics Hub","Australian BioCommons<br />Sydney Informatics Hub","Australian BioCommons<br />Pawsey Supercomputing Centre","Australian BioCommons<br />Pawsey Supercomputing Centre","Australian BioCommons<br />Sydney Informatics Hub","QCIF Bioinformatics","Sydney Informatics Hub","Sydney Informatics Hub","Australian BioCommons<br />Sydney Informatics Hub","Australian BioCommons"]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th class=\"dt-center\" style=\"font-size:11pt\" colspan=\"6\">Workflow metadata<\/th>\n    <\/tr>\n    <tr>\n      <th>Title<\/th>\n      <th>Tag(s)<\/th>\n      <th>Description<\/th>\n      <th>License<\/th>\n      <th>Workflow Class<\/th>\n      <th>Contributing team(s)<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"headerCallback":"function( thead, data, start, end, display ) {\n  $(thead).closest('thead').find('th').eq(0).css('background-color', '#205a86').css('color', '#ffffff');\n}","pageLength":10,"dom":"Bfrtip","buttons":["copy","csv","colvis"],"columnDefs":[{"className":"dt-center","targets":[0,3,4,5]},{"width":"150px","targets":1}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":["options.headerCallback"],"jsHooks":[]}</script>
+<p></font></p>
+<p><strong>Please note:</strong></p>
+<ul>
+<li>This table was last updated on <code>2021-09-07</code>.</li>
+</ul>
+<hr />
+<hr />
+
+
+<!DOCTYPE html>
+
+<div class="footer">This site uses Cookies. We use cookies to help the website run effectively. To find out more, read our <a href="https://www.biocommons.org.au/privacy">Privacy</a> and <a href="https://www.biocommons.org.au/cookies">Cookies</a> Statements. </div>
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
