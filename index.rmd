@@ -16,7 +16,7 @@ This site presents a landscape view of tools, workflows and compute systems avai
 
 **Note:** you can reach this information using the tabs at the top of the page as well.
 
-- [The compute systems ](1_compute_systems.html) at the [BioCommons partner infrastructures](https://www.biocommons.org.au/biocloud)
+- A list of the Australian BioCommons infrastructure partner compute systems is [available here](http://support.biocommons.org.au/support/solutions/articles/6000251977-compute-systems-at-the-biocommons-partner-infrastructures).
 - [Tool & workflow information and install status](2_tools.html) on BioCommons partner infrastructures
 - [Activities that have installed, tested and optimised tools and workflows](3_biocommons_activities.html)
 - [Help!](4_help.html)

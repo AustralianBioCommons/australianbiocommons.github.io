@@ -7,13 +7,11 @@ navbar:
   title: "Home"
   type: inverse
   left:
-    - text: "Compute systems"
-      href: 1_compute_systems.html
     - text: "ToolFinder"
       href: 2_tools.html
     - text: "WorkflowFinder"
       href: 2_1_workflows.html
-    - text: "Workflows & Documentation"
+    - text: "Optimised tools & workflows"
       href: 3_biocommons_activities.html
     - text: "Help!"
       href: 4_help.html
