@@ -75,7 +75,7 @@ biotools <- access_biotools_api_biotoolsID(tool_list_for_biotools)# %>%
 ###############################################
 
 biotools <- biotools %>%
-  select(accessibility:owner, homepage:additionDate, license, maturity, terms) %>%
+  select(name, description, homepage, biotoolsID, license, maturity, terms, accessibility, owner, additionDate) %>%
   # to remove duplicate biotoolsIDs
   distinct()
 
