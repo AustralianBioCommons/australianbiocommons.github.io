@@ -4,7 +4,7 @@
 name: "Australian BioCommons"
 output_dir: "docs"
 navbar:
-  title: "Home"
+  title: "About"
   type: inverse
   left:
     - text: "ToolFinder"

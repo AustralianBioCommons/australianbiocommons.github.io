@@ -2,7 +2,7 @@
 title: "Australian BioCommons Technical Documentation"
 ---
 
-This site presents a landscape view of tools, workflows and compute systems available across Australian BioCommons partners.
+This site presents a landscape view of tools & workflows available across Australian BioCommons partners.
 
 <center>
 [![](./images/Australian-Biocommons-Logo-Horizontal-300dpi.jpg){width=40%}](https://www.biocommons.org.au/)
@@ -16,10 +16,10 @@ This site presents a landscape view of tools, workflows and compute systems avai
 
 **Note:** you can reach this information using the tabs at the top of the page as well.
 
-- A list of the Australian BioCommons infrastructure partner compute systems is [available here](http://support.biocommons.org.au/support/solutions/articles/6000251977-compute-systems-at-the-biocommons-partner-infrastructures).
 - Visit [**ToolFinder**](https://australianbiocommons.github.io/2_tools.html) to discover which versions of bioinformatics tools are installed across several of the [BioCommons infrastructure partner systems](http://support.biocommons.org.au/support/solutions/articles/6000251977-compute-systems-at-the-biocommons-partner-infrastructures).
 - Visit [**WorkflowFinder**](https://australianbiocommons.github.io/2_1_workflows.html) to search for workflows registered by Australian BioCommons partners on [workflowhub](https://workflowhub.eu/programmes/8).
-- [Activities that have installed, tested and optimised tools and workflows](3_biocommons_activities.html)
+- Activities that have [**installed, tested and optimised tools and workflows**](3_biocommons_activities.html)
+- A list of the Australian BioCommons infrastructure partner compute systems is [available here](http://support.biocommons.org.au/support/solutions/articles/6000251977-compute-systems-at-the-biocommons-partner-infrastructures).
 - For Help please visit the [**Australian BioCommons Support**](http://support.biocommons.org.au/support/solutions) page.
 
 -----

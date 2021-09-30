@@ -16,8 +16,6 @@ Documentation from [BioCommons Communities of practice](https://www.biocommons.o
 
 -----
 
-# Australian BioCommons tool and workflow documentation
-
 ```{r setup, include = FALSE, warning = FALSE}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
 library(tidyverse)
@@ -49,7 +47,7 @@ kable(biocommons, format = "pipe", align = "c")
 
 -----
 
-# How is the documentation structured?
+### How is the documentation structured?
 
 The documentation is structured using our [documentation guidelines](https://github.com/AustralianBioCommons/doc_guidelines/releases) (for [Tools](https://github.com/AustralianBioCommons/doc_guidelines/blob/master/docs/tools.md), [Workflows](https://github.com/AustralianBioCommons/doc_guidelines/blob/master/docs/workflows.md) or [Infrastructure](https://github.com/AustralianBioCommons/doc_guidelines/blob/master/docs/infrastructure_optimisation.md)) that have been developed through engagement with community bioinformaticians. Real-world use cases informed iterative development to produce a first version of these guidelines.
 
