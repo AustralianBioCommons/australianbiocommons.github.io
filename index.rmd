@@ -17,9 +17,10 @@ This site presents a landscape view of tools, workflows and compute systems avai
 **Note:** you can reach this information using the tabs at the top of the page as well.
 
 - A list of the Australian BioCommons infrastructure partner compute systems is [available here](http://support.biocommons.org.au/support/solutions/articles/6000251977-compute-systems-at-the-biocommons-partner-infrastructures).
-- [Tool & workflow information and install status](2_tools.html) on BioCommons partner infrastructures
+- Visit [**ToolFinder**](https://australianbiocommons.github.io/2_tools.html) to discover which versions of bioinformatics tools are installed across several of the [BioCommons infrastructure partner systems](http://support.biocommons.org.au/support/solutions/articles/6000251977-compute-systems-at-the-biocommons-partner-infrastructures).
+- Visit [**WorkflowFinder**](https://australianbiocommons.github.io/2_1_workflows.html) to search for workflows registered by Australian BioCommons partners on [workflowhub](https://workflowhub.eu/programmes/8).
 - [Activities that have installed, tested and optimised tools and workflows](3_biocommons_activities.html)
-- [Help!](4_help.html)
+- For Help please visit the [**Australian BioCommons Support**](http://support.biocommons.org.au/support/solutions) page.
 
 -----
 
@@ -29,18 +30,6 @@ This site presents a landscape view of tools, workflows and compute systems avai
 
 * Any information is missing: for example, you have installed a tool or workflow successfully on your project allocation at a partner infrastructure and would like to tell the world.
 * You have ideas / suggestions to improve the information offered here.
-
------
-
------
-
-# What is the [Australian BioCommons](https://www.biocommons.org.au/)?
-
-The [Australian BioCommons](https://www.biocommons.org.au/) is an ambitious new digital infrastructure capability that is enhancing Australian research in its ability to understand the molecular basis of life across environmental, agricultural and biomedical science. 
-
-This large-scale investment in digital infrastructure is ensuring Australian life science research remains globally competitive, providing access to the tools, methods and training researchers require to respond to national challenges such as food security, environmental conservation and disease treatments.
-
-The BioCommons is informing the development of a new capability for the estimated 30,000 publicly funded bioscience researchers in Australia, and investigating and providing recommendations for the services and tools that are needed to make sense of data on subjects such as DNA sequencing, proteomic and metabolic analysis at scale.
 
 -----
 

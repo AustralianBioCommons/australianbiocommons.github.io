@@ -11,7 +11,7 @@ title: "ToolFinder"
 </style>
 
 
-This page lists bioinformatics tools installed across several of the [BioCommons infrastructure partner systems](./1_compute_systems.html) and tool installation request mechanisms on these systems. Tool status on other partner infrastructures will be added over time.
+This page lists bioinformatics tools installed across several of the [BioCommons infrastructure partner systems](http://support.biocommons.org.au/support/solutions/articles/6000251977-compute-systems-at-the-biocommons-partner-infrastructures) and tool installation request mechanisms on these systems. Tool status on other partner infrastructures will be added over time.
 
 -----
 

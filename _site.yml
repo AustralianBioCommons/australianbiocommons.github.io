@@ -13,8 +13,6 @@ navbar:
       href: 2_1_workflows.html
     - text: "Optimised tools & workflows"
       href: 3_biocommons_activities.html
-    - text: "Help!"
-      href: 4_help.html
     - text: "Attributions"
       href: 5_attributions.html
 output:
