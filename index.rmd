@@ -26,16 +26,13 @@ This site presents a landscape view of tools & workflows available across Austra
 
 -----
 
-# Please let us know via a [GoogleForm](https://forms.gle/BgbBeGfAV6396p797), or [GitHub issues](https://github.com/AustralianBioCommons/australianbiocommons.github.io/issues), if...
-
-* Any information is missing: for example, you have installed a tool or workflow successfully on your project allocation at a partner infrastructure and would like to tell the world.
-* You have ideas / suggestions to improve the information offered here.
+## We welcome feedback: please provide your suggestions / comments via [GoogleForm](https://forms.gle/BgbBeGfAV6396p797) or [GitHub issues](https://github.com/AustralianBioCommons/australianbiocommons.github.io/issues)
 
 -----
 
 -----
 
-# Acknowledgements
+## Acknowledgements
 
 The information presented here is part of [collaborative activities](https://www.biocommons.org.au/activities) coordinated by the Australian BioCommons. These activities draw upon the expertise and enthusiasm of the BioCommons partner infrastructures and the Australian bioinformatics community, which includes:
 
