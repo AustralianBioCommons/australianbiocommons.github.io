@@ -47,7 +47,7 @@ workflows_final <- bind_cols(formatted, workflow_descriptions) %>%
   select(-Description) %>%
   select(Title, Tags, `Workflow descriptions` = workflow_descriptions,
          License:Teams) %>%
-  mutate(infrastructure_temp = str_extract(`Workflow descriptions`, "Infrastructure_deployment_metadata: ([A-Za-z]+ \\([A-Za-z]+\\))")) %>%
+  mutate(infrastructure_temp = str_extract(`Workflow descriptions`, "Infrastructure_deployment_metadata: ([A-Za-z ]+ \\([A-Za-z]+\\))")) %>%
   #see https://tidyr.tidyverse.org/reference/separate.html
   separate(infrastructure_temp, into = c("temp", "Successful infrastructure deployment(s)"), sep = ": ") %>%
   select(-temp) %>%
