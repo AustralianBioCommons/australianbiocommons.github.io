@@ -60,22 +60,74 @@ class Dataprovider:
     def _render(self, data):
         pass
 
+
 class ToolMatrixDataProvider(Dataprovider):
-    def __init__(self,filename):
+    def __init__(self, filename):
         super().__init__()
         self.filename = filename
         self.identifier = "TOOL_MATRIX"
 
     def _query_remote(self):
         self.available_data = {}
-        data = pd.read_excel(self.filename,header=2)
+        data = pd.read_excel(self.filename, header=2)
 
-        for idx,row in data.iterrows():
+        for idx, row in data.iterrows():
             self.available_data[row.toolID] = row.copy()
 
     def _render(self, data):
         return {"show": data["include?"]}
 
+
+class ZeusDataProvider(Dataprovider):
+    def __init__(self, filename):
+        super().__init__()
+        self.filename = filename
+        self.identifier = "ZEUS"
+
+    def _query_remote(self):
+        self.available_data = {}
+        data = pd.read_csv(self.filename, delimiter="/", header=None)
+        data.columns = ["toolID", "version"]
+
+        for idx, row in data.iterrows():
+            self.available_data[row.toolID] = row.version
+
+    def _render(self, data):
+        return data
+
+class MagnusDataProvider(Dataprovider):
+    def __init__(self, filename):
+        super().__init__()
+        self.filename = filename
+        self.identifier = "MAGNUS"
+
+    def _query_remote(self):
+        self.available_data = {}
+        data = pd.read_csv(self.filename, delimiter="/", header=None)
+        data.columns = ["toolID", "version"]
+
+        for idx, row in data.iterrows():
+            self.available_data[row.toolID] = row.version
+
+    def _render(self, data):
+        return data
+
+class QriscloudDataProvider(Dataprovider):
+    def __init__(self, filename):
+        super().__init__()
+        self.filename = filename
+        self.identifier = "QRIScloud"
+
+    def _query_remote(self):
+        self.available_data = {}
+        data = pd.read_csv(self.filename, delimiter="/", header=None)
+        data.columns = ["toolID", "version"]
+
+        for idx, row in data.iterrows():
+            self.available_data[row.toolID] = row.version
+
+    def _render(self, data):
+        return data
 
 
 class Tool:
@@ -109,11 +161,11 @@ class Tool:
 class ToolDB:
     """represents the database for all known tools"""
 
-    def __init__(self,tool_matrix_file):
+    def __init__(self, tool_matrix_file):
         self.db = {}
         self.dataprovider: List[Dataprovider]
         self.dataprovider = []
-        data = pd.read_excel(tool_matrix_file,header=2)
+        data = pd.read_excel(tool_matrix_file, header=2)
         for i in data.toolID:
             self.db[i] = Tool(i)
 
