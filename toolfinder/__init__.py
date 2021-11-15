@@ -13,7 +13,7 @@ class Dataprovider:
         self.identifier = ""
         """available_data is keyed buy the toolid and should contain all information received by this data provider"""
         self.available_data = {}
-        self.last_queried = datetime.datetime.min()
+        self.last_queried = datetime.datetime.min
 
     def query_remote(self):
         if self._needs_querying():
@@ -60,6 +60,23 @@ class Dataprovider:
     def _render(self, data):
         pass
 
+class ToolMatrixDataProvider(Dataprovider):
+    def __init__(self,filename):
+        super().__init__()
+        self.filename = filename
+        self.identifier = "TOOL_MATRIX"
+
+    def _query_remote(self):
+        self.available_data = {}
+        data = pd.read_excel(self.filename,header=2)
+
+        for idx,row in data.iterrows():
+            self.available_data[row.toolID] = row.copy()
+
+    def _render(self, data):
+        return {"show": data["include?"]}
+
+
 
 class Tool:
     """
@@ -92,10 +109,13 @@ class Tool:
 class ToolDB:
     """represents the database for all known tools"""
 
-    def __init__(self):
+    def __init__(self,tool_matrix_file):
         self.db = {}
         self.dataprovider: List[Dataprovider]
         self.dataprovider = []
+        data = pd.read_excel(tool_matrix_file,header=2)
+        for i in data.toolID:
+            self.db[i] = Tool(i)
 
     """enrich the DB with what the dataprovider has queried from its datasource"""
 
