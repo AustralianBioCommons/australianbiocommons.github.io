@@ -39,8 +39,17 @@ formatted <- find_workflows(search_space) %>%
 workflow_descriptions <- tibble()
 for (i in 1:nrow(formatted)){
   temp <- formatted$Description[i]
-  workflow <- tibble(workflow_descriptions = markdownToHTML(text = temp, fragment.only = TRUE))
-  workflow_descriptions <- bind_rows(workflow_descriptions, workflow)
+  
+  if(is.na(temp)){
+    workflow <- tibble(workflow_descriptions = markdownToHTML(text = "A description is not available.", fragment.only = TRUE))
+    workflow_descriptions <- bind_rows(workflow_descriptions, workflow)
+  }
+  
+  if(!is.na(temp)){
+    workflow <- tibble(workflow_descriptions = markdownToHTML(text = temp, fragment.only = TRUE))
+    workflow_descriptions <- bind_rows(workflow_descriptions, workflow)
+  }
+
 }
 
 workflows_final <- bind_cols(formatted, workflow_descriptions) %>%
