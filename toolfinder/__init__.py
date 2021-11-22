@@ -108,7 +108,9 @@ class ZeusDataProvider(Dataprovider):
         data.columns = ["toolID", "version"]
 
         for idx, row in data.iterrows():
-            self.available_data[row.toolID] = row.version
+            if row.toolID not in self.available_data:
+                self.available_data[row.toolID] = []
+            self.available_data[row.toolID].append(row.version)
 
     def _render(self, data):
         return data
@@ -126,7 +128,9 @@ class MagnusDataProvider(Dataprovider):
         data.columns = ["toolID", "version"]
 
         for idx, row in data.iterrows():
-            self.available_data[row.toolID] = row.version
+            if row.toolID not in self.available_data:
+                self.available_data[row.toolID] = []
+            self.available_data[row.toolID].append(row.version)
 
     def _render(self, data):
         return data
@@ -148,7 +152,9 @@ class QriscloudDataProvider(Dataprovider):
                     toolID = toolID + "-" + line[1].strip()
                 elif len(line) > 3:
                     raise ValueError(toolID)
-                self.available_data[toolID] = line[-1].strip()
+                if toolID not in self.available_data:
+                    self.available_data[toolID] = []
+                self.available_data[toolID].append(line[-1].strip())
 
     def _render(self, data):
         return data
@@ -160,7 +166,7 @@ class GalaxyDataProvider(Dataprovider):
         super().__init__()
         self.identifier = "GalaxyAustralia"
         self.parent = parent
-        self.unmatched_biotools_ids = set()
+        self.unmatched_galaxy_biotools_ids = set()
 
     def _query_remote(self):
         self.available_data = {}
@@ -187,11 +193,11 @@ class GalaxyDataProvider(Dataprovider):
             biotools_id = list(filter(lambda x: x["reftype"] == "bio.tools", tool['xrefs']))[0]['value']
             tool_id = self.parent.get_id_from_alt(ToolMatrixDataProvider.ID_BIO_TOOLS, biotools_id)
             if tool_id is None:
-                self.unmatched_biotools_ids.add(biotools_id)
+                self.unmatched_galaxy_biotools_ids.add(biotools_id)
             self.available_data[tool_id] = tool
 
-    def get_unmatched_biotools_ids(self):
-        return self.unmatched_biotools_ids
+    def get_unmatched_galaxy_biotools_ids(self):
+        return self.unmatched_galaxy_biotools_ids
 
     def _render(self, data):
         return data
@@ -207,16 +213,52 @@ class BiotoolsDataProvider(Dataprovider):
 
     def _query_remote(self):
         self.available_data = {}
-        data = pd.read_excel(self.toolmatrix, header=2)
+        data = pd.read_excel(self.filename, header=2)
         unique_biotools_ids = set(data.biotoolsID.unique())
         unique_biotools_ids.remove(np.nan)
+        # create an array with all the urls we want to request
+        url_array = []
         for biotools_id in unique_biotools_ids:
-            response = requests.get("https://bio.tools/api/t/?biotoolsID=%s&format=json" %biotools_id)
-            if response.status_code != 200:
-                raise FileNotFoundError(response.url)
-            tool_metadata = json.loads(response.text)
-            tool_id = self.parent.get_id_from_alt(ToolMatrixDataProvider.ID_BIO_TOOLS, biotools_id)
-            self.available_data[tool_id] = tool_metadata
+            url = "https://bio.tools/api/t/?biotoolsID=%s&format=json" % biotools_id
+            url_array.append((biotools_id, url))
+        import concurrent.futures
+        def fetch_url(url, biotools_id):
+            return requests.get(url, timeout=10), biotools_id
+        with concurrent.futures.ThreadPoolExecutor(max_workers=12) as executor:
+            future_urls = [executor.submit(fetch_url, url, biotools_id) for biotools_id, url in url_array]
+            for future in concurrent.futures.as_completed(future_urls):
+                response, biotools_id = future.result()
+                if response.status_code != 200:
+                    raise FileNotFoundError(response.url)
+                tool_metadata = json.loads(response.text)
+                tool_id = self.parent.get_id_from_alt(ToolMatrixDataProvider.ID_BIO_TOOLS, biotools_id)
+                self.available_data[tool_id] = tool_metadata
+
+            #response = requests.get("https://bio.tools/api/t/?biotoolsID=%s&format=json" %biotools_id)
+
+
+    def _render(self, data):
+        return data
+
+
+class GadiDataProvider(Dataprovider):
+
+    def __init__(self, key_file):
+        super().__init__()
+        self.key = open(key_file, "r").readline()
+        self.identifier = "GADI"
+
+    def _query_remote(self):
+        self.available_data = {}
+        req = requests.get("http://gadi-test-apps.nci.org.au:5000/dump", headers={"Authorization": self.key})
+        if req.status_code != 200:
+            raise FileNotFoundError(req.url)
+        for line in req.text.split("\n")[:-1]:
+            tool_id, version = line.split(",")
+            if tool_id not in self.available_data:
+                self.available_data[tool_id] = []
+            self.available_data[tool_id].append(version)
+
 
     def _render(self, data):
         return data
