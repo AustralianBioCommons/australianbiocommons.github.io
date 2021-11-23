@@ -1,5 +1,6 @@
 from abc import abstractmethod
 import datetime
+from enum import Enum
 
 import numpy as np
 import pandas as pd
@@ -12,6 +13,21 @@ class Dataprovider:
     """
     Class representing a data source, which enriches information about a tool.
     """
+    class FIELD_NAMES(Enum):
+        REPOSITORY_URL = "repository_url"
+        NAME = "name"
+        TOOL_IDENTIFIER = "tool_identifier"
+        BIOTOOLS_ID = "biotools_id"
+        INCLUSION = "inclusion"
+        DESCRIPTION = "description"
+        LICENSE = "license"
+        EDAM_TOPICS = "edam_topics"
+        GALAXY_SEARCH_TERM = "galaxy_search_term"
+        GALAXY_AUSTRALIA_LAUNCH_LINK = "galaxy_au_launch_link"
+        NCI_GADI_VERSION = "nci_gadi_version"
+        PAWSEY_ZEUS_VERSION = "pawsey_zeus_version"
+        PAWSEY_MAGNUS_VERSION = "pawsey_magnus_version"
+        QRISCLOUD_VERSION = "qriscloud_version"
 
     def __init__(self):
         self.identifier = ""
@@ -56,7 +72,9 @@ class Dataprovider:
 
     def render(self, tool):
         data = tool.get_data(self)
-        return self._render(data)
+        if data is not None:
+            return self._render(data)
+        return {}
 
     """render information"""
 
@@ -84,7 +102,12 @@ class ToolMatrixDataProvider(Dataprovider):
             self.available_data[row.toolID] = row.copy()
 
     def _render(self, data):
-        return {"show": data["include?"]}
+        return {Dataprovider.FIELD_NAMES.REPOSITORY_URL: data["Info URL"],
+                Dataprovider.FIELD_NAMES.NAME: data["Tool / workflow name"],
+                Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER: data["toolID"],
+                Dataprovider.FIELD_NAMES.EDAM_TOPICS: data["Primary purpose (EDAM, if available)"],
+                Dataprovider.FIELD_NAMES.GALAXY_SEARCH_TERM: data["Galaxy toolshed name / search term"],
+                Dataprovider.FIELD_NAMES.INCLUSION: data["include?"]}
 
     def get_alt_ids(self):
         if self._needs_querying():
@@ -113,7 +136,7 @@ class ZeusDataProvider(Dataprovider):
             self.available_data[row.toolID].append(row.version)
 
     def _render(self, data):
-        return data
+        return {Dataprovider.FIELD_NAMES.PAWSEY_ZEUS_VERSION: data}
 
 
 class MagnusDataProvider(Dataprovider):
@@ -133,7 +156,7 @@ class MagnusDataProvider(Dataprovider):
             self.available_data[row.toolID].append(row.version)
 
     def _render(self, data):
-        return data
+        return {Dataprovider.FIELD_NAMES.PAWSEY_MAGNUS_VERSION: data}
 
 
 class QriscloudDataProvider(Dataprovider):
@@ -157,7 +180,7 @@ class QriscloudDataProvider(Dataprovider):
                 self.available_data[toolID].append(line[-1].strip())
 
     def _render(self, data):
-        return data
+        return {Dataprovider.FIELD_NAMES.QRISCLOUD_VERSION: data}
 
 
 class GalaxyDataProvider(Dataprovider):
@@ -200,7 +223,10 @@ class GalaxyDataProvider(Dataprovider):
         return self.unmatched_galaxy_biotools_ids
 
     def _render(self, data):
-        return data
+        retval = {}
+        if "link" in data:
+            retval[Dataprovider.FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK] = data["link"]
+        return retval
 
 
 class BiotoolsDataProvider(Dataprovider):
@@ -219,7 +245,7 @@ class BiotoolsDataProvider(Dataprovider):
         # create an array with all the urls we want to request
         url_array = []
         for biotools_id in unique_biotools_ids:
-            url = "https://bio.tools/api/t/?biotoolsID=%s&format=json" % biotools_id
+            url = """https://bio.tools/api/t/?biotoolsID="%s"&format=json""" % biotools_id
             url_array.append((biotools_id, url))
         import concurrent.futures
         def fetch_url(url, biotools_id):
@@ -238,7 +264,18 @@ class BiotoolsDataProvider(Dataprovider):
 
 
     def _render(self, data):
-        return data
+       retval = {}
+       if "list" in data and len(data["list"])>0:
+           tooldata = data["list"][0]
+           if tooldata["homepage"]:
+               retval[Dataprovider.FIELD_NAMES.REPOSITORY_URL] = tooldata["homepage"]
+           if tooldata["description"]:
+               retval[Dataprovider.FIELD_NAMES.DESCRIPTION] = tooldata["description"]
+           if tooldata["license"]:
+               retval[Dataprovider.FIELD_NAMES.LICENSE] = tooldata["license"]
+           if tooldata["topic"]:
+               retval[Dataprovider.FIELD_NAMES.EDAM_TOPICS] = tooldata["topic"]
+       return retval
 
 
 class GadiDataProvider(Dataprovider):
@@ -250,6 +287,7 @@ class GadiDataProvider(Dataprovider):
 
     def _query_remote(self):
         self.available_data = {}
+        #https://stackoverflow.com/a/8685813
         req = requests.get("http://gadi-test-apps.nci.org.au:5000/dump", headers={"Authorization": self.key})
         if req.status_code != 200:
             raise FileNotFoundError(req.url)
@@ -261,7 +299,7 @@ class GadiDataProvider(Dataprovider):
 
 
     def _render(self, data):
-        return data
+        return {Dataprovider.FIELD_NAMES.NCI_GADI_VERSION: data}
 
 
 class Tool:
@@ -332,13 +370,14 @@ class ToolDB:
         self._enrich(provider)
 
     def get_data(self):
-        columns = ["ID"]
-        columns.extend([i.identifier for i in self.dataprovider])
         data = []
         for i in self.db:
-            line = [i]
+            line = []
             for dp in self.dataprovider:
                 line.append(dp.render(self.db[i]))
-            data.append(line)
+            result = {}
+            for element in line:
+                result.update(element)
+            data.append(result)
 
-        return pd.DataFrame(data, columns=columns)
+        return pd.DataFrame(data)

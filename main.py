@@ -13,6 +13,6 @@ if __name__ == "__main__":
     mytooldb.add_provider(gdp)
     mytooldb.add_provider(BiotoolsDataProvider("external/tool_matrix_2021_11_15.xlsx", mytooldb))
 
-    print("The following bio.tools IDs were not matched to the tool matrix sheet:")
+    print("The following Galaxy Australia bio.tools IDs were not matched to the tool matrix sheet:")
     for id in gdp.get_unmatched_galaxy_biotools_ids():
         print(id)
