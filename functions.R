@@ -8,7 +8,7 @@ read_matrix <- function(matrix_file){
   matrix_tibble <- read_tsv(matrix_file, skip = 2) %>%
     
     select(`Tool / workflow name`, toolID, biotoolsID, `include?`, on_galaxy_australia, `Primary purpose (EDAM, if available)`,
-           `Galaxy toolshed name / search term`, `Info URL`) %>%
+           additional_documentation_description, additional_documentation, `Galaxy toolshed name / search term`, `Info URL`) %>%
     rename(galaxy_search_term = `Galaxy toolshed name / search term`)
   
   return(matrix_tibble)
@@ -155,6 +155,8 @@ process_tool_and_install_metadata <- function(joined_tool_and_install_data){
         grepl("", `Info URL`) | is.na(`Info URL`) | is.na(homepage) ~ `Tool / workflow name`),
       
       `bio.tools link` = case_when(!is.na(biotoolsID) ~ paste0("<a href='https://bio.tools/", biotoolsID, "' target='_blank'  rel='noopener noreferrer'>", biotoolsID, "</a>")),
+      
+      `BioCommons Documentation` = case_when(!is.na(additional_documentation) ~ paste0("<a href='", additional_documentation, "' target='_blank'  rel='noopener noreferrer'>", additional_documentation_description, "</a>")),
       
       #example https://biocontainers.pro/tools/canu
       `BioContainers link` = case_when(!is.na(biotoolsID) ~ paste0("<a href='https://biocontainers.pro/tools/", biotoolsID, "' target='_blank'  rel='noopener noreferrer'>", biotoolsID, "</a>")),

@@ -114,10 +114,11 @@ complete_processed <- process_tool_and_install_metadata(complete_join)
 
 installs <- complete_processed %>%
   select(`Tool / workflow name`, `bio.tools link`, toolID, description, `Topic (EDAM, if available)`, `BioContainers link`, 
-         license, `Available in Galaxy toolshed`, `Galaxy Australia`, `NCI (Gadi)`, `Pawsey (Zeus)`, `Pawsey (Magnus)`,
-         `QRIScloud / UQ-RCC (Flashlite, Awoonga, Tinaroo)`) %>%
+         license, `Available in Galaxy toolshed`, `BioCommons Documentation`, `Galaxy Australia`, `NCI (Gadi)`, 
+         `Pawsey (Zeus)`, `Pawsey (Magnus)`, `QRIScloud / UQ-RCC (Flashlite, Awoonga, Tinaroo)`) %>%
   #see https://tidyr.tidyverse.org/reference/replace_na.html
   replace_na(list(description = "",
+                  `BioCommons Documentation` = "",
                   `Pawsey (Zeus)` = "",
                   `Pawsey (Magnus)` = "",
                   `QRIScloud / UQ-RCC (Flashlite, Awoonga, Tinaroo)` = "",

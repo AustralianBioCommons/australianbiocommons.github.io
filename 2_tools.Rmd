@@ -54,13 +54,13 @@ container1 = htmltools::withTags(table(
   thead(
     tr(
       #see https://stackoverflow.com/q/42153218
-      th(class = 'dt-center', style="font-size:11pt", colspan = 8, 'Tool metadata'),
+      th(class = 'dt-center', style="font-size:11pt", colspan = 9, 'Tool metadata'),
       th(class = 'dt-center', style="font-size:11pt", colspan = 5, 'Availability on Australian compute infrastructures')
     ),
     tr(
       lapply(c("Tool / workflow name", "bio.tools documentation", "Tool identifier (module name / bio.tools ID / placeholder)",
                "Description", "EDAM topics", "Containers available? (BioContainers)", "License", "Available in Galaxy toolshed", 
-               "Galaxy Australia", "NCI (Gadi)", "Pawsey (Zeus)", "Pawsey (Magnus)", 
+               "BioCommons Documentation", "Galaxy Australia", "NCI (Gadi)", "Pawsey (Zeus)", "Pawsey (Magnus)", 
                "QRIScloud / UQ-RCC (Flashlite, Awoonga, Tinaroo)"), th)
     )
   )
@@ -90,7 +90,7 @@ datatable(installs,
             buttons = c('copy', 'csv', I('colvis')),
             #see https://stackoverflow.com/a/32428537
             columnDefs = list(list(visible=FALSE, targets = c(2,6)),
-                              list(className = 'dt-center', targets = c(0:2, 5:12)))
+                              list(className = 'dt-center', targets = c(0:2, 5:13)))
             ), 
           class = 'cell-border stripe', escape = FALSE)
 

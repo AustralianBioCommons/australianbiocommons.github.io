@@ -11,8 +11,6 @@ navbar:
       href: 2_tools.html
     - text: "WorkflowFinder"
       href: 2_1_workflows.html
-    - text: "Optimised tools & workflows"
-      href: 3_biocommons_activities.html
     - text: "Attributions"
       href: 5_attributions.html
 output:
