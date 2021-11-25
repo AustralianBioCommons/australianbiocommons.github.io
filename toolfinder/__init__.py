@@ -19,6 +19,8 @@ class Dataprovider:
         TOOL_IDENTIFIER = "tool_identifier"
         BIOTOOLS_ID = "biotools_id"
         INCLUSION = "inclusion"
+        BIOCOMMONS_DOCUMENTATION_DESCRIPTION = "biocommons_documentation_desc"
+        BIOCOMMONS_DOCUMENTATION_LINK = "biocommons_documentation_link"
         DESCRIPTION = "description"
         LICENSE = "license"
         EDAM_TOPICS = "edam_topics"
@@ -105,6 +107,8 @@ class ToolMatrixDataProvider(Dataprovider):
         return {Dataprovider.FIELD_NAMES.REPOSITORY_URL: data["Info URL"],
                 Dataprovider.FIELD_NAMES.NAME: data["Tool / workflow name"],
                 Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER: data["toolID"],
+                Dataprovider.FIELD_NAMES.BIOCOMMONS_DOCUMENTATION_DESCRIPTION: data["additional_documentation_description"],
+                Dataprovider.FIELD_NAMES.BIOCOMMONS_DOCUMENTATION_LINK: data["additional_documentation"],
                 Dataprovider.FIELD_NAMES.EDAM_TOPICS: data["Primary purpose (EDAM, if available)"],
                 Dataprovider.FIELD_NAMES.GALAXY_SEARCH_TERM: data["Galaxy toolshed name / search term"],
                 Dataprovider.FIELD_NAMES.INCLUSION: data["include?"]}
@@ -267,6 +271,8 @@ class BiotoolsDataProvider(Dataprovider):
        retval = {}
        if "list" in data and len(data["list"])>0:
            tooldata = data["list"][0]
+           if tooldata["biotoolsID"]:
+               retval[Dataprovider.FIELD_NAMES.BIOTOOLS_ID] = tooldata["biotoolsID"]
            if tooldata["homepage"]:
                retval[Dataprovider.FIELD_NAMES.REPOSITORY_URL] = tooldata["homepage"]
            if tooldata["description"]:
@@ -381,3 +387,42 @@ class ToolDB:
             data.append(result)
 
         return pd.DataFrame(data)
+
+    def get_formatted_table(self):
+        import urllib
+        tool_table = self.get_data()
+        formatted_list = []
+        for index, row in tool_table.iterrows():
+            tool_line = []
+            tool_line.append("""<a href="%s">%s</a>"""%(row[Dataprovider.FIELD_NAMES.REPOSITORY_URL],row[Dataprovider.FIELD_NAMES.NAME]) if not pd.isna(row[Dataprovider.FIELD_NAMES.REPOSITORY_URL]) else "")
+            tool_line.append("""<a href="https://bio.tools/%s">%s</a>"""%(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID], row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]) if not pd.isna(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]) else "")
+            tool_line.append(row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER] if not pd.isna(row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER]) else "")
+            tool_line.append(row[Dataprovider.FIELD_NAMES.DESCRIPTION] if not pd.isna(row[Dataprovider.FIELD_NAMES.DESCRIPTION]) else "")
+            if isinstance(row[Dataprovider.FIELD_NAMES.EDAM_TOPICS], list):
+                tool_line.append("<br \>".join(["""<a href="%s">%s</a>"""% (x["uri"], x["term"]) for x in row[Dataprovider.FIELD_NAMES.EDAM_TOPICS]]))
+            else:
+                tool_line.append("")
+            tool_line.append("""<a href="https://biocontainers.pro/tools/%s">%s</a>"""%(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID], row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]) if not pd.isna(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]) else "")
+            tool_line.append(row[Dataprovider.FIELD_NAMES.LICENSE] if not pd.isna(row[Dataprovider.FIELD_NAMES.LICENSE]) else "")
+            tool_line.append("""<a href="https://toolshed.g2.bx.psu.edu/repository/browse_repositories?f-free-text-search=%s">%s</a>"""%(row[Dataprovider.FIELD_NAMES.GALAXY_SEARCH_TERM], row[Dataprovider.FIELD_NAMES.GALAXY_SEARCH_TERM]) if not pd.isna(row[Dataprovider.FIELD_NAMES.GALAXY_SEARCH_TERM]) else "")
+            tool_line.append("""<a href="%s">%s</a>""" %(row[Dataprovider.FIELD_NAMES.BIOCOMMONS_DOCUMENTATION_LINK], row[Dataprovider.FIELD_NAMES.BIOCOMMONS_DOCUMENTATION_DESCRIPTION]) if not pd.isna(row[Dataprovider.FIELD_NAMES.BIOCOMMONS_DOCUMENTATION_LINK]) else "")
+            tool_line.append("""<a href="https://usegalaxy.org.au/%s">Launch</a>""" %(row[Dataprovider.FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK]) if not pd.isna(row[Dataprovider.FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK]) else "")
+            if isinstance(row[Dataprovider.FIELD_NAMES.NCI_GADI_VERSION], list):
+                tool_line.append("<br \>".join(row[Dataprovider.FIELD_NAMES.NCI_GADI_VERSION]))
+            else:
+                tool_line.append("")
+            if isinstance(row[Dataprovider.FIELD_NAMES.PAWSEY_ZEUS_VERSION], list):
+                tool_line.append("<br \>".join(row[Dataprovider.FIELD_NAMES.PAWSEY_ZEUS_VERSION]))
+            else:
+                tool_line.append("")
+            if isinstance(row[Dataprovider.FIELD_NAMES.PAWSEY_MAGNUS_VERSION], list):
+                tool_line.append("<br \>".join(row[Dataprovider.FIELD_NAMES.PAWSEY_MAGNUS_VERSION]))
+            else:
+                tool_line.append("")
+            if isinstance(row[Dataprovider.FIELD_NAMES.QRISCLOUD_VERSION], list):
+                tool_line.append("<br \>".join(row[Dataprovider.FIELD_NAMES.QRISCLOUD_VERSION]))
+            else:
+                tool_line.append("")
+            formatted_list.append(tool_line)
+        return pd.DataFrame(formatted_list, columns=["Tool / workflow name","bio.tools link","Tool identifier (module name / bio.tools ID / placeholder)","Description","Topic (EDAM, if available)","BioContainers link","License","Available in Galaxy toolshed","BioCommons Documentation","Galaxy Australia","NCI (Gadi)","Pawsey (Zeus)","Pawsey (Magnus)","QRIScloud / UQ-RCC (Flashlite, Awoonga, Tinaroo)"])
+
