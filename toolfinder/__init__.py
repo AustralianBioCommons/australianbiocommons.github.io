@@ -111,7 +111,7 @@ class ToolMatrixDataProvider(Dataprovider):
                 Dataprovider.FIELD_NAMES.BIOCOMMONS_DOCUMENTATION_LINK: data["additional_documentation"],
                 Dataprovider.FIELD_NAMES.EDAM_TOPICS: data["Primary purpose (EDAM, if available)"],
                 Dataprovider.FIELD_NAMES.GALAXY_SEARCH_TERM: data["Galaxy toolshed name / search term"],
-                Dataprovider.FIELD_NAMES.INCLUSION: data["include?"]}
+                Dataprovider.FIELD_NAMES.INCLUSION: data["include?"] == "y"}
 
     def get_alt_ids(self):
         if self._needs_querying():
@@ -130,14 +130,18 @@ class ZeusDataProvider(Dataprovider):
         self.identifier = "ZEUS"
 
     def _query_remote(self):
+        import re
         self.available_data = {}
         data = pd.read_csv(self.filename, delimiter="/", header=None)
         data.columns = ["toolID", "version"]
 
         for idx, row in data.iterrows():
-            if row.toolID not in self.available_data:
-                self.available_data[row.toolID] = []
-            self.available_data[row.toolID].append(row.version)
+            toolID = row.toolID
+            toolID = re.sub(r"wgs", "celera", toolID)
+            toolID = re.sub(r"trinityrnaseq", "trinity", toolID)
+            if toolID not in self.available_data:
+                self.available_data[toolID] = []
+            self.available_data[toolID].append(row.version)
 
     def _render(self, data):
         return {Dataprovider.FIELD_NAMES.PAWSEY_ZEUS_VERSION: data}
@@ -170,6 +174,7 @@ class QriscloudDataProvider(Dataprovider):
         self.identifier = "QRIScloud"
 
     def _query_remote(self):
+        import re
         self.available_data = {}
         with open(self.filename, "r") as stream:
             for line in stream:
@@ -179,6 +184,9 @@ class QriscloudDataProvider(Dataprovider):
                     toolID = toolID + "-" + line[1].strip()
                 elif len(line) > 3:
                     raise ValueError(toolID)
+                toolID = toolID.replace("genomeanalysistk", "gatk")
+                toolID = re.sub(r"^pacbio$", "smrtlink", toolID)
+                toolID = re.sub(r"^soapdenovo$", "soapdenovo2", toolID)
                 if toolID not in self.available_data:
                     self.available_data[toolID] = []
                 self.available_data[toolID].append(line[-1].strip())
@@ -189,11 +197,14 @@ class QriscloudDataProvider(Dataprovider):
 
 class GalaxyDataProvider(Dataprovider):
 
-    def __init__(self, parent):
+    GALAXY_ID = "GalaxyAustralia_ID"
+
+    def __init__(self, parent, look_up_file):
         super().__init__()
         self.identifier = "GalaxyAustralia"
         self.parent = parent
         self.unmatched_galaxy_biotools_ids = set()
+        self.look_up_file = look_up_file
 
     def _query_remote(self):
         self.available_data = {}
@@ -204,33 +215,33 @@ class GalaxyDataProvider(Dataprovider):
         #Herve Menager via Slack
         tools_nested = [tool_section.get('elems') for tool_section in tool_sections if 'elems' in tool_section]
         tools = list(itertools.chain.from_iterable(tools_nested))
-        tools_with_biotools = []
-        for tool in tools:
-            xref = []
-            for ref in tool.get("xrefs", []):
-                if ref["reftype"] == "bio.tools":
-                    xref.append(ref)
-            if len(xref) > 0:
-                tools_with_biotools.append(tool)
-        #tools_with_biotools = [tool for tool in tools if [xref for xref in tool.get('xrefs', []) if xref["reftype"] == "bio.tools"]]
-        #tools_with_biotools = [tool for tool in tools if filter(lambda x: x["reftype"] == "bio.tools", tool.get('xrefs', []))]
 
         #
-        for tool in tools_with_biotools:
-            biotools_id = list(filter(lambda x: x["reftype"] == "bio.tools", tool['xrefs']))[0]['value']
-            tool_id = self.parent.get_id_from_alt(ToolMatrixDataProvider.ID_BIO_TOOLS, biotools_id)
+        for tool in tools:
+            galaxy_id = tool["id"]
+            tool_id = self.parent.get_id_from_alt(GalaxyDataProvider.GALAXY_ID, galaxy_id)
             if tool_id is None:
-                self.unmatched_galaxy_biotools_ids.add(biotools_id)
-            self.available_data[tool_id] = tool
+                self.unmatched_galaxy_biotools_ids.add(galaxy_id)
+            if tool_id not in self.available_data:
+                self.available_data[tool_id] = []
+            self.available_data[tool_id].append(tool)
 
     def get_unmatched_galaxy_biotools_ids(self):
         return self.unmatched_galaxy_biotools_ids
 
     def _render(self, data):
         retval = {}
-        if "link" in data:
-            retval[Dataprovider.FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK] = data["link"]
+        retval[Dataprovider.FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK] = [(d["link"], d["name"]) for d in data if "link" in d and "name" in d]
         return retval
+
+    def get_alt_ids(self):
+        data = pd.read_csv(self.look_up_file)
+        retval = {GalaxyDataProvider.GALAXY_ID: {}}
+        for idx, row in data.iterrows():
+            if not pd.isna(row.BioCommons_toolID):
+                retval[GalaxyDataProvider.GALAXY_ID][row.galaxy_id] = row.BioCommons_toolID
+        return retval
+
 
 
 class BiotoolsDataProvider(Dataprovider):
@@ -352,15 +363,16 @@ class ToolDB:
     """enrich the DB with what the dataprovider has queried from its datasource"""
 
     def _enrich(self, dataprovider: Dataprovider):
+
+        alt_ids = dataprovider.get_alt_ids()
+        # https://stackoverflow.com/a/26853961 & https://www.python.org/dev/peps/pep-0584/
+        self.alternateids = {**self.alternateids, **alt_ids}
+
         dataprovider.query_remote()
 
         for i in self.db:
             tool = self.db[i]
             tool.add_data(dataprovider)
-
-        alt_ids = dataprovider.get_alt_ids()
-        # https://stackoverflow.com/a/26853961 & https://www.python.org/dev/peps/pep-0584/
-        self.alternateids = {**self.alternateids, **alt_ids}
 
     def get_id_from_alt(self, provider:str, unique_id:str):
         if provider in self.alternateids:
@@ -393,6 +405,8 @@ class ToolDB:
         tool_table = self.get_data()
         formatted_list = []
         for index, row in tool_table.iterrows():
+            if not row[Dataprovider.FIELD_NAMES.INCLUSION]:
+                continue
             tool_line = []
             tool_line.append("""<a href="%s">%s</a>"""%(row[Dataprovider.FIELD_NAMES.REPOSITORY_URL],row[Dataprovider.FIELD_NAMES.NAME]) if not pd.isna(row[Dataprovider.FIELD_NAMES.REPOSITORY_URL]) else "")
             tool_line.append("""<a href="https://bio.tools/%s">%s</a>"""%(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID], row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]) if not pd.isna(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]) else "")
@@ -406,7 +420,11 @@ class ToolDB:
             tool_line.append(row[Dataprovider.FIELD_NAMES.LICENSE] if not pd.isna(row[Dataprovider.FIELD_NAMES.LICENSE]) else "")
             tool_line.append("""<a href="https://toolshed.g2.bx.psu.edu/repository/browse_repositories?f-free-text-search=%s">%s</a>"""%(row[Dataprovider.FIELD_NAMES.GALAXY_SEARCH_TERM], row[Dataprovider.FIELD_NAMES.GALAXY_SEARCH_TERM]) if not pd.isna(row[Dataprovider.FIELD_NAMES.GALAXY_SEARCH_TERM]) else "")
             tool_line.append("""<a href="%s">%s</a>""" %(row[Dataprovider.FIELD_NAMES.BIOCOMMONS_DOCUMENTATION_LINK], row[Dataprovider.FIELD_NAMES.BIOCOMMONS_DOCUMENTATION_DESCRIPTION]) if not pd.isna(row[Dataprovider.FIELD_NAMES.BIOCOMMONS_DOCUMENTATION_LINK]) else "")
-            tool_line.append("""<a href="https://usegalaxy.org.au/%s">Launch</a>""" %(row[Dataprovider.FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK]) if not pd.isna(row[Dataprovider.FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK]) else "")
+            if isinstance(row[Dataprovider.FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK], list):
+                # see https://stackoverflow.com/a/2906586
+                tool_line.append("<br \>".join(["""<button class="galaxy-link" onclick="location.href='https://usegalaxy.org.au/%s'">%s</button>""" %d for d in row[Dataprovider.FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK]]))
+            else:
+                tool_line.append("")
             if isinstance(row[Dataprovider.FIELD_NAMES.NCI_GADI_VERSION], list):
                 tool_line.append("<br \>".join(row[Dataprovider.FIELD_NAMES.NCI_GADI_VERSION]))
             else:

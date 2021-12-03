@@ -9,7 +9,7 @@ if __name__ == "__main__":
     mytooldb.add_provider(MagnusDataProvider("external/magnus.txt"))
     mytooldb.add_provider(QriscloudDataProvider("external/qriscloud.txt"))
     mytooldb.add_provider(GadiDataProvider("./external/gadi.key.hdr"))
-    gdp = GalaxyDataProvider(mytooldb)
+    gdp = GalaxyDataProvider(mytooldb, "./external/galaxy_tools_curation - DATA.csv")
     mytooldb.add_provider(gdp)
     mytooldb.add_provider(BiotoolsDataProvider("external/tool_matrix_2021_11_15.xlsx", mytooldb))
 
