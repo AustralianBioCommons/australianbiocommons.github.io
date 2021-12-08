@@ -16,3 +16,5 @@ if __name__ == "__main__":
     print("The following Galaxy Australia bio.tools IDs were not matched to the tool matrix sheet:")
     for id in gdp.get_unmatched_galaxy_biotools_ids():
         print(id)
+
+    mytooldb.get_formatted_table().to_csv("./temp/toolfinder_input.csv", index = None)

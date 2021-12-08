@@ -1,0 +1,61 @@
+---
+title: "Optimised tools & workflows"
+---
+
+<style type="text/css">
+.main-container {
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+
+Documentation from [BioCommons Communities of practice](https://www.biocommons.org.au/get-involved) and [Bioplatforms Australia Framework Initiatives](https://bioplatforms.com/projects/) that have installed, tested and optimised tools and workflows.
+
+-----
+
+-----
+
+```{r setup, include = FALSE, warning = FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+library(tidyverse)
+library(kableExtra)
+```
+
+<font size="2">
+```{r}
+biocommons <- read_csv("../../external_GitHub_inputs/featured_workflows_input.csv") %>%
+  #filter(grepl("github", `BioCommons Documentation`)) %>%
+  #see https://tidyr.tidyverse.org/reference/replace_na.html
+  replace_na(list(`bio.tools` = "",
+                  #`BioContainers` = "",
+                  `BioCommons Documentation` = "",
+                  `Primary purpose (EDAM, if available)` = "")) %>%
+  select(`Tool / workflow name`, `Primary purpose (EDAM, if available)`, `BioCommons Documentation`, `bio.tools`)
+
+kable(biocommons, format = "pipe", align = "c")
+```
+</font>
+
+
+**Please note**:
+
+- Software documentation is linked from the *Tool / workflow name* in the first column.
+- More information about a tool can be found by following the link in the [bio.tools](https://bio.tools/) column.
+
+-----
+
+-----
+
+### How is the documentation structured?
+
+The documentation is structured using our [documentation guidelines](https://github.com/AustralianBioCommons/doc_guidelines/releases) (for [Tools](https://github.com/AustralianBioCommons/doc_guidelines/blob/master/docs/tools.md), [Workflows](https://github.com/AustralianBioCommons/doc_guidelines/blob/master/docs/workflows.md) or [Infrastructure](https://github.com/AustralianBioCommons/doc_guidelines/blob/master/docs/infrastructure_optimisation.md)) that have been developed through engagement with community bioinformaticians. Real-world use cases informed iterative development to produce a first version of these guidelines.
+
+We will continue to work together with the community to build a fit-for-purpose and standardised approach for presenting tool and workflow documentation which contains information specific to Australian HPC and Cloud infrastructure. These guidelines and the documentation therein will be developed in line with community requirements, and will align closely to global efforts (e.g. that being undertaken by the [ELIXIR tools platform](https://elixir-europe.org/platforms/tools)).
+
+
+```{r echo = FALSE, message = FALSE}
+#see https://bookdown.org/yihui/rmarkdown-cookbook/write-bib.html
+library(knitr)
+write_bib(c(.packages()), "./outputs/biocommons_packages.bib")
+```
