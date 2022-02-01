@@ -68,3 +68,11 @@ span.button{
     background-repeat: no-repeat;
     transform: scale(0.7);
 }
+
+a.publication-title{
+    overflow: hidden;
+    width: 150px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}

@@ -24,6 +24,7 @@ class Dataprovider:
         DESCRIPTION = "description"
         LICENSE = "license"
         EDAM_TOPICS = "edam_topics"
+        PUBLICATIONS = "publications"
         GALAXY_SEARCH_TERM = "galaxy_search_term"
         GALAXY_AUSTRALIA_LAUNCH_LINK = "galaxy_au_launch_link"
         NCI_GADI_VERSION = "nci_gadi_version"
@@ -288,6 +289,8 @@ class BiotoolsDataProvider(Dataprovider):
                retval[Dataprovider.FIELD_NAMES.REPOSITORY_URL] = tooldata["homepage"]
            if tooldata["description"]:
                retval[Dataprovider.FIELD_NAMES.DESCRIPTION] = tooldata["description"]
+           if tooldata["publication"]:
+               retval[Dataprovider.FIELD_NAMES.PUBLICATIONS] = tooldata["publication"]
            if tooldata["license"]:
                retval[Dataprovider.FIELD_NAMES.LICENSE] = tooldata["license"]
            if tooldata["topic"]:
@@ -408,12 +411,19 @@ class ToolDB:
             if not row[Dataprovider.FIELD_NAMES.INCLUSION]:
                 continue
             tool_line = []
-            tool_line.append("""<a href="%s">%s</a>"""%(row[Dataprovider.FIELD_NAMES.REPOSITORY_URL],row[Dataprovider.FIELD_NAMES.NAME]) if not pd.isna(row[Dataprovider.FIELD_NAMES.REPOSITORY_URL]) else "")
+            tool_line.append("""<a href="%s">%s</a>"""%(row[Dataprovider.FIELD_NAMES.REPOSITORY_URL],row[Dataprovider.FIELD_NAMES.NAME]) if not pd.isna(row[Dataprovider.FIELD_NAMES.REPOSITORY_URL]) else row[Dataprovider.FIELD_NAMES.NAME])
             tool_line.append("""<a href="https://bio.tools/%s">%s</a>"""%(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID], row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]) if not pd.isna(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]) else "")
             tool_line.append(row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER] if not pd.isna(row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER]) else "")
             tool_line.append(row[Dataprovider.FIELD_NAMES.DESCRIPTION] if not pd.isna(row[Dataprovider.FIELD_NAMES.DESCRIPTION]) else "")
             if isinstance(row[Dataprovider.FIELD_NAMES.EDAM_TOPICS], list):
                 tool_line.append("<br \>".join(["""<a href="%s">%s</a>"""% (x["uri"], x["term"]) for x in row[Dataprovider.FIELD_NAMES.EDAM_TOPICS]]))
+            else:
+                tool_line.append("")
+            if isinstance(row[Dataprovider.FIELD_NAMES.PUBLICATIONS], list):
+                tool_line.append("<br \>".join(list(map(lambda x:f"""<a class="publication-title" href="https://doi.org/{x["doi"]}">{x["metadata"]["title"] if x["metadata"] is not None else "DOI:"+x["doi"]}</a>""" if x["doi"] is not None else
+                                                        f"""<a class="publication-title" href="http://www.ncbi.nlm.nih.gov/pubmed/{x["pmid"]}">{x["metadata"]["title"] if x["metadata"] is not None else "PMID:"+x["pmid"]}</a>""" if x["pmid"] is not None else
+                                                        f"""<a class="publication-title" href="https://www.ncbi.nlm.nih.gov/pmc/articles/{x["pmcid"]}">{x["metadata"]["title"] if x["metadata"] is not None else "PMCID:"+x["pmcid"]}</a>""" if x["pmcid"] is not None else
+                                                        "",row[Dataprovider.FIELD_NAMES.PUBLICATIONS]))))
             else:
                 tool_line.append("")
             tool_line.append("""<a href="https://biocontainers.pro/tools/%s">%s</a>"""%(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID], row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]) if not pd.isna(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]) else "")
@@ -445,5 +455,5 @@ class ToolDB:
             else:
                 tool_line.append("")
             formatted_list.append(tool_line)
-        return pd.DataFrame(formatted_list, columns=["Tool / workflow name","bio.tools link","Tool identifier (module name / bio.tools ID / placeholder)","Description","Topic (EDAM, if available)","BioContainers link","License","Available in Galaxy toolshed","BioCommons Documentation","Galaxy Australia","NCI (Gadi)","Pawsey (Zeus)","Pawsey (Magnus)","QRIScloud / UQ-RCC (Flashlite, Awoonga, Tinaroo)"])
+        return pd.DataFrame(formatted_list, columns=["Tool / workflow name","bio.tools link","Tool identifier (module name / bio.tools ID / placeholder)","Description","Topic (EDAM, if available)","Publications","BioContainers link","License","Available in Galaxy toolshed","BioCommons Documentation","Galaxy Australia","NCI (Gadi)","Pawsey (Zeus)","Pawsey (Magnus)","QRIScloud / UQ-RCC (Flashlite, Awoonga, Tinaroo)"])
 
