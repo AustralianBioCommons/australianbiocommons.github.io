@@ -69,6 +69,7 @@ span.button{
     transform: scale(0.7);
 }
 
+/* see https://stackoverflow.com/a/26973672 */
 a.publication-title{
     overflow: hidden;
     width: 150px;
