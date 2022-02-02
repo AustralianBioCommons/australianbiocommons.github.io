@@ -414,7 +414,7 @@ class ToolDB:
             tool_line.append("""<a href="%s">%s</a>"""%(row[Dataprovider.FIELD_NAMES.REPOSITORY_URL],row[Dataprovider.FIELD_NAMES.NAME]) if not pd.isna(row[Dataprovider.FIELD_NAMES.REPOSITORY_URL]) else row[Dataprovider.FIELD_NAMES.NAME])
             tool_line.append("""<a href="https://bio.tools/%s">%s</a>"""%(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID], row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]) if not pd.isna(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]) else "")
             tool_line.append(row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER] if not pd.isna(row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER]) else "")
-            tool_line.append(row[Dataprovider.FIELD_NAMES.DESCRIPTION] if not pd.isna(row[Dataprovider.FIELD_NAMES.DESCRIPTION]) else "")
+            tool_line.append("""<span class="description-text">%s</span>"""%(row[Dataprovider.FIELD_NAMES.DESCRIPTION]) if not pd.isna(row[Dataprovider.FIELD_NAMES.DESCRIPTION]) else "")
             if isinstance(row[Dataprovider.FIELD_NAMES.EDAM_TOPICS], list):
                 tool_line.append("<br \>".join(["""<a href="%s">%s</a>"""% (x["uri"], x["term"]) for x in row[Dataprovider.FIELD_NAMES.EDAM_TOPICS]]))
             else:
