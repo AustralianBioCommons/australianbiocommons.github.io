@@ -1,0 +1,68 @@
+---
+title: "Where can I get help?"
+---
+
+The places where you can get help as part of the Australian BioCommons effort.
+
+-----
+
+-----
+
+# Community Discussion Groups
+
+Email discussion groups for various bioinformatics communities of practice:
+
+- [Genome assembly](https://www.biocommons.org.au/genome-assembly-community)
+- [Genome annotation](https://www.biocommons.org.au/genome-annotation-community)
+- [Microbiome analyses](https://www.biocommons.org.au/microbiomeanalysis)
+- [Proteomics](https://www.biocommons.org.au/proteomics)
+- [Metabolomics](https://www.biocommons.org.au/metabolomics-community)
+
+-----
+
+-----
+
+# Training material
+
+- Search the [TESS](https://tess.elixir-europe.org/) training portal which contains material used in 1000s of bioinformatics training courses.
+- Check out [Melbourne Bioinformatics extensive range of tutorials and protocols](https://www.melbournebioinformatics.org.au/tutorials/)
+- [Galaxy Training Network](https://training.galaxyproject.org/training-material/): contains over 100 tutorials that can be undertaken in your own time on the [free to use Galaxy Australia service](https://usegalaxy.org.au/). Tutorial categories include Assembly, Epigenetics, Genome Annotation, Metabolomics, Metagenomics, Proteomics, Sequence Analysis, Transcriptomics and Visualisation.
+- Watch [recordings from the BioCommons webinar series](https://www.youtube.com/channel/UC5WlFNBSfmt3e8Js8o2fFqQ) which includes a wide variety of content surrounding many bioinformatics tools and approaches.
+- Upcoming [BioCommons Events](https://www.biocommons.org.au/events).
+- For information on how to get started using High Performance Computing (HPC) environments, check out:
+     - [HPC-carpentry](https://hpc-carpentry.github.io/hpc-intro/)
+     - [Swiss Institute of Bioinformatics: High Performance Computing in Life Sciences](https://edu.sib.swiss/course/view.php?name=HPCel)
+     - [Melbourne Bioinformatics workshop: "High-Performance Computing"](https://www.melbournebioinformatics.org.au/tutorials/tutorials/hpc/hpc/)
+
+-----
+
+-----
+
+# Training workshops
+
+- [Search the TeSS Training Events calendar for upcoming bioinformatics training events being held in Australia](https://tess.elixir-europe.org/events?q=australia)
+
+-----
+
+-----
+
+# Documentation
+
+- [bio.tools](https://bio.tools/): is a searchable registry of bioinformatics tools containing descriptions and links to instances, manuscripts etc.
+- [BioContainers](https://biocontainers.pro/#/): is a searchable registry and repository of bioinformatics software that has been containerised (using docker, bioconda and singularity) to enable easy installation on various computational systems. Check out the [recordings of BioCommons webinars and training workshops about containerisation](https://www.youtube.com/c/AustralianBioCommons/search?query=containers).
+- WorkflowHub [[about](https://about.workflowhub.eu/About-WorkflowHub/) / [main hub page](https://workflowhub.eu/)]: workflow registration and deployment
+- [BioCommons GitHub](https://github.com/AustralianBioCommons): this is the default location for tool and workflow documentation, and includes:
+    - useful links (including to source developement repositories and sites), 
+    - tutorials and install instructions, 
+    - compute resource usage summaries, and 
+    - information specific to deployment of these tools and workflows across BioCommons partner infrastructures
+
+-----
+
+-----
+
+```{r echo = FALSE, message = FALSE}
+#see https://bookdown.org/yihui/rmarkdown-cookbook/write-bib.html
+library(knitr)
+write_bib(c(.packages()), "./outputs/help_packages.bib")
+```
