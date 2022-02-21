@@ -368,6 +368,9 @@ class ToolDB:
     def _enrich(self, dataprovider: Dataprovider):
 
         alt_ids = dataprovider.get_alt_ids()
+        temp_ids = {}
+        for key in alt_ids:
+            temp_ids[key.lower()] = alt_ids[key]
         # https://stackoverflow.com/a/26853961 & https://www.python.org/dev/peps/pep-0584/
         self.alternateids = {**self.alternateids, **alt_ids}
 
@@ -378,6 +381,7 @@ class ToolDB:
             tool.add_data(dataprovider)
 
     def get_id_from_alt(self, provider:str, unique_id:str):
+        #unique_id = unique_id.lower()
         if provider in self.alternateids:
             if unique_id in self.alternateids[provider]:
                 return self.alternateids[provider][unique_id]
