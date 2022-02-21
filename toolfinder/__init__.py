@@ -220,7 +220,18 @@ class GalaxyDataProvider(Dataprovider):
         #
         for tool in tools:
             galaxy_id = tool["id"]
-            tool_id = self.parent.get_id_from_alt(GalaxyDataProvider.GALAXY_ID, galaxy_id)
+            galaxy_id = "/".join(galaxy_id.split("/")[:-1])
+            biotools_id = None
+            if "xrefs" in tool:
+                for item in tool["xrefs"]:
+                    if item["reftype"] == "bio.tools":
+                        biotools_id = item["value"]
+                        break
+            tool_id = None
+            if biotools_id is not None:
+                tool_id = self.parent.get_id_from_alt(ToolMatrixDataProvider.ID_BIO_TOOLS, biotools_id)
+            if tool_id is None:
+                tool_id = self.parent.get_id_from_alt(GalaxyDataProvider.GALAXY_ID, galaxy_id)
             if tool_id is None:
                 self.unmatched_galaxy_biotools_ids.add(galaxy_id)
             if tool_id not in self.available_data:
@@ -240,7 +251,8 @@ class GalaxyDataProvider(Dataprovider):
         retval = {GalaxyDataProvider.GALAXY_ID: {}}
         for idx, row in data.iterrows():
             if not pd.isna(row.BioCommons_toolID):
-                retval[GalaxyDataProvider.GALAXY_ID][row.galaxy_id] = row.BioCommons_toolID
+                id = "/".join(row.galaxy_id.split("/")[:-1])
+                retval[GalaxyDataProvider.GALAXY_ID][id] = row.BioCommons_toolID
         return retval
 
 
