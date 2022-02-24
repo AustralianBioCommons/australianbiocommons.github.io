@@ -10,6 +10,7 @@ title: "ToolFinder"
 }
 </style>
 
+[![](./images/Australian-Biocommons-Logo-Horizontal-144dpi-Transparent.png){width=15%}](https://www.biocommons.org.au/services)
 
 This page lists bioinformatics tools installed across several of the [BioCommons infrastructure partner systems](http://support.biocommons.org.au/support/solutions/articles/6000251977-compute-systems-at-the-biocommons-partner-infrastructures) and tool installation request mechanisms on these systems. Tool status on other partner infrastructures will be added over time.
 
@@ -106,7 +107,7 @@ datatable(installs,
 - More information about a tool can be found by following the link in the *[bio.tools](https://bio.tools/) documentation* column.
 - When a tool has been containerised to allow for easier installation on any compute infrastructure, a link to the containerised software that can be downloaded from [BioContainers](https://biocontainers.pro/#/) is shown in the *Containers available? (BioContainers)* column.
 - The list currently includes some tools that are not used for bioinformatics.
-- The source material for the table is currently manually curated, and while we endeavour to keep the information as current as possible, there is a natural limit to the volume of information maintained here. Production of this information will be automated during 2021, and tools that are not relevant for bioinformatics analyses removed.
+- The source material for the table is currently manually curated, and while we endeavour to keep the information as current as possible, there is a natural limit to the volume of information maintained here. Production of this information will be automated over time, and tools that are not relevant for bioinformatics analyses removed.
 
 -----
 

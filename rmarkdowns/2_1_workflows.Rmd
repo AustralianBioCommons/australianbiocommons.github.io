@@ -10,6 +10,7 @@ title: "WorkflowFinder"
 }
 </style>
 
+[![](./images/Australian-Biocommons-Logo-Horizontal-144dpi-Transparent.png){width=15%}](https://www.biocommons.org.au/services)
 
 The interactive table below allows you to search for workflows registered by Australian BioCommons partners on [workflowhub](https://workflowhub.eu/programmes/8).
 
