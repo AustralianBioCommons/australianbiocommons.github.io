@@ -120,7 +120,9 @@ class ToolMatrixDataProvider(Dataprovider):
         retval = {ToolMatrixDataProvider.ID_BIO_TOOLS: {}}
         for toolID in self.available_data:
             row = self.available_data[toolID]
-            retval[ToolMatrixDataProvider.ID_BIO_TOOLS][row.biotoolsID] = toolID
+            if row.biotoolsID not in retval[ToolMatrixDataProvider.ID_BIO_TOOLS]:
+                retval[ToolMatrixDataProvider.ID_BIO_TOOLS][row.biotoolsID] = []
+            retval[ToolMatrixDataProvider.ID_BIO_TOOLS][row.biotoolsID].append(toolID)
         return retval
 
 
@@ -227,16 +229,17 @@ class GalaxyDataProvider(Dataprovider):
                     if item["reftype"] == "bio.tools":
                         biotools_id = item["value"]
                         break
-            tool_id = None
+            tool_id_list = []
             if biotools_id is not None:
-                tool_id = self.parent.get_id_from_alt(ToolMatrixDataProvider.ID_BIO_TOOLS, biotools_id)
-            if tool_id is None:
-                tool_id = self.parent.get_id_from_alt(GalaxyDataProvider.GALAXY_ID, galaxy_id)
-            if tool_id is None:
+                tool_id_list = self.parent.get_id_from_alt(ToolMatrixDataProvider.ID_BIO_TOOLS, biotools_id)
+            if len(tool_id_list) == 0:
+                tool_id_list = self.parent.get_id_from_alt(GalaxyDataProvider.GALAXY_ID, galaxy_id)
+            if len(tool_id_list) == 0:
                 self.unmatched_galaxy_biotools_ids.add(galaxy_id)
-            if tool_id not in self.available_data:
-                self.available_data[tool_id] = []
-            self.available_data[tool_id].append(tool)
+            for tool_id in tool_id_list:
+                if tool_id not in self.available_data:
+                    self.available_data[tool_id] = []
+                self.available_data[tool_id].append(tool)
 
     def get_unmatched_galaxy_biotools_ids(self):
         return self.unmatched_galaxy_biotools_ids
@@ -252,9 +255,10 @@ class GalaxyDataProvider(Dataprovider):
         for idx, row in data.iterrows():
             if not pd.isna(row.BioCommons_toolID):
                 id = "/".join(row.galaxy_id.split("/")[:-1])
-                retval[GalaxyDataProvider.GALAXY_ID][id] = row.BioCommons_toolID
+                if id not in retval[GalaxyDataProvider.GALAXY_ID]:
+                    retval[GalaxyDataProvider.GALAXY_ID][id] = []
+                retval[GalaxyDataProvider.GALAXY_ID][id].append(row.biotoolsID)
         return retval
-
 
 
 class BiotoolsDataProvider(Dataprovider):
@@ -285,8 +289,9 @@ class BiotoolsDataProvider(Dataprovider):
                 if response.status_code != 200:
                     raise FileNotFoundError(response.url)
                 tool_metadata = json.loads(response.text)
-                tool_id = self.parent.get_id_from_alt(ToolMatrixDataProvider.ID_BIO_TOOLS, biotools_id)
-                self.available_data[tool_id] = tool_metadata
+                tool_id_list = self.parent.get_id_from_alt(ToolMatrixDataProvider.ID_BIO_TOOLS, biotools_id)
+                for tool_id in tool_id_list:
+                    self.available_data[tool_id] = tool_metadata
 
             #response = requests.get("https://bio.tools/api/t/?biotoolsID=%s&format=json" %biotools_id)
 
@@ -380,9 +385,6 @@ class ToolDB:
     def _enrich(self, dataprovider: Dataprovider):
 
         alt_ids = dataprovider.get_alt_ids()
-        temp_ids = {}
-        for key in alt_ids:
-            temp_ids[key.lower()] = alt_ids[key]
         # https://stackoverflow.com/a/26853961 & https://www.python.org/dev/peps/pep-0584/
         self.alternateids = {**self.alternateids, **alt_ids}
 
@@ -397,7 +399,7 @@ class ToolDB:
         if provider in self.alternateids:
             if unique_id in self.alternateids[provider]:
                 return self.alternateids[provider][unique_id]
-        return None
+        return []
 
 
     """add a dataprovider to the list of providers"""
