@@ -257,7 +257,7 @@ class GalaxyDataProvider(Dataprovider):
                 id = "/".join(row.galaxy_id.split("/")[:-1])
                 if id not in retval[GalaxyDataProvider.GALAXY_ID]:
                     retval[GalaxyDataProvider.GALAXY_ID][id] = []
-                retval[GalaxyDataProvider.GALAXY_ID][id].append(row.biotoolsID)
+                retval[GalaxyDataProvider.GALAXY_ID][id].append(row["BioCommons_toolID"])
         return retval
 
 
