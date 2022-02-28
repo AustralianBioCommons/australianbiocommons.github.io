@@ -90,3 +90,8 @@ a.publication-title{
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+.edam-terms{
+    font-size: 1rem;
+    display: -webkit-box;
+}

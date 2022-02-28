@@ -434,7 +434,7 @@ class ToolDB:
             tool_line.append(row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER] if not pd.isna(row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER]) else "")
             tool_line.append("""<span class="description-text">%s</span>"""%(row[Dataprovider.FIELD_NAMES.DESCRIPTION]) if not pd.isna(row[Dataprovider.FIELD_NAMES.DESCRIPTION]) else "")
             if isinstance(row[Dataprovider.FIELD_NAMES.EDAM_TOPICS], list):
-                tool_line.append("<br \>".join(["""<a href="%s">%s</a>"""% (x["uri"], x["term"]) for x in row[Dataprovider.FIELD_NAMES.EDAM_TOPICS]]))
+                tool_line.append("<br \>".join(["""<a class="edam-terms" href="%s">%s</a>"""% (x["uri"], x["term"]) for x in row[Dataprovider.FIELD_NAMES.EDAM_TOPICS]]))
             else:
                 tool_line.append("")
             if isinstance(row[Dataprovider.FIELD_NAMES.PUBLICATIONS], list):
