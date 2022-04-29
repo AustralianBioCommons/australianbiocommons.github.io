@@ -25,7 +25,6 @@ class Dataprovider:
         LICENSE = "FIELD_NAMES.LICENSE"
         EDAM_TOPICS = "FIELD_NAMES.EDAM_TOPICS"
         PUBLICATIONS = "FIELD_NAMES.PUBLICATIONS"
-        GALAXY_SEARCH_TERM = "FIELD_NAMES.GALAXY_SEARCH_TERM"
         GALAXY_AUSTRALIA_LAUNCH_LINK = "FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK"
         NCI_GADI_VERSION = "FIELD_NAMES.NCI_GADI_VERSION"
         PAWSEY_ZEUS_VERSION = "FIELD_NAMES.PAWSEY_ZEUS_VERSION"
@@ -116,7 +115,6 @@ class ToolMatrixDataProvider(Dataprovider):
                 Dataprovider.FIELD_NAMES.BIOCOMMONS_DOCUMENTATION_DESCRIPTION: data["additional_documentation_description"],
                 Dataprovider.FIELD_NAMES.BIOCOMMONS_DOCUMENTATION_LINK: data["additional_documentation"],
                 Dataprovider.FIELD_NAMES.EDAM_TOPICS: data["Primary purpose (EDAM, if available)"],
-                Dataprovider.FIELD_NAMES.GALAXY_SEARCH_TERM: data["Galaxy toolshed name / search term"],
                 Dataprovider.FIELD_NAMES.INCLUSION: data["include?"] == "y"}
 
     def get_alt_ids(self):
@@ -451,7 +449,6 @@ class ToolDB:
                 tool_line.append("")
             tool_line.append("""<a href="https://biocontainers.pro/tools/%s">%s</a>"""%(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID], row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]) if not pd.isna(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]) else "")
             tool_line.append(row[Dataprovider.FIELD_NAMES.LICENSE] if not pd.isna(row[Dataprovider.FIELD_NAMES.LICENSE]) else "")
-            tool_line.append("""<a href="https://toolshed.g2.bx.psu.edu/repository/browse_repositories?f-free-text-search=%s">%s</a>"""%(row[Dataprovider.FIELD_NAMES.GALAXY_SEARCH_TERM], row[Dataprovider.FIELD_NAMES.GALAXY_SEARCH_TERM]) if not pd.isna(row[Dataprovider.FIELD_NAMES.GALAXY_SEARCH_TERM]) else "")
             tool_line.append("""<a href="%s">%s</a>""" %(row[Dataprovider.FIELD_NAMES.BIOCOMMONS_DOCUMENTATION_LINK], row[Dataprovider.FIELD_NAMES.BIOCOMMONS_DOCUMENTATION_DESCRIPTION]) if not pd.isna(row[Dataprovider.FIELD_NAMES.BIOCOMMONS_DOCUMENTATION_LINK]) else "")
             if isinstance(row[Dataprovider.FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK], list):
                 # see https://stackoverflow.com/a/2906586
@@ -478,5 +475,5 @@ class ToolDB:
             else:
                 tool_line.append("")
             formatted_list.append(tool_line)
-        return pd.DataFrame(formatted_list, columns=["Tool / workflow name","bio.tools link","Tool identifier (module name / bio.tools ID / placeholder)","Description","Topic (EDAM, if available)","Publications","BioContainers link","License","Available in Galaxy toolshed","BioCommons Documentation","Galaxy Australia","NCI (Gadi)","Pawsey (Zeus)","Pawsey (Magnus)","QRIScloud / UQ-RCC (Flashlite, Awoonga, Tinaroo)"])
+        return pd.DataFrame(formatted_list, columns=["Tool / workflow name","bio.tools link","Tool identifier (module name / bio.tools ID / placeholder)","Description","Topic (EDAM, if available)","Publications","BioContainers link","License","BioCommons Documentation","Galaxy Australia","NCI (Gadi)","Pawsey (Zeus)","Pawsey (Magnus)","QRIScloud / UQ-RCC (Flashlite, Awoonga, Tinaroo)"])
 
