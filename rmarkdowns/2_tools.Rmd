@@ -61,7 +61,7 @@ container1 = htmltools::withTags(table(
       lapply(c("Tool / workflow name", "bio.tools documentation", "Tool identifier (module name / bio.tools ID / placeholder)",
                "Description", "EDAM topics", "Publications", "Containers available? (BioContainers)", "License", "Available in Galaxy toolshed",
                "BioCommons Documentation", "Galaxy Australia", "NCI (Gadi)", "Pawsey (Zeus)", "Pawsey (Magnus)", 
-               "QRIScloud / UQ-RCC (Flashlite, Awoonga, Tinaroo)"), th)
+               "QRIScloud / UQ-RCC (Flashlite, Tinaroo)"), th)
     )
   )
 ))

@@ -375,7 +375,9 @@ find_workflows <- function(search_space){
     gather_array() %>%
     spread_all() %>%
     as_tibble() %>% 
-    mutate(follow_up_search_term = paste0("https://workflowhub.eu", links.self, ".json"))
+    mutate(follow_up_search_term = paste0("https://workflowhub.eu", links.self, ".json")) %>%
+    filter(id != 143) %>%
+    filter(id != 146)
   
   space_workflows <- tibble()
   

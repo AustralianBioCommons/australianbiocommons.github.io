@@ -18,8 +18,7 @@ This site presents a landscape view of tools & workflows available across Austra
 
 - Visit [**ToolFinder**](https://australianbiocommons.github.io/2_tools.html) to discover which versions of bioinformatics tools are installed across several of the [BioCommons infrastructure partner systems](http://support.biocommons.org.au/support/solutions/articles/6000251977-compute-systems-at-the-biocommons-partner-infrastructures).
 - Visit [**WorkflowFinder**](https://australianbiocommons.github.io/2_1_workflows.html) to search for workflows registered by Australian BioCommons partners on [workflowhub](https://workflowhub.eu/programmes/8).
-- Activities that have [**installed, tested and optimised tools and workflows**](3_biocommons_activities.html)
-- A list of the Australian BioCommons infrastructure partner compute systems is [available here](http://support.biocommons.org.au/support/solutions/articles/6000251977-compute-systems-at-the-biocommons-partner-infrastructures).
+- A list of the Australian BioCommons infrastructure partner compute systems is [**available here**](http://support.biocommons.org.au/support/solutions/articles/6000251977-compute-systems-at-the-biocommons-partner-infrastructures).
 - For Help please visit the [**Australian BioCommons Support**](http://support.biocommons.org.au/support/solutions) page.
 
 -----
@@ -39,7 +38,7 @@ The information presented here is part of [collaborative activities](https://www
 - The BioCommons [communities](https://www.biocommons.org.au/get-involved) (e.g. genome assembly, metabolomics)
 - The [Bioplatforms Australia](https://bioplatforms.com/) Framework Initiatives (e.g. [Oz Mammals Genomics](https://ozmammalsgenomics.com/), [Genomics for Australian Plants](https://www.genomicsforaustralianplants.com/))
 
-The website and its contents have been built using [Rstudio](https://rstudio.com/), [R](https://www.r-project.org/) and the [tidyverse](https://www.tidyverse.org/) (dplyr *et al.*), with [references included](5_attributions.html), and additional attributions embedded in the Rmarkdown scripts.
+The website and its contents are built using [python](https://www.python.org/), [pycharm](https://www.jetbrains.com/pycharm/), [R](https://www.r-project.org/) and the [tidyverse](https://www.tidyverse.org/) (dplyr *et al.*), with [references included](5_attributions.html), and additional attributions embedded in the Rmarkdown scripts.
 
 -----
 

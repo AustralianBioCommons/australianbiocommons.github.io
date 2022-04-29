@@ -36,11 +36,16 @@ class Dataprovider:
         self.identifier = ""
         """available_data is keyed by the toolid and should contain all information received by this data provider"""
         self.available_data = {}
+        self.unmatched_data = {}
         self.last_queried = datetime.datetime.min
+
+    def _save_unmatched_(self, key, data):
+        self.unmatched_data[key] = data
 
     def query_remote(self):
         if self._needs_querying():
             self._query_remote()
+            self.last_queried = datetime.datetime.now()
 
     """
     _query_remote queries a remote data source, transforms the information received into internal identifiers to be later joined onto all available tools.
@@ -206,7 +211,6 @@ class GalaxyDataProvider(Dataprovider):
         super().__init__()
         self.identifier = "GalaxyAustralia"
         self.parent = parent
-        self.unmatched_galaxy_biotools_ids = set()
         self.look_up_file = look_up_file
 
     def _query_remote(self):
@@ -235,14 +239,11 @@ class GalaxyDataProvider(Dataprovider):
             if len(tool_id_list) == 0:
                 tool_id_list = self.parent.get_id_from_alt(GalaxyDataProvider.GALAXY_ID, galaxy_id)
             if len(tool_id_list) == 0:
-                self.unmatched_galaxy_biotools_ids.add(galaxy_id)
+                self._save_unmatched_(galaxy_id, tool)
             for tool_id in tool_id_list:
                 if tool_id not in self.available_data:
                     self.available_data[tool_id] = []
                 self.available_data[tool_id].append(tool)
-
-    def get_unmatched_galaxy_biotools_ids(self):
-        return self.unmatched_galaxy_biotools_ids
 
     def _render(self, data):
         retval = {}
@@ -334,7 +335,6 @@ class GadiDataProvider(Dataprovider):
                 self.available_data[tool_id] = []
             self.available_data[tool_id].append(version)
 
-
     def _render(self, data):
         return {Dataprovider.FIELD_NAMES.NCI_GADI_VERSION: data}
 
@@ -400,6 +400,11 @@ class ToolDB:
             if unique_id in self.alternateids[provider]:
                 return self.alternateids[provider][unique_id]
         return []
+
+    def get_unmatched_ids(self, dp:Dataprovider):
+        a = dp.unmatched_data
+        unmatched_ids = set(dp.available_data.keys()).difference(self.db.keys())
+        return(a, unmatched_ids)
 
 
     """add a dataprovider to the list of providers"""
