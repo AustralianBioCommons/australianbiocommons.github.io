@@ -66,6 +66,7 @@ workflows_final %>%
   datatable(
     container = container2,
     extensions = 'Buttons', rownames = FALSE,
+    callback = JS('table.on("search.dt", function(evt) {gtag("event", "search", {search_term: $(evt.target).parent().find("input").val()})})'),
     options = list(
       #see https://stackoverflow.com/a/52152409
       headerCallback = JS(headerCallback2), 
