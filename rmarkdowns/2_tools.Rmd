@@ -79,10 +79,11 @@ headerCallback <- "function( thead, data, start, end, display ) {
 #https://rstudio.github.io/DT/
 #https://rstudio.github.io/DT/extensions.html
 datatable(installs,
-          #see https://rstudio.github.io/DT/
-          container = container1, 
-          extensions = 'Buttons', rownames = FALSE,
-          options = list(
+#see https://rstudio.github.io/DT/
+container = container1,
+extensions = 'Buttons', rownames = FALSE,
+callback = JS('table.on("search.dt", function(evt) {gtag("event", "search", {search_term: $(evt.target).parent().find("input").val()})})'),
+options = list(
             #see https://stackoverflow.com/a/52152409
             headerCallback = JS(headerCallback), 
             pageLength = 20, 
