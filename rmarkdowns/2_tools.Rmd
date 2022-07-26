@@ -144,8 +144,7 @@ tool_request %>%
 <script>
 $(document).ready(function () {
     $('body').on('click','a',function(evt){var l=$(evt.currentTarget); if (l.attr("ga-id") && l.attr("ga-product")) {gtag("event", "select_content", {content_type: l.attr("ga-product"),item_id: l.attr("ga-id")});};})
-    }
-}
+    });
 </script>
 ### FAQ: How can I get a HPC allocation?
 
