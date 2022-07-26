@@ -190,7 +190,10 @@ class QriscloudDataProvider(Dataprovider):
                     toolID = toolID + "-" + line[1].strip()
                 elif len(line) > 3:
                     raise ValueError(toolID)
+                toolID = toolID.lower()
                 toolID = toolID.replace("genomeanalysistk", "gatk")
+                toolID = toolID.replace("gatk4", "gatk")
+                toolID = toolID.replace("iqtree", "iq-tree")
                 toolID = re.sub(r"^pacbio$", "smrtlink", toolID)
                 toolID = re.sub(r"^soapdenovo$", "soapdenovo2", toolID)
                 if toolID not in self.available_data:
@@ -328,7 +331,11 @@ class GadiDataProvider(Dataprovider):
         if req.status_code != 200:
             raise FileNotFoundError(req.url)
         for line in req.text.split("\n")[:-1]:
-            tool_id, version = line.split(",")
+            line = line.split(",")
+            tool_id = line[0].strip()
+            tool_id = tool_id.lower()
+            version = line[1]
+            #tool_id, version = line.split(",")
             if tool_id not in self.available_data:
                 self.available_data[tool_id] = []
             self.available_data[tool_id].append(version)
@@ -432,29 +439,30 @@ class ToolDB:
             if not row[Dataprovider.FIELD_NAMES.INCLUSION]:
                 continue
             tool_line = []
-            tool_line.append("""<a href="%s">%s</a>"""%(row[Dataprovider.FIELD_NAMES.REPOSITORY_URL],row[Dataprovider.FIELD_NAMES.NAME]) if not pd.isna(row[Dataprovider.FIELD_NAMES.REPOSITORY_URL]) else row[Dataprovider.FIELD_NAMES.NAME])
-            tool_line.append("""<a href="https://bio.tools/%s">%s</a>"""%(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID], row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]) if not pd.isna(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]) else "")
+            tool_line.append("""<a href="%s" ga-product="tool" ga-id="%s">%s</a>"""%(row[Dataprovider.FIELD_NAMES.REPOSITORY_URL],row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER],row[Dataprovider.FIELD_NAMES.NAME]) if not pd.isna(row[Dataprovider.FIELD_NAMES.REPOSITORY_URL]) else row[Dataprovider.FIELD_NAMES.NAME])
+            tool_line.append("""<a href="https://bio.tools/%s"  ga-product="biotool" ga-id="%s">%s</a>"""%(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID], row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER], row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]) if not pd.isna(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]) else "")
             tool_line.append(row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER] if not pd.isna(row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER]) else "")
             tool_line.append("""<span class="description-text">%s</span>"""%(row[Dataprovider.FIELD_NAMES.DESCRIPTION]) if not pd.isna(row[Dataprovider.FIELD_NAMES.DESCRIPTION]) else "")
             if isinstance(row[Dataprovider.FIELD_NAMES.EDAM_TOPICS], list):
-                tool_line.append("<br \>".join(["""<a class="edam-terms" href="%s">%s</a>"""% (x["uri"], x["term"]) for x in row[Dataprovider.FIELD_NAMES.EDAM_TOPICS]]))
+                tool_line.append("<br \>".join(["""<a class="edam-terms" href="%s" ga-product="edam" ga-id="%s">%s</a>"""% (x["uri"], row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER], x["term"]) for x in row[Dataprovider.FIELD_NAMES.EDAM_TOPICS]]))
             else:
                 tool_line.append("")
             if isinstance(row[Dataprovider.FIELD_NAMES.PUBLICATIONS], list):
-                tool_line.append("<br \>".join(list(map(lambda x:f"""<a class="publication-title" href="https://doi.org/{x["doi"]}">{x["metadata"]["title"] if x["metadata"] is not None else "DOI:"+x["doi"]}</a>""" if x["doi"] is not None else
-                                                        f"""<a class="publication-title" href="http://www.ncbi.nlm.nih.gov/pubmed/{x["pmid"]}">{x["metadata"]["title"] if x["metadata"] is not None else "PMID:"+x["pmid"]}</a>""" if x["pmid"] is not None else
-                                                        f"""<a class="publication-title" href="https://www.ncbi.nlm.nih.gov/pmc/articles/{x["pmcid"]}">{x["metadata"]["title"] if x["metadata"] is not None else "PMCID:"+x["pmcid"]}</a>""" if x["pmcid"] is not None else
+                tool_line.append("<br \>".join(list(map(lambda x:f"""<a class="publication-title" href="https://doi.org/{x["doi"]}" ga-product="publication" ga-id="%s"">{x["metadata"]["title"] if x["metadata"] is not None else "DOI:"+x["doi"]}</a>"""% (row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER]) if x["doi"] is not None else
+                                                        f"""<a class="publication-title" href="http://www.ncbi.nlm.nih.gov/pubmed/{x["pmid"]}" ga-product="publication" ga-id="%s">{x["metadata"]["title"] if x["metadata"] is not None else "PMID:"+x["pmid"]}</a>"""% (row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER]) if x["pmid"] is not None else
+                                                        f"""<a class="publication-title" href="https://www.ncbi.nlm.nih.gov/pmc/articles/{x["pmcid"]}" ga-product="publication" ga-id="%s">{x["metadata"]["title"] if x["metadata"] is not None else "PMCID:"+x["pmcid"]}</a>"""% (row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER]) if x["pmcid"] is not None else
                                                         "",row[Dataprovider.FIELD_NAMES.PUBLICATIONS]))))
             else:
                 tool_line.append("")
-            tool_line.append("""<a href="https://biocontainers.pro/tools/%s">%s</a>"""%(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID], row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]) if not pd.isna(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]) else "")
+            tool_line.append("""<a href="https://biocontainers.pro/tools/%s" ga-product="containers" ga-id="%s">%s</a>"""%(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID], row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER], row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]) if not pd.isna(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]) else "")
             tool_line.append(row[Dataprovider.FIELD_NAMES.LICENSE] if not pd.isna(row[Dataprovider.FIELD_NAMES.LICENSE]) else "")
-            tool_line.append("""<a href="%s">%s</a>""" %(row[Dataprovider.FIELD_NAMES.BIOCOMMONS_DOCUMENTATION_LINK], row[Dataprovider.FIELD_NAMES.BIOCOMMONS_DOCUMENTATION_DESCRIPTION]) if not pd.isna(row[Dataprovider.FIELD_NAMES.BIOCOMMONS_DOCUMENTATION_LINK]) else "")
+            tool_line.append("""<a href="%s" ga-product="biocommons" ga-id="%s">%s</a>""" %(row[Dataprovider.FIELD_NAMES.BIOCOMMONS_DOCUMENTATION_LINK], row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER], row[Dataprovider.FIELD_NAMES.BIOCOMMONS_DOCUMENTATION_DESCRIPTION]) if not pd.isna(row[Dataprovider.FIELD_NAMES.BIOCOMMONS_DOCUMENTATION_LINK]) else "")
             if isinstance(row[Dataprovider.FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK], list):
                 # see https://stackoverflow.com/a/2906586
                 # see https://stackoverflow.com/questions/5618878/how-to-convert-list-to-string
                 #tool_line.append("<br \>".join(["""<button class="galaxy-link" onclick="window.open('https://usegalaxy.org.au/%s','_blank').focus()">%s</button>""" %d for d in row[Dataprovider.FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK]]))
-                a = ["""<button class="galaxy-link" onclick="window.open('https://usegalaxy.org.au/%s','_blank').focus()">%s</button>""" %d for d in row[Dataprovider.FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK]]
+                a = ["""<button class="galaxy-link" onclick="window.open('https://usegalaxy.org.au/%s','_blank').focus()" ga-product="galaxy" ga-id="%s">%s</button>"""% (x[0], row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER], x[1]) for x in row[Dataprovider.FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK]]
+                     #%d for d in row[Dataprovider.FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK]]
                 tool_line.append("""<ul class="galaxy-links-holder"><li class="closed galaxy-collapsible" onclick="$(this).parent('.galaxy-links-holder').find('.galaxy-links').toggle({duration:200,start:function(){$(this).parent('.galaxy-links-holder').find('.galaxy-collapsible').toggleClass('closed open')}})" ><span class="galaxy-link-toggle">""" + str(len(a)) + " tool" + ("s" if len(a)>1 else "") + """</span><span class="button"/></li><ul class="galaxy-links" style="display: none;">""" + str("".join(a)) + "</li></ul></ul>")
             else:
                 tool_line.append("")

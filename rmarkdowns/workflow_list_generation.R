@@ -26,7 +26,7 @@ search_space <- 'https://workflowhub.eu/programmes/8/workflows.json'
 formatted <- find_workflows(search_space) %>%
   select(Title, Tags, Description, License, `Workflow Class`, Teams, links.self) %>%
   arrange(Title) %>%
-  mutate(Title = paste0("<a href='https://workflowhub.eu", links.self, "' target='_blank'  rel='noopener noreferrer'>", Title, "</a>")) %>%
+  mutate(Title = paste0("<a href='https://workflowhub.eu", links.self, "' target='_blank'  rel='noopener noreferrer' ga-product='workflow' ga-id='", links.self, "'>", Title, "</a>")) %>%
   select(-links.self) %>%
   #see https://stackoverflow.com/a/63927848
   mutate(Description = str_replace_all(Description, "\n","<br />")) %>%
