@@ -12,7 +12,9 @@ title: "WorkflowFinder"
 
 [![](./images/Australian-Biocommons-Logo-Horizontal-144dpi-Transparent.png){width=15%}](https://www.biocommons.org.au/services)
 
-The interactive table below allows you to search for workflows registered by Australian BioCommons partners on [workflowhub](https://workflowhub.eu/programmes/8).
+The interactive table below allows you to search for workflows [registered by Australian BioCommons partners on WorkflowHub](https://workflowhub.eu/programmes/8).
+
+If you would like to add your bioinformatics workflows to [WorkflowHub](https://workflowhub.eu/), please see this [getting started guide](https://about.workflowhub.eu/docs/getting-started/).
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE)

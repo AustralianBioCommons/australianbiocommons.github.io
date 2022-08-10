@@ -27,9 +27,11 @@ class Dataprovider:
         PUBLICATIONS = "FIELD_NAMES.PUBLICATIONS"
         GALAXY_AUSTRALIA_LAUNCH_LINK = "FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK"
         NCI_GADI_VERSION = "FIELD_NAMES.NCI_GADI_VERSION"
+        NCI_IF89_VERSION = "FIELD_NAMES.NCI_IF89_VERSION"
         PAWSEY_ZEUS_VERSION = "FIELD_NAMES.PAWSEY_ZEUS_VERSION"
         PAWSEY_MAGNUS_VERSION = "FIELD_NAMES.PAWSEY_MAGNUS_VERSION"
         QRISCLOUD_VERSION = "FIELD_NAMES.QRISCLOUD_VERSION"
+        PAWSEY_SETONIX_VERSION = "FIELD_NAMES.PAWSEY_SETONIX_VERSION"
 
     def __init__(self):
         self.identifier = ""
@@ -171,6 +173,30 @@ class MagnusDataProvider(Dataprovider):
 
     def _render(self, data):
         return {Dataprovider.FIELD_NAMES.PAWSEY_MAGNUS_VERSION: data}
+
+
+class SetonixDataProvider(Dataprovider):
+    def __init__(self, filename):
+        super().__init__()
+        self.filename = filename
+        self.identifier = "SETONIX"
+
+    def _query_remote(self):
+        import re
+        self.available_data = {}
+        data = pd.read_csv(self.filename, delimiter="/", header=None)
+        data.columns = ["toolID", "version"]
+
+        for idx, row in data.iterrows():
+            toolID = row.toolID
+            toolID = re.sub(r"gatk4", "gatk", toolID)
+            toolID = re.sub(r"beast1", "beast", toolID)
+            if toolID not in self.available_data:
+                self.available_data[toolID] = []
+            self.available_data[toolID].append(row.version)
+
+    def _render(self, data):
+        return {Dataprovider.FIELD_NAMES.PAWSEY_SETONIX_VERSION: data}
 
 
 class QriscloudDataProvider(Dataprovider):
@@ -344,6 +370,32 @@ class GadiDataProvider(Dataprovider):
         return {Dataprovider.FIELD_NAMES.NCI_GADI_VERSION: data}
 
 
+class if89DataProvider(Dataprovider):
+
+    def __init__(self, if89_key_file):
+        super().__init__()
+        self.key = open(if89_key_file, "r").readline()
+        self.identifier = "IF89"
+
+    def _query_remote(self):
+        self.available_data = {}
+        #https://stackoverflow.com/a/8685813
+        req = requests.get("http://130.56.246.237:5000/dump", headers={"Authorization": self.key})
+        if req.status_code != 200:
+            raise FileNotFoundError(req.url)
+        for line in req.text.split("\n")[:-1]:
+            line = line.split(",")
+            tool_id = line[0].strip()
+            tool_id = tool_id.lower()
+            version = line[1]
+            if tool_id not in self.available_data:
+                self.available_data[tool_id] = []
+            self.available_data[tool_id].append(version)
+
+    def _render(self, data):
+        return {Dataprovider.FIELD_NAMES.NCI_IF89_VERSION: data}
+
+
 class Tool:
     """
     Class representing a tool.
@@ -470,6 +522,10 @@ class ToolDB:
                 tool_line.append("<br \>".join(row[Dataprovider.FIELD_NAMES.NCI_GADI_VERSION]))
             else:
                 tool_line.append("")
+            if isinstance(row[Dataprovider.FIELD_NAMES.NCI_IF89_VERSION], list):
+                tool_line.append("<br \>".join(row[Dataprovider.FIELD_NAMES.NCI_IF89_VERSION]))
+            else:
+                tool_line.append("")
             if isinstance(row[Dataprovider.FIELD_NAMES.PAWSEY_ZEUS_VERSION], list):
                 tool_line.append("<br \>".join(row[Dataprovider.FIELD_NAMES.PAWSEY_ZEUS_VERSION]))
             else:
@@ -478,10 +534,14 @@ class ToolDB:
                 tool_line.append("<br \>".join(row[Dataprovider.FIELD_NAMES.PAWSEY_MAGNUS_VERSION]))
             else:
                 tool_line.append("")
+            if isinstance(row[Dataprovider.FIELD_NAMES.PAWSEY_SETONIX_VERSION], list):
+                tool_line.append("<br \>".join(row[Dataprovider.FIELD_NAMES.PAWSEY_SETONIX_VERSION]))
+            else:
+                tool_line.append("")
             if isinstance(row[Dataprovider.FIELD_NAMES.QRISCLOUD_VERSION], list):
                 tool_line.append("<br \>".join(row[Dataprovider.FIELD_NAMES.QRISCLOUD_VERSION]))
             else:
                 tool_line.append("")
             formatted_list.append(tool_line)
-        return pd.DataFrame(formatted_list, columns=["Tool / workflow name","bio.tools link","Tool identifier (module name / bio.tools ID / placeholder)","Description","Topic (EDAM, if available)","Publications","BioContainers link","License","BioCommons Documentation","Galaxy Australia","NCI (Gadi)","Pawsey (Zeus)","Pawsey (Magnus)","QRIScloud / UQ-RCC (Flashlite, Awoonga, Tinaroo)"])
+        return pd.DataFrame(formatted_list, columns=["Tool / workflow name","bio.tools link","Tool identifier (module name / bio.tools ID / placeholder)","Description","Topic (EDAM, if available)","Publications","BioContainers link","License","BioCommons Documentation","Galaxy Australia","NCI (Gadi)","NCI (if89)","Pawsey (Zeus)","Pawsey (Magnus)","Pawsey (Setonix)","QRIScloud / UQ-RCC (Flashlite, Awoonga, Tinaroo)"])
 

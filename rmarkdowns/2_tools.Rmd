@@ -12,7 +12,12 @@ title: "ToolFinder"
 
 [![](./images/Australian-Biocommons-Logo-Horizontal-144dpi-Transparent.png){width=15%}](https://www.biocommons.org.au/services)
 
-This page lists bioinformatics tools installed across several of the [**BioCommons infrastructure partner systems**](http://support.biocommons.org.au/support/solutions/articles/6000251977-compute-systems-at-the-biocommons-partner-infrastructures) and tool installation request mechanisms on these systems. Tool status on other partner infrastructures will be added over time.
+This page lists bioinformatics tools and software that are installed across several of the [**BioCommons infrastructure partner systems**](http://support.biocommons.org.au/support/solutions/articles/6000251977-compute-systems-at-the-biocommons-partner-infrastructures) as well as the tool installation request mechanisms on these systems. Tool status on other partner infrastructures will be added over time.
+
+**Please note:**
+
+- `Magnus` and `Zeus` (Pawsey) will be decommissioned once user migration to [`Setonix`](https://pawsey.org.au/setonix-fires-up-for-researchers/) is complete, during the second half of 2022. At this point Magnus and Zeus will be removed from ToolFinder.
+- `NCI (if89)` below refers to the [`Australian BioCommons Tools and Workflows repository`](https://australianbiocommons.github.io/ables/if89/), located in project allocation if89 at the National Computational Infrastructure (NCI).
 
 -----
 
@@ -55,12 +60,12 @@ container1 = htmltools::withTags(table(
     tr(
       #see https://stackoverflow.com/q/42153218
       th(class = 'dt-center', style="font-size:11pt", colspan = 9, 'Tool metadata'),
-      th(class = 'dt-center', style="font-size:11pt", colspan = 5, 'Availability on Australian compute infrastructures')
+      th(class = 'dt-center', style="font-size:11pt", colspan = 7, 'Availability on Australian compute infrastructures')
     ),
     tr(
       lapply(c("Tool / workflow name", "bio.tools documentation", "Tool identifier (module name / bio.tools ID / placeholder)",
                "Description", "EDAM topics", "Publications", "Containers available? (BioContainers)", "License",
-               "BioCommons Documentation", "Galaxy Australia", "NCI (Gadi)", "Pawsey (Zeus)", "Pawsey (Magnus)", 
+               "BioCommons Documentation", "Galaxy Australia", "NCI (Gadi)", "NCI (if89)", "Pawsey (Zeus)", "Pawsey (Magnus)", "Pawsey (Setonix)",
                "QRIScloud / UQ-RCC (Flashlite, Tinaroo)"), th)
     )
   )
@@ -91,7 +96,7 @@ options = list(
             buttons = c('copy', 'csv', I('colvis')),
             #see https://stackoverflow.com/a/32428537
             columnDefs = list(list(visible=FALSE, targets = c(2,7)),
-                              list(className = 'dt-center', targets = c(0:2, 5:13)))
+                              list(className = 'dt-center', targets = c(0:2, 5:15)))
             ), 
           class = 'cell-border stripe', escape = FALSE)
 
