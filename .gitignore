@@ -1,1 +1,3 @@
 external/*
+temp/*
+rmarkdowns/outputs/*
