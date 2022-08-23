@@ -32,10 +32,10 @@ library(uuid)
 
 [![](./images/Australian-Biocommons-Logo-Horizontal-144dpi-Transparent.png){width=15%}](https://www.biocommons.org.au/services)
 
-This page lists bioinformatics tools and software that are installed across several of the [**BioCommons infrastructure partner systems**](http://support.biocommons.org.au/support/solutions/articles/6000251977-compute-systems-at-the-biocommons-partner-infrastructures). Tool/software status on other infrastructure partner systems will be added over time.
+This page lists bioinformatics tools and software that are installed across several of the [**BioCommons infrastructure partner systems**](http://support.biocommons.org.au/support/solutions/articles/6000251977-compute-systems-at-the-biocommons-partner-infrastructures). Tool / software status on other infrastructure partner systems will be added over time.
 
 <details>
-  <summary>**Can't find the software you need? Click here to see other options for finding software**</summary>
+  <summary>Can't find the software you need? Click here to see other options for finding software</summary>
 <ol>
 
 - [BioContainers](https://biocontainers.pro/registry): discover and access containers for software
@@ -45,7 +45,7 @@ This page lists bioinformatics tools and software that are installed across seve
 </details>
 
 <details>
-  <summary>**Click to find out how to request installation of software on ToolFinder listed infrastructures**</summary>
+  <summary>Click to find out how to request installation of software on ToolFinder listed infrastructures</summary>
 <ol>
 
 <a name="tool_request"></a>
