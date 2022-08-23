@@ -1,3 +1,5 @@
+import markdown
+
 from .common import Dataprovider, DB
 import requests
 import json
@@ -72,8 +74,8 @@ class WorkflowHubSpaceDataProvider(Dataprovider):
                 retval[Dataprovider.FIELD_NAMES.TITLE] = workflow_attr["title"]
             if workflow_attr["license"]:
                 retval[Dataprovider.FIELD_NAMES.LICENSE] = workflow_attr["license"]
-            if workflow_attr["description"]:
-                retval[Dataprovider.FIELD_NAMES.DESCRIPTION] = workflow_attr["description"]
+            #if workflow_attr["description"]:
+            #    retval[Dataprovider.FIELD_NAMES.DESCRIPTION] = workflow_attr["description"]
             if workflow_attr["updated_at"]:
                 retval[Dataprovider.FIELD_NAMES.UPDATED_AT] = workflow_attr["updated_at"]
             if workflow_attr["tags"]:
@@ -150,28 +152,28 @@ class WorkflowDB(DB):
             workflow_line = []
             workflow_line.append("""<a href="https://workflowhub.eu%s" ga-product="tool" ga-id="%s">%s</a>""" % (row[Dataprovider.FIELD_NAMES.URL], row[Dataprovider.FIELD_NAMES.URL],
             row[Dataprovider.FIELD_NAMES.TITLE]) if not pd.isna(row[Dataprovider.FIELD_NAMES.URL]) else row[Dataprovider.FIELD_NAMES.TITLE])
-            workflow_line.append("""<span class="description-text">%s</span>""" % (row[Dataprovider.FIELD_NAMES.DESCRIPTION]) if not pd.isna(row[Dataprovider.FIELD_NAMES.DESCRIPTION]) else "")
-            workflow_line.append("""<a href="https://doi.org/%s" ga-product="doi" ga-id="%s">%s</a>""" % (row[Dataprovider.FIELD_NAMES.DOI], row[Dataprovider.FIELD_NAMES.DOI],
-            row[Dataprovider.FIELD_NAMES.DOI]) if not pd.isna(row[Dataprovider.FIELD_NAMES.DOI]) else "")
-            workflow_line.append(row[Dataprovider.FIELD_NAMES.LICENSE])
-            workflow_line.append(row[Dataprovider.FIELD_NAMES.UPDATED_AT])
-            if isinstance(row[Dataprovider.FIELD_NAMES.TAGS], list):
-                workflow_line.append("<br \>".join(row[Dataprovider.FIELD_NAMES.TAGS]))
+            if isinstance(row[Dataprovider.FIELD_NAMES.EDAM_OPS], list):
+                workflow_line.append("<br \>".join(["""<a class="edam-ops" href="%s" ga-product="edam-ops" ga-id="%s">%s</a>""" % (x["identifier"], x["label"], x["label"]) for x in row[Dataprovider.FIELD_NAMES.EDAM_OPS]]))
             else:
                 workflow_line.append("")
-            workflow_line.append("<br \>".join(row[Dataprovider.FIELD_NAMES.PROJECTS]))
+
             if isinstance(row[Dataprovider.FIELD_NAMES.EDAM_TOP], list):
                 workflow_line.append("<br \>".join([
                     """<a class="edam-topics" href="%s" ga-product="edam-topics" ga-id="%s">%s</a>""" % (x["identifier"], x["label"], x["label"]) for x in row[Dataprovider.FIELD_NAMES.EDAM_TOP]]))
             else:
                 workflow_line.append("")
-            if isinstance(row[Dataprovider.FIELD_NAMES.EDAM_OPS], list):
-                workflow_line.append("<br \>".join(["""<a class="edam-ops" href="%s" ga-product="edam-ops" ga-id="%s">%s</a>""" % (x["identifier"], x["label"], x["label"]) for x in row[Dataprovider.FIELD_NAMES.EDAM_OPS]]))
+            if isinstance(row[Dataprovider.FIELD_NAMES.TAGS], list):
+                workflow_line.append("<br \>".join(row[Dataprovider.FIELD_NAMES.TAGS]))
             else:
                 workflow_line.append("")
+            #workflow_line.append("""<span class="description-text">%s</span>""" % (markdown.markdown(row[Dataprovider.FIELD_NAMES.DESCRIPTION])) if not pd.isna(row[Dataprovider.FIELD_NAMES.DESCRIPTION]) else "")
+            workflow_line.append("""<a href="https://doi.org/%s" ga-product="doi" ga-id="%s">%s</a>""" % (row[Dataprovider.FIELD_NAMES.DOI], row[Dataprovider.FIELD_NAMES.DOI],
+            row[Dataprovider.FIELD_NAMES.DOI]) if not pd.isna(row[Dataprovider.FIELD_NAMES.DOI]) else "")
+            workflow_line.append(row[Dataprovider.FIELD_NAMES.LICENSE])
+            workflow_line.append(row[Dataprovider.FIELD_NAMES.UPDATED_AT])
+            workflow_line.append("<br \>".join(row[Dataprovider.FIELD_NAMES.PROJECTS]))
             workflow_line.append("""<a href="%s" ga-product="guide" ga-id="%s">See the How-to-Guide</a>""" % (row[Dataprovider.FIELD_NAMES.GUIDE_LINK], row[Dataprovider.FIELD_NAMES.GUIDE_LINK]) if not pd.isna(row[Dataprovider.FIELD_NAMES.GUIDE_LINK]) else "")
             workflow_line.append("""<a href="%s" ga-product="launch" ga-id="%s">Launch %s workflow</a>""" % (row[Dataprovider.FIELD_NAMES.LAUNCH_LINK], row[Dataprovider.FIELD_NAMES.LAUNCH_LINK], row[Dataprovider.FIELD_NAMES.TITLE]) if not pd.isna(row[Dataprovider.FIELD_NAMES.LAUNCH_LINK]) else "")
             formatted_list.append(workflow_line)
-        return pd.DataFrame(formatted_list, columns=["title","description","DOI","license",
-                                                     "updated_at","tags", "projects","EDAM topics",
-                                                     "EDAM operations", "guide","launch"])
+        return pd.DataFrame(formatted_list, columns=["title","EDAM operations", "EDAM topics", "tags", "DOI","license",
+                                                     "updated_at", "projects", "guide","launch"])

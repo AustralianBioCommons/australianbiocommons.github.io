@@ -35,13 +35,12 @@ container2 = htmltools::withTags(table(
   thead(
     tr(
       #see https://stackoverflow.com/q/42153218
-      th(class = 'dt-center', style="font-size:11pt", colspan = 10, 'Workflow metadata'),
+      th(class = 'dt-center', style="font-size:11pt", colspan = 9, 'Workflow metadata'),
       th(class = 'dt-center', style="font-size:11pt", colspan = 1, 'Deployment')
     ),
     tr(
-      lapply(c("Workflow name (+ WorkflowHub link)","Description","DOI","License",
-                "Updated at","Tag(s)", "Contributing team(s)","EDAM topic(s)",
-                "EDAM operation(s)", "How-to-Guide", "Launch workflow (if available)"), th)
+      lapply(c("Workflow name (+ WorkflowHub link)","EDAM operation(s)","EDAM topic(s)","Tag(s)","DOI","License",
+                "Updated at", "Contributing team(s)", "How-to-Guide", "Launch workflow (if available)"), th)
     )
   )
 ))
@@ -63,13 +62,13 @@ workflows_final %>%
     options = list(
       #see https://stackoverflow.com/a/52152409
       headerCallback = JS(headerCallback2), 
-      pageLength = 10, 
+      pageLength = 20,
       dom = 'Bfrtip', 
       buttons = c('copy', 'csv', I('colvis')),
       #see https://stackoverflow.com/a/32428537
       #see https://rstudio.github.io/DT/options.html
-      columnDefs = list(list(visible=FALSE, targets = c(3,4)),
-                        list(className = 'dt-center', targets = c(0,10)),
+      columnDefs = list(list(visible=FALSE, targets = c(5,6)),
+                        list(className = 'dt-center', targets = c(0,9)),
                         list(width = '100px', targets = c(1))
                         )
             ), 
@@ -77,6 +76,7 @@ workflows_final %>%
 
 ```
 </font>
+
 <script>
 $(document).ready(function () {
     $('body').on('click','a',function(evt){var l=$(evt.currentTarget); if (l.attr("ga-id") && l.attr("ga-product")) {gtag("event", "select_content", {content_type: l.attr("ga-product"),item_id: l.attr("ga-id")});};})
