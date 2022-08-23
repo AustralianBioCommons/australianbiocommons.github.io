@@ -1,99 +1,9 @@
-from abc import abstractmethod
-import datetime
-from enum import Enum
-
-import numpy as np
+from .common import Dataprovider, DB
 import pandas as pd
-from typing import List
 import requests
 import json
 import itertools
-
-class Dataprovider:
-    """
-    Class representing a data source, which enriches information about a tool.
-    """
-    class FIELD_NAMES(Enum):
-        REPOSITORY_URL = "FIELD_NAMES.REPOSITORY_URL"
-        NAME = "FIELD_NAMES.NAME"
-        TOOL_IDENTIFIER = "FIELD_NAMES.TOOL_IDENTIFIER"
-        BIOTOOLS_ID = "FIELD_NAMES.BIOTOOLS_ID"
-        INCLUSION = "FIELD_NAMES.INCLUSION"
-        BIOCOMMONS_DOCUMENTATION_DESCRIPTION = "FIELD_NAMES.BIOCOMMONS_DOCUMENTATION_DESCRIPTION"
-        BIOCOMMONS_DOCUMENTATION_LINK = "FIELD_NAMES.BIOCOMMONS_DOCUMENTATION_LINK"
-        DESCRIPTION = "FIELD_NAMES.DESCRIPTION"
-        LICENSE = "FIELD_NAMES.LICENSE"
-        EDAM_TOPICS = "FIELD_NAMES.EDAM_TOPICS"
-        PUBLICATIONS = "FIELD_NAMES.PUBLICATIONS"
-        GALAXY_AUSTRALIA_LAUNCH_LINK = "FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK"
-        NCI_GADI_VERSION = "FIELD_NAMES.NCI_GADI_VERSION"
-        NCI_IF89_VERSION = "FIELD_NAMES.NCI_IF89_VERSION"
-        PAWSEY_ZEUS_VERSION = "FIELD_NAMES.PAWSEY_ZEUS_VERSION"
-        PAWSEY_MAGNUS_VERSION = "FIELD_NAMES.PAWSEY_MAGNUS_VERSION"
-        QRISCLOUD_VERSION = "FIELD_NAMES.QRISCLOUD_VERSION"
-        PAWSEY_SETONIX_VERSION = "FIELD_NAMES.PAWSEY_SETONIX_VERSION"
-
-    def __init__(self):
-        self.identifier = ""
-        """available_data is keyed by the toolid and should contain all information received by this data provider"""
-        self.available_data = {}
-        self.unmatched_data = {}
-        self.last_queried = datetime.datetime.min
-
-    def _save_unmatched_(self, key, data):
-        self.unmatched_data[key] = data
-
-    def query_remote(self):
-        if self._needs_querying():
-            self._query_remote()
-            self.last_queried = datetime.datetime.now()
-
-    """
-    _query_remote queries a remote data source, transforms the information received into internal identifiers to be later joined onto all available tools.
-    """
-
-    @abstractmethod
-    def _query_remote(self):
-        pass
-
-    """needs re-querying if data is more than 7 days old"""
-
-    def _needs_querying(self):
-        return (datetime.datetime.now() - self.last_queried) > datetime.timedelta(days=7)
-
-    """get information """
-
-    def get_information(self, uid):
-        if uid in self.available_data:
-            return self.available_data[uid]
-        else:
-            return None
-
-    """Data provider are keyed by id"""
-
-    def __eq__(self, other):
-        if isinstance(other, Dataprovider):
-            return self.identifier == other.identifier
-        else:
-            return False
-
-    """public wrapper for _render"""
-
-    def render(self, tool):
-        data = tool.get_data(self)
-        if data is not None:
-            return self._render(data)
-        return {}
-
-    """render information"""
-
-    @abstractmethod
-    def _render(self, data):
-        pass
-
-    def get_alt_ids(self):
-        return{}
-
+import numpy as np
 
 class ToolMatrixDataProvider(Dataprovider):
     ID_BIO_TOOLS = "bio.tools"
@@ -130,7 +40,6 @@ class ToolMatrixDataProvider(Dataprovider):
             retval[ToolMatrixDataProvider.ID_BIO_TOOLS][row.biotoolsID].append(toolID)
         return retval
 
-
 class ZeusDataProvider(Dataprovider):
     def __init__(self, filename):
         super().__init__()
@@ -153,7 +62,6 @@ class ZeusDataProvider(Dataprovider):
 
     def _render(self, data):
         return {Dataprovider.FIELD_NAMES.PAWSEY_ZEUS_VERSION: data}
-
 
 class MagnusDataProvider(Dataprovider):
     def __init__(self, filename):
@@ -424,64 +332,15 @@ class Tool:
             return False
 
 
-class ToolDB:
+class ToolDB(DB):
     """represents the database for all known tools"""
 
     def __init__(self, tool_matrix_file):
-        self.db = {}
-        self.dataprovider: List[Dataprovider]
-        self.dataprovider = []
-        self.alternateids = {}
+        super().__init__()
         data = pd.read_excel(tool_matrix_file, header=2)
         for i in data.toolID:
             self.db[i] = Tool(i)
         del self.db[np.nan]
-
-    """enrich the DB with what the dataprovider has queried from its datasource"""
-
-    def _enrich(self, dataprovider: Dataprovider):
-
-        alt_ids = dataprovider.get_alt_ids()
-        # https://stackoverflow.com/a/26853961 & https://www.python.org/dev/peps/pep-0584/
-        self.alternateids = {**self.alternateids, **alt_ids}
-
-        dataprovider.query_remote()
-
-        for i in self.db:
-            tool = self.db[i]
-            tool.add_data(dataprovider)
-
-    def get_id_from_alt(self, provider:str, unique_id:str):
-        #unique_id = unique_id.lower()
-        if provider in self.alternateids:
-            if unique_id in self.alternateids[provider]:
-                return self.alternateids[provider][unique_id]
-        return []
-
-    def get_unmatched_ids(self, dp:Dataprovider):
-        a = dp.unmatched_data
-        unmatched_ids = set(dp.available_data.keys()).difference(self.db.keys())
-        return(a, unmatched_ids)
-
-
-    """add a dataprovider to the list of providers"""
-
-    def add_provider(self, provider: Dataprovider):
-        self.dataprovider.append(provider)
-        self._enrich(provider)
-
-    def get_data(self):
-        data = []
-        for i in self.db:
-            line = []
-            for dp in self.dataprovider:
-                line.append(dp.render(self.db[i]))
-            result = {}
-            for element in line:
-                result.update(element)
-            data.append(result)
-
-        return pd.DataFrame(data)
 
     def get_formatted_table(self):
         import urllib
@@ -544,4 +403,3 @@ class ToolDB:
                 tool_line.append("")
             formatted_list.append(tool_line)
         return pd.DataFrame(formatted_list, columns=["Tool / workflow name","bio.tools link","Tool identifier (module name / bio.tools ID / placeholder)","Description","Topic (EDAM, if available)","Publications","BioContainers link","License","BioCommons Documentation","Galaxy Australia","NCI (Gadi)","NCI (if89)","Pawsey (Zeus)","Pawsey (Magnus)","Pawsey (Setonix)","QRIScloud / UQ-RCC (Flashlite, Awoonga, Tinaroo)"])
-

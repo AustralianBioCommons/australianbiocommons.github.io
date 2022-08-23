@@ -3,7 +3,7 @@ from setuptools import setup
 setup(
     name='toolfinder_dev',
     version='0.001',
-    packages=['toolfinder'],
+    packages=['finders'],
     url='',
     license='',
     author='Johan Gustafsson',

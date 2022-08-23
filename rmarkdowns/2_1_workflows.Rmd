@@ -18,18 +18,7 @@ If you would like to add your bioinformatics workflows to [WorkflowHub](https://
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE)
-library(tidyverse)
-library(tidyjson)
-library(httr)
-library(DT)
-library(lubridate)
-
-###########################
-### external .R sources ###
-###########################
-#see https://stackoverflow.com/questions/13548266/define-all-functions-in-one-r-file-call-them-from-another-r-file-how-if-pos
-source("workflow_list_generation.R")
-
+workflows_final <- read_csv("../temp/workflowfinder_input.csv")
 ```
 
 ---
@@ -46,11 +35,13 @@ container2 = htmltools::withTags(table(
   thead(
     tr(
       #see https://stackoverflow.com/q/42153218
-      th(class = 'dt-center', style="font-size:11pt", colspan = 6, 'Workflow metadata'),
+      th(class = 'dt-center', style="font-size:11pt", colspan = 10, 'Workflow metadata'),
       th(class = 'dt-center', style="font-size:11pt", colspan = 1, 'Deployment')
     ),
     tr(
-      lapply(c("Title", "Tag(s)", "Description", "License", "Workflow Class", "Contributing team(s)", "Successful infrastructure deployment(s)"), th)
+      lapply(c("Workflow name (+ WorkflowHub link)","Description","DOI","License",
+                "Updated at","Tag(s)", "Contributing team(s)","EDAM topic(s)",
+                "EDAM operation(s)", "How-to-Guide", "Launch workflow (if available)"), th)
     )
   )
 ))
@@ -77,8 +68,9 @@ workflows_final %>%
       buttons = c('copy', 'csv', I('colvis')),
       #see https://stackoverflow.com/a/32428537
       #see https://rstudio.github.io/DT/options.html
-      columnDefs = list(list(className = 'dt-center', targets = c(0,3:6)),
-                        list(width = '150px', targets = c(1))
+      columnDefs = list(list(visible=FALSE, targets = c(3,4)),
+                        list(className = 'dt-center', targets = c(0,10)),
+                        list(width = '100px', targets = c(1))
                         )
             ), 
     class = 'cell-border stripe', escape = FALSE)

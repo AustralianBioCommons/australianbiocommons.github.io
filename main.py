@@ -1,6 +1,4 @@
-import toolfinder
-from toolfinder import *
-import pandas as pd
+from finders import *
 
 if __name__ == "__main__":
     mytooldb = toolfinder.ToolDB("external/tool_matrix_2021_11_15.xlsx")
@@ -27,3 +25,8 @@ if __name__ == "__main__":
         print(unmatched)
 
     mytooldb.get_formatted_table().to_csv("./temp/toolfinder_input.csv", index = None)
+
+    myworkflowdb = WorkflowDB()
+    myworkflowdb.add_provider(WorkflowHubSpaceDataProvider())
+
+    myworkflowdb.get_formatted_table().to_csv("./temp/workflowfinder_input.csv", index = None)
