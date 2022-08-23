@@ -18,7 +18,15 @@ If you would like to add your bioinformatics workflows to [WorkflowHub](https://
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE)
-workflows_final <- read_csv("../temp/workflowfinder_input.csv")
+workflows <- read_csv("../temp/workflowfinder_input.csv")
+
+#see https://stackoverflow.com/a/55928612
+#see https://r4ds.had.co.nz/strings.html
+workflows_final <- workflows %>%
+        mutate(workflow_name = str_replace(title, "(<a.+>)(.+)(</a>)", "\\2")) %>%
+        arrange(workflow_name) %>%
+        select(-workflow_name)
+
 ```
 
 ---
