@@ -350,12 +350,12 @@ class ToolDB(DB):
             if not row[Dataprovider.FIELD_NAMES.INCLUSION]:
                 continue
             tool_line = []
-            tool_line.append("""<a href="%s" ga-product="tool" ga-id="%s">%s</a>"""%(row[Dataprovider.FIELD_NAMES.REPOSITORY_URL],row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER],row[Dataprovider.FIELD_NAMES.NAME]) if not pd.isna(row[Dataprovider.FIELD_NAMES.REPOSITORY_URL]) else row[Dataprovider.FIELD_NAMES.NAME])
+            tool_line.append("""<a href="%s" ga-product="tool" ga-id="%s"><b>%s</b></a>"""%(row[Dataprovider.FIELD_NAMES.REPOSITORY_URL],row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER],row[Dataprovider.FIELD_NAMES.NAME]) if not pd.isna(row[Dataprovider.FIELD_NAMES.REPOSITORY_URL]) else """<b>%s</b>"""%row[Dataprovider.FIELD_NAMES.NAME])
             tool_line.append("""<a href="https://bio.tools/%s"  ga-product="biotool" ga-id="%s">%s</a>"""%(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID], row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER], row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]) if not pd.isna(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]) else "")
             tool_line.append(row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER] if not pd.isna(row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER]) else "")
             tool_line.append("""<span class="description-text">%s</span>"""%(row[Dataprovider.FIELD_NAMES.DESCRIPTION]) if not pd.isna(row[Dataprovider.FIELD_NAMES.DESCRIPTION]) else "")
             if isinstance(row[Dataprovider.FIELD_NAMES.EDAM_TOPICS], list):
-                tool_line.append("<br \>".join(["""<a class="edam-terms" href="%s" ga-product="edam" ga-id="%s">%s</a>"""% (x["uri"], row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER], x["term"]) for x in row[Dataprovider.FIELD_NAMES.EDAM_TOPICS]]))
+                tool_line.append("".join(["""<button class="edam-button" href="%s" ga-product="edam" ga-id="%s">%s</button>"""% (x["uri"], row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER], x["term"]) for x in row[Dataprovider.FIELD_NAMES.EDAM_TOPICS]]))
             else:
                 tool_line.append("")
             if isinstance(row[Dataprovider.FIELD_NAMES.PUBLICATIONS], list):
@@ -374,7 +374,10 @@ class ToolDB(DB):
                 #tool_line.append("<br \>".join(["""<button class="galaxy-link" onclick="window.open('https://usegalaxy.org.au/%s','_blank').focus()">%s</button>""" %d for d in row[Dataprovider.FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK]]))
                 a = ["""<button class="galaxy-link" onclick="window.open('https://usegalaxy.org.au/%s','_blank').focus()" ga-product="galaxy" ga-id="%s">%s</button>"""% (x[0], row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER], x[1]) for x in row[Dataprovider.FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK]]
                      #%d for d in row[Dataprovider.FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK]]
-                tool_line.append("""<ul class="galaxy-links-holder"><li class="closed galaxy-collapsible" onclick="$(this).parent('.galaxy-links-holder').find('.galaxy-links').toggle({duration:200,start:function(){$(this).parent('.galaxy-links-holder').find('.galaxy-collapsible').toggleClass('closed open')}})" ><span class="galaxy-link-toggle">""" + str(len(a)) + " tool" + ("s" if len(a)>1 else "") + """</span><span class="button"/></li><ul class="galaxy-links" style="display: none;">""" + str("".join(a)) + "</li></ul></ul>")
+                if len(a)>1:
+                    tool_line.append("""<ul class="galaxy-links-holder"><li class="closed galaxy-collapsible" onclick="$(this).parent('.galaxy-links-holder').find('.galaxy-links').toggle({duration:200,start:function(){$(this).parent('.galaxy-links-holder').find('.galaxy-collapsible').toggleClass('closed open')}})" ><span class="galaxy-link-toggle">""" + str(len(a)) + " tool" + ("s" if len(a)>1 else "") + """</span><span class="button"/></li><ul class="galaxy-links" style="display: none;">""" + str("".join(a)) + "</li></ul></ul>")
+                else:
+                    tool_line.append("""<ul class="galaxy-links">""" + str("".join(a)) + "</ul>")
             else:
                 tool_line.append("")
             if isinstance(row[Dataprovider.FIELD_NAMES.NCI_GADI_VERSION], list):

@@ -44,13 +44,13 @@ container2 = htmltools::withTags(table(
   thead(
     tr(
       #see https://stackoverflow.com/q/42153218
-      th(class = 'dt-center', style="font-size:11pt", colspan = 6, 'Workflow information'),
-      th(class = 'dt-center', style="font-size:11pt", colspan = 2, 'Citation & credits'),
-      th(class = 'dt-center', style="font-size:11pt", colspan = 2, 'Deployment')
+      th(class = 'dt-center', style="font-size:12pt", colspan = 6, 'Workflow information'),
+      th(class = 'dt-center', style="font-size:12pt", colspan = 2, 'Citation & credits'),
+      th(class = 'dt-center', style="font-size:12pt", colspan = 2, 'Deployment')
     ),
     tr(
-      lapply(c("Workflow name (+ WorkflowHub link)","EDAM operation(s)","EDAM topic(s)","Tag(s)","License",
-                "Updated at","DOI","Contributing team(s)","How-to-Guide","Launch workflow (if available)"), th)
+      lapply(c("Workflow name (+ links)","EDAM operation(s)","EDAM topic(s)","Tag(s)","License",
+                "Updated","DOI","Contributing team(s)","How-to-Guide","Open workflow (if available)"), th, style="font-size:11pt")
     )
   )
 ))
@@ -82,7 +82,7 @@ workflows_final %>%
       columnDefs = list(
                         #list(visible=FALSE, targets = c(5,6)),
                         list(className = 'dt-center', targets = c(1:9)),
-                        list(width = '100px', targets = c(1))
+                        list(width = '200px', targets = c(0))
                         )
             ), 
     class = 'cell-border stripe', escape = FALSE)

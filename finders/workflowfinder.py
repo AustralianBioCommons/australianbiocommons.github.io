@@ -59,11 +59,14 @@ class WorkflowHubSpaceDataProvider(Dataprovider):
             contents = json.loads(j.read())
         launch_links = contents["launch_link"]
         guide = contents["guide"]
+        github = contents["github"]
         for workflow in self.available_data:
             launch_link = launch_links[workflow]
             guide_link = guide[workflow]
+            github_link = github[workflow]
             self.available_data[workflow]['data']['launch_link'] = launch_link
             self.available_data[workflow]['data']['guide_link'] = guide_link
+            self.available_data[workflow]['data']['github_link'] = github_link
 
 
     def _render(self, data):
@@ -71,7 +74,7 @@ class WorkflowHubSpaceDataProvider(Dataprovider):
         if len(data["data"]) > 0:
             workflow_attr = data["data"]["attributes"]
             if workflow_attr["title"]:
-                retval[Dataprovider.FIELD_NAMES.TITLE] = workflow_attr["title"]
+                retval[Dataprovider.FIELD_NAMES.TITLE] = (workflow_attr["title"]).replace("_", " ")
             if workflow_attr["license"]:
                 retval[Dataprovider.FIELD_NAMES.LICENSE] = workflow_attr["license"]
             #if workflow_attr["description"]:
@@ -94,8 +97,11 @@ class WorkflowHubSpaceDataProvider(Dataprovider):
                 retval[Dataprovider.FIELD_NAMES.PROJECTS] = workflow_data["projects"]
             if workflow_data["launch_link"]:
                 retval[Dataprovider.FIELD_NAMES.LAUNCH_LINK] = workflow_data["launch_link"]
-            if workflow_data["projects"]:
+            if workflow_data["guide_link"]:
                 retval[Dataprovider.FIELD_NAMES.GUIDE_LINK] = workflow_data["guide_link"]
+            if workflow_data["github_link"]:
+                retval[Dataprovider.FIELD_NAMES.GITHUB_LINK] = workflow_data["github_link"]
+
         return retval
 
 
@@ -150,16 +156,18 @@ class WorkflowDB(DB):
         formatted_list = []
         for index, row in workflow_table.iterrows():
             workflow_line = []
-            workflow_line.append("""<a href="https://workflowhub.eu%s" ga-product="tool" ga-id="%s"><b>%s</b></a>""" % (row[Dataprovider.FIELD_NAMES.URL], row[Dataprovider.FIELD_NAMES.URL],
-            row[Dataprovider.FIELD_NAMES.TITLE]) if not pd.isna(row[Dataprovider.FIELD_NAMES.URL]) else row[Dataprovider.FIELD_NAMES.TITLE])
+            #see https://www.w3schools.com/html/html_images.asp
+            workflow_line.append("""<a class="title" href="https://workflowhub.eu%s" ga-product="workflow" ga-id="%s"><b>%s</b></a><br \><br \>
+            <a href="%s" ga-product="github" ga-id="%s"><img src="/images/GitHub-Mark-64px.png"></a>""" % (row[Dataprovider.FIELD_NAMES.URL], row[Dataprovider.FIELD_NAMES.URL],
+            row[Dataprovider.FIELD_NAMES.TITLE],row[Dataprovider.FIELD_NAMES.GITHUB_LINK],row[Dataprovider.FIELD_NAMES.URL]) if not pd.isna(row[Dataprovider.FIELD_NAMES.GITHUB_LINK]) else """<a class="title" href="https://workflowhub.eu%s" ga-product="workflow" ga-id="%s"><b>%s</b></a>""" % (row[Dataprovider.FIELD_NAMES.URL], row[Dataprovider.FIELD_NAMES.URL], row[Dataprovider.FIELD_NAMES.TITLE]))
             if isinstance(row[Dataprovider.FIELD_NAMES.EDAM_OPS], list):
-                workflow_line.append("<br \>".join(["""<a class="edam-ops" href="%s" ga-product="edam-ops" ga-id="%s">%s</a>""" % (x["identifier"], x["label"], x["label"]) for x in row[Dataprovider.FIELD_NAMES.EDAM_OPS]]))
+                workflow_line.append("<br \>".join(["""<button class="edam-button" href="%s" ga-product="edam-ops" ga-id="%s">%s</a>""" % (x["identifier"], x["label"], x["label"]) for x in row[Dataprovider.FIELD_NAMES.EDAM_OPS]]))
             else:
                 workflow_line.append("")
 
             if isinstance(row[Dataprovider.FIELD_NAMES.EDAM_TOP], list):
                 workflow_line.append("<br \>".join([
-                    """<a class="edam-topics" href="%s" ga-product="edam-topics" ga-id="%s">%s</a>""" % (x["identifier"], x["label"], x["label"]) for x in row[Dataprovider.FIELD_NAMES.EDAM_TOP]]))
+                    """<button class="edam-button" href="%s" ga-product="edam-topics" ga-id="%s">%s</button>""" % (x["identifier"], x["label"], x["label"]) for x in row[Dataprovider.FIELD_NAMES.EDAM_TOP]]))
             else:
                 workflow_line.append("")
             if isinstance(row[Dataprovider.FIELD_NAMES.TAGS], list):
@@ -173,7 +181,7 @@ class WorkflowDB(DB):
             row[Dataprovider.FIELD_NAMES.DOI]) if not pd.isna(row[Dataprovider.FIELD_NAMES.DOI]) else "")
             workflow_line.append("<br \>".join(row[Dataprovider.FIELD_NAMES.PROJECTS]))
             workflow_line.append("""<a href="%s" ga-product="guide" ga-id="%s">See the How-to-Guide</a>""" % (row[Dataprovider.FIELD_NAMES.GUIDE_LINK], row[Dataprovider.FIELD_NAMES.GUIDE_LINK]) if not pd.isna(row[Dataprovider.FIELD_NAMES.GUIDE_LINK]) else "")
-            workflow_line.append("""<a href="%s" ga-product="launch" ga-id="%s">Launch %s workflow</a>""" % (row[Dataprovider.FIELD_NAMES.LAUNCH_LINK], row[Dataprovider.FIELD_NAMES.LAUNCH_LINK], row[Dataprovider.FIELD_NAMES.TITLE]) if not pd.isna(row[Dataprovider.FIELD_NAMES.LAUNCH_LINK]) else "")
+            workflow_line.append("""<a href="%s" ga-product="launch" ga-id="%s">Open workflow on Galaxy Australia</a>""" % (row[Dataprovider.FIELD_NAMES.LAUNCH_LINK], row[Dataprovider.FIELD_NAMES.LAUNCH_LINK]) if not pd.isna(row[Dataprovider.FIELD_NAMES.LAUNCH_LINK]) else "")
             formatted_list.append(workflow_line)
         return pd.DataFrame(formatted_list, columns=["title","EDAM operations", "EDAM topics", "tags","license",
-                                                     "updated_at","DOI","projects","guide","launch"])
+                                                     "updated_at","DOI","projects","guide","open"])

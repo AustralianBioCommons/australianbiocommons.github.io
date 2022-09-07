@@ -37,16 +37,29 @@ body {
 }
 
 button.galaxy-link {
-    padding: 2px 2px 2px;
+    padding: 3px 3px 3px;
     margin: 4px;
+    border-radius: 12px;
+    border: outset;
+    background-color: white;
+    border-color: #D3D3D3;
+    color: #2780e3;
 }
 
 .galaxy-links-holder {
-  display: inline-block;padding: 0px;
+  display: inline-block;
+  padding: 0px;
   color: #2780e3;
 }
-.galaxy-links-holder li {display: inline-block;padding: 0px 0px;}
-.galaxy-links {padding: 0;}
+.galaxy-links-holder li {
+    display: inline-block;
+    padding: 0px 0px;
+}
+
+.galaxy-links {
+  padding: 0;
+  color: #2780e3;
+}
 
 .open span.button{
     background-image: url(data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22iso-8859-1%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20version%3D%221.1%22%20id%3D%22Layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%20y%3D%220px%22%20%20width%3D%2214px%22%20height%3D%2214px%22%20viewBox%3D%220%200%2014%2014%22%20style%3D%22enable-background%3Anew%200%200%2014%2014%3B%22%20xml%3Aspace%3D%22preserve%22%3E%3Crect%20y%3D%225%22%20style%3D%22fill%3A%23FFFFFF%3B%22%20width%3D%2214%22%20height%3D%224%22%2F%3E%3C%2Fsvg%3E);
@@ -61,12 +74,25 @@ span.button{
     height: 18px;
     vertical-align: middle;
     position: absolute;
-    background-color: black;
+    /*background-color: black;*/
     background-color: rgba(0,0,0,.3);
-    border-radius: 1em;
+    border-radius: 0.5em;
     background-position: center center;
     background-repeat: no-repeat;
     transform: scale(0.7);
+}
+
+/* see https://www.w3schools.com/howto/howto_css_round_buttons.asp */
+button.edam-button{
+    font-size: 1rem;
+    display: inline-block;
+    padding: 3px 3px 3px;
+    margin: 4px;
+    border-radius: 12px;
+    border: outset;
+    color: #2780e3;
+    border-color: #D3D3D3;
+    background-color: white;
 }
 
 /* see https://stackoverflow.com/a/26973672 */
@@ -76,22 +102,21 @@ a.publication-title{
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
-    font-size: 1rem;
+    font-size: 1.1rem;
+}
+
+.title{
+    font-size: 1.3rem;
 }
 
 /* see https://stackoverflow.com/a/44094471 */
 /* see https://stackoverflow.com/a/44241050 */
 .description-text{
-    font-size: 1rem;
+    font-size: 1.1rem;
     display: -webkit-box;
     -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
     max-width: 200px;
     overflow: hidden;
     text-overflow: ellipsis;
-}
-
-.edam-terms{
-    font-size: 1rem;
-    display: -webkit-box;
 }

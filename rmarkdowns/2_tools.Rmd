@@ -144,7 +144,7 @@ options = list(
             buttons = c('copy', 'csv', I('colvis')),
             #see https://stackoverflow.com/a/32428537
             columnDefs = list(list(visible=FALSE, targets = c(2,7)),
-                              list(className = 'dt-center', targets = c(0:2, 5:15)))
+                              list(className = 'dt-center', targets = c(0:15)))
             ), 
           class = 'cell-border stripe', escape = FALSE)
 
