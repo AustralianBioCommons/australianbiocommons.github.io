@@ -295,6 +295,10 @@ class if89DataProvider(Dataprovider):
             line = line.split(",")
             tool_id = line[0].strip()
             tool_id = tool_id.lower()
+            tool_id = tool_id.replace("genomescope2.0", "genomescope")
+            tool_id = tool_id.replace("genomescope2", "genomescope")
+            tool_id = tool_id.replace("miniconda3", "miniconda")
+            tool_id = tool_id.replace("ipa", "pbipa")
             version = line[1]
             if tool_id not in self.available_data:
                 self.available_data[tool_id] = []
