@@ -158,7 +158,7 @@ class WorkflowDB(DB):
             workflow_line = []
             #see https://www.w3schools.com/html/html_images.asp
             workflow_line.append("""<a class="title" href="https://workflowhub.eu%s" ga-product="workflow" ga-id="%s"><b>%s</b></a><br \><br \>
-            <a href="%s" ga-product="github" ga-id="%s"><img src="/images/GitHub-Mark-64px.png"></a>""" % (row[Dataprovider.FIELD_NAMES.URL], row[Dataprovider.FIELD_NAMES.URL],
+            <a href="%s" ga-product="github" ga-id="%s"><img src="../images/GitHub-Mark-64px.png"></a>""" % (row[Dataprovider.FIELD_NAMES.URL], row[Dataprovider.FIELD_NAMES.URL],
             row[Dataprovider.FIELD_NAMES.TITLE],row[Dataprovider.FIELD_NAMES.GITHUB_LINK],row[Dataprovider.FIELD_NAMES.URL]) if not pd.isna(row[Dataprovider.FIELD_NAMES.GITHUB_LINK]) else """<a class="title" href="https://workflowhub.eu%s" ga-product="workflow" ga-id="%s"><b>%s</b></a>""" % (row[Dataprovider.FIELD_NAMES.URL], row[Dataprovider.FIELD_NAMES.URL], row[Dataprovider.FIELD_NAMES.TITLE]))
             if isinstance(row[Dataprovider.FIELD_NAMES.EDAM_OPS], list):
                 workflow_line.append("<br \>".join(["""<button class="edam-button" href="%s" ga-product="edam-ops" ga-id="%s">%s</a>""" % (x["identifier"], x["label"], x["label"]) for x in row[Dataprovider.FIELD_NAMES.EDAM_OPS]]))
