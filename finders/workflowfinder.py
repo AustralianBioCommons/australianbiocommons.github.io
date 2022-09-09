@@ -157,7 +157,7 @@ class WorkflowDB(DB):
         for index, row in workflow_table.iterrows():
             workflow_line = []
             #see https://www.w3schools.com/html/html_images.asp
-            workflow_line.append("""<p class="title"><b>%s</b></p><br \><br \><a href="%s" ga-product="github" ga-id="%s"><img src="/images/GitHub-Mark-64px.png style="width:150px;""></a>
+            workflow_line.append("""<p class="title"><b>%s</b></p><br \><a href="%s" ga-product="github" ga-id="%s"><img src="/images/GitHub-Mark-64px.png" style="width:150px;"></a>
             <a href="https://workflowhub.eu%s" ga-product="workflowhub" ga-id="%s"><img src="/images/workflowhub_logo.png" style="width:150px;"></a>""" % (row[Dataprovider.FIELD_NAMES.TITLE],row[Dataprovider.FIELD_NAMES.GITHUB_LINK],row[Dataprovider.FIELD_NAMES.URL],row[Dataprovider.FIELD_NAMES.URL],row[Dataprovider.FIELD_NAMES.URL]) if not pd.isna(row[Dataprovider.FIELD_NAMES.GITHUB_LINK]) else """<a class="title" href="https://workflowhub.eu%s" ga-product="workflow" ga-id="%s"><b>%s</b></a>""" % (row[Dataprovider.FIELD_NAMES.URL], row[Dataprovider.FIELD_NAMES.URL], row[Dataprovider.FIELD_NAMES.TITLE]))
             if isinstance(row[Dataprovider.FIELD_NAMES.EDAM_OPS], list):
                 workflow_line.append("<br \>".join(["""<button class="edam-button" href="%s" ga-product="edam-ops" ga-id="%s">%s</a>""" % (x["identifier"], x["label"], x["label"]) for x in row[Dataprovider.FIELD_NAMES.EDAM_OPS]]))
@@ -179,7 +179,7 @@ class WorkflowDB(DB):
             workflow_line.append("""<a href="https://doi.org/%s" ga-product="doi" ga-id="%s">%s</a>""" % (row[Dataprovider.FIELD_NAMES.DOI], row[Dataprovider.FIELD_NAMES.DOI],
             row[Dataprovider.FIELD_NAMES.DOI]) if not pd.isna(row[Dataprovider.FIELD_NAMES.DOI]) else "")
             workflow_line.append("<br \>".join(row[Dataprovider.FIELD_NAMES.PROJECTS]))
-            workflow_line.append("""<a href="%s" ga-product="guide" ga-id="%s">See the How-to-Guide</a>""" % (row[Dataprovider.FIELD_NAMES.GUIDE_LINK], row[Dataprovider.FIELD_NAMES.GUIDE_LINK]) if not pd.isna(row[Dataprovider.FIELD_NAMES.GUIDE_LINK]) else "")
+            workflow_line.append("""<a href="%s" ga-product="guide" ga-id="%s">See user guide</a>""" % (row[Dataprovider.FIELD_NAMES.GUIDE_LINK], row[Dataprovider.FIELD_NAMES.GUIDE_LINK]) if not pd.isna(row[Dataprovider.FIELD_NAMES.GUIDE_LINK]) else "")
             workflow_line.append("""<a href="%s" ga-product="launch" ga-id="%s">Open workflow on Galaxy Australia</a>""" % (row[Dataprovider.FIELD_NAMES.LAUNCH_LINK], row[Dataprovider.FIELD_NAMES.LAUNCH_LINK]) if not pd.isna(row[Dataprovider.FIELD_NAMES.LAUNCH_LINK]) else "")
             formatted_list.append(workflow_line)
         return pd.DataFrame(formatted_list, columns=["title","EDAM operations", "EDAM topics", "tags","license",
