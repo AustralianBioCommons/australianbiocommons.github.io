@@ -49,7 +49,7 @@ container2 = htmltools::withTags(table(
       th(class = 'dt-center', style="font-size:12pt", colspan = 2, 'Deployment')
     ),
     tr(
-      lapply(c("Workflow name (+ links)","EDAM operation(s)","EDAM topic(s)","Tag(s)","License",
+      lapply(c("Workflow name (+ links)","EDAM topic(s)","EDAM operation(s)","Tag(s)","License",
                 "Updated","DOI","Contributing team(s)","User guide","Open workflow (if available)"), th, style="font-size:11pt")
     )
   )
@@ -82,7 +82,7 @@ workflows_final %>%
       columnDefs = list(
                         #list(visible=FALSE, targets = c(5,6)),
                         list(className = 'dt-center', targets = c(1:9)),
-                        list(width = '200px', targets = c(0))
+                        list(width = '200px', targets = c(0,3))
                         )
             ), 
     class = 'cell-border stripe', escape = FALSE)

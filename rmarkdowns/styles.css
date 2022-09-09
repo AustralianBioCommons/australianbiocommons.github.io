@@ -95,6 +95,18 @@ button.edam-button{
     background-color: white;
 }
 
+.tags{
+    font-size: 1rem;
+    display: inline-block;
+    padding: 3px 3px 3px;
+    margin: 4px;
+    border-radius: 12px;
+    /*border: outset;*/
+    color: black;
+    border-color: #D3D3D3;
+    background-color: white;
+}
+
 /* see https://stackoverflow.com/a/26973672 */
 a.publication-title{
     overflow: hidden;
