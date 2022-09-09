@@ -50,7 +50,7 @@ container2 = htmltools::withTags(table(
     ),
     tr(
       lapply(c("Workflow name (+ links)","EDAM operation(s)","EDAM topic(s)","Tag(s)","License",
-                "Updated","DOI","Contributing team(s)","How-to-Guide","Open workflow (if available)"), th, style="font-size:11pt")
+                "Updated","DOI","Contributing team(s)","User guide","Open workflow (if available)"), th, style="font-size:11pt")
     )
   )
 ))
