@@ -354,12 +354,19 @@ class ToolDB(DB):
             if not row[Dataprovider.FIELD_NAMES.INCLUSION]:
                 continue
             tool_line = []
-            tool_line.append("""<a href="%s" ga-product="tool" ga-id="%s"><b>%s</b></a>"""%(row[Dataprovider.FIELD_NAMES.REPOSITORY_URL],row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER],row[Dataprovider.FIELD_NAMES.NAME]) if not pd.isna(row[Dataprovider.FIELD_NAMES.REPOSITORY_URL]) else """<b>%s</b>"""%row[Dataprovider.FIELD_NAMES.NAME])
-            tool_line.append("""<a href="https://bio.tools/%s"  ga-product="biotool" ga-id="%s">%s</a>"""%(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID], row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER], row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]) if not pd.isna(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]) else "")
+            if pd.isna(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]):
+                tool_line.append("""<a href="%s" ga-product="tool" ga-id="%s"><b>%s</b></a>""" % (
+                row[Dataprovider.FIELD_NAMES.REPOSITORY_URL], row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER],
+                row[Dataprovider.FIELD_NAMES.NAME]) if not pd.isna(row[Dataprovider.FIELD_NAMES.REPOSITORY_URL]) else """<b>%s</b>""" % row[Dataprovider.FIELD_NAMES.NAME])
+            else:
+                tool_line.append("""<a href="%s" ga-product="tool" ga-id="%s"><b>%s</b></a><br \><a class="biotools" href="https://bio.tools/%s" ga-product="biotool" ga-id="%s"><img src="./images/elixir_biotools_transparent.png" style="width:50px;"></a>""" % (
+                row[Dataprovider.FIELD_NAMES.REPOSITORY_URL], row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER],
+                row[Dataprovider.FIELD_NAMES.NAME],row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID], row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER]) if not pd.isna(row[Dataprovider.FIELD_NAMES.REPOSITORY_URL]) else """<b>%s</b>""" % row[Dataprovider.FIELD_NAMES.NAME])
+            #tool_line.append("""<a href="https://bio.tools/%s"  ga-product="biotool" ga-id="%s">%s</a>"""%(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID], row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER], row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]) if not pd.isna(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]) else "")
             tool_line.append(row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER] if not pd.isna(row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER]) else "")
             tool_line.append("""<span class="description-text">%s</span>"""%(row[Dataprovider.FIELD_NAMES.DESCRIPTION]) if not pd.isna(row[Dataprovider.FIELD_NAMES.DESCRIPTION]) else "")
             if isinstance(row[Dataprovider.FIELD_NAMES.EDAM_TOPICS], list):
-                tool_line.append("".join(["""<button class="edam-button" href="%s" ga-product="edam" ga-id="%s">%s</button>"""% (x["uri"], row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER], x["term"]) for x in row[Dataprovider.FIELD_NAMES.EDAM_TOPICS]]))
+                tool_line.append("".join(["""<button class="edam-button" onclick="window.open('%s','_blank').focus()" ga-product="edam" ga-id="%s">%s</button>"""% (x["uri"], row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER], x["term"]) for x in row[Dataprovider.FIELD_NAMES.EDAM_TOPICS]]))
             else:
                 tool_line.append("")
             if isinstance(row[Dataprovider.FIELD_NAMES.PUBLICATIONS], list):
@@ -409,4 +416,4 @@ class ToolDB(DB):
             else:
                 tool_line.append("")
             formatted_list.append(tool_line)
-        return pd.DataFrame(formatted_list, columns=["Tool / workflow name","bio.tools link","Tool identifier (module name / bio.tools ID / placeholder)","Description","Topic (EDAM, if available)","Publications","BioContainers link","License","BioCommons Documentation","Galaxy Australia","NCI (Gadi)","NCI (if89)","Pawsey (Zeus)","Pawsey (Magnus)","Pawsey (Setonix)","QRIScloud / UQ-RCC (Flashlite, Awoonga, Tinaroo)"])
+        return pd.DataFrame(formatted_list, columns=["Tool / workflow name","Tool identifier (module name / bio.tools ID / placeholder)","Description","Topic (EDAM, if available)","Publications","BioContainers link","License","BioCommons Documentation","Galaxy Australia","NCI (Gadi)","NCI (if89)","Pawsey (Zeus)","Pawsey (Magnus)","Pawsey (Setonix)","QRIScloud / UQ-RCC (Flashlite, Awoonga, Tinaroo)"])

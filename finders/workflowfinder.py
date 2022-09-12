@@ -167,11 +167,11 @@ class WorkflowDB(DB):
                     row[Dataprovider.FIELD_NAMES.TITLE],row[Dataprovider.FIELD_NAMES.GITHUB_LINK],row[Dataprovider.FIELD_NAMES.URL],row[Dataprovider.FIELD_NAMES.URL],row[Dataprovider.FIELD_NAMES.URL]))
             if isinstance(row[Dataprovider.FIELD_NAMES.EDAM_TOP], list):
                 workflow_line.append("<br \>".join([
-                    """<button class="edam-button" href="%s" ga-product="edam-topics" ga-id="%s">%s</button>""" % (x["identifier"], x["label"], x["label"]) for x in row[Dataprovider.FIELD_NAMES.EDAM_TOP]]))
+                    """<button class="edam-button" onclick="window.open('%s','_blank').focus()" ga-product="edam-topics" ga-id="%s">%s</button>""" % (x["identifier"], x["label"], x["label"]) for x in row[Dataprovider.FIELD_NAMES.EDAM_TOP]]))
             else:
                 workflow_line.append("")
             if isinstance(row[Dataprovider.FIELD_NAMES.EDAM_OPS], list):
-                workflow_line.append("<br \>".join(["""<button class="edam-button" href="%s" ga-product="edam-ops" ga-id="%s">%s</a>""" % (x["identifier"], x["label"], x["label"]) for x in row[Dataprovider.FIELD_NAMES.EDAM_OPS]]))
+                workflow_line.append("<br \>".join(["""<button class="edam-button" onclick="window.open('%s','_blank').focus()" ga-product="edam-ops" ga-id="%s">%s</a>""" % (x["identifier"], x["label"], x["label"]) for x in row[Dataprovider.FIELD_NAMES.EDAM_OPS]]))
             else:
                 workflow_line.append("")
             if isinstance(row[Dataprovider.FIELD_NAMES.TAGS], list):

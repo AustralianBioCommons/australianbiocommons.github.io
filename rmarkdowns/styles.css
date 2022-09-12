@@ -132,3 +132,10 @@ a.publication-title{
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+.biotools{
+    padding: 10px 10px 10px;
+    border-radius: 12px;
+    background-color: #FFA500;
+    border: outset;
+}
