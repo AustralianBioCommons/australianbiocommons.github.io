@@ -354,19 +354,18 @@ class ToolDB(DB):
             if not row[Dataprovider.FIELD_NAMES.INCLUSION]:
                 continue
             tool_line = []
+            b = row[Dataprovider.FIELD_NAMES.NAME].replace("_", " ")
+            c = """<p class="name" data-toggle="popover" data-trigger="hover" title="Description" data-content="%s">""" % (row[Dataprovider.FIELD_NAMES.DESCRIPTION])
+            tool_line.append(c + b + """</p>""" if not pd.isna(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]) else
+                             """<p class="name" data-toggle="popover" data-trigger="hover" title="Description" data-content="No metadata available.">""" + b + """</p>""")
             if pd.isna(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]):
-                tool_line.append("""<a href="%s" ga-product="tool" ga-id="%s"><b>%s</b></a>""" % (
-                row[Dataprovider.FIELD_NAMES.REPOSITORY_URL], row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER],
-                row[Dataprovider.FIELD_NAMES.NAME]) if not pd.isna(row[Dataprovider.FIELD_NAMES.REPOSITORY_URL]) else """<b>%s</b>""" % row[Dataprovider.FIELD_NAMES.NAME])
+                tool_line.append("")
             else:
-                tool_line.append("""<a href="%s" ga-product="tool" ga-id="%s"><b>%s</b></a><br \><a class="biotools" href="https://bio.tools/%s" ga-product="biotool" ga-id="%s"><img src="./images/elixir_biotools_transparent.png" style="width:50px;"></a>""" % (
-                row[Dataprovider.FIELD_NAMES.REPOSITORY_URL], row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER],
-                row[Dataprovider.FIELD_NAMES.NAME],row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID], row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER]) if not pd.isna(row[Dataprovider.FIELD_NAMES.REPOSITORY_URL]) else """<b>%s</b>""" % row[Dataprovider.FIELD_NAMES.NAME])
-            #tool_line.append("""<a href="https://bio.tools/%s"  ga-product="biotool" ga-id="%s">%s</a>"""%(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID], row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER], row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]) if not pd.isna(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]) else "")
+                tool_line.append("""<a class="biotools" href="https://bio.tools/%s" ga-product="biotool" ga-id="%s"><img src="./images/elixir_biotools_transparent.png" style="width:50px;"></a>""" % (
+                row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID], row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER]))
             tool_line.append(row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER] if not pd.isna(row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER]) else "")
-            tool_line.append("""<span class="description-text">%s</span>"""%(row[Dataprovider.FIELD_NAMES.DESCRIPTION]) if not pd.isna(row[Dataprovider.FIELD_NAMES.DESCRIPTION]) else "")
             if isinstance(row[Dataprovider.FIELD_NAMES.EDAM_TOPICS], list):
-                tool_line.append("".join(["""<button class="edam-button" onclick="window.open('%s','_blank').focus()" ga-product="edam" ga-id="%s">%s</button>"""% (x["uri"], row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER], x["term"]) for x in row[Dataprovider.FIELD_NAMES.EDAM_TOPICS]]))
+                tool_line.append("".join(["""<p class="tags">%s</p>""" % x["term"] for x in row[Dataprovider.FIELD_NAMES.EDAM_TOPICS]]))
             else:
                 tool_line.append("")
             if isinstance(row[Dataprovider.FIELD_NAMES.PUBLICATIONS], list):
@@ -376,7 +375,7 @@ class ToolDB(DB):
                                                         "",row[Dataprovider.FIELD_NAMES.PUBLICATIONS]))))
             else:
                 tool_line.append("")
-            tool_line.append("""<a href="https://biocontainers.pro/tools/%s" ga-product="containers" ga-id="%s">%s</a>"""%(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID], row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER], row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]) if not pd.isna(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]) else "")
+            tool_line.append("""<a class="containers" href="https://biocontainers.pro/tools/%s" ga-product="containers" ga-id="%s">%s</a>"""%(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID], row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER], row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]) if not pd.isna(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]) else "")
             tool_line.append(row[Dataprovider.FIELD_NAMES.LICENSE] if not pd.isna(row[Dataprovider.FIELD_NAMES.LICENSE]) else "")
             tool_line.append("""<a href="%s" ga-product="biocommons" ga-id="%s">%s</a>""" %(row[Dataprovider.FIELD_NAMES.BIOCOMMONS_DOCUMENTATION_LINK], row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER], row[Dataprovider.FIELD_NAMES.BIOCOMMONS_DOCUMENTATION_DESCRIPTION]) if not pd.isna(row[Dataprovider.FIELD_NAMES.BIOCOMMONS_DOCUMENTATION_LINK]) else "")
             if isinstance(row[Dataprovider.FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK], list):
@@ -392,28 +391,28 @@ class ToolDB(DB):
             else:
                 tool_line.append("")
             if isinstance(row[Dataprovider.FIELD_NAMES.NCI_GADI_VERSION], list):
-                tool_line.append("<br \>".join(row[Dataprovider.FIELD_NAMES.NCI_GADI_VERSION]))
+                tool_line.append("".join("""<p class="version">%s</p>""" % x for x in row[Dataprovider.FIELD_NAMES.NCI_GADI_VERSION]))
             else:
                 tool_line.append("")
             if isinstance(row[Dataprovider.FIELD_NAMES.NCI_IF89_VERSION], list):
-                tool_line.append("<br \>".join(row[Dataprovider.FIELD_NAMES.NCI_IF89_VERSION]))
+                tool_line.append("".join("""<p class="version">%s</p>""" % x for x in row[Dataprovider.FIELD_NAMES.NCI_IF89_VERSION]))
             else:
                 tool_line.append("")
             if isinstance(row[Dataprovider.FIELD_NAMES.PAWSEY_ZEUS_VERSION], list):
-                tool_line.append("<br \>".join(row[Dataprovider.FIELD_NAMES.PAWSEY_ZEUS_VERSION]))
+                tool_line.append("".join("""<p class="version">%s</p>""" % x for x in row[Dataprovider.FIELD_NAMES.PAWSEY_ZEUS_VERSION]))
             else:
                 tool_line.append("")
             if isinstance(row[Dataprovider.FIELD_NAMES.PAWSEY_MAGNUS_VERSION], list):
-                tool_line.append("<br \>".join(row[Dataprovider.FIELD_NAMES.PAWSEY_MAGNUS_VERSION]))
+                tool_line.append("".join("""<p class="version">%s</p>""" % x for x in row[Dataprovider.FIELD_NAMES.PAWSEY_MAGNUS_VERSION]))
             else:
                 tool_line.append("")
             if isinstance(row[Dataprovider.FIELD_NAMES.PAWSEY_SETONIX_VERSION], list):
-                tool_line.append("<br \>".join(row[Dataprovider.FIELD_NAMES.PAWSEY_SETONIX_VERSION]))
+                tool_line.append("".join("""<p class="version">%s</p>""" % x for x in row[Dataprovider.FIELD_NAMES.PAWSEY_SETONIX_VERSION]))
             else:
                 tool_line.append("")
             if isinstance(row[Dataprovider.FIELD_NAMES.QRISCLOUD_VERSION], list):
-                tool_line.append("<br \>".join(row[Dataprovider.FIELD_NAMES.QRISCLOUD_VERSION]))
+                tool_line.append("".join("""<p class="version">%s</p>""" % x for x in row[Dataprovider.FIELD_NAMES.QRISCLOUD_VERSION]))
             else:
                 tool_line.append("")
             formatted_list.append(tool_line)
-        return pd.DataFrame(formatted_list, columns=["Tool / workflow name","Tool identifier (module name / bio.tools ID / placeholder)","Description","Topic (EDAM, if available)","Publications","BioContainers link","License","BioCommons Documentation","Galaxy Australia","NCI (Gadi)","NCI (if89)","Pawsey (Zeus)","Pawsey (Magnus)","Pawsey (Setonix)","QRIScloud / UQ-RCC (Flashlite, Awoonga, Tinaroo)"])
+        return pd.DataFrame(formatted_list, columns=["Tool / workflow name","biotools_link","Tool identifier (module name / bio.tools ID / placeholder)","Topic (EDAM, if available)","Publications","BioContainers link","License","BioCommons Documentation","Galaxy Australia","NCI (Gadi)","NCI (if89)","Pawsey (Zeus)","Pawsey (Magnus)","Pawsey (Setonix)","QRIScloud / UQ-RCC (Flashlite, Awoonga, Tinaroo)"])

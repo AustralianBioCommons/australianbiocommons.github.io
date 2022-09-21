@@ -37,6 +37,8 @@ body {
 }
 
 button.galaxy-link {
+    font-size: 1.1rem;
+    overflow-wrap: anywhere;
     padding: 3px 3px 3px;
     margin: 4px;
     border-radius: 12px;
@@ -84,7 +86,8 @@ span.button{
 
 /* see https://www.w3schools.com/howto/howto_css_round_buttons.asp */
 button.edam-button{
-    font-size: 1rem;
+    overflow-wrap: anywhere;
+    font-size: 1.1rem;
     display: inline-block;
     padding: 3px 3px 3px;
     margin: 4px;
@@ -96,7 +99,7 @@ button.edam-button{
 }
 
 .tags{
-    font-size: 1rem;
+    font-size: 1.2rem;
     display: inline-block;
     padding: 3px 3px 3px;
     margin: 4px;
@@ -119,6 +122,22 @@ a.publication-title{
 
 .title{
     font-size: 1.3rem;
+}
+
+.version{
+    font-size: 1.1rem;
+    overflow-wrap: anywhere;
+    display: inline-block;
+    padding: 3px 3px 3px;
+    margin: 4px;
+    border-radius: 12px;
+    border-color: #D3D3D3;
+    background-color: white;
+}
+
+.containers{
+    overflow-wrap: anywhere;
+    font-size: 1.1rem;
 }
 
 /* see https://stackoverflow.com/a/44094471 */

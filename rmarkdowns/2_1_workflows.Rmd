@@ -44,13 +44,14 @@ container2 = htmltools::withTags(table(
   thead(
     tr(
       #see https://stackoverflow.com/q/42153218
-      th(class = 'dt-center', style="font-size:12pt", colspan = 6, 'Workflow information'),
+      th(class = 'dt-center', style="font-size:12pt", colspan = 5, 'Workflow information'),
       th(class = 'dt-center', style="font-size:12pt", colspan = 2, 'Citation & credits'),
       th(class = 'dt-center', style="font-size:12pt", colspan = 2, 'Deployment')
     ),
     tr(
-      lapply(c("Workflow name (+ links)","EDAM topic(s)","EDAM operation(s)","Tag(s)","License",
-                "Updated","DOI","Contributing team(s)","User guide","Open workflow (if available)"), th, style="font-size:11pt")
+      lapply(c("Workflow name (+ links)","Topic(s)","Operation(s)","License",
+                "Updated","DOI","Contributing team(s)","User guide",
+                "Open workflow (if available)"), th, style="font-size:11pt")
     )
   )
 ))
@@ -80,9 +81,9 @@ workflows_final %>%
       #see https://stackoverflow.com/a/32428537
       #see https://rstudio.github.io/DT/options.html
       columnDefs = list(
-                        #list(visible=FALSE, targets = c(5,6)),
-                        list(className = 'dt-center', targets = c(1:9)),
-                        list(width = '200px', targets = c(0,3))
+                        #list(visible=FALSE, targets = c(4,5)),
+                        list(className = 'dt-center', targets = c(1:8)),
+                        list(width = '200px', targets = c(0))
                         )
             ), 
     class = 'cell-border stripe', escape = FALSE)
