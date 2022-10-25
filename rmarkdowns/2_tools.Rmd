@@ -24,34 +24,44 @@ library(knitr)
 library(lubridate)
 library(DT)
 #see https://cran.r-project.org/web/packages/httr/vignettes/quickstart.html
-library(httr)
-library(yaml)
-library(tidyjson)
-library(uuid)
+#library(httr)
+#library(yaml)
+#library(tidyjson)
+#library(uuid)
 ```
 
 [![](./images/Australian-Biocommons-Logo-Horizontal-144dpi-Transparent.png){width=15%}](https://www.biocommons.org.au/services)
 
 This page lists bioinformatics tools and software that are installed across several of the [**BioCommons infrastructure partner systems**](http://support.biocommons.org.au/support/solutions/articles/6000251977-compute-systems-at-the-biocommons-partner-infrastructures). Tool / software status on other infrastructure partner systems will be added over time.
 
-<details>
-  <summary>Can't find the software you need? Click here to see other options for finding software</summary>
-<ol>
+<p>
+  <a class="btn-collapse" data-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapse1">
+    Can't find the software you need? Click here to see other options for finding software
+  </a>
+</p>
+
+<div class="collapse" id="collapse1">
+  <div class="card card-body">
 
 - [BioContainers registry](https://biocontainers.pro/registry): discover and access containers for software tools
 - [Galaxy toolshed](https://toolshed.g2.bx.psu.edu/): discover tools which can be requested for installation on Galaxy Australia
 - [Dockstore tool search](https://dockstore.org/search?entryType=tools&searchMode=Files): discover containers for single tools
 
-</ol>
-</details>
+    </div>
+</div>
 
-<details>
-  <summary>Click to find out how to request installation of software on ToolFinder listed infrastructures</summary>
-<ol>
+<p>
+  <a class="btn-collapse" data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapse2">
+    Click to find out how to request installation of software on ToolFinder listed infrastructures
+  </a>
+</p>
+
+<div class="collapse" id="collapse2">
+  <div class="card card-body">
 
 <font size="2">
-```{r}
 
+```{r echo=FALSE}
 tool_request <- tibble(
   Infrastructure = c("[Galaxy Australia](https://usegalaxy.org.au/)",
                      "[NCI](https://nci.org.au/)",
@@ -63,17 +73,16 @@ tool_request <- tibble(
               "Complete a [tool install request](https://docs.google.com/forms/d/e/1FAIpQLSefKCBkZbTQ-dUyU-pd4ZypkA-TA5GiMgpsJ2slWmD-B6elEg/viewform)"
               )
     )
-
 #see https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html
 tool_request %>%
   kbl(escape = FALSE, align = "l") %>%
-  kable_styling(bootstrap_options = c("striped"))
-
+  kable_styling(bootstrap_options = "striped", full_width = FALSE, position = "left")
 ```
+
 </font>
 
-</ol>
-</details>
+  </div>
+</div>
 
 </br>
 
@@ -110,13 +119,13 @@ container1 = htmltools::withTags(table(
   thead(
     tr(
       #see https://stackoverflow.com/q/42153218
-      th(class = 'dt-center', style="font-size:11pt", colspan = 8, 'Tool metadata'),
+      th(class = 'dt-center', style="font-size:11pt", colspan = 9, 'Tool metadata'),
       th(class = 'dt-center', style="font-size:11pt", colspan = 7, 'Availability on Australian compute infrastructures')
     ),
     tr(
-      lapply(c("Name", "Registry link", "Tool identifier (e.g. module name)",
+      lapply(c("Name", "Homepage", "Registry link", "Tool identifier (e.g. module name)",
                "Topic(s)", "Publications", "Containers available? (BioContainers)", "License",
-               "BioCommons Documentation", "Galaxy Australia", "NCI (Gadi)", "NCI (if89)", "Pawsey (Zeus)", "Pawsey (Magnus)", "Pawsey (Setonix)",
+               "Resources / documentation", "Galaxy Australia", "NCI (Gadi)", "NCI (if89)", "Pawsey (Zeus)", "Pawsey (Magnus)", "Pawsey (Setonix)",
                "QRIScloud / UQ-RCC (Flashlite, Tinaroo)"), th)
     )
   )
@@ -146,8 +155,8 @@ options = list(
             dom = 'Bfrtip', 
             buttons = c('copy', 'csv', I('colvis')),
             #see https://stackoverflow.com/a/32428537
-            columnDefs = list(list(visible=FALSE, targets = c(2,6:7)),
-                              list(className = 'dt-center', targets = c(0:14)))
+            columnDefs = list(list(visible=FALSE, targets = c(3,7:8)),
+                              list(className = 'dt-center', targets = c(0:15)))
             ),
 class = 'cell-border stripe', escape = FALSE)
 

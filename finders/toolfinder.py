@@ -358,6 +358,7 @@ class ToolDB(DB):
             c = """<p class="name" data-toggle="popover" data-trigger="hover" title="Description" data-content="%s">""" % (row[Dataprovider.FIELD_NAMES.DESCRIPTION])
             tool_line.append(c + b + """</p>""" if not pd.isna(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]) else
                              """<p class="name" data-toggle="popover" data-trigger="hover" title="Description" data-content="No metadata available.">""" + b + """</p>""")
+            tool_line.append("""<a class="homepage" href="%s" ga-product="homepage" ga-id="%s">%s</a>"""%(row[Dataprovider.FIELD_NAMES.REPOSITORY_URL], row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER], row[Dataprovider.FIELD_NAMES.NAME]) if not pd.isna(row[Dataprovider.FIELD_NAMES.REPOSITORY_URL]) else "")
             if pd.isna(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]):
                 tool_line.append("")
             else:
@@ -415,4 +416,4 @@ class ToolDB(DB):
             else:
                 tool_line.append("")
             formatted_list.append(tool_line)
-        return pd.DataFrame(formatted_list, columns=["Tool / workflow name","biotools_link","Tool identifier (module name / bio.tools ID / placeholder)","Topic (EDAM, if available)","Publications","BioContainers link","License","BioCommons Documentation","Galaxy Australia","NCI (Gadi)","NCI (if89)","Pawsey (Zeus)","Pawsey (Magnus)","Pawsey (Setonix)","QRIScloud / UQ-RCC (Flashlite, Awoonga, Tinaroo)"])
+        return pd.DataFrame(formatted_list, columns=["Tool / workflow name","homepage","biotools_link","Tool identifier (module name / bio.tools ID / placeholder)","Topic (EDAM, if available)","Publications","BioContainers link","License","BioCommons Documentation","Galaxy Australia","NCI (Gadi)","NCI (if89)","Pawsey (Zeus)","Pawsey (Magnus)","Pawsey (Setonix)","QRIScloud / UQ-RCC (Flashlite, Awoonga, Tinaroo)"])
