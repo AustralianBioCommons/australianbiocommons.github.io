@@ -88,7 +88,6 @@ tool_request %>%
 
 **Please note:**
 
-- `Magnus` and `Zeus` (Pawsey) will be decommissioned once user migration to [`Setonix`](https://pawsey.org.au/setonix-fires-up-for-researchers/) is complete, during the second half of 2022. At this point Magnus and Zeus will be removed from ToolFinder.
 - `NCI (if89)` below refers to the [`Australian BioCommons Tools and Workflows repository`](https://australianbiocommons.github.io/ables/if89/), located in project allocation if89 at the National Computational Infrastructure (NCI).
 
 <script>
@@ -120,12 +119,12 @@ container1 = htmltools::withTags(table(
     tr(
       #see https://stackoverflow.com/q/42153218
       th(class = 'dt-center', style="font-size:11pt", colspan = 9, 'Tool metadata'),
-      th(class = 'dt-center', style="font-size:11pt", colspan = 7, 'Availability on Australian compute infrastructures')
+      th(class = 'dt-center', style="font-size:11pt", colspan = 5, 'Availability on Australian compute infrastructures')
     ),
     tr(
       lapply(c("Name", "Homepage", "Registry link", "Tool identifier (e.g. module name)",
                "Topic(s)", "Publications", "Containers available? (BioContainers)", "License",
-               "Resources / documentation", "Galaxy Australia", "NCI (Gadi)", "NCI (if89)", "Pawsey (Zeus)", "Pawsey (Magnus)", "Pawsey (Setonix)",
+               "Resources / documentation", "Galaxy Australia", "NCI (Gadi)", "NCI (if89)", "Pawsey (Setonix)",
                "QRIScloud / UQ-RCC (Flashlite, Tinaroo)"), th)
     )
   )
@@ -156,7 +155,7 @@ options = list(
             buttons = c('copy', 'csv', I('colvis')),
             #see https://stackoverflow.com/a/32428537
             columnDefs = list(list(visible=FALSE, targets = c(3,7:8)),
-                              list(className = 'dt-center', targets = c(0:15)))
+                              list(className = 'dt-center', targets = c(0:13)))
             ),
 class = 'cell-border stripe', escape = FALSE)
 
