@@ -3,8 +3,6 @@ from finders import *
 if __name__ == "__main__":
     mytooldb = toolfinder.ToolDB("external/tool_matrix_2021_11_15.xlsx")
     mytooldb.add_provider(ToolMatrixDataProvider("external/tool_matrix_2021_11_15.xlsx"))
-    #mytooldb.add_provider(ZeusDataProvider("external/zeus.txt"))
-    #mytooldb.add_provider(MagnusDataProvider("external/magnus.txt"))
     mytooldb.add_provider(SetonixDataProvider("external/setonix.txt"))
     mytooldb.add_provider(QriscloudDataProvider("external/qriscloud.txt"))
     mytooldb.add_provider(GadiDataProvider("./external/gadi.key.hdr"))

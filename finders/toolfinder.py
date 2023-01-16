@@ -4,6 +4,7 @@ import requests
 import json
 import itertools
 import numpy as np
+import re
 
 class ToolMatrixDataProvider(Dataprovider):
     ID_BIO_TOOLS = "bio.tools"
@@ -161,7 +162,15 @@ class GalaxyDataProvider(Dataprovider):
         #
         for tool in tools:
             galaxy_id = tool["id"]
-            galaxy_id = "/".join(galaxy_id.split("/")[:-1])
+            #if tool["model_class"] == "InteractiveTool":
+            #    galaxy_id = galaxy_id
+            #see https://stackoverflow.com/a/70672659
+            if tool["id"] == "qual_stats_boxplot" or tool["id"] == "interactive_tool_ethercalc" or tool["id"] == "interactive_tool_phinch" or tool["id"] == "interactive_tool_cellxgene" or tool["id"] == "interactive_tool_isee"  or tool["id"] == "barchart_gnuplot":
+                galaxy_id = galaxy_id
+                #see https://stackoverflow.com/a/4945558
+                tool["link"] = "root?" + tool["link"][13:]
+            else:
+                galaxy_id = "/".join(galaxy_id.split("/")[:-1])
             biotools_id = None
             if "xrefs" in tool:
                 for item in tool["xrefs"]:
@@ -190,10 +199,19 @@ class GalaxyDataProvider(Dataprovider):
         retval = {GalaxyDataProvider.GALAXY_ID: {}}
         for idx, row in data.iterrows():
             if not pd.isna(row.BioCommons_toolID):
-                id = "/".join(row.galaxy_id.split("/")[:-1])
-                if id not in retval[GalaxyDataProvider.GALAXY_ID]:
-                    retval[GalaxyDataProvider.GALAXY_ID][id] = []
-                retval[GalaxyDataProvider.GALAXY_ID][id].append(row["BioCommons_toolID"])
+                ### https://stackoverflow.com/a/12595082
+                ### https://stackoverflow.com/a/4843178
+                ### https://stackoverflow.com/a/15340694
+                if isinstance(row.galaxy_id, str):
+                    match_string = "toolshed.g2.bx.psu.edu/repos"
+                    if re.search(match_string, row.galaxy_id):
+                        id = "/".join(row.galaxy_id.split("/")[:-1])
+                    else:
+                        id = row.galaxy_id
+                        #print(id)
+                    if id not in retval[GalaxyDataProvider.GALAXY_ID]:
+                        retval[GalaxyDataProvider.GALAXY_ID][id] = []
+                    retval[GalaxyDataProvider.GALAXY_ID][id].append(row["BioCommons_toolID"])
         return retval
 
 
