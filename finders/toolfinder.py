@@ -165,7 +165,7 @@ class GalaxyDataProvider(Dataprovider):
             #if tool["model_class"] == "InteractiveTool":
             #    galaxy_id = galaxy_id
             #see https://stackoverflow.com/a/70672659
-            if tool["id"] == "qual_stats_boxplot" or tool["id"] == "interactive_tool_ethercalc" or tool["id"] == "interactive_tool_phinch" or tool["id"] == "interactive_tool_cellxgene" or tool["id"] == "interactive_tool_isee"  or tool["id"] == "barchart_gnuplot":
+            if tool["id"] == "qual_stats_boxplot" or tool["id"] == "interactive_tool_ethercalc" or tool["id"] == "interactive_tool_phinch" or tool["id"] == "interactive_tool_cellxgene" or tool["id"] == "interactive_tool_isee"  or tool["id"] == "barchart_gnuplot" or tool["id"] == "CONVERTER_neostorezip_to_neostore":
                 galaxy_id = galaxy_id
                 #see https://stackoverflow.com/a/4945558
                 tool["link"] = "root?" + tool["link"][13:]

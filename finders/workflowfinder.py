@@ -85,10 +85,10 @@ class WorkflowHubSpaceDataProvider(Dataprovider):
                 retval[Dataprovider.FIELD_NAMES.TAGS] = workflow_attr["tags"]
             if workflow_attr["doi"]:
                 retval[Dataprovider.FIELD_NAMES.DOI] = workflow_attr["doi"]
-            if workflow_attr["edam_operations"]:
-                retval[Dataprovider.FIELD_NAMES.EDAM_OPS] = workflow_attr["edam_operations"]
-            if workflow_attr["edam_topics"]:
-                retval[Dataprovider.FIELD_NAMES.EDAM_TOP] = workflow_attr["edam_topics"]
+            if workflow_attr["operation_annotations"]:
+                retval[Dataprovider.FIELD_NAMES.EDAM_OPS] = workflow_attr["operation_annotations"]
+            if workflow_attr["topic_annotations"]:
+                retval[Dataprovider.FIELD_NAMES.EDAM_TOP] = workflow_attr["topic_annotations"]
             workflow_links = data["data"]["links"]
             if workflow_links["self"]:
                 retval[Dataprovider.FIELD_NAMES.URL] = workflow_links["self"]
