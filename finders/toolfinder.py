@@ -160,17 +160,30 @@ class GalaxyDataProvider(Dataprovider):
         tools = list(itertools.chain.from_iterable(tools_nested))
 
         #
+        other_galaxy_id_types = {}
         for tool in tools:
             galaxy_id = tool["id"]
-            #if tool["model_class"] == "InteractiveTool":
-            #    galaxy_id = galaxy_id
-            #see https://stackoverflow.com/a/70672659
-            if tool["id"] == "qual_stats_boxplot" or tool["id"] == "interactive_tool_ethercalc" or tool["id"] == "interactive_tool_phinch" or tool["id"] == "interactive_tool_cellxgene" or tool["id"] == "interactive_tool_isee"  or tool["id"] == "barchart_gnuplot" or tool["id"] == "CONVERTER_neostorezip_to_neostore":
-                galaxy_id = galaxy_id
-                #see https://stackoverflow.com/a/4945558
-                tool["link"] = "root?" + tool["link"][13:]
-            else:
-                galaxy_id = "/".join(galaxy_id.split("/")[:-1])
+            # https://stackoverflow.com/a/70672659
+            # https://stackoverflow.com/a/12595082
+            # https://stackoverflow.com/a/4843178
+            # https://stackoverflow.com/a/15340694
+            if isinstance(galaxy_id, str):
+                match_string = "toolshed.g2.bx.psu.edu/repos"
+                if re.search(match_string, galaxy_id):
+                    galaxy_id = "/".join(galaxy_id.split("/")[:-1])
+                else:
+                    other_galaxy_id_types[galaxy_id] = tool
+                    galaxy_id = galaxy_id
+                    #print(other_galaxy_id_types[galaxy_id]["id"])
+            ### example datasource_tool link "/tool_runner/data_source_redirect?tool_id=ucsc_table_direct1"
+            if isinstance(tool["model_class"], str) and tool["model_class"] != "ToolSectionLabel" and tool["model_class"] != "ToolSection":
+                if tool["model_class"] == "DataSourceTool":
+                    tool["link"] = tool["link"]
+                if tool["model_class"] == "Tool":
+                    # https://stackoverflow.com/a/4945558
+                    tool["link"] = "root?" + tool["link"][13:]
+                else:
+                    tool["link"] = "root?" + tool["link"][13:]
             biotools_id = None
             if "xrefs" in tool:
                 for item in tool["xrefs"]:
