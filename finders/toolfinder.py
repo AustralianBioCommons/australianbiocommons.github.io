@@ -442,9 +442,9 @@ class ToolDB(DB):
                 tool_line.append("".join("""<p class="version">%s</p>""" % x for x in row[Dataprovider.FIELD_NAMES.PAWSEY_SETONIX_VERSION]))
             else:
                 tool_line.append("")
-            if isinstance(row[Dataprovider.FIELD_NAMES.QRISCLOUD_VERSION], list):
-                tool_line.append("".join("""<p class="version">%s</p>""" % x for x in row[Dataprovider.FIELD_NAMES.QRISCLOUD_VERSION]))
-            else:
-                tool_line.append("")
+            #if isinstance(row[Dataprovider.FIELD_NAMES.QRISCLOUD_VERSION], list):
+            #    tool_line.append("".join("""<p class="version">%s</p>""" % x for x in row[Dataprovider.FIELD_NAMES.QRISCLOUD_VERSION]))
+            #else:
+            #    tool_line.append("")
             formatted_list.append(tool_line)
-        return pd.DataFrame(formatted_list, columns=["Tool / workflow name","homepage","biotools_link","Tool identifier (module name / bio.tools ID / placeholder)","Topic (EDAM, if available)","Publications","BioContainers link","License","BioCommons Documentation","Galaxy Australia","NCI (Gadi)","NCI (if89)","Pawsey (Setonix)","QRIScloud / UQ-RCC (Flashlite, Awoonga, Tinaroo)"])
+        return pd.DataFrame(formatted_list, columns=["Tool / workflow name","homepage","biotools_link","Tool identifier (module name / bio.tools ID / placeholder)","Topic (EDAM, if available)","Publications","BioContainers link","License","BioCommons Documentation","Galaxy Australia","NCI (Gadi)","NCI (if89)","Pawsey (Setonix)"])

@@ -119,13 +119,12 @@ container1 = htmltools::withTags(table(
     tr(
       #see https://stackoverflow.com/q/42153218
       th(class = 'dt-center', style="font-size:11pt", colspan = 9, 'Tool metadata'),
-      th(class = 'dt-center', style="font-size:11pt", colspan = 5, 'Availability on Australian compute infrastructures')
+      th(class = 'dt-center', style="font-size:11pt", colspan = 4, 'Availability on Australian compute infrastructures')
     ),
     tr(
       lapply(c("Name", "Homepage", "Registry link", "Tool identifier (e.g. module name)",
                "Topic(s)", "Publications", "Containers available? (BioContainers)", "License",
-               "Resources / documentation", "Galaxy Australia", "NCI (Gadi)", "NCI (if89)", "Pawsey (Setonix)",
-               "QRIScloud / UQ-RCC (Flashlite, Tinaroo)"), th)
+               "Resources / documentation", "Galaxy Australia", "NCI (Gadi)", "NCI (if89)", "Pawsey (Setonix)"), th)
     )
   )
 ))
@@ -155,7 +154,7 @@ options = list(
             buttons = c('copy', 'csv', I('colvis')),
             #see https://stackoverflow.com/a/32428537
             columnDefs = list(list(visible=FALSE, targets = c(3,7:8)),
-                              list(className = 'dt-center', targets = c(0:13)))
+                              list(className = 'dt-center', targets = c(0:12)))
             ),
 class = 'cell-border stripe', escape = FALSE)
 
