@@ -41,48 +41,6 @@ class ToolMatrixDataProvider(Dataprovider):
             retval[ToolMatrixDataProvider.ID_BIO_TOOLS][row.biotoolsID].append(toolID)
         return retval
 
-#class ZeusDataProvider(Dataprovider):
-#    def __init__(self, filename):
-#        super().__init__()
-#        self.filename = filename
-#        self.identifier = "ZEUS"
-
-#    def _query_remote(self):
-#        import re
-#        self.available_data = {}
-#        data = pd.read_csv(self.filename, delimiter="/", header=None)
-#        data.columns = ["toolID", "version"]
-
-#        for idx, row in data.iterrows():
-#            toolID = row.toolID
-#            toolID = re.sub(r"wgs", "celera", toolID)
-#            toolID = re.sub(r"trinityrnaseq", "trinity", toolID)
-#            if toolID not in self.available_data:
-#                self.available_data[toolID] = []
-#            self.available_data[toolID].append(row.version)
-
-#    def _render(self, data):
-#        return {Dataprovider.FIELD_NAMES.PAWSEY_ZEUS_VERSION: data}
-
-#class MagnusDataProvider(Dataprovider):
-#    def __init__(self, filename):
-#        super().__init__()
-#        self.filename = filename
-#        self.identifier = "MAGNUS"
-
-#    def _query_remote(self):
-#        self.available_data = {}
-#        data = pd.read_csv(self.filename, delimiter="/", header=None)
-#        data.columns = ["toolID", "version"]
-
-#        for idx, row in data.iterrows():
-#            if row.toolID not in self.available_data:
-#                self.available_data[row.toolID] = []
-#            self.available_data[row.toolID].append(row.version)
-
-#    def _render(self, data):
-#        return {Dataprovider.FIELD_NAMES.PAWSEY_MAGNUS_VERSION: data}
-
 
 class SetonixDataProvider(Dataprovider):
     def __init__(self, filename):
@@ -115,25 +73,21 @@ class QriscloudDataProvider(Dataprovider):
         self.identifier = "QRIScloud"
 
     def _query_remote(self):
-        import re
         self.available_data = {}
         with open(self.filename, "r") as stream:
             for line in stream:
                 line = line.split("/")
                 toolID = line[0].strip()
-                if len(line) == 3:
-                    toolID = toolID + "-" + line[1].strip()
-                elif len(line) > 3:
-                    raise ValueError(toolID)
+                version = line[1].strip()
+                if version == 0000:
+                    version = "install in progress"
                 toolID = toolID.lower()
-                toolID = toolID.replace("genomeanalysistk", "gatk")
-                toolID = toolID.replace("gatk4", "gatk")
-                toolID = toolID.replace("iqtree", "iq-tree")
-                toolID = re.sub(r"^pacbio$", "smrtlink", toolID)
-                toolID = re.sub(r"^soapdenovo$", "soapdenovo2", toolID)
+                #toolID = toolID.replace("genomeanalysistk", "gatk")
+                #toolID = re.sub(r"^soapdenovo$", "soapdenovo2", toolID)
                 if toolID not in self.available_data:
                     self.available_data[toolID] = []
-                self.available_data[toolID].append(line[-1].strip())
+                #self.available_data[toolID].append(line[-1].strip())
+                self.available_data[toolID].append(version)
 
     def _render(self, data):
         return {Dataprovider.FIELD_NAMES.QRISCLOUD_VERSION: data}
@@ -442,9 +396,9 @@ class ToolDB(DB):
                 tool_line.append("".join("""<p class="version">%s</p>""" % x for x in row[Dataprovider.FIELD_NAMES.PAWSEY_SETONIX_VERSION]))
             else:
                 tool_line.append("")
-            #if isinstance(row[Dataprovider.FIELD_NAMES.QRISCLOUD_VERSION], list):
-            #    tool_line.append("".join("""<p class="version">%s</p>""" % x for x in row[Dataprovider.FIELD_NAMES.QRISCLOUD_VERSION]))
-            #else:
-            #    tool_line.append("")
+            if isinstance(row[Dataprovider.FIELD_NAMES.QRISCLOUD_VERSION], list):
+                tool_line.append("".join("""<p class="version">%s</p>""" % x for x in row[Dataprovider.FIELD_NAMES.QRISCLOUD_VERSION]))
+            else:
+                tool_line.append("")
             formatted_list.append(tool_line)
-        return pd.DataFrame(formatted_list, columns=["Tool / workflow name","homepage","biotools_link","Tool identifier (module name / bio.tools ID / placeholder)","Topic (EDAM, if available)","Publications","BioContainers link","License","BioCommons Documentation","Galaxy Australia","NCI (Gadi)","NCI (if89)","Pawsey (Setonix)"])
+        return pd.DataFrame(formatted_list, columns=["Tool / workflow name","homepage","biotools_link","Tool identifier (module name / bio.tools ID / placeholder)","Topic (EDAM, if available)","Publications","BioContainers link","License","BioCommons Documentation","Galaxy Australia","NCI (Gadi)","NCI (if89)","Pawsey (Setonix)","QRIScloud / UQ-RCC (Bunya)"])

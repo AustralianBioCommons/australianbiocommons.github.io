@@ -4,7 +4,7 @@ if __name__ == "__main__":
     mytooldb = toolfinder.ToolDB("external/tool_matrix_2021_11_15.xlsx")
     mytooldb.add_provider(ToolMatrixDataProvider("external/tool_matrix_2021_11_15.xlsx"))
     mytooldb.add_provider(SetonixDataProvider("external/setonix.txt"))
-    #mytooldb.add_provider(QriscloudDataProvider("external/qriscloud.txt"))
+    mytooldb.add_provider(QriscloudDataProvider("external/bunya_software.2023.04.03.txt"))
     mytooldb.add_provider(GadiDataProvider("./external/gadi.key.hdr"))
     mytooldb.add_provider(if89DataProvider("./external/bioapps_token.txt"))
     gdp = GalaxyDataProvider(mytooldb, "./external/galaxy_tools_curation - DATA.csv")
