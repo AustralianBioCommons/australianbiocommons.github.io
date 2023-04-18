@@ -82,7 +82,10 @@ class QriscloudDataProvider(Dataprovider):
                 if version == 0000:
                     version = "install in progress"
                 toolID = toolID.lower()
-                #toolID = toolID.replace("genomeanalysistk", "gatk")
+                toolID = toolID.replace("miniconda3", "miniconda")
+                toolID = toolID.replace("salsa2", "salsa")
+                toolID = toolID.replace("anaconda3", "anaconda")
+                toolID = toolID.replace("scipy-bundle", "scipy")
                 #toolID = re.sub(r"^soapdenovo$", "soapdenovo2", toolID)
                 if toolID not in self.available_data:
                     self.available_data[toolID] = []
@@ -384,14 +387,6 @@ class ToolDB(DB):
                 tool_line.append("".join("""<p class="version">%s</p>""" % x for x in row[Dataprovider.FIELD_NAMES.NCI_IF89_VERSION]))
             else:
                 tool_line.append("")
-            #if isinstance(row[Dataprovider.FIELD_NAMES.PAWSEY_ZEUS_VERSION], list):
-            #    tool_line.append("".join("""<p class="version">%s</p>""" % x for x in row[Dataprovider.FIELD_NAMES.PAWSEY_ZEUS_VERSION]))
-            #else:
-            #    tool_line.append("")
-            #if isinstance(row[Dataprovider.FIELD_NAMES.PAWSEY_MAGNUS_VERSION], list):
-            #    tool_line.append("".join("""<p class="version">%s</p>""" % x for x in row[Dataprovider.FIELD_NAMES.PAWSEY_MAGNUS_VERSION]))
-            #else:
-            #    tool_line.append("")
             if isinstance(row[Dataprovider.FIELD_NAMES.PAWSEY_SETONIX_VERSION], list):
                 tool_line.append("".join("""<p class="version">%s</p>""" % x for x in row[Dataprovider.FIELD_NAMES.PAWSEY_SETONIX_VERSION]))
             else:
@@ -401,4 +396,8 @@ class ToolDB(DB):
             else:
                 tool_line.append("")
             formatted_list.append(tool_line)
-        return pd.DataFrame(formatted_list, columns=["Tool / workflow name","homepage","biotools_link","Tool identifier (module name / bio.tools ID / placeholder)","Topic (EDAM, if available)","Publications","BioContainers link","License","BioCommons Documentation","Galaxy Australia","NCI (Gadi)","NCI (if89)","Pawsey (Setonix)","QRIScloud / UQ-RCC (Bunya)"])
+        # see https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.dropna.html
+        # see https://stackoverflow.com/a/73601776
+        temp_list = pd.DataFrame(formatted_list, columns=["Tool / workflow name","homepage","biotools_link","Tool identifier (module name / bio.tools ID / placeholder)","Topic (EDAM, if available)","Publications","BioContainers link","License","BioCommons Documentation","Galaxy Australia","NCI (Gadi)","NCI (if89)","Pawsey (Setonix)","QRIScloud / UQ-RCC (Bunya)"])
+        final_list = temp_list.replace('', pd.NA).dropna(how = 'all', subset = ["BioCommons Documentation","Galaxy Australia","NCI (Gadi)","NCI (if89)","Pawsey (Setonix)","QRIScloud / UQ-RCC (Bunya)"])
+        return final_list
