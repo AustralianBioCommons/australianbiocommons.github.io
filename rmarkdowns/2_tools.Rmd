@@ -70,7 +70,7 @@ tool_request <- tibble(
   Process = c("Complete a [tool install request](https://request.usegalaxy.org.au/)",
               "[Contact NCI](https://opus.nci.org.au/display/Help/5.+Software+Applications)",
               "Visit the [Helpdesk Portal](https://support.pawsey.org.au/portal/servicedesk/customer/portal) or email: [help@pawsey.org.au](help@pawsey.org.au) with your request",
-              "Complete a [tool install request](https://docs.google.com/forms/d/e/1FAIpQLSefKCBkZbTQ-dUyU-pd4ZypkA-TA5GiMgpsJ2slWmD-B6elEg/viewform)"
+              "Complete a [tool install request](https://support.qcif.edu.au/Request-for-installation-of-QRIScloud-HPC)"
               )
     )
 #see https://cran.r-project.org/web/packages/kableExtra/vignettes/awesome_table_in_html.html
