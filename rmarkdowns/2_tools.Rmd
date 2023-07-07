@@ -118,11 +118,11 @@ container1 = htmltools::withTags(table(
   thead(
     tr(
       #see https://stackoverflow.com/q/42153218
-      th(class = 'dt-center', style="font-size:11pt", colspan = 9, 'Tool metadata'),
+      th(class = 'dt-center', style="font-size:11pt", colspan = 10, 'Tool metadata'),
       th(class = 'dt-center', style="font-size:11pt", colspan = 5, 'Availability on Australian compute infrastructures')
     ),
     tr(
-      lapply(c("Name", "Homepage", "Registry link", "Tool identifier (e.g. module name)",
+      lapply(c("Name", "Description","Homepage", "Registry link", "Tool identifier (e.g. module name)",
                "Topic(s)", "Publications", "Containers available? (BioContainers)", "License",
                "Resources / documentation", "Galaxy Australia", "NCI (Gadi)", "NCI (if89)",
                 "Pawsey (Setonix)", "QRIScloud / UQ-RCC (Bunya)"), th)
@@ -154,8 +154,8 @@ options = list(
             dom = 'Bfrtip', 
             buttons = c('copy', 'csv', I('colvis')),
             #see https://stackoverflow.com/a/32428537
-            columnDefs = list(list(visible=FALSE, targets = c(3,7:8)),
-                              list(className = 'dt-center', targets = c(0:13)))
+            columnDefs = list(list(visible=FALSE, targets = c(1,4,8:9)),
+                              list(className = 'dt-center', targets = c(0:14)))
             ),
 class = 'cell-border stripe', escape = FALSE)
 
@@ -165,7 +165,6 @@ class = 'cell-border stripe', escape = FALSE)
 **Note:** 
 
 - Table last updated ```r today()```.
-- Software documentation is linked from the tool / workflow `Name` in the first column.
 - The `Tool identifier` column (hidden by default) contains an identifier for the tool / workflow: typically the module name (used for matching to HPC lists).
 - The `Topic(s)` column categorises the tools by purpose, using an [EDAM](https://github.com/edamontology/edamontology) *term* where possible.
 - More information about a tool can be found by following the `[bio.tools links](https://bio.tools/)`.

@@ -346,6 +346,7 @@ class ToolDB(DB):
             c = """<p class="name" data-toggle="popover" data-trigger="hover" title="Description" data-content="%s">""" % (row[Dataprovider.FIELD_NAMES.DESCRIPTION])
             tool_line.append(c + b + """</p>""" if not pd.isna(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]) else
                              """<p class="name" data-toggle="popover" data-trigger="hover" title="Description" data-content="No metadata available.">""" + b + """</p>""")
+            tool_line.append((row[Dataprovider.FIELD_NAMES.DESCRIPTION]) if not pd.isna(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]) else "No description available.")
             tool_line.append("""<a class="homepage" href="%s" ga-product="homepage" ga-id="%s">%s</a>"""%(row[Dataprovider.FIELD_NAMES.REPOSITORY_URL], row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER], row[Dataprovider.FIELD_NAMES.NAME]) if not pd.isna(row[Dataprovider.FIELD_NAMES.REPOSITORY_URL]) else "")
             if pd.isna(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]):
                 tool_line.append("")
@@ -398,6 +399,6 @@ class ToolDB(DB):
             formatted_list.append(tool_line)
         # see https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.dropna.html
         # see https://stackoverflow.com/a/73601776
-        temp_list = pd.DataFrame(formatted_list, columns=["Tool / workflow name","homepage","biotools_link","Tool identifier (module name / bio.tools ID / placeholder)","Topic (EDAM, if available)","Publications","BioContainers link","License","BioCommons Documentation","Galaxy Australia","NCI (Gadi)","NCI (if89)","Pawsey (Setonix)","QRIScloud / UQ-RCC (Bunya)"])
+        temp_list = pd.DataFrame(formatted_list, columns=["Tool / workflow name","description","homepage","biotools_link","Tool identifier (module name / bio.tools ID / placeholder)","Topic (EDAM, if available)","Publications","BioContainers link","License","BioCommons Documentation","Galaxy Australia","NCI (Gadi)","NCI (if89)","Pawsey (Setonix)","QRIScloud / UQ-RCC (Bunya)"])
         final_list = temp_list.replace('', pd.NA).dropna(how = 'all', subset = ["BioCommons Documentation","Galaxy Australia","NCI (Gadi)","NCI (if89)","Pawsey (Setonix)","QRIScloud / UQ-RCC (Bunya)"])
         return final_list
