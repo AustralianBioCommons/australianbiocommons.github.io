@@ -287,6 +287,11 @@ class if89DataProvider(Dataprovider):
             tool_id = tool_id.replace("genomescope2", "genomescope")
             tool_id = tool_id.replace("miniconda3", "miniconda")
             tool_id = tool_id.replace("ipa", "pbipa")
+            tool_id = tool_id.replace("plink2", "plink")
+            tool_id = tool_id.replace("iqtree2", "iq-tree")
+            tool_id = tool_id.replace("sratoolkit", "sra-tools")
+            tool_id = tool_id.replace("cdhit", "cd-hit")
+            tool_id = tool_id.replace("clustal-omega", "clustalo")
             version = line[1]
             if tool_id not in self.available_data:
                 self.available_data[tool_id] = []
