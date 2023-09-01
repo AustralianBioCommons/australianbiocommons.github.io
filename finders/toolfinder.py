@@ -139,8 +139,8 @@ class GalaxyDataProvider(Dataprovider):
                 if tool["model_class"] == "Tool":
                     # https://stackoverflow.com/a/4945558
                     tool["link"] = "root?" + tool["link"][13:]
-                else:
-                    tool["link"] = "root?" + tool["link"][13:]
+                #else:
+                #    tool["link"] = "root?" + tool["link"][13:]
             biotools_id = None
             if "xrefs" in tool:
                 for item in tool["xrefs"]:
