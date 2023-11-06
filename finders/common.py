@@ -159,6 +159,21 @@ class DB:
 
         return pd.DataFrame(data)
 
+
+    def get_data_only(self):
+        data = []
+        for i in self.db:
+            line = []
+            for dp in self.dataprovider:
+                line.append(dp.render(self.db[i]))
+            result = {}
+            for element in line:
+                result.update(element)
+            data.append(result)
+
+        return data
+
+
     @abstractmethod
     def get_formatted_table(self) -> pd.DataFrame:
         pass

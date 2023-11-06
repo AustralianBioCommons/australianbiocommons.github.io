@@ -108,7 +108,8 @@ class GalaxyDataProvider(Dataprovider):
 
     def _query_remote(self):
         self.available_data = {}
-        req = requests.request("get", "https://usegalaxy.org.au/api/tools")
+        #req = requests.request("get", "https://usegalaxy.org.au/api/tools/?in_panel=False")
+        req = requests.request("get", "https://usegalaxy.org.au/api/tools/")
         if req.status_code != 200:
             raise FileNotFoundError(req.url)
         tool_sections = json.loads(req.text)
@@ -120,6 +121,7 @@ class GalaxyDataProvider(Dataprovider):
         other_galaxy_id_types = {}
         for tool in tools:
             galaxy_id = tool["id"]
+            version = tool["version"]
             # https://stackoverflow.com/a/70672659
             # https://stackoverflow.com/a/12595082
             # https://stackoverflow.com/a/4843178
@@ -133,14 +135,12 @@ class GalaxyDataProvider(Dataprovider):
                     galaxy_id = galaxy_id
                     #print(other_galaxy_id_types[galaxy_id]["id"])
             ### example datasource_tool link "/tool_runner/data_source_redirect?tool_id=ucsc_table_direct1"
-            if isinstance(tool["model_class"], str) and tool["model_class"] != "ToolSectionLabel" and tool["model_class"] != "ToolSection":
+            if tool["model_class"] != "ToolSectionLabel" and tool["model_class"] != "ToolSection":
                 if tool["model_class"] == "DataSourceTool":
                     tool["link"] = tool["link"]
-                if tool["model_class"] == "Tool":
+                else:
                     # https://stackoverflow.com/a/4945558
                     tool["link"] = "root?" + tool["link"][13:]
-                #else:
-                #    tool["link"] = "root?" + tool["link"][13:]
             biotools_id = None
             if "xrefs" in tool:
                 for item in tool["xrefs"]:
@@ -161,7 +161,7 @@ class GalaxyDataProvider(Dataprovider):
 
     def _render(self, data):
         retval = {}
-        retval[Dataprovider.FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK] = [(d["link"], d["name"]) for d in data if "link" in d and "name" in d]
+        retval[Dataprovider.FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK] = [(d["link"], d["name"], d["version"]) for d in data if "link" in d and "name" in d and "version" in d]
         return retval
 
     def get_alt_ids(self):
@@ -342,6 +342,7 @@ class ToolDB(DB):
     def get_formatted_table(self):
         import urllib
         tool_table = self.get_data()
+        tool_data = self.get_data_only()
         formatted_list = []
         for index, row in tool_table.iterrows():
             if not row[Dataprovider.FIELD_NAMES.INCLUSION]:
@@ -377,7 +378,7 @@ class ToolDB(DB):
                 # see https://stackoverflow.com/a/2906586
                 # see https://stackoverflow.com/questions/5618878/how-to-convert-list-to-string
                 #tool_line.append("<br \>".join(["""<button class="galaxy-link" onclick="window.open('https://usegalaxy.org.au/%s','_blank').focus()">%s</button>""" %d for d in row[Dataprovider.FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK]]))
-                a = ["""<button class="galaxy-link" onclick="window.open('https://usegalaxy.org.au/%s','_blank').focus()" ga-product="galaxy" ga-id="%s">%s</button>"""% (x[0], row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER], x[1]) for x in row[Dataprovider.FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK]]
+                a = ["""<button class="galaxy-link" onclick="window.open('https://usegalaxy.org.au/%s','_blank').focus()" ga-product="galaxy" ga-id="%s">%s</button>"""% (x[0], row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER], x[1] + "-" + x[2]) for x in row[Dataprovider.FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK]]
                      #%d for d in row[Dataprovider.FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK]]
                 if len(a)>1:
                     tool_line.append("""<ul class="galaxy-links-holder"><li class="closed galaxy-collapsible" onclick="$(this).parent('.galaxy-links-holder').find('.galaxy-links').toggle({duration:200,start:function(){$(this).parent('.galaxy-links-holder').find('.galaxy-collapsible').toggleClass('closed open')}})" ><span class="galaxy-link-toggle">""" + str(len(a)) + " tool" + ("s" if len(a)>1 else "") + """</span><span class="button"/></li><ul class="galaxy-links" style="display: none;">""" + str("".join(a)) + "</li></ul></ul>")
