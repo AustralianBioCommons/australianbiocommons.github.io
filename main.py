@@ -19,6 +19,8 @@ if __name__ == "__main__":
     unresolved_gdp, unmatched_gdp = mytooldb.get_unmatched_ids(gdp)
     #print(unresolved_gdp)
 
+    mytooldb.get_formatted_yaml()
+
     #######################################
     ### Create TOOL and WORKFLOW tables ###
     #######################################
