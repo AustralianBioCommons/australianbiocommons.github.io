@@ -1,0 +1,38 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: ToolFinder and WorkflowFinder
+doi: [DOI goes here]
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Ove Johan Ragnar
+    family-names: Gustafsson
+    affiliation: 'Australian BioCommons, University of Melbourne'
+    orcid: 'https://orcid.org/0000-0002-2977-5032'
+  - given-names: Uwe
+    family-names: Winter
+    affiliation: 'Australian BioCommons, University of Melbourne'
+    orcid: 'https://orcid.org/0009-0009-1878-4070'
+  - given-names: Minh
+    family-names: Vu
+    affiliation: 'Australian BioCommons, University of Sydney'
+  - given-names: Dale
+    family-names: Roberts
+    affiliation: 'National Computational Infrastructure, The Australian National University'
+    orcid: 'https://orcid.org/0000-0003-3952-6344'
+  - given-names: Nigel
+    family-names: Ward
+    affiliation: 'Australian BioCommons, Queensland Cyber Infrastructure Foundation (QCIF) University of Queensland'
+    orcid: 'https://orcid.org/0000-0003-3952-6344'
+  - given-names: Jeffrey H
+    family-names: Christiansen
+    affiliation: 'Australian BioCommons, Queensland Cyber Infrastructure Foundation (QCIF) University of Queensland, University of Melbourne'
+    orcid: 'https://orcid.org/0000-0002-8146-1225'
+repository-code: >-
+  https://github.com/AustralianBioCommons/australianbiocommons.github.io
+url: 'https://australianbiocommons.github.io'
+license: Apache-2.0
