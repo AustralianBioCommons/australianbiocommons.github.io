@@ -307,8 +307,8 @@
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fanndata_import%2Fanndata_import%2F0.10.3%2Bgalaxy0
   - title: Manipulate AnnData 0.10.3+galaxy0
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fanndata_manipulate%2Fanndata_manipulate%2F0.10.3%2Bgalaxy0
-  - title: Inspect AnnData 0.7.5+galaxy1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fanndata_inspect%2Fanndata_inspect%2F0.7.5%2Bgalaxy1
+  - title: Inspect AnnData 0.10.3+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fanndata_inspect%2Fanndata_inspect%2F0.10.3%2Bgalaxy0
   homepage: ''
   id: anndata
   license: ''
@@ -344,7 +344,7 @@
   topics: ''
 - biocontainers: ''
   bunya:
-  - '0000'
+  - 2023.1           gurobi
   description: ''
   galaxy: ''
   homepage: ''
@@ -380,6 +380,7 @@
 - biocontainers: ''
   bunya:
   - 1.10.9-java-11
+  - 1.10.12-java-11                       (D)
   description: ''
   galaxy: ''
   homepage: https://ant.apache.org/
@@ -489,8 +490,7 @@
   - Data quality management
   - Genomics
 - biocontainers: ''
-  bunya:
-  - 3.2.0-gcccore-11.3.0
+  bunya: ''
   description: ''
   galaxy: ''
   homepage: ''
@@ -767,6 +767,7 @@
 - biocontainers: augustus
   bunya:
   - 3.4.0-foss-2021a
+  - 3.5.0-foss-2022a                 (D)
   description: AUGUSTUS is a eukaryotic gene prediction tool. It can integrate evidence,
     e.g. from RNA-Seq, ESTs, proteomics, but can also predict genes ab initio. The
     PPX extension to AUGUSTUS can take a protein sequence multiple sequence alignment
@@ -935,6 +936,7 @@
 - biocontainers: bamtools
   bunya:
   - 2.5.2-gcc-10.3.0
+  - 2.5.2-gcc-11.3.0                 (D)
   description: BamTools provides a fast, flexible C++ API & toolkit for reading, writing,
     and managing BAM files.
   galaxy:
@@ -1097,6 +1099,7 @@
 - biocontainers: bbmap
   bunya:
   - 38.96-gcc-10.3.0
+  - 39.01-gcc-11.3.0                    (D)
   description: BBMap is a fast splice-aware aligner for RNA and DNA.  It is faster
     than almost all short-read aligners, yet retains unrivaled sensitivity and specificity,
     particularly for reads with many errors and indels.
@@ -1151,7 +1154,7 @@
 - biocontainers: bcftools
   bunya:
   - 1.12-gcc-10.3.0
-  - 1.15.1-gcc-11.3.0
+  - 1.15.1-gcc-11.3.0                (D)
   description: BCFtools is a set of utilities that manipulate variant calls in the
     Variant Call Format (VCF) and its binary counterpart BCF. All commands work transparently
     with both VCFs and BCFs, both uncompressed and BGZF-compressed.
@@ -1266,7 +1269,9 @@
   topics:
   - Population genetics
 - biocontainers: beagle-lib
-  bunya: ''
+  bunya:
+  - 3.1.2-gcc-11.3.0
+  - 4.0.0-gcc-11.3.0               (D)
   description: BEAGLE is a high-performance library that can perform the core calculations
     at the heart of most Bayesian and Maximum Likelihood phylogenetics packages.
   galaxy: ''
@@ -1401,6 +1406,7 @@
 - biocontainers: bedtools
   bunya:
   - 2.30.0-gcc-10.3.0
+  - 2.30.0-gcc-11.3.0                (D)
   description: BEDTools is an extensive suite of utilities for comparing genomic features
     in BED format.
   galaxy:
@@ -1622,6 +1628,7 @@
 - biocontainers: ''
   bunya:
   - 1.7.3-gcc-10.3.0
+  - 1.7.3-gcc-11.3.0       (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -1804,6 +1811,7 @@
 - biocontainers: bioperl
   bunya:
   - 1.7.8-gcccore-10.3.0
+  - 1.7.8-gcccore-11.3.0              (D)
   description: A collection of Perl modules that facilitate the development of Perl
     scripts for bioinformatics applications.  It provides software modules for many
     of the typical tasks of bioinformatics programming.
@@ -1827,6 +1835,7 @@
 - biocontainers: biopython
   bunya:
   - 1.79-foss-2021a
+  - 1.79-foss-2022a                 (D)
   description: Biopython is a set of freely available tools for biological computation
     written in Python by an international team of developers.
   galaxy:
@@ -1906,38 +1915,38 @@
     The program compares nucleotide or protein sequences to sequence databases and
     calculates the statistical significance.
   galaxy:
-  - title: NCBI BLAST+ segmasker 2.14.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_segmasker_wrapper%2F2.14.1%2Bgalaxy0
-  - title: NCBI BLAST+ convert2blastmask 2.14.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_convert2blastmask_wrapper%2F2.14.1%2Bgalaxy0
-  - title: NCBI BLAST+ makeblastdb 2.14.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_makeblastdb%2F2.14.1%2Bgalaxy0
-  - title: NCBI BLAST+ blastn 2.14.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_blastn_wrapper%2F2.14.1%2Bgalaxy0
-  - title: NCBI BLAST+ tblastx 2.14.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_tblastx_wrapper%2F2.14.1%2Bgalaxy0
-  - title: NCBI BLAST+ tblastn 2.14.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_tblastn_wrapper%2F2.14.1%2Bgalaxy0
-  - title: BLAST XML to tabular 2.14.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fblastxml_to_tabular%2F2.14.1%2Bgalaxy0
-  - title: NCBI get species taxids 2.14.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fget_species_taxids%2F2.14.1%2Bgalaxy0
-  - title: NCBI BLAST+ rpstblastn 2.14.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_rpstblastn_wrapper%2F2.14.1%2Bgalaxy0
-  - title: NCBI BLAST+ blastdbcmd entry(s) 2.14.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_blastdbcmd_wrapper%2F2.14.1%2Bgalaxy0
-  - title: NCBI BLAST+ blastx 2.14.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_blastx_wrapper%2F2.14.1%2Bgalaxy0
-  - title: NCBI BLAST+ dustmasker 2.14.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_dustmasker_wrapper%2F2.14.1%2Bgalaxy0
-  - title: NCBI BLAST+ makeprofiledb 2.14.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_makeprofiledb%2F2.14.1%2Bgalaxy0
-  - title: NCBI BLAST+ blastp 2.14.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_blastp_wrapper%2F2.14.1%2Bgalaxy0
-  - title: NCBI BLAST+ rpsblast 2.14.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_rpsblast_wrapper%2F2.14.1%2Bgalaxy0
-  - title: NCBI BLAST+ database info 2.14.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_blastdbcmd_info%2F2.14.1%2Bgalaxy0
+  - title: NCBI BLAST+ segmasker 2.14.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_segmasker_wrapper%2F2.14.1%2Bgalaxy1
+  - title: NCBI BLAST+ convert2blastmask 2.14.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_convert2blastmask_wrapper%2F2.14.1%2Bgalaxy1
+  - title: NCBI BLAST+ makeblastdb 2.14.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_makeblastdb%2F2.14.1%2Bgalaxy1
+  - title: NCBI BLAST+ blastn 2.14.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_blastn_wrapper%2F2.14.1%2Bgalaxy1
+  - title: NCBI BLAST+ tblastx 2.14.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_tblastx_wrapper%2F2.14.1%2Bgalaxy1
+  - title: NCBI BLAST+ tblastn 2.14.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_tblastn_wrapper%2F2.14.1%2Bgalaxy1
+  - title: BLAST XML to tabular 2.14.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fblastxml_to_tabular%2F2.14.1%2Bgalaxy1
+  - title: NCBI get species taxids 2.14.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fget_species_taxids%2F2.14.1%2Bgalaxy1
+  - title: NCBI BLAST+ rpstblastn 2.14.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_rpstblastn_wrapper%2F2.14.1%2Bgalaxy1
+  - title: NCBI BLAST+ blastdbcmd entry(s) 2.14.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_blastdbcmd_wrapper%2F2.14.1%2Bgalaxy1
+  - title: NCBI BLAST+ blastx 2.14.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_blastx_wrapper%2F2.14.1%2Bgalaxy1
+  - title: NCBI BLAST+ dustmasker 2.14.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_dustmasker_wrapper%2F2.14.1%2Bgalaxy1
+  - title: NCBI BLAST+ makeprofiledb 2.14.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_makeprofiledb%2F2.14.1%2Bgalaxy1
+  - title: NCBI BLAST+ blastp 2.14.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_blastp_wrapper%2F2.14.1%2Bgalaxy1
+  - title: NCBI BLAST+ rpsblast 2.14.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_rpsblast_wrapper%2F2.14.1%2Bgalaxy1
+  - title: NCBI BLAST+ database info 2.14.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_blastdbcmd_info%2F2.14.1%2Bgalaxy1
   homepage: https://blast.ncbi.nlm.nih.gov/Blast.cgi
   id: blast
   license: ''
@@ -1967,42 +1976,43 @@
 - biocontainers: blast
   bunya:
   - 2.11.0-gompi-2021a
+  - 2.13.0-gompi-2022a                 (D)
   description: A tool that finds regions of similarity between biological sequences.
     The program compares nucleotide or protein sequences to sequence databases and
     calculates the statistical significance.
   galaxy:
-  - title: NCBI BLAST+ segmasker 2.14.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_segmasker_wrapper%2F2.14.1%2Bgalaxy0
-  - title: NCBI BLAST+ convert2blastmask 2.14.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_convert2blastmask_wrapper%2F2.14.1%2Bgalaxy0
-  - title: NCBI BLAST+ makeblastdb 2.14.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_makeblastdb%2F2.14.1%2Bgalaxy0
-  - title: NCBI BLAST+ blastn 2.14.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_blastn_wrapper%2F2.14.1%2Bgalaxy0
-  - title: NCBI BLAST+ tblastx 2.14.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_tblastx_wrapper%2F2.14.1%2Bgalaxy0
-  - title: NCBI BLAST+ tblastn 2.14.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_tblastn_wrapper%2F2.14.1%2Bgalaxy0
-  - title: BLAST XML to tabular 2.14.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fblastxml_to_tabular%2F2.14.1%2Bgalaxy0
-  - title: NCBI get species taxids 2.14.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fget_species_taxids%2F2.14.1%2Bgalaxy0
-  - title: NCBI BLAST+ rpstblastn 2.14.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_rpstblastn_wrapper%2F2.14.1%2Bgalaxy0
-  - title: NCBI BLAST+ blastdbcmd entry(s) 2.14.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_blastdbcmd_wrapper%2F2.14.1%2Bgalaxy0
-  - title: NCBI BLAST+ blastx 2.14.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_blastx_wrapper%2F2.14.1%2Bgalaxy0
-  - title: NCBI BLAST+ dustmasker 2.14.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_dustmasker_wrapper%2F2.14.1%2Bgalaxy0
-  - title: NCBI BLAST+ makeprofiledb 2.14.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_makeprofiledb%2F2.14.1%2Bgalaxy0
-  - title: NCBI BLAST+ blastp 2.14.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_blastp_wrapper%2F2.14.1%2Bgalaxy0
-  - title: NCBI BLAST+ rpsblast 2.14.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_rpsblast_wrapper%2F2.14.1%2Bgalaxy0
-  - title: NCBI BLAST+ database info 2.14.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_blastdbcmd_info%2F2.14.1%2Bgalaxy0
+  - title: NCBI BLAST+ segmasker 2.14.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_segmasker_wrapper%2F2.14.1%2Bgalaxy1
+  - title: NCBI BLAST+ convert2blastmask 2.14.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_convert2blastmask_wrapper%2F2.14.1%2Bgalaxy1
+  - title: NCBI BLAST+ makeblastdb 2.14.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_makeblastdb%2F2.14.1%2Bgalaxy1
+  - title: NCBI BLAST+ blastn 2.14.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_blastn_wrapper%2F2.14.1%2Bgalaxy1
+  - title: NCBI BLAST+ tblastx 2.14.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_tblastx_wrapper%2F2.14.1%2Bgalaxy1
+  - title: NCBI BLAST+ tblastn 2.14.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_tblastn_wrapper%2F2.14.1%2Bgalaxy1
+  - title: BLAST XML to tabular 2.14.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fblastxml_to_tabular%2F2.14.1%2Bgalaxy1
+  - title: NCBI get species taxids 2.14.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fget_species_taxids%2F2.14.1%2Bgalaxy1
+  - title: NCBI BLAST+ rpstblastn 2.14.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_rpstblastn_wrapper%2F2.14.1%2Bgalaxy1
+  - title: NCBI BLAST+ blastdbcmd entry(s) 2.14.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_blastdbcmd_wrapper%2F2.14.1%2Bgalaxy1
+  - title: NCBI BLAST+ blastx 2.14.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_blastx_wrapper%2F2.14.1%2Bgalaxy1
+  - title: NCBI BLAST+ dustmasker 2.14.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_dustmasker_wrapper%2F2.14.1%2Bgalaxy1
+  - title: NCBI BLAST+ makeprofiledb 2.14.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_makeprofiledb%2F2.14.1%2Bgalaxy1
+  - title: NCBI BLAST+ blastp 2.14.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_blastp_wrapper%2F2.14.1%2Bgalaxy1
+  - title: NCBI BLAST+ rpsblast 2.14.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_rpsblast_wrapper%2F2.14.1%2Bgalaxy1
+  - title: NCBI BLAST+ database info 2.14.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_blastdbcmd_info%2F2.14.1%2Bgalaxy1
   homepage: https://blast.ncbi.nlm.nih.gov/Blast.cgi
   id: blast+
   license: ''
@@ -2030,38 +2040,38 @@
     The program compares nucleotide or protein sequences to sequence databases and
     calculates the statistical significance.
   galaxy:
-  - title: NCBI BLAST+ segmasker 2.14.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_segmasker_wrapper%2F2.14.1%2Bgalaxy0
-  - title: NCBI BLAST+ convert2blastmask 2.14.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_convert2blastmask_wrapper%2F2.14.1%2Bgalaxy0
-  - title: NCBI BLAST+ makeblastdb 2.14.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_makeblastdb%2F2.14.1%2Bgalaxy0
-  - title: NCBI BLAST+ blastn 2.14.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_blastn_wrapper%2F2.14.1%2Bgalaxy0
-  - title: NCBI BLAST+ tblastx 2.14.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_tblastx_wrapper%2F2.14.1%2Bgalaxy0
-  - title: NCBI BLAST+ tblastn 2.14.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_tblastn_wrapper%2F2.14.1%2Bgalaxy0
-  - title: BLAST XML to tabular 2.14.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fblastxml_to_tabular%2F2.14.1%2Bgalaxy0
-  - title: NCBI get species taxids 2.14.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fget_species_taxids%2F2.14.1%2Bgalaxy0
-  - title: NCBI BLAST+ rpstblastn 2.14.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_rpstblastn_wrapper%2F2.14.1%2Bgalaxy0
-  - title: NCBI BLAST+ blastdbcmd entry(s) 2.14.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_blastdbcmd_wrapper%2F2.14.1%2Bgalaxy0
-  - title: NCBI BLAST+ blastx 2.14.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_blastx_wrapper%2F2.14.1%2Bgalaxy0
-  - title: NCBI BLAST+ dustmasker 2.14.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_dustmasker_wrapper%2F2.14.1%2Bgalaxy0
-  - title: NCBI BLAST+ makeprofiledb 2.14.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_makeprofiledb%2F2.14.1%2Bgalaxy0
-  - title: NCBI BLAST+ blastp 2.14.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_blastp_wrapper%2F2.14.1%2Bgalaxy0
-  - title: NCBI BLAST+ rpsblast 2.14.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_rpsblast_wrapper%2F2.14.1%2Bgalaxy0
-  - title: NCBI BLAST+ database info 2.14.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_blastdbcmd_info%2F2.14.1%2Bgalaxy0
+  - title: NCBI BLAST+ segmasker 2.14.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_segmasker_wrapper%2F2.14.1%2Bgalaxy1
+  - title: NCBI BLAST+ convert2blastmask 2.14.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_convert2blastmask_wrapper%2F2.14.1%2Bgalaxy1
+  - title: NCBI BLAST+ makeblastdb 2.14.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_makeblastdb%2F2.14.1%2Bgalaxy1
+  - title: NCBI BLAST+ blastn 2.14.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_blastn_wrapper%2F2.14.1%2Bgalaxy1
+  - title: NCBI BLAST+ tblastx 2.14.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_tblastx_wrapper%2F2.14.1%2Bgalaxy1
+  - title: NCBI BLAST+ tblastn 2.14.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_tblastn_wrapper%2F2.14.1%2Bgalaxy1
+  - title: BLAST XML to tabular 2.14.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fblastxml_to_tabular%2F2.14.1%2Bgalaxy1
+  - title: NCBI get species taxids 2.14.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fget_species_taxids%2F2.14.1%2Bgalaxy1
+  - title: NCBI BLAST+ rpstblastn 2.14.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_rpstblastn_wrapper%2F2.14.1%2Bgalaxy1
+  - title: NCBI BLAST+ blastdbcmd entry(s) 2.14.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_blastdbcmd_wrapper%2F2.14.1%2Bgalaxy1
+  - title: NCBI BLAST+ blastx 2.14.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_blastx_wrapper%2F2.14.1%2Bgalaxy1
+  - title: NCBI BLAST+ dustmasker 2.14.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_dustmasker_wrapper%2F2.14.1%2Bgalaxy1
+  - title: NCBI BLAST+ makeprofiledb 2.14.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_makeprofiledb%2F2.14.1%2Bgalaxy1
+  - title: NCBI BLAST+ blastp 2.14.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_blastp_wrapper%2F2.14.1%2Bgalaxy1
+  - title: NCBI BLAST+ rpsblast 2.14.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_rpsblast_wrapper%2F2.14.1%2Bgalaxy1
+  - title: NCBI BLAST+ database info 2.14.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_blastdbcmd_info%2F2.14.1%2Bgalaxy1
   homepage: https://blast.ncbi.nlm.nih.gov/Blast.cgi
   id: blast2
   license: ''
@@ -2105,7 +2115,8 @@
   - Metagenomics
   - Molecular interactions, pathways and networks
 - biocontainers: blat
-  bunya: ''
+  bunya:
+  - 3.7-gcc-11.3.0
   description: Fast, accurate spliced alignment of DNA sequences.
   galaxy: ''
   homepage: http://genome.ucsc.edu/cgi-bin/hgBlat?command=start
@@ -2127,6 +2138,7 @@
   bunya:
   - 0.8.1-gcc-10.3.0
   - 0.9.0-gcc-11.3.0
+  - 0.9.0-gcc-12.3.0                     (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -2229,7 +2241,7 @@
 - biocontainers: boost
   bunya:
   - 1.76.0-gcc-10.3.0
-  - 1.79.0-gcc-11.3.0
+  - 1.79.0-gcc-11.3.0                   (D)
   description: Boost is a set of libraries for the C++ programming language that provides
     support for tasks and structures such as linear algebra, pseudorandom number generation,
     multithreading, image processing, regular expressions, and unit testing.
@@ -2254,7 +2266,8 @@
   - Imaging
   - Software engineering
 - biocontainers: bowtie
-  bunya: ''
+  bunya:
+  - 1.3.1-gcc-11.3.0
   description: Bowtie is an ultrafast, memory-efficient short read aligner.
   galaxy:
   - title: Map with Bowtie for Illumina 1.2.0
@@ -2284,7 +2297,7 @@
 - biocontainers: bowtie2
   bunya:
   - 2.4.4-gcc-10.3.0
-  - 2.4.5-gcc-11.3.0
+  - 2.4.5-gcc-11.3.0                  (D)
   description: 'Bowtie 2 is an ultrafast and memory-efficient tool for aligning sequencing
     reads to long reference sequences. It is particularly good at aligning reads of
     about 50 up to 100s or 1,000s of characters, and particularly good at aligning
@@ -2453,7 +2466,7 @@
 - biocontainers: ''
   bunya:
   - 1.0.9-gcccore-10.3.0
-  - 1.0.9-gcccore-11.3.0
+  - 1.0.9-gcccore-11.3.0               (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -2527,12 +2540,13 @@
 - biocontainers: busco
   bunya:
   - 5.4.2-foss-2021a
+  - 5.4.5-foss-2022a                    (D)
   description: Provides measures for quantitative assessment of genome assembly, gene
     set, and transcriptome completeness based on evolutionarily informed expectations
     of gene content from near-universal single-copy orthologs.
   galaxy:
-  - title: Busco 5.4.6+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fbusco%2Fbusco%2F5.4.6%2Bgalaxy0
+  - title: Busco 5.5.0+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fbusco%2Fbusco%2F5.5.0%2Bgalaxy0
   homepage: https://busco.ezlab.org/
   id: busco
   license: ''
@@ -2561,6 +2575,7 @@
 - biocontainers: bwa
   bunya:
   - 0.7.17-gcc-10.3.0
+  - 0.7.17-gcccore-11.3.0                 (D)
   description: Fast, accurate, memory-efficient aligner for short and long sequencing
     reads
   galaxy:
@@ -2815,7 +2830,9 @@
   topics:
   - Metabolomics
 - biocontainers: canu
-  bunya: ''
+  bunya:
+  - 2.2-gcccore-10.3.0
+  - 2.2-gcccore-11.3.0                   (D)
   description: De-novo assembly tool for long read chemistry like Nanopore data and
     PacBio data.
   galaxy:
@@ -3001,6 +3018,7 @@
 - biocontainers: cd-hit
   bunya:
   - 4.8.1-gcc-10.3.0
+  - 4.8.1-gcc-11.3.0                   (D)
   description: Cluster a nucleotide dataset into representative sequences.
   galaxy:
   - title: CD-HIT-EST 1.3
@@ -3050,7 +3068,8 @@
   resource-documentation: .nan
   topics: ''
 - biocontainers: celseq2
-  bunya: ''
+  bunya:
+  - 0.5.3
   description: celseq2 is a Python framework for generating the UMI count matrix from
     CEL-Seq2 sequencing data.
   galaxy: ''
@@ -3323,6 +3342,7 @@
 - biocontainers: checkm
   bunya:
   - 1.1.3-foss-2021a
+  - 1.2.2-foss-2022a                   (D)
   description: CheckM provides a set of tools for assessing the quality of genomes
     recovered from isolates, single cells, or metagenomes.
   galaxy: ''
@@ -3484,8 +3504,8 @@
     to compare the own dataset with those deposited in database. The comparison can
     be used to infer cooperative regulation and thus can be used to generate hypotheses.
   galaxy:
-  - title: ChIPseeker 1.18.0+galaxy1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frnateam%2Fchipseeker%2Fchipseeker%2F1.18.0%2Bgalaxy1
+  - title: ChIPseeker 1.28.3+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frnateam%2Fchipseeker%2Fchipseeker%2F1.28.3%2Bgalaxy0
   homepage: http://bioconductor.org/packages/release/bioc/html/ChIPseeker.html
   id: chipseeker
   license: Artistic-2.0
@@ -3574,7 +3594,8 @@
   resource-documentation: .nan
   topics: ''
 - biocontainers: ''
-  bunya: ''
+  bunya:
+  - 1.5.5--py_3
   description: ''
   galaxy: ''
   homepage: https://sanger-pathogens.github.io/circlator/
@@ -3804,8 +3825,11 @@
   - Statistics and probability
 - biocontainers: ''
   bunya:
+  - 3.12.1
   - 3.20.1-gcccore-10.3.0
   - 3.23.1-gcccore-11.3.0
+  - 3.24.3-gcccore-11.3.0
+  - 3.26.3-gcccore-12.3.0               (D)
   description: ''
   galaxy: ''
   homepage: https://cmake.org/
@@ -3999,6 +4023,7 @@
 - biocontainers: ''
   bunya:
   - 8.2-foss-2021a
+  - 9.1-foss-2022a                       (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -4083,6 +4108,7 @@
 - biocontainers: ''
   bunya:
   - 1.1.0-gcccore-10.3.0
+  - 1.2.1-gcccore-11.3.0                 (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -4176,9 +4202,7 @@
   resource-documentation: .nan
   topics: ''
 - biocontainers: ''
-  bunya:
-  - 11.3.1
-  - 11.7.0
+  bunya: ''
   description: ''
   galaxy: ''
   homepage: https://developer.nvidia.com/cuda-toolkit
@@ -4199,9 +4223,7 @@
   resource-documentation: .nan
   topics: ''
 - biocontainers: cuDNN
-  bunya:
-  - 8.2.1.32-cuda-11.3.1
-  - 8.4.1.50-cuda-11.7.0
+  bunya: ''
   description: "The NVIDIA CUDA\xAE Deep Neural Network library (cuDNN) is a GPU-accelerated\
     \ library of primitives for deep neural networks. cuDNN provides highly tuned\
     \ implementations for standard routines such as forward and backward convolution,\
@@ -4346,6 +4368,7 @@
 - biocontainers: cutadapt
   bunya:
   - 3.4-gcccore-10.3.0
+  - 4.2-gcccore-11.3.0               (D)
   description: Find and remove adapter sequences, primers, poly-A tails and other
     types of unwanted sequence from your high-throughput sequencing reads.
   galaxy:
@@ -4372,8 +4395,7 @@
   - Probes and primers
   - Sequencing
 - biocontainers: ''
-  bunya:
-  - 1.6.0.3-cuda-11.3.1
+  bunya: ''
   description: ''
   galaxy: ''
   homepage: ''
@@ -4544,10 +4566,8 @@
   topics: ''
 - biocontainers: ''
   bunya:
-  - 18.1.32-gcccore-8.2.0
-  - 18.1.32-gcccore-9.3.0
   - 18.1.40-gcccore-10.3.0
-  - 18.1.40-gcccore-11.3.0
+  - 18.1.40-gcccore-11.3.0                 (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -4564,6 +4584,7 @@
 - biocontainers: ''
   bunya:
   - 1.856-gcccore-10.3.0
+  - 1.858-gcccore-11.3.0              (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -4645,6 +4666,7 @@
 - biocontainers: deeptools
   bunya:
   - 3.5.0-foss-2021a
+  - 3.5.2-foss-2022a                (D)
   description: User-friendly tools for the normalization and visualization of deep-sequencing
     data.
   galaxy:
@@ -4725,6 +4747,7 @@
 - biocontainers: dendropy
   bunya:
   - 4.5.2-gcccore-10.3.0
+  - 4.5.2-gcccore-11.3.0             (D)
   description: DendroPy is a Python library for phylogenetic computing. It provides
     classes and functions for the simulation, processing, and manipulation of phylogenetic
     trees and character matrices, and supports the reading and writing of phylogenetic
@@ -4897,6 +4920,8 @@
 - biocontainers: diamond
   bunya:
   - 2.0.13-gcc-10.3.0
+  - 2.1.0-gcc-11.3.0                  (D)
+  - 2.1.7
   description: Sequence aligner for protein and translated DNA searches and functions
     as a drop-in replacement for the NCBI BLAST software tools. It is suitable for
     protein-protein search as well as DNA-protein search on short reads and longer
@@ -5185,8 +5210,7 @@
   topics: ''
 - biocontainers: easybuild
   bunya:
-  - 4.6.2
-  - 4.7.0
+  - 4.8.0
   description: EasyBuild is a software build and installation framework that allows
     you to manage (scientific) software on High Performance Computing (HPC) systems
     in an efficient way.
@@ -5345,7 +5369,8 @@
   - RNA-Seq
   - ChIP-seq
 - biocontainers: edirect
-  bunya: ''
+  bunya:
+  - '16.2'
   description: Entrez Direct (EDirect) is a command-line tool for Entrez databases.
     EDirect connects to Entrez through the Entrez Programming Utilities interface.
     It supports searching by indexed terms, looking up precomputed neighbors or links,
@@ -5486,6 +5511,7 @@
 - biocontainers: ''
   bunya:
   - 2021.05.001-foss-2021a
+  - 2021.11.001-foss-2022a               (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -5827,7 +5853,8 @@
   - Proteomics
   - Proteomics experiment
 - biocontainers: ''
-  bunya: ''
+  bunya:
+  - 0.6.5
   description: ''
   galaxy: ''
   homepage: https://github.com/geronimp/enrichM
@@ -6047,7 +6074,8 @@
   - Phylogenomics
   - Literature and language
 - biocontainers: exonerate
-  bunya: ''
+  bunya:
+  - 2.4.0--hf34a1b8_7
   description: A tool for pairwise sequence alignment. It enables alignment for DNA-DNA
     and DNA-protein pairs and also gapped and ungapped alignment.
   galaxy:
@@ -6072,9 +6100,7 @@
   - Sequence sites, features and motifs
   - Molecular interactions, pathways and networks
 - biocontainers: ''
-  bunya:
-  - 0.1.3-gcccore-10.3.0
-  - 0.1.3-gcccore-11.3.0
+  bunya: ''
   description: ''
   galaxy: ''
   homepage: ''
@@ -6224,7 +6250,8 @@
   topics:
   - Sequence assembly
 - biocontainers: falcon
-  bunya: ''
+  bunya:
+  - 0.0.8--hdfd78af_1
   description: Experimental PacBio diploid assembler.
   galaxy: ''
   homepage: https://github.com/pratas/falcon
@@ -6742,7 +6769,6 @@
 - biocontainers: ''
   bunya:
   - 4.3.2-gcccore-10.3.0
-  - 4.4.2-gcccore-11.3.0
   description: ''
   galaxy: ''
   homepage: ''
@@ -6760,10 +6786,9 @@
   topics: ''
 - biocontainers: ''
   bunya:
-  - 3.3.10-gcc-11.3.0
-  - 3.3.8-gompi-2019a
-  - 3.3.8-gompi-2020a
   - 3.3.9-gompi-2021a
+  - 3.3.10-gcc-11.3.0
+  - 3.3.10-gcc-12.3.0                    (D)
   description: ''
   galaxy: ''
   homepage: https://github.com/FFTW
@@ -6780,6 +6805,7 @@
 - biocontainers: ''
   bunya:
   - 3.3.10-gompi-2022a
+  - 3.3.10-gompi-2023a               (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -6995,6 +7021,7 @@
 - biocontainers: ''
   bunya:
   - 1.3.3-gcccore-10.3.0
+  - 1.3.4-gcccore-11.3.0                 (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -7031,6 +7058,8 @@
 - biocontainers: ''
   bunya:
   - 2.6.4-gcccore-10.3.0
+  - 2.6.4-gcccore-11.3.0
+  - 2.6.4-gcccore-12.3.0                 (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -7048,6 +7077,7 @@
   bunya:
   - 3.0.4-gcc-10.3.0
   - 3.2.0-gcc-11.3.0
+  - 3.3.1-gcc-12.3.0                (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -7154,10 +7184,9 @@
   - Proteins
 - biocontainers: ''
   bunya:
-  - 2019a
-  - 2020a
   - 2021a
   - 2022a
+  - 2023a                                (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -7353,16 +7382,16 @@
   description: funannotate is a pipeline for genome annotation (built specifically
     for fungi, but will also work with higher eukaryotes).
   galaxy:
-  - title: Funannotate compare 1.8.15+galaxy2
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ffunannotate_compare%2Ffunannotate_compare%2F1.8.15%2Bgalaxy2
-  - title: Funannotate functional 1.8.15+galaxy2
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ffunannotate_annotate%2Ffunannotate_annotate%2F1.8.15%2Bgalaxy2
-  - title: Sort assembly 1.8.15+galaxy3
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ffunannotate_sort%2Ffunannotate_sort%2F1.8.15%2Bgalaxy3
-  - title: Funannotate predict annotation 1.8.15+galaxy3
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ffunannotate_predict%2Ffunannotate_predict%2F1.8.15%2Bgalaxy3
-  - title: Funannotate assembly clean 1.8.15+galaxy3
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ffunannotate_clean%2Ffunannotate_clean%2F1.8.15%2Bgalaxy3
+  - title: Sort assembly 1.8.15+galaxy4
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ffunannotate_sort%2Ffunannotate_sort%2F1.8.15%2Bgalaxy4
+  - title: Funannotate assembly clean 1.8.15+galaxy4
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ffunannotate_clean%2Ffunannotate_clean%2F1.8.15%2Bgalaxy4
+  - title: Funannotate functional 1.8.15+galaxy4
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ffunannotate_annotate%2Ffunannotate_annotate%2F1.8.15%2Bgalaxy4
+  - title: Funannotate compare 1.8.15+galaxy4
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ffunannotate_compare%2Ffunannotate_compare%2F1.8.15%2Bgalaxy4
+  - title: Funannotate predict annotation 1.8.15+galaxy4
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ffunannotate_predict%2Ffunannotate_predict%2F1.8.15%2Bgalaxy4
   homepage: https://github.com/nextgenusfs/funannotate
   id: funannotate
   license: BSD-2-Clause
@@ -7697,7 +7726,8 @@
   resource-documentation: .nan
   topics: ''
 - biocontainers: gatk
-  bunya: ''
+  bunya:
+  - 4.3.0.0-gcccore-11.3.0-java-11
   description: "The Genome Analysis Toolkit (GATK) is a set of bioinformatic tools\
     \ for analyzing high-throughput sequencing (HTS) and variant call format (VCF)\
     \ data. The toolkit is well established for germline short variant discovery from\
@@ -7731,6 +7761,7 @@
 - biocontainers: ''
   bunya:
   - 16.b.01-sse
+  - 16.b.01-gv    star-ccm+
   description: ''
   galaxy: ''
   homepage: ''
@@ -7777,8 +7808,7 @@
   bunya:
   - 10.3.0
   - 11.3.0
-  - 8.2.0-2.31.1
-  - 9.3.0
+  - 12.3.0                                (D)
   description: ''
   galaxy: ''
   homepage: https://gcc.gnu.org/
@@ -7799,6 +7829,7 @@
 - biocontainers: gcta
   bunya:
   - 1.94.0beta-gfbf-2022a
+  - 1.94.1--h9ee0642_0
   description: Genome-wide Complex Trait Analysis. Estimate the proportion of phenotypic
     variance explained by genome- or chromosome-wide SNPs for complex traits (the
     GREML method), and has subsequently extended for many other analyses to better
@@ -7821,6 +7852,7 @@
 - biocontainers: ''
   bunya:
   - 3.3.0-foss-2021a
+  - 3.5.0-foss-2022a                     (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -7853,9 +7885,7 @@
   resource-documentation: .nan
   topics: ''
 - biocontainers: ''
-  bunya:
-  - 2.2-gcccore-10.3.0
-  - 2.3-gcccore-11.3.0
+  bunya: ''
   description: ''
   galaxy: ''
   homepage: ''
@@ -8174,6 +8204,7 @@
 - biocontainers: ''
   bunya:
   - 3.9.1-gcc-10.3.0
+  - 3.10.3-gcc-11.3.0                    (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -8367,7 +8398,8 @@
   resource-documentation: .nan
   topics: ''
 - biocontainers: gffcompare
-  bunya: ''
+  bunya:
+  - 0.12.2-gcc-10.3.0
   description: Program for comparing, annotating, merging and tracking transcripts
     in GFF files.
   galaxy:
@@ -8408,8 +8440,8 @@
   - 0.12.7-gcccore-10.3.0
   description: program for filtering, converting and manipulating GFF files
   galaxy:
-  - title: gffread 2.2.1.3+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fgffread%2Fgffread%2F2.2.1.3%2Bgalaxy0
+  - title: gffread 2.2.1.4+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fgffread%2Fgffread%2F2.2.1.4%2Bgalaxy0
   homepage: https://ccb.jhu.edu/software/stringtie/gff.shtml
   id: gffread
   license: MIT
@@ -8451,6 +8483,7 @@
 - biocontainers: ''
   bunya:
   - 9.54.0-gcccore-10.3.0
+  - 9.56.1-gcccore-11.3.0         (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -8467,7 +8500,7 @@
 - biocontainers: ''
   bunya:
   - 2.32.0-gcccore-10.3.0-nodocs
-  - 2.36.0-gcccore-11.3.0-nodocs
+  - 2.36.0-gcccore-11.3.0-nodocs          (D)
   description: ''
   galaxy: ''
   homepage: https://git-scm.com/about
@@ -8486,6 +8519,7 @@
 - biocontainers: ''
   bunya:
   - 3.1.18-gcccore-10.3.0
+  - 3.1.27-gcccore-11.3.0           (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -8630,7 +8664,8 @@
   resource-documentation: .nan
   topics: ''
 - biocontainers: gmap
-  bunya: ''
+  bunya:
+  - 2023.04.28
   description: Genomic Mapping and Alignment Program for mRNA and EST Sequences.
   galaxy: ''
   homepage: http://research-pub.gene.com/gmap/
@@ -8771,6 +8806,7 @@
 - biocontainers: parallel
   bunya:
   - 20210622-gcccore-10.3.0
+  - 20220722-gcccore-11.3.0          (D)
   description: GNU parallel is a shell tool for executing jobs in parallel using one
     or more computers. A job can be a single command or a small script that has to
     be run for each of the lines in the input. The typical input is a list of files,
@@ -8793,7 +8829,7 @@
 - biocontainers: gsl
   bunya:
   - 2.7-gcc-10.3.0
-  - 2.7-gcc-11.3.0
+  - 2.7-gcc-11.3.0                        (D)
   description: The GNU Scientific Library (GSL) is a numerical library for C and C++
     programmers.
   galaxy: ''
@@ -8842,7 +8878,7 @@
 - biocontainers: ''
   bunya:
   - 1.18.1
-  - 1.18.3
+  - 1.18.3                                 (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -9058,8 +9094,7 @@
 - biocontainers: ''
   bunya:
   - 1.22.4-gcccore-10.3.0
-  - 1.22.4-gcccore-11.3.0
-  - 1.22.4-gcccore-9.3.0
+  - 1.22.4-gcccore-11.3.0               (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -9182,7 +9217,6 @@
   - Sequence assembly
 - biocontainers: GTDB-Tk
   bunya:
-  - 1.7.0-foss-2021a
   - 2.0.0-foss-2021a
   description: 'a toolkit to classify genomes with the Genome Taxonomy Database.
 
@@ -9306,7 +9340,8 @@
   resource-documentation: .nan
   topics: ''
 - biocontainers: ''
-  bunya: ''
+  bunya:
+  - 9.5.0           wombat
   description: ''
   galaxy: ''
   homepage: ''
@@ -9323,7 +9358,7 @@
 - biocontainers: ''
   bunya:
   - 1.10-gcccore-10.3.0
-  - 1.12-gcccore-11.3.0
+  - 1.12-gcccore-11.3.0                  (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -9452,6 +9487,7 @@
 - biocontainers: ''
   bunya:
   - 4.2.15-gcccore-10.3.0
+  - 4.2.15-gcccore-11.3.0                 (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -9501,6 +9537,7 @@
 - biocontainers: ''
   bunya:
   - 1.10.7-gompi-2021a
+  - 1.12.2-gompi-2022a                   (D)
   description: ''
   galaxy: ''
   homepage: https://support.hdfgroup.org/products/hdf5_tools/
@@ -9647,6 +9684,8 @@
     \ 3.6 documentation.\n\nscHiCExplorer \u2014 scHiCExplorer 7 documentation.\n\n\
     Free document hosting provided by Read the Docs."
   galaxy:
+  - title: hicPCA 3.7.2+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Fhicexplorer_hicpca%2Fhicexplorer_hicpca%2F3.7.2%2Bgalaxy0
   - title: hicFindTADs 3.7.2+galaxy0
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Fhicexplorer_hicfindtads%2Fhicexplorer_hicfindtads%2F3.7.2%2Bgalaxy0
   - title: hicPlotMatrix 3.7.2+galaxy0
@@ -9655,8 +9694,6 @@
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Fhicexplorer_hicmergematrixbins%2Fhicexplorer_hicmergematrixbins%2F3.7.2%2Bgalaxy0
   - title: hicBuildMatrix 3.7.2+galaxy0
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Fhicexplorer_hicbuildmatrix%2Fhicexplorer_hicbuildmatrix%2F3.7.2%2Bgalaxy0
-  - title: hicPCA 3.6+galaxy1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Fhicexplorer_hicpca%2Fhicexplorer_hicpca%2F3.6%2Bgalaxy1
   homepage: https://hicexplorer.usegalaxy.eu
   id: hicexplorer
   license: ''
@@ -9746,6 +9783,8 @@
   topics: ''
 - biocontainers: hisat2
   bunya:
+  - 2.2.1-gompi-2021a
+  - 2.2.1-gompi-2022a
   - 2.2.1--h87f3376_4
   description: Alignment program for mapping next-generation sequencing reads (both
     DNA and RNA) to a population of human genomes (as well as to a single reference
@@ -9809,6 +9848,7 @@
 - biocontainers: hmmer3
   bunya:
   - 3.3.2-gompi-2021a
+  - 3.3.2-gompi-2022a                   (D)
   description: This tool is used for searching sequence databases for homologs of
     protein sequences, and for making protein sequence alignments. It implements methods
     using probabilistic models called profile hidden Markov models. The new HMMER3
@@ -9930,7 +9970,8 @@
   resource-documentation: .nan
   topics: ''
 - biocontainers: htseq
-  bunya: ''
+  bunya:
+  - 2.0.2-foss-2022a
   description: Python framework to process and analyse high-throughput sequencing
     (HTS) data
   galaxy:
@@ -9953,7 +9994,7 @@
 - biocontainers: htslib
   bunya:
   - 1.12-gcc-10.3.0
-  - 1.15.1-gcc-11.3.0
+  - 1.15.1-gcc-11.3.0                  (D)
   description: The main purpose of HTSlib is to provide access to genomic information
     files, both alignment data (SAM, BAM, and CRAM formats) and variant data (VCF
     and BCF formats). The library also provides interfaces to access and index genome
@@ -9996,10 +10037,10 @@
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fhumann_split_stratified_table%2Fhumann_split_stratified_table%2F3.8%2Bgalaxy0
   - title: Unpack pathway abundances 3.8+galaxy0
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fhumann_unpack_pathways%2Fhumann_unpack_pathways%2F3.8%2Bgalaxy0
-  - title: HUMAnN 3.7+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fhumann%2Fhumann%2F3.7%2Bgalaxy0
-  - title: Rename features 3.7+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fhumann_rename_table%2Fhumann_rename_table%2F3.7%2Bgalaxy0
+  - title: HUMAnN 3.8+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fhumann%2Fhumann%2F3.8%2Bgalaxy0
+  - title: Rename features 3.8+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fhumann_rename_table%2Fhumann_rename_table%2F3.8%2Bgalaxy0
   homepage: https://huttenhower.sph.harvard.edu/humann
   id: humann
   license: MIT
@@ -10145,7 +10186,7 @@
 - biocontainers: ''
   bunya:
   - 6.13.1-gcccore-10.3.0
-  - 6.46.7-gcccore-11.3.0
+  - 6.46.7-gcccore-11.3.0          (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -10228,6 +10269,8 @@
 - biocontainers: ''
   bunya:
   - 2021a
+  - 2022a
+  - 2023a                               (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -10244,6 +10287,7 @@
 - biocontainers: ''
   bunya:
   - 7.0.11-14-gcccore-10.3.0
+  - 7.1.0-37-gcccore-11.3.0       (D)
   description: ''
   galaxy: ''
   homepage: https://imagemagick.org/script/index.php
@@ -10261,7 +10305,8 @@
 - biocontainers: ''
   bunya:
   - 2021.2.0-iimpi-2021a
-  - 2021.3.0-gompi-2021a
+  - 2022.1.0
+  - 2023.1.0                             (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -10278,6 +10323,8 @@
 - biocontainers: ''
   bunya:
   - 2021.2.0-intel-compilers-2021.2.0
+  - 2021.6.0-intel-compilers-2022.1.0
+  - 2021.9.0-intel-compilers-2023.1.0    (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -10423,6 +10470,8 @@
 - biocontainers: ''
   bunya:
   - 2021a
+  - 2022a
+  - 2023a                               (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -10576,6 +10625,8 @@
 - biocontainers: ''
   bunya:
   - 2021.2.0
+  - 2022.1.0
+  - 2023.1.0                  (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -11103,7 +11154,8 @@
   resource-documentation: .nan
   topics: ''
 - biocontainers: ipyrad
-  bunya: ''
+  bunya:
+  - 0.9.93
   description: "Interactive assembly and analysis of RADseq datasets.\n\nipyrad: interactive\
     \ assembly and analysis of RAD-seq data sets.\n\nWelcome to ipyrad, an interactive\
     \ toolkit for assembly and analysis of restriction-site associated genomic data\
@@ -11156,7 +11208,7 @@
 - biocontainers: ''
   bunya:
   - 2.30.0-gcccore-10.3.0
-  - 2.30.0-gcccore-11.3.0
+  - 2.30.0-gcccore-11.3.0               (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -11277,7 +11329,8 @@
   resource-documentation: .nan
   topics: ''
 - biocontainers: isoseq3
-  bunya: ''
+  bunya:
+  - 4.0.0--h9ee0642_0
   description: IsoSeq v3 contains the newest tools to identify transcripts in PacBio
     single-molecule sequencing data. Starting in SMRT Link v6.0.0, those tools power
     the IsoSeq GUI-based analysis application. A composable workflow of existing tools
@@ -11442,8 +11495,7 @@
   topics: ''
 - biocontainers: ''
   bunya:
-  - 11.0.16
-  - 11(@java
+  - 11.0.18                              (11)
   description: ''
   galaxy: ''
   homepage: https://www.oracle.com/java/
@@ -11478,7 +11530,7 @@
 - biocontainers: ''
   bunya:
   - 2.1-gcccore-10.3.0
-  - 2.1-gcccore-11.3.0
+  - 2.1-gcccore-11.3.0                (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -11536,6 +11588,7 @@
 - biocontainers: jellyfish
   bunya:
   - 2.3.0-gcc-10.3.0
+  - 2.3.0-gcc-11.3.0                (D)
   description: A command-line algorithm for counting k-mers in DNA sequence.
   galaxy:
   - title: jellyfish 2.3.0+galaxy0
@@ -11628,7 +11681,8 @@
   - Mapping
   - Sequence assembly
 - biocontainers: juicer
-  bunya: ''
+  bunya:
+  - '1.6'
   description: Juicer is a platform for analyzing kilobase resolution Hi-C data. In
     this distribution, we include the pipeline for generating Hi-C maps from fastq
     raw data files and command line tools for feature annotation on the Hi-C maps.
@@ -11670,7 +11724,8 @@
   resource-documentation: .nan
   topics: ''
 - biocontainers: ''
-  bunya: ''
+  bunya:
+  - 3.5.0-gcccore-11.3.0
   description: ''
   galaxy: ''
   homepage: ''
@@ -11688,6 +11743,7 @@
 - biocontainers: kallisto
   bunya:
   - 0.48.0-gompi-2021a
+  - 0.48.0-gompi-2022a
   - 0.48.0--h15996b6_2
   description: A program for quantifying abundances of transcripts from RNA-Seq data,
     or more generally of target sequences using high-throughput sequencing reads.
@@ -11913,6 +11969,7 @@
 - biocontainers: kraken2
   bunya:
   - 2.1.2-gompi-2021a
+  - 2.1.2-gompi-2022a                 (D)
   description: Kraken 2 is the newest version of Kraken, a taxonomic classification
     system using exact k-mer matches to achieve high accuracy and fast classification
     speeds. This classifier matches each k-mer within a query sequence to the lowest
@@ -12025,7 +12082,7 @@
 - biocontainers: ''
   bunya:
   - 3.100-gcccore-10.3.0
-  - 3.100-gcccore-11.3.0
+  - 3.100-gcccore-11.3.0                 (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -12188,6 +12245,7 @@
   bunya:
   - 3.5.1-gcccore-10.3.0
   - 3.6.1-gcccore-11.3.0
+  - 3.6.2-gcccore-12.3.0           (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -12236,6 +12294,7 @@
 - biocontainers: ''
   bunya:
   - 1.6.0-gcccore-10.3.0
+  - 1.7.1-gcccore-11.3.0           (D)
   description: ''
   galaxy: ''
   homepage: https://www.ogc.org/standards/geotiff
@@ -12253,6 +12312,7 @@
 - biocontainers: ''
   bunya:
   - 1.1.0-gcccore-10.3.0
+  - 1.4.3-gcccore-11.3.0              (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -12269,6 +12329,7 @@
 - biocontainers: ''
   bunya:
   - 1.3.3-gcccore-10.3.0
+  - 1.4.0-gcccore-11.3.0             (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -12300,6 +12361,7 @@
 - biocontainers: ''
   bunya:
   - 1.16-gcccore-10.3.0
+  - 1.17-gcccore-11.3.0              (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -12314,8 +12376,7 @@
   resource-documentation: .nan
   topics: ''
 - biocontainers: ''
-  bunya:
-  - 2.3.0-gcccore-10.3.0
+  bunya: ''
   description: ''
   galaxy: ''
   homepage: ''
@@ -12332,6 +12393,7 @@
 - biocontainers: ''
   bunya:
   - 2.6.0-gcc-10.3.0-lmax-6-cp2k
+  - 2.7.2-gcc-11.3.0-lmax-6-cp2k       (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -12384,6 +12446,7 @@
 - biocontainers: ''
   bunya:
   - 1.3.4-gcccore-10.3.0
+  - 1.3.5-gcccore-11.3.0               (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -12400,6 +12463,7 @@
 - biocontainers: ''
   bunya:
   - 1.3.2-gcccore-10.3.0
+  - 1.3.2-gcccore-11.3.0             (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -12433,6 +12497,7 @@
 - biocontainers: ''
   bunya:
   - 1.3.7-gcccore-10.3.0
+  - 1.3.7-gcccore-11.3.0            (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -12468,6 +12533,7 @@
 - biocontainers: ''
   bunya:
   - 2.9.13-gcccore-11.3.0
+  - 2.11.4-gcccore-12.3.0             (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -12484,6 +12550,7 @@
 - biocontainers: ''
   bunya:
   - 1.16.2-gcc-10.3.0
+  - 1.17-gcc-11.3.0                   (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -12613,6 +12680,7 @@
 - biocontainers: ''
   bunya:
   - 2.12-gcccore-10.3.0
+  - 2.13.1-gcccore-11.3.0           (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -12759,6 +12827,7 @@
 - biocontainers: ''
   bunya:
   - 5.5.2.11-gcc-10.3.0
+  - 5.5.2.11-gcc-11.3.0               (D)
   description: ''
   galaxy: ''
   homepage: http://lpsolve.sourceforge.net/5.5/
@@ -12814,7 +12883,7 @@
 - biocontainers: ''
   bunya:
   - 1.9.3-gcccore-10.3.0
-  - 1.9.3-gcccore-11.3.0
+  - 1.9.3-gcccore-11.3.0                  (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -12889,7 +12958,8 @@
   - Molecular interactions, pathways and networks
   - Transcription factors and regulatory sites
 - biocontainers: macs
-  bunya: ''
+  bunya:
+  - 2.2.9.1
   description: Model-based Analysis of ChIP-seq data.
   galaxy:
   - title: MACS2 bdgdiff 2.2.9.1+galaxy0
@@ -13184,9 +13254,7 @@
   - Genetic variation
   - Genomics
 - biocontainers: ''
-  bunya:
-  - 2.6.1-foss-2021a-cuda-11.3.1
-  - 2.6.2-foss-2022a-cuda-11.7.0
+  bunya: ''
   description: ''
   galaxy: ''
   homepage: ''
@@ -13206,7 +13274,6 @@
 - biocontainers: ''
   bunya:
   - 6.7-gcccore-10.3.0-minimal
-  - 6.7-gcccore-9.3.0-minimal
   description: ''
   galaxy: ''
   homepage: ''
@@ -13221,7 +13288,8 @@
   resource-documentation: .nan
   topics: ''
 - biocontainers: maker
-  bunya: ''
+  bunya:
+  - 3.01.03--pl5262h8f1cd36_2
   description: "Portable and easily configurable genome annotation pipeline. It\u2019\
     s purpose is to allow smaller eukaryotic and prokaryotic genome projects to independently\
     \ annotate their genomes and to create genome databases."
@@ -13470,8 +13538,7 @@
   resource-documentation: .nan
   topics: ''
 - biocontainers: matlab
-  bunya:
-  - 2022a
+  bunya: ''
   description: MATLAB is a general use development environment and scientific computing
     language.
   galaxy: ''
@@ -13492,6 +13559,7 @@
 - biocontainers: matplotlib
   bunya:
   - 3.4.2-foss-2021a
+  - 3.5.2-foss-2022a               (D)
   description: Matplotlib is a comprehensive library for creating static, animated,
     and interactive visualizations in Python. Matplotlib makes easy things easy and
     hard things possible.
@@ -13598,7 +13666,8 @@
   - Sequence assembly
   - Microbiology
 - biocontainers: maxquant
-  bunya: ''
+  bunya:
+  - 2.2.0.0-gcccore-11.3.0
   description: Quantitative proteomics software package designed for analyzing large
     mass-spectrometric data sets. It is specifically aimed at high-resolution MS data.
   galaxy:
@@ -13731,7 +13800,8 @@
   resource-documentation: .nan
   topics: ''
 - biocontainers: medaka
-  bunya: ''
+  bunya:
+  - 1.9.1
   description: medaka is a tool to create consensus sequences and variant calls from
     nanopore sequencing data. This task is performed using neural networks applied
     a pileup of individual sequencing reads against a draft assembly.
@@ -13758,6 +13828,7 @@
 - biocontainers: megahit
   bunya:
   - 1.2.9-gcccore-10.3.0
+  - 1.2.9-gcccore-11.3.0              (D)
   description: Single node assembler for large and complex metagenomics NGS reads,
     such as soil. It makes use of succinct de Bruijn graph to achieve low memory usage,
     whereas its goal is not to make memory usage as low as possible.
@@ -13828,8 +13899,8 @@
 
     Merqury provides a set of tools for this purpose.'
   galaxy:
-  - title: Merqury 1.3+galaxy2
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fmerqury%2Fmerqury%2F1.3%2Bgalaxy2
+  - title: Merqury 1.3+galaxy3
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fmerqury%2Fmerqury%2F1.3%2Bgalaxy3
   homepage: https://github.com/marbl/merqury
   id: merqury
   license: ''
@@ -13874,7 +13945,7 @@
 - biocontainers: ''
   bunya:
   - 0.58.0-gcccore-10.3.0
-  - 0.62.1-gcccore-11.3.0
+  - 0.62.1-gcccore-11.3.0               (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -14010,6 +14081,7 @@
 - biocontainers: MetaEuk
   bunya:
   - 5-gcc-10.3.0
+  - 6-gcc-11.3.0                      (D)
   description: MetaEuk - sensitive, high-throughput gene discovery and annotation
     for large-scale eukaryotic metagenomics
   galaxy: ''
@@ -14211,6 +14283,7 @@
 - biocontainers: ''
   bunya:
   - 5.1.0-gcccore-10.3.0
+  - 5.1.0-gcccore-11.3.0                (D)
   description: ''
   galaxy: ''
   homepage: http://glaros.dtc.umn.edu/gkhome/metis/metis/overview
@@ -14392,7 +14465,8 @@
   - Genotype and phenotype
   - Sequencing
 - biocontainers: minimap2
-  bunya: ''
+  bunya:
+  - 2.24-gcccore-11.3.0
   description: Pairwise aligner for genomic and spliced nucleotide sequences
   galaxy:
   - title: Map with minimap2 2.26+galaxy0
@@ -14435,7 +14509,8 @@
   - Sequence sites, features and motifs
   - Sequence analysis
 - biocontainers: mira
-  bunya: ''
+  bunya:
+  - 4.9.6--1
   description: MIRA 3 - Whole Genome Shotgun and EST Sequence Assembler
   galaxy: ''
   homepage: https://sourceforge.net/p/mira-assembler/wiki/Home/
@@ -14570,7 +14645,8 @@
   resource-documentation: .nan
   topics: ''
 - biocontainers: mlst
-  bunya: ''
+  bunya:
+  - 2.23.0--hdfd78af_1
   description: Multi Locus Sequence Typing from an assembled genome or from a set
     of reads.
   galaxy:
@@ -14860,7 +14936,8 @@
   resource-documentation: .nan
   topics: ''
 - biocontainers: ''
-  bunya: ''
+  bunya:
+  - 6.12.0.122-gcccore-11.3.0
   description: ''
   galaxy: ''
   homepage: https://www.mono-project.com/
@@ -15222,7 +15299,7 @@
 - biocontainers: ''
   bunya:
   - 4.1.0-gcccore-10.3.0
-  - 4.1.0-gcccore-11.3.0
+  - 4.1.0-gcccore-11.3.0                 (D)
   description: ''
   galaxy: ''
   homepage: https://www.mpfr.org/
@@ -15284,7 +15361,8 @@
   resource-documentation: .nan
   topics: ''
 - biocontainers: mrbayes
-  bunya: ''
+  bunya:
+  - 3.2.7a-foss-2022a
   description: Program for Bayesian inference and model choice across a wide range
     of phylogenetic and evolutionary models. It uses Markov chain Monte Carlo (MCMC)
     methods to estimate the posterior distribution of model parameters.
@@ -15429,7 +15507,9 @@
   resource-documentation: .nan
   topics: ''
 - biocontainers: multiqc
-  bunya: ''
+  bunya:
+  - 1.11-foss-2021a
+  - 1.14-foss-2022a                   (D)
   description: MultiQC aggregates results from multiple bioinformatics analyses across
     many samples into a single report. It searches a given directory for analysis
     logs and compiles a HTML report. It's a general use tool, perfect for summarising
@@ -15867,9 +15947,7 @@
   resource-documentation: .nan
   topics: ''
 - biocontainers: ''
-  bunya:
-  - 2.10.3-gcccore-10.3.0-cuda-11.3.1
-  - 2.12.12-gcccore-11.3.0-cuda-11.7.0
+  bunya: ''
   description: ''
   galaxy: ''
   homepage: https://github.com/NVIDIA/nccl
@@ -15997,6 +16075,7 @@
 - biocontainers: netcdf
   bunya:
   - 4.8.0-gompi-2021a
+  - 4.9.0-gompi-2022a                  (D)
   description: NetCDF (Network Common Data Form) is a set of software libraries and
     machine-independent data formats that support the creation, access, and sharing
     of array-oriented scientific data.
@@ -16155,7 +16234,8 @@
   - Bioinformatics
   - Genomics
 - biocontainers: NextPolish
-  bunya: ''
+  bunya:
+  - 1.4.1--py311he4a0461_1
   description: 'A fast and efficient genome polishing tool for long read assembly.
 
 
@@ -16186,7 +16266,8 @@
   - Plant biology
   - Mapping
 - biocontainers: ''
-  bunya: ''
+  bunya:
+  - 2.10.9-gcccore-10.3.0
   description: ''
   galaxy: ''
   homepage: https://github.com/ncbi/ngs
@@ -16241,7 +16322,7 @@
 - biocontainers: ninja
   bunya:
   - 1.10.2-gcccore-10.3.0
-  - 1.10.2-gcccore-11.3.0
+  - 1.10.2-gcccore-11.3.0               (D)
   description: Nearly Infinite Neighbor Joining Application
   galaxy: ''
   homepage: https://github.com/TravisWheelerLab/NINJA
@@ -16260,6 +16341,7 @@
 - biocontainers: ''
   bunya:
   - 2.7.0-gcccore-10.3.0
+  - 2.7.1-gcccore-11.3.0                (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -16542,10 +16624,9 @@
   topics: ''
 - biocontainers: ''
   bunya:
-  - 3.1.3-gcc-8.2.0-2.31.1
-  - 4.0.3-gcc-9.3.0
   - 4.1.1-gcc-10.3.0
   - 4.1.4-gcc-11.3.0
+  - 4.1.5-gcc-12.3.0                  (D)
   description: ''
   galaxy: ''
   homepage: https://www.open-mpi.org/
@@ -16622,7 +16703,9 @@
   resource-documentation: .nan
   topics: ''
 - biocontainers: ''
-  bunya: ''
+  bunya:
+  - 3.1.1-gompi-2021a
+  - 3.1.1-gompi-2022a               (D)
   description: ''
   galaxy:
   - title: Compound conversion 3.1.1+galaxy0
@@ -16645,8 +16728,7 @@
   bunya:
   - 0.3.15-gcc-10.3.0
   - 0.3.20-gcc-11.3.0
-  - 0.3.5-gcc-8.2.0-2.31.1
-  - 0.3.9-gcc-9.3.0
+  - 0.3.23-gcc-12.3.0                (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -17228,7 +17310,8 @@
   resource-documentation: .nan
   topics: ''
 - biocontainers: parsnp
-  bunya: ''
+  bunya:
+  - 1.7.4--hdcf5f25_2
   description: Parsnp is a command-line-tool for efficient microbial core genome alignment
     and SNP detection. Parsnp was designed to work in tandem with Gingr, a flexible
     platform for visualizing genome alignments and phylogenetic trees.
@@ -17331,6 +17414,7 @@
 - biocontainers: ''
   bunya:
   - 10.36-gcccore-10.3.0
+  - 10.40-gcccore-11.3.0                (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -17386,7 +17470,8 @@
   - Methylated DNA immunoprecipitation
   - Transcription factors and regulatory sites
 - biocontainers: pear
-  bunya: ''
+  bunya:
+  - 0.9.6--h9d449c0_10
   description: Paired-end read merger. PEAR evaluates all possible paired-end read
     overlaps without requiring the target fragment size as input. In addition, it
     implements a statistical test for minimizing false-positive results.
@@ -17507,12 +17592,11 @@
   - Machine learning
 - biocontainers: ''
   bunya:
-  - 5.28.1-gcccore-8.2.0
-  - 5.30.2-gcccore-9.3.0
-  - 5.30.2-gcccore-9.3.0-minimal
-  - 5.32.1-gcccore-10.3.0
   - 5.32.1-gcccore-10.3.0-minimal
+  - 5.32.1-gcccore-10.3.0
+  - 5.34.1-gcccore-11.3.0-minimal
   - 5.34.1-gcccore-11.3.0
+  - 5.36.1-gcccore-12.3.0                (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -17864,6 +17948,7 @@
 - biocontainers: ''
   bunya:
   - 2.6-gcccore-10.3.0
+  - 2.7-gcccore-11.3.0                   (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -18044,9 +18129,7 @@
 - biocontainers: ''
   bunya: ''
   description: ''
-  galaxy:
-  - title: Draw ROC plot 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fplot_from_lda%2Fplot_for_lda_output1%2F1.0.1
+  galaxy: ''
   homepage: ''
   id: plot_from_lda
   license: ''
@@ -18082,6 +18165,7 @@
 - biocontainers: ''
   bunya:
   - 5.1.0-gcccore-10.3.0
+  - 5.12.0-gcccore-11.3.0           (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -18098,6 +18182,7 @@
 - biocontainers: ''
   bunya:
   - 2.7.2-foss-2021a
+  - 2.8.1-foss-2022a                   (D)
   description: ''
   galaxy: ''
   homepage: https://www.plumed.org/
@@ -18240,8 +18325,8 @@
   bunya: ''
   description: ''
   galaxy:
-  - title: PretextMap 0.1.9+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fpretext_map%2Fpretext_map%2F0.1.9%2Bgalaxy0
+  - title: PretextMap 0.1.9+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fpretext_map%2Fpretext_map%2F0.1.9%2Bgalaxy1
   homepage: ''
   id: pretext_map
   license: ''
@@ -18257,8 +18342,8 @@
   bunya: ''
   description: Pretext is an OpenGL-powered pretext contact map viewer.
   galaxy:
-  - title: Pretext Snapshot 0.0.3+galaxy1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fpretext_snapshot%2Fpretext_snapshot%2F0.0.3%2Bgalaxy1
+  - title: Pretext Snapshot 0.0.3+galaxy2
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fpretext_snapshot%2Fpretext_snapshot%2F0.0.3%2Bgalaxy2
   homepage: https://github.com/wtsi-hpag/PretextView
   id: pretextview
   license: MIT
@@ -18289,6 +18374,7 @@
 - biocontainers: gmv
   bunya:
   - 2.6.3-gcccore-10.3.0
+  - 2.6.3-gcccore-11.3.0             (D)
   description: The pipeline runs PRODIGAL gene predictions on all genomes, runs pan-reciprocal
     BLAST, and identifies ortholog sets. For a set of orthologous genes, if the positions
     of the PRODIGAL selected starts coincide in a multiple sequence alignment, they
@@ -18372,6 +18458,7 @@
 - biocontainers: prokka
   bunya:
   - 1.14.5-gompi-2021a
+  - 1.14.5-gompi-2022a                 (D)
   description: Software tool to annotate bacterial, archaeal and viral genomes quickly
     and produce standards-compliant output files.
   galaxy:
@@ -18434,9 +18521,7 @@
   resource-documentation: .nan
   topics: ''
 - biocontainers: ''
-  bunya:
-  - 3.17.3-gcccore-10.3.0
-  - 3.19.4-gcccore-11.3.0
+  bunya: ''
   description: ''
   galaxy: ''
   homepage: ''
@@ -18513,6 +18598,7 @@
 - biocontainers: ''
   bunya:
   - 0.3.18-foss-2021a
+  - 0.3.18-foss-2022a                (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -18529,7 +18615,7 @@
 - biocontainers: ''
   bunya:
   - 2.6.2-gcccore-10.3.0
-  - 2.9.2-gcccore-11.3.0
+  - 2.9.2-gcccore-11.3.0             (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -18656,6 +18742,7 @@
 - biocontainers: pysam
   bunya:
   - 0.16.0.1-gcc-10.3.0
+  - 0.19.1-gcc-11.3.0                   (D)
   description: A Python module for reading and manipulating SAM/BAM/VCF/BCF files.
   galaxy: ''
   homepage: https://github.com/pysam-developers/pysam
@@ -18675,10 +18762,13 @@
   - Mapping
 - biocontainers: ''
   bunya:
-  - 3.10.4-gcccore-11.3.0
-  - 3.10.4-gcccore-11.3.0-bare
-  - 3.9.5-gcccore-10.3.0
+  - 2.7.18-gcccore-10.3.0-bare
+  - 2.7.18-gcccore-11.3.0-bare
   - 3.9.5-gcccore-10.3.0-bare
+  - 3.9.5-gcccore-10.3.0
+  - 3.10.4-gcccore-11.3.0-bare
+  - 3.10.4-gcccore-11.3.0
+  - 3.11.3-gcccore-12.3.0              (D)
   description: ''
   galaxy: ''
   homepage: https://www.python.org/
@@ -18695,6 +18785,7 @@
 - biocontainers: ''
   bunya:
   - 0.11.0-gcccore-10.3.0
+  - 1.1.0-gcccore-11.3.0          (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -19289,6 +19380,7 @@
 - biocontainers: ''
   bunya:
   - 6.8-foss-2021a
+  - 7.1-foss-2022a            (D)
   description: ''
   galaxy: ''
   homepage: https://www.quantum-espresso.org/
@@ -19358,6 +19450,7 @@
 - biocontainers: quast
   bunya:
   - 5.0.2-foss-2021a
+  - 5.2.0-foss-2022a                    (D)
   description: "QUAST stands for QUality ASsessment Tool.  \nIt evaluates a quality\
     \ of genome assemblies by computing various metrics and providing nice reports."
   galaxy:
@@ -19407,6 +19500,7 @@
   bunya:
   - 4.1.0-foss-2021a
   - 4.2.1-foss-2021a
+  - 4.2.1-foss-2022a                        (D)
   description: Free software environment for statistical computing and graphics.
   galaxy:
   - title: Gene length and GC content 0.1.2
@@ -19671,7 +19765,8 @@
   - Proteomics experiment
   - Proteomics
 - biocontainers: raxml
-  bunya: ''
+  bunya:
+  - 8.2.12
   description: A tool for Phylogenetic Analysis and Post-Analysis of Large Phylogenies.
   galaxy:
   - title: RAxML 8.2.12+galaxy1
@@ -19950,7 +20045,8 @@
   - Sequencing
   - Sequence composition, complexity and repeats
 - biocontainers: repeatmasker
-  bunya: ''
+  bunya:
+  - 4.1.5--pl5321hdfd78af_0
   description: 'A program that screens DNA sequences for interspersed repeats and
     low complexity DNA sequences. The output of the program is a detailed annotation
     of the repeats that are present in the query sequence as well as a modified version
@@ -19975,7 +20071,8 @@
   - Sequence analysis
   - Sequence composition, complexity and repeats
 - biocontainers: repeatmodeler
-  bunya: ''
+  bunya:
+  - 2.0.4--pl5321hdfd78af_0
   description: De-novo repeat family identification and modeling package. At the heart
     of RepeatModeler are two de-novo repeat finding programs ( RECON and RepeatScout
     ) which employ complementary computational methods for identifying repeat element
@@ -20373,7 +20470,7 @@
 - biocontainers: ''
   bunya:
   - 3.0.1-gcccore-10.3.0
-  - 3.0.5-gcccore-11.3.0
+  - 3.0.5-gcccore-11.3.0                 (D)
   description: ''
   galaxy: ''
   homepage: https://www.ruby-lang.org/en/downloads/
@@ -20390,7 +20487,7 @@
 - biocontainers: ''
   bunya:
   - 1.52.1-gcccore-10.3.0
-  - 1.60.0-gcccore-11.3.0
+  - 1.60.0-gcccore-11.3.0                (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -20497,6 +20594,7 @@
 - biocontainers: salmon
   bunya:
   - 1.4.0-gompi-2021a
+  - 1.9.0-gcc-11.3.0                   (D)
   description: A tool for transcript expression quantification from RNA-seq data
   galaxy:
   - title: Salmon quant 1.10.1+galaxy0
@@ -20537,7 +20635,7 @@
   topics: ''
 - biocontainers: SALSA
   bunya:
-  - 2.3--py27h16ec135_1
+  - '2.3'
   description: '> VERY_LOW CONFIDENCE! | > CORRECT NAME OF TOOL COULD ALSO BE ''chromosome-scale'',
     ''reference-quality'', ''Hi-C'', ''scaffolder'' | Integrating Hi-C links with
     assembly graphs for chromosome-scale assembly | SALSA: A tool to scaffold long
@@ -20680,6 +20778,8 @@
 - biocontainers: samtools
   bunya:
   - 1.13-gcc-10.3.0
+  - 1.13-gcc-11.3.0
+  - 1.16.1-gcc-11.3.0                (D)
   description: SAMtools and BCFtools are widely used programs for processing and analysing
     high-throughput sequencing data. They include tools for file format conversion
     and manipulation, sorting, querying, statistics, variant calling, and effect analysis
@@ -20721,8 +20821,8 @@
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fsamtools_sort%2Fsamtools_sort%2F2.0.5
   - title: Samtools split 1.15.1+galaxy0
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fsamtools_split%2Fsamtools_split%2F1.15.1%2Bgalaxy0
-  - title: Samtools view 1.15.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fsamtools_view%2Fsamtools_view%2F1.15.1%2Bgalaxy0
+  - title: Samtools view 1.15.1+galaxy2
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fsamtools_view%2Fsamtools_view%2F1.15.1%2Bgalaxy2
   homepage: http://www.htslib.org/
   id: samtools
   license: MIT
@@ -20788,10 +20888,9 @@
   topics: ''
 - biocontainers: ''
   bunya:
-  - 2.0.2-gompi-2019a-openblas-0.3.5
-  - 2.1.0-gompi-2020a
   - 2.1.0-gompi-2021a-fb
   - 2.2.0-gompi-2022a-fb
+  - 2.2.0-gompi-2023a-fb            (D)
   description: ''
   galaxy: ''
   homepage: http://www.netlib.org/scalapack/
@@ -20812,16 +20911,16 @@
     and differential expression testing. The Python-based implementation efficiently
     deals with datasets of more than one million cells.
   galaxy:
+  - title: Normalize 1.9.6+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fscanpy_normalize%2Fscanpy_normalize%2F1.9.6%2Bgalaxy1
   - title: Cluster, infer trajectories and embed 1.9.6+galaxy1
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fscanpy_cluster_reduce_dimension%2Fscanpy_cluster_reduce_dimension%2F1.9.6%2Bgalaxy1
   - title: Plot 1.9.6+galaxy1
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fscanpy_plot%2Fscanpy_plot%2F1.9.6%2Bgalaxy1
   - title: Inspect and manipulate 1.9.6+galaxy1
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fscanpy_inspect%2Fscanpy_inspect%2F1.9.6%2Bgalaxy1
-  - title: Filter 1.7.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fscanpy_filter%2Fscanpy_filter%2F1.7.1%2Bgalaxy0
-  - title: Normalize 1.7.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fscanpy_normalize%2Fscanpy_normalize%2F1.7.1%2Bgalaxy0
+  - title: Filter 1.9.6+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fscanpy_filter%2Fscanpy_filter%2F1.9.6%2Bgalaxy1
   - title: Remove confounders 1.9.6+galaxy1
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fscanpy_remove_confounders%2Fscanpy_remove_confounders%2F1.9.6%2Bgalaxy1
   - title: AnnData Operations 1.8.1+1+galaxy1
@@ -21060,7 +21159,7 @@
 - biocontainers: ''
   bunya:
   - 2021.05-foss-2021a
-  - 2022.05-foss-2022a
+  - 2022.05-foss-2022a           (D)
   description: ''
   galaxy: ''
   homepage: https://www.scipy.org/
@@ -21188,6 +21287,7 @@
 - biocontainers: sepp
   bunya:
   - 4.5.0-foss-2021a
+  - 4.5.1-foss-2022a                     (D)
   description: "SEPP stands for SAT\xE9-Enabled Phylogenetic Placement and addresses\
     \ the problem of phylogenetic placement for meta-genomic short reads"
   galaxy: ''
@@ -21210,8 +21310,8 @@
   bunya: ''
   description: ''
   galaxy:
-  - title: Filter sequences by ID 0.2.8
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fpeterjc%2Fseq_filter_by_id%2Fseq_filter_by_id%2F0.2.8
+  - title: Filter sequences by ID 0.2.9
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fpeterjc%2Fseq_filter_by_id%2Fseq_filter_by_id%2F0.2.9
   homepage: ''
   id: seq_filter_by_id
   license: ''
@@ -21317,37 +21417,40 @@
 - biocontainers: seqtk
   bunya:
   - 1.3-gcc-10.3.0
+  - 1.3-gcc-11.3.0                      (D)
   description: A tool for processing sequences in the FASTA or FASTQ format. It parses
     both FASTA and FASTQ files which can also be optionally compressed by gzip.
   galaxy:
-  - title: seqtk_mergepe 1.3.1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_mergepe%2F1.3.1
-  - title: seqtk_mergefa 1.3.1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_mergefa%2F1.3.1
-  - title: seqtk_mutfa 1.3.1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_mutfa%2F1.3.1
-  - title: seqtk_comp 1.3.1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_comp%2F1.3.1
-  - title: seqtk_cutN 1.3.1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_cutN%2F1.3.1
-  - title: seqtk_trimfq 1.3.1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_trimfq%2F1.3.1
-  - title: seqtk_fqchk 1.3.1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_fqchk%2F1.3.1
-  - title: seqtk_seq 1.3.3
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_seq%2F1.3.3
-  - title: seqtk_hety 1.3.1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_hety%2F1.3.1
-  - title: seqtk_sample 1.3.2
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_sample%2F1.3.2
-  - title: seqtk_subseq 1.3.1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_subseq%2F1.3.1
-  - title: seqtk_listhet 1.3.1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_listhet%2F1.3.1
-  - title: seqtk_dropse 1.3.1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_dropse%2F1.3.1
-  - title: seqtk_randbase 1.3.1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_randbase%2F1.3.1
+  - title: seqtk_telo 1.4+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_telo%2F1.4%2Bgalaxy0
+  - title: seqtk_mutfa 1.4+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_mutfa%2F1.4%2Bgalaxy0
+  - title: seqtk_subseq 1.4+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_subseq%2F1.4%2Bgalaxy0
+  - title: seqtk_cutN 1.4+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_cutN%2F1.4%2Bgalaxy0
+  - title: seqtk_listhet 1.4+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_listhet%2F1.4%2Bgalaxy0
+  - title: seqtk_mergepe 1.4+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_mergepe%2F1.4%2Bgalaxy0
+  - title: seqtk_seq 1.4+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_seq%2F1.4%2Bgalaxy0
+  - title: seqtk_mergefa 1.4+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_mergefa%2F1.4%2Bgalaxy0
+  - title: seqtk_sample 1.4+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_sample%2F1.4%2Bgalaxy0
+  - title: seqtk_dropse 1.4+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_dropse%2F1.4%2Bgalaxy0
+  - title: seqtk_fqchk 1.4+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_fqchk%2F1.4%2Bgalaxy0
+  - title: seqtk_trimfq 1.4+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_trimfq%2F1.4%2Bgalaxy0
+  - title: seqtk_randbase 1.4+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_randbase%2F1.4%2Bgalaxy0
+  - title: seqtk_hety 1.4+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_hety%2F1.4%2Bgalaxy0
+  - title: seqtk_comp 1.4+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_comp%2F1.4%2Bgalaxy0
   homepage: https://github.com/lh3/seqtk
   id: seqtk
   license: MIT
@@ -21524,7 +21627,8 @@
   - Genomics
   - Sequence assembly
 - biocontainers: shovill
-  bunya: ''
+  bunya:
+  - 1.1.0
   description: Shovill is a pipeline for assembly of bacterial isolate genomes from
     Illumina paired-end reads.  Shovill uses SPAdes at its core, but alters the steps
     before and after the primary assembly step to get similar results in less time.
@@ -21922,6 +22026,7 @@
 - biocontainers: snakemake
   bunya:
   - 6.6.1-foss-2021a
+  - 7.22.0-foss-2022a               (D)
   description: Workflow engine and language. It aims to reduce the complexity of creating
     workflows by providing a fast and comfortable execution environment, together
     with a clean and modern domain specific specification language (DSL) in python
@@ -21945,7 +22050,8 @@
   - Workflows
   - Software engineering
 - biocontainers: snap
-  bunya: ''
+  bunya:
+  - '2013_11_29'
   description: The Semi-HMM-based Nucleic Acid Parser is a gene prediction tool.
   galaxy:
   - title: Train SNAP 2013_11_29+galaxy1
@@ -21968,7 +22074,9 @@
   - DNA polymorphism
   - Genetics
 - biocontainers: SNAPPy
-  bunya: ''
+  bunya:
+  - 1.1.8-gcccore-10.3.0
+  - 1.1.9-gcccore-11.3.0               (D)
   description: "a snakemake pipeline for scalable HIV-1 subtyping by phylogenetic\
     \ pairing | SNAPPy is a Snakemake pipeline for HIV-1 subtyping by phylogenetic\
     \ pairing | This is the repository for SNAPPy, a Snakemake pipeline for HIV-1\
@@ -22288,7 +22396,8 @@
   resource-documentation: .nan
   topics: ''
 - biocontainers: sortmerna
-  bunya: ''
+  bunya:
+  - 4.3.6--h9ee0642_0
   description: Sequence analysis tool for filtering, mapping and OTU-picking NGS reads.
   galaxy:
   - title: Filter with SortMeRNA 4.3.6+galaxy0
@@ -22312,6 +22421,7 @@
 - biocontainers: spades
   bunya:
   - 3.15.3-gcc-10.3.0
+  - 3.15.5-gcc-11.3.0                  (D)
   description: "St. Petersburg genome assembler \u2013 is intended for both standard\
     \ isolates and single-cell MDA bacteria assemblies. SPAdes 3.9 works with Illumina\
     \ or IonTorrent reads and is capable of providing hybrid assemblies using PacBio,\
@@ -22636,8 +22746,9 @@
   - Population genetics
 - biocontainers: star
   bunya:
-  - 2.7.10a--h9ee0642_0
   - 2.7.9a-gcc-10.3.0
+  - 2.7.10b-gcc-11.3.0                   (D)
+  - 2.7.10a--h9ee0642_0
   description: Ultrafast universal RNA-seq data aligner
   galaxy:
   - title: RNA STARSolo 2.7.10b+galaxy4
@@ -22666,9 +22777,7 @@
   - RNA-Seq
   - Transcriptomics
 - biocontainers: ''
-  bunya:
-  - 15.06.008
-  - 17.02.008
+  bunya: ''
   description: ''
   galaxy: ''
   homepage: ''
@@ -22840,6 +22949,7 @@
 - biocontainers: ''
   bunya:
   - 5.10.1-foss-2021a-metis-5.1.0
+  - 5.13.0-foss-2022a-metis-5.1.0 (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -23286,6 +23396,7 @@
 - biocontainers: ''
   bunya:
   - 2020.3-gcccore-10.3.0
+  - 2021.5.0-gcccore-11.3.0               (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -23302,6 +23413,7 @@
 - biocontainers: ''
   bunya:
   - 20220427-linux64
+  - 20230119-linux64                  (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -23513,6 +23625,7 @@
 - biocontainers: ''
   bunya:
   - 3.9.5-gcccore-10.3.0
+  - 3.10.4-gcccore-11.3.0             (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -23855,9 +23968,8 @@
   - Data quality management
 - biocontainers: trinity
   bunya:
-  - 2.13.2--hea94271_3
   - 2.9.1-foss-2021a
-  - date.2011_11_26--ncurses5.9_8
+  - 2.15.1--h6ab5fc9_2
   description: Trinity is a transcriptome assembler which relies on three different
     tools, inchworm an assembler, chrysalis which pools contigs and butterfly which
     amongst others compacts a graph resulting from butterfly with reads.
@@ -24023,8 +24135,7 @@
   resource-documentation: .nan
   topics: ''
 - biocontainers: ''
-  bunya:
-  - 3.10.0.0-gcccore-10.3.0
+  bunya: ''
   description: ''
   galaxy: ''
   homepage: ''
@@ -24056,6 +24167,7 @@
 - biocontainers: ''
   bunya:
   - 1.0.0-gcccore-11.3.0
+  - 1.2.0-gcccore-12.3.0                  (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -24150,9 +24262,7 @@
   resource-documentation: .nan
   topics: ''
 - biocontainers: ''
-  bunya:
-  - 1.10.0-gcccore-10.3.0-cuda-11.3.1
-  - 1.12.1-gcccore-11.3.0-cuda-11.7.0
+  bunya: ''
   description: ''
   galaxy: ''
   homepage: ''
@@ -24314,6 +24424,7 @@
   bunya:
   - 6.0-gcccore-10.3.0
   - 6.0-gcccore-11.3.0
+  - 6.0-gcccore-12.3.0                  (D)
   description: ''
   galaxy:
   - title: Unzip 6.0+galaxy0
@@ -24398,6 +24509,10 @@
 - biocontainers: ''
   bunya:
   - 6.2.1-intel-2021a
+  - 6.2.1-intel-2023a
+  - 6.3.2-foss-2023a
+  - 6.4.0-foss-2023a
+  - 6.4.0-intel-2023a
   description: ''
   galaxy: ''
   homepage: ''
@@ -24535,6 +24650,7 @@
 - biocontainers: vcftools
   bunya:
   - 0.1.16-gcc-10.3.0
+  - 0.1.16-gcc-11.3.0                (D)
   description: Provide easily accessible methods for working with complex genetic
     variation data in the form of VCF files.
   galaxy:
@@ -24829,6 +24945,7 @@
 - biocontainers: ''
   bunya:
   - 1.21.1-gcccore-10.3.0
+  - 1.21.3-gcccore-11.3.0                (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -25122,7 +25239,6 @@
 - biocontainers: ''
   bunya:
   - 20210414-gcccore-10.3.0
-  - 20220620-gcccore-11.3.0
   description: ''
   galaxy: ''
   homepage: ''
@@ -25139,7 +25255,6 @@
 - biocontainers: ''
   bunya:
   - 3.5-gcccore-10.3.0
-  - 3.5-gcccore-11.3.0
   description: ''
   galaxy: ''
   homepage: ''
@@ -25229,6 +25344,7 @@
 - biocontainers: ''
   bunya:
   - 2.0207-gcccore-10.3.0
+  - 2.0207-gcccore-11.3.0          (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -25326,6 +25442,7 @@
 - biocontainers: ''
   bunya:
   - 1.20.11-gcccore-10.3.0
+  - 21.1.3-gcccore-11.3.0                (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -25342,6 +25459,7 @@
 - biocontainers: ''
   bunya:
   - 8.2.4220-gcccore-10.3.0
+  - 8.2.4220-gcccore-11.3.0               (D)
   description: ''
   galaxy: ''
   homepage: ''
@@ -25414,7 +25532,6 @@
 - biocontainers: ''
   bunya:
   - 1.3.0-gcccore-10.3.0
-  - 1.3.0-gcccore-11.3.0
   description: ''
   galaxy: ''
   homepage: ''
@@ -25495,7 +25612,7 @@
 - biocontainers: ''
   bunya:
   - 1.4.9-gcccore-10.3.0
-  - 1.5.2-gcccore-11.3.0
+  - 1.5.2-gcccore-11.3.0                 (D)
   description: ''
   galaxy: ''
   homepage: ''
