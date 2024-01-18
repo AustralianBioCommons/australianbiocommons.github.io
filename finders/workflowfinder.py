@@ -42,7 +42,21 @@ class WorkflowHubSpaceDataProvider(Dataprovider):
             self.available_data[id] = workflow_metadata
         for workflow in self.available_data:
             project_list = [projectIDs[x["id"]] for x in self.available_data[workflow]['data']['relationships']['projects']['data']]
+            latest_version = self.available_data[workflow]['data']['attributes']['latest_version']
+            all_versions = self.available_data[workflow]['data']['attributes']['versions']
+            ### GitHub needs to be extracted from the 'remote' field which appears as part of ['version'][number]['remote'], if this field exists
+            for version in all_versions:
+                if 'remote' in version and version['version'] == latest_version:
+                    remote = version["remote"]
+                else:
+                    remote = ""
+                self.available_data[workflow]['data']['remote'] = remote
             self.available_data[workflow]['data']['projects'] = []
+            ### change to build launch link, if it is a Galaxy workflow!
+            if self.available_data[workflow]['data']['attributes']['workflow_class']['key'] == "galaxy":
+                self.available_data[workflow]['data']['launch_link'] = "https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=" + workflow
+            else:
+                self.available_data[workflow]['data']['launch_link'] = ""
             for project in project_list:
                 if project not in self.available_data[workflow]['data']['projects']:
                     self.available_data[workflow]['data']['projects'].append(project)
@@ -57,16 +71,10 @@ class WorkflowHubSpaceDataProvider(Dataprovider):
         json_file_path = "./external/link_information.json"
         with open(json_file_path, 'r') as j:
             contents = json.loads(j.read())
-        launch_links = contents["launch_link"]
         guide = contents["guide"]
-        github = contents["github"]
         for workflow in self.available_data:
-            launch_link = launch_links[workflow]
             guide_link = guide[workflow]
-            github_link = github[workflow]
-            self.available_data[workflow]['data']['launch_link'] = launch_link
             self.available_data[workflow]['data']['guide_link'] = guide_link
-            self.available_data[workflow]['data']['github_link'] = github_link
 
 
     def _render(self, data):
@@ -99,8 +107,8 @@ class WorkflowHubSpaceDataProvider(Dataprovider):
                 retval[Dataprovider.FIELD_NAMES.LAUNCH_LINK] = workflow_data["launch_link"]
             if workflow_data["guide_link"]:
                 retval[Dataprovider.FIELD_NAMES.GUIDE_LINK] = workflow_data["guide_link"]
-            if workflow_data["github_link"]:
-                retval[Dataprovider.FIELD_NAMES.GITHUB_LINK] = workflow_data["github_link"]
+            if workflow_data["remote"]:
+                retval[Dataprovider.FIELD_NAMES.REMOTE_LINK] = workflow_data["remote"]
 
         return retval
 
@@ -157,14 +165,14 @@ class WorkflowDB(DB):
         for index, row in workflow_table.iterrows():
             workflow_line = []
             #see https://www.w3schools.com/html/html_images.asp
-            if pd.isna(row[Dataprovider.FIELD_NAMES.GITHUB_LINK]):
+            if pd.isna(row[Dataprovider.FIELD_NAMES.REMOTE_LINK]):
                 workflow_line.append("""<p class="title"><b>%s</b></p>
                 <a href="https://workflowhub.eu%s" ga-product="workflowhub" ga-id="%s"><img src="/images/workflowhub_logo.png" style="width:150px;"></a>""" % (
                 row[Dataprovider.FIELD_NAMES.TITLE], row[Dataprovider.FIELD_NAMES.URL], row[Dataprovider.FIELD_NAMES.URL]))
             else:
                 workflow_line.append("""<p class="title"><b>%s</b></p><a href="%s" ga-product="github" ga-id="%s"><img src="/images/GitHub-Mark-64px.png" style="width:50px;"></a>
             <a href="https://workflowhub.eu%s" ga-product="workflowhub" ga-id="%s"><img src="/images/workflowhub_logo.png" style="width:150px;"></a>""" % (
-                    row[Dataprovider.FIELD_NAMES.TITLE],row[Dataprovider.FIELD_NAMES.GITHUB_LINK],row[Dataprovider.FIELD_NAMES.URL],row[Dataprovider.FIELD_NAMES.URL],row[Dataprovider.FIELD_NAMES.URL]))
+                    row[Dataprovider.FIELD_NAMES.TITLE],row[Dataprovider.FIELD_NAMES.REMOTE_LINK],row[Dataprovider.FIELD_NAMES.URL],row[Dataprovider.FIELD_NAMES.URL],row[Dataprovider.FIELD_NAMES.URL]))
             if isinstance(row[Dataprovider.FIELD_NAMES.EDAM_TOP], list):
                 workflow_line.append("".join(["""<p class="tags">%s</p>""" % x["label"] for x in row[Dataprovider.FIELD_NAMES.EDAM_TOP]]))
             else:

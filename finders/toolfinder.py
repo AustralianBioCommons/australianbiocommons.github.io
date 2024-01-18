@@ -149,8 +149,10 @@ class GalaxyDataProvider(Dataprovider):
                         biotools_id = item["value"]
                         break
             tool_id_list = []
-            if biotools_id is not None:
-                tool_id_list = self.parent.get_id_from_alt(ToolMatrixDataProvider.ID_BIO_TOOLS, biotools_id)
+            ### removed as prioritising the bio.tools ID here was replicating tools across ToolFinder entries with the same bio.tools ID
+            ### may need to add this back in later, so keep the code
+            ###if biotools_id is not None:
+            ###    tool_id_list = self.parent.get_id_from_alt(ToolMatrixDataProvider.ID_BIO_TOOLS, biotools_id)
             if len(tool_id_list) == 0:
                 tool_id_list = self.parent.get_id_from_alt(GalaxyDataProvider.GALAXY_ID, galaxy_id)
             if len(tool_id_list) == 0:
