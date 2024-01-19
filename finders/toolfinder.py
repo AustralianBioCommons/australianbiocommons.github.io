@@ -87,6 +87,8 @@ class QriscloudDataProvider(Dataprovider):
                 toolID = toolID.replace("salsa2", "salsa")
                 toolID = toolID.replace("anaconda3", "anaconda")
                 toolID = toolID.replace("scipy-bundle", "scipy")
+                toolID = toolID.replace("iqtree", "iq-tree")
+                toolID = toolID.replace("sra-toolkit", "sra-tools")
                 #toolID = re.sub(r"^soapdenovo$", "soapdenovo2", toolID)
                 if toolID not in self.available_data:
                     self.available_data[toolID] = []

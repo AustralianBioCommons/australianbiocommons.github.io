@@ -87,6 +87,22 @@
   topics:
   - Sequence assembly
 - biocontainers: ''
+  bunya:
+  - 0.9.1-gcc-10.3.0
+  description: ''
+  galaxy: ''
+  homepage: https://github.com/AdaptiveCpp/AdaptiveCpp
+  id: hipsycl
+  license: ''
+  name: AdaptiveCpp
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications: ''
+  registry-link: ''
+  resource-documentation: .nan
+  topics: ''
+- biocontainers: ''
   bunya: ''
   description: ''
   galaxy: ''
@@ -734,6 +750,22 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
+- biocontainers: ''
+  bunya:
+  - 4.2.1.198    huygens
+  description: ''
+  galaxy: ''
+  homepage: https://vsni.co.uk/software/asreml
+  id: asreml-as
+  license: ''
+  name: asreml-as
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications: ''
+  registry-link: ''
+  resource-documentation: .nan
+  topics: ''
 - biocontainers: astral
   bunya: ''
   description: Java program for estimating a species tree given a set of unrooted
@@ -877,8 +909,8 @@
   bunya: ''
   description: Rapid & standardized annotation of bacterial genomes, MAGs & plasmids
   galaxy:
-  - title: Bakta 1.5.0+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fbakta%2Fbakta%2F1.5.0%2Bgalaxy0
+  - title: Bakta 1.8.2+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fbakta%2Fbakta%2F1.8.2%2Bgalaxy0
   homepage: https://github.com/oschwengers/bakta
   id: bakta
   license: GPL-3.0
@@ -1045,6 +1077,22 @@
   - Genomics
   - Model organisms
   - Model organisms
+- biocontainers: ''
+  bunya:
+  - 1.5.3        matlab
+  description: ''
+  galaxy: ''
+  homepage: ''
+  id: basespace
+  license: ''
+  name: basespace
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications: ''
+  registry-link: ''
+  resource-documentation: .nan
+  topics: ''
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -1734,6 +1782,22 @@
   - Data management
   - Statistics and probability
 - biocontainers: ''
+  bunya:
+  - 3.01-gcc-11.3.0
+  description: ''
+  galaxy: ''
+  homepage: https://github.com/Ensembl/Bio-DB-HTS
+  id: bio-db-hts
+  license: ''
+  name: Bio-DB-HTS
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications: ''
+  registry-link: ''
+  resource-documentation: .nan
+  topics: ''
+- biocontainers: ''
   bunya: ''
   description: ''
   galaxy: ''
@@ -2174,6 +2238,22 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
+- biocontainers: ''
+  bunya:
+  - 2.4.1-intel-2022a
+  description: ''
+  galaxy: ''
+  homepage: https://alkesgroup.broadinstitute.org/BOLT-LMM/BOLT-LMM_manual.html
+  id: bolt-lmm
+  license: ''
+  name: BOLT-LMM
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications: ''
+  registry-link: ''
+  resource-documentation: .nan
+  topics: ''
 - biocontainers: boost
   bunya:
   - 1.76.0-gcc-10.3.0
@@ -2201,6 +2281,23 @@
   - Pure mathematics
   - Imaging
   - Software engineering
+- biocontainers: ''
+  bunya:
+  - 1.76.0-gcc-10.3.0
+  - 1.79.0-gcc-11.3.0            (D)
+  description: ''
+  galaxy: ''
+  homepage: https://www.boost.org/doc/libs/1_84_0/libs/python/doc/html/index.html
+  id: boost.python
+  license: ''
+  name: Boost.Python
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications: ''
+  registry-link: ''
+  resource-documentation: .nan
+  topics: ''
 - biocontainers: bowtie
   bunya:
   - 1.3.1-gcc-11.3.0
@@ -3137,6 +3234,22 @@
   resource-documentation: .nan
   topics: ''
 - biocontainers: ''
+  bunya:
+  - 1.3.0
+  description: ''
+  galaxy: ''
+  homepage: https://github.com/USCiLab/cereal
+  id: cereal
+  license: ''
+  name: cereal
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications: ''
+  registry-link: ''
+  resource-documentation: .nan
+  topics: ''
+- biocontainers: ''
   bunya: ''
   description: ''
   galaxy: ''
@@ -3240,6 +3353,31 @@
   id: checkm
   license: GPL-3.0
   name: checkm
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications:
+  - title: 'CheckM: Assessing the quality of microbial genomes recovered from isolates,
+      single cells, and metagenomes'
+    url: https://doi.org/10.1101/gr.186072.114
+  registry-link: checkm
+  resource-documentation: .nan
+  topics:
+  - Genomics
+  - Phylogenomics
+  - Phylogenetics
+  - Taxonomy
+  - Metagenomics
+- biocontainers: checkm
+  bunya:
+  - '2015_01_16'
+  description: CheckM provides a set of tools for assessing the quality of genomes
+    recovered from isolates, single cells, or metagenomes.
+  galaxy: ''
+  homepage: https://ecogenomics.github.io/CheckM
+  id: checkm-database
+  license: GPL-3.0
+  name: checkm-database
   nci-gadi: ''
   nci-if89: ''
   pawsey: ''
@@ -3553,6 +3691,24 @@
   id: cistem
   license: ''
   name: cisTEM
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications: ''
+  registry-link: ''
+  resource-documentation: .nan
+  topics: ''
+- biocontainers: ''
+  bunya:
+  - 12.0.1-gcccore-10.3.0
+  - 13.0.1-gcccore-11.3.0
+  - 15.0.5-gcccore-11.3.0               (D)
+  description: ''
+  galaxy: ''
+  homepage: https://clang.llvm.org/
+  id: clang
+  license: ''
+  name: Clang
   nci-gadi: ''
   nci-if89: ''
   pawsey: ''
@@ -4204,6 +4360,22 @@
   topics:
   - Sequencing
 - biocontainers: ''
+  bunya:
+  - 2.1-3-gcccore-11.3.0
+  description: ''
+  galaxy: ''
+  homepage: https://cunit.sourceforge.net/
+  id: cunit
+  license: ''
+  name: CUnit
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications: ''
+  registry-link: ''
+  resource-documentation: .nan
+  topics: ''
+- biocontainers: ''
   bunya: ''
   description: ''
   galaxy: ''
@@ -4406,6 +4578,22 @@
   - Microbial ecology
   - Metagenomics
 - biocontainers: ''
+  bunya:
+  - 2.0.5
+  description: ''
+  galaxy: ''
+  homepage: https://dadi.readthedocs.io/en/latest/
+  id: dadi
+  license: ''
+  name: dadi
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications: ''
+  registry-link: ''
+  resource-documentation: .nan
+  topics: ''
+- biocontainers: ''
   bunya: ''
   description: ''
   galaxy: ''
@@ -4500,6 +4688,22 @@
   id: dbbuilder
   license: ''
   name: dbbuilder
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications: ''
+  registry-link: ''
+  resource-documentation: .nan
+  topics: ''
+- biocontainers: ''
+  bunya:
+  - 4.050-gcc-11.3.0
+  description: ''
+  galaxy: ''
+  homepage: https://github.com/perl5-dbi/DBD-mysql
+  id: dbd-mysql
+  license: ''
+  name: dbd-mysql
   nci-gadi: ''
   nci-if89: ''
   pawsey: ''
@@ -4731,6 +4935,31 @@
   resource-documentation: .nan
   topics:
   - RNA-Seq
+- biocontainers: dfam
+  bunya:
+  - 3.3--hdfd78af_0
+  description: The Dfam database is a open collection of Transposable Element DNA
+    sequence alignments, hidden Markov Models (HMMs), consensus sequences, and genome
+    annotations.
+  galaxy: ''
+  homepage: https://dfam.org
+  id: dfam
+  license: ''
+  name: Dfam
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications:
+  - title: 10.21203/RS.3.RS-76062/V1
+    url: https://doi.org/10.21203/RS.3.RS-76062/V1
+  registry-link: dfam
+  resource-documentation: .nan
+  topics:
+  - DNA
+  - Phylogeny
+  - Mobile genetic elements
+  - Sequence assembly
+  - Plant biology
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -4976,6 +5205,23 @@
   resource-documentation: .nan
   topics: ''
 - biocontainers: ''
+  bunya:
+  - 3.1.5-gcccore-10.3.0
+  - 3.2.0-gcccore-11.3.0    (D)
+  description: ''
+  galaxy: ''
+  homepage: https://github.com/google/double-conversion
+  id: double-conversion
+  license: ''
+  name: double-conversion
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications: ''
+  registry-link: ''
+  resource-documentation: .nan
+  topics: ''
+- biocontainers: ''
   bunya: ''
   description: ''
   galaxy:
@@ -5102,6 +5348,29 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
+- biocontainers: eagleimp
+  bunya:
+  - '1.10'
+  description: Fast and Accurate Genome-wide Phasing and Imputation in a Single Tool.
+  galaxy: ''
+  homepage: https://github.com/ikmb/eagleimp
+  id: eagleimp
+  license: GPL-3.0
+  name: EagleImp
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications:
+  - title: 10.1101/2022.01.11.475810
+    url: https://doi.org/10.1101/2022.01.11.475810
+  registry-link: eagleimp
+  resource-documentation: .nan
+  topics:
+  - Genotype and phenotype
+  - Sequencing
+  - GWAS study
+  - DNA
+  - Computer science
 - biocontainers: easybuild
   bunya:
   - 4.8.0
@@ -6654,6 +6923,22 @@
   nci-gadi:
   - 4.1.3
   - 4.3.1
+  nci-if89: ''
+  pawsey: ''
+  publications: ''
+  registry-link: ''
+  resource-documentation: .nan
+  topics: ''
+- biocontainers: ''
+  bunya:
+  - 11.1.5.2
+  description: ''
+  galaxy: ''
+  homepage: https://software.opensuse.org/package/ffnvcodec
+  id: ffnvcodec
+  license: ''
+  name: ffnvcodec
+  nci-gadi: ''
   nci-if89: ''
   pawsey: ''
   publications: ''
@@ -8800,6 +9085,22 @@
   topics: ''
 - biocontainers: ''
   bunya:
+  - 3.7.8-gcccore-11.3.0
+  description: ''
+  galaxy: ''
+  homepage: https://www.gnutls.org/
+  id: gnutls
+  license: ''
+  name: GnuTLS
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications: ''
+  registry-link: ''
+  resource-documentation: .nan
+  topics: ''
+- biocontainers: ''
+  bunya:
   - 1.18.1
   - 1.18.3                                 (D)
   description: ''
@@ -8930,6 +9231,22 @@
   id: gramenemart
   license: ''
   name: gramenemart
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications: ''
+  registry-link: ''
+  resource-documentation: .nan
+  topics: ''
+- biocontainers: ''
+  bunya:
+  - 1.3.14-gcccore-11.3.0
+  description: ''
+  galaxy: ''
+  homepage: https://github.com/silnrsi/graphite
+  id: graphite2
+  license: ''
+  name: Graphite
   nci-gadi: ''
   nci-if89: ''
   pawsey: ''
@@ -9222,6 +9539,38 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
+- biocontainers: ''
+  bunya:
+  - 2.24.33-gcccore-11.3.0
+  description: ''
+  galaxy: ''
+  homepage: ''
+  id: gtk2
+  license: ''
+  name: gtk2
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications: ''
+  registry-link: ''
+  resource-documentation: .nan
+  topics: ''
+- biocontainers: ''
+  bunya:
+  - 3.24.33-gcccore-11.3.0
+  description: ''
+  galaxy: ''
+  homepage: ''
+  id: gtk3
+  license: ''
+  name: gtk3
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications: ''
+  registry-link: ''
+  resource-documentation: .nan
+  topics: ''
 - biocontainers: gubbins
   bunya: ''
   description: Gubbins is a tool for rapid phylogenetic analysis of large samples
@@ -9349,6 +9698,22 @@
   pawsey: ''
   publications: ''
   registry-link: hapcut2
+  resource-documentation: .nan
+  topics: ''
+- biocontainers: ''
+  bunya:
+  - 1.2--h139f625_1
+  description: ''
+  galaxy: ''
+  homepage: https://github.com/marbl/harvest-tools
+  id: harvesttools
+  license: ''
+  name: harvesttools
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications: ''
+  registry-link: ''
   resource-documentation: .nan
   topics: ''
 - biocontainers: ''
@@ -11099,7 +11464,8 @@
   - Phylogenetics
   - Population genetics
 - biocontainers: iq-tree
-  bunya: ''
+  bunya:
+  - 2.2.2.3--h2202e69_2
   description: Very efficient phylogenetic software for reconstructing maximum-likelihood
     trees and assessing branch supports with the ultrafast bootstrap approximation.
     It is based on the IQPNNI algorithm with 10-fold speedup together with substantially
@@ -12249,6 +12615,23 @@
   topics: ''
 - biocontainers: ''
   bunya:
+  - 9.0.1-gcccore-10.3.0
+  - 9.0.2-gcccore-11.3.0               (D)
+  description: ''
+  galaxy: ''
+  homepage: ''
+  id: libglu
+  license: ''
+  name: libglu
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications: ''
+  registry-link: ''
+  resource-documentation: .nan
+  topics: ''
+- biocontainers: ''
+  bunya:
   - 1.3.3-gcccore-10.3.0
   - 1.4.0-gcccore-11.3.0             (D)
   description: ''
@@ -12445,6 +12828,22 @@
   - 5.0.0
   - 5.1.5
   - 5.2.3
+  nci-if89: ''
+  pawsey: ''
+  publications: ''
+  registry-link: ''
+  resource-documentation: .nan
+  topics: ''
+- biocontainers: ''
+  bunya:
+  - 1.1.34-gcccore-11.3.0
+  description: ''
+  galaxy: ''
+  homepage: http://xmlsoft.org/libxslt/index.html
+  id: libxslt
+  license: ''
+  name: libxslt
+  nci-gadi: ''
   nci-if89: ''
   pawsey: ''
   publications: ''
@@ -12803,6 +13202,23 @@
   - Sequence assembly
 - biocontainers: ''
   bunya:
+  - 5.4.3-gcccore-10.3.0
+  - 5.4.4-gcccore-11.3.0                  (D)
+  description: ''
+  galaxy: ''
+  homepage: https://www.lua.org/
+  id: lua
+  license: ''
+  name: Lua
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications: ''
+  registry-link: ''
+  resource-documentation: .nan
+  topics: ''
+- biocontainers: ''
+  bunya:
   - 1.9.3-gcccore-10.3.0
   - 1.9.3-gcccore-11.3.0                  (D)
   description: ''
@@ -12901,6 +13317,23 @@
   - ChIP-seq
   - Molecular interactions, pathways and networks
   - Transcription factors and regulatory sites
+- biocontainers: ''
+  bunya:
+  - 1.3.0-gompi-2021a
+  - 1.3.0-gompi-2022a               (D)
+  description: ''
+  galaxy: ''
+  homepage: ''
+  id: maeparser
+  license: ''
+  name: maeparser
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications: ''
+  registry-link: ''
+  resource-documentation: .nan
+  topics: ''
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -13251,6 +13684,22 @@
   topics:
   - Proteomics experiment
   - Proteomics
+- biocontainers: ''
+  bunya:
+  - 10.9.3-gcc-11.3.0
+  description: ''
+  galaxy: ''
+  homepage: ''
+  id: mariadb
+  license: ''
+  name: MariaDB
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications: ''
+  registry-link: ''
+  resource-documentation: .nan
+  topics: ''
 - biocontainers: mash
   bunya:
   - 2.3-gcc-10.3.0
@@ -14221,6 +14670,28 @@
   - Population genetics
   - Nucleic acid structure analysis
   - Zoology
+- biocontainers: mikado
+  bunya:
+  - 2.2.4--py39h70b41aa_0
+  description: A lightweight Python3 pipeline whose purpose is to facilitate the identification
+    of expressed loci from RNA-Seq data and to select the best models in each locus.
+  galaxy: ''
+  homepage: https://github.com/lucventurini/mikado
+  id: mikado
+  license: LGPL-3.0
+  name: Mikado
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications:
+  - title: Leveraging multiple transcriptome assembly methods for improved gene structure
+      annotation
+    url: https://doi.org/10.1093/gigascience/giy093
+  registry-link: mikado
+  resource-documentation: .nan
+  topics:
+  - RNA-seq
+  - Gene transcripts
 - biocontainers: ''
   bunya:
   - 6.4.0
@@ -15300,6 +15771,37 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
+- biocontainers: MRtrix3
+  bunya:
+  - 3.0.3-foss-2021a
+  description: A fast, flexible and open software framework for medical image processing
+    and visualisation | MRtrix3 is an open-source, cross-platform software package
+    for medical image processing, analysis and visualisation, with a particular emphasis
+    on the investigation of the brain using diffusion MRI. It is implemented using
+    a fast, modular and flexible general-purpose code framework for image data access
+    and manipulation, enabling efficient development of new applications, whilst retaining
+    high computational performance and a consistent command-line interface between
+    applications. In this article, we provide a high-level overview of the features
+    of the MRtrix3 framework and general-purpose image processing applications provided
+    with the software
+  galaxy: ''
+  homepage: https://github.com/MRtrix3/mrtrix3
+  id: mrtrix
+  license: ''
+  name: MRtrix3
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications:
+  - title: 'MRtrix3: A fast, flexible and open software framework for medical image
+      processing and visualisation'
+    url: https://doi.org/10.1016/J.NEUROIMAGE.2019.116137
+  registry-link: MRtrix3
+  resource-documentation: .nan
+  topics:
+  - MRI
+  - Medical imaging
+  - Data visualisation
 - biocontainers: msconvert
   bunya: ''
   description: msConvert is a command-line utility for converting between various
@@ -15380,6 +15882,22 @@
   id: bioconductor-msstatstmt
   license: ''
   name: msstatstmt
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications: ''
+  registry-link: ''
+  resource-documentation: .nan
+  topics: ''
+- biocontainers: ''
+  bunya:
+  - '20230414'
+  description: ''
+  galaxy: ''
+  homepage: ''
+  id: mtag
+  license: ''
+  name: mtag (Multi-Trait Analysis of GWAS)
   nci-gadi: ''
   nci-if89: ''
   pawsey: ''
@@ -15842,6 +16360,23 @@
   resource-documentation: .nan
   topics: ''
 - biocontainers: ''
+  bunya:
+  - 2.10.9-gompi-2021a
+  - 3.0.2-gompi-2022a                (D)
+  description: ''
+  galaxy: ''
+  homepage: https://github.com/ncbi/ncbi-vdb
+  id: ncbi-vdb
+  license: ''
+  name: NCBI VDB
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications: ''
+  registry-link: ''
+  resource-documentation: .nan
+  topics: ''
+- biocontainers: ''
   bunya: ''
   description: ''
   galaxy: ''
@@ -16233,6 +16768,22 @@
   resource-documentation: .nan
   topics:
   - Phylogeny
+- biocontainers: ''
+  bunya:
+  - 3.10.5-gcccore-11.3.0
+  description: ''
+  galaxy: ''
+  homepage: https://github.com/nlohmann/json
+  id: nlohmann_json
+  license: ''
+  name: nlohmann_json
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications: ''
+  registry-link: ''
+  resource-documentation: .nan
+  topics: ''
 - biocontainers: ''
   bunya:
   - 2.7.0-gcccore-10.3.0
@@ -16700,78 +17251,78 @@
     Raw and intermediate mass spectrometry data can be visualised with the included
     viewer TOPPView.
   galaxy:
+  - title: XTandemAdapter 2.8+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_xtandemadapter%2FXTandemAdapter%2F2.8%2Bgalaxy0
+  - title: XMLValidator 2.8+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_xmlvalidator%2FXMLValidator%2F2.8%2Bgalaxy0
+  - title: TextExporter 2.8+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_textexporter%2FTextExporter%2F2.8%2Bgalaxy0
+  - title: TargetedFileConverter 2.8+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_targetedfileconverter%2FTargetedFileConverter%2F2.8%2Bgalaxy0
+  - title: ProteinQuantifier 2.8+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_proteinquantifier%2FProteinQuantifier%2F2.8%2Bgalaxy0
+  - title: PeptideIndexer 2.8+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_peptideindexer%2FPeptideIndexer%2F2.8%2Bgalaxy0
+  - title: PeakPickerHiRes 2.8+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_peakpickerhires%2FPeakPickerHiRes%2F2.8%2Bgalaxy0
+  - title: OpenSwathRTNormalizer 2.8+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_openswathrtnormalizer%2FOpenSwathRTNormalizer%2F2.8%2Bgalaxy0
+  - title: OpenSwathMzMLFileCacher 2.8+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_openswathmzmlfilecacher%2FOpenSwathMzMLFileCacher%2F2.8%2Bgalaxy0
+  - title: OpenSwathFileSplitter 2.8+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_openswathfilesplitter%2FOpenSwathFileSplitter%2F2.8%2Bgalaxy0
+  - title: OpenSwathDIAPreScoring 2.8+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_openswathdiaprescoring%2FOpenSwathDIAPreScoring%2F2.8%2Bgalaxy0
+  - title: OpenSwathDecoyGenerator 2.8+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_openswathdecoygenerator%2FOpenSwathDecoyGenerator%2F2.8%2Bgalaxy0
+  - title: OpenSwathAssayGenerator 2.8+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_openswathassaygenerator%2FOpenSwathAssayGenerator%2F2.8%2Bgalaxy0
+  - title: OpenSwathAnalyzer 2.8+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_openswathanalyzer%2FOpenSwathAnalyzer%2F2.8%2Bgalaxy0
+  - title: MzTabExporter 2.8+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_mztabexporter%2FMzTabExporter%2F2.8%2Bgalaxy0
+  - title: MultiplexResolver 2.8+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_multiplexresolver%2FMultiplexResolver%2F2.8%2Bgalaxy0
+  - title: MSGFPlusAdapter 2.8+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_msgfplusadapter%2FMSGFPlusAdapter%2F2.8%2Bgalaxy0
+  - title: IDScoreSwitcher 2.8+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_idscoreswitcher%2FIDScoreSwitcher%2F2.8%2Bgalaxy0
+  - title: IDPosteriorErrorProbability 2.8+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_idposteriorerrorprobability%2FIDPosteriorErrorProbability%2F2.8%2Bgalaxy0
+  - title: IDMerger 2.8+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_idmerger%2FIDMerger%2F2.8%2Bgalaxy0
+  - title: IDMapper 2.8+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_idmapper%2FIDMapper%2F2.8%2Bgalaxy0
+  - title: IDFilter 2.8+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_idfilter%2FIDFilter%2F2.8%2Bgalaxy0
+  - title: IDConflictResolver 2.8+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_idconflictresolver%2FIDConflictResolver%2F2.8%2Bgalaxy0
+  - title: HighResPrecursorMassCorrector 2.8+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_highresprecursormasscorrector%2FHighResPrecursorMassCorrector%2F2.8%2Bgalaxy0
+  - title: FileConverter 2.8+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_fileconverter%2FFileConverter%2F2.8%2Bgalaxy0
+  - title: FeatureFinderMultiplex 2.8+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_featurefindermultiplex%2FFeatureFinderMultiplex%2F2.8%2Bgalaxy0
+  - title: FalseDiscoveryRate 2.8+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_falsediscoveryrate%2FFalseDiscoveryRate%2F2.8%2Bgalaxy0
+  - title: ConsensusID 2.8+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_consensusid%2FConsensusID%2F2.8%2Bgalaxy0
   - title: DecoyDatabase 2.8+galaxy0
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_decoydatabase%2FDecoyDatabase%2F2.8%2Bgalaxy0
-  - title: ConsensusID 2.6+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_consensusid%2FConsensusID%2F2.6%2Bgalaxy0
-  - title: FalseDiscoveryRate 2.6+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_falsediscoveryrate%2FFalseDiscoveryRate%2F2.6%2Bgalaxy0
-  - title: FeatureFinderMultiplex 2.6+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_featurefindermultiplex%2FFeatureFinderMultiplex%2F2.6%2Bgalaxy0
-  - title: FidoAdapter 2.6+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_fidoadapter%2FFidoAdapter%2F2.6%2Bgalaxy0
-  - title: FileConverter 2.6+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_fileconverter%2FFileConverter%2F2.6%2Bgalaxy0
-  - title: FileFilter 2.6+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_filefilter%2FFileFilter%2F2.6%2Bgalaxy0
-  - title: FileInfo 2.6+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_fileinfo%2FFileInfo%2F2.6%2Bgalaxy0
-  - title: FileMerger 2.6+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_filemerger%2FFileMerger%2F2.6%2Bgalaxy0
-  - title: HighResPrecursorMassCorrector 2.6+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_highresprecursormasscorrector%2FHighResPrecursorMassCorrector%2F2.6%2Bgalaxy0
-  - title: IDConflictResolver 2.6+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_idconflictresolver%2FIDConflictResolver%2F2.6%2Bgalaxy0
-  - title: IDFilter 2.6+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_idfilter%2FIDFilter%2F2.6%2Bgalaxy0
-  - title: IDMapper 2.6+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_idmapper%2FIDMapper%2F2.6%2Bgalaxy0
-  - title: IDMerger 2.6+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_idmerger%2FIDMerger%2F2.6%2Bgalaxy0
-  - title: IDPosteriorErrorProbability 2.6+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_idposteriorerrorprobability%2FIDPosteriorErrorProbability%2F2.6%2Bgalaxy0
-  - title: IDScoreSwitcher 2.6+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_idscoreswitcher%2FIDScoreSwitcher%2F2.6%2Bgalaxy0
+  - title: FidoAdapter 2.8+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_fidoadapter%2FFidoAdapter%2F2.8%2Bgalaxy0
+  - title: FileFilter 2.8+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_filefilter%2FFileFilter%2F2.8%2Bgalaxy0
+  - title: FileInfo 2.8+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_fileinfo%2FFileInfo%2F2.8%2Bgalaxy0
+  - title: FileMerger 2.8+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_filemerger%2FFileMerger%2F2.8%2Bgalaxy0
   - title: MSFraggerAdapter 2.8+galaxy0
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_msfraggeradapter%2FMSFraggerAdapter%2F2.8%2Bgalaxy0
-  - title: MSGFPlusAdapter 2.6+galaxy1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_msgfplusadapter%2FMSGFPlusAdapter%2F2.6%2Bgalaxy1
-  - title: MultiplexResolver 2.6+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_multiplexresolver%2FMultiplexResolver%2F2.6%2Bgalaxy0
-  - title: MzTabExporter 2.6+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_mztabexporter%2FMzTabExporter%2F2.6%2Bgalaxy0
-  - title: OpenSwathAnalyzer 2.6+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_openswathanalyzer%2FOpenSwathAnalyzer%2F2.6%2Bgalaxy0
-  - title: OpenSwathAssayGenerator 2.6+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_openswathassaygenerator%2FOpenSwathAssayGenerator%2F2.6%2Bgalaxy0
-  - title: OpenSwathConfidenceScoring 2.6+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_openswathconfidencescoring%2FOpenSwathConfidenceScoring%2F2.6%2Bgalaxy0
-  - title: OpenSwathDecoyGenerator 2.6+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_openswathdecoygenerator%2FOpenSwathDecoyGenerator%2F2.6%2Bgalaxy0
-  - title: OpenSwathDIAPreScoring 2.6+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_openswathdiaprescoring%2FOpenSwathDIAPreScoring%2F2.6%2Bgalaxy0
-  - title: OpenSwathFileSplitter 2.6+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_openswathfilesplitter%2FOpenSwathFileSplitter%2F2.6%2Bgalaxy0
-  - title: OpenSwathMzMLFileCacher 2.6+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_openswathmzmlfilecacher%2FOpenSwathMzMLFileCacher%2F2.6%2Bgalaxy0
-  - title: OpenSwathRTNormalizer 2.6+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_openswathrtnormalizer%2FOpenSwathRTNormalizer%2F2.6%2Bgalaxy0
-  - title: OpenSwathWorkflow 2.6+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_openswathworkflow%2FOpenSwathWorkflow%2F2.6%2Bgalaxy0
-  - title: PeakPickerHiRes 2.6+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_peakpickerhires%2FPeakPickerHiRes%2F2.6%2Bgalaxy0
-  - title: PeptideIndexer 2.6+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_peptideindexer%2FPeptideIndexer%2F2.6%2Bgalaxy0
-  - title: ProteinQuantifier 2.6+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_proteinquantifier%2FProteinQuantifier%2F2.6%2Bgalaxy0
-  - title: TargetedFileConverter 2.6+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_targetedfileconverter%2FTargetedFileConverter%2F2.6%2Bgalaxy0
-  - title: TextExporter 2.6+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_textexporter%2FTextExporter%2F2.6%2Bgalaxy0
-  - title: XMLValidator 2.6+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_xmlvalidator%2FXMLValidator%2F2.6%2Bgalaxy0
-  - title: XTandemAdapter 2.6+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_xtandemadapter%2FXTandemAdapter%2F2.6%2Bgalaxy0
+  - title: OpenSwathConfidenceScoring 2.8+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_openswathconfidencescoring%2FOpenSwathConfidenceScoring%2F2.8%2Bgalaxy0
+  - title: OpenSwathWorkflow 2.8+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_openswathworkflow%2FOpenSwathWorkflow%2F2.8%2Bgalaxy0
   homepage: http://www.openms.de
   id: openms
   license: BSD-3-Clause
@@ -17076,6 +17627,22 @@
   resource-documentation: .nan
   topics: ''
 - biocontainers: ''
+  bunya:
+  - 3.1.2
+  description: ''
+  galaxy: ''
+  homepage: https://pandoc.org/
+  id: pandoc
+  license: ''
+  name: pandoc
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications: ''
+  registry-link: ''
+  resource-documentation: .nan
+  topics: ''
+- biocontainers: ''
   bunya: ''
   description: ''
   galaxy: ''
@@ -17315,6 +17882,30 @@
   - Molecular interactions, pathways and networks
   - Systems biology
   - Data visualisation
+- biocontainers: pavian
+  bunya: ''
+  description: Web application for exploring metagenomics classification results,
+    with a special focus on infectious disease diagnosis. Pinpointing pathogens in
+    metagenomics classification results is often complicated by host and laboratory
+    contaminants as well as many non-pathogenic microbiota. Researchers can analyze,
+    display and transform results from the Kraken and Centrifuge classifiers using
+    interactive tables, heatmaps and flow diagrams.
+  galaxy: ''
+  homepage: https://ccb.jhu.edu/software/pavian/
+  id: pavian
+  license: GPL-3.0
+  name: Pavian
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications:
+  - title: 10.1101/084715
+    url: https://doi.org/10.1101/084715
+  registry-link: pavian
+  resource-documentation: .nan
+  topics:
+  - Metagenomics
+  - Model organisms
 - biocontainers: pblat
   bunya: ''
   description: Multithread blat algorithm speeding up aligning sequences to genomes.
@@ -17588,6 +18179,28 @@
   resource-documentation: .nan
   topics:
   - Sequence analysis
+- biocontainers: pharokka
+  bunya: ''
+  description: Pharokka is a rapid standardised annotation tool for bacteriophage
+    genomes and metagenomes.
+  galaxy: ''
+  homepage: https://github.com/gbouras13/pharokka
+  id: pharokka
+  license: MIT
+  name: Pharokka
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications:
+  - title: 'Pharokka: a fast scalable bacteriophage annotation tool'
+    url: https://doi.org/10.1093/BIOINFORMATICS/BTAC776
+  registry-link: pharokka
+  resource-documentation: .nan
+  topics:
+  - Metagenomics
+  - Sequence sites, features and motifs
+  - Workflows
+  - Functional, regulatory and non-coding RNA
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -19424,6 +20037,23 @@
   topics:
   - Bioinformatics
   - Workflows
+- biocontainers: ''
+  bunya:
+  - 5.15.2-gcccore-10.3.0
+  - 5.15.5-gcccore-11.3.0                 (D)
+  description: ''
+  galaxy: ''
+  homepage: https://www.qt.io/
+  id: qt5
+  license: ''
+  name: qt5
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications: ''
+  registry-link: ''
+  resource-documentation: .nan
+  topics: ''
 - biocontainers: r
   bunya:
   - 4.1.0-foss-2021a
@@ -19607,6 +20237,48 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
+- biocontainers: ''
+  bunya:
+  - 1.1.0-gcccore-10.3.0
+  - 1.1.0-gcccore-11.3.0            (D)
+  description: ''
+  galaxy: ''
+  homepage: https://rapidjson.org/
+  id: rapidjson
+  license: ''
+  name: RapidJSON
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications: ''
+  registry-link: ''
+  resource-documentation: .nan
+  topics: ''
+- biocontainers: ratatosk
+  bunya:
+  - 0.7.6.3--h43eeafb_2
+  description: "Ratatosk \u2013 Hybrid error correction of long reads enables accurate\
+    \ variant calling and assembly.\n\nPhased hybrid error correction of long reads\
+    \ using colored de Bruijn graphs.\n\nRatatosk is a phased error correction tool\
+    \ for erroneous long reads based on compacted and colored de Bruijn graphs built\
+    \ from accurate short reads."
+  galaxy: ''
+  homepage: https://github.com/DecodeGenetics/Ratatosk
+  id: ratatosk
+  license: BSD-2-Clause
+  name: Ratatosk
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications:
+  - title: 10.1101/2020.07.15.204925
+    url: https://doi.org/10.1101/2020.07.15.204925
+  registry-link: ratatosk
+  resource-documentation: .nan
+  topics:
+  - DNA polymorphism
+  - Sequence assembly
+  - Whole genome sequencing
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -19917,6 +20589,22 @@
   resource-documentation: .nan
   topics:
   - Population genomics
+- biocontainers: ''
+  bunya:
+  - 3.2.9
+  description: ''
+  galaxy: ''
+  homepage: https://rgcgithub.github.io/regenie/
+  id: regenie
+  license: ''
+  name: regenie
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications: ''
+  registry-link: ''
+  resource-documentation: .nan
+  topics: ''
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -21141,6 +21829,22 @@
   resource-documentation: .nan
   topics: ''
 - biocontainers: ''
+  bunya:
+  - 2.0.22-gcccore-11.3.0
+  description: ''
+  galaxy: ''
+  homepage: https://www.libsdl.org/
+  id: sdl2
+  license: ''
+  name: Simple DirectMedia Layer (SDL)
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications: ''
+  registry-link: ''
+  resource-documentation: .nan
+  topics: ''
+- biocontainers: ''
   bunya: ''
   description: ''
   galaxy: ''
@@ -22321,6 +23025,22 @@
   topics:
   - Metatranscriptomics
   - Metagenomics
+- biocontainers: ''
+  bunya:
+  - 2.0.1-gcc-11.3.0
+  description: ''
+  galaxy: ''
+  homepage: https://www.10xgenomics.com/support/software/space-ranger/latest
+  id: spaceranger
+  license: ''
+  name: Space Ranger
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications: ''
+  registry-link: ''
+  resource-documentation: .nan
+  topics: ''
 - biocontainers: spades
   bunya:
   - 3.15.3-gcc-10.3.0
@@ -22526,6 +23246,7 @@
   topics: ''
 - biocontainers: sra-tools
   bunya:
+  - 3.0.3-gompi-2022a
   - 3.0.3--h87f3376_0
   description: The SRA Toolkit and SDK from NCBI is a collection of tools and libraries
     for using data in the INSDC Sequence Read Archives.
@@ -22553,6 +23274,22 @@
   - DNA
   - Genomics
   - Sequencing
+- biocontainers: ''
+  bunya:
+  - 0.2.0--py_4
+  description: ''
+  galaxy: ''
+  homepage: https://github.com/katholt/srst2
+  id: srst2
+  license: ''
+  name: SRST2
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications: ''
+  registry-link: ''
+  resource-documentation: .nan
+  topics: ''
 - biocontainers: ssw
   bunya:
   - 1.1-gcccore-10.3.0
@@ -22961,6 +23698,29 @@
   - Sequencing
   - Whole genome sequencing
   - Sequence assembly
+- biocontainers: suppa
+  bunya:
+  - 2.3--py_2
+  description: This tool generates Alternative Splicing (AS) events from an annotation
+    and calculates the PSI ("Percentage Spliced In") value for each event exploiting
+    fast quantification of transcript abundances from multiple samples.
+  galaxy: ''
+  homepage: https://bitbucket.org/regulatorygenomicsupf/suppa/
+  id: suppa
+  license: MIT
+  name: SUPPA
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications:
+  - title: Leveraging transcript quantification for fast computation of alternative
+      splicing profiles
+    url: https://doi.org/10.1261/rna.051557.115
+  registry-link: suppa
+  resource-documentation: .nan
+  topics:
+  - Transcriptomics
+  - RNA splicing
 - biocontainers: svim-asm
   bunya: ''
   description: 'Structural variant detection from haploid and diploid genome assemblies.
@@ -24370,19 +25130,19 @@
   resource-documentation: .nan
   topics: ''
 - biocontainers: vep
-  bunya: ''
+  bunya:
+  - 107-gcc-11.3.0
   description: Tool for predicting effects of variants for any genome in Ensembl or
     with genome annotation (via GFF). This includes vertebrates and also plants, fungi,
     protists, metazoa and bacteria.  There is a web and a REST API version but the
     most powerful is the Perl script version. See McLaren et al., 2016, Genome Biology
   galaxy: ''
   homepage: http://www.ensembl.org/vep
-  id: ensembl-vep
+  id: vep
   license: Apache-2.0
   name: Variant Effect Predictor (VEP)
   nci-gadi: ''
-  nci-if89:
-  - '106.1'
+  nci-if89: ''
   pawsey: ''
   publications:
   - title: The Ensembl Variant Effect Predictor
