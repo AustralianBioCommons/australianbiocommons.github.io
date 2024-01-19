@@ -19,7 +19,15 @@ authors:
     orcid: 'https://orcid.org/0009-0009-1878-4070'
   - given-names: Minh
     family-names: Vu
-    affiliation: 'Australian BioCommons, University of Sydney'
+    affiliation: 'Australian BioCommons, University of Sydney, Sydney, New South Wales'
+  - given-names: Sarah
+    family-names: Beecroft
+    affiliation: 'Pawsey Supercomputing Research Centre, Perth, Western Australia'
+    orcid: 'https://orcid.org/0000-0002-3935-2279'
+  - given-names: Marco
+    family-names: De La Pierre
+    affiliation: 'Pawsey Supercomputing Research Centre, Perth, Western Australia'
+    orcid: 'https://orcid.org/0000-0002-7429-1846'
   - given-names: Dale
     family-names: Roberts
     affiliation: 'National Computational Infrastructure, The Australian National University, Canberra, Australian Capital Territory'
