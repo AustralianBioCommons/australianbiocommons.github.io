@@ -65,7 +65,7 @@ class WorkflowHubSpaceDataProvider(Dataprovider):
         # see https://www.w3schools.com/python/python_json.asp
         # see https://stackoverflow.com/a/70738425
         # see https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.to_json.html
-        link_information = pd.read_csv("./external/deploy_links.csv").set_index('id')
+        link_information = pd.read_csv("./external/deploy_links - deploy_links.csv").set_index('id')
         link_information.to_json('./external/link_information.json')
         # see https://stackoverflow.com/a/58647394 for import json script
         json_file_path = "./external/link_information.json"
@@ -73,8 +73,9 @@ class WorkflowHubSpaceDataProvider(Dataprovider):
             contents = json.loads(j.read())
         guide = contents["guide"]
         for workflow in self.available_data:
-            guide_link = guide[workflow]
-            self.available_data[workflow]['data']['guide_link'] = guide_link
+            if workflow in guide:
+                guide_link = guide[workflow]
+                self.available_data[workflow]['data']['guide_link'] = guide_link
 
 
     def _render(self, data):
