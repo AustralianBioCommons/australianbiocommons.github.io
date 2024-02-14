@@ -1,5 +1,5 @@
 ---
-title: "Australian BioCommons Technical Documentation"
+title: "Australian BioCommons ToolFinder and WorkflowFinder services"
 ---
 
 This site presents a landscape view of tools & workflows available across Australian BioCommons partners.
@@ -17,15 +17,15 @@ This site presents a landscape view of tools & workflows available across Austra
 **Note:** you can reach this information using the tabs at the top of the page as well.
 
 - Visit [**ToolFinder**](https://australianbiocommons.github.io/2_tools.html) to discover which versions of bioinformatics tools are installed across several of the [BioCommons infrastructure partner systems](http://support.biocommons.org.au/support/solutions/articles/6000251977-compute-systems-at-the-biocommons-partner-infrastructures).
-- Visit [**WorkflowFinder**](https://australianbiocommons.github.io/2_1_workflows.html) to search for workflows registered by Australian BioCommons partners on [workflowhub](https://workflowhub.eu/programmes/8).
+- Visit [**WorkflowFinder**](https://australianbiocommons.github.io/2_1_workflows.html) to search for workflows registered by Australian BioCommons partners in [our WorkflowHub space](https://workflowhub.eu/programmes/8).
 - A list of the Australian BioCommons infrastructure partner compute systems is [**available here**](http://support.biocommons.org.au/support/solutions/articles/6000251977-compute-systems-at-the-biocommons-partner-infrastructures).
-- For Help please visit the [**Australian BioCommons Support**](http://support.biocommons.org.au/support/solutions) page.
+- For Help please visit the [**Australian BioCommons Support**](http://support.biocommons.org.au/support/solutions) or [contact us](https://www.biocommons.org.au/contact-form).
 
 -----
 
 -----
 
-## We welcome feedback: please provide your suggestions / comments via [GoogleForm](https://forms.gle/BgbBeGfAV6396p797) or [GitHub issues](https://github.com/AustralianBioCommons/australianbiocommons.github.io/issues)
+## We welcome feedback: please provide your suggestions / comments via [GitHub issues](https://github.com/AustralianBioCommons/australianbiocommons.github.io/issues)
 
 -----
 
@@ -38,7 +38,7 @@ The information presented here is part of [collaborative activities](https://www
 - The BioCommons [communities](https://www.biocommons.org.au/get-involved) (e.g. genome assembly, metabolomics)
 - The [Bioplatforms Australia](https://bioplatforms.com/) Framework Initiatives (e.g. [Oz Mammals Genomics](https://ozmammalsgenomics.com/), [Genomics for Australian Plants](https://www.genomicsforaustralianplants.com/))
 
-The website and its contents are built using [python](https://www.python.org/), [pycharm](https://www.jetbrains.com/pycharm/), [R](https://www.r-project.org/) and the [tidyverse](https://www.tidyverse.org/) (dplyr *et al.*), with [references included](5_attributions.html), and additional attributions embedded in the Rmarkdown scripts.
+The website and its contents are built using [python](https://www.python.org/), [pycharm](https://www.jetbrains.com/pycharm/), [R](https://www.r-project.org/) and the [tidyverse](https://www.tidyverse.org/) (dplyr *et al.*), with [references included](5_attributions.html), and additional attributions embedded in the scripts.
 
 -----
 

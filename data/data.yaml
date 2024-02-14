@@ -7569,8 +7569,8 @@
   bunya: ''
   description: Gene Annotation EVAluation.
   galaxy:
-  - title: ' AEGeAn CanonGFF3 0.16.0'
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Faegean_canongff3%2Faegean_canongff3%2F0.16.0
+  - title: AEGeAn CanonGFF3 0.16.0+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Faegean_canongff3%2Faegean_canongff3%2F0.16.0%2Bgalaxy1
   - title: AEGeAn GAEVAL 0.16.0
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Faegean_gaeval%2Faegean_gaeval%2F0.16.0
   - title: AEGeAn LocusPocus 0.16.0
@@ -17317,8 +17317,6 @@
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_fileinfo%2FFileInfo%2F2.8%2Bgalaxy0
   - title: FileMerger 2.8+galaxy0
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_filemerger%2FFileMerger%2F2.8%2Bgalaxy0
-  - title: MSFraggerAdapter 2.8+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_msfraggeradapter%2FMSFraggerAdapter%2F2.8%2Bgalaxy0
   - title: OpenSwathConfidenceScoring 2.8+galaxy0
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fopenms_openswathconfidencescoring%2FOpenSwathConfidenceScoring%2F2.8%2Bgalaxy0
   - title: OpenSwathWorkflow 2.8+galaxy0
