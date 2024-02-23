@@ -225,6 +225,30 @@
   topics:
   - Molecular modelling
   - Computational biology
+- biocontainers: ambertools
+  bunya: ''
+  description: Consists of several independently developed packages that work well
+    by themselves, and with Amber (Assisted Model Building with Energy Refinement)
+    itself. The suite can also be used to carry out complete (non-periodic) molecular
+    dynamics simulations (using NAB), with generalized Born solvent models.
+  galaxy:
+  - title: MMPBSA/MMGBSA 21.10+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fchemteam%2Fmmpbsa_mmgbsa%2Fmmpbsa_mmgbsa%2F21.10%2Bgalaxy0
+  homepage: http://ambermd.org/#AmberTools
+  id: ambertools
+  license: ''
+  name: ambertools
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications:
+  - title: The Amber biomolecular simulation programs
+    url: https://doi.org/None
+  registry-link: ambertools
+  resource-documentation: .nan
+  topics:
+  - Molecular modelling
+  - Molecular dynamics
 - biocontainers: amos
   bunya: ''
   description: AMOS is a Modular, Open-Source whole genome assembler.
@@ -317,6 +341,8 @@
   bunya: ''
   description: ''
   galaxy:
+  - title: Export AnnData and loom files 0.10.3+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fanndata_export%2Fanndata_export%2F0.10.3%2Bgalaxy0
   - title: Import Anndata and loom 0.10.3+galaxy0
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fanndata_import%2Fanndata_import%2F0.10.3%2Bgalaxy0
   - title: Manipulate AnnData 0.10.3+galaxy0
@@ -589,6 +615,22 @@
   name: archspec
   nci-gadi: ''
   nci-if89: ''
+  pawsey: ''
+  publications: ''
+  registry-link: ''
+  resource-documentation: .nan
+  topics: ''
+- biocontainers: ''
+  bunya: ''
+  description: ''
+  galaxy: ''
+  homepage: ''
+  id: argtable
+  license: ''
+  name: argtable
+  nci-gadi: ''
+  nci-if89:
+  - '2.13'
   pawsey: ''
   publications: ''
   registry-link: ''
@@ -1906,6 +1948,8 @@
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Ftranslate_bed%2Ftranslate_bed%2F0.1.0
   - title: Get open reading frames (ORFs) or coding sequences (CDSs) 0.2.3
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fpeterjc%2Fget_orfs_or_cdss%2Fget_orfs_or_cdss%2F0.2.3
+  - title: Kraken taxonomic report 0.0.3
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fkraken_taxonomy_report%2Fkraken_taxonomy_report%2F0.0.3
   homepage: http://biopython.org/
   id: biopython
   license: MIT
@@ -2389,6 +2433,22 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
+- biocontainers: ''
+  bunya: ''
+  description: ''
+  galaxy: ''
+  homepage: ''
+  id: bq_radiomics
+  license: ''
+  name: bq_radiomics
+  nci-gadi: ''
+  nci-if89:
+  - 1.0.1
+  pawsey: ''
+  publications: ''
+  registry-link: ''
+  resource-documentation: .nan
+  topics: ''
 - biocontainers: braker1
   bunya: ''
   description: Pipeline for unsupervised RNA-Seq-based genome annotation with GeneMark-ET
@@ -2586,6 +2646,29 @@
   - Genomics
   - Transcriptomics
   - Sequence analysis
+- biocontainers: buttery_eel
+  bunya: ''
+  description: Accelerated nanopore basecalling with SLOW5 data format.
+  galaxy: ''
+  homepage: https://github.com/Psy-Fer/buttery-eel
+  id: buttery-eel
+  license: MIT
+  name: Buttery-eel
+  nci-gadi: ''
+  nci-if89:
+  - 0.3.1+guppy6.4.2
+  - 0.4.1+guppy6.5.7
+  pawsey: ''
+  publications:
+  - title: Accelerated nanopore basecalling with SLOW5 data format
+    url: https://doi.org/10.1093/BIOINFORMATICS/BTAD352
+  registry-link: buttery_eel
+  resource-documentation: .nan
+  topics:
+  - Computer science
+  - Protein expression
+  - Workflows
+  - Transcription factors and regulatory sites
 - biocontainers: bwa
   bunya:
   - 0.7.17-gcc-10.3.0
@@ -3821,6 +3904,23 @@
   - Sequence analysis
   - Workflows
   - Imaging
+- biocontainers: ''
+  bunya: ''
+  description: ''
+  galaxy:
+  - title: ClipKIT. Alignment trimming software for phylogenetics. 0.1.0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fpadge%2Fclipkit%2Fclipkit%2F0.1.0
+  homepage: ''
+  id: clipkit
+  license: ''
+  name: clipkit
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications: ''
+  registry-link: ''
+  resource-documentation: .nan
+  topics: ''
 - biocontainers: clustalo
   bunya: ''
   description: "Multiple sequence alignment software. The name is occassionally spelled\
@@ -4058,6 +4158,22 @@
   name: CONVERTER_neostorezip_to_neostore
   nci-gadi: ''
   nci-if89: ''
+  pawsey: ''
+  publications: ''
+  registry-link: ''
+  resource-documentation: .nan
+  topics: ''
+- biocontainers: ''
+  bunya: ''
+  description: ''
+  galaxy: ''
+  homepage: ''
+  id: cookiecutter
+  license: ''
+  name: cookiecutter
+  nci-gadi: ''
+  nci-if89:
+  - 2.4.0
   pawsey: ''
   publications: ''
   registry-link: ''
@@ -6099,6 +6215,22 @@
   topics:
   - Genomics
   - Rare diseases
+- biocontainers: ''
+  bunya: ''
+  description: ''
+  galaxy: ''
+  homepage: ''
+  id: ensembl-vep
+  license: ''
+  name: ensembl-vep
+  nci-gadi: ''
+  nci-if89:
+  - '106.1'
+  pawsey: ''
+  publications: ''
+  registry-link: ''
+  resource-documentation: .nan
+  topics: ''
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -8307,6 +8439,22 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
+- biocontainers: ''
+  bunya: ''
+  description: ''
+  galaxy: ''
+  homepage: ''
+  id: generode
+  license: ''
+  name: generode
+  nci-gadi: ''
+  nci-if89:
+  - 0.5.1
+  pawsey: ''
+  publications: ''
+  registry-link: ''
+  resource-documentation: .nan
+  topics: ''
 - biocontainers: GenomeScope_2.0
   bunya: ''
   description: Reference-free profiling of polyploid genomes | We have developed GenomeScope
@@ -9350,6 +9498,8 @@
     fast at calculating the nonbonded interactions (that usually dominate simulations)
     many groups are also using it for research on non-biological systems, e.g. polymers.
   galaxy:
+  - title: Modify/convert and concatate GROMACS trajectories 2022+galaxy2
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fchemteam%2Fgmx_trj%2Fgmx_trj%2F2022%2Bgalaxy2
   - title: GROMACS structure configuration 2022+galaxy0
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fchemteam%2Fgmx_editconf%2Fgmx_editconf%2F2022%2Bgalaxy0
   - title: GROMACS energy minimization 2022+galaxy0
@@ -9367,7 +9517,7 @@
   homepage: http://www.gromacs.org/
   id: gromacs
   license: LGPL-2.1
-  name: gromacs
+  name: Gromacs
   nci-gadi:
   - '2019.3'
   - 2019.3-plumed
@@ -10311,6 +10461,16 @@
     \ profiling answers the question \u201CWhat are the microbes in my community-of-interest\
     \ doing (or are capable of doing)?\u201D"
   galaxy:
+  - title: Join (merge) 3.8+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fhumann_join_tables%2Fhumann_join_tables%2F3.8%2Bgalaxy0
+  - title: Make strain profiles 3.8+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fhumann_strain_profiler%2Fhumann_strain_profiler%2F3.8%2Bgalaxy0
+  - title: Split 3.8+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fhumann_split_table%2Fhumann_split_table%2F3.8%2Bgalaxy0
+  - title: Reduce 3.8+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fhumann_reduce_table%2Fhumann_reduce_table%2F3.8%2Bgalaxy0
+  - title: Barplot 3.8+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fhumann_barplot%2Fhumann_barplot%2F3.8%2Bgalaxy0
   - title: Regroup 3.8+galaxy0
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fhumann_regroup_table%2Fhumann_regroup_table%2F3.8%2Bgalaxy0
   - title: Renormalize 3.8+galaxy0
@@ -10323,6 +10483,8 @@
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fhumann%2Fhumann%2F3.8%2Bgalaxy0
   - title: Rename features 3.8+galaxy0
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fhumann_rename_table%2Fhumann_rename_table%2F3.8%2Bgalaxy0
+  - title: Perform metadata association 3.8+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fhumann_associate%2Fhumann_associate%2F3.8%2Bgalaxy0
   homepage: https://huttenhower.sph.harvard.edu/humann
   id: humann
   license: MIT
@@ -12270,6 +12432,32 @@
   - title: 10.1101/762302
     url: https://doi.org/10.1101/762302
   registry-link: kraken2
+  resource-documentation: .nan
+  topics:
+  - Taxonomy
+  - Metagenomics
+- biocontainers: krakentools
+  bunya: ''
+  description: KrakenTools provides individual scripts to analyze Kraken/Kraken2/Bracken/KrakenUniq
+    output files
+  galaxy:
+  - title: 'Krakentools: Combine multiple Kraken reports 1.2+galaxy1'
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fkrakentools_combine_kreports%2Fkrakentools_combine_kreports%2F1.2%2Bgalaxy1
+  - title: 'Krakentools: calculates beta diversity (Bray-Curtis dissimilarity) 1.2+galaxy1'
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fkrakentools_beta_diversity%2Fkrakentools_beta_diversity%2F1.2%2Bgalaxy1
+  - title: 'Krakentools: Calculates alpha diversity 1.2+galaxy1'
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fkrakentools_alpha_diversity%2Fkrakentools_alpha_diversity%2F1.2%2Bgalaxy1
+  - title: 'Krakentools: Convert kraken report file 1.2+galaxy1'
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fkrakentools_kreport2mpa%2Fkrakentools_kreport2mpa%2F1.2%2Bgalaxy1
+  homepage: https://github.com/jenniferlu717/KrakenTools
+  id: krakentools
+  license: GPL-3.0
+  name: krakentools
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications: ''
+  registry-link: krakentools
   resource-documentation: .nan
   topics:
   - Taxonomy
@@ -18995,6 +19183,22 @@
   bunya: ''
   description: ''
   galaxy: ''
+  homepage: ''
+  id: progressbar2
+  license: ''
+  name: progressbar2
+  nci-gadi: ''
+  nci-if89:
+  - 4.2.0
+  pawsey: ''
+  publications: ''
+  registry-link: ''
+  resource-documentation: .nan
+  topics: ''
+- biocontainers: ''
+  bunya: ''
+  description: ''
+  galaxy: ''
   homepage: https://proj.org/
   id: proj
   license: ''
@@ -19929,6 +20133,8 @@
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fqualimap_bamqc%2Fqualimap_bamqc%2F2.2.2d%2Bgalaxy3
   - title: QualiMap Multi-Sample BamQC 2.2.2d
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fqualimap_multi_bamqc%2Fqualimap_multi_bamqc%2F2.2.2d
+  - title: QualiMap Counts QC 2.2.2d
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fqualimap_counts%2Fqualimap_counts%2F2.2.2d
   - title: QualiMap RNA-Seq QC 2.2.2d+galaxy1
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fqualimap_rnaseq%2Fqualimap_rnaseq%2F2.2.2d%2Bgalaxy1
   homepage: https://qualimap.bioinfo.cipf.es/
@@ -20112,6 +20318,8 @@
   bunya: ''
   description: ''
   galaxy:
+  - title: Initial processing using RaceID 0.2.3+galaxy3
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fraceid_filtnormconf%2Fraceid_filtnormconf%2F0.2.3%2Bgalaxy3
   - title: Clustering using RaceID 0.2.3+galaxy3
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fraceid_clustering%2Fraceid_clustering%2F0.2.3%2Bgalaxy3
   - title: Cluster Inspection using RaceID 0.2.3+galaxy3
@@ -21641,6 +21849,10 @@
   description: Pre-processing, quality control, normalization and visualization of
     single-cell RNA-seq data.
   galaxy:
+  - title: 'Scater: t-SNE plot 1.22.0'
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fscater_plot_tsne%2Fscater_plot_tsne%2F1.22.0
+  - title: 'Scater: plot expression frequency 1.12.2'
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fscater_plot_exprs_freq%2Fscater_plot_exprs_freq%2F1.12.2
   - title: 'Scater: calculate QC metrics 1.22.0'
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fscater_create_qcmetric_ready_sce%2Fscater_create_qcmetric_ready_sce%2F1.22.0
   - title: 'Scater: filter SCE 1.22.0'
@@ -22553,6 +22765,22 @@
   name: slim
   nci-gadi: ''
   nci-if89: ''
+  pawsey: ''
+  publications: ''
+  registry-link: ''
+  resource-documentation: .nan
+  topics: ''
+- biocontainers: ''
+  bunya: ''
+  description: ''
+  galaxy: ''
+  homepage: ''
+  id: slow5-dorado
+  license: ''
+  name: slow5-dorado
+  nci-gadi: ''
+  nci-if89:
+  - 0.2.1
   pawsey: ''
   publications: ''
   registry-link: ''
@@ -24459,14 +24687,20 @@
     graphical interface and access to three different analysis methods that allow
     the user to determine essentiality in a single condition as well as between conditions.
   galaxy:
+  - title: TRANSIT Tn5Gaps 3.0.2+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ftransit_tn5gaps%2Ftransit_tn5gaps%2F3.0.2%2Bgalaxy1
   - title: Convert GFF3 3.0.2+galaxy0
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fgff_to_prot%2Fgff_to_prot%2F3.0.2%2Bgalaxy0
+  - title: TRANSIT Resampling 3.0.2+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ftransit_resampling%2Ftransit_resampling%2F3.0.2%2Bgalaxy1
+  - title: TRANSIT HMM 3.0.2+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ftransit_hmm%2Ftransit_hmm%2F3.0.2%2Bgalaxy1
   - title: TRANSIT Gumbel 3.0.2+galaxy1
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ftransit_gumbel%2Ftransit_gumbel%2F3.0.2%2Bgalaxy1
   homepage: http://saclab.tamu.edu/essentiality/transit/
   id: transit
   license: ''
-  name: transit
+  name: TRANSIT
   nci-gadi: ''
   nci-if89: ''
   pawsey: ''
@@ -24531,6 +24765,22 @@
   topics:
   - Proteomics
   - Proteomics experiment
+- biocontainers: ''
+  bunya: ''
+  description: ''
+  galaxy: ''
+  homepage: ''
+  id: transvar
+  license: ''
+  name: TransVar
+  nci-gadi: ''
+  nci-if89:
+  - 2.4.0
+  pawsey: ''
+  publications: ''
+  registry-link: ''
+  resource-documentation: .nan
+  topics: ''
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -24681,6 +24931,10 @@
     tools, inchworm an assembler, chrysalis which pools contigs and butterfly which
     amongst others compacts a graph resulting from butterfly with reads.
   galaxy:
+  - title: Generate SuperTranscripts 2.15.1+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ftrinity_super_transcripts%2Ftrinity_super_transcripts%2F2.15.1%2Bgalaxy0
+  - title: Trinity Stats 2.15.1+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ftrinity_stats%2Ftrinity_stats%2F2.15.1%2Bgalaxy0
   - title: Trinity 2.15.1+galaxy1
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ftrinity%2Ftrinity%2F2.15.1%2Bgalaxy1
   - title: Build expression matrix 2.15.1+galaxy0
@@ -25196,6 +25450,10 @@
   description: VarScan, an open source tool for variant detection that is compatible
     with several short read align-ers.
   galaxy:
+  - title: VarScan copynumber 2.4.3.2
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fvarscan_copynumber%2Fvarscan_copynumber%2F2.4.3.2
+  - title: VarScan mpileup 2.4.3.1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fvarscan_mpileup%2Fvarscan_mpileup%2F2.4.3.1
   - title: VarScan somatic 2.4.3.6
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fvarscan_somatic%2Fvarscan_somatic%2F2.4.3.6
   - title: VarScan 2.4.2
