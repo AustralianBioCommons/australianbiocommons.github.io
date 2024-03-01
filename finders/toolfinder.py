@@ -358,25 +358,26 @@ class ToolDB(DB):
                name = val[1]
                version = val[2]
            return {"title": name + " " + version, "url": f"""https://usegalaxy.org.au/{val[0]}"""}
-        return {
-            # see https://stackoverflow.com/a/9285148
-            # see https://stackoverflow.com/a/62014515
-            "description": tool.get(Dataprovider.FIELD_NAMES.DESCRIPTION, ""),
-            "name": tool[Dataprovider.FIELD_NAMES.NAME],
-            "homepage": tool[Dataprovider.FIELD_NAMES.REPOSITORY_URL] if not pd.isna(tool[Dataprovider.FIELD_NAMES.REPOSITORY_URL]) else "",
-            "registry-link": tool.get(Dataprovider.FIELD_NAMES.BIOTOOLS_ID, ""),
-            "id": tool[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER],
-            "topics": [i["term"] for i in tool[Dataprovider.FIELD_NAMES.EDAM_TOPICS]] if isinstance(tool[Dataprovider.FIELD_NAMES.EDAM_TOPICS], list) else "",
-            "publications": [translate_publication(i) for i in tool[Dataprovider.FIELD_NAMES.PUBLICATIONS]] if Dataprovider.FIELD_NAMES.PUBLICATIONS in tool and isinstance(tool[Dataprovider.FIELD_NAMES.PUBLICATIONS],list) else "",
-            "biocontainers": tool.get(Dataprovider.FIELD_NAMES.BIOTOOLS_ID, ""),
-            "license": tool.get(Dataprovider.FIELD_NAMES.LICENSE, ""),
-            "resource-documentation": tool.get(Dataprovider.FIELD_NAMES.BIOCOMMONS_DOCUMENTATION_LINK, ""),
-            "galaxy": [translate_galaxy(i) for i in tool[Dataprovider.FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK]] if Dataprovider.FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK in tool and isinstance(tool[Dataprovider.FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK],list) else "",
-            "nci-gadi": [i for i in tool[Dataprovider.FIELD_NAMES.NCI_GADI_VERSION]] if Dataprovider.FIELD_NAMES.NCI_GADI_VERSION in tool and isinstance(tool[Dataprovider.FIELD_NAMES.NCI_GADI_VERSION], list) else "",
-            "nci-if89": [i for i in tool[Dataprovider.FIELD_NAMES.NCI_IF89_VERSION]] if Dataprovider.FIELD_NAMES.NCI_IF89_VERSION in tool and isinstance(tool[Dataprovider.FIELD_NAMES.NCI_IF89_VERSION], list) else "",
-            "pawsey": [i for i in tool[Dataprovider.FIELD_NAMES.PAWSEY_SETONIX_VERSION]] if Dataprovider.FIELD_NAMES.PAWSEY_SETONIX_VERSION in tool and isinstance(tool[Dataprovider.FIELD_NAMES.PAWSEY_SETONIX_VERSION], list) else "",
-            "bunya": [i for i in tool[Dataprovider.FIELD_NAMES.QRISCLOUD_VERSION]] if Dataprovider.FIELD_NAMES.QRISCLOUD_VERSION in tool and isinstance(tool[Dataprovider.FIELD_NAMES.QRISCLOUD_VERSION], list) else "",
-        }
+        if tool.get(Dataprovider.FIELD_NAMES.INCLUSION) == True:
+            return {
+                # see https://stackoverflow.com/a/9285148
+                # see https://stackoverflow.com/a/62014515
+                "description": tool.get(Dataprovider.FIELD_NAMES.DESCRIPTION, ""),
+                "name": tool[Dataprovider.FIELD_NAMES.NAME],
+                "homepage": tool[Dataprovider.FIELD_NAMES.REPOSITORY_URL] if not pd.isna(tool[Dataprovider.FIELD_NAMES.REPOSITORY_URL]) else "",
+                "registry-link": tool.get(Dataprovider.FIELD_NAMES.BIOTOOLS_ID, ""),
+                "id": tool[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER],
+                "topics": [i["term"] for i in tool[Dataprovider.FIELD_NAMES.EDAM_TOPICS]] if isinstance(tool[Dataprovider.FIELD_NAMES.EDAM_TOPICS], list) else "",
+                "publications": [translate_publication(i) for i in tool[Dataprovider.FIELD_NAMES.PUBLICATIONS]] if Dataprovider.FIELD_NAMES.PUBLICATIONS in tool and isinstance(tool[Dataprovider.FIELD_NAMES.PUBLICATIONS],list) else "",
+                "biocontainers": tool.get(Dataprovider.FIELD_NAMES.BIOTOOLS_ID, ""),
+                "license": tool.get(Dataprovider.FIELD_NAMES.LICENSE, ""),
+                "resource-documentation": tool.get(Dataprovider.FIELD_NAMES.BIOCOMMONS_DOCUMENTATION_LINK, ""),
+                "galaxy": [translate_galaxy(i) for i in tool[Dataprovider.FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK]] if Dataprovider.FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK in tool and isinstance(tool[Dataprovider.FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK],list) else "",
+                "nci-gadi": [i for i in tool[Dataprovider.FIELD_NAMES.NCI_GADI_VERSION]] if Dataprovider.FIELD_NAMES.NCI_GADI_VERSION in tool and isinstance(tool[Dataprovider.FIELD_NAMES.NCI_GADI_VERSION], list) else "",
+                "nci-if89": [i for i in tool[Dataprovider.FIELD_NAMES.NCI_IF89_VERSION]] if Dataprovider.FIELD_NAMES.NCI_IF89_VERSION in tool and isinstance(tool[Dataprovider.FIELD_NAMES.NCI_IF89_VERSION], list) else "",
+                "pawsey": [i for i in tool[Dataprovider.FIELD_NAMES.PAWSEY_SETONIX_VERSION]] if Dataprovider.FIELD_NAMES.PAWSEY_SETONIX_VERSION in tool and isinstance(tool[Dataprovider.FIELD_NAMES.PAWSEY_SETONIX_VERSION], list) else "",
+                "bunya": [i for i in tool[Dataprovider.FIELD_NAMES.QRISCLOUD_VERSION]] if Dataprovider.FIELD_NAMES.QRISCLOUD_VERSION in tool and isinstance(tool[Dataprovider.FIELD_NAMES.QRISCLOUD_VERSION], list) else "",
+            }
 
 
     def get_formatted_yaml(self):

@@ -21,23 +21,7 @@
   - Sequence assembly
   - Mapping
   - DNA
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: abaqus
-  license: ''
-  name: abaqus
-  nci-gadi:
-  - '2020'
-  - '2021'
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ABRicate
   bunya:
   - 1.0.0-gompi-2021a
@@ -67,8 +51,8 @@
   bunya: ''
   description: De novo genome sequence assembler using short reads.
   galaxy:
-  - title: ABySS 2.3.6+galaxy1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fabyss%2Fabyss-pe%2F2.3.6%2Bgalaxy1
+  - title: ABySS 2.3.7+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fabyss%2Fabyss-pe%2F2.3.7%2Bgalaxy0
   homepage: https://github.com/bcgsc/abyss/
   id: abyss
   license: GPL-3.0
@@ -86,42 +70,8 @@
   resource-documentation: .nan
   topics:
   - Sequence assembly
-- biocontainers: ''
-  bunya:
-  - 0.9.1-gcc-10.3.0
-  description: ''
-  galaxy: ''
-  homepage: https://github.com/AdaptiveCpp/AdaptiveCpp
-  id: hipsycl
-  license: ''
-  name: AdaptiveCpp
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://its.unc.edu/research-computing/techdocs/amsterdam-density-functional-adf/
-  id: adf
-  license: ''
-  name: adf
-  nci-gadi:
-  - adf2019.102
-  - adf2019.301
-  - adf2017.103
-  - adf2020.102
-  - adf2022.102
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -158,21 +108,7 @@
   topics:
   - Data mining
   - Machine learning
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://github.com/tanghaibao/jcvi/wiki/ALLMAPS
-  id: allmaps
-  license: ''
-  name: ALLMAPS
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: allpaths-lg
   bunya: ''
   description: Short read assembler that works on both small and large (mammalian
@@ -268,27 +204,7 @@
   topics:
   - Genomics
   - Sequence assembly
-- biocontainers: AMR
-  bunya: ''
-  description: An R Package for Working with Antimicrobial Resistance Data.
-  galaxy: ''
-  homepage: https://msberends.github.io/AMR/
-  id: amr
-  license: GPL-2.0
-  name: AMR++
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications:
-  - title: 10.1101/810622
-    url: https://doi.org/10.1101/810622
-  registry-link: AMR
-  resource-documentation: .nan
-  topics:
-  - Microbiology
-  - Public health and epidemiology
-  - Data quality management
-  - Infectious disease
+- null
 - biocontainers: anaconda
   bunya:
   - '2022.05'
@@ -369,8 +285,8 @@
     be found at the Bioconductor website, for example, information on the human annotation
     package (org.Hs.eg.db) can be found here.
   galaxy:
-  - title: annotateMyIDs 3.17.0+galaxy1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fannotatemyids%2Fannotatemyids%2F3.17.0%2Bgalaxy1
+  - title: annotateMyIDs 3.18.0+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fannotatemyids%2Fannotatemyids%2F3.18.0%2Bgalaxy0
   homepage: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fannotatemyids%2Fannotatemyids%2F3.12.0%2Bgalaxy1
   id: annotatemyids
   license: MIT
@@ -382,59 +298,9 @@
   registry-link: annotatemyids
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya:
-  - 2023.1           gurobi
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: ansys
-  license: ''
-  name: ansys
-  nci-gadi:
-  - 2021r1
-  - 2021r2
-  - 2022r1
-  - 2022r2
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: ansys_edt
-  license: ''
-  name: ansys_edt
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 1.10.9-java-11
-  - 1.10.12-java-11                       (D)
-  description: ''
-  galaxy: ''
-  homepage: https://ant.apache.org/
-  id: ant
-  license: ''
-  name: ant
-  nci-gadi:
-  - 1.10.7
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
+- null
 - biocontainers: antismash
   bunya: ''
   description: Rapid genome-wide identification, annotation and analysis of secondary
@@ -467,50 +333,8 @@
   topics:
   - Molecular interactions, pathways and networks
   - Gene and protein families
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: anuga
-  license: ''
-  name: anuga
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: anvio
-  bunya: ''
-  description: "Anvi\u2019o is an open-source, community-driven analysis and visualization\
-    \ platform for microbial \u2018omics. It brings together many aspects of today\u2019\
-    s cutting-edge strategies including genomics, metagenomics, metatranscriptomics,\
-    \ pangenomics, metapangenomics, phylogenomics, and microbial population genetics\
-    \ in an integrated and easy-to-use fashion through extensive interactive visualization\
-    \ capabilities."
-  galaxy: ''
-  homepage: https://merenlab.org/software/anvio/
-  id: anvio
-  license: GPL-3.0
-  name: Anvio
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications:
-  - title: "Community-led, integrated, reproducible multi-omics with anvi\u2019o"
-    url: https://doi.org/10.1038/s41564-020-00834-3
-  - title: 'Anvi''o: An advanced analysis and visualization platformfor ''omics data'
-    url: https://doi.org/10.7717/peerj.1319
-  registry-link: anvio
-  resource-documentation: .nan
-  topics:
-  - Microbiology
-  - Transcriptomics
-  - Phylogenomics
-  - Metagenomics
-  - Omics
+- null
+- null
 - biocontainers: any2fasta
   bunya:
   - 0.4.2-gcccore-10.3.0
@@ -529,36 +353,8 @@
   topics:
   - Data quality management
   - Genomics
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: aocc
-  license: ''
-  name: aocc
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: apbs
-  license: ''
-  name: apbs
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
 - biocontainers: apollo
   bunya: ''
   description: Apollo is a genome annotation viewer and editor. Apollo allows researchers
@@ -604,22 +400,7 @@
   topics:
   - Functional, regulatory and non-coding RNA
   - Genomics
-- biocontainers: ''
-  bunya:
-  - 0.1.2-gcccore-10.3.0
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: archspec
-  license: ''
-  name: archspec
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -636,71 +417,10 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://arimagenomics.com/assembly
-  id: arima mapping
-  license: ''
-  name: arima mapping
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://www.arm.com/products/development-tools/server-and-hpc/forge
-  id: arm-forge
-  license: ''
-  name: arm-forge
-  nci-gadi:
-  - 20.0.2
-  - '21.0'
-  - 22.1.1
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: arm-reports
-  license: ''
-  name: arm-reports
-  nci-gadi:
-  - 20.0.2
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://github.com/opencollab/arpack-ng
-  id: arpack-ng
-  license: ''
-  name: arpack-ng
-  nci-gadi:
-  - 3.7.0
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
+- null
+- null
 - biocontainers: Arriba
   bunya: ''
   description: Arriba is a command-line tool to detect gene fusions from RNA-Seq data
@@ -756,56 +476,9 @@
   resource-documentation: .nan
   topics:
   - Data visualisation
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://wiki.fysik.dtu.dk/ase/index.html
-  id: ase
-  license: ''
-  name: ASE
-  nci-gadi:
-  - 3.18.1
-  - 3.20.1
-  - 3.22.0
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://www.aspera.com/en/
-  id: aspera
-  license: ''
-  name: Aspera
-  nci-gadi:
-  - 3.9.6
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 4.2.1.198    huygens
-  description: ''
-  galaxy: ''
-  homepage: https://vsni.co.uk/software/asreml
-  id: asreml-as
-  license: ''
-  name: asreml-as
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
+- null
 - biocontainers: astral
   bunya: ''
   description: Java program for estimating a species tree given a set of unrooted
@@ -882,21 +555,7 @@
   topics:
   - Gene transcripts
   - Gene and protein families
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://www.gnu.org/software/autoconf/
-  id: autoconf
-  license: ''
-  name: Autoconf
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: autodock_vina
   bunya: ''
   description: AutoDock Vina is a new open-source program for drug discovery, molecular
@@ -927,21 +586,7 @@
   - Drug discovery
   - Molecular modelling
   - Molecular docking
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://www.gnu.org/software/automake/
-  id: automake
-  license: ''
-  name: Automake
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: bakta
   bunya: ''
   description: Rapid & standardized annotation of bacterial genomes, MAGs & plasmids
@@ -1132,57 +777,9 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://github.com/workflow4metabolomics/batch_correction
-  id: batchcorrection
-  license: ''
-  name: batchcorrection
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://bazel.build/
-  id: bazel
-  license: ''
-  name: bazel
-  nci-gadi:
-  - 0.26.0
-  - 0.27.1
-  - 3.1.0
-  - 4.1.0
-  - 4.2.1
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://www.slac.stanford.edu/~abh/bbcp/
-  id: bbcp
-  license: ''
-  name: bbcp
-  nci-gadi:
-  - 15.02.03.00.1
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
+- null
 - biocontainers: bbmap
   bunya:
   - 38.96-gcc-10.3.0
@@ -1659,42 +1256,8 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: binsanity
-  bunya: ''
-  description: Unsupervised Clustering of Environmental Microbial Assemblies Using
-    Coverage and Affinity Propagation
-  galaxy: ''
-  homepage: https://github.com/edgraham/BinSanity
-  id: binsanity
-  license: GPL-3.0
-  name: BinSanity
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications:
-  - title: 'Binsanity: Unsupervised clustering of environmental microbial assemblies
-      using coverage and affinity propagation'
-    url: https://doi.org/10.7717/peerj.3035
-  registry-link: binsanity
-  resource-documentation: .nan
-  topics:
-  - Metagenomics
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://www.gnu.org/software/binutils/
-  id: binutils
-  license: ''
-  name: binutils
-  nci-gadi:
-  - 2.36.1
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -1877,21 +1440,7 @@
   topics:
   - Laboratory information management
   - Sequence analysis
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://bionanogenomics.com/support-page/bionano-access-software/
-  id: Bionano Access
-  license: ''
-  name: Bionano Access
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -2134,27 +1683,7 @@
   topics:
   - Sequence analysis
   - Bioinformatics
-- biocontainers: blastkoala
-  bunya: ''
-  description: BlastKOALA (KEGG Orthology And Links Annotation) is a KEGG Web service
-    for annotating genomes and understanding organisms.
-  galaxy: ''
-  homepage: https://www.kegg.jp/blastkoala/
-  id: blastkoala
-  license: ''
-  name: BlastKOALA
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications:
-  - title: 'BlastKOALA and GhostKOALA: KEGG Tools for Functional Characterization
-      of Genome and Metagenome Sequences'
-    url: https://doi.org/10.1016/j.jmb.2015.11.006
-  registry-link: blastkoala
-  resource-documentation: .nan
-  topics:
-  - Metagenomics
-  - Molecular interactions, pathways and networks
+- null
 - biocontainers: blat
   bunya:
   - 3.7-gcc-11.3.0
@@ -2175,73 +1704,9 @@
   resource-documentation: .nan
   topics:
   - Sequence analysis
-- biocontainers: ''
-  bunya:
-  - 0.8.1-gcc-10.3.0
-  - 0.9.0-gcc-11.3.0
-  - 0.9.0-gcc-12.3.0                     (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: blis
-  license: ''
-  name: blis
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: BlobToolKit
-  bunya: ''
-  description: BlobToolKit Viewer is a genome-scale dataset visualistion tool developed
-    as part of the blobtoolkit project to allow browser-based identification and filtering
-    of target and non-target data in genome assemblies.
-  galaxy:
-  - title: BlobToolKit 4.0.7+galaxy1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Fblobtoolkit%2Fblobtoolkit%2F4.0.7%2Bgalaxy1
-  homepage: https://blobtoolkit.genomehubs.org/view
-  id: BlobToolKit
-  license: MIT
-  name: BlobToolKit
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications:
-  - title: 10.1101/844852
-    url: https://doi.org/10.1101/844852
-  - title: BlobToolKit - interactive quality assessment of genome assemblies
-    url: https://doi.org/10.1534/g3.119.400908
-  registry-link: BlobToolKit
-  resource-documentation: .nan
-  topics:
-  - Sequence assembly
-  - Model organisms
-  - Workflows
-  - Phylogenomics
-  - Zoology
-- biocontainers: blobtools
-  bunya: ''
-  description: Visualisation, quality control and taxonomic partitioning of genome
-    datasets.
-  galaxy: ''
-  homepage: https://github.com/DRL/blobtools
-  id: blobtools
-  license: GPL-3.0
-  name: BlobTools1
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications:
-  - title: 10.12688/f1000research.12232.1
-    url: https://doi.org/10.12688/f1000research.12232.1
-  registry-link: blobtools
-  resource-documentation: .nan
-  topics:
-  - Genomics
-  - Sequence assembly
-  - Data management
+- null
+- null
+- null
 - biocontainers: blockbuster
   bunya: ''
   description: detect blocks of overlapping reads using a gaussian-distribution approach
@@ -2322,23 +1787,7 @@
   - Pure mathematics
   - Imaging
   - Software engineering
-- biocontainers: ''
-  bunya:
-  - 1.76.0-gcc-10.3.0
-  - 1.79.0-gcc-11.3.0            (D)
-  description: ''
-  galaxy: ''
-  homepage: https://www.boost.org/doc/libs/1_84_0/libs/python/doc/html/index.html
-  id: boost.python
-  license: ''
-  name: Boost.Python
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: bowtie
   bunya:
   - 1.3.1-gcc-11.3.0
@@ -2518,38 +1967,8 @@
   - Sequencing
   - Sequence analysis
   - DNA mutation
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://github.com/pace/bricks
-  id: bricks
-  license: ''
-  name: BRICKS
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 1.0.9-gcccore-10.3.0
-  - 1.0.9-gcccore-11.3.0               (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: brotli
-  license: ''
-  name: brotli
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
 - biocontainers: bsmap
   bunya: ''
   description: short reads mapping software for bisulfite sequencing
@@ -2568,24 +1987,7 @@
   resource-documentation: .nan
   topics:
   - Epigenetics
-- biocontainers: bs_seeker
-  bunya: ''
-  description: Mapping tool for bisulfite treated reads.
-  galaxy: ''
-  homepage: http://pellegrini.mcdb.ucla.edu/BS_Seeker/BS_Seeker.html
-  id: bs_seeker
-  license: ''
-  name: bsseeker
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications:
-  - title: 'BS Seeker: Precise mapping for bisulfite sequencing'
-    url: https://doi.org/None
-  registry-link: bs_seeker
-  resource-documentation: .nan
-  topics:
-  - Epigenomics
+- null
 - biocontainers: bs-seeker2
   bunya: ''
   description: A versatile aligning pipeline for bisulfite sequencing data.
@@ -2802,21 +2204,7 @@
   resource-documentation: .nan
   topics:
   - Sequence analysis
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: http://www.bzip.org/
-  id: bzip2
-  license: ''
-  name: bzip2
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: C3
   bunya: ''
   description: Consensus Cancer Driver Gene Caller | Next-generation sequencing has
@@ -2882,21 +2270,7 @@
   - Sequence assembly
   - Mapping
   - Phylogenetics
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: http://cgenome.net/wiki/index.php/Calypso
-  id: calypso
-  license: ''
-  name: Calypso
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: camera
   bunya: ''
   description: Annotation of peaklists generated by xcms, rule based annotation of
@@ -2974,22 +2348,7 @@
   - Sequencing
   - Sequence analysis
   - Genetic variation
-- biocontainers: ''
-  bunya:
-  - 0.9.1-gcccore-10.3.0
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: capnproto
-  license: ''
-  name: capnproto
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: cardinal
   bunya: ''
   description: Implements statistical and computational tools for analyzing mass spectrometry
@@ -3029,23 +2388,7 @@
   topics:
   - Proteomics
   - Data visualisation
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://www.tcm.phy.cam.ac.uk/castep/documentation/WebHelp/content/modules/castep/abtcastep.htm
-  id: castep
-  license: ''
-  name: castep
-  nci-gadi:
-  - '2018'
-  - '2020'
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: cat_bins
   bunya: ''
   description: Contig Annotation Tool (CAT) and Bin Annotation Tool (BAT) are pipelines
@@ -3093,21 +2436,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: ccam
-  license: ''
-  name: ccam
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: cd-hit
   bunya:
   - 4.8.1-gcc-10.3.0
@@ -3141,25 +2470,7 @@
   resource-documentation: .nan
   topics:
   - Sequencing
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://portal.enes.org/models/software-tools/cdo
-  id: cdo
-  license: ''
-  name: cdo
-  nci-gadi:
-  - 1.9.8
-  - 1.7.2
-  - 1.9.10
-  - 2.0.5
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: celseq2
   bunya:
   - 0.5.3
@@ -3309,130 +2620,14 @@
   topics:
   - Transcriptomics
   - Cell biology
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://hub.docker.com/r/centos/tools/
-  id: centos
-  license: ''
-  name: centos
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://hub.docker.com/r/centos/tools/
-  id: centos6
-  license: ''
-  name: centos6
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 1.3.0
-  description: ''
-  galaxy: ''
-  homepage: https://github.com/USCiLab/cereal
-  id: cereal
-  license: ''
-  name: cereal
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: cern
-  license: ''
-  name: cern
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: cfdem
-  license: ''
-  name: cfdem
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: cfdpp
-  license: ''
-  name: cfdpp
-  nci-gadi:
-  - '19.1'
-  - '20.1'
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://heasarc.gsfc.nasa.gov/fitsio/
-  id: cfitsio
-  license: ''
-  name: CFITSIO
-  nci-gadi:
-  - '3.47'
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: cgal
-  license: ''
-  name: cgal
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -3695,21 +2890,7 @@
   registry-link: chunkchromosome
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: cilk
-  license: ''
-  name: cilk
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -3789,39 +2970,8 @@
   topics:
   - Comparative genomics
   - Data visualisation
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: cistem
-  license: ''
-  name: cisTEM
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 12.0.1-gcccore-10.3.0
-  - 13.0.1-gcccore-11.3.0
-  - 15.0.5-gcccore-11.3.0               (D)
-  description: ''
-  galaxy: ''
-  homepage: https://clang.llvm.org/
-  id: clang
-  license: ''
-  name: Clang
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -3992,30 +3142,7 @@
   resource-documentation: .nan
   topics:
   - Statistics and probability
-- biocontainers: ''
-  bunya:
-  - 3.12.1
-  - 3.20.1-gcccore-10.3.0
-  - 3.23.1-gcccore-11.3.0
-  - 3.24.3-gcccore-11.3.0
-  - 3.26.3-gcccore-12.3.0               (D)
-  description: ''
-  galaxy: ''
-  homepage: https://cmake.org/
-  id: cmake
-  license: ''
-  name: cmake
-  nci-gadi:
-  - 3.16.2
-  - 3.18.2
-  - 3.21.4
-  - 3.24.2
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: cnvkit
   bunya: ''
   description: CNVkit is a software toolkit to infer and visualize copy number from
@@ -4036,21 +3163,7 @@
   resource-documentation: .nan
   topics:
   - DNA structural variation
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: cogent
-  license: ''
-  name: cogent
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: colabfold
   bunya: ''
   description: ColabFold databases are MMseqs2 expandable profile databases to generate
@@ -4112,23 +3225,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: comsol
-  license: ''
-  name: comsol
-  nci-gadi:
-  - '5.4'
-  - '5.5'
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -4175,21 +3272,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://www.gnu.org/software/coreutils/
-  id: coreutils
-  license: ''
-  name: coreutils
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -4207,30 +3290,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya:
-  - 8.2-foss-2021a
-  - 9.1-foss-2022a                       (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: cp2k
-  license: ''
-  name: cp2k
-  nci-gadi:
-  - 6.1.0
-  - 7.1.0
-  - 8.1.0
-  - 8.2.0
-  - 9.1.0
-  - '2022.1'
-  - 2022.2-gpuvolta
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: cpat
   bunya: ''
   description: "CPAT (Coding-Potential Assessment Tool) is a logistic regression model-based\
@@ -4260,55 +3320,9 @@
   - Gene transcripts
   - RNA-Seq
   - Transcription factors and regulatory sites
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: cpmd
-  license: ''
-  name: cpmd
-  nci-gadi:
-  - '4.3'
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://sourceforge.net/projects/cppunit/
-  id: cppunit
-  license: ''
-  name: cppunit
-  nci-gadi:
-  - 1.14.0
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 1.1.0-gcccore-10.3.0
-  - 1.2.1-gcccore-11.3.0                 (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: cppy
-  license: ''
-  name: cppy
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -4324,36 +3338,8 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://crystalexplorer.scb.uwa.edu.au/
-  id: crystalexplorer
-  license: ''
-  name: crystalexplorer
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: cst
-  license: ''
-  name: cst
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -4371,23 +3357,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://hbp-hpc-platform.fz-juelich.de/?hbp_software=cube-score-p-scalasca
-  id: cube
-  license: ''
-  name: cube
-  nci-gadi:
-  - '4.4'
-  - '4.5'
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -4498,37 +3468,8 @@
   resource-documentation: .nan
   topics:
   - Sequencing
-- biocontainers: ''
-  bunya:
-  - 2.1-3-gcccore-11.3.0
-  description: ''
-  galaxy: ''
-  homepage: https://cunit.sourceforge.net/
-  id: cunit
-  license: ''
-  name: CUnit
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://curl.se/
-  id: curl
-  license: ''
-  name: curl
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
 - biocontainers: customprodb
   bunya: ''
   description: Generate customized protein sequence database from RNA-Seq data for
@@ -4597,21 +3538,7 @@
   - Genomics
   - Probes and primers
   - Sequencing
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: cutensor
-  license: ''
-  name: cutensor
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: cuteSV
   bunya: ''
   description: Long Read based Human Genomic Structural Variation Detection with cuteSV
@@ -4732,40 +3659,8 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://daltonprogram.org/
-  id: dalton
-  license: ''
-  name: dalton
-  nci-gadi:
-  - '2018.2'
-  - '2020'
-  - 2020-i8
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://www.mcs.anl.gov/research/projects/darshan/
-  id: darshan
-  license: ''
-  name: darshan
-  nci-gadi:
-  - 3.2.1
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -4783,40 +3678,8 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya:
-  - 18.1.40-gcccore-10.3.0
-  - 18.1.40-gcccore-11.3.0                 (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: db
-  license: ''
-  name: db
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 1.856-gcccore-10.3.0
-  - 1.858-gcccore-11.3.0              (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: db_file
-  license: ''
-  name: db_file
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -4834,22 +3697,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya:
-  - 4.050-gcc-11.3.0
-  description: ''
-  galaxy: ''
-  homepage: https://github.com/perl5-dbi/DBD-mysql
-  id: dbd-mysql
-  license: ''
-  name: dbd-mysql
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -5099,25 +3947,7 @@
   - Mobile genetic elements
   - Sequence assembly
   - Plant biology
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://dftbplus.org/
-  id: dftbplus
-  license: ''
-  name: dftbplus
-  nci-gadi:
-  - '19.1'
-  - '20.1'
-  - '21.1'
-  - '22.1'
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: DIA-NN
   bunya: ''
   description: 'Neural networks and interference correction enable deep proteome coverage
@@ -5260,38 +4090,8 @@
   resource-documentation: .nan
   topics:
   - ChIP-seq
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: dimemas
-  license: ''
-  name: dimemas
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: dmol3
-  license: ''
-  name: dmol3
-  nci-gadi:
-  - '2018'
-  - '2020'
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
 - biocontainers: dms_tools2
   bunya: ''
   description: dms_tools2 is a software package for analyzing deep mutational scanning
@@ -5313,53 +4113,9 @@
   resource-documentation: .nan
   topics:
   - Genetic variation
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://github.com/dmtcp/dmtcp
-  id: dmtcp
-  license: ''
-  name: dmtcp
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: dot
-  license: ''
-  name: dot
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 3.1.5-gcccore-10.3.0
-  - 3.2.0-gcccore-11.3.0    (D)
-  description: ''
-  galaxy: ''
-  homepage: https://github.com/google/double-conversion
-  id: double-conversion
-  license: ''
-  name: double-conversion
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -5471,22 +4227,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://www.dyninst.org/
-  id: dyninst
-  license: ''
-  name: dyninst
-  nci-gadi:
-  - 11.0.1
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: eagleimp
   bunya:
   - '1.10'
@@ -5546,38 +4287,8 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: eccodes
-  license: ''
-  name: eccodes
-  nci-gadi:
-  - 2.26.0
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: eccodes-pylib
-  license: ''
-  name: eccodes-pylib
-  nci-gadi:
-  - 1.4.2
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
 - biocontainers: edena
   bunya: ''
   description: A program for assembling de novo bacterial genomes from short reads
@@ -5750,22 +4461,7 @@
   resource-documentation: .nan
   topics:
   - Systems biology
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: eigen
-  license: ''
-  name: eigen
-  nci-gadi:
-  - 3.3.7
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: elastix
   bunya: ''
   description: 'Evaluation of an Open Source Registration Package for Automatic Contour
@@ -5812,56 +4508,9 @@
   - Medical imaging
   - Oncology
   - Model organisms
-- biocontainers: ''
-  bunya:
-  - 2021.05.001-foss-2021a
-  - 2021.11.001-foss-2022a               (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: elpa
-  license: ''
-  name: elpa
-  nci-gadi:
-  - 2021.05.002
-  - 2022.05.001
-  - 2022.05.001-gpuvolta
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://blake.bcm.edu/emanwiki/EMAN2
-  id: eman2
-  license: ''
-  name: eman2
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://github.com/UQ-RCC/nimrod-embedded
-  id: embedded-nimrod
-  license: ''
-  name: embedded-nimrod
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
+- null
 - biocontainers: emboss
   bunya: ''
   description: Diverse suite of tools for sequence analysis; many programs analagous
@@ -6227,53 +4876,9 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: http://may2012.archive.ensembl.org/info/docs/genebuild/genome_annotation.html
-  id: genebuild
-  license: ''
-  name: Ensembl Genebuild
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: http://erlang.org/faq/introduction.html
-  id: erlang
-  license: ''
-  name: Erlang
-  nci-gadi:
-  - '22.1'
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: esmf
-  license: ''
-  name: esmf
-  nci-gadi:
-  - 8.0.1
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -6421,21 +5026,7 @@
   - Sequence analysis
   - Sequence sites, features and motifs
   - Molecular interactions, pathways and networks
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: expecttest
-  license: ''
-  name: expecttest
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -6523,21 +5114,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://tools.bsc.es/extrae
-  id: extrae
-  license: ''
-  name: Extrae
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ''
   bunya:
   - 1.1--h0326b38_1
@@ -7018,21 +5595,7 @@
   resource-documentation: .nan
   topics:
   - Sequence analysis
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: feko
-  license: ''
-  name: feko
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ''
   bunya:
   - 20190320-gcccore-10.3.0
@@ -7049,166 +5612,14 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: ferret
-  license: ''
-  name: ferret
-  nci-gadi:
-  - 7.5.0
-  - 7.6.0
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 4.3.2-gcccore-10.3.0
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: ffmpeg
-  license: ''
-  name: ffmpeg
-  nci-gadi:
-  - 4.1.3
-  - 4.3.1
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 11.1.5.2
-  description: ''
-  galaxy: ''
-  homepage: https://software.opensuse.org/package/ffnvcodec
-  id: ffnvcodec
-  license: ''
-  name: ffnvcodec
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 3.3.9-gompi-2021a
-  - 3.3.10-gcc-11.3.0
-  - 3.3.10-gcc-12.3.0                    (D)
-  description: ''
-  galaxy: ''
-  homepage: https://github.com/FFTW
-  id: fftw
-  license: ''
-  name: fftw
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 3.3.10-gompi-2022a
-  - 3.3.10-gompi-2023a               (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: fftw.mpi
-  license: ''
-  name: fftw.mpi
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://github.com/FFTW
-  id: fftw2-mkl
-  license: ''
-  name: fftw2-mkl
-  nci-gadi:
-  - 2019.3.199
-  - 2019.4.243
-  - 2019.5.281
-  - 2020.0.166
-  - 2020.1.217
-  - 2020.2.254
-  - 2020.3.304
-  - 2021.1.1
-  - 2021.2.0
-  - 2021.3.0
-  - 2021.4.0
-  - 2022.0.2
-  - 2022.1.0
-  - 2022.2.0
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://github.com/FFTW
-  id: fftw3
-  license: ''
-  name: fftw3
-  nci-gadi:
-  - 3.3.8
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://github.com/FFTW
-  id: fftw3-mkl
-  license: ''
-  name: fftw3-mkl
-  nci-gadi:
-  - 2019.3.199
-  - 2019.4.243
-  - 2019.5.281
-  - 2020.1.217
-  - 2020.2.254
-  - 2020.3.304
-  - 2020.0.166
-  - 2021.1.1
-  - 2021.2.0
-  - 2021.3.0
-  - 2021.4.0
-  - 2022.0.2
-  - 2022.1.0
-  - 2022.2.0
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
 - biocontainers: fgenesh
   bunya: ''
   description: HMM-based gene structure prediction (multiple genes, both chains);
@@ -7251,22 +5662,7 @@
   resource-documentation: .nan
   topics:
   - Genetics
-- biocontainers: ''
-  bunya:
-  - 20191210-gcccore-10.3.0
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: filevercmp
-  license: ''
-  name: filevercmp
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -7319,38 +5715,8 @@
   registry-link: filtlong
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: firefox
-  license: ''
-  name: firefox
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 1.3.3-gcccore-10.3.0
-  - 1.3.4-gcccore-11.3.0                 (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: flac
-  license: ''
-  name: flac
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
 - biocontainers: flashlfq
   bunya: ''
   description: FlashLFQ is an ultrafast label-free quantification algorithm for mass-spectrometry
@@ -7389,40 +5755,8 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya:
-  - 3.0.4-gcc-10.3.0
-  - 3.2.0-gcc-11.3.0
-  - 3.3.1-gcc-12.3.0                (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: flexiblas
-  license: ''
-  name: flexiblas
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://www.fltk.org/index.php
-  id: fltk
-  license: ''
-  name: fltk
-  nci-gadi:
-  - 1.3.5
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
 - biocontainers: Flye
   bunya:
   - 2.9-gcc-10.3.0
@@ -7498,54 +5832,9 @@
   resource-documentation: .nan
   topics:
   - Proteins
-- biocontainers: ''
-  bunya:
-  - 2021a
-  - 2022a
-  - 2023a                                (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: foss
-  license: ''
-  name: foss
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://sourceforge.net/projects/fpart/
-  id: fpart
-  license: ''
-  name: fpart
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://fpm.readthedocs.io/en/latest/
-  id: fpm
-  license: ''
-  name: fpm
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
+- null
 - biocontainers: fpocket
   bunya: ''
   description: Web server which detects small molecule pockets by relying on the geometric
@@ -7596,21 +5885,7 @@
   topics:
   - Genetics
   - Sequence analysis
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: frealign
-  license: ''
-  name: frealign
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: freebayes
   bunya:
   - 1.3.6-foss-2021a-r-4.1.0
@@ -7637,22 +5912,7 @@
   - Genomics
   - Genetic variation
   - Rare diseases
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://freeimage.sourceforge.io/
-  id: freeimage
-  license: ''
-  name: freeimage
-  nci-gadi:
-  - 3.18.0
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: freesurfer
   bunya: ''
   description: Wrapper functions that interface with 'Freesurfer', a powerful and
@@ -8044,28 +6304,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: gamess
-  license: ''
-  name: gamess
-  nci-gadi:
-  - 2019-09-R2
-  - 2019-06-R1
-  - 2020-06-R1
-  - 2020-R2
-  - 2021-R1
-  - 2021-R2-p1
-  - 2022-R2
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: gatk
   bunya:
   - 4.3.0.0-gcccore-11.3.0-java-11
@@ -8099,28 +6338,7 @@
   - Genetic variation
   - Sequencing
   - Workflows
-- biocontainers: ''
-  bunya:
-  - 16.b.01-sse
-  - 16.b.01-gv    star-ccm+
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: gaussian
-  license: ''
-  name: gaussian
-  nci-gadi:
-  - gv-6016
-  - gv-509
-  - g16c01
-  - g09e01
-  - g16a03
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: gblocks
   bunya: ''
   description: Cleaning aligned sequences.
@@ -8145,28 +6363,7 @@
   resource-documentation: .nan
   topics:
   - Sequence analysis
-- biocontainers: ''
-  bunya:
-  - 10.3.0
-  - 11.3.0
-  - 12.3.0                                (D)
-  description: ''
-  galaxy: ''
-  homepage: https://gcc.gnu.org/
-  id: gcc
-  license: ''
-  name: GCC
-  nci-gadi:
-  - system
-  - 11.1.0
-  - 10.3.0
-  - 12.2.0
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: gcta
   bunya:
   - 1.94.0beta-gfbf-2022a
@@ -8190,56 +6387,9 @@
   resource-documentation: .nan
   topics:
   - GWAS study
-- biocontainers: ''
-  bunya:
-  - 3.3.0-foss-2021a
-  - 3.5.0-foss-2022a                     (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: gdal
-  license: ''
-  name: gdal
-  nci-gadi:
-  - 3.0.2
-  - 3.5.0
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://github.com/gnudatalanguage/gdl
-  id: gdl
-  license: ''
-  name: GDL
-  nci-gadi:
-  - 0.9.9
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: gdrcopy
-  license: ''
-  name: gdrcopy
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
+- null
 - biocontainers: gecko
   bunya: ''
   description: Software aimed at pairwise sequence comparison generating high quality
@@ -8558,24 +6708,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya:
-  - 3.9.1-gcc-10.3.0
-  - 3.10.3-gcc-11.3.0                    (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: geos
-  license: ''
-  name: geos
-  nci-gadi:
-  - 3.8.0
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -8660,22 +6793,7 @@
   resource-documentation: .nan
   topics:
   - Computational biology
-- biocontainers: ''
-  bunya:
-  - 2022a
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: gfbf
-  license: ''
-  name: gfbf
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -8817,10 +6935,10 @@
   bunya: ''
   description: Plotting system for R, based on the grammar of graphics.
   galaxy:
+  - title: heatmap2 3.1.3.1+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fggplot2_heatmap2%2Fggplot2_heatmap2%2F3.1.3.1%2Bgalaxy0
   - title: Histogram with ggplot2 3.4.0+galaxy0
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fggplot2_histogram%2Fggplot2_histogram%2F3.4.0%2Bgalaxy0
-  - title: heatmap2 3.1.3+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fggplot2_heatmap2%2Fggplot2_heatmap2%2F3.1.3%2Bgalaxy0
   - title: Heatmap w ggplot 3.4.0+galaxy0
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fggplot2_heatmap%2Fggplot2_heatmap%2F3.4.0%2Bgalaxy0
   - title: Scatterplot with ggplot2 3.4.0+galaxy1
@@ -8860,90 +6978,11 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya:
-  - 2.32.0-gcccore-10.3.0-nodocs
-  - 2.36.0-gcccore-11.3.0-nodocs          (D)
-  description: ''
-  galaxy: ''
-  homepage: https://git-scm.com/about
-  id: git
-  license: ''
-  name: Git
-  nci-gadi:
-  - 2.24.1
-  - 2.37.3
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 3.1.18-gcccore-10.3.0
-  - 3.1.27-gcccore-11.3.0           (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: gitpython
-  license: ''
-  name: gitpython
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: http://glew.sourceforge.net/
-  id: glew
-  license: ''
-  name: glew
-  nci-gadi:
-  - 2.1.0
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://github.com/glfw/glfw
-  id: glfw
-  license: ''
-  name: glfw
-  nci-gadi:
-  - 3.3.2
-  - 3.3.5
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://sourceware.org/git/?p=glibc.git
-  id: glibc
-  license: ''
-  name: glibc
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
+- null
+- null
+- null
 - biocontainers: glimmer
   bunya: ''
   description: System for finding genes in microbial DNA, especially the genomes of
@@ -8992,23 +7031,7 @@
   topics:
   - Gene structure
   - Genomics
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://github.com/GlobalArrays/ga
-  id: ga
-  license: ''
-  name: Global Arrays (GA) toolkit
-  nci-gadi:
-  - '5.7'
-  - 5.7.2
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -9087,55 +7110,9 @@
   resource-documentation: .nan
   topics:
   - Mapping
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://github.com/epam/GMP
-  id: gmp
-  license: ''
-  name: gmp
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: gmsh
-  license: ''
-  name: gmsh
-  nci-gadi:
-  - 4.4.1
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: gmt
-  license: ''
-  name: gmt
-  nci-gadi:
-  - 4.5.18
-  - 6.0.0
-  - 6.3.0
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -9151,21 +7128,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://www.gnu.org/software/libtool/manual/libtool.html
-  id: libtool
-  license: ''
-  name: GNU libtool
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: parallel
   bunya:
   - 20210622-gcccore-10.3.0
@@ -9208,70 +7171,10 @@
   registry-link: gsl
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://sourceforge.net/projects/cbadvanced/
-  id: gnutools
-  license: ''
-  name: GNU Tools
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: gnuplot
-  license: ''
-  name: gnuplot
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 3.7.8-gcccore-11.3.0
-  description: ''
-  galaxy: ''
-  homepage: https://www.gnutls.org/
-  id: gnutls
-  license: ''
-  name: GnuTLS
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 1.18.1
-  - 1.18.3                                 (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: go
-  license: ''
-  name: go
-  nci-gadi: ''
-  nci-if89:
-  - 1.18.3
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
+- null
+- null
 - biocontainers: goenrichment
   bunya: ''
   description: "GOEnrichment is a tool for performing GO enrichment analysis of gene\
@@ -9322,38 +7225,8 @@
   resource-documentation: .nan
   topics:
   - RNA-Seq
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: grads
-  license: ''
-  name: grads
-  nci-gadi:
-  - 2.2.1
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: gradspy
-  license: ''
-  name: gradspy
-  nci-gadi:
-  - 2.2.1
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
 - biocontainers: graftm
   bunya: ''
   description: Scalable, phylogenetically informed classification of genes within
@@ -9393,22 +7266,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya:
-  - 1.3.14-gcccore-11.3.0
-  description: ''
-  galaxy: ''
-  homepage: https://github.com/silnrsi/graphite
-  id: graphite2
-  license: ''
-  name: Graphite
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: graphlan
   bunya: ''
   description: GraPhlAn is a software tool for producing high-quality circular representations
@@ -9438,21 +7296,7 @@
   - Phylogenetics
   - Phylogenomics
   - Cladistics
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: grass
-  license: ''
-  name: grass
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -9468,39 +7312,8 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: grib_api
-  license: ''
-  name: grib_api
-  nci-gadi:
-  - 1.28.0
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 1.22.4-gcccore-10.3.0
-  - 1.22.4-gcccore-11.3.0               (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: groff
-  license: ''
-  name: groff
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
 - biocontainers: gromacs
   bunya:
   - 2021.3-foss-2021a
@@ -9696,38 +7509,8 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya:
-  - 2.24.33-gcccore-11.3.0
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: gtk2
-  license: ''
-  name: gtk2
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 3.24.33-gcccore-11.3.0
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: gtk3
-  license: ''
-  name: gtk3
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
 - biocontainers: gubbins
   bunya: ''
   description: Gubbins is a tool for rapid phylogenetic analysis of large samples
@@ -9766,22 +7549,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya:
-  - 9.5.0           wombat
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: gurobi
-  license: ''
-  name: gurobi
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ''
   bunya:
   - 1.10-gcccore-10.3.0
@@ -9801,22 +7569,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya:
-  - 3.2.1-foss-2021a
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: h5py
-  license: ''
-  name: h5py
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: hadoop
   bunya: ''
   description: The Apache Hadoop software library is a framework that allows for the
@@ -9859,22 +7612,7 @@
   registry-link: hapcut2
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya:
-  - 1.2--h139f625_1
-  description: ''
-  galaxy: ''
-  homepage: https://github.com/marbl/harvest-tools
-  id: harvesttools
-  license: ''
-  name: harvesttools
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -9910,102 +7648,11 @@
   topics:
   - Microbiology
   - Metagenomics
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: hcoll
-  license: ''
-  name: hcoll
-  nci-gadi:
-  - 4.7.3199
-  - 4.7.3202
-  - 4.5.3045
-  - 4.7.3208
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 4.2.15-gcccore-10.3.0
-  - 4.2.15-gcccore-11.3.0                 (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: hdf
-  license: ''
-  name: hdf
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: hdf-eos
-  license: ''
-  name: hdf-eos
-  nci-gadi:
-  - '2.20'
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://support.hdfgroup.org/products/hdf4_tools/
-  id: hdf4
-  license: ''
-  name: hdf4
-  nci-gadi:
-  - 4.2.14
-  - 4.2.15
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 1.10.7-gompi-2021a
-  - 1.12.2-gompi-2022a                   (D)
-  description: ''
-  galaxy: ''
-  homepage: https://support.hdfgroup.org/products/hdf5_tools/
-  id: hdf5
-  license: ''
-  name: hdf5
-  nci-gadi:
-  - 1.8.21
-  - 1.8.21p
-  - 1.10.5
-  - 1.10.5p
-  - 1.10.7
-  - 1.10.7p
-  - 1.12.1
-  - 1.12.1p
-  - 1.12.2
-  - 1.12.2p
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
+- null
+- null
+- null
 - biocontainers: heinz
   bunya: ''
   description: Tool for single-species active module discovery.
@@ -10367,53 +8014,9 @@
   resource-documentation: .nan
   topics:
   - Machine learning
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: howto
-  license: ''
-  name: howto
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: http://hpctoolkit.org/index.html
-  id: hpctoolkit
-  license: ''
-  name: hpctoolkit
-  nci-gadi:
-  - 2021.05.15
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: http://hpctoolkit.org/man/hpcviewer.html
-  id: hpcviewer
-  license: ''
-  name: hpcviewer
-  nci-gadi:
-  - 2021.05.15
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
+- null
 - biocontainers: htseq
   bunya:
   - 2.0.2-foss-2022a
@@ -10549,36 +8152,8 @@
   registry-link: humann2
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: http://huttenhower.sph.harvard.edu/humann3
-  id: humann3
-  license: ''
-  name: HUMAnN3
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: hwrender
-  license: ''
-  name: hwrender
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -10596,21 +8171,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: hyperworks
-  license: ''
-  name: hyperworks
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: HyPhy
   bunya: ''
   description: Software package for the analysis of genetic sequences using techniques
@@ -10638,53 +8199,9 @@
   - Phylogeny
   - Small molecules
   - Molecular interactions, pathways and networks
-- biocontainers: ''
-  bunya:
-  - 6.13.1-gcccore-10.3.0
-  - 6.46.7-gcccore-11.3.0          (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: hypothesis
-  license: ''
-  name: hypothesis
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: ibamr
-  license: ''
-  name: ibamr
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://github.com/enricoschumann/IButils
-  id: ibutils
-  license: ''
-  name: ibutils
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
+- null
 - biocontainers: idba
   bunya: ''
   description: A short read assembler based on iterative De Bruijn graph. It is developed
@@ -10721,24 +8238,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya:
-  - 2021a
-  - 2022a
-  - 2023a                               (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: iimpi
-  license: ''
-  name: iimpi
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ''
   bunya:
   - 7.0.11-14-gcccore-10.3.0
@@ -10757,42 +8257,8 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya:
-  - 2021.2.0-iimpi-2021a
-  - 2022.1.0
-  - 2023.1.0                             (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: imkl
-  license: ''
-  name: imkl
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 2021.2.0-intel-compilers-2021.2.0
-  - 2021.6.0-intel-compilers-2022.1.0
-  - 2021.9.0-intel-compilers-2023.1.0    (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: impi
-  license: ''
-  name: impi
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
 - biocontainers: ipa_hifi
   bunya: ''
   description: Improved Phased Assembler (IPA) is the official PacBio software for
@@ -10922,551 +8388,31 @@
   - Mobile genetic elements
   - Molecular biology
   - Sequence analysis
-- biocontainers: ''
-  bunya:
-  - 2021a
-  - 2022a
-  - 2023a                               (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: intel
-  license: ''
-  name: intel
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: intel_mpi
-  license: ''
-  name: intel_mpi
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: intel_xe
-  license: ''
-  name: intel_xe
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: intel-advisor
-  license: ''
-  name: intel-advisor
-  nci-gadi:
-  - 2021.1.1
-  - 2021.2.0
-  - 2021.3.0
-  - 2021.4.0
-  - 2022.0.0
-  - 2022.1.0
-  - 2022.3.0
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: intel-cc
-  license: ''
-  name: intel-cc
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: intel-ccl
-  license: ''
-  name: intel-ccl
-  nci-gadi:
-  - 2021.1.1
-  - 2021.2.0
-  - 2021.3.0
-  - 2021.4.0
-  - 2021.5.1
-  - 2021.6.0
-  - 2021.7.0
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: intel-compiler
-  license: ''
-  name: intel-compiler
-  nci-gadi:
-  - 2019.3.199
-  - 2019.4.243
-  - 2019.5.281
-  - 2020.0.166
-  - 2020.1.217
-  - 2020.2.254
-  - 2020.3.304
-  - 2021.1.1
-  - 2021.2.0
-  - 2021.3.0
-  - 2021.4.0
-  - 2021.5.0
-  - 2022.1.0
-  - 2021.6.0
-  - 2021.7.0
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: intel-compiler-llvm
-  license: ''
-  name: intel-compiler-llvm
-  nci-gadi:
-  - 2022.0.0
-  - 2022.1.0
-  - 2022.2.0
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 2021.2.0
-  - 2022.1.0
-  - 2023.1.0                  (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: intel-compilers
-  license: ''
-  name: intel-compilers
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: intel-daal
-  license: ''
-  name: intel-daal
-  nci-gadi:
-  - 2021.1.1
-  - 2021.2.0
-  - 2021.3.0
-  - 2021.4.0
-  - 2021.5.3
-  - 2021.6.0
-  - 2021.7.0
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: intel-dnnl
-  license: ''
-  name: intel-dnnl
-  nci-gadi:
-  - 2021.1.1
-  - 2021.2.0
-  - 2021.3.0
-  - 2021.4.0
-  - 2022.0.2
-  - 2022.1.0
-  - 2022.2.0
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: intel-dpct
-  license: ''
-  name: intel-dpct
-  nci-gadi:
-  - 2021.1.1
-  - 2021.2.0
-  - 2021.3.0
-  - 2021.4.0
-  - 2022.0.0
-  - 2022.1.0
-  - 2022.2.0
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: intel-fc
-  license: ''
-  name: intel-fc
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: intel-inspector
-  license: ''
-  name: intel-inspector
-  nci-gadi:
-  - 2021.1.1
-  - 2021.2.0
-  - 2021.3.0
-  - 2021.4.0
-  - 2022.0.0
-  - 2022.1.0
-  - 2022.3.0
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: intel-ipp
-  license: ''
-  name: intel-ipp
-  nci-gadi:
-  - 2019.3.199
-  - 2019.4.243
-  - 2019.5.281
-  - 2020.0.166
-  - 2020.1.217
-  - 2020.2.254
-  - 2020.3.304
-  - 2021.1.1
-  - 2021.2.0
-  - 2021.3.0
-  - 2021.4.0
-  - 2021.5.2
-  - 2021.6.0
-  - 2021.6.1
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: intel-ippcp
-  license: ''
-  name: intel-ippcp
-  nci-gadi:
-  - 2021.1.1
-  - 2021.2.0
-  - 2021.3.0
-  - 2021.4.0
-  - 2021.5.1
-  - 2021.6.0
-  - 2021.6.1
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: intel-itac
-  license: ''
-  name: intel-itac
-  nci-gadi:
-  - 2019.3.032
-  - 2019.4.036
-  - 2019.5.041
-  - 2020.0.015
-  - 2020.1.024
-  - 2020.2.031
-  - 2020.3.036
-  - 2021.1.1
-  - 2021.2.0
-  - 2021.3.0
-  - 2021.4.0
-  - 2021.5.0
-  - 2021.6.0
-  - 2021.7.0
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: intel-mkl
-  license: ''
-  name: intel-mkl
-  nci-gadi:
-  - 2019.3.199
-  - 2019.4.243
-  - 2019.5.281
-  - 2020.0.166
-  - 2020.1.217
-  - 2020.2.254
-  - 2020.4.304
-  - 2020.3.304
-  - 2021.1.1
-  - 2021.2.0
-  - 2021.3.0
-  - 2021.4.0
-  - 2022.0.2
-  - 2022.1.0
-  - 2022.2.0
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: intel-mpi
-  license: ''
-  name: intel-mpi
-  nci-gadi:
-  - 2019.3.199
-  - 2019.4.243
-  - 2019.5.281
-  - 2019.6.166
-  - 2019.7.217
-  - 2019.8.254
-  - 2019.9.304
-  - 2021.1.1
-  - 2021.2.0
-  - 2021.3.0
-  - 2021.4.0
-  - 2021.5.1
-  - 2021.5.1
-  - 2021.6.0
-  - 2021.7.0
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: intel-python2
-  license: ''
-  name: intel-python2
-  nci-gadi:
-  - 2019.3.075
-  - 2019.4.088
-  - 2019.5.098
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: intel-python3
-  license: ''
-  name: intel-python3
-  nci-gadi:
-  - 2019.3.075
-  - 2019.4.088
-  - 2019.5.098
-  - 2020.0.014
-  - 2020.1.893
-  - 2020.2.902
-  - 2020.4.912
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: intel-tbb
-  license: ''
-  name: intel-tbb
-  nci-gadi:
-  - 2019.3.199
-  - 2019.4.243
-  - 2019.5.281
-  - 2020.0.166
-  - 2020.1.217
-  - 2020.2.254
-  - 2020.3.304
-  - 2021.1.1
-  - 2021.2.0
-  - 2021.3.0
-  - 2021.4.0
-  - 2021.5.1
-  - 2021.6.0
-  - 2021.7.0
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: intel-vpl
-  license: ''
-  name: intel-vpl
-  nci-gadi:
-  - 2021.1.1
-  - 2021.2.2
-  - 2021.4.0
-  - 2021.6.0
-  - 2022.0.0
-  - 2022.1.0
-  - 2022.2.0
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: intel-vtune
-  license: ''
-  name: intel-vtune
-  nci-gadi:
-  - 2021.1.1
-  - 2021.2.0
-  - 2021.5.0
-  - 2021.7.1
-  - 2022.0.0
-  - 2022.2.0
-  - 2022.4.0
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: intel-xed
-  license: ''
-  name: intel-xed
-  nci-gadi:
-  - 12.0.1
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -11576,38 +8522,8 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya:
-  - 0.1-gcccore-10.3.0
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: intervaltree
-  license: ''
-  name: intervaltree
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://github.com/nerscadmin/IPM
-  id: ipm
-  license: ''
-  name: ipm
-  nci-gadi:
-  - 2.0.6
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
 - biocontainers: ipyrad
   bunya:
   - 0.9.93
@@ -11661,23 +8577,7 @@
   - Phylogenetics
   - Statistics and probability
   - Phylogenomics
-- biocontainers: ''
-  bunya:
-  - 2.30.0-gcccore-10.3.0
-  - 2.30.0-gcccore-11.3.0               (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: isa-l
-  license: ''
-  name: isa-l
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: isee
   bunya: ''
   description: Provides functions for creating an interactive Shiny-based graphical
@@ -11769,21 +8669,7 @@
   topics:
   - Computational biology
   - Gene transcripts
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: isolve
-  license: ''
-  name: isolve
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: isoseq3
   bunya:
   - 4.0.0--h9ee0642_0
@@ -11886,22 +8772,7 @@
   resource-documentation: .nan
   topics:
   - Statistics and probability
-- biocontainers: ''
-  bunya:
-  - 2.14-gcc-11.3.0
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: jansson
-  license: ''
-  name: jansson
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: jasmine-sv
   bunya: ''
   description: JASMINE (Jointly Accurate Sv Merging with Intersample Network Edges)
@@ -11933,40 +8804,8 @@
   - Workflows
   - Mapping
   - RNA-Seq
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: jasper
-  license: ''
-  name: jasper
-  nci-gadi:
-  - 2.0.16
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 11.0.18                              (11)
-  description: ''
-  galaxy: ''
-  homepage: https://www.oracle.com/java/
-  id: java
-  license: ''
-  name: Java
-  nci-gadi:
-  - jdk-13.33
-  - jdk-8.40
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -12099,22 +8938,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya:
-  - 1.9.4-gcccore-10.3.0
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: jsoncpp
-  license: ''
-  name: jsoncpp
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: juicebox
   bunya: ''
   description: Juicebox is visualization software for Hi-C data.
@@ -12160,25 +8984,7 @@
   - Mapping
   - Genomics
   - Epigenetics
-- biocontainers: ''
-  bunya:
-  - 1.8.2-linux-x86_64
-  description: ''
-  galaxy: ''
-  homepage: https://julialang.org/
-  id: julia
-  license: ''
-  name: julia
-  nci-gadi:
-  - 1.5.3
-  - 1.6.1
-  - 1.7.1
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ''
   bunya:
   - 3.5.0-gcccore-11.3.0
@@ -12308,22 +9114,7 @@
   resource-documentation: .nan
   topics:
   - Sequence assembly
-- biocontainers: ''
-  bunya:
-  - 2.2.1-gcccore-10.3.0
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: kim-api
-  license: ''
-  name: kim-api
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: kingfisher
   bunya: ''
   description: Easier download/extract of FASTA/Q read data and metadata from the
@@ -12514,22 +9305,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://kubernetes.io/
-  id: k8
-  license: ''
-  name: Kubernetes
-  nci-gadi:
-  - 0.2.5
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: lama
   bunya: ''
   description: 'Automated image analysis for developmental phenotyping of mouse embryos.
@@ -12561,61 +9337,9 @@
   - Genotype and phenotype
   - MRI
   - Workflows
-- biocontainers: ''
-  bunya:
-  - 3.100-gcccore-10.3.0
-  - 3.100-gcccore-11.3.0                 (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: lame
-  license: ''
-  name: lame
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 23jun2022-foss-2021a-kokkos
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: lammps
-  license: ''
-  name: lammps
-  nci-gadi:
-  - 5Jun2019
-  - 3Mar2020
-  - 29Oct2020
-  - 29Sep2021
-  - 3Aug2022
-  - 15Sep2022
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 3.10.1-gcc-11.3.0
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: lapack
-  license: ''
-  name: lapack
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
+- null
 - biocontainers: lastz
   bunya: ''
   description: A tool for (1) aligning two DNA sequences, and (2) inferring appropriate
@@ -12709,378 +9433,28 @@
   - Small molecules
   - Metabolomics
   - Proteomics experiment
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: libaec
-  license: ''
-  name: libaec
-  nci-gadi:
-  - 1.0.6
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 3.5.1-gcccore-10.3.0
-  - 3.6.1-gcccore-11.3.0
-  - 3.6.2-gcccore-12.3.0           (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: libarchive
-  license: ''
-  name: libarchive
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 1.10-gcccore-11.3.0
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: libdeflate
-  license: ''
-  name: libdeflate
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://ofiwg.github.io/libfabric/
-  id: libfabric
-  license: ''
-  name: libfabric
-  nci-gadi:
-  - 1.8.0a1
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 1.6.0-gcccore-10.3.0
-  - 1.7.1-gcccore-11.3.0           (D)
-  description: ''
-  galaxy: ''
-  homepage: https://www.ogc.org/standards/geotiff
-  id: libgeotiff
-  license: ''
-  name: libgeotiff
-  nci-gadi:
-  - 1.5.1
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 1.1.0-gcccore-10.3.0
-  - 1.4.3-gcccore-11.3.0              (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: libgit2
-  license: ''
-  name: libgit2
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 9.0.1-gcccore-10.3.0
-  - 9.0.2-gcccore-11.3.0               (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: libglu
-  license: ''
-  name: libglu
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 1.3.3-gcccore-10.3.0
-  - 1.4.0-gcccore-11.3.0             (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: libglvnd
-  license: ''
-  name: libglvnd
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://github.com/agordon/libgtextutils
-  id: libgtextutils
-  license: ''
-  name: libgtextutils
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 1.16-gcccore-10.3.0
-  - 1.17-gcccore-11.3.0              (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: libiconv
-  license: ''
-  name: libiconv
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: libidn2
-  license: ''
-  name: libidn2
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 2.6.0-gcc-10.3.0-lmax-6-cp2k
-  - 2.7.2-gcc-11.3.0-lmax-6-cp2k       (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: libint
-  license: ''
-  name: libint
-  nci-gadi:
-  - 1.1.4
-  - 2.6.0
-  - 2.7.1
-  - 2.7.2
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: libmaus2
-  license: ''
-  name: libmaus2
-  nci-gadi:
-  - 2.0.777
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://github.com/HPCToolkit/libmonitor
-  id: libmonitor
-  license: ''
-  name: libmonitor
-  nci-gadi:
-  - 2020.10.15
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 1.3.4-gcccore-10.3.0
-  - 1.3.5-gcccore-11.3.0               (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: libogg
-  license: ''
-  name: libogg
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 1.3.2-gcccore-10.3.0
-  - 1.3.2-gcccore-11.3.0             (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: libtirpc
-  license: ''
-  name: libtirpc
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://www.nongnu.org/libunwind/
-  id: libunwind
-  license: ''
-  name: libunwind
-  nci-gadi:
-  - 1.2.1
-  - 1.5.0
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 1.3.7-gcccore-10.3.0
-  - 1.3.7-gcccore-11.3.0            (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: libvorbis
-  license: ''
-  name: libvorbis
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: libxc
-  license: ''
-  name: libxc
-  nci-gadi:
-  - 4.3.4
-  - 5.0.0
-  - 5.1.5
-  - 5.2.3
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 1.1.34-gcccore-11.3.0
-  description: ''
-  galaxy: ''
-  homepage: http://xmlsoft.org/libxslt/index.html
-  id: libxslt
-  license: ''
-  name: libxslt
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 2.9.13-gcccore-11.3.0
-  - 2.11.4-gcccore-12.3.0             (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: libxml2
-  license: ''
-  name: libxml2
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 1.16.2-gcc-10.3.0
-  - 1.17-gcc-11.3.0                   (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: libxsmm
-  license: ''
-  name: libxsmm
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -13098,23 +9472,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: liggghts
-  license: ''
-  name: liggghts
-  nci-gadi:
-  - 3.8.0
-  - 3.0.2
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: limma
   bunya: ''
   description: Data analysis, linear models and differential expression for microarray
@@ -13194,72 +9552,10 @@
   - Endocrinology and metabolism
   - Small molecules
   - Mapping
-- biocontainers: ''
-  bunya:
-  - 2.12-gcccore-10.3.0
-  - 2.13.1-gcccore-11.3.0           (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: littlecms
-  license: ''
-  name: littlecms
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://llvm.org/
-  id: llvm
-  license: ''
-  name: llvm
-  nci-gadi:
-  - 10.0.0
-  - 11.0.0
-  - 13.0.0
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 0.9.29-gcccore-11.3.0
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: lmdb
-  license: ''
-  name: lmdb
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://lmod.readthedocs.io/en/latest/
-  id: lmod
-  license: ''
-  name: lmod
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
+- null
+- null
 - biocontainers: lofreq
   bunya: ''
   description: LoFreq* (i.e. LoFreq version 2) is a fast and sensitive variant-caller
@@ -13359,22 +9655,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: lsdyna
-  license: ''
-  name: lsdyna
-  nci-gadi:
-  - 13.0.0
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ltr_retriever
   bunya: ''
   description: LTR_retriever is a highly accurate and sensitive program for identification
@@ -13414,23 +9695,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya:
-  - 1.9.3-gcccore-10.3.0
-  - 1.9.3-gcccore-11.3.0                  (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: lz4
-  license: ''
-  name: lz4
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: mach
   bunya: ''
   description: Markov Chain based haplotyper that can resolve long haplotypes or infer
@@ -13786,40 +10051,8 @@
   - Genetics
   - Genetic variation
   - Genomics
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: magma
-  license: ''
-  name: magma
-  nci-gadi:
-  - 2.5.1
-  - 2.6.0
-  - 2.6.2
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 6.7-gcccore-10.3.0-minimal
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: makeinfo
-  license: ''
-  name: makeinfo
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
 - biocontainers: maker
   bunya:
   - 3.01.03--pl5262h8f1cd36_2
@@ -13881,22 +10114,7 @@
   topics:
   - Proteomics experiment
   - Proteomics
-- biocontainers: ''
-  bunya:
-  - 10.9.3-gcc-11.3.0
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: mariadb
-  license: ''
-  name: MariaDB
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: mash
   bunya:
   - 2.3-gcc-10.3.0
@@ -14052,59 +10270,9 @@
   resource-documentation: .nan
   topics:
   - Metabolomics
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: materialsstudio
-  license: ''
-  name: MaterialsStudio
-  nci-gadi:
-  - '2018'
-  - '2020'
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: mathematica
-  license: ''
-  name: mathematica
-  nci-gadi:
-  - 12.0.0
-  - 12.1.0
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: matlab
-  bunya: ''
-  description: MATLAB is a general use development environment and scientific computing
-    language.
-  galaxy: ''
-  homepage: https://www.mathworks.com/products/matlab.html
-  id: matlab
-  license: ''
-  name: MATLAB
-  nci-gadi:
-  - R2019b
-  - R2020b
-  - R2021b
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: matlab
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
+- null
 - biocontainers: matplotlib
   bunya:
   - 3.4.2-foss-2021a
@@ -14124,38 +10292,8 @@
   registry-link: matplotlib
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://github.com/dtreichler/matserver
-  id: matserver
-  license: ''
-  name: matserver
-  nci-gadi:
-  - '2018'
-  - '2020'
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: matt
-  license: ''
-  name: matt
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
 - biocontainers: mauve
   bunya: ''
   description: Mauve Genome Alignment software, for comparing two or more draft or
@@ -14176,21 +10314,7 @@
   topics:
   - Genomics
   - Transcriptomics
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://maven.apache.org/
-  id: maven
-  license: ''
-  name: maven
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: maxbin
   bunya: ''
   description: Software for binning assembled metagenomic sequences based on an Expectation-Maximization
@@ -14489,23 +10613,7 @@
   - Genomics
   - Sequence analysis
   - Sequencing
-- biocontainers: ''
-  bunya:
-  - 0.58.0-gcccore-10.3.0
-  - 0.62.1-gcccore-11.3.0               (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: meson
-  license: ''
-  name: meson
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: MetaBAT_2
   bunya: ''
   description: an adaptive binning algorithm for robust and efficient genome reconstruction
@@ -14827,25 +10935,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya:
-  - 5.1.0-gcccore-10.3.0
-  - 5.1.0-gcccore-11.3.0                (D)
-  description: ''
-  galaxy: ''
-  homepage: http://glaros.dtc.umn.edu/gkhome/metis/metis/overview
-  id: metis
-  license: ''
-  name: metis
-  nci-gadi:
-  - 5.1.0
-  - 5.1.0-i8r8
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: MIGRATE
   bunya: ''
   description: Estimates effective population sizes,past migration rates between n
@@ -14893,22 +10983,7 @@
   topics:
   - RNA-seq
   - Gene transcripts
-- biocontainers: ''
-  bunya:
-  - 6.4.0
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: miller
-  license: ''
-  name: miller
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -15221,21 +11296,7 @@
   topics:
   - Zoology
   - Whole genome sequencing
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://software.intel.com/content/www/us/en/develop/tools/oneapi/components/onemkl/link-line-advisor.html
-  id: mkl
-  license: ''
-  name: mkl
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: mlst
   bunya:
   - 2.23.0--hdfd78af_1
@@ -15344,23 +11405,7 @@
   - Public health and epidemiology
   - Sequence assembly
   - Biomarkers
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: modem-geophysics
-  license: ''
-  name: ModEM-geophysics
-  nci-gadi:
-  - '2013.06'
-  - '2015.01'
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -15412,51 +11457,9 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: module-git
-  license: ''
-  name: module-git
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: module-info
-  license: ''
-  name: module-info
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: modules
-  license: ''
-  name: modules
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
+- null
 - biocontainers: moff
   bunya: ''
   description: A modest Feature Finder to extract features in MS1 Data.
@@ -15477,39 +11480,8 @@
   resource-documentation: .nan
   topics:
   - Proteomics
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: molden
-  license: ''
-  name: molden
-  nci-gadi:
-  - '6.2'
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://www.molpro.net/info/release/doc/manual.pdf
-  id: molpro
-  license: ''
-  name: molpro
-  nci-gadi:
-  - '2019.2'
-  - '2020.1'
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -15527,22 +11499,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya:
-  - 6.12.0.122-gcccore-11.3.0
-  description: ''
-  galaxy: ''
-  homepage: https://www.mono-project.com/
-  id: mono
-  license: ''
-  name: Mono
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: morpheus
   bunya: ''
   description: A proteomics search algorithm specifically designed for high-resolution
@@ -15873,38 +11830,8 @@
   topics:
   - Model organisms
   - Genotype and phenotype
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: mpc
-  license: ''
-  name: mpc
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 4.1.0-gcccore-10.3.0
-  - 4.1.0-gcccore-11.3.0                 (D)
-  description: ''
-  galaxy: ''
-  homepage: https://www.mpfr.org/
-  id: mpfr
-  license: ''
-  name: mpfr
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -15920,38 +11847,8 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://github.com/LLNL/mpiP
-  id: mpip
-  license: ''
-  name: mpiP (mpi profiling library)
-  nci-gadi:
-  - 3.4.1
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: http://mpir.org/
-  id: mpir
-  license: ''
-  name: mpir
-  nci-gadi:
-  - 3.0.0
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
 - biocontainers: mrbayes
   bunya:
   - 3.2.7a-foss-2022a
@@ -15979,22 +11876,7 @@
   resource-documentation: .nan
   topics:
   - Phylogenetics
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://mrcc.illinois.edu/CLIMATE/
-  id: mrcc
-  license: ''
-  name: mrcc
-  nci-gadi:
-  - '2019'
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: MRtrix3
   bunya:
   - 3.0.3-foss-2021a
@@ -16129,22 +12011,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya:
-  - 1.0.3-gcccore-10.3.0
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: multichoose
-  license: ''
-  name: multichoose
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: multiqc
   bunya:
   - 1.11-foss-2021a
@@ -16283,36 +12150,8 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://mvapich.cse.ohio-state.edu/
-  id: mvapich2_ib
-  license: ''
-  name: MVAPICH
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://software.opensuse.org/package/mxml
-  id: mxml
-  license: ''
-  name: mxml
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -16350,23 +12189,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://www.ks.uiuc.edu/Research/namd/
-  id: namd
-  license: ''
-  name: namd
-  nci-gadi:
-  - '2.13'
-  - '2.14'
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: Nanocompore
   bunya:
   - 1.0.4--pyhdfd78af_0
@@ -16497,21 +12320,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://www.nasm.us/
-  id: nasm
-  license: ''
-  name: NASM
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -16529,24 +12338,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: nbo
-  license: ''
-  name: nbo
-  nci-gadi:
-  - '6.0'
-  - '7.0'
-  - 7.0M
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ncbi_datasets
   bunya: ''
   description: NCBI Datasets is a new resource that lets you easily gather data from
@@ -16602,29 +12394,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://github.com/NVIDIA/nccl
-  id: nccl
-  license: ''
-  name: NCCL
-  nci-gadi:
-  - 2.5.6-1+cuda10.1
-  - 2.6.4-1+cuda10.1
-  - 2.8.4-cuda11.0
-  - 2.10.3-cuda11.4
-  - 2.8.4-cuda11.2
-  - 2.11.4
-  - 2.12.12
-  - 2.13.4
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: nccmp
   bunya: ''
   description: nccmp compares two NetCDF files bitwise, semantically or with a user
@@ -16645,23 +12415,7 @@
   registry-link: nccmp
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: nci-parallel
-  license: ''
-  name: nci-parallel
-  nci-gadi:
-  - 1.0.0
-  - 1.0.0a
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -16760,21 +12514,7 @@
   registry-link: netcdf
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://ccl.northwestern.edu/netlogo/
-  id: netlogo
-  license: ''
-  name: netlogo
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: neurodebian
   bunya: ''
   description: NeuroDebian is a popular turnkey platform for Neuroscience, where software
@@ -16994,55 +12734,9 @@
   resource-documentation: .nan
   topics:
   - Phylogeny
-- biocontainers: ''
-  bunya:
-  - 3.10.5-gcccore-11.3.0
-  description: ''
-  galaxy: ''
-  homepage: https://github.com/nlohmann/json
-  id: nlohmann_json
-  license: ''
-  name: nlohmann_json
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 2.7.0-gcccore-10.3.0
-  - 2.7.1-gcccore-11.3.0                (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: nlopt
-  license: ''
-  name: nlopt
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: nodejs
-  license: ''
-  name: nodejs
-  nci-gadi:
-  - 16.15.1
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -17091,21 +12785,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://github.com/numactl/numactl
-  id: numactl
-  license: ''
-  name: numactl
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: nvbio
   bunya: ''
   description: NVBIO is a library of reusable components designed by NVIDIA Corporation
@@ -17141,42 +12821,8 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://developer.nvidia.com/hpc-sdk
-  id: nvidia-hpc-sdk
-  license: ''
-  name: NVIDIA HPC SDK
-  nci-gadi:
-  - '20.7'
-  - '21.3'
-  - '22.1'
-  - '22.5'
-  - '22.11'
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://www.nwchem-sw.org/
-  id: nwchem
-  license: ''
-  name: nwchem
-  nci-gadi:
-  - 7.0.0
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
 - biocontainers: oases
   bunya: ''
   description: De novo transcriptome assembler designed to produce transcripts from
@@ -17245,22 +12891,7 @@
   - Sequence analysis
   - DNA
   - Sequencing
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://www.gnu.org/software/octave/index
-  id: octave
-  license: ''
-  name: octave
-  nci-gadi:
-  - 5.2.0
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ''
   bunya:
   - 4.1.1--pyhdfd78af_0
@@ -17277,198 +12908,15 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://www.vi-hps.org/tools/opari2.html
-  id: opari2
-  license: ''
-  name: OPARI2
-  nci-gadi:
-  - 2.0.3
-  - 2.0.5
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 4.1.1-gcc-10.3.0
-  - 4.1.4-gcc-11.3.0
-  - 4.1.5-gcc-12.3.0                  (D)
-  description: ''
-  galaxy: ''
-  homepage: https://www.open-mpi.org/
-  id: openmpi
-  license: ''
-  name: Open MPI
-  nci-gadi:
-  - 3.0.4
-  - 3.0.4-debug
-  - 4.0.1
-  - 4.0.1-debug
-  - 2.1.6
-  - 2.1.6-debug
-  - 2.1.6-mt
-  - 2.1.6-mt-debug
-  - 3.1.4
-  - 3.1.4-debug
-  - 4.0.2
-  - 4.0.2-debug
-  - 4.0.3
-  - 4.0.3-debug
-  - 4.0.4
-  - 4.0.4-debug
-  - 4.0.5
-  - 4.0.5-debug
-  - 4.1.0
-  - 4.1.0-debug
-  - 4.1.1
-  - 4.1.1-debug
-  - 4.0.6
-  - 4.0.6-debug
-  - 4.0.7
-  - 4.0.7-debug
-  - 4.1.2
-  - 4.1.2-debug
-  - 4.1.3
-  - 4.1.3-debug
-  - 4.1.4
-  - 4.1.4-debug
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://www.open-mpi.org/
-  id: openmpi_ib
-  license: ''
-  name: Open MPI (ib)
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://www.open-mpi.org/
-  id: openmpi2_ib
-  license: ''
-  name: Open MPI 2 (ib)
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 3.1.1-gompi-2021a
-  - 3.1.1-gompi-2022a               (D)
-  description: ''
-  galaxy:
-  - title: Compound conversion 3.1.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Fopenbabel_compound_convert%2Fopenbabel_compound_convert%2F3.1.1%2Bgalaxy0
-  - title: Visualisation 3.1.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Fopenbabel_svg_depiction%2Fopenbabel_svg_depiction%2F3.1.1%2Bgalaxy0
-  homepage: ''
-  id: openbabel
-  license: ''
-  name: openbabel
-  nci-gadi:
-  - 2.4.1
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 0.3.15-gcc-10.3.0
-  - 0.3.20-gcc-11.3.0
-  - 0.3.23-gcc-12.3.0                (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: openblas
-  license: ''
-  name: openblas
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: opencv
-  license: ''
-  name: opencv
-  nci-gadi:
-  - 4.5.5
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: openfoam
-  license: ''
-  name: openfoam
-  nci-gadi:
-  - '7'
-  - 5.x
-  - '8'
-  - '2006'
-  - '9'
-  - '2112'
-  - 7-64
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: openmolcas
-  license: ''
-  name: OpenMolcas
-  nci-gadi:
-  - '19.11'
-  - '22.06'
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
+- null
 - biocontainers: openms
   bunya: ''
   description: Open source library and a collection of tools and interfaces for the
@@ -17566,46 +13014,8 @@
   - Proteomics experiment
   - Proteomics
   - Metabolomics
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: openquake
-  license: ''
-  name: openquake
-  nci-gadi:
-  - 3.7.1
-  - 3.8.0
-  - 3.9.0
-  - 3.10.0
-  - 3.10.1
-  - 3.11.2
-  - 3.11.2-opt
-  - 3.13.0
-  - 3.13.0-opt
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - '1.1'
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: openssl
-  license: ''
-  name: openssl
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -17621,21 +13031,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: opt-perl
-  license: ''
-  name: opt-perl
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -17652,26 +13048,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: orca
-  license: ''
-  name: orca
-  nci-gadi:
-  - 4.2.1
-  - 5.0.0
-  - 5.0.1
-  - 5.0.2
-  - 5.0.3
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: OrthoFinder
   bunya: ''
   description: OrthoFinder is a fast, accurate and comprehensive platform for comparative
@@ -17703,42 +13080,8 @@
   - Bioinformatics
   - Comparative genomics
   - Sequence analysis
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://www.ospray.org/
-  id: ospray
-  license: ''
-  name: ospray
-  nci-gadi:
-  - 2.1.1
-  - 1.8.5
-  - 2.7.1
-  - 2.9.0
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://zenodo.org/record/3356709#.X9bgl7NBVhF
-  id: otf2
-  license: ''
-  name: OTF2
-  nci-gadi:
-  - 2.1.1
-  - '2.2'
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
 - biocontainers: pepper-deepvariant
   bunya: ''
   description: PEPPER is a genome inference module based on recurrent neural networks
@@ -17779,22 +13122,7 @@
   resource-documentation: .nan
   topics:
   - Sequencing
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: padb
-  license: ''
-  name: padb
-  nci-gadi:
-  - '3.2'
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -17810,21 +13138,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: paladin
-  license: ''
-  name: paladin
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -17866,24 +13180,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://pangeo.io/
-  id: pangeo
-  license: ''
-  name: pangeo
-  nci-gadi:
-  - '2019.12'
-  - '2020.05'
-  - '2021.01'
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: pangolin
   bunya: ''
   description: Pangolin is a deep-learning based method for predicting splice site
@@ -17913,22 +13210,7 @@
   - Gene transcripts
   - RNA-Seq
   - Exome sequencing
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: http://icl.utk.edu/papi/software/
-  id: papi
-  license: ''
-  name: PAPI (Performance Application Programming Interface)
-  nci-gadi:
-  - 5.7.0
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -17946,21 +13228,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://www.vi-hps.org/tools/paraver.html
-  id: paraver
-  license: ''
-  name: PARAVER
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: paraview
   bunya: ''
   description: "ParaView is an open-source, multi-platform data analysis and visualization\
@@ -17992,23 +13260,7 @@
   topics:
   - Data visualisation
   - Imaging
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: http://glaros.dtc.umn.edu/gkhome/metis/parmetis/overview
-  id: parmetis
-  license: ''
-  name: parmetis
-  nci-gadi:
-  - 4.0.3
-  - 4.0.3-i8r8
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -18062,22 +13314,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://github.com/NixOS/patchelf
-  id: patchelf
-  license: ''
-  name: PatchELF
-  nci-gadi:
-  - '0.10'
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: pathview
   bunya: ''
   description: Tool set for pathway based data integration and visualization that
@@ -18154,38 +13391,8 @@
   - RNA-seq
   - Mapping
   - Gene transcripts
-- biocontainers: ''
-  bunya:
-  - 10.36-gcccore-10.3.0
-  - 10.40-gcccore-11.3.0                (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: pcre2
-  license: ''
-  name: pcre2
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://downloadcenter.intel.com/download/19792
-  id: pdt
-  license: ''
-  name: PDT (Processor Diagnostic Tool)
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
 - biocontainers: seqcode
   bunya: ''
   description: Productive visualization of high-throughput sequencing data using the
@@ -18333,26 +13540,7 @@
   - Proteomics experiment
   - Statistics and probability
   - Machine learning
-- biocontainers: ''
-  bunya:
-  - 5.32.1-gcccore-10.3.0-minimal
-  - 5.32.1-gcccore-10.3.0
-  - 5.34.1-gcccore-11.3.0-minimal
-  - 5.34.1-gcccore-11.3.0
-  - 5.36.1-gcccore-12.3.0                (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: perl
-  license: ''
-  name: perl
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -18369,23 +13557,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://www.mcs.anl.gov/petsc/index.html
-  id: petsc
-  license: ''
-  name: petsc
-  nci-gadi:
-  - 3.12.2
-  - 3.17.4
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: pfamscan
   bunya: ''
   description: This tool is used to search a FASTA sequence against a library of Pfam
@@ -18712,23 +13884,7 @@
   - Microbiology
   - Phylogenetics
   - Metagenomic sequencing
-- biocontainers: ''
-  bunya:
-  - 2.6-gcccore-10.3.0
-  - 2.7-gcccore-11.3.0                   (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: pigz
-  license: ''
-  name: pigz
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -18817,22 +13973,7 @@
   - Transcriptomics
   - Biomarkers
   - Microarray experiment
-- biocontainers: ''
-  bunya:
-  - 1.5.4-gcccore-10.3.0-python
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: pkgconfig
-  license: ''
-  name: pkgconfig
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -18929,46 +14070,8 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya:
-  - 5.1.0-gcccore-10.3.0
-  - 5.12.0-gcccore-11.3.0           (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: plotly.py
-  license: ''
-  name: plotly.py
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 2.7.2-foss-2021a
-  - 2.8.1-foss-2022a                   (D)
-  description: ''
-  galaxy: ''
-  homepage: https://www.plumed.org/
-  id: plumed
-  license: ''
-  name: plumed
-  nci-gadi:
-  - 2.5.2
-  - 2.6.0
-  - 2.7.0
-  - 2.7.1
-  - 2.7.3
-  - 2.8.0
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
 - biocontainers: pnetcdf
   bunya: ''
   description: 'PnetCDF: A Parallel I/O Library for NetCDF File Access'
@@ -19208,38 +14311,8 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://proj.org/
-  id: proj
-  license: ''
-  name: proj
-  nci-gadi:
-  - 6.2.1
-  - 8.1.1
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://proj.org/
-  id: proj4
-  license: ''
-  name: proj4
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
 - biocontainers: prokka
   bunya:
   - 1.14.5-gompi-2021a
@@ -19305,37 +14378,8 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: protobuf-python
-  license: ''
-  name: protobuf-python
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://psicode.org/
-  id: psi4
-  license: ''
-  name: psi4
-  nci-gadi:
-  - 1.3.2
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -19397,23 +14441,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya:
-  - 2.6.2-gcccore-10.3.0
-  - 2.9.2-gcccore-11.3.0             (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: pybind11
-  license: ''
-  name: pybind11
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: pycoqc
   bunya:
   - 2.5.2-foss-2021a
@@ -19465,21 +14493,7 @@
   - Model organisms
   - Imaging
   - Workflows
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://pylib.readthedocs.io/en/1.4.3/index.html
-  id: pylibs
-  license: ''
-  name: pylibs
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -19545,113 +14559,12 @@
   topics:
   - Sequencing
   - Mapping
-- biocontainers: ''
-  bunya:
-  - 2.7.18-gcccore-10.3.0-bare
-  - 2.7.18-gcccore-11.3.0-bare
-  - 3.9.5-gcccore-10.3.0-bare
-  - 3.9.5-gcccore-10.3.0
-  - 3.10.4-gcccore-11.3.0-bare
-  - 3.10.4-gcccore-11.3.0
-  - 3.11.3-gcccore-12.3.0              (D)
-  description: ''
-  galaxy: ''
-  homepage: https://www.python.org/
-  id: python
-  license: ''
-  name: python
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 0.11.0-gcccore-10.3.0
-  - 1.1.0-gcccore-11.3.0          (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: python-isal
-  license: ''
-  name: python-isal
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://www.python.org/
-  id: python2
-  license: ''
-  name: python2
-  nci-gadi:
-  - 2.7.16
-  - 2.7.17
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://www.python.org/
-  id: python2-as-python
-  license: ''
-  name: python2-as-python
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://www.python.org/
-  id: python3
-  license: ''
-  name: python3
-  nci-gadi:
-  - 3.7.4
-  - 3.8.5
-  - 3.9.2
-  - 3.10.0
-  - 3.10.4
-  - 3.11.0
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://www.python.org/
-  id: python3-as-python
-  license: ''
-  name: python3-as-python
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
+- null
+- null
+- null
+- null
 - biocontainers: pytorch
   bunya: ''
   description: PyTorch is an optimized tensor library for deep learning using GPUs
@@ -19675,65 +14588,9 @@
   topics:
   - Machine learning
   - Computer science
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: qchem
-  license: ''
-  name: qchem
-  nci-gadi:
-  - '5.2'
-  - '5.3'
-  - 5.3.1
-  - 5.3.2
-  - 5.4.1
-  - 5.4.2
-  - 6.0.1
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://www.quantum-espresso.org/
-  id: qe
-  license: ''
-  name: qe
-  nci-gadi:
-  - 6.4.1
-  - '6.6'
-  - 6.7.0
-  - '6.8'
-  - 6.8-gpu
-  - '7.0'
-  - 7.0-gpu
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://qgis.org/en/site/
-  id: qgis
-  license: ''
-  name: qgis
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
+- null
 - biocontainers: qiime
   bunya: ''
   description: Open-source bioinformatics pipeline for performing microbiome analysis
@@ -19763,6 +14620,8 @@
   description: "QIIME 2\u2122 is a next-generation microbiome bioinformatics platform\
     \ that is extensible, free, open source, and community developed."
   galaxy:
+  - title: qiime2 tools import 2023.5.0+dist.h193f7cc9.3
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fq2d2%2Fqiime2_core__tools__import%2Fqiime2_core__tools__import%2F2023.5.0%2Bdist.h193f7cc9.3
   - title: qiime2 alignment mafft-add 2023.5.0+q2galaxy.2023.5.0.2
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fq2d2%2Fqiime2__alignment__mafft_add%2Fqiime2__alignment__mafft_add%2F2023.5.0%2Bq2galaxy.2023.5.0.2
   - title: qiime2 alignment mafft 2023.5.0+q2galaxy.2023.5.0.2
@@ -19777,8 +14636,6 @@
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fq2d2%2Fqiime2__composition__tabulate%2Fqiime2__composition__tabulate%2F2023.5.0%2Bq2galaxy.2023.5.0.2
   - title: qiime2 tools export 2023.5.0+dist.h193f7cc9.2
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fq2d2%2Fqiime2_core__tools__export%2Fqiime2_core__tools__export%2F2023.5.0%2Bdist.h193f7cc9.2
-  - title: qiime2 tools import 2023.5.0+dist.h193f7cc9.2
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fq2d2%2Fqiime2_core__tools__import%2Fqiime2_core__tools__import%2F2023.5.0%2Bdist.h193f7cc9.2
   - title: qiime2 cutadapt demux-paired 2023.5.1+q2galaxy.2023.5.0.2
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fq2d2%2Fqiime2__cutadapt__demux_paired%2Fqiime2__cutadapt__demux_paired%2F2023.5.1%2Bq2galaxy.2023.5.0.2
   - title: qiime2 cutadapt demux-single 2023.5.1+q2galaxy.2023.5.0.2
@@ -20103,22 +14960,7 @@
   - Phylogeny
   - Metatranscriptomics
   - Metagenomics
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://qiskit.org/
-  id: qiskit
-  license: ''
-  name: qiskit
-  nci-gadi:
-  - 0.19.3
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -20164,23 +15006,7 @@
   resource-documentation: .nan
   topics:
   - Data quality management
-- biocontainers: ''
-  bunya:
-  - 6.8-foss-2021a
-  - 7.1-foss-2022a            (D)
-  description: ''
-  galaxy: ''
-  homepage: https://www.quantum-espresso.org/
-  id: quantumespresso
-  license: ''
-  name: quantumespresso
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: quasitools
   bunya: ''
   description: 'A Collection of Tools for Viral Quasispecies Analysis | Abstract Summary
@@ -20283,23 +15109,7 @@
   topics:
   - Bioinformatics
   - Workflows
-- biocontainers: ''
-  bunya:
-  - 5.15.2-gcccore-10.3.0
-  - 5.15.5-gcccore-11.3.0                 (D)
-  description: ''
-  galaxy: ''
-  homepage: https://www.qt.io/
-  id: qt5
-  license: ''
-  name: qt5
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: r
   bunya:
   - 4.1.0-foss-2021a
@@ -20352,52 +15162,9 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: r+gcc
-  license: ''
-  name: r+gcc
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: r+inla
-  license: ''
-  name: r+inla
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://www.rabbitmq.com/
-  id: rabbitmq-server
-  license: ''
-  name: RabbitMQ server
-  nci-gadi:
-  - 3.8.0
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
+- null
 - biocontainers: Racon
   bunya: ''
   description: 'The Possibility to Use Oxford Nanopore Technology | Ultrafast consensus
@@ -20485,23 +15252,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya:
-  - 1.1.0-gcccore-10.3.0
-  - 1.1.0-gcccore-11.3.0            (D)
-  description: ''
-  galaxy: ''
-  homepage: https://rapidjson.org/
-  id: rapidjson
-  license: ''
-  name: RapidJSON
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ratatosk
   bunya:
   - 0.7.6.3--h43eeafb_2
@@ -20634,21 +15385,7 @@
   topics:
   - Phylogenetics
   - Sequence analysis
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: rcc-tools
-  license: ''
-  name: rcc-tools
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -20706,21 +15443,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: readme
-  license: ''
-  name: readme
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: recon
   bunya: ''
   description: Tool for calculating the probability of nucleosome formation along
@@ -20804,21 +15527,7 @@
   - RNA
   - Sequencing
   - Data visualisation
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: reef3d
-  license: ''
-  name: reef3d
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: refinem
   bunya: ''
   description: RefineM is a set of tools for improving population genomes. It provides
@@ -20853,21 +15562,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: relion
-  license: ''
-  name: relion
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -21304,40 +15999,8 @@
   resource-documentation: .nan
   topics:
   - Genomics
-- biocontainers: ''
-  bunya:
-  - 3.0.1-gcccore-10.3.0
-  - 3.0.5-gcccore-11.3.0                 (D)
-  description: ''
-  galaxy: ''
-  homepage: https://www.ruby-lang.org/en/downloads/
-  id: ruby
-  license: ''
-  name: Ruby
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 1.52.1-gcccore-10.3.0
-  - 1.60.0-gcccore-11.3.0                (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: rust
-  license: ''
-  name: rust
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -21357,23 +16020,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://www.sagemath.org/
-  id: sage
-  license: ''
-  name: sage
-  nci-gadi:
-  - '8.9'
-  - '9.7'
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: saige
   bunya: ''
   description: 'SAIGE is an R package with Scalable and Accurate Implementation of
@@ -21711,40 +16358,8 @@
   resource-documentation: .nan
   topics:
   - Statistics and probability
-- biocontainers: ''
-  bunya:
-  - 1.0.1-foss-2021a
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: scafacos
-  license: ''
-  name: scafacos
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 2.1.0-gompi-2021a-fb
-  - 2.2.0-gompi-2022a-fb
-  - 2.2.0-gompi-2023a-fb            (D)
-  description: ''
-  galaxy: ''
-  homepage: http://www.netlib.org/scalapack/
-  id: scalapack
-  license: ''
-  name: scalapack
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
 - biocontainers: scanpy
   bunya: ''
   description: Scalable toolkit for analyzing single-cell gene expression data. It
@@ -22001,56 +16616,9 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya:
-  - 2021.05-foss-2021a
-  - 2022.05-foss-2022a           (D)
-  description: ''
-  galaxy: ''
-  homepage: https://www.scipy.org/
-  id: scipy
-  license: ''
-  name: SciPy
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://scons.org/
-  id: scons
-  license: ''
-  name: SCons
-  nci-gadi:
-  - 3.1.1
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: scorep
-  license: ''
-  name: scorep
-  nci-gadi:
-  - '5.0'
-  - '6.0'
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
+- null
 - biocontainers: screed
   bunya: ''
   description: screed is a tool for short read sequence utils in Python.
@@ -22084,22 +16652,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya:
-  - 2.0.22-gcccore-11.3.0
-  description: ''
-  galaxy: ''
-  homepage: https://www.libsdl.org/
-  id: sdl2
-  license: ''
-  name: Simple DirectMedia Layer (SDL)
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -22115,21 +16668,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://cran.r-project.org/web/packages/seewave/
-  id: seewave
-  license: ''
-  name: seewave
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -22346,21 +16885,7 @@
   resource-documentation: .nan
   topics:
   - Sequencing
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: settarg
-  license: ''
-  name: settarg
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: seurat
   bunya: ''
   description: Seurat is an R package designed for QC, analysis, and exploration of
@@ -22385,21 +16910,7 @@
   topics:
   - RNA-Seq
   - Transcriptomics
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: sevenz
-  license: ''
-  name: sevenz
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -22417,36 +16928,8 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: sgi_uvstats
-  license: ''
-  name: sgi_uvstats
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: sgidiag
-  license: ''
-  name: sgidiag
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
 - biocontainers: shapeit
   bunya: ''
   description: Fast and accurate method for estimation of haplotypes (aka phasing)
@@ -22545,22 +17028,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya:
-  - 0.1.19
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: shpc
-  license: ''
-  name: shpc
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: sicer
   bunya: ''
   description: A clustering approach for identification of enriched domains from histone
@@ -22603,39 +17071,8 @@
   resource-documentation: .nan
   topics:
   - Data quality management
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://www.bryntum.com/products/siesta/
-  id: siesta
-  license: ''
-  name: Siesta
-  nci-gadi:
-  - 4.1-b4
-  - 4.1.5
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://nevercenter.com/silo/
-  id: silo
-  license: ''
-  name: silo
-  nci-gadi:
-  - 4.10.2
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
 - biocontainers: simtext
   bunya: ''
   description: 'A text mining framework for interactive analysis and visualization
@@ -22672,21 +17109,7 @@
   - Workflows
   - Machine learning
   - Molecular interactions, pathways and networks
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://singularity.lbl.gov/
-  id: singularity
-  license: ''
-  name: singularity
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -22753,36 +17176,8 @@
   - RNA-Seq
   - Sequence assembly
   - Sequencing
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://slepc.upv.es/
-  id: slepc
-  license: ''
-  name: slepc
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: slim
-  license: ''
-  name: slim
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -23411,21 +17806,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: sprng
-  license: ''
-  name: sprng
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -23484,21 +17865,7 @@
   - Metatranscriptomics
   - RNA-Seq
   - Microbial ecology
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://toolshed.g2.bx.psu.edu/repository?repository_id=bda6be0feeeac419
-  id: squid
-  license: ''
-  name: squid
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -23686,21 +18053,7 @@
   topics:
   - RNA-Seq
   - Transcriptomics
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: star-ccm+
-  license: ''
-  name: star-ccm+
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -23718,21 +18071,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://www.plm.automation.siemens.com/global/en/products/simcenter/STAR-CCM.html
-  id: starccm
-  license: ''
-  name: starccm
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: star-fusion
   bunya: ''
   description: STAR-Fusion, a method that is both fast and accurate in identifying
@@ -23753,21 +18092,7 @@
   topics:
   - Gene structure
   - RNA-Seq
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://storm-analysis.readthedocs.io/en/latest/
-  id: storm-analysis
-  license: ''
-  name: storm-analysis
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: stringtie
   bunya:
   - 2.1.7-gcc-10.3.0
@@ -23856,24 +18181,7 @@
   - Mapping
   - Whole genome sequencing
   - RNA-Seq
-- biocontainers: ''
-  bunya:
-  - 5.10.1-foss-2021a-metis-5.1.0
-  - 5.13.0-foss-2022a-metis-5.1.0 (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: suitesparse
-  license: ''
-  name: suitesparse
-  nci-gadi: ''
-  nci-if89:
-  - 5.10.1
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -23891,21 +18199,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://computing.llnl.gov/projects/sundials/sundials-software
-  id: sundials
-  license: ''
-  name: sundials
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: super-focus
   bunya: ''
   description: An agile homology-based approach using a reduced SEED database to report
@@ -23929,21 +18223,7 @@
   - DNA
   - Metagenomics
   - Sequence analysis
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://portal.nersc.gov/project/sparse/superlu/
-  id: superlu
-  license: ''
-  name: superlu
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: supernova
   bunya: ''
   description: Supernova is a software package for de novo assembly from Chromium
@@ -24118,22 +18398,7 @@
   - DNA structural variation
   - Mapping
   - Sequencing
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: szip
-  license: ''
-  name: szip
-  nci-gadi:
-  - 2.1.1
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -24151,22 +18416,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya:
-  - 1.1.0-gcc-10.3.0
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: tabixpp
-  license: ''
-  name: tabixpp
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -24270,21 +18520,7 @@
   topics:
   - GWAS study
   - Mapping
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: http://www.cs.uoregon.edu/research/tau/home.php
-  id: tau
-  license: ''
-  name: TAU
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: tax4fun2
   bunya: ''
   description: Tax4Fun2 is a prediction of habitat-specific functional profiles and
@@ -24326,23 +18562,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya:
-  - 2020.3-gcccore-10.3.0
-  - 2021.5.0-gcccore-11.3.0               (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: tbb
-  license: ''
-  name: tbb
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ''
   bunya:
   - 20220427-linux64
@@ -24556,39 +18776,8 @@
   - Proteomics
   - Proteomics experiment
   - Metabolomics
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://github.com/TinkerTools/tinker-hp
-  id: tinkerhp
-  license: ''
-  name: tinkerhp
-  nci-gadi:
-  - '1.1'
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 3.9.5-gcccore-10.3.0
-  - 3.10.4-gcccore-11.3.0             (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: tkinter
-  license: ''
-  name: tkinter
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
 - biocontainers: tophat
   bunya: ''
   description: Program that aligns RNA-Seq reads to a genome in order to identify
@@ -24636,22 +18825,7 @@
   resource-documentation: .nan
   topics:
   - Computer science
-- biocontainers: ''
-  bunya:
-  - 4.61.2-gcccore-10.3.0
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: tqdm
-  license: ''
-  name: tqdm
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -24794,22 +18968,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: treematch
-  license: ''
-  name: treematch
-  nci-gadi:
-  - '1.4'
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -25073,87 +19232,11 @@
   - Human biology
   - Whole genome sequencing
   - Genomics
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://www.tuflow.com/
-  id: tuflow
-  license: ''
-  name: tuflow
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://www.turbomole.org/
-  id: turbomole
-  license: ''
-  name: turbomole
-  nci-gadi:
-  - TmoleX17
-  - '7.2'
-  - 7.2.1
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: typing-extensions
-  license: ''
-  name: typing-extensions
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: ubuntu
-  license: ''
-  name: ubuntu
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 1.0.0-gcccore-11.3.0
-  - 1.2.0-gcccore-12.3.0                  (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: ucc
-  license: ''
-  name: ucc
-  nci-gadi:
-  - 1.0.0
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
+- null
+- null
+- null
 - biocontainers: UCSC_Genome_Browser_Utilities
   bunya: ''
   description: Utilities for handling sequences and assemblies from the UCSC Genome
@@ -25215,62 +19298,9 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://www.openucx.org/
-  id: ucx
-  license: ''
-  name: UCX (Unified Communication X)
-  nci-gadi:
-  - 1.6.1
-  - 1.8.0
-  - 1.8.1
-  - 1.9.0
-  - 1.10.0
-  - 1.11.0
-  - 1.11.2
-  - 1.12.0
-  - 1.13.0
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: ucx-cuda
-  license: ''
-  name: ucx-cuda
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://www.unidata.ucar.edu/software/udunits/
-  id: udunits
-  license: ''
-  name: UDUNITS
-  nci-gadi:
-  - 2.2.26
-  - 1.12.11
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
+- null
 - biocontainers: umi-tools
   bunya: ''
   description: Tools for handling Unique Molecular Identifiers in NGS data sets.
@@ -25387,21 +19417,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: http://www.unixodbc.org/utilities.html
-  id: unixODBC
-  license: ''
-  name: unixODBC
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ''
   bunya:
   - 6.0-gcccore-10.3.0
@@ -25422,21 +19438,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: use.own
-  license: ''
-  name: use.own
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: vep
   bunya:
   - 107-gcc-11.3.0
@@ -25492,31 +19494,7 @@
   topics:
   - Sequencing
   - DNA polymorphism
-- biocontainers: ''
-  bunya:
-  - 6.2.1-intel-2021a
-  - 6.2.1-intel-2023a
-  - 6.3.2-foss-2023a
-  - 6.4.0-foss-2023a
-  - 6.4.0-intel-2023a
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: vasp
-  license: ''
-  name: vasp
-  nci-gadi:
-  - 5.4.4
-  - 6.1.0
-  - 6.2.1
-  - 6.3.1
-  - 6.3.2
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: vawk
   bunya: ''
   description: vawk is an awk-like VCF parser.
@@ -25740,56 +19718,9 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://github.com/NVIDIA/VisRTX
-  id: visrtx
-  license: ''
-  name: visrtx
-  nci-gadi:
-  - 0.1.6
-  - 0.1.6_cuda11.4
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://au.mathworks.com/products/connections/product_detail/vlab.html
-  id: vlab
-  license: ''
-  name: vlab
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy:
-  - title: Hydrogen Bond Analysis using VMD 1.9.3
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fchemteam%2Fvmd_hbonds%2Fvmd_hbonds%2F1.9.3
-  homepage: https://www.ks.uiuc.edu/Research/vmd/
-  id: vmd
-  license: ''
-  name: vmd
-  nci-gadi:
-  - 1.9.3
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -25807,22 +19738,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya:
-  - 0.4.6-gcccore-10.3.0
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: voro++
-  license: ''
-  name: voro++
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: vsearch
   bunya: ''
   description: High-throughput search and clustering sequence analysis tool. It supports
@@ -25862,40 +19778,8 @@
   topics:
   - Metagenomics
   - Sequence analysis
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://vtk.org/
-  id: vtk
-  license: ''
-  name: vtk
-  nci-gadi:
-  - 8.2.0
-  - 8.1.0
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: http://www.wannier.org/
-  id: wannier90
-  license: ''
-  name: wannier90
-  nci-gadi:
-  - 3.0.0
-  - 3.1.0
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -25928,39 +19812,8 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya:
-  - 1.21.1-gcccore-10.3.0
-  - 1.21.3-gcccore-11.3.0                (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: wget
-  license: ''
-  name: wget
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://www.cpc.ncep.noaa.gov/products/wesley/wgrib.html
-  id: wgrib2
-  license: ''
-  name: wgrib2
-  nci-gadi:
-  - 2.0.8
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
 - biocontainers: whatshap
   bunya: ''
   description: Software for phasing genomic variants using DNA sequencing reads, also
@@ -26024,21 +19877,7 @@
   resource-documentation: .nan
   topics:
   - Sequencing
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://www.winehq.org/
-  id: wine
-  license: ''
-  name: Wine
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: winnowmap
   bunya: ''
   description: Winnowmap is a long-read mapping algorithm optimized for mapping ONT
@@ -26085,21 +19924,7 @@
   topics:
   - HMMs
   - DNA
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: http://didgeridoo.une.edu.au/km/wombat.php
-  id: wombat
-  license: ''
-  name: wombat
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: workflow4metabolomics
   bunya: ''
   description: First fully open-source and collaborative online platform for computational
@@ -26206,54 +20031,9 @@
   topics:
   - Sequence assembly
   - Sequencing
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://www.wxwidgets.org/
-  id: wxwidgets
-  license: ''
-  name: wxWidgets
-  nci-gadi:
-  - 3.0.4
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 20210414-gcccore-10.3.0
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: x264
-  license: ''
-  name: x264
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 3.5-gcccore-10.3.0
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: x265
-  license: ''
-  name: x265
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -26313,39 +20093,8 @@
   - Biological imaging
   - Data visualisation
   - Metabolomics
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://xerces.apache.org/xerces-c/
-  id: xerces-c
-  license: ''
-  name: Xerces-C++ XML parser
-  nci-gadi:
-  - 3.2.2
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 2.0207-gcccore-10.3.0
-  - 2.0207-gcccore-11.3.0          (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: xml-libxml
-  license: ''
-  name: xml-libxml
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -26361,21 +20110,7 @@
   registry-link: ''
   resource-documentation: https://github.com/AustralianBioCommons/xml4ena
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://github.com/freedesktop/xorg-macros
-  id: xorg-macros
-  license: ''
-  name: xorg-macros
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: xpore
   bunya:
   - 2.1--pyh5e36f6f_0
@@ -26427,40 +20162,8 @@
   topics:
   - Proteomics
   - Proteomics experiment
-- biocontainers: ''
-  bunya:
-  - 1.20.11-gcccore-10.3.0
-  - 21.1.3-gcccore-11.3.0                (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: xvfb
-  license: ''
-  name: xvfb
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 8.2.4220-gcccore-10.3.0
-  - 8.2.4220-gcccore-11.3.0               (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: xxd
-  license: ''
-  name: xxd
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -26478,21 +20181,7 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: http://www.yacas.org/
-  id: yacas
-  license: ''
-  name: yacas
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: yahs
   bunya: ''
   description: YaHS is scaffolding tool using Hi-C data. It relies on a new algorithm
@@ -26517,22 +20206,7 @@
   topics:
   - Sequence assembly
   - DNA binding sites
-- biocontainers: ''
-  bunya:
-  - 1.3.0-gcccore-10.3.0
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: yasm
-  license: ''
-  name: yasm
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -26567,51 +20241,6 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: zebulon
-  license: ''
-  name: zebulon
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya: ''
-  description: ''
-  galaxy: ''
-  homepage: https://zlib.net/
-  id: zlib
-  license: ''
-  name: zlib
-  nci-gadi: ''
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
-- biocontainers: ''
-  bunya:
-  - 1.4.9-gcccore-10.3.0
-  - 1.5.2-gcccore-11.3.0                 (D)
-  description: ''
-  galaxy: ''
-  homepage: ''
-  id: zstd
-  license: ''
-  name: zstd
-  nci-gadi:
-  - 1.4.3
-  nci-if89: ''
-  pawsey: ''
-  publications: ''
-  registry-link: ''
-  resource-documentation: .nan
-  topics: ''
+- null
+- null
+- null
