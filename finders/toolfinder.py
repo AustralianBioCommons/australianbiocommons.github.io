@@ -86,8 +86,10 @@ class QriscloudDataProvider(Dataprovider):
                 toolID = toolID.replace("miniconda3", "miniconda")
                 toolID = toolID.replace("salsa2", "salsa")
                 toolID = toolID.replace("anaconda3", "anaconda")
+                toolID = toolID.replace("braker3", "braker")
                 toolID = toolID.replace("scipy-bundle", "scipy")
                 toolID = toolID.replace("iqtree", "iq-tree")
+                toolID = toolID.replace("gtdbtk", "gtdb-tk")
                 toolID = toolID.replace("sra-toolkit", "sra-tools")
                 #toolID = re.sub(r"^soapdenovo$", "soapdenovo2", toolID)
                 if toolID not in self.available_data:
@@ -384,6 +386,7 @@ class ToolDB(DB):
         tool_list = self.get_data_only()
 
         tool_list_dictionary = list(map(ToolDB.convert_tool_to_yaml, tool_list))
+        tool_list_dictionary = list(filter(lambda x: x is not None, tool_list_dictionary))
         # see https://stackoverflow.com/q/71281303
         # see https://stackoverflow.com/a/6160082
         with open("data/data.yaml", 'w') as file:
