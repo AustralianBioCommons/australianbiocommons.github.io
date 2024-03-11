@@ -900,6 +900,22 @@
   - DNA polymorphism
   - GWAS study
   - Genotyping experiment
+- biocontainers: ''
+  bunya:
+  - 2.20.0-gcc-11.3.0
+  description: ''
+  galaxy: ''
+  homepage: ''
+  id: bcl2fastq2
+  license: ''
+  name: bcl2fastq2
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications: ''
+  registry-link: ''
+  resource-documentation: .nan
+  topics: ''
 - biocontainers: beagle
   bunya:
   - 5.4.22jul22.46e-java-11
@@ -3278,6 +3294,27 @@
   registry-link: ''
   resource-documentation: .nan
   topics: ''
+- biocontainers: Crisflash
+  bunya:
+  - 1.2.0        star-ccm+
+  description: Software to generate CRISPR guide RNAs against genomes annotated with
+    individual variation.
+  galaxy: ''
+  homepage: https://github.com/crisflash/crisflash
+  id: crisflash
+  license: GPL-3.0
+  name: Crisflash
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications:
+  - title: 'Crisflash: Open-source software to generate CRISPR guide RNAs against
+      genomes annotated with individual variation'
+    url: https://doi.org/10.1093/bioinformatics/btz019
+  registry-link: Crisflash
+  resource-documentation: .nan
+  topics:
+  - Genetic variation
 - biocontainers: ''
   bunya: ''
   description: ''
@@ -5526,7 +5563,9 @@
   bunya: ''
   description: HMM-based gene structure prediction (multiple genes, both chains);
     Program for predicting multiple genes in genomic DNA sequences.
-  galaxy: ''
+  galaxy:
+  - title: FGENESH get protein 1.0.0+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=fgenesh_get_proteins
   homepage: http://nhjy.hzau.edu.cn/kech/swxxx/jakj/dianzi/Bioinf6/GeneFinding/GeneFinding2.htm
   id: fgenesh
   license: ''
@@ -6059,6 +6098,8 @@
   bunya: ''
   description: ''
   galaxy:
+  - title: Number lines 9.3+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Ftext_processing%2Fnl%2F9.3%2Bgalaxy0
   - title: Column Regex Find And Replace 1.0.3
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fregex_find_replace%2FregexColumn1%2F1.0.3
   - title: Regex Find And Replace 1.0.3
@@ -11082,7 +11123,7 @@
   registry-link: mlst
   resource-documentation: .nan
   topics:
-  - Immunoproteins, genes and antigens
+  - Immunoproteins and antigens
 - biocontainers: MMseqs2
   bunya: ''
   description: "MMseqs2 (Many-against-Many sequence searching) is a software suite\
@@ -12402,6 +12443,22 @@
   - Sequence assembly
   - Plant biology
   - Mapping
+- biocontainers: ''
+  bunya:
+  - 0.1.0--hd03093a_0
+  description: ''
+  galaxy: ''
+  homepage: ''
+  id: nextpolish2
+  license: ''
+  name: NextPolish2
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications: ''
+  registry-link: ''
+  resource-documentation: .nan
+  topics: ''
 - biocontainers: ''
   bunya:
   - 2.10.9-gcccore-10.3.0
