@@ -168,7 +168,7 @@ class GalaxyDataProvider(Dataprovider):
 
     def _render(self, data):
         retval = {}
-        retval[Dataprovider.FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK] = [(d["link"], d["name"], d["version"]) for d in data if "link" in d and "name" in d and "version" in d]
+        retval[Dataprovider.FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK] = [(d["link"], d["name"], d["description"], d["version"]) for d in data if "link" in d and "name" in d and "description" in d and "version" in d]
         return retval
 
     def get_alt_ids(self):
@@ -213,7 +213,7 @@ class BiotoolsDataProvider(Dataprovider):
         import concurrent.futures
         def fetch_url(url, biotools_id):
             return requests.get(url, timeout=10), biotools_id
-        with concurrent.futures.ThreadPoolExecutor(max_workers=12) as executor:
+        with concurrent.futures.ThreadPoolExecutor(max_workers=8) as executor:
             future_urls = [executor.submit(fetch_url, url, biotools_id) for biotools_id, url in url_array]
             for future in concurrent.futures.as_completed(future_urls):
                 response, biotools_id = future.result()
@@ -358,8 +358,9 @@ class ToolDB(DB):
         def translate_galaxy(val):
            if not val is None:
                name = val[1]
-               version = val[2]
-           return {"title": name + " " + version, "url": f"""https://usegalaxy.org.au/{val[0]}"""}
+               description  = val[1] + ": " + val[2]
+               version = val[3]
+           return {"title": name + " " + version, "url": f"""https://usegalaxy.org.au/{val[0]}""", "description": description}
         if tool.get(Dataprovider.FIELD_NAMES.INCLUSION) == True:
             return {
                 # see https://stackoverflow.com/a/9285148
@@ -386,6 +387,7 @@ class ToolDB(DB):
         tool_list = self.get_data_only()
 
         tool_list_dictionary = list(map(ToolDB.convert_tool_to_yaml, tool_list))
+        # filter null values from tool list (i.e. those annotated with "n" for the "include?" field
         tool_list_dictionary = list(filter(lambda x: x is not None, tool_list_dictionary))
         # see https://stackoverflow.com/q/71281303
         # see https://stackoverflow.com/a/6160082
