@@ -30,6 +30,7 @@ if __name__ == "__main__":
     myworkflowdb = WorkflowDB()
     myworkflowdb.add_provider(WorkflowHubSpaceDataProvider())
     myworkflowdb.get_formatted_table().to_csv("./temp/workflowfinder_input.csv", index = None)
+    myworkflowdb.get_formatted_yaml()
 
 ###########################################
 ### REPORTING SECTION FOR MISSING TOOLS ###

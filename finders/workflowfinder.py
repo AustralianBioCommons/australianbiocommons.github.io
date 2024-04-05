@@ -4,6 +4,7 @@ from .common import Dataprovider, DB
 import requests
 import json
 import pandas as pd
+import yaml
 
 class WorkflowHubSpaceDataProvider(Dataprovider):
 
@@ -159,6 +160,42 @@ class WorkflowDB(DB):
             space_workflow_ids.append(id)
         for i in space_workflow_ids:
             self.db[i] = Workflow(i)
+
+
+    @staticmethod
+    def convert_workflow_to_yaml(workflow):
+        def translate_doi(val):
+            if "doi" in val and not val["doi"] is None:
+                return {"""https://doi.org/{val["doi"]}"""}
+        return {
+            # see https://stackoverflow.com/a/9285148
+            # see https://stackoverflow.com/a/62014515
+            "title": workflow.get(Dataprovider.FIELD_NAMES.TITLE, ""),
+            "url": workflow.get(Dataprovider.FIELD_NAMES.URL, ""),
+            "remote_link": workflow.get(Dataprovider.FIELD_NAMES.REMOTE_LINK, ""),
+            "edam_top": [i["label"] for i in workflow[Dataprovider.FIELD_NAMES.EDAM_TOP]] if getattr(
+                Dataprovider.FIELD_NAMES.EDAM_TOP, "label", None) is not None and isinstance(
+                workflow[Dataprovider.FIELD_NAMES.EDAM_TOP], list) else "",
+            "edam_ops": [i["label"] for i in workflow[Dataprovider.FIELD_NAMES.EDAM_OPS]] if getattr(
+                Dataprovider.FIELD_NAMES.EDAM_OPS, "label", None) is not None and isinstance(
+                workflow[Dataprovider.FIELD_NAMES.EDAM_OPS], list) else "",
+            "license": workflow.get(Dataprovider.FIELD_NAMES.LICENSE, ""),
+            "updated_at": workflow.get(Dataprovider.FIELD_NAMES.UPDATED_AT, ""),
+            "doi": workflow.get(Dataprovider.FIELD_NAMES.DOI, ""),
+            "projects": [i for i in workflow[Dataprovider.FIELD_NAMES.PROJECTS]] if isinstance(workflow[Dataprovider.FIELD_NAMES.PROJECTS], list) else "",
+            "guide_link": workflow.get(Dataprovider.FIELD_NAMES.GUIDE_LINK, ""),
+            "launch_link": workflow.get(Dataprovider.FIELD_NAMES.LAUNCH_LINK, "")
+        }
+
+
+    def get_formatted_yaml(self):
+        workflow_list = self.get_data_only()
+        workflow_list_dictionary = list(map(WorkflowDB.convert_workflow_to_yaml, workflow_list))
+        # see https://stackoverflow.com/q/71281303
+        # see https://stackoverflow.com/a/6160082
+        with open("data/data_workflows.yaml", 'w') as file:
+            yaml.dump(workflow_list_dictionary, file, default_flow_style=False)
+
 
     def get_formatted_table(self):
         workflow_table = self.get_data()
