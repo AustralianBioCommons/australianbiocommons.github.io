@@ -350,11 +350,29 @@ class ToolDB(DB):
     @staticmethod
     def convert_tool_to_yaml(tool):
         def translate_publication(val):
-           if "metadata" in val and not val["metadata"] is None and "title" in val["metadata"]:
-               title = val["metadata"]["title"]
-           else:
-               title = val["doi"]
-           return {"title": title, "url": f"""https://doi.org/{val["doi"]}"""}
+           publications = {}
+           #if "metadata" in val and not val["metadata"] is None and "title" in val["metadata"]:
+           #    publications["title"] = val["metadata"]["title"]
+           if "doi" in val and not val["doi"] is None:
+               publications["url"] = f"""https://doi.org/{val["doi"]}"""
+               if val["metadata"] is None:
+                   publications["title"] = val["doi"]
+               else:
+                   publications["title"] = val["metadata"]["title"]
+           if "pmid" in val and not val["pmid"] is None and val["doi"] is None:
+               publications["url"] = f"""http://www.ncbi.nlm.nih.gov/pubmed/{val["pmid"]}"""
+               if val["metadata"] is None:
+                   publications["title"] = val["pmid"]
+               else:
+                   publications["title"] = val["metadata"]["title"]
+           if "pmcid" in val and not val["pmcid"] is None and val["doi"] is None:
+               publications["url"] = f"""https://www.ncbi.nlm.nih.gov/pmc/articles/{val["pmcid"]}"""
+               if val["metadata"] is None:
+                   publications["title"] = val["pmcid"]
+               else:
+                   publications["title"] = val["metadata"]["title"]
+           return publications
+
         def translate_galaxy(val):
            if not val is None:
                name = val[1]

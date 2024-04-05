@@ -183,7 +183,7 @@
   pawsey: ''
   publications:
   - title: The Amber biomolecular simulation programs
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/16200636
   registry-link: ambertools
   resource-documentation: .nan
   topics:
@@ -202,7 +202,7 @@
   pawsey: ''
   publications:
   - title: Comparative genome assembly.
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/15383210
   registry-link: amos
   resource-documentation: .nan
   topics:
@@ -227,7 +227,7 @@
   publications:
   - title: Statistical, computational and visualization methodologies to unveil gene
       primary structure features
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/16538282
   registry-link: anaconda
   resource-documentation: .nan
   topics:
@@ -373,7 +373,7 @@
   pawsey: ''
   publications:
   - title: 'Apollo: a sequence annotation editor.'
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/12537571
   registry-link: apollo
   resource-documentation: https://apollo-portal.genome.edu.au/
   topics:
@@ -493,7 +493,7 @@
   publications:
   - title: 'ASTRAL-II: Coalescent-based species tree estimation with many hundreds
       of taxa and thousands of genes'
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/26072508
   - title: 'ASTRAL: Genome-scale coalescent-based species tree estimation'
     url: https://doi.org/10.1093/bioinformatics/btu462
   - title: 'ASTRAL-III: Polynomial time species tree reconstruction from partially
@@ -681,7 +681,7 @@
   - 2.5.1--hd03093a_10
   publications:
   - title: 'Bamtools: A C++ API and toolkit for analyzing and managing BAM files'
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/21493652
   registry-link: bamtools
   resource-documentation: .nan
   topics:
@@ -1319,7 +1319,7 @@
   - 2.30.0--h468198e_3
   publications:
   - title: 'BEDTools: A flexible suite of utilities for comparing genomic features'
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/20110278
   registry-link: bedtools
   resource-documentation: .nan
   topics:
@@ -1646,8 +1646,8 @@
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fpeterjc%2Fget_orfs_or_cdss%2Fget_orfs_or_cdss%2F0.2.3
   - description: 'Kraken taxonomic report: view report of classification for multiple
       samples'
-    title: Kraken taxonomic report 0.0.3
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fkraken_taxonomy_report%2Fkraken_taxonomy_report%2F0.0.3
+    title: Kraken taxonomic report 0.0.3+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fkraken_taxonomy_report%2Fkraken_taxonomy_report%2F0.0.3%2Bgalaxy1
   homepage: http://biopython.org/
   id: biopython
   license: MIT
@@ -1659,7 +1659,7 @@
   publications:
   - title: 'Biopython: Freely available Python tools for computational molecular biology
       and bioinformatics'
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/19304878
   registry-link: biopython
   resource-documentation: .nan
   topics:
@@ -1708,7 +1708,7 @@
   pawsey: ''
   publications:
   - title: 'Bismark: A flexible aligner and methylation caller for Bisulfite-Seq applications'
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/21493656
   registry-link: bismark
   resource-documentation: .nan
   topics:
@@ -1877,7 +1877,7 @@
   pawsey: ''
   publications:
   - title: BLAT - The BLAST-like alignment tool
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/11932250
   registry-link: blat
   resource-documentation: .nan
   topics:
@@ -2094,7 +2094,7 @@
   publications:
   - title: 'BRAKER1: Unsupervised RNA-Seq-based genome annotation with GeneMark-ET
       and AUGUSTUS'
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/26559507
   registry-link: braker1
   resource-documentation: .nan
   topics:
@@ -2116,7 +2116,7 @@
   publications:
   - title: 'BreakDancer: An algorithm for high-resolution mapping of genomic structural
       variation'
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/19668202
   registry-link: breakdancer
   resource-documentation: .nan
   topics:
@@ -2164,7 +2164,7 @@
   pawsey: ''
   publications:
   - title: 'BSMAP: Whole genome bisulfite sequence MAPping program'
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/19635165
   registry-link: bsmap
   resource-documentation: .nan
   topics:
@@ -2549,7 +2549,7 @@
   pawsey: ''
   publications:
   - title: 'CAP3: A DNA sequence assembly program'
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/10508846
   registry-link: cap3
   resource-documentation: .nan
   topics:
@@ -2726,7 +2726,7 @@
   pawsey: ''
   publications:
   - title: Aggressive assembly of pyrosequencing reads with mates
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/18952627
   registry-link: cabog
   resource-documentation: .nan
   topics:
@@ -4141,7 +4141,7 @@
   pawsey: ''
   publications:
   - title: 'DeepTools: A flexible platform for exploring deep-sequencing data'
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/24799436
   registry-link: deeptools
   resource-documentation: .nan
   topics:
@@ -4239,7 +4239,7 @@
   registry-link: deseq2
   resource-documentation: .nan
   topics:
-  - Transcriptomics
+  - RNA-Seq
 - biocontainers: dexseq
   bunya: ''
   description: The package is focused on finding differential exon usage using RNA-seq
@@ -4355,7 +4355,7 @@
   publications:
   - title: 'DIA-Umpire: Comprehensive computational framework for data-independent
       acquisition proteomics'
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/25599550
   registry-link: DIA-Umpire
   resource-documentation: .nan
   topics:
@@ -4551,7 +4551,7 @@
     url: https://doi.org/10.1093/nar/gku1028
   - title: "Dictionary of protein secondary structure: Pattern recognition of hydrogen\u2010\
       bonded and geometrical features"
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/6667333
   registry-link: dssp
   resource-documentation: .nan
   topics:
@@ -4667,7 +4667,7 @@
   publications:
   - title: 'De novo bacterial genome sequencing: Millions of very short reads assembled
       on a desktop computer'
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/18332092
   registry-link: edena
   resource-documentation: .nan
   topics:
@@ -5214,7 +5214,7 @@
   pawsey: ''
   publications:
   - title: 'EMBOSS: The European Molecular Biology Open Software Suite'
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/10827456
   registry-link: emboss
   resource-documentation: .nan
   topics:
@@ -5245,7 +5245,7 @@
   pawsey: ''
   publications:
   - title: European nucleotide archive in 2016
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/27899630
   - title: 10.1093/BIOINFORMATICS/BTAB421
     url: https://doi.org/10.1093/BIOINFORMATICS/BTAB421
   registry-link: ena
@@ -5287,7 +5287,7 @@
   publications:
   - title: Chromatogram libraries improve peptide detection and quantification by
       data independent acquisition mass spectrometry
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/30510204
   registry-link: EncyclopeDIA
   resource-documentation: .nan
   topics:
@@ -5415,7 +5415,7 @@
   pawsey: ''
   publications:
   - title: 'EuPathDB: A portal to eukaryotic pathogen databases'
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/19914931
   registry-link: eupathdb
   resource-documentation: .nan
   topics:
@@ -5505,7 +5505,7 @@
   pawsey: ''
   publications:
   - title: Automated generation of heuristics for biological sequence comparison
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/15713233
   registry-link: exonerate
   resource-documentation: .nan
   topics:
@@ -5840,7 +5840,7 @@
   pawsey: ''
   publications:
   - title: 'FastML: A web server for probabilistic reconstruction of ancestral sequences'
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/22661579
   registry-link: fastml
   resource-documentation: .nan
   topics:
@@ -6363,9 +6363,9 @@
   pawsey: ''
   publications:
   - title: 'fpocket: Online tools for protein ensemble pocket detection and tracking'
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/20478829
   - title: 'Fpocket: An open source platform for ligand pocket detection'
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/19486540
   registry-link: fpocket
   resource-documentation: .nan
   topics:
@@ -6386,7 +6386,7 @@
   pawsey: ''
   publications:
   - title: 'FragGeneScan: Predicting genes in short and error-prone reads'
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/20805240
   - title: 10.7490/f1000research.1114334.1
     url: https://doi.org/10.7490/f1000research.1114334.1
   registry-link: fraggenescan
@@ -6939,7 +6939,7 @@
   publications:
   - title: 'The genome analysis toolkit: A MapReduce framework for analyzing next-generation
       DNA sequencing data'
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/20644199
   registry-link: gatk
   resource-documentation: .nan
   topics:
@@ -7716,7 +7716,7 @@
   pawsey: ''
   publications:
   - title: 'GMAP: A genomic mapping and alignment program for mRNA and EST sequences'
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/15728110
   - title: 10.7490/f1000research.1114334.1
     url: https://doi.org/10.7490/f1000research.1114334.1
   registry-link: gmap
@@ -7736,7 +7736,7 @@
   pawsey: ''
   publications:
   - title: 'GMAP: A genomic mapping and alignment program for mRNA and EST sequences'
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/15728110
   - title: 10.7490/f1000research.1114334.1
     url: https://doi.org/10.7490/f1000research.1114334.1
   registry-link: gmap
@@ -7756,7 +7756,7 @@
   pawsey: ''
   publications:
   - title: 'GMAP: A genomic mapping and alignment program for mRNA and EST sequences'
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/15728110
   - title: 10.7490/f1000research.1114334.1
     url: https://doi.org/10.7490/f1000research.1114334.1
   registry-link: gmap
@@ -8334,7 +8334,7 @@
   publications:
   - title: 'XHeinz: An algorithm for mining cross-species network modules under a
       flexible conservation model'
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/26023104
   registry-link: heinz
   resource-documentation: .nan
   topics:
@@ -9061,7 +9061,7 @@
       and exploration'
     url: https://doi.org/10.1093/BIB/BBS017
   - title: Integrative genomics viewer
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/21221095
   - title: 'igv.js: an embeddable JavaScript implementation of the Integrative Genomics
       Viewer (IGV)'
     url: https://doi.org/10.1093/BIOINFORMATICS/BTAC830
@@ -9076,8 +9076,8 @@
   description: A tool to detect Integron in DNA sequences.
   galaxy:
   - description: 'Integron Finder: is a program that detects integrons in DNA sequences'
-    title: Integron Finder 2.0.2+galaxy1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fintegron_finder%2Fintegron_finder%2F2.0.2%2Bgalaxy1
+    title: Integron Finder 2.0.3+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fintegron_finder%2Fintegron_finder%2F2.0.3%2Bgalaxy0
   homepage: https://github.com/gem-pasteur/Integron_Finder
   id: integron_finder
   license: GPL-3.0
@@ -9262,7 +9262,7 @@
   pawsey: ''
   publications:
   - title: 'W-IQ-TREE: a fast online phylogenetic tool for maximum likelihood analysis'
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/27084950
   registry-link: iq-tree
   resource-documentation: .nan
   topics:
@@ -9868,7 +9868,7 @@
   pawsey: ''
   publications:
   - title: 'KMC 2: Fast and resource-frugal k-mer counting'
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/25609798
   registry-link: kmc
   resource-documentation: .nan
   topics:
@@ -10025,7 +10025,7 @@
   pawsey: ''
   publications:
   - title: Interactive metagenomic visualization in a Web browser
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/21961884
   registry-link: krona
   resource-documentation: .nan
   topics:
@@ -10262,13 +10262,13 @@
   pawsey: ''
   publications:
   - title: 'LMSD: LIPID MAPS structure database'
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/17098933
   - title: 'LMPD: LIPID MAPS proteome database.'
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/16381922
   - title: A comprehensive classification system for lipids
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/15722563
   - title: LIPID MAPS online tools for lipid research
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/17584797
   registry-link: lipid_maps
   resource-documentation: .nan
   topics:
@@ -10454,7 +10454,7 @@
   pawsey: ''
   publications:
   - title: Model-based analysis of ChIP-Seq (MACS)
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/18798982
   registry-link: macs
   resource-documentation: .nan
   topics:
@@ -10508,7 +10508,7 @@
   pawsey: ''
   publications:
   - title: Model-based analysis of ChIP-Seq (MACS)
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/18798982
   registry-link: macs
   resource-documentation: .nan
   topics:
@@ -10738,12 +10738,12 @@
     multiple sequence alignment program.
   galaxy:
   - description: 'MAFFT: Multiple alignment program for amino acid or nucleotide sequences'
-    title: MAFFT 7.508+galaxy1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frnateam%2Fmafft%2Frbc_mafft%2F7.508%2Bgalaxy1
+    title: MAFFT 7.520+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frnateam%2Fmafft%2Frbc_mafft%2F7.520%2Bgalaxy0
   - description: 'MAFFT add: Align a sequence,alignment or fragments to an existing
       alignment.'
-    title: MAFFT add 7.508+galaxy1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frnateam%2Fmafft%2Frbc_mafft_add%2F7.508%2Bgalaxy1
+    title: MAFFT add 7.520+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frnateam%2Fmafft%2Frbc_mafft_add%2F7.520%2Bgalaxy0
   homepage: http://mafft.cbrc.jp/alignment/server/index.html
   id: mafft
   license: BSD-Source-Code
@@ -10803,7 +10803,7 @@
   pawsey: ''
   publications:
   - title: Quality control, modeling, and visualization of CRISPR screens with MAGeCK-VISPR
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/26673418
   registry-link: mageck
   resource-documentation: .nan
   topics:
@@ -10994,7 +10994,7 @@
   pawsey: ''
   publications:
   - title: The MaSuRCA genome assembler
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/23990416
   registry-link: masurca
   resource-documentation: .nan
   topics:
@@ -11090,7 +11090,7 @@
   pawsey: ''
   publications:
   - title: 'Mauve: Multiple alignment of conserved genomic sequence with rearrangements'
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/15231754
   registry-link: mauve
   resource-documentation: .nan
   topics:
@@ -11112,8 +11112,8 @@
   nci-if89: ''
   pawsey: ''
   publications:
-  - title: null
-    url: https://doi.org/None
+  - title: '26515820'
+    url: http://www.ncbi.nlm.nih.gov/pubmed/26515820
   registry-link: maxbin
   resource-documentation: .nan
   topics:
@@ -11309,7 +11309,7 @@
   publications:
   - title: 'MEGAHIT: An ultra-fast single-node solution for large and complex metagenomics
       assembly via succinct de Bruijn graph'
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/25609793
   registry-link: megahit
   resource-documentation: .nan
   topics:
@@ -12028,7 +12028,7 @@
   publications:
   - title: Using the miraEST assembler for reliable and automated mRNA transcript
       assembly and SNP detection in sequenced ESTs
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/15140833
   registry-link: mira
   resource-documentation: .nan
   topics:
@@ -12095,7 +12095,7 @@
   publications:
   - title: Analysis and design of RNA sequencing experiments for identifying isoform
       regulation
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/21057496
   registry-link: miso
   resource-documentation: .nan
   topics:
@@ -12997,7 +12997,7 @@
   publications:
   - title: 'MSstats: An R package for statistical analysis of quantitative mass spectrometry-based
       proteomic experiments'
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/24794931
   registry-link: msstats
   resource-documentation: .nan
   topics:
@@ -13070,6 +13070,8 @@
   topics:
   - Sequencing
   - Bioinformatics
+  - Sequence analysis
+  - Genomics
 - biocontainers: multisnv
   bunya: ''
   description: multiSNV is a tool for calling somatic single-nucleotide variants (SNVs)
@@ -13098,6 +13100,9 @@
     finished or draft sequence. Basically it is a ultra-fast alignment of large-scale
     DNA and protein sequences
   galaxy:
+  - description: 'Delta-Filter: Filters alignment (delta) file from nucmer'
+    title: Delta-Filter 4.0.0rc1+galaxy3
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fmummer_delta_filter%2Fmummer_delta_filter%2F4.0.0rc1%2Bgalaxy3
   - description: 'Show-Coords: Parse delta file and report coordinates and other information'
     title: Show-Coords 4.0.0rc1+galaxy3
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fmummer_show_coords%2Fmummer_show_coords%2F4.0.0rc1%2Bgalaxy3
@@ -13110,12 +13115,9 @@
   - description: 'DNAdiff: Evaluate similarities/differences between two sequences'
     title: DNAdiff 4.0.0rc1+galaxy3
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fmummer_dnadiff%2Fmummer_dnadiff%2F4.0.0rc1%2Bgalaxy3
-  - description: 'Delta-Filter: Filters alignment (delta) file from nucmer'
-    title: Delta-Filter 4.0.0rc1+galaxy2
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fmummer_delta_filter%2Fmummer_delta_filter%2F4.0.0rc1%2Bgalaxy2
   - description: 'Mummer: Align two or more sequences'
-    title: Mummer 4.0.0rc1+galaxy2
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fmummer_mummer%2Fmummer_mummer%2F4.0.0rc1%2Bgalaxy2
+    title: Mummer 4.0.0rc1+galaxy3
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fmummer_mummer%2Fmummer_mummer%2F4.0.0rc1%2Bgalaxy3
   homepage: http://mummer.sourceforge.net/
   id: mummer
   license: Artistic-2.0
@@ -13126,7 +13128,7 @@
   - 3.23--pl5321h1b792b2_13
   publications:
   - title: Alignment of whole genomes
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/10325427
   - title: 'MUMmer4: A fast and versatile genome alignment system'
     url: https://doi.org/10.1371/journal.pcbi.1005944
   - title: 10.1186/gb-2004-5-2-r12
@@ -13302,8 +13304,8 @@
   galaxy:
   - description: 'NanoPlot: Plotting suite for Oxford Nanopore sequencing data and
       alignments'
-    title: NanoPlot 1.41.0+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fnanoplot%2Fnanoplot%2F1.41.0%2Bgalaxy0
+    title: NanoPlot 1.42.0+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fnanoplot%2Fnanoplot%2F1.42.0%2Bgalaxy0
   homepage: https://github.com/wdecoster/NanoPlot
   id: nanoplot
   license: GPL-3.0
@@ -13780,7 +13782,7 @@
   publications:
   - title: 'NGSUtils: A software suite for analyzing and manipulating next-generation
       sequencing datasets'
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/23314324
   registry-link: ngsutils
   resource-documentation: .nan
   topics:
@@ -13964,7 +13966,7 @@
   pawsey: ''
   publications:
   - title: 'obitools: A unix-inspired software package for DNA metabarcoding'
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/25959493
   registry-link: obitools
   resource-documentation: .nan
   topics:
@@ -14322,8 +14324,8 @@
     with custom sequences.
   galaxy:
   - description: 'Pangolin: Phylogenetic Assignment of Outbreak Lineages'
-    title: Pangolin 4.3+galaxy1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fpangolin%2Fpangolin%2F4.3%2Bgalaxy1
+    title: Pangolin 4.3+galaxy2
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fpangolin%2Fpangolin%2F4.3%2Bgalaxy2
   homepage: https://github.com/tkzeng/Pangolin
   id: pangolin
   license: GPL-3.0
@@ -14680,7 +14682,7 @@
   publications:
   - title: Semi-supervised learning for peptide identification from shotgun proteomics
       datasets
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/17952086
   registry-link: percolator
   resource-documentation: .nan
   topics:
@@ -14887,115 +14889,115 @@
     (HTS) data in formats such as SAM/BAM/CRAM and VCF. Available as a standalone
     program or within the GATK4 program.
   galaxy:
-  - description: 'ReplaceSamHeader: replace header in a SAM/BAM dataset'
-    title: ReplaceSamHeader 2.18.2.1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_ReplaceSamHeader%2F2.18.2.1
-  - description: 'FilterSamReads: include or exclude aligned and unaligned reads and
-      read lists'
-    title: FilterSamReads 2.18.2.1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_FilterSamReads%2F2.18.2.1
-  - description: 'CollectHsMetrics: compute metrics about datasets generated through
-      hybrid-selection (e.g. exome)'
-    title: CollectHsMetrics 2.18.2
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_CollectHsMetrics%2F2.18.2
-  - description: 'RevertOriginalBaseQualitiesAndAddMateCigar: revert the original
-      base qualities and add the mate cigar tag'
-    title: RevertOriginalBaseQualitiesAndAddMateCigar 2.18.2.1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_RevertOriginalBaseQualitiesAndAddMateCigar%2F2.18.2.1
-  - description: 'MergeBamAlignment: merge alignment data with additional info stored
-      in an unmapped BAM dataset'
-    title: MergeBamAlignment 2.18.2.2
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_MergeBamAlignment%2F2.18.2.2
-  - description: 'AddOrReplaceReadGroups: add or replaces read group information'
-    title: AddOrReplaceReadGroups 2.18.2.1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_AddOrReplaceReadGroups%2F2.18.2.1
-  - description: 'MergeSamFiles: merges multiple SAM/BAM datasets into one'
-    title: MergeSamFiles 2.18.2.1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_MergeSamFiles%2F2.18.2.1
   - description: 'FixMateInformation: ensure that all mate-pair information is in
       sync between each read and it''s mate pair'
-    title: FixMateInformation 2.18.2.1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_FixMateInformation%2F2.18.2.1
-  - description: 'ReorderSam: reorder reads to match ordering in reference sequences'
-    title: ReorderSam 2.18.2.1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_ReorderSam%2F2.18.2.1
-  - description: 'CollectGcBiasMetrics: charts the GC bias metrics'
-    title: CollectGcBiasMetrics 2.18.2.1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_CollectGcBiasMetrics%2F2.18.2.1
-  - description: 'EstimateLibraryComplexity: assess sequence library complexity from
-      read sequences'
-    title: EstimateLibraryComplexity 2.18.2.1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_EstimateLibraryComplexity%2F2.18.2.1
-  - description: 'MarkDuplicatesWithMateCigar: examine aligned records in BAM datasets
-      to locate duplicate molecules'
-    title: MarkDuplicatesWithMateCigar 2.18.2.3
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_MarkDuplicatesWithMateCigar%2F2.18.2.3
-  - description: 'CollectBaseDistributionByCycle: charts the nucleotide distribution
-      per cycle in a SAM or BAM dataset'
-    title: CollectBaseDistributionByCycle 2.18.2.2
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_CollectBaseDistributionByCycle%2F2.18.2.2
-  - description: 'BedToIntervalList: convert coordinate data into picard interval
-      list format'
-    title: BedToIntervalList 2.18.2.1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_BedToIntervalList%2F2.18.2.1
-  - description: 'CleanSam: perform SAM/BAM grooming'
-    title: CleanSam 2.18.2.1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_CleanSam%2F2.18.2.1
-  - description: 'SamToFastq: extract reads and qualities from SAM/BAM dataset and
-      convert to fastq'
-    title: SamToFastq 2.18.2.3
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_SamToFastq%2F2.18.2.3
-  - description: 'FastqToSam: convert Fastq data into unaligned BAM'
-    title: FastqToSam 2.18.2.2
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_FastqToSam%2F2.18.2.2
+    title: FixMateInformation 3.1.1.0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_FixMateInformation%2F3.1.1.0
+  - description: 'SortSam: sort SAM/BAM dataset'
+    title: SortSam 3.1.1.0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_SortSam%2F3.1.1.0
+  - description: 'RevertSam: revert SAM/BAM datasets to a previous state'
+    title: RevertSam 3.1.1.0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_RevertSam%2F3.1.1.0
+  - description: 'ReplaceSamHeader: replace header in a SAM/BAM dataset'
+    title: ReplaceSamHeader 3.1.1.0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_ReplaceSamHeader%2F3.1.1.0
   - description: 'MarkDuplicates: examine aligned records in BAM datasets to locate
       duplicate molecules'
-    title: MarkDuplicates 2.18.2.4
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_MarkDuplicates%2F2.18.2.4
-  - description: 'MeanQualityByCycle: chart distribution of base qualities'
-    title: MeanQualityByCycle 2.18.2.1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_MeanQualityByCycle%2F2.18.2.1
-  - description: 'NormalizeFasta: normalize fasta datasets'
-    title: NormalizeFasta 2.18.2.1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_NormalizeFasta%2F2.18.2.1
+    title: MarkDuplicates 3.1.1.0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_MarkDuplicates%2F3.1.1.0
+  - description: 'CleanSam: perform SAM/BAM grooming'
+    title: CleanSam 3.1.1.0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_CleanSam%2F3.1.1.0
+  - description: 'CollectHsMetrics: compute metrics about datasets generated through
+      hybrid-selection (e.g. exome)'
+    title: CollectHsMetrics 3.1.1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_CollectHsMetrics%2F3.1.1
   - description: 'AddCommentsToBam: add comments to BAM dataset'
-    title: AddCommentsToBam 2.18.2.1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_AddCommentsToBam%2F2.18.2.1
-  - description: 'CollectInsertSizeMetrics: plots distribution of insert sizes'
-    title: CollectInsertSizeMetrics 2.18.2.2
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_CollectInsertSizeMetrics%2F2.18.2.2
-  - description: 'QualityScoreDistribution: chart quality score distribution'
-    title: QualityScoreDistribution 2.18.2.1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_QualityScoreDistribution%2F2.18.2.1
-  - description: 'SortSam: sort SAM/BAM dataset'
-    title: SortSam 2.18.2.1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_SortSam%2F2.18.2.1
-  - description: 'RevertSam: revert SAM/BAM datasets to a previous state'
-    title: RevertSam 2.18.2.1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_RevertSam%2F2.18.2.1
-  - description: 'CollectWgsMetrics: compute metrics for evaluating of whole genome
-      sequencing experiments'
-    title: CollectWgsMetrics 2.18.2.1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_CollectWgsMetrics%2F2.18.2.1
-  - description: 'CollectRnaSeqMetrics: collect metrics about the alignment of RNA
-      to various functional classes of loci in the genome'
-    title: CollectRnaSeqMetrics 2.18.2.2
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_CollectRnaSeqMetrics%2F2.18.2.2
+    title: AddCommentsToBam 3.1.1.0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_AddCommentsToBam%2F3.1.1.0
   - description: 'ValidateSamFile: assess validity of SAM/BAM dataset'
-    title: ValidateSamFile 2.18.2.2
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_ValidateSamFile%2F2.18.2.2
+    title: ValidateSamFile 3.1.1.0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_ValidateSamFile%2F3.1.1.0
+  - description: 'ReorderSam: reorder reads to match ordering in reference sequences'
+    title: ReorderSam 3.1.1.0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_ReorderSam%2F3.1.1.0
+  - description: 'MeanQualityByCycle: chart distribution of base qualities'
+    title: MeanQualityByCycle 3.1.1.0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_MeanQualityByCycle%2F3.1.1.0
   - description: 'Picard Collect Sequencing Artifact Metrics: Collect metrics to quantify
       single-base sequencing artifacts'
-    title: Picard Collect Sequencing Artifact Metrics 2.18.2.2
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_artifact_metrics%2F2.18.2.2
+    title: Picard Collect Sequencing Artifact Metrics 3.1.1.0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_artifact_metrics%2F3.1.1.0
+  - description: 'RevertOriginalBaseQualitiesAndAddMateCigar: revert the original
+      base qualities and add the mate cigar tag'
+    title: RevertOriginalBaseQualitiesAndAddMateCigar 3.1.1.0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_RevertOriginalBaseQualitiesAndAddMateCigar%2F3.1.1.0
+  - description: 'BedToIntervalList: convert coordinate data into picard interval
+      list format'
+    title: BedToIntervalList 3.1.1.0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_BedToIntervalList%2F3.1.1.0
+  - description: 'MergeBamAlignment: merge alignment data with additional info stored
+      in an unmapped BAM dataset'
+    title: MergeBamAlignment 3.1.1.0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_MergeBamAlignment%2F3.1.1.0
+  - description: 'QualityScoreDistribution: chart quality score distribution'
+    title: QualityScoreDistribution 3.1.1.0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_QualityScoreDistribution%2F3.1.1.0
+  - description: 'MarkDuplicatesWithMateCigar: examine aligned records in BAM datasets
+      to locate duplicate molecules'
+    title: MarkDuplicatesWithMateCigar 3.1.1.0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_MarkDuplicatesWithMateCigar%2F3.1.1.0
   - description: 'Downsample SAM/BAM: Downsample a file to retain a subset of the
       reads'
-    title: Downsample SAM/BAM 2.18.2.1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_DownsampleSam%2F2.18.2.1
+    title: Downsample SAM/BAM 3.1.1.0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_DownsampleSam%2F3.1.1.0
+  - description: 'MergeSamFiles: merges multiple SAM/BAM datasets into one'
+    title: MergeSamFiles 3.1.1.0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_MergeSamFiles%2F3.1.1.0
+  - description: 'SamToFastq: extract reads and qualities from SAM/BAM dataset and
+      convert to fastq'
+    title: SamToFastq 3.1.1.0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_SamToFastq%2F3.1.1.0
+  - description: 'CollectGcBiasMetrics: charts the GC bias metrics'
+    title: CollectGcBiasMetrics 3.1.1.0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_CollectGcBiasMetrics%2F3.1.1.0
   - description: 'Collect Alignment Summary Metrics: writes a file containing summary
       alignment metrics'
-    title: Collect Alignment Summary Metrics 2.18.2.2
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_CASM%2F2.18.2.2
+    title: Collect Alignment Summary Metrics 3.1.1.0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_CASM%2F3.1.1.0
+  - description: 'CollectInsertSizeMetrics: plots distribution of insert sizes'
+    title: CollectInsertSizeMetrics 3.1.1.0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_CollectInsertSizeMetrics%2F3.1.1.0
+  - description: 'CollectRnaSeqMetrics: collect metrics about the alignment of RNA
+      to various functional classes of loci in the genome'
+    title: CollectRnaSeqMetrics 3.1.1.0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_CollectRnaSeqMetrics%2F3.1.1.0
+  - description: 'NormalizeFasta: normalize fasta datasets'
+    title: NormalizeFasta 3.1.1.0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_NormalizeFasta%2F3.1.1.0
+  - description: 'AddOrReplaceReadGroups: add or replaces read group information'
+    title: AddOrReplaceReadGroups 3.1.1.0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_AddOrReplaceReadGroups%2F3.1.1.0
+  - description: 'FastqToSam: convert Fastq data into unaligned BAM'
+    title: FastqToSam 3.1.1.0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_FastqToSam%2F3.1.1.0
+  - description: 'FilterSamReads: include or exclude aligned and unaligned reads and
+      read lists'
+    title: FilterSamReads 3.1.1.0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_FilterSamReads%2F3.1.1.0
+  - description: 'CollectBaseDistributionByCycle: charts the nucleotide distribution
+      per cycle in a SAM or BAM dataset'
+    title: CollectBaseDistributionByCycle 3.1.1.0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_CollectBaseDistributionByCycle%2F3.1.1.0
+  - description: 'CollectWgsMetrics: compute metrics for evaluating of whole genome
+      sequencing experiments'
+    title: CollectWgsMetrics 3.1.1.0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_CollectWgsMetrics%2F3.1.1.0
+  - description: 'EstimateLibraryComplexity: assess sequence library complexity from
+      read sequences'
+    title: EstimateLibraryComplexity 3.1.1.0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fpicard%2Fpicard_EstimateLibraryComplexity%2F3.1.1.0
   homepage: https://github.com/broadinstitute/picard
   id: picard
   license: MIT
@@ -15406,7 +15408,7 @@
   pawsey: ''
   publications:
   - title: 'Poretools: A toolkit for analyzing nanopore sequence data'
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/25143291
   registry-link: poretools
   resource-documentation: .nan
   topics:
@@ -15506,7 +15508,7 @@
   pawsey: ''
   publications:
   - title: Genome majority vote improves gene predictions
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/22131910
   registry-link: gmv
   resource-documentation: .nan
   topics:
@@ -15597,7 +15599,7 @@
   publications:
   - title: 'Proovread: Large-scale high-accuracy PacBio correction through iterative
       short read consensus'
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/25015988
   registry-link: proovread
   resource-documentation: .nan
   topics:
@@ -15780,7 +15782,7 @@
   pawsey: ''
   publications:
   - title: 'PyRAD: Assembly of de novo RADseq loci for phylogenetic analyses'
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/24603985
   registry-link: pyrad
   resource-documentation: .nan
   topics:
@@ -16501,8 +16503,8 @@
   nci-if89: ''
   pawsey: ''
   publications:
-  - title: null
-    url: https://doi.org/None
+  - title: '22914218'
+    url: http://www.ncbi.nlm.nih.gov/pubmed/22914218
   registry-link: qualimap
   resource-documentation: .nan
   topics:
@@ -16595,7 +16597,7 @@
   pawsey: ''
   publications:
   - title: 'QUAST: Quality assessment tool for genome assemblies'
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/23422339
   registry-link: quast
   resource-documentation: .nan
   topics:
@@ -16999,7 +17001,7 @@
   pawsey: ''
   publications:
   - title: 'RECON: A program for prediction of nucleosome formation potential'
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/15215408
   registry-link: recon
   resource-documentation: .nan
   topics:
@@ -17076,7 +17078,7 @@
   publications:
   - title: 'RED: A Java-MySQL software for identifying and visualizing RNA editing
       sites using rule- based and statistical filters'
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/26930599
   registry-link: red
   resource-documentation: .nan
   topics:
@@ -17146,7 +17148,7 @@
   pawsey: ''
   publications:
   - title: 'REPdenovo: Inferring De Novo repeat motifs from short sequence reads'
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/26977803
   registry-link: repdenovo
   resource-documentation: .nan
   topics:
@@ -17453,7 +17455,7 @@
   pawsey: ''
   publications:
   - title: RNA-Seq gene expression estimation with read mapping uncertainty
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/20022975
   registry-link: rsem
   resource-documentation: .nan
   topics:
@@ -17671,7 +17673,7 @@
   publications:
   - title: Sailfish enables alignment-free isoform quantification from RNA-seq reads
       using lightweight algorithms
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/24752080
   registry-link: sailfish
   resource-documentation: .nan
   topics:
@@ -17687,8 +17689,8 @@
   galaxy:
   - description: 'Salmon quant: Perform dual-phase, reads or mapping-based estimation
       of transcript abundance from RNA-seq reads'
-    title: Salmon quant 1.10.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Fsalmon%2Fsalmon%2F1.10.1%2Bgalaxy0
+    title: Salmon quant 1.10.1+galaxy2
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Fsalmon%2Fsalmon%2F1.10.1%2Bgalaxy2
   homepage: https://combine-lab.github.io/salmon
   id: salmon
   license: GPL-3.0
@@ -17828,7 +17830,7 @@
   - 0.8.1--h41abebc_0
   publications:
   - title: 'Sambamba: Fast processing of NGS alignment formats'
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/25697820
   registry-link: sambamba
   resource-documentation: .nan
   topics:
@@ -17850,7 +17852,7 @@
   pawsey: ''
   publications:
   - title: 'SAMBLASTER: Fast duplicate marking and structural variant read extraction'
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/24812344
   registry-link: samblaster
   resource-documentation: .nan
   topics:
@@ -18000,6 +18002,9 @@
     and differential expression testing. The Python-based implementation efficiently
     deals with datasets of more than one million cells.
   galaxy:
+  - description: 'Inspect and manipulate: with scanpy'
+    title: Inspect and manipulate 1.9.6+galaxy2
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fscanpy_inspect%2Fscanpy_inspect%2F1.9.6%2Bgalaxy2
   - description: 'AnnData Operations: modifies metadata and flags genes'
     title: AnnData Operations 1.8.1+galaxy93
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Febi-gxa%2Fanndata_ops%2Fanndata_ops%2F1.8.1%2Bgalaxy93
@@ -18015,9 +18020,6 @@
   - description: 'Cluster, infer trajectories and embed: with scanpy'
     title: Cluster, infer trajectories and embed 1.9.6+galaxy2
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fscanpy_cluster_reduce_dimension%2Fscanpy_cluster_reduce_dimension%2F1.9.6%2Bgalaxy2
-  - description: 'Inspect and manipulate: with scanpy'
-    title: Inspect and manipulate 1.9.6+galaxy1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fscanpy_inspect%2Fscanpy_inspect%2F1.9.6%2Bgalaxy1
   - description: 'Filter: with scanpy'
     title: Filter 1.9.6+galaxy1
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fscanpy_filter%2Fscanpy_filter%2F1.9.6%2Bgalaxy1
@@ -18770,7 +18772,7 @@
   publications:
   - title: A clustering approach for identification of enriched domains from histone
       modification ChIP-Seq data
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/19505939
   registry-link: sicer
   resource-documentation: .nan
   topics:
@@ -18895,7 +18897,7 @@
   publications:
   - title: 'Skewer: A fast and accurate adapter trimmer for next-generation sequencing
       paired-end reads'
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/24925680
   registry-link: skewer
   resource-documentation: .nan
   topics:
@@ -18981,8 +18983,8 @@
   nci-if89: ''
   pawsey: ''
   publications:
-  - title: null
-    url: https://doi.org/None
+  - title: '22185597'
+    url: http://www.ncbi.nlm.nih.gov/pubmed/22185597
   registry-link: smrt_analysis
   resource-documentation: .nan
   topics:
@@ -19042,7 +19044,7 @@
   pawsey: ''
   publications:
   - title: Snakemake-a scalable bioinformatics workflow engine
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/22908215
   registry-link: snakemake
   resource-documentation: .nan
   topics:
@@ -19230,8 +19232,8 @@
   nci-if89: ''
   pawsey: ''
   publications:
-  - title: null
-    url: https://doi.org/None
+  - title: '22728672'
+    url: http://www.ncbi.nlm.nih.gov/pubmed/22728672
   registry-link: snpeff
   resource-documentation: .nan
   topics:
@@ -19401,7 +19403,7 @@
   pawsey: ''
   publications:
   - title: SNP detection for massively parallel whole-genome resequencing
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/19420381
   registry-link: soapsnp
   resource-documentation: .nan
   topics:
@@ -19677,7 +19679,7 @@
   pawsey: ''
   publications:
   - title: Database resources of the National Center for Biotechnology Information.
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/16381840
   registry-link: sra-tools
   resource-documentation: .nan
   topics:
@@ -19715,7 +19717,7 @@
   pawsey: ''
   publications:
   - title: 'SSW library: An SIMD Smith-Waterman C/C++ library for use in genomic applications'
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/24324759
   registry-link: ssw
   resource-documentation: .nan
   topics:
@@ -20023,7 +20025,7 @@
   publications:
   - title: 'SUPER-FOCUS: A tool for agile functional analysis of shotgun metagenomic
       data'
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/26454280
   registry-link: super-focus
   resource-documentation: .nan
   topics:
@@ -20275,7 +20277,7 @@
   publications:
   - title: TagDust - A program to eliminate artifacts from next generation sequencing
       data
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/19737799
   registry-link: tagdust
   resource-documentation: .nan
   topics:
@@ -20298,7 +20300,7 @@
   publications:
   - title: 'Targetfinder.org: A resource for systematic discovery of transcription
       factor target genes'
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/20460454
   registry-link: targetfinder.org
   resource-documentation: .nan
   topics:
@@ -20730,7 +20732,7 @@
   pawsey: ''
   publications:
   - title: TRANSIT - A Software Tool for Himar1 TnSeq Analysis
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/26447887
   registry-link: transit
   resource-documentation: .nan
   topics:
@@ -20785,14 +20787,14 @@
   publications:
   - title: Trans-Proteomic Pipeline, a standardized data processing pipeline for large-scale
       reproducible proteomics informatics
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/25631240
   - title: 'Trans-proteomic pipeline: a pipeline for proteomic analysis.'
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/20013374
   - title: 'Software pipeline and data analysis for MS/MS proteomics: the trans-proteomic
       pipeline.'
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/21082435
   - title: A guided tour of the Trans-Proteomic Pipeline
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/20101611
   registry-link: TPP_SPC
   resource-documentation: .nan
   topics:
@@ -20850,7 +20852,7 @@
   pawsey: ''
   publications:
   - title: 'Tandem repeats finder: A program to analyze DNA sequences'
-    url: https://doi.org/None
+    url: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC148217
   registry-link: trf
   resource-documentation: .nan
   topics:
@@ -20872,7 +20874,7 @@
   publications:
   - title: 'trimAl: A tool for automated alignment trimming in large-scale phylogenetic
       analyses'
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/19505945
   registry-link: trimal
   resource-documentation: .nan
   topics:
@@ -21057,7 +21059,7 @@
   publications:
   - title: 'tRNAscan-SE On-line: integrating search and context for analysis of transfer
       RNA genes'
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/27174935
   - title: 10.1093/nar/25.5.955
     url: https://doi.org/10.1093/nar/25.5.955
   registry-link: trnascan-se
@@ -21070,25 +21072,25 @@
   bunya: ''
   description: 'Trycycler: consensus long-read assemblies for bacterial genomes'
   galaxy:
-  - description: 'Trycycler cluster: cluster the contigs of your input assemblies
-      into per-replicon groups'
-    title: Trycycler cluster 0.5.4
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ftrycycler_cluster%2Ftrycycler_cluster%2F0.5.4
-  - description: 'Trycycler consensus: generate a consensus contig sequence for each
-      cluster'
-    title: Trycycler consensus 0.5.4
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ftrycycler_consensus%2Ftrycycler_consensus%2F0.5.4
-  - description: 'Trycycler partition: assign the reads to the clusters'
-    title: Trycycler partition 0.5.4
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ftrycycler_partition%2Ftrycycler_partition%2F0.5.4
-  - description: 'Trycycler reconcile/msa: reconcile the contigs within each cluster
-      and perform a multiple sequence alignment'
-    title: Trycycler reconcile/msa 0.5.4
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ftrycycler_reconcile_msa%2Ftrycycler_reconcile_msa%2F0.5.4
   - description: 'Trycycler subsample: make a maximally-independent read subsets of
       an appropiate depth for your genome'
-    title: Trycycler subsample 0.5.4
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ftrycycler_subsample%2Ftrycycler_subsample%2F0.5.4
+    title: Trycycler subsample 0.5.5
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ftrycycler_subsample%2Ftrycycler_subsample%2F0.5.5
+  - description: 'Trycycler partition: assign the reads to the clusters'
+    title: Trycycler partition 0.5.5
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ftrycycler_partition%2Ftrycycler_partition%2F0.5.5
+  - description: 'Trycycler cluster: cluster the contigs of your input assemblies
+      into per-replicon groups'
+    title: Trycycler cluster 0.5.5
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ftrycycler_cluster%2Ftrycycler_cluster%2F0.5.5
+  - description: 'Trycycler consensus: generate a consensus contig sequence for each
+      cluster'
+    title: Trycycler consensus 0.5.5
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ftrycycler_consensus%2Ftrycycler_consensus%2F0.5.5
+  - description: 'Trycycler reconcile/msa: reconcile the contigs within each cluster
+      and perform a multiple sequence alignment'
+    title: Trycycler reconcile/msa 0.5.5
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ftrycycler_reconcile_msa%2Ftrycycler_reconcile_msa%2F0.5.5
   homepage: http://github.com/rrwick/Trycycler-paper
   id: trycycler
   license: GPL-3.0
@@ -21852,7 +21854,7 @@
   - title: Using GeneWise in the Drosophila annotation experiment
     url: https://doi.org/10.1101/gr.10.4.547
   - title: GeneWise and Genomewise
-    url: https://doi.org/None
+    url: http://www.ncbi.nlm.nih.gov/pubmed/15123596
   registry-link: wise
   resource-documentation: .nan
   topics:
