@@ -393,6 +393,7 @@ class ToolDB(DB):
                 "biocontainers": tool.get(Dataprovider.FIELD_NAMES.BIOTOOLS_ID, ""),
                 "license": tool.get(Dataprovider.FIELD_NAMES.LICENSE, ""),
                 "resource-documentation": tool.get(Dataprovider.FIELD_NAMES.BIOCOMMONS_DOCUMENTATION_LINK, ""),
+                "resource-description": tool.get(Dataprovider.FIELD_NAMES.BIOCOMMONS_DOCUMENTATION_DESCRIPTION, ""),
                 "galaxy": [translate_galaxy(i) for i in tool[Dataprovider.FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK]] if Dataprovider.FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK in tool and isinstance(tool[Dataprovider.FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK],list) else "",
                 "nci-gadi": [i for i in tool[Dataprovider.FIELD_NAMES.NCI_GADI_VERSION]] if Dataprovider.FIELD_NAMES.NCI_GADI_VERSION in tool and isinstance(tool[Dataprovider.FIELD_NAMES.NCI_GADI_VERSION], list) else "",
                 "nci-if89": [i for i in tool[Dataprovider.FIELD_NAMES.NCI_IF89_VERSION]] if Dataprovider.FIELD_NAMES.NCI_IF89_VERSION in tool and isinstance(tool[Dataprovider.FIELD_NAMES.NCI_IF89_VERSION], list) else "",
@@ -407,6 +408,7 @@ class ToolDB(DB):
         tool_list_dictionary = list(map(ToolDB.convert_tool_to_yaml, tool_list))
         # filter null values from tool list (i.e. those annotated with "n" for the "include?" field
         tool_list_dictionary = list(filter(lambda x: x is not None, tool_list_dictionary))
+        tool_list_dictionary = list(itertools.filterfalse(lambda x: x['galaxy'] == "" and x['nci-gadi'] == "" and x['nci-if89'] == "" and x['pawsey'] == "" and x['bunya'] == "" and pd.isna(x['resource-documentation']), tool_list_dictionary))
         # see https://stackoverflow.com/q/71281303
         # see https://stackoverflow.com/a/6160082
         with open("data/data.yaml", 'w') as file:
