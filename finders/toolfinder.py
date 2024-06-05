@@ -381,6 +381,12 @@ class ToolDB(DB):
                description  = val[1] + ": " + val[2]
                version = val[3]
            return {"title": name + " " + version, "url": f"""https://usegalaxy.org.au/{val[0]}""", "description": description}
+        def translate_biocommons_resources(link, description):
+            return {"title": description, "url": link}
+        def get_terms(val):
+            term = val["term"]
+            uri = val["uri"]
+            return { "term": term, "url": uri}
         if tool.get(Dataprovider.FIELD_NAMES.INCLUSION) == True:
             return {
                 # see https://stackoverflow.com/a/9285148
@@ -388,15 +394,14 @@ class ToolDB(DB):
                 "description": tool.get(Dataprovider.FIELD_NAMES.DESCRIPTION, ""),
                 "name": tool[Dataprovider.FIELD_NAMES.NAME],
                 "homepage": tool[Dataprovider.FIELD_NAMES.REPOSITORY_URL] if not pd.isna(tool[Dataprovider.FIELD_NAMES.REPOSITORY_URL]) else "",
-                "registry-link": tool.get(Dataprovider.FIELD_NAMES.BIOTOOLS_ID, ""),
+                "biotools": tool.get(Dataprovider.FIELD_NAMES.BIOTOOLS_ID, ""),
                 "id": tool[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER],
                 "edam-topics": [get_terms(i) for i in tool[Dataprovider.FIELD_NAMES.EDAM_TOPICS]] if isinstance(tool[Dataprovider.FIELD_NAMES.EDAM_TOPICS], list) else "",
                 "edam-operations": [get_terms(i) for i in tool[Dataprovider.FIELD_NAMES.EDAM_OPERATIONS]] if Dataprovider.FIELD_NAMES.EDAM_OPERATIONS in tool and isinstance(tool[Dataprovider.FIELD_NAMES.EDAM_OPERATIONS], list) else "",
                 "publications": [translate_publication(i) for i in tool[Dataprovider.FIELD_NAMES.PUBLICATIONS]] if Dataprovider.FIELD_NAMES.PUBLICATIONS in tool and isinstance(tool[Dataprovider.FIELD_NAMES.PUBLICATIONS],list) else "",
                 "biocontainers": tool.get(Dataprovider.FIELD_NAMES.BIOTOOLS_ID, ""),
                 "license": tool.get(Dataprovider.FIELD_NAMES.LICENSE, ""),
-                "resource-documentation": tool.get(Dataprovider.FIELD_NAMES.BIOCOMMONS_DOCUMENTATION_LINK, ""),
-                "resource-description": tool.get(Dataprovider.FIELD_NAMES.BIOCOMMONS_DOCUMENTATION_DESCRIPTION, ""),
+                "resources": [translate_biocommons_resources(tool.get(Dataprovider.FIELD_NAMES.BIOCOMMONS_DOCUMENTATION_LINK, ""), tool.get(Dataprovider.FIELD_NAMES.BIOCOMMONS_DOCUMENTATION_DESCRIPTION, ""))],
                 "galaxy": [translate_galaxy(i) for i in tool[Dataprovider.FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK]] if Dataprovider.FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK in tool and isinstance(tool[Dataprovider.FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK],list) else "",
                 "nci-gadi": [i for i in tool[Dataprovider.FIELD_NAMES.NCI_GADI_VERSION]] if Dataprovider.FIELD_NAMES.NCI_GADI_VERSION in tool and isinstance(tool[Dataprovider.FIELD_NAMES.NCI_GADI_VERSION], list) else "",
                 "nci-if89": [i for i in tool[Dataprovider.FIELD_NAMES.NCI_IF89_VERSION]] if Dataprovider.FIELD_NAMES.NCI_IF89_VERSION in tool and isinstance(tool[Dataprovider.FIELD_NAMES.NCI_IF89_VERSION], list) else "",
@@ -411,7 +416,7 @@ class ToolDB(DB):
         tool_list_dictionary = list(map(ToolDB.convert_tool_to_yaml, tool_list))
         # filter null values from tool list (i.e. those annotated with "n" for the "include?" field
         tool_list_dictionary = list(filter(lambda x: x is not None, tool_list_dictionary))
-        tool_list_dictionary = list(itertools.filterfalse(lambda x: x['galaxy'] == "" and x['nci-gadi'] == "" and x['nci-if89'] == "" and x['pawsey'] == "" and x['bunya'] == "" and pd.isna(x['resource-documentation']), tool_list_dictionary))
+        tool_list_dictionary = list(itertools.filterfalse(lambda x: x['galaxy'] == "" and x['nci-gadi'] == "" and x['nci-if89'] == "" and x['pawsey'] == "" and x['bunya'] == "" and pd.isna(x['resources'][0]['url']), tool_list_dictionary))
         # see https://stackoverflow.com/q/71281303
         # see https://stackoverflow.com/a/6160082
         with open("data/data.yaml", 'w') as file:
