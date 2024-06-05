@@ -243,6 +243,8 @@ class BiotoolsDataProvider(Dataprovider):
                retval[Dataprovider.FIELD_NAMES.LICENSE] = tooldata["license"]
            if tooldata["topic"]:
                retval[Dataprovider.FIELD_NAMES.EDAM_TOPICS] = tooldata["topic"]
+           if tooldata["function"]:
+               retval[Dataprovider.FIELD_NAMES.EDAM_OPERATIONS] = tooldata["function"][0]["operation"]
        return retval
 
 
@@ -388,7 +390,8 @@ class ToolDB(DB):
                 "homepage": tool[Dataprovider.FIELD_NAMES.REPOSITORY_URL] if not pd.isna(tool[Dataprovider.FIELD_NAMES.REPOSITORY_URL]) else "",
                 "registry-link": tool.get(Dataprovider.FIELD_NAMES.BIOTOOLS_ID, ""),
                 "id": tool[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER],
-                "topics": [i["term"] for i in tool[Dataprovider.FIELD_NAMES.EDAM_TOPICS]] if isinstance(tool[Dataprovider.FIELD_NAMES.EDAM_TOPICS], list) else "",
+                "edam-topics": [get_terms(i) for i in tool[Dataprovider.FIELD_NAMES.EDAM_TOPICS]] if isinstance(tool[Dataprovider.FIELD_NAMES.EDAM_TOPICS], list) else "",
+                "edam-operations": [get_terms(i) for i in tool[Dataprovider.FIELD_NAMES.EDAM_OPERATIONS]] if Dataprovider.FIELD_NAMES.EDAM_OPERATIONS in tool and isinstance(tool[Dataprovider.FIELD_NAMES.EDAM_OPERATIONS], list) else "",
                 "publications": [translate_publication(i) for i in tool[Dataprovider.FIELD_NAMES.PUBLICATIONS]] if Dataprovider.FIELD_NAMES.PUBLICATIONS in tool and isinstance(tool[Dataprovider.FIELD_NAMES.PUBLICATIONS],list) else "",
                 "biocontainers": tool.get(Dataprovider.FIELD_NAMES.BIOTOOLS_ID, ""),
                 "license": tool.get(Dataprovider.FIELD_NAMES.LICENSE, ""),
