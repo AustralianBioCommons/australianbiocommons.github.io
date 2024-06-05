@@ -77,6 +77,8 @@ class WorkflowHubSpaceDataProvider(Dataprovider):
             if workflow in guide:
                 guide_link = guide[workflow]
                 self.available_data[workflow]['data']['guide_link'] = guide_link
+            else:
+                self.available_data[workflow]['data']['guide_link'] = ""
 
 
     def _render(self, data):
