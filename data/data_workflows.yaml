@@ -2,6 +2,217 @@
   edam_ops: ''
   edam_top: ''
   guide_link: ''
+  launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=647
+  license: other-closed
+  projects:
+  - QCIF Bioinformatics
+  remote_link: https://github.com/swbioinf/scrnaseq_howto_ga_workflows.git
+  title: scRNAseq Single Sample Processing Cell Ranger
+  updated_at: '2024-05-30T05:56:52.000Z'
+  url: /workflows/647?version=1
+- doi: ''
+  edam_ops: ''
+  edam_top: ''
+  guide_link: ''
+  launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=646
+  license: MIT
+  projects:
+  - QCIF Bioinformatics
+  remote_link: https://github.com/swbioinf/scrnaseq_howto_ga_workflows.git
+  title: 'scRNAseq: Count and Load with Cell Ranger'
+  updated_at: '2024-05-30T05:56:18.000Z'
+  url: /workflows/646?version=2
+- doi: ''
+  edam_ops: ''
+  edam_top: ''
+  guide_link: ''
+  launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=514
+  license: MIT
+  projects:
+  - QCIF Bioinformatics
+  remote_link: https://github.com/swbioinf/scrnaseq_howto_ga_workflows.git
+  title: scRNAseq Single Sample Processing Counts Matrix
+  updated_at: '2024-05-30T05:55:19.000Z'
+  url: /workflows/514?version=3
+- doi: ''
+  edam_ops: ''
+  edam_top: ''
+  guide_link: ''
+  launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=465
+  license: MIT
+  projects:
+  - QCIF Bioinformatics
+  remote_link: https://github.com/swbioinf/scrnaseq_howto_ga_workflows.git
+  title: scRNAseq Single Sample Processing STARSolo
+  updated_at: '2024-05-30T05:54:50.000Z'
+  url: /workflows/465?version=4
+- doi: ''
+  edam_ops: ''
+  edam_top: ''
+  guide_link: ''
+  launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=468
+  license: MIT
+  projects:
+  - QCIF Bioinformatics
+  remote_link: https://github.com/swbioinf/scrnaseq_howto_ga_workflows.git
+  title: scRNAseq QCtoBasicProcessing
+  updated_at: '2024-05-30T05:52:35.000Z'
+  url: /workflows/468?version=3
+- doi: ''
+  edam_ops: ''
+  edam_top: ''
+  guide_link: ''
+  launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=467
+  license: MIT
+  projects:
+  - QCIF Bioinformatics
+  remote_link: https://github.com/swbioinf/scrnaseq_howto_ga_workflows.git
+  title: scRNAseq CellQC
+  updated_at: '2024-05-30T05:51:13.000Z'
+  url: /workflows/467?version=4
+- doi: ''
+  edam_ops: ''
+  edam_top: ''
+  guide_link: ''
+  launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=513
+  license: MIT
+  projects:
+  - QCIF Bioinformatics
+  remote_link: https://github.com/swbioinf/scrnaseq_howto_ga_workflows.git
+  title: 'scRNAseq: Count and Load with starSOLO'
+  updated_at: '2024-05-30T05:47:35.000Z'
+  url: /workflows/513?version=3
+- doi: ''
+  edam_ops: ''
+  edam_top: ''
+  guide_link: ''
+  launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=512
+  license: MIT
+  projects:
+  - QCIF Bioinformatics
+  remote_link: https://github.com/swbioinf/scrnaseq_howto_ga_workflows.git
+  title: 'scRNAseq: Load counts matrix'
+  updated_at: '2024-05-30T05:44:52.000Z'
+  url: /workflows/512?version=2
+- doi: 10.48546/workflowhub.workflow.880.1
+  edam_ops: ''
+  edam_top: ''
+  guide_link: ''
+  launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=880
+  license: GPL-3.0
+  projects:
+  - Australian BioCommons
+  - Galaxy Australia
+  remote_link: ''
+  title: Convert formats - TSI
+  updated_at: '2024-05-09T04:09:41.000Z'
+  url: /workflows/880?version=1
+- doi: 10.48546/workflowhub.workflow.879.1
+  edam_ops: ''
+  edam_top: ''
+  guide_link: ''
+  launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=879
+  license: GPL-3.0
+  projects:
+  - Australian BioCommons
+  - Galaxy Australia
+  remote_link: ''
+  title: Extract transcripts - TSI
+  updated_at: '2024-05-09T04:08:31.000Z'
+  url: /workflows/879?version=1
+- doi: 10.48546/workflowhub.workflow.878.1
+  edam_ops: ''
+  edam_top: ''
+  guide_link: ''
+  launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=878
+  license: GPL-3.0
+  projects:
+  - Australian BioCommons
+  - Galaxy Australia
+  remote_link: ''
+  title: Combine transcripts - TSI
+  updated_at: '2024-05-09T04:06:49.000Z'
+  url: /workflows/878?version=1
+- doi: 10.48546/workflowhub.workflow.877.1
+  edam_ops: ''
+  edam_top: ''
+  guide_link: ''
+  launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=877
+  license: GPL-3.0
+  projects:
+  - Australian BioCommons
+  - Galaxy Australia
+  remote_link: ''
+  title: Find transcripts - TSI
+  updated_at: '2024-05-09T04:05:20.000Z'
+  url: /workflows/877?version=1
+- doi: 10.48546/workflowhub.workflow.876.1
+  edam_ops: ''
+  edam_top: ''
+  guide_link: ''
+  launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=876
+  license: GPL-3.0
+  projects:
+  - Australian BioCommons
+  - Galaxy Australia
+  remote_link: ''
+  title: QC and trimming of RNAseq reads - TSI
+  updated_at: '2024-05-09T04:03:15.000Z'
+  url: /workflows/876?version=1
+- doi: 10.48546/workflowhub.workflow.875.2
+  edam_ops: ''
+  edam_top: ''
+  guide_link: ''
+  launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=875
+  license: GPL-3.0
+  projects:
+  - Australian BioCommons
+  - Galaxy Australia
+  remote_link: ''
+  title: Repeat masking - TSI
+  updated_at: '2024-05-09T04:01:22.000Z'
+  url: /workflows/875?version=2
+- doi: 10.48546/workflowhub.workflow.881.1
+  edam_ops: ''
+  edam_top: ''
+  guide_link: ''
+  launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=881
+  license: GPL-3.0
+  projects:
+  - Australian BioCommons
+  - Galaxy Australia
+  remote_link: ''
+  title: Fgenesh annotation -TSI
+  updated_at: '2024-05-09T04:10:32.000Z'
+  url: /workflows/881?version=1
+- doi: 10.48546/workflowhub.workflow.836.1
+  edam_ops: ''
+  edam_top: ''
+  guide_link: ''
+  launch_link: ''
+  license: GPL-3.0
+  projects:
+  - Sydney Informatics Hub
+  remote_link: https://github.com/Sydney-Informatics-Hub/Parabricks-Genomics-nf.git
+  title: Parabricks-Genomics-nf
+  updated_at: '2024-04-25T23:20:08.000Z'
+  url: /workflows/836?version=1
+- doi: 10.48546/workflowhub.workflow.403.4
+  edam_ops: ''
+  edam_top: ''
+  guide_link: ''
+  launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=403
+  license: GPL-3.0
+  projects:
+  - Galaxy Australia
+  remote_link: https://github.com/AustralianBioCommons/Genome-assessment-post-assembly
+  title: Genome-assessment-post-assembly
+  updated_at: '2024-04-19T06:38:44.000Z'
+  url: /workflows/403?version=4
+- doi: ''
+  edam_ops: ''
+  edam_top: ''
+  guide_link: ''
   launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=794
   license: GPL-3.0
   projects:
@@ -60,19 +271,7 @@
   title: GermlineStructuralV-nf
   updated_at: '2023-12-18T05:36:07.000Z'
   url: /workflows/431?version=1
-- doi: ''
-  edam_ops: ''
-  edam_top: ''
-  guide_link: ''
-  launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=513
-  license: MIT
-  projects:
-  - QCIF Bioinformatics
-  remote_link: https://github.com/swbioinf/scrnaseq_howto_ga_workflows.git
-  title: 'scRNAseq: Count and Load with starSOLO'
-  updated_at: '2023-12-12T03:08:41.000Z'
-  url: /workflows/513?version=2
-- doi: ''
+- doi: 10.48546/workflowhub.workflow.624.1
   edam_ops: ''
   edam_top: ''
   guide_link: ''
@@ -82,7 +281,7 @@
   - QCIF Bioinformatics
   remote_link: ''
   title: Analyses of shotgun metagenomics data with MetaPhlAn2
-  updated_at: '2023-11-14T21:43:44.000Z'
+  updated_at: '2024-04-05T05:20:07.000Z'
   url: /workflows/624?version=1
 - doi: ''
   edam_ops: ''
@@ -162,90 +361,6 @@
   edam_ops: ''
   edam_top: ''
   guide_link: ''
-  launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=512
-  license: other-closed
-  projects:
-  - QCIF Bioinformatics
-  remote_link: https://github.com/swbioinf/scrnaseq_howto_ga_workflows.git
-  title: 'scRNAseq: Load counts matrix'
-  updated_at: '2023-11-09T03:51:14.000Z'
-  url: /workflows/512?version=1
-- doi: ''
-  edam_ops: ''
-  edam_top: ''
-  guide_link: ''
-  launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=468
-  license: CC-BY-4.0
-  projects:
-  - QCIF Bioinformatics
-  remote_link: https://github.com/swbioinf/scrnaseq_howto_ga_workflows.git
-  title: scRNAseq QCtoBasicProcessing
-  updated_at: '2023-11-09T03:50:40.000Z'
-  url: /workflows/468?version=2
-- doi: ''
-  edam_ops: ''
-  edam_top: ''
-  guide_link: ''
-  launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=467
-  license: CC-BY-4.0
-  projects:
-  - QCIF Bioinformatics
-  remote_link: https://github.com/swbioinf/scrnaseq_howto_ga_workflows.git
-  title: scRNAseq CellQC
-  updated_at: '2023-11-09T03:49:00.000Z'
-  url: /workflows/467?version=3
-- doi: ''
-  edam_ops: ''
-  edam_top: ''
-  guide_link: ''
-  launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=465
-  license: MIT
-  projects:
-  - QCIF Bioinformatics
-  remote_link: https://github.com/swbioinf/scrnaseq_howto_ga_workflows.git
-  title: scRNAseq Single Sample Processing STARSolo
-  updated_at: '2023-12-12T03:15:52.000Z'
-  url: /workflows/465?version=4
-- doi: ''
-  edam_ops: ''
-  edam_top: ''
-  guide_link: ''
-  launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=514
-  license: MIT
-  projects:
-  - QCIF Bioinformatics
-  remote_link: https://github.com/swbioinf/scrnaseq_howto_ga_workflows.git
-  title: scRNAseq Single Sample Processing Counts Matrix
-  updated_at: '2023-11-09T03:52:51.000Z'
-  url: /workflows/514?version=2
-- doi: ''
-  edam_ops: ''
-  edam_top: ''
-  guide_link: ''
-  launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=647
-  license: other-closed
-  projects:
-  - QCIF Bioinformatics
-  remote_link: https://github.com/swbioinf/scrnaseq_howto_ga_workflows.git
-  title: scRNAseq Single Sample Processing Cell Ranger
-  updated_at: '2023-11-09T03:53:08.000Z'
-  url: /workflows/647?version=1
-- doi: ''
-  edam_ops: ''
-  edam_top: ''
-  guide_link: ''
-  launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=646
-  license: other-closed
-  projects:
-  - QCIF Bioinformatics
-  remote_link: https://github.com/swbioinf/scrnaseq_howto_ga_workflows.git
-  title: 'scRNAseq: Count and Load with Cell Ranger'
-  updated_at: '2023-11-09T03:53:01.000Z'
-  url: /workflows/646?version=1
-- doi: ''
-  edam_ops: ''
-  edam_top: ''
-  guide_link: ''
   launch_link: ''
   license: MIT
   projects:
@@ -254,18 +369,6 @@
   title: HiFi de novo genome assembly workflow
   updated_at: '2024-02-05T03:12:14.000Z'
   url: /workflows/560?version=1
-- doi: 10.48546/workflowhub.workflow.403.2
-  edam_ops: ''
-  edam_top: ''
-  guide_link: ''
-  launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=403
-  license: GPL-3.0
-  projects:
-  - Galaxy Australia
-  remote_link: https://github.com/AustralianBioCommons/Genome-assessment-post-assembly
-  title: Genome assessment post assembly v1.1
-  updated_at: '2023-05-09T01:34:26.000Z'
-  url: /workflows/403?version=2
 - doi: ''
   edam_ops: ''
   edam_top: ''
@@ -507,7 +610,7 @@
   - QCIF Bioinformatics
   remote_link: ''
   title: 16S biodiversity for nonoverlap paired end
-  updated_at: '2023-01-30T18:21:31.000Z'
+  updated_at: '2024-04-17T04:17:52.000Z'
   url: /workflows/233?version=1
 - doi: ''
   edam_ops: ''
@@ -519,7 +622,7 @@
   - QCIF Bioinformatics
   remote_link: ''
   title: 16S biodiversity for overlap paired end
-  updated_at: '2023-01-30T18:21:31.000Z'
+  updated_at: '2024-04-17T04:19:28.000Z'
   url: /workflows/232?version=1
 - doi: 10.48546/workflowhub.workflow.229.1
   edam_ops: ''
@@ -763,7 +866,7 @@
   - Galaxy Australia
   remote_link: ''
   title: 16S biodiversity BIOM
-  updated_at: '2023-01-16T13:51:34.000Z'
+  updated_at: '2024-04-17T04:16:05.000Z'
   url: /workflows/142?version=1
 - doi: ''
   edam_ops: ''
