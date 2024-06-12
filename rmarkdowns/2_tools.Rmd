@@ -2,6 +2,8 @@
 title: "ToolFinder"
 ---
 
+<meta http-equiv="refresh" content="0; URL='https://australianbiocommons.github.io/toolfinder/'" />
+
 <style type="text/css">
 .main-container {
   max-width: 1500px;
