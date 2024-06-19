@@ -396,8 +396,6 @@ class ToolDB(DB):
                 "homepage": tool[Dataprovider.FIELD_NAMES.REPOSITORY_URL] if not pd.isna(tool[Dataprovider.FIELD_NAMES.REPOSITORY_URL]) else "",
                 "biotools": tool.get(Dataprovider.FIELD_NAMES.BIOTOOLS_ID, ""),
                 "id": tool[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER],
-                "edam-topics": [get_terms(i) for i in tool[Dataprovider.FIELD_NAMES.EDAM_TOPICS]] if isinstance(tool[Dataprovider.FIELD_NAMES.EDAM_TOPICS], list) else "",
-                "edam-operations": [get_terms(i) for i in tool[Dataprovider.FIELD_NAMES.EDAM_OPERATIONS]] if Dataprovider.FIELD_NAMES.EDAM_OPERATIONS in tool and isinstance(tool[Dataprovider.FIELD_NAMES.EDAM_OPERATIONS], list) else "",
                 #"edam-topics": [get_terms(i) for i in tool[Dataprovider.FIELD_NAMES.EDAM_TOPICS]] if isinstance(tool[Dataprovider.FIELD_NAMES.EDAM_TOPICS], list) else "",
                 "edam-topics": [i["term"] for i in tool[Dataprovider.FIELD_NAMES.EDAM_TOPICS]] if isinstance(tool[Dataprovider.FIELD_NAMES.EDAM_TOPICS], list) else "",
                 #"edam-operations": [get_terms(i) for i in tool[Dataprovider.FIELD_NAMES.EDAM_OPERATIONS]] if Dataprovider.FIELD_NAMES.EDAM_OPERATIONS in tool and isinstance(tool[Dataprovider.FIELD_NAMES.EDAM_OPERATIONS], list) else "",
