@@ -175,11 +175,11 @@ class WorkflowDB(DB):
             "title": workflow.get(Dataprovider.FIELD_NAMES.TITLE, ""),
             "url": workflow.get(Dataprovider.FIELD_NAMES.URL, ""),
             "remote_link": workflow.get(Dataprovider.FIELD_NAMES.REMOTE_LINK, ""),
-            "edam_top": [i["label"] for i in workflow[Dataprovider.FIELD_NAMES.EDAM_TOP]] if getattr(
-                Dataprovider.FIELD_NAMES.EDAM_TOP, "label", None) is not None and isinstance(
+            "edam_top": [i["label"] for i in workflow[
+                Dataprovider.FIELD_NAMES.EDAM_TOP]] if Dataprovider.FIELD_NAMES.EDAM_TOP in workflow and isinstance(
                 workflow[Dataprovider.FIELD_NAMES.EDAM_TOP], list) else "",
-            "edam_ops": [i["label"] for i in workflow[Dataprovider.FIELD_NAMES.EDAM_OPS]] if getattr(
-                Dataprovider.FIELD_NAMES.EDAM_OPS, "label", None) is not None and isinstance(
+            "edam_ops": [i["label"] for i in workflow[
+                Dataprovider.FIELD_NAMES.EDAM_OPS]] if Dataprovider.FIELD_NAMES.EDAM_OPS in workflow and isinstance(
                 workflow[Dataprovider.FIELD_NAMES.EDAM_OPS], list) else "",
             "license": workflow.get(Dataprovider.FIELD_NAMES.LICENSE, ""),
             "updated_at": workflow.get(Dataprovider.FIELD_NAMES.UPDATED_AT, ""),

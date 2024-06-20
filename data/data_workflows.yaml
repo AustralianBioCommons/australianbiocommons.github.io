@@ -24,8 +24,11 @@
   updated_at: '2024-05-30T05:56:52.000Z'
   url: /workflows/647?version=1
 - doi: ''
-  edam_ops: ''
-  edam_top: ''
+  edam_ops:
+  - Expression analysis
+  edam_top:
+  - Gene expression
+  - Transcriptomics
   guide_link: ''
   launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=646
   license: MIT
@@ -36,8 +39,11 @@
   updated_at: '2024-05-30T05:56:18.000Z'
   url: /workflows/646?version=2
 - doi: ''
-  edam_ops: ''
-  edam_top: ''
+  edam_ops:
+  - Expression analysis
+  edam_top:
+  - Gene expression
+  - Transcriptomics
   guide_link: ''
   launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=514
   license: MIT
@@ -60,8 +66,11 @@
   updated_at: '2024-05-30T05:54:50.000Z'
   url: /workflows/465?version=4
 - doi: ''
-  edam_ops: ''
-  edam_top: ''
+  edam_ops:
+  - Expression analysis
+  edam_top:
+  - Gene expression
+  - Transcriptomics
   guide_link: ''
   launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=468
   license: MIT
@@ -72,8 +81,11 @@
   updated_at: '2024-05-30T05:52:35.000Z'
   url: /workflows/468?version=3
 - doi: ''
-  edam_ops: ''
-  edam_top: ''
+  edam_ops:
+  - Expression analysis
+  edam_top:
+  - Gene expression
+  - Transcriptomics
   guide_link: ''
   launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=467
   license: MIT
@@ -84,8 +96,11 @@
   updated_at: '2024-05-30T05:51:13.000Z'
   url: /workflows/467?version=4
 - doi: ''
-  edam_ops: ''
-  edam_top: ''
+  edam_ops:
+  - Expression analysis
+  edam_top:
+  - Gene expression
+  - Transcriptomics
   guide_link: ''
   launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=513
   license: MIT
@@ -96,8 +111,11 @@
   updated_at: '2024-05-30T05:47:35.000Z'
   url: /workflows/513?version=3
 - doi: ''
-  edam_ops: ''
-  edam_top: ''
+  edam_ops:
+  - Expression analysis
+  edam_top:
+  - Gene expression
+  - Transcriptomics
   guide_link: ''
   launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=512
   license: MIT
@@ -198,8 +216,10 @@
   updated_at: '2024-04-25T23:20:08.000Z'
   url: /workflows/836?version=1
 - doi: 10.48546/workflowhub.workflow.403.4
-  edam_ops: ''
-  edam_top: ''
+  edam_ops:
+  - Sequence assembly validation
+  edam_top:
+  - Sequence assembly
   guide_link: ''
   launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=403
   license: GPL-3.0
@@ -235,7 +255,10 @@
   url: /workflows/683?version=1
 - doi: ''
   edam_ops: ''
-  edam_top: ''
+  edam_top:
+  - Bioinformatics
+  - Phylogenomics
+  - Sequence assembly
   guide_link: ''
   launch_link: ''
   license: MIT
@@ -260,7 +283,12 @@
   url: /workflows/691?version=1
 - doi: 10.48546/workflowhub.workflow.431.1
   edam_ops: ''
-  edam_top: ''
+  edam_top:
+  - Bioinformatics
+  - DNA mutation
+  - Genomics
+  - Structural genomics
+  - Whole genome sequencing
   guide_link: ''
   launch_link: ''
   license: CC-BY-4.0
@@ -272,8 +300,11 @@
   updated_at: '2023-12-18T05:36:07.000Z'
   url: /workflows/431?version=1
 - doi: 10.48546/workflowhub.workflow.624.1
-  edam_ops: ''
-  edam_top: ''
+  edam_ops:
+  - Taxonomic classification
+  edam_top:
+  - Metagenomic sequencing
+  - Metagenomics
   guide_link: ''
   launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=624
   license: CC-BY-4.0
@@ -371,7 +402,12 @@
   url: /workflows/560?version=1
 - doi: ''
   edam_ops: ''
-  edam_top: ''
+  edam_top:
+  - Bioinformatics
+  - Genetic variation
+  - Genomics
+  - Mapping
+  - Structural variation
   guide_link: ''
   launch_link: ''
   license: CC-BY-4.0
@@ -383,8 +419,12 @@
   updated_at: '2023-03-21T05:17:30.000Z'
   url: /workflows/440?version=1
 - doi: 10.48546/workflowhub.workflow.221.3
-  edam_ops: ''
-  edam_top: ''
+  edam_ops:
+  - Genome assembly
+  - Sequence assembly validation
+  - Sequence assembly visualisation
+  edam_top:
+  - Sequence assembly
   guide_link: https://australianbiocommons.github.io/how-to-guides/genome_assembly/hifi_assembly
   launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=221
   license: GPL-3.0
@@ -396,8 +436,12 @@
   updated_at: '2023-01-30T18:21:31.000Z'
   url: /workflows/221?version=3
 - doi: 10.48546/workflowhub.workflow.237.2
-  edam_ops: ''
-  edam_top: ''
+  edam_ops:
+  - Genome assembly
+  - Sequence alignment
+  - Sequence cutting
+  edam_top:
+  - Sequence assembly
   guide_link: https://australianbiocommons.github.io/how-to-guides/genome_assembly/hifi_assembly
   launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=237
   license: GPL-3.0
@@ -409,8 +453,11 @@
   updated_at: '2023-01-30T18:21:31.000Z'
   url: /workflows/237?version=2
 - doi: 10.48546/workflowhub.workflow.220.2
-  edam_ops: ''
-  edam_top: ''
+  edam_ops:
+  - Conversion
+  - Sequencing quality control
+  edam_top:
+  - Sequence assembly
   guide_link: https://australianbiocommons.github.io/how-to-guides/genome_assembly/hifi_assembly
   launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=220
   license: GPL-3.0
@@ -435,8 +482,15 @@
   updated_at: '2023-01-16T14:02:39.000Z'
   url: /workflows/393?version=1
 - doi: 10.48546/workflowhub.workflow.146.1
-  edam_ops: ''
-  edam_top: ''
+  edam_ops:
+  - Genetic mapping
+  - Mapping
+  - Sequence alignment
+  edam_top:
+  - Genetic variation
+  - Genomics
+  - Population genomics
+  - Whole genome sequencing
   guide_link: https://github.com/Sydney-Informatics-Hub/Fastq-to-BAM#fastq-to-bam-user-guide
   launch_link: ''
   license: GPL-3.0
@@ -448,8 +502,14 @@
   updated_at: '2023-01-16T13:51:45.000Z'
   url: /workflows/146?version=1
 - doi: 10.48546/workflowhub.workflow.152.1
-  edam_ops: ''
-  edam_top: ''
+  edam_ops:
+  - Differential gene expression profiling
+  - Expression analysis
+  - Gene expression profiling
+  edam_top:
+  - Gene expression
+  - Gene transcripts
+  - Transcriptomics
   guide_link: https://github.com/Sydney-Informatics-Hub/RNASeq-DE#rnaseq-de
   launch_link: ''
   license: GPL-3.0
@@ -460,8 +520,10 @@
   updated_at: '2023-01-16T13:51:46.000Z'
   url: /workflows/152?version=1
 - doi: ''
-  edam_ops: ''
-  edam_top: ''
+  edam_ops:
+  - Sequence clustering
+  edam_top:
+  - Population genomics
   guide_link: https://australianbiocommons.github.io/how-to-guides/stacks_workflows/stacks
   launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=352
   license: Apache-2.0
@@ -473,8 +535,10 @@
   updated_at: '2023-01-30T18:21:31.000Z'
   url: /workflows/352?version=1
 - doi: ''
-  edam_ops: ''
-  edam_top: ''
+  edam_ops:
+  - Sequence clustering
+  edam_top:
+  - Population genomics
   guide_link: https://australianbiocommons.github.io/how-to-guides/stacks_workflows/stacks
   launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=351
   license: Apache-2.0
@@ -486,8 +550,10 @@
   updated_at: '2023-01-30T18:21:31.000Z'
   url: /workflows/351?version=1
 - doi: ''
-  edam_ops: ''
-  edam_top: ''
+  edam_ops:
+  - Sequence clustering
+  edam_top:
+  - Population genomics
   guide_link: https://australianbiocommons.github.io/how-to-guides/stacks_workflows/stacks
   launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=350
   license: Apache-2.0
@@ -499,8 +565,10 @@
   updated_at: '2023-01-30T18:21:31.000Z'
   url: /workflows/350?version=1
 - doi: ''
-  edam_ops: ''
-  edam_top: ''
+  edam_ops:
+  - Sequence clustering
+  edam_top:
+  - Population genomics
   guide_link: https://australianbiocommons.github.io/how-to-guides/stacks_workflows/stacks
   launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=349
   license: Apache-2.0
@@ -512,8 +580,10 @@
   updated_at: '2023-01-30T18:21:31.000Z'
   url: /workflows/349?version=1
 - doi: ''
-  edam_ops: ''
-  edam_top: ''
+  edam_ops:
+  - Sequence clustering
+  edam_top:
+  - Population genomics
   guide_link: https://australianbiocommons.github.io/how-to-guides/stacks_workflows/stacks
   launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=348
   license: Apache-2.0
@@ -525,8 +595,10 @@
   updated_at: '2023-01-30T18:21:31.000Z'
   url: /workflows/348?version=1
 - doi: ''
-  edam_ops: ''
-  edam_top: ''
+  edam_ops:
+  - Sequence clustering
+  edam_top:
+  - Population genomics
   guide_link: https://australianbiocommons.github.io/how-to-guides/stacks_workflows/stacks
   launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=347
   license: Apache-2.0
@@ -538,8 +610,10 @@
   updated_at: '2023-01-30T18:21:31.000Z'
   url: /workflows/347?version=1
 - doi: ''
-  edam_ops: ''
-  edam_top: ''
+  edam_ops:
+  - Sequencing quality control
+  edam_top:
+  - Population genomics
   guide_link: https://australianbiocommons.github.io/how-to-guides/stacks_workflows/stacks
   launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=346
   license: Apache-2.0
@@ -551,8 +625,14 @@
   updated_at: '2023-01-30T18:21:31.000Z'
   url: /workflows/346?version=1
 - doi: 10.48546/workflowhub.workflow.339.1
-  edam_ops: ''
-  edam_top: ''
+  edam_ops:
+  - Indel detection
+  - SNP detection
+  - Validation
+  edam_top:
+  - Bioinformatics
+  - Genetic variation
+  - Whole genome sequencing
   guide_link: https://github.com/Sydney-Informatics-Hub/GermlineShortV_biovalidation#germlineshortv_biovalidation
   launch_link: ''
   license: GPL-3.0
@@ -564,7 +644,9 @@
   url: /workflows/339?version=1
 - doi: 10.48546/workflowhub.workflow.327.1
   edam_ops: ''
-  edam_top: ''
+  edam_top:
+  - Metagenomic sequencing
+  - Metagenomics
   guide_link: https://github.com/Sydney-Informatics-Hub/Shotgun-Metagenomics-Analysis#shotgun-metagenomics-analysis
   launch_link: ''
   license: GPL-3.0
@@ -601,8 +683,10 @@
   updated_at: '2023-01-16T13:54:36.000Z'
   url: /workflows/230?version=1
 - doi: ''
-  edam_ops: ''
-  edam_top: ''
+  edam_ops:
+  - Taxonomic classification
+  edam_top:
+  - Metagenomics
   guide_link: ''
   launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=233
   license: GPL-3.0
@@ -613,8 +697,10 @@
   updated_at: '2024-04-17T04:17:52.000Z'
   url: /workflows/233?version=1
 - doi: ''
-  edam_ops: ''
-  edam_top: ''
+  edam_ops:
+  - Taxonomic classification
+  edam_top:
+  - Metagenomics
   guide_link: ''
   launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=232
   license: GPL-3.0
@@ -626,7 +712,8 @@
   url: /workflows/232?version=1
 - doi: 10.48546/workflowhub.workflow.229.1
   edam_ops: ''
-  edam_top: ''
+  edam_top:
+  - Sequence assembly
   guide_link: https://doi.org/10.5281/zenodo.5655813
   launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=229
   license: Apache-2.0
@@ -638,8 +725,10 @@
   updated_at: '2023-01-30T18:21:31.000Z'
   url: /workflows/229?version=1
 - doi: 10.48546/workflowhub.workflow.227.1
-  edam_ops: ''
-  edam_top: ''
+  edam_ops:
+  - Sequence assembly validation
+  edam_top:
+  - Sequence assembly
   guide_link: https://doi.org/10.5281/zenodo.5655813
   launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=227
   license: Apache-2.0
@@ -651,8 +740,10 @@
   updated_at: '2023-01-30T18:21:31.000Z'
   url: /workflows/227?version=1
 - doi: 10.48546/workflowhub.workflow.225.1
-  edam_ops: ''
-  edam_top: ''
+  edam_ops:
+  - De-novo assembly
+  edam_top:
+  - Sequence assembly
   guide_link: https://doi.org/10.5281/zenodo.5655813
   launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=225
   license: Apache-2.0
@@ -664,8 +755,10 @@
   updated_at: '2023-01-30T18:21:31.000Z'
   url: /workflows/225?version=1
 - doi: 10.48546/workflowhub.workflow.224.1
-  edam_ops: ''
-  edam_top: ''
+  edam_ops:
+  - Sequencing quality control
+  edam_top:
+  - Sequence assembly
   guide_link: https://doi.org/10.5281/zenodo.5655813
   launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=224
   license: Apache-2.0
@@ -677,8 +770,10 @@
   updated_at: '2023-01-30T18:21:31.000Z'
   url: /workflows/224?version=1
 - doi: 10.48546/workflowhub.workflow.223.1
-  edam_ops: ''
-  edam_top: ''
+  edam_ops:
+  - Sequencing quality control
+  edam_top:
+  - Sequence assembly
   guide_link: https://doi.org/10.5281/zenodo.5655813
   launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=223
   license: Apache-2.0
@@ -690,8 +785,10 @@
   updated_at: '2023-01-30T18:21:31.000Z'
   url: /workflows/223?version=1
 - doi: 10.48546/workflowhub.workflow.222.1
-  edam_ops: ''
-  edam_top: ''
+  edam_ops:
+  - Sequencing quality control
+  edam_top:
+  - Sequence assembly
   guide_link: https://doi.org/10.5281/zenodo.5655813
   launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=222
   license: Apache-2.0
@@ -703,8 +800,10 @@
   updated_at: '2023-01-30T18:21:31.000Z'
   url: /workflows/222?version=1
 - doi: 10.48546/workflowhub.workflow.228.1
-  edam_ops: ''
-  edam_top: ''
+  edam_ops:
+  - Sequence assembly
+  edam_top:
+  - Sequence assembly
   guide_link: https://doi.org/10.5281/zenodo.5655813
   launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=228
   license: Apache-2.0
@@ -716,8 +815,10 @@
   updated_at: '2023-01-30T18:21:31.000Z'
   url: /workflows/228?version=1
 - doi: 10.48546/workflowhub.workflow.226.1
-  edam_ops: ''
-  edam_top: ''
+  edam_ops:
+  - Sequence assembly
+  edam_top:
+  - Sequence assembly
   guide_link: https://doi.org/10.5281/zenodo.5655813
   launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=226
   license: Apache-2.0
@@ -729,8 +830,18 @@
   updated_at: '2023-01-30T18:21:31.000Z'
   url: /workflows/226?version=1
 - doi: 10.48546/workflowhub.workflow.143.1
-  edam_ops: ''
-  edam_top: ''
+  edam_ops:
+  - Indel detection
+  - SNP detection
+  - Variant calling
+  - Variant filtering
+  edam_top:
+  - DNA mutation
+  - DNA polymorphism
+  - Genetic variation
+  - Genomics
+  - Population genomics
+  - Whole genome sequencing
   guide_link: https://github.com/Sydney-Informatics-Hub/Germline-ShortV#germline-shortv
   launch_link: ''
   license: GPL-3.0
@@ -742,8 +853,15 @@
   updated_at: '2023-01-16T13:51:44.000Z'
   url: /workflows/143?version=1
 - doi: 10.48546/workflowhub.workflow.148.1
-  edam_ops: ''
-  edam_top: ''
+  edam_ops:
+  - Genome analysis
+  - Genome comparison
+  - Variant calling
+  edam_top:
+  - Bioinformatics
+  - Biomedical science
+  - Genetic variation
+  - Whole genome sequencing
   guide_link: https://github.com/Sydney-Informatics-Hub/Somatic-ShortV#somatic-shortv
   launch_link: ''
   license: GPL-3.0
@@ -754,8 +872,12 @@
   updated_at: '2023-01-16T13:51:45.000Z'
   url: /workflows/148?version=1
 - doi: 10.48546/workflowhub.workflow.151.1
-  edam_ops: ''
-  edam_top: ''
+  edam_ops:
+  - De-novo assembly
+  - Phasing
+  edam_top:
+  - Sequence assembly
+  - Whole genome sequencing
   guide_link: ''
   launch_link: ''
   license: GPL-3.0
@@ -767,8 +889,14 @@
   updated_at: '2023-01-16T13:51:45.000Z'
   url: /workflows/151?version=1
 - doi: 10.48546/workflowhub.workflow.149.1
-  edam_ops: ''
-  edam_top: ''
+  edam_ops:
+  - De-novo assembly
+  - Sequence assembly
+  - Transcriptome assembly
+  edam_top:
+  - Gene transcripts
+  - Sequence assembly
+  - Transcriptomics
   guide_link: ''
   launch_link: ''
   license: GPL-3.0
@@ -781,7 +909,8 @@
   url: /workflows/149?version=1
 - doi: 10.48546/workflowhub.workflow.150.1
   edam_ops: ''
-  edam_top: ''
+  edam_top:
+  - DNA packaging
   guide_link: ''
   launch_link: ''
   license: GPL-3.0
@@ -792,8 +921,12 @@
   updated_at: '2023-01-16T13:51:45.000Z'
   url: /workflows/150?version=1
 - doi: 10.48546/workflowhub.workflow.153.1
-  edam_ops: ''
-  edam_top: ''
+  edam_ops:
+  - Variant calling
+  - Variant filtering
+  edam_top:
+  - Genetic variation
+  - Whole genome sequencing
   guide_link: https://github.com/Sydney-Informatics-Hub/Bootstrapping-for-BQSR#introduction
   launch_link: ''
   license: GPL-3.0
@@ -804,8 +937,12 @@
   updated_at: '2023-01-16T13:51:46.000Z'
   url: /workflows/153?version=1
 - doi: 10.48546/workflowhub.workflow.145.1
-  edam_ops: ''
-  edam_top: ''
+  edam_ops:
+  - De-novo assembly
+  - Sequence assembly
+  - Transcriptome assembly
+  edam_top:
+  - Transcriptomics
   guide_link: https://github.com/Sydney-Informatics-Hub/Gadi-Trinity#gadi-trinity
   launch_link: ''
   license: Apache-2.0
@@ -830,8 +967,14 @@
   updated_at: '2023-01-16T13:51:29.000Z'
   url: /workflows/140?version=1
 - doi: ''
-  edam_ops: ''
-  edam_top: ''
+  edam_ops:
+  - Sequence alignment
+  - Variant calling
+  - Variant filtering
+  edam_top:
+  - Exome sequencing
+  - Genetic variation
+  - Whole genome sequencing
   guide_link: ''
   launch_link: ''
   license: Apache-2.0
@@ -843,8 +986,14 @@
   updated_at: '2023-01-16T13:51:44.000Z'
   url: /workflows/144?version=1
 - doi: ''
-  edam_ops: ''
-  edam_top: ''
+  edam_ops:
+  - Sequence alignment
+  - Variant calling
+  - Variant filtering
+  edam_top:
+  - Exome sequencing
+  - Genetic variation
+  - Whole genome sequencing
   guide_link: ''
   launch_link: ''
   license: Apache-2.0
@@ -857,8 +1006,10 @@
   updated_at: '2023-01-16T13:51:45.000Z'
   url: /workflows/147?version=1
 - doi: ''
-  edam_ops: ''
-  edam_top: ''
+  edam_ops:
+  - Taxonomic classification
+  edam_top:
+  - Metagenomics
   guide_link: ''
   launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=142
   license: GPL-3.0
