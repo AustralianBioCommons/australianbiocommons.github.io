@@ -92,7 +92,7 @@ class WorkflowHubSpaceDataProvider(Dataprovider):
             #if workflow_attr["description"]:
             #    retval[Dataprovider.FIELD_NAMES.DESCRIPTION] = workflow_attr["description"]
             if workflow_attr["updated_at"]:
-                retval[Dataprovider.FIELD_NAMES.UPDATED_AT] = workflow_attr["updated_at"]
+                retval[Dataprovider.FIELD_NAMES.UPDATED_AT] = workflow_attr["updated_at"].split("T")[0]
             if workflow_attr["tags"]:
                 retval[Dataprovider.FIELD_NAMES.TAGS] = workflow_attr["tags"]
             if workflow_attr["doi"]:

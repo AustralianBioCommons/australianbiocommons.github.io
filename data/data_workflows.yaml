@@ -1,3 +1,29 @@
+- doi: 10.48546/workflowhub.workflow.1054.1
+  edam_ops: ''
+  edam_top: ''
+  guide_link: ''
+  launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=1054
+  license: GPL-3.0+
+  projects:
+  - Australian BioCommons
+  - Galaxy Australia
+  remote_link: ''
+  title: TSI-Scaffolding-with-HiC (based on VGP-HiC-scaffolding)
+  updated_at: '2024-06-21'
+  url: /workflows/1054?version=1
+- doi: 10.48546/workflowhub.workflow.875.3
+  edam_ops: ''
+  edam_top: ''
+  guide_link: ''
+  launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=875
+  license: GPL-3.0
+  projects:
+  - Australian BioCommons
+  - Galaxy Australia
+  remote_link: ''
+  title: Repeat masking - TSI
+  updated_at: '2024-06-20'
+  url: /workflows/875?version=3
 - doi: 10.48546/workflowhub.workflow.881.4
   edam_ops: ''
   edam_top: ''
@@ -9,7 +35,7 @@
   - Galaxy Australia
   remote_link: ''
   title: Fgenesh annotation -TSI
-  updated_at: '2024-06-18T09:49:24.000Z'
+  updated_at: '2024-06-18'
   url: /workflows/881?version=4
 - doi: ''
   edam_ops: ''
@@ -21,7 +47,7 @@
   - QCIF Bioinformatics
   remote_link: https://github.com/swbioinf/scrnaseq_howto_ga_workflows.git
   title: scRNAseq Single Sample Processing Cell Ranger
-  updated_at: '2024-05-30T05:56:52.000Z'
+  updated_at: '2024-05-30'
   url: /workflows/647?version=1
 - doi: ''
   edam_ops:
@@ -36,7 +62,7 @@
   - QCIF Bioinformatics
   remote_link: https://github.com/swbioinf/scrnaseq_howto_ga_workflows.git
   title: 'scRNAseq: Count and Load with Cell Ranger'
-  updated_at: '2024-05-30T05:56:18.000Z'
+  updated_at: '2024-05-30'
   url: /workflows/646?version=2
 - doi: ''
   edam_ops:
@@ -51,7 +77,7 @@
   - QCIF Bioinformatics
   remote_link: https://github.com/swbioinf/scrnaseq_howto_ga_workflows.git
   title: scRNAseq Single Sample Processing Counts Matrix
-  updated_at: '2024-05-30T05:55:19.000Z'
+  updated_at: '2024-05-30'
   url: /workflows/514?version=3
 - doi: ''
   edam_ops: ''
@@ -63,7 +89,7 @@
   - QCIF Bioinformatics
   remote_link: https://github.com/swbioinf/scrnaseq_howto_ga_workflows.git
   title: scRNAseq Single Sample Processing STARSolo
-  updated_at: '2024-05-30T05:54:50.000Z'
+  updated_at: '2024-05-30'
   url: /workflows/465?version=4
 - doi: ''
   edam_ops:
@@ -78,7 +104,7 @@
   - QCIF Bioinformatics
   remote_link: https://github.com/swbioinf/scrnaseq_howto_ga_workflows.git
   title: scRNAseq QCtoBasicProcessing
-  updated_at: '2024-05-30T05:52:35.000Z'
+  updated_at: '2024-05-30'
   url: /workflows/468?version=3
 - doi: ''
   edam_ops:
@@ -93,7 +119,7 @@
   - QCIF Bioinformatics
   remote_link: https://github.com/swbioinf/scrnaseq_howto_ga_workflows.git
   title: scRNAseq CellQC
-  updated_at: '2024-05-30T05:51:13.000Z'
+  updated_at: '2024-05-30'
   url: /workflows/467?version=4
 - doi: ''
   edam_ops:
@@ -108,7 +134,7 @@
   - QCIF Bioinformatics
   remote_link: https://github.com/swbioinf/scrnaseq_howto_ga_workflows.git
   title: 'scRNAseq: Count and Load with starSOLO'
-  updated_at: '2024-05-30T05:47:35.000Z'
+  updated_at: '2024-05-30'
   url: /workflows/513?version=3
 - doi: ''
   edam_ops:
@@ -123,7 +149,7 @@
   - QCIF Bioinformatics
   remote_link: https://github.com/swbioinf/scrnaseq_howto_ga_workflows.git
   title: 'scRNAseq: Load counts matrix'
-  updated_at: '2024-05-30T05:44:52.000Z'
+  updated_at: '2024-05-30'
   url: /workflows/512?version=2
 - doi: 10.48546/workflowhub.workflow.880.1
   edam_ops: ''
@@ -136,7 +162,7 @@
   - Galaxy Australia
   remote_link: ''
   title: Convert formats - TSI
-  updated_at: '2024-05-09T04:09:41.000Z'
+  updated_at: '2024-05-09'
   url: /workflows/880?version=1
 - doi: 10.48546/workflowhub.workflow.879.1
   edam_ops: ''
@@ -149,7 +175,7 @@
   - Galaxy Australia
   remote_link: ''
   title: Extract transcripts - TSI
-  updated_at: '2024-05-09T04:08:31.000Z'
+  updated_at: '2024-05-09'
   url: /workflows/879?version=1
 - doi: 10.48546/workflowhub.workflow.878.1
   edam_ops: ''
@@ -162,7 +188,7 @@
   - Galaxy Australia
   remote_link: ''
   title: Combine transcripts - TSI
-  updated_at: '2024-05-09T04:06:49.000Z'
+  updated_at: '2024-05-09'
   url: /workflows/878?version=1
 - doi: 10.48546/workflowhub.workflow.877.1
   edam_ops: ''
@@ -175,7 +201,7 @@
   - Galaxy Australia
   remote_link: ''
   title: Find transcripts - TSI
-  updated_at: '2024-05-09T04:05:20.000Z'
+  updated_at: '2024-05-09'
   url: /workflows/877?version=1
 - doi: 10.48546/workflowhub.workflow.876.1
   edam_ops: ''
@@ -188,21 +214,8 @@
   - Galaxy Australia
   remote_link: ''
   title: QC and trimming of RNAseq reads - TSI
-  updated_at: '2024-05-09T04:03:15.000Z'
+  updated_at: '2024-05-09'
   url: /workflows/876?version=1
-- doi: 10.48546/workflowhub.workflow.875.2
-  edam_ops: ''
-  edam_top: ''
-  guide_link: ''
-  launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=875
-  license: GPL-3.0
-  projects:
-  - Australian BioCommons
-  - Galaxy Australia
-  remote_link: ''
-  title: Repeat masking - TSI
-  updated_at: '2024-05-09T04:01:22.000Z'
-  url: /workflows/875?version=2
 - doi: 10.48546/workflowhub.workflow.836.1
   edam_ops: ''
   edam_top: ''
@@ -213,7 +226,7 @@
   - Sydney Informatics Hub
   remote_link: https://github.com/Sydney-Informatics-Hub/Parabricks-Genomics-nf.git
   title: Parabricks-Genomics-nf
-  updated_at: '2024-04-25T23:20:08.000Z'
+  updated_at: '2024-04-25'
   url: /workflows/836?version=1
 - doi: 10.48546/workflowhub.workflow.403.4
   edam_ops:
@@ -227,7 +240,7 @@
   - Galaxy Australia
   remote_link: https://github.com/AustralianBioCommons/Genome-assessment-post-assembly
   title: Genome-assessment-post-assembly
-  updated_at: '2024-04-19T06:38:44.000Z'
+  updated_at: '2024-04-19'
   url: /workflows/403?version=4
 - doi: ''
   edam_ops: ''
@@ -239,7 +252,7 @@
   - Australian BioCommons
   remote_link: ''
   title: Genome-assessment-post-assembly
-  updated_at: '2024-03-13T23:32:44.000Z'
+  updated_at: '2024-03-13'
   url: /workflows/794?version=1
 - doi: 10.48546/workflowhub.workflow.683.1
   edam_ops: ''
@@ -251,7 +264,7 @@
   - Australian BioCommons
   remote_link: https://github.com/eresearchqut/ontvisc.git
   title: ONTViSc (ONT-based Viral Screening for Biosecurity)
-  updated_at: '2024-02-19T05:24:24.000Z'
+  updated_at: '2024-02-19'
   url: /workflows/683?version=1
 - doi: ''
   edam_ops: ''
@@ -266,7 +279,7 @@
   - Australian BioCommons
   remote_link: https://github.com/AusARG/pipesnake
   title: pipesnake
-  updated_at: '2024-02-08T00:03:01.000Z'
+  updated_at: '2024-02-08'
   url: /workflows/737?version=1
 - doi: 10.48546/workflowhub.workflow.691.1
   edam_ops: ''
@@ -279,7 +292,7 @@
   - Australian BioCommons
   remote_link: https://github.com/Sydney-Informatics-Hub/Somatic-shortV-nf
   title: Somatic-ShortV-nf
-  updated_at: '2023-12-20T01:30:37.000Z'
+  updated_at: '2023-12-20'
   url: /workflows/691?version=1
 - doi: 10.48546/workflowhub.workflow.431.1
   edam_ops: ''
@@ -297,7 +310,7 @@
   - Australian BioCommons
   remote_link: https://github.com/Sydney-Informatics-Hub/Germline-StructuralV-nf
   title: GermlineStructuralV-nf
-  updated_at: '2023-12-18T05:36:07.000Z'
+  updated_at: '2023-12-18'
   url: /workflows/431?version=1
 - doi: 10.48546/workflowhub.workflow.624.1
   edam_ops:
@@ -312,7 +325,7 @@
   - QCIF Bioinformatics
   remote_link: ''
   title: Analyses of shotgun metagenomics data with MetaPhlAn2
-  updated_at: '2024-04-05T05:20:07.000Z'
+  updated_at: '2024-04-05'
   url: /workflows/624?version=1
 - doi: ''
   edam_ops: ''
@@ -324,7 +337,7 @@
   - QCIF Bioinformatics
   remote_link: ''
   title: 'Workflow 7 : Beta Diversity [16S Microbial Analysis With Mothur]'
-  updated_at: '2023-11-09T05:26:53.000Z'
+  updated_at: '2023-11-09'
   url: /workflows/653?version=1
 - doi: ''
   edam_ops: ''
@@ -336,7 +349,7 @@
   - QCIF Bioinformatics
   remote_link: ''
   title: 'Workflow 6: Alpha Diversity [16S Microbial Analysis With Mothur]'
-  updated_at: '2023-11-09T05:24:50.000Z'
+  updated_at: '2023-11-09'
   url: /workflows/652?version=1
 - doi: ''
   edam_ops: ''
@@ -348,7 +361,7 @@
   - QCIF Bioinformatics
   remote_link: ''
   title: 'Workflow 5: OTU Clustering [16S Microbial Analysis With Mothur]'
-  updated_at: '2023-11-09T05:20:20.000Z'
+  updated_at: '2023-11-09'
   url: /workflows/651?version=1
 - doi: ''
   edam_ops: ''
@@ -361,7 +374,7 @@
   remote_link: ''
   title: 'Workflow 3: Classification [Galaxy Training: 16S Microbial Analysis With
     Mothur]'
-  updated_at: '2023-11-09T05:16:29.000Z'
+  updated_at: '2023-11-09'
   url: /workflows/650?version=1
 - doi: ''
   edam_ops: ''
@@ -373,7 +386,7 @@
   - QCIF Bioinformatics
   remote_link: ''
   title: 'Workflow 1: Further Quality Control [16S Microbial Analysis With Mothur]'
-  updated_at: '2023-11-09T05:13:16.000Z'
+  updated_at: '2023-11-09'
   url: /workflows/648?version=1
 - doi: ''
   edam_ops: ''
@@ -386,7 +399,7 @@
   remote_link: ''
   title: 'Workflow 2: Data Cleaning And Chimera Removal [16S Microbial Analysis With
     Mothur]'
-  updated_at: '2023-11-09T05:11:57.000Z'
+  updated_at: '2023-11-09'
   url: /workflows/649?version=1
 - doi: ''
   edam_ops: ''
@@ -398,7 +411,7 @@
   - Australian BioCommons
   remote_link: https://github.com/AustralianBioCommons/hifi-assembly-workflow
   title: HiFi de novo genome assembly workflow
-  updated_at: '2024-02-05T03:12:14.000Z'
+  updated_at: '2024-02-05'
   url: /workflows/560?version=1
 - doi: ''
   edam_ops: ''
@@ -416,7 +429,7 @@
   - Australian BioCommons
   remote_link: https://github.com/Sydney-Informatics-Hub/IGVreport-nf
   title: IGVreport-nf
-  updated_at: '2023-03-21T05:17:30.000Z'
+  updated_at: '2023-03-21'
   url: /workflows/440?version=1
 - doi: 10.48546/workflowhub.workflow.221.3
   edam_ops:
@@ -433,7 +446,7 @@
   - Australian BioCommons
   remote_link: https://github.com/AustralianBioCommons/PacBio-HiFi-genome-assembly-using-hifiasm
   title: PacBio HiFi genome assembly using hifiasm v2.1
-  updated_at: '2023-01-30T18:21:31.000Z'
+  updated_at: '2023-01-30'
   url: /workflows/221?version=3
 - doi: 10.48546/workflowhub.workflow.237.2
   edam_ops:
@@ -450,7 +463,7 @@
   - Australian BioCommons
   remote_link: https://github.com/AustralianBioCommons/Purge-duplicates-from-hifiasm-assembly
   title: Purge duplicates from hifiasm assembly v1.0
-  updated_at: '2023-01-30T18:21:31.000Z'
+  updated_at: '2023-01-30'
   url: /workflows/237?version=2
 - doi: 10.48546/workflowhub.workflow.220.2
   edam_ops:
@@ -466,7 +479,7 @@
   - Galaxy Australia
   remote_link: https://github.com/AustralianBioCommons/BAM-to-FASTQ-QC
   title: BAM to FASTQ + QC v1.0
-  updated_at: '2023-01-30T18:21:31.000Z'
+  updated_at: '2023-01-30'
   url: /workflows/220?version=2
 - doi: 10.48546/workflowhub.workflow.393.1
   edam_ops: ''
@@ -479,7 +492,7 @@
   - Australian BioCommons
   remote_link: https://github.com/Sydney-Informatics-Hub/IndexReferenceFasta-nf
   title: IndexReferenceFasta-nf
-  updated_at: '2023-01-16T14:02:39.000Z'
+  updated_at: '2023-01-16'
   url: /workflows/393?version=1
 - doi: 10.48546/workflowhub.workflow.146.1
   edam_ops:
@@ -499,7 +512,7 @@
   - Sydney Informatics Hub
   remote_link: ''
   title: Fastq-to-bam @ NCI-Gadi
-  updated_at: '2023-01-16T13:51:45.000Z'
+  updated_at: '2023-01-16'
   url: /workflows/146?version=1
 - doi: 10.48546/workflowhub.workflow.152.1
   edam_ops:
@@ -517,7 +530,7 @@
   - Sydney Informatics Hub
   remote_link: ''
   title: RNASeq-DE @ NCI-Gadi
-  updated_at: '2023-01-16T13:51:46.000Z'
+  updated_at: '2023-01-16'
   url: /workflows/152?version=1
 - doi: ''
   edam_ops:
@@ -532,7 +545,7 @@
   - Australian BioCommons
   remote_link: https://github.com/AnnaSyme/workflow-partial-gstacks-populations.git
   title: Partial ref-guided workflow - gstacks and pops
-  updated_at: '2023-01-30T18:21:31.000Z'
+  updated_at: '2023-01-30'
   url: /workflows/352?version=1
 - doi: ''
   edam_ops:
@@ -547,7 +560,7 @@
   - Australian BioCommons
   remote_link: https://github.com/AnnaSyme/workflow-partial-bwa-mem.git
   title: Partial ref-guided workflow - bwa mem only
-  updated_at: '2023-01-30T18:21:31.000Z'
+  updated_at: '2023-01-30'
   url: /workflows/351?version=1
 - doi: ''
   edam_ops:
@@ -562,7 +575,7 @@
   - Australian BioCommons
   remote_link: https://github.com/AnnaSyme/workflow-partial-cstacks-sstacks-gstacks.git
   title: 'Partial de novo workflow: c-s-g-pops only'
-  updated_at: '2023-01-30T18:21:31.000Z'
+  updated_at: '2023-01-30'
   url: /workflows/350?version=1
 - doi: ''
   edam_ops:
@@ -577,7 +590,7 @@
   - Australian BioCommons
   remote_link: https://github.com/AnnaSyme/workflow-partial-ustacks-only.git
   title: 'Partial de novo workflow: ustacks only'
-  updated_at: '2023-01-30T18:21:31.000Z'
+  updated_at: '2023-01-30'
   url: /workflows/349?version=1
 - doi: ''
   edam_ops:
@@ -592,7 +605,7 @@
   - Australian BioCommons
   remote_link: https://github.com/AnnaSyme/workflow-denovo-stacks.git
   title: Stacks RAD-seq de novo workflow
-  updated_at: '2023-01-30T18:21:31.000Z'
+  updated_at: '2023-01-30'
   url: /workflows/348?version=1
 - doi: ''
   edam_ops:
@@ -607,7 +620,7 @@
   - Australian BioCommons
   remote_link: https://github.com/AnnaSyme/workflow-ref-guided-stacks.git
   title: Stacks RAD-seq reference-guided workflow
-  updated_at: '2023-01-30T18:21:31.000Z'
+  updated_at: '2023-01-30'
   url: /workflows/347?version=1
 - doi: ''
   edam_ops:
@@ -622,7 +635,7 @@
   - Australian BioCommons
   remote_link: https://github.com/AnnaSyme/workflow-qc-of-radseq-reads.git
   title: QC of RADseq reads
-  updated_at: '2023-01-30T18:21:31.000Z'
+  updated_at: '2023-01-30'
   url: /workflows/346?version=1
 - doi: 10.48546/workflowhub.workflow.339.1
   edam_ops:
@@ -640,7 +653,7 @@
   - Sydney Informatics Hub
   remote_link: https://github.com/Sydney-Informatics-Hub/GermlineShortV_biovalidation.git
   title: GermlineShortV biovalidation
-  updated_at: '2023-01-16T13:59:52.000Z'
+  updated_at: '2023-01-16'
   url: /workflows/339?version=1
 - doi: 10.48546/workflowhub.workflow.327.1
   edam_ops: ''
@@ -655,7 +668,7 @@
   - Australian BioCommons
   remote_link: https://github.com/Sydney-Informatics-Hub/Shotgun-Metagenomics-Analysis.git
   title: Shotgun-Metagenomics-Analysis
-  updated_at: '2023-01-16T13:59:41.000Z'
+  updated_at: '2023-01-16'
   url: /workflows/327?version=1
 - doi: ''
   edam_ops: ''
@@ -667,7 +680,7 @@
   - Janis
   remote_link: ''
   title: Janis Germline Variant-Calling Workflow (GATK)
-  updated_at: '2023-01-16T13:54:51.000Z'
+  updated_at: '2023-01-16'
   url: /workflows/236?version=1
 - doi: 10.48546/workflowhub.workflow.230.1
   edam_ops: ''
@@ -680,7 +693,7 @@
   - Australian BioCommons
   remote_link: ''
   title: Combined workflows for large genome assembly
-  updated_at: '2023-01-16T13:54:36.000Z'
+  updated_at: '2023-01-16'
   url: /workflows/230?version=1
 - doi: ''
   edam_ops:
@@ -694,7 +707,7 @@
   - QCIF Bioinformatics
   remote_link: ''
   title: 16S biodiversity for nonoverlap paired end
-  updated_at: '2024-04-17T04:17:52.000Z'
+  updated_at: '2024-04-17'
   url: /workflows/233?version=1
 - doi: ''
   edam_ops:
@@ -708,7 +721,7 @@
   - QCIF Bioinformatics
   remote_link: ''
   title: 16S biodiversity for overlap paired end
-  updated_at: '2024-04-17T04:19:28.000Z'
+  updated_at: '2024-04-17'
   url: /workflows/232?version=1
 - doi: 10.48546/workflowhub.workflow.229.1
   edam_ops: ''
@@ -722,7 +735,7 @@
   - Australian BioCommons
   remote_link: ''
   title: Assess genome quality
-  updated_at: '2023-01-30T18:21:31.000Z'
+  updated_at: '2023-01-30'
   url: /workflows/229?version=1
 - doi: 10.48546/workflowhub.workflow.227.1
   edam_ops:
@@ -737,7 +750,7 @@
   - Australian BioCommons
   remote_link: ''
   title: Racon polish with long reads, x4
-  updated_at: '2023-01-30T18:21:31.000Z'
+  updated_at: '2023-01-30'
   url: /workflows/227?version=1
 - doi: 10.48546/workflowhub.workflow.225.1
   edam_ops:
@@ -752,7 +765,7 @@
   - Australian BioCommons
   remote_link: ''
   title: Assembly with Flye
-  updated_at: '2023-01-30T18:21:31.000Z'
+  updated_at: '2023-01-30'
   url: /workflows/225?version=1
 - doi: 10.48546/workflowhub.workflow.224.1
   edam_ops:
@@ -767,7 +780,7 @@
   - Australian BioCommons
   remote_link: ''
   title: Trim and filter reads - fastp
-  updated_at: '2023-01-30T18:21:31.000Z'
+  updated_at: '2023-01-30'
   url: /workflows/224?version=1
 - doi: 10.48546/workflowhub.workflow.223.1
   edam_ops:
@@ -782,7 +795,7 @@
   - Australian BioCommons
   remote_link: ''
   title: kmer counting - meryl
-  updated_at: '2023-01-30T18:21:31.000Z'
+  updated_at: '2023-01-30'
   url: /workflows/223?version=1
 - doi: 10.48546/workflowhub.workflow.222.1
   edam_ops:
@@ -797,7 +810,7 @@
   - Australian BioCommons
   remote_link: ''
   title: Data QC
-  updated_at: '2023-01-30T18:21:31.000Z'
+  updated_at: '2023-01-30'
   url: /workflows/222?version=1
 - doi: 10.48546/workflowhub.workflow.228.1
   edam_ops:
@@ -812,7 +825,7 @@
   - Australian BioCommons
   remote_link: ''
   title: Racon polish with Illumina reads, x2
-  updated_at: '2023-01-30T18:21:31.000Z'
+  updated_at: '2023-01-30'
   url: /workflows/228?version=1
 - doi: 10.48546/workflowhub.workflow.226.1
   edam_ops:
@@ -827,7 +840,7 @@
   - Australian BioCommons
   remote_link: ''
   title: Assembly polishing
-  updated_at: '2023-01-30T18:21:31.000Z'
+  updated_at: '2023-01-30'
   url: /workflows/226?version=1
 - doi: 10.48546/workflowhub.workflow.143.1
   edam_ops:
@@ -850,7 +863,7 @@
   - Sydney Informatics Hub
   remote_link: ''
   title: Germline-ShortV @ NCI-Gadi
-  updated_at: '2023-01-16T13:51:44.000Z'
+  updated_at: '2023-01-16'
   url: /workflows/143?version=1
 - doi: 10.48546/workflowhub.workflow.148.1
   edam_ops:
@@ -869,7 +882,7 @@
   - Sydney Informatics Hub
   remote_link: ''
   title: Somatic-ShortV @ NCI-Gadi
-  updated_at: '2023-01-16T13:51:45.000Z'
+  updated_at: '2023-01-16'
   url: /workflows/148?version=1
 - doi: 10.48546/workflowhub.workflow.151.1
   edam_ops:
@@ -886,7 +899,7 @@
   - Sydney Informatics Hub
   remote_link: ''
   title: Flashlite-Supernova
-  updated_at: '2023-01-16T13:51:45.000Z'
+  updated_at: '2023-01-16'
   url: /workflows/151?version=1
 - doi: 10.48546/workflowhub.workflow.149.1
   edam_ops:
@@ -905,7 +918,7 @@
   - Sydney Informatics Hub
   remote_link: ''
   title: Flashlite-Trinity
-  updated_at: '2023-01-16T13:51:45.000Z'
+  updated_at: '2023-01-16'
   url: /workflows/149?version=1
 - doi: 10.48546/workflowhub.workflow.150.1
   edam_ops: ''
@@ -918,7 +931,7 @@
   - Sydney Informatics Hub
   remote_link: ''
   title: Flashlite-Juicer
-  updated_at: '2023-01-16T13:51:45.000Z'
+  updated_at: '2023-01-16'
   url: /workflows/150?version=1
 - doi: 10.48546/workflowhub.workflow.153.1
   edam_ops:
@@ -934,7 +947,7 @@
   - Sydney Informatics Hub
   remote_link: ''
   title: Bootstrapping-for-BQSR @ NCI-Gadi
-  updated_at: '2023-01-16T13:51:46.000Z'
+  updated_at: '2023-01-16'
   url: /workflows/153?version=1
 - doi: 10.48546/workflowhub.workflow.145.1
   edam_ops:
@@ -951,7 +964,7 @@
   - Sydney Informatics Hub
   remote_link: ''
   title: Trinity @ NCI-Gadi
-  updated_at: '2023-01-16T13:51:44.000Z'
+  updated_at: '2023-01-16'
   url: /workflows/145?version=1
 - doi: 10.48546/workflowhub.workflow.140.1
   edam_ops: ''
@@ -964,7 +977,7 @@
   remote_link: ''
   title: 'microPIPE: a pipeline for high-quality bacterial genome construction using
     ONT and Illumina sequencing'
-  updated_at: '2023-01-16T13:51:29.000Z'
+  updated_at: '2023-01-16'
   url: /workflows/140?version=1
 - doi: ''
   edam_ops:
@@ -983,7 +996,7 @@
   - Pawsey Supercomputing Research Centre
   remote_link: ''
   title: GATK4 Fastq to joint-called cohort VCF with Cromwell on SLURM
-  updated_at: '2023-01-16T13:51:44.000Z'
+  updated_at: '2023-01-16'
   url: /workflows/144?version=1
 - doi: ''
   edam_ops:
@@ -1003,7 +1016,7 @@
   remote_link: ''
   title: GATK4 Fastq to joint-called cohort VCF with Cromwell on local cluster (no
     job scheduler)
-  updated_at: '2023-01-16T13:51:45.000Z'
+  updated_at: '2023-01-16'
   url: /workflows/147?version=1
 - doi: ''
   edam_ops:
@@ -1017,7 +1030,7 @@
   - Galaxy Australia
   remote_link: ''
   title: 16S biodiversity BIOM
-  updated_at: '2024-04-17T04:16:05.000Z'
+  updated_at: '2024-04-17'
   url: /workflows/142?version=1
 - doi: ''
   edam_ops: ''
@@ -1029,5 +1042,5 @@
   - Australian BioCommons
   remote_link: ''
   title: Trinity RNA Assembly
-  updated_at: '2023-01-16T13:49:39.000Z'
+  updated_at: '2023-01-16'
   url: /workflows/114?version=2
