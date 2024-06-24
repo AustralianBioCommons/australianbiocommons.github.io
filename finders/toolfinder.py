@@ -245,6 +245,10 @@ class BiotoolsDataProvider(Dataprovider):
                retval[Dataprovider.FIELD_NAMES.EDAM_TOPICS] = tooldata["topic"]
            if tooldata["function"]:
                retval[Dataprovider.FIELD_NAMES.EDAM_OPERATIONS] = tooldata["function"][0]["operation"]
+           if tooldata["function"]:
+               retval[Dataprovider.FIELD_NAMES.EDAM_DATA_INPUT] = tooldata["function"][0]["input"]
+           if tooldata["function"]:
+               retval[Dataprovider.FIELD_NAMES.EDAM_DATA_OUTPUT] = tooldata["function"][0]["output"]
        return retval
 
 
@@ -383,6 +387,13 @@ class ToolDB(DB):
            return {"title": name + " " + version, "url": f"""https://usegalaxy.org.au/{val[0]}""", "description": description}
         def translate_biocommons_resources(link, description):
             return {"title": description, "url": link}
+        def get_edam_data(val):
+            term = val["data"]["term"]
+            formats = []
+            for format in val["format"]:
+                term = format["term"]
+                formats.append(term)
+            return { "term": term, "formats": formats}
         def get_terms(val):
             term = val["term"]
             uri = val["uri"]
@@ -400,6 +411,8 @@ class ToolDB(DB):
                 "edam-topics": [i["term"] for i in tool[Dataprovider.FIELD_NAMES.EDAM_TOPICS]] if isinstance(tool[Dataprovider.FIELD_NAMES.EDAM_TOPICS], list) else "",
                 #"edam-operations": [get_terms(i) for i in tool[Dataprovider.FIELD_NAMES.EDAM_OPERATIONS]] if Dataprovider.FIELD_NAMES.EDAM_OPERATIONS in tool and isinstance(tool[Dataprovider.FIELD_NAMES.EDAM_OPERATIONS], list) else "",
                 "edam-operations": [i["term"] for i in tool[Dataprovider.FIELD_NAMES.EDAM_OPERATIONS]] if Dataprovider.FIELD_NAMES.EDAM_OPERATIONS in tool and isinstance(tool[Dataprovider.FIELD_NAMES.EDAM_OPERATIONS], list) else "",
+                "edam-inputs": [get_edam_data(i) for i in tool[Dataprovider.FIELD_NAMES.EDAM_DATA_INPUT]] if Dataprovider.FIELD_NAMES.EDAM_DATA_INPUT in tool and isinstance(tool[Dataprovider.FIELD_NAMES.EDAM_DATA_INPUT], list) else "",
+                "edam-outputs": [get_edam_data(i) for i in tool[Dataprovider.FIELD_NAMES.EDAM_DATA_OUTPUT]] if Dataprovider.FIELD_NAMES.EDAM_DATA_OUTPUT in tool and isinstance(tool[Dataprovider.FIELD_NAMES.EDAM_DATA_OUTPUT], list) else "",
                 "publications": [translate_publication(i) for i in tool[Dataprovider.FIELD_NAMES.PUBLICATIONS]] if Dataprovider.FIELD_NAMES.PUBLICATIONS in tool and isinstance(tool[Dataprovider.FIELD_NAMES.PUBLICATIONS],list) else "",
                 "biocontainers": tool.get(Dataprovider.FIELD_NAMES.BIOTOOLS_ID, ""),
                 "license": tool.get(Dataprovider.FIELD_NAMES.LICENSE, ""),
