@@ -87,6 +87,8 @@ class WorkflowHubSpaceDataProvider(Dataprovider):
             workflow_attr = data["data"]["attributes"]
             if workflow_attr["title"]:
                 retval[Dataprovider.FIELD_NAMES.TITLE] = (workflow_attr["title"]).replace("_", " ")
+            if workflow_attr['workflow_class']:
+                retval[Dataprovider.FIELD_NAMES.WORKFLOW_CLASS] = workflow_attr['workflow_class']['key']
             if workflow_attr["license"]:
                 retval[Dataprovider.FIELD_NAMES.LICENSE] = workflow_attr["license"]
             #if workflow_attr["description"]:
@@ -101,6 +103,8 @@ class WorkflowHubSpaceDataProvider(Dataprovider):
                 retval[Dataprovider.FIELD_NAMES.EDAM_OPS] = workflow_attr["operation_annotations"]
             if workflow_attr["topic_annotations"]:
                 retval[Dataprovider.FIELD_NAMES.EDAM_TOP] = workflow_attr["topic_annotations"]
+            if workflow_attr["tools"]:
+                retval[Dataprovider.FIELD_NAMES.WORKFLOW_TOOLS] = workflow_attr["tools"]
             workflow_links = data["data"]["links"]
             if workflow_links["self"]:
                 retval[Dataprovider.FIELD_NAMES.URL] = workflow_links["self"]
@@ -173,6 +177,7 @@ class WorkflowDB(DB):
             # see https://stackoverflow.com/a/9285148
             # see https://stackoverflow.com/a/62014515
             "title": workflow.get(Dataprovider.FIELD_NAMES.TITLE, ""),
+            "class": workflow.get(Dataprovider.FIELD_NAMES.WORKFLOW_CLASS, ""),
             "url": workflow.get(Dataprovider.FIELD_NAMES.URL, ""),
             "remote_link": workflow.get(Dataprovider.FIELD_NAMES.REMOTE_LINK, ""),
             "edam_top": [i["label"] for i in workflow[
@@ -186,7 +191,8 @@ class WorkflowDB(DB):
             "doi": workflow.get(Dataprovider.FIELD_NAMES.DOI, ""),
             "projects": [i for i in workflow[Dataprovider.FIELD_NAMES.PROJECTS]] if isinstance(workflow[Dataprovider.FIELD_NAMES.PROJECTS], list) else "",
             "guide_link": workflow.get(Dataprovider.FIELD_NAMES.GUIDE_LINK, ""),
-            "launch_link": workflow.get(Dataprovider.FIELD_NAMES.LAUNCH_LINK, "")
+            "launch_link": workflow.get(Dataprovider.FIELD_NAMES.LAUNCH_LINK, ""),
+            "tools": workflow.get(Dataprovider.FIELD_NAMES.WORKFLOW_TOOLS, "")
         }
 
 

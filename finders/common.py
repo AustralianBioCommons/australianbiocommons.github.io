@@ -44,6 +44,8 @@ class Dataprovider:
         URL = "FIELD_NAMES.URL"
         LAUNCH_LINK = "FIELD_NAMES.LAUNCH_LINK"
         GUIDE_LINK = "FIELD_NAMES.GUIDE_LINK"
+        WORKFLOW_CLASS = "FIELD_NAMES.WORKFLOW_CLASS"
+        WORKFLOW_TOOLS = "FIELD_NAMES.WORKFLOW_TOOLS"
 
     def __init__(self):
         self.identifier = ""
