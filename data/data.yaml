@@ -9592,13 +9592,16 @@
   - ChIP-seq
   - Epigenetics
   galaxy:
+  - description: 'hicFindTADs: identify TAD boundaries by computing the degree of
+      separation of each Hi-C matrix bin'
+    title: hicFindTADs 3.7.5+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Fhicexplorer_hicfindtads%2Fhicexplorer_hicfindtads%2F3.7.5%2Bgalaxy0
+  - description: 'hicBuildMatrix: create a contact matrix'
+    title: hicBuildMatrix 3.7.5+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Fhicexplorer_hicbuildmatrix%2Fhicexplorer_hicbuildmatrix%2F3.7.5%2Bgalaxy0
   - description: 'hicPCA: compute the principal components for A / B compartment analysis'
     title: hicPCA 3.7.2+galaxy0
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Fhicexplorer_hicpca%2Fhicexplorer_hicpca%2F3.7.2%2Bgalaxy0
-  - description: 'hicFindTADs: identify TAD boundaries by computing the degree of
-      separation of each Hi-C matrix bin'
-    title: hicFindTADs 3.7.2+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Fhicexplorer_hicfindtads%2Fhicexplorer_hicfindtads%2F3.7.2%2Bgalaxy0
   - description: 'hicPlotMatrix: plot a Hi-C contact matrix heatmap'
     title: hicPlotMatrix 3.7.2+galaxy0
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Fhicexplorer_hicplotmatrix%2Fhicexplorer_hicplotmatrix%2F3.7.2%2Bgalaxy0
@@ -9606,9 +9609,6 @@
       to reduce its resolution'
     title: hicMergeMatrixBins 3.7.2+galaxy0
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Fhicexplorer_hicmergematrixbins%2Fhicexplorer_hicmergematrixbins%2F3.7.2%2Bgalaxy0
-  - description: 'hicBuildMatrix: create a contact matrix'
-    title: hicBuildMatrix 3.7.2+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Fhicexplorer_hicbuildmatrix%2Fhicexplorer_hicbuildmatrix%2F3.7.2%2Bgalaxy0
   homepage: https://hicexplorer.usegalaxy.eu
   id: hicexplorer
   license: ''
@@ -12636,7 +12636,7 @@
   homepage: ''
   id: merge_cols
   license: ''
-  name: ' Merge Columns'
+  name: Merge Columns
   nci-gadi: ''
   nci-if89: ''
   pawsey: ''
@@ -16598,7 +16598,7 @@
   homepage: ''
   id: peptide_genomic_coordinate
   license: ''
-  name: ' Peptide Genomic Coordinate'
+  name: Peptide Genomic Coordinate
   nci-gadi: ''
   nci-if89: ''
   pawsey: ''
@@ -17153,7 +17153,7 @@
   homepage: ''
   id: pileup_parser
   license: ''
-  name: ' Filter pileup '
+  name: Filter pileup
   nci-gadi: ''
   nci-if89: ''
   pawsey: ''
@@ -19793,7 +19793,7 @@
   homepage: ''
   id: salmon_kallisto_mtx_to_10x
   license: ''
-  name: ' salmonKallistoMtxTo10x'
+  name: salmonKallistoMtxTo10x
   nci-gadi: ''
   nci-if89: ''
   pawsey: ''
