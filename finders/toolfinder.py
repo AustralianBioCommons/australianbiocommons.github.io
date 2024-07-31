@@ -213,7 +213,7 @@ class BiotoolsDataProvider(Dataprovider):
         import concurrent.futures
         def fetch_url(url, biotools_id):
             return requests.get(url, timeout=10), biotools_id
-        with concurrent.futures.ThreadPoolExecutor(max_workers=8) as executor:
+        with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
             future_urls = [executor.submit(fetch_url, url, biotools_id) for biotools_id, url in url_array]
             for future in concurrent.futures.as_completed(future_urls):
                 response, biotools_id = future.result()
@@ -250,6 +250,56 @@ class BiotoolsDataProvider(Dataprovider):
            if tooldata["function"]:
                retval[Dataprovider.FIELD_NAMES.EDAM_DATA_OUTPUT] = tooldata["function"][0]["output"]
        return retval
+
+
+class BiocontainersDataProvider(Dataprovider):
+
+    def __init__(self, toolmatrix, parent):
+        super().__init__()
+        self.identifier = "BioContainers"
+        self.filename = toolmatrix
+        self.parent = parent
+
+    def _query_remote(self):
+        self.available_data = {}
+        data = pd.read_excel(self.filename, header=2)
+        unique_biotools_ids = set(data.biotoolsID.unique())
+        unique_biotools_ids.remove(np.nan)
+        unique_tool_ids = set(data.toolID.unique())
+        unique_tool_ids.remove(np.nan)
+
+        ### import BioContainers metadata via TRS implementation
+        biocontainers = requests.request("get", "https://api.biocontainers.pro/ga4gh/trs/v2/tools?limit=100000&sort_field=id&sort_order=asc")
+        biocontainers_data = json.loads(biocontainers.text)
+        ### create list of bio.tools IDs with their associated BioContainers IDs
+        biocontainers_list = {}
+        for container in range(len(biocontainers_data)):
+            container_id = biocontainers_data[container]["id"]
+            if "identifiers" in biocontainers_data[container]:
+                identifiers = biocontainers_data[container]["identifiers"]
+                # https://stackoverflow.com/a/70672659
+                # https://stackoverflow.com/a/12595082
+                # https://stackoverflow.com/a/4843178
+                # https://stackoverflow.com/a/15340694
+                for id in identifiers:
+                    if isinstance(id, str):
+                        match_string = "biotools:"
+                        if re.search(match_string, id):
+                            biotools_id = id.split(":")[1]
+                    else:
+                        biotools_id = None
+                    if biotools_id not in biocontainers_list:
+                        biocontainers_list[biotools_id] = container_id
+
+        for biotools_id in unique_biotools_ids:
+            if biotools_id in biocontainers_list:
+                tool_id = self.parent.get_id_from_alt(ToolMatrixDataProvider.ID_BIO_TOOLS, biotools_id)[0]
+                biocontainers_id = biocontainers_list[biotools_id]
+                biocontainers_url = "https://biocontainers.pro/tools/" + biocontainers_id
+                self.available_data[tool_id] = biocontainers_url
+
+    def _render(self, data):
+        return {Dataprovider.FIELD_NAMES.BIOCONTAINERS_LINK: data}
 
 
 class GadiDataProvider(Dataprovider):
@@ -414,7 +464,7 @@ class ToolDB(DB):
                 "edam-inputs": [get_edam_data(i) for i in tool[Dataprovider.FIELD_NAMES.EDAM_DATA_INPUT]] if Dataprovider.FIELD_NAMES.EDAM_DATA_INPUT in tool and isinstance(tool[Dataprovider.FIELD_NAMES.EDAM_DATA_INPUT], list) else "",
                 "edam-outputs": [get_edam_data(i) for i in tool[Dataprovider.FIELD_NAMES.EDAM_DATA_OUTPUT]] if Dataprovider.FIELD_NAMES.EDAM_DATA_OUTPUT in tool and isinstance(tool[Dataprovider.FIELD_NAMES.EDAM_DATA_OUTPUT], list) else "",
                 "publications": [translate_publication(i) for i in tool[Dataprovider.FIELD_NAMES.PUBLICATIONS]] if Dataprovider.FIELD_NAMES.PUBLICATIONS in tool and isinstance(tool[Dataprovider.FIELD_NAMES.PUBLICATIONS],list) else "",
-                "biocontainers": tool.get(Dataprovider.FIELD_NAMES.BIOTOOLS_ID, ""),
+                "biocontainers": tool.get(Dataprovider.FIELD_NAMES.BIOCONTAINERS_LINK, ""),
                 "license": tool.get(Dataprovider.FIELD_NAMES.LICENSE, ""),
                 "resources": [translate_biocommons_resources(tool.get(Dataprovider.FIELD_NAMES.BIOCOMMONS_DOCUMENTATION_LINK, ""), tool.get(Dataprovider.FIELD_NAMES.BIOCOMMONS_DOCUMENTATION_DESCRIPTION, ""))],
                 "galaxy": [translate_galaxy(i) for i in tool[Dataprovider.FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK]] if Dataprovider.FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK in tool and isinstance(tool[Dataprovider.FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK],list) else "",
@@ -438,73 +488,74 @@ class ToolDB(DB):
             yaml.dump(tool_list_dictionary, file, default_flow_style=False)
 
 
+### function below is from ToolFinder v1 that used R for table generation
 
-    def get_formatted_table(self):
-        import urllib
-        tool_table = self.get_data()
-        tool_data = self.get_data_only()
-        formatted_list = []
-        for index, row in tool_table.iterrows():
-            if not row[Dataprovider.FIELD_NAMES.INCLUSION]:
-                continue
-            tool_line = []
-            b = row[Dataprovider.FIELD_NAMES.NAME].replace("_", " ")
-            c = """<p class="name" data-toggle="popover" data-trigger="hover" title="Description" data-content="%s">""" % (row[Dataprovider.FIELD_NAMES.DESCRIPTION])
-            tool_line.append(c + b + """</p>""" if not pd.isna(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]) else
-                             """<p class="name" data-toggle="popover" data-trigger="hover" title="Description" data-content="No metadata available.">""" + b + """</p>""")
-            tool_line.append((row[Dataprovider.FIELD_NAMES.DESCRIPTION]) if not pd.isna(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]) else "No description available.")
-            tool_line.append("""<a class="homepage" href="%s" ga-product="homepage" ga-id="%s">%s</a>"""%(row[Dataprovider.FIELD_NAMES.REPOSITORY_URL], row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER], row[Dataprovider.FIELD_NAMES.NAME]) if not pd.isna(row[Dataprovider.FIELD_NAMES.REPOSITORY_URL]) else "")
-            if pd.isna(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]):
-                tool_line.append("")
-            else:
-                tool_line.append("""<a class="biotools" href="https://bio.tools/%s" ga-product="biotool" ga-id="%s"><img src="./images/elixir_biotools_transparent.png" style="width:50px;"></a>""" % (
-                row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID], row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER]))
-            tool_line.append(row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER] if not pd.isna(row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER]) else "")
-            if isinstance(row[Dataprovider.FIELD_NAMES.EDAM_TOPICS], list):
-                tool_line.append("".join(["""<p class="tags">%s</p>""" % x["term"] for x in row[Dataprovider.FIELD_NAMES.EDAM_TOPICS]]))
-            else:
-                tool_line.append("")
-            if isinstance(row[Dataprovider.FIELD_NAMES.PUBLICATIONS], list):
-                tool_line.append("<br \>".join(list(map(lambda x:f"""<a class="publication-title" href="https://doi.org/{x["doi"]}" ga-product="publication" ga-id="%s"">{x["metadata"]["title"] if x["metadata"] is not None else "DOI:"+x["doi"]}</a>"""% (row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER]) if x["doi"] is not None else
-                                                        f"""<a class="publication-title" href="http://www.ncbi.nlm.nih.gov/pubmed/{x["pmid"]}" ga-product="publication" ga-id="%s">{x["metadata"]["title"] if x["metadata"] is not None else "PMID:"+x["pmid"]}</a>"""% (row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER]) if x["pmid"] is not None else
-                                                        f"""<a class="publication-title" href="https://www.ncbi.nlm.nih.gov/pmc/articles/{x["pmcid"]}" ga-product="publication" ga-id="%s">{x["metadata"]["title"] if x["metadata"] is not None else "PMCID:"+x["pmcid"]}</a>"""% (row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER]) if x["pmcid"] is not None else
-                                                        "",row[Dataprovider.FIELD_NAMES.PUBLICATIONS]))))
-            else:
-                tool_line.append("")
-            tool_line.append("""<a class="containers" href="https://biocontainers.pro/tools/%s" ga-product="containers" ga-id="%s">%s</a>"""%(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID], row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER], row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]) if not pd.isna(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]) else "")
-            tool_line.append(row[Dataprovider.FIELD_NAMES.LICENSE] if not pd.isna(row[Dataprovider.FIELD_NAMES.LICENSE]) else "")
-            tool_line.append("""<a href="%s" ga-product="biocommons" ga-id="%s">%s</a>""" %(row[Dataprovider.FIELD_NAMES.BIOCOMMONS_DOCUMENTATION_LINK], row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER], row[Dataprovider.FIELD_NAMES.BIOCOMMONS_DOCUMENTATION_DESCRIPTION]) if not pd.isna(row[Dataprovider.FIELD_NAMES.BIOCOMMONS_DOCUMENTATION_LINK]) else "")
-            if isinstance(row[Dataprovider.FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK], list):
-                # see https://stackoverflow.com/a/2906586
-                # see https://stackoverflow.com/questions/5618878/how-to-convert-list-to-string
-                #tool_line.append("<br \>".join(["""<button class="galaxy-link" onclick="window.open('https://usegalaxy.org.au/%s','_blank').focus()">%s</button>""" %d for d in row[Dataprovider.FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK]]))
-                a = ["""<button class="galaxy-link" onclick="window.open('https://usegalaxy.org.au/%s','_blank').focus()" ga-product="galaxy" ga-id="%s">%s</button>"""% (x[0], row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER], x[1] + "-" + x[2]) for x in row[Dataprovider.FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK]]
-                     #%d for d in row[Dataprovider.FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK]]
-                if len(a)>1:
-                    tool_line.append("""<ul class="galaxy-links-holder"><li class="closed galaxy-collapsible" onclick="$(this).parent('.galaxy-links-holder').find('.galaxy-links').toggle({duration:200,start:function(){$(this).parent('.galaxy-links-holder').find('.galaxy-collapsible').toggleClass('closed open')}})" ><span class="galaxy-link-toggle">""" + str(len(a)) + " tool" + ("s" if len(a)>1 else "") + """</span><span class="button"/></li><ul class="galaxy-links" style="display: none;">""" + str("".join(a)) + "</li></ul></ul>")
-                else:
-                    tool_line.append("""<ul class="galaxy-links">""" + str("".join(a)) + "</ul>")
-            else:
-                tool_line.append("")
-            if isinstance(row[Dataprovider.FIELD_NAMES.NCI_GADI_VERSION], list):
-                tool_line.append("".join("""<p class="version">%s</p>""" % x for x in row[Dataprovider.FIELD_NAMES.NCI_GADI_VERSION]))
-            else:
-                tool_line.append("")
-            if isinstance(row[Dataprovider.FIELD_NAMES.NCI_IF89_VERSION], list):
-                tool_line.append("".join("""<p class="version">%s</p>""" % x for x in row[Dataprovider.FIELD_NAMES.NCI_IF89_VERSION]))
-            else:
-                tool_line.append("")
-            if isinstance(row[Dataprovider.FIELD_NAMES.PAWSEY_SETONIX_VERSION], list):
-                tool_line.append("".join("""<p class="version">%s</p>""" % x for x in row[Dataprovider.FIELD_NAMES.PAWSEY_SETONIX_VERSION]))
-            else:
-                tool_line.append("")
-            if isinstance(row[Dataprovider.FIELD_NAMES.QRISCLOUD_VERSION], list):
-                tool_line.append("".join("""<p class="version">%s</p>""" % x for x in row[Dataprovider.FIELD_NAMES.QRISCLOUD_VERSION]))
-            else:
-                tool_line.append("")
-            formatted_list.append(tool_line)
-        # see https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.dropna.html
-        # see https://stackoverflow.com/a/73601776
-        temp_list = pd.DataFrame(formatted_list, columns=["Tool / workflow name","description","homepage","biotools_link","Tool identifier (module name / bio.tools ID / placeholder)","Topic (EDAM, if available)","Publications","BioContainers link","License","BioCommons Documentation","Galaxy Australia","NCI (Gadi)","NCI (if89)","Pawsey (Setonix)","QRIScloud / UQ-RCC (Bunya)"])
-        final_list = temp_list.replace('', pd.NA).dropna(how = 'all', subset = ["BioCommons Documentation","Galaxy Australia","NCI (Gadi)","NCI (if89)","Pawsey (Setonix)","QRIScloud / UQ-RCC (Bunya)"])
-        return final_list
+#    def get_formatted_table(self):
+#        import urllib
+#        tool_table = self.get_data()
+#        tool_data = self.get_data_only()
+#        formatted_list = []
+#        for index, row in tool_table.iterrows():
+#            if not row[Dataprovider.FIELD_NAMES.INCLUSION]:
+#                continue
+#            tool_line = []
+#            b = row[Dataprovider.FIELD_NAMES.NAME].replace("_", " ")
+#            c = """<p class="name" data-toggle="popover" data-trigger="hover" title="Description" data-content="%s">""" % (row[Dataprovider.FIELD_NAMES.DESCRIPTION])
+#            tool_line.append(c + b + """</p>""" if not pd.isna(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]) else
+#                             """<p class="name" data-toggle="popover" data-trigger="hover" title="Description" data-content="No metadata available.">""" + b + """</p>""")
+#            tool_line.append((row[Dataprovider.FIELD_NAMES.DESCRIPTION]) if not pd.isna(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]) else "No description available.")
+#            tool_line.append("""<a class="homepage" href="%s" ga-product="homepage" ga-id="%s">%s</a>"""%(row[Dataprovider.FIELD_NAMES.REPOSITORY_URL], row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER], row[Dataprovider.FIELD_NAMES.NAME]) if not pd.isna(row[Dataprovider.FIELD_NAMES.REPOSITORY_URL]) else "")
+#            if pd.isna(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]):
+#                tool_line.append("")
+#            else:
+#                tool_line.append("""<a class="biotools" href="https://bio.tools/%s" ga-product="biotool" ga-id="%s"><img src="./images/elixir_biotools_transparent.png" style="width:50px;"></a>""" % (
+#                row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID], row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER]))
+#            tool_line.append(row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER] if not pd.isna(row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER]) else "")
+#            if isinstance(row[Dataprovider.FIELD_NAMES.EDAM_TOPICS], list):
+#                tool_line.append("".join(["""<p class="tags">%s</p>""" % x["term"] for x in row[Dataprovider.FIELD_NAMES.EDAM_TOPICS]]))
+#            else:
+#                tool_line.append("")
+#            if isinstance(row[Dataprovider.FIELD_NAMES.PUBLICATIONS], list):
+#                tool_line.append("<br \>".join(list(map(lambda x:f"""<a class="publication-title" href="https://doi.org/{x["doi"]}" ga-product="publication" ga-id="%s"">{x["metadata"]["title"] if x["metadata"] is not None else "DOI:"+x["doi"]}</a>"""% (row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER]) if x["doi"] is not None else
+#                                                        f"""<a class="publication-title" href="http://www.ncbi.nlm.nih.gov/pubmed/{x["pmid"]}" ga-product="publication" ga-id="%s">{x["metadata"]["title"] if x["metadata"] is not None else "PMID:"+x["pmid"]}</a>"""% (row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER]) if x["pmid"] is not None else
+#                                                        f"""<a class="publication-title" href="https://www.ncbi.nlm.nih.gov/pmc/articles/{x["pmcid"]}" ga-product="publication" ga-id="%s">{x["metadata"]["title"] if x["metadata"] is not None else "PMCID:"+x["pmcid"]}</a>"""% (row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER]) if x["pmcid"] is not None else
+#                                                        "",row[Dataprovider.FIELD_NAMES.PUBLICATIONS]))))
+#            else:
+#                tool_line.append("")
+#            tool_line.append("""<a class="containers" href="https://biocontainers.pro/tools/%s" ga-product="containers" ga-id="%s">%s</a>"""%(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID], row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER], row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]) if not pd.isna(row[Dataprovider.FIELD_NAMES.BIOTOOLS_ID]) else "")
+#            tool_line.append(row[Dataprovider.FIELD_NAMES.LICENSE] if not pd.isna(row[Dataprovider.FIELD_NAMES.LICENSE]) else "")
+#            tool_line.append("""<a href="%s" ga-product="biocommons" ga-id="%s">%s</a>""" %(row[Dataprovider.FIELD_NAMES.BIOCOMMONS_DOCUMENTATION_LINK], row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER], row[Dataprovider.FIELD_NAMES.BIOCOMMONS_DOCUMENTATION_DESCRIPTION]) if not pd.isna(row[Dataprovider.FIELD_NAMES.BIOCOMMONS_DOCUMENTATION_LINK]) else "")
+#            if isinstance(row[Dataprovider.FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK], list):
+#                # see https://stackoverflow.com/a/2906586
+#                # see https://stackoverflow.com/questions/5618878/how-to-convert-list-to-string
+#                #tool_line.append("<br \>".join(["""<button class="galaxy-link" onclick="window.open('https://usegalaxy.org.au/%s','_blank').focus()">%s</button>""" %d for d in row[Dataprovider.FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK]]))
+#                a = ["""<button class="galaxy-link" onclick="window.open('https://usegalaxy.org.au/%s','_blank').focus()" ga-product="galaxy" ga-id="%s">%s</button>"""% (x[0], row[Dataprovider.FIELD_NAMES.TOOL_IDENTIFIER], x[1] + "-" + x[2]) for x in row[Dataprovider.FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK]]
+#                     #%d for d in row[Dataprovider.FIELD_NAMES.GALAXY_AUSTRALIA_LAUNCH_LINK]]
+#                if len(a)>1:
+#                    tool_line.append("""<ul class="galaxy-links-holder"><li class="closed galaxy-collapsible" onclick="$(this).parent('.galaxy-links-holder').find('.galaxy-links').toggle({duration:200,start:function(){$(this).parent('.galaxy-links-holder').find('.galaxy-collapsible').toggleClass('closed open')}})" ><span class="galaxy-link-toggle">""" + str(len(a)) + " tool" + ("s" if len(a)>1 else "") + """</span><span class="button"/></li><ul class="galaxy-links" style="display: none;">""" + str("".join(a)) + "</li></ul></ul>")
+#                else:
+#                    tool_line.append("""<ul class="galaxy-links">""" + str("".join(a)) + "</ul>")
+#            else:
+#                tool_line.append("")
+#            if isinstance(row[Dataprovider.FIELD_NAMES.NCI_GADI_VERSION], list):
+#                tool_line.append("".join("""<p class="version">%s</p>""" % x for x in row[Dataprovider.FIELD_NAMES.NCI_GADI_VERSION]))
+#            else:
+#                tool_line.append("")
+#            if isinstance(row[Dataprovider.FIELD_NAMES.NCI_IF89_VERSION], list):
+#                tool_line.append("".join("""<p class="version">%s</p>""" % x for x in row[Dataprovider.FIELD_NAMES.NCI_IF89_VERSION]))
+#            else:
+#                tool_line.append("")
+#            if isinstance(row[Dataprovider.FIELD_NAMES.PAWSEY_SETONIX_VERSION], list):
+#                tool_line.append("".join("""<p class="version">%s</p>""" % x for x in row[Dataprovider.FIELD_NAMES.PAWSEY_SETONIX_VERSION]))
+#            else:
+#                tool_line.append("")
+#            if isinstance(row[Dataprovider.FIELD_NAMES.QRISCLOUD_VERSION], list):
+#                tool_line.append("".join("""<p class="version">%s</p>""" % x for x in row[Dataprovider.FIELD_NAMES.QRISCLOUD_VERSION]))
+#            else:
+#                tool_line.append("")
+#            formatted_list.append(tool_line)
+#        # see https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.dropna.html
+#        # see https://stackoverflow.com/a/73601776
+#        temp_list = pd.DataFrame(formatted_list, columns=["Tool / workflow name","description","homepage","biotools_link","Tool identifier (module name / bio.tools ID / placeholder)","Topic (EDAM, if available)","Publications","BioContainers link","License","BioCommons Documentation","Galaxy Australia","NCI (Gadi)","NCI (if89)","Pawsey (Setonix)","QRIScloud / UQ-RCC (Bunya)"])
+#        final_list = temp_list.replace('', pd.NA).dropna(how = 'all', subset = ["BioCommons Documentation","Galaxy Australia","NCI (Gadi)","NCI (if89)","Pawsey (Setonix)","QRIScloud / UQ-RCC (Bunya)"])
+#        return final_list

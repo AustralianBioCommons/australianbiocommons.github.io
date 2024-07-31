@@ -1,8 +1,8 @@
 from finders import *
 
-############################
-### Create TOOL database ###
-############################
+##########################################
+### Create TOOL and WORKFLOW databases ###
+##########################################
 
 if __name__ == "__main__":
     mytooldb = toolfinder.ToolDB("external/Matrix_of_Availability_of_Bioinformatics_Tools_across_BioCommons__deployment_version.xlsx")
@@ -14,23 +14,29 @@ if __name__ == "__main__":
     gdp = GalaxyDataProvider(mytooldb, "./external/galaxy_tools_curation - DATA.csv")
     mytooldb.add_provider(gdp)
     mytooldb.add_provider(BiotoolsDataProvider("external/Matrix_of_Availability_of_Bioinformatics_Tools_across_BioCommons__deployment_version.xlsx", mytooldb))
+    mytooldb.add_provider(BiocontainersDataProvider("external/Matrix_of_Availability_of_Bioinformatics_Tools_across_BioCommons__deployment_version.xlsx", mytooldb))
 
     #print("The following Galaxy Australia bio.tools IDs were not matched to the tool matrix sheet:")
     unresolved_gdp, unmatched_gdp = mytooldb.get_unmatched_ids(gdp)
     #print(unresolved_gdp)
 
-    mytooldb.get_formatted_yaml()
-
-    #######################################
-    ### Create TOOL and WORKFLOW tables ###
-    #######################################
-
-    mytooldb.get_formatted_table().to_csv("./temp/toolfinder_input.csv", index = None)
-
     myworkflowdb = WorkflowDB()
     myworkflowdb.add_provider(WorkflowHubSpaceDataProvider())
-    myworkflowdb.get_formatted_table().to_csv("./temp/workflowfinder_input.csv", index = None)
+
+    ###########################################
+    ### Create TOOL and WORKFLOW yaml files ###
+    ###########################################
+
+    mytooldb.get_formatted_yaml()
     myworkflowdb.get_formatted_yaml()
+
+    #####################################################
+    ### Create TOOL and WORKFLOW tables in csv format ###
+    ################# from ToolFinder v1 ################
+    #####################################################
+
+    #mytooldb.get_formatted_table().to_csv("./temp/toolfinder_input.csv", index = None)
+    #myworkflowdb.get_formatted_table().to_csv("./temp/workflowfinder_input.csv", index = None)
 
 ###########################################
 ### REPORTING SECTION FOR MISSING TOOLS ###
