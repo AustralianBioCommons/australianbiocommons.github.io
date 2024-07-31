@@ -295,8 +295,8 @@ class BiocontainersDataProvider(Dataprovider):
             if biotools_id in biocontainers_list:
                 tool_id = self.parent.get_id_from_alt(ToolMatrixDataProvider.ID_BIO_TOOLS, biotools_id)[0]
                 biocontainers_id = biocontainers_list[biotools_id]
-                biocontainers_url = "https://biocontainers.pro/tools/" + biocontainers_id
-                self.available_data[tool_id] = biocontainers_url
+                #biocontainers_url = "https://biocontainers.pro/tools/" + biocontainers_id
+                self.available_data[tool_id] = biocontainers_id
 
     def _render(self, data):
         return {Dataprovider.FIELD_NAMES.BIOCONTAINERS_LINK: data}

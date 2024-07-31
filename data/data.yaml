@@ -29,7 +29,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/abricate
+- biocontainers: abricate
   biotools: ABRicate
   bunya:
   - 1.0.0-gompi-2021a
@@ -76,7 +76,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/abyss
+- biocontainers: abyss
   biotools: abyss
   bunya: ''
   description: De novo genome sequence assembler using short reads.
@@ -311,7 +311,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/antismash
+- biocontainers: antismash
   biotools: antismash
   bunya: ''
   description: Rapid genome-wide identification, annotation and analysis of secondary
@@ -505,7 +505,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/augustus
+- biocontainers: augustus
   biotools: augustus
   bunya:
   - 3.4.0-foss-2021a
@@ -654,7 +654,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/bamtools
+- biocontainers: bamtools
   biotools: bamtools
   bunya:
   - 2.5.2-gcc-10.3.0
@@ -723,7 +723,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/bandage
+- biocontainers: bandage
   biotools: bandage
   bunya: ''
   description: GUI program that allows users to interact with the assembly graphs
@@ -758,7 +758,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/barrnap
+- biocontainers: barrnap
   biotools: barrnap
   bunya: ''
   description: Predict the location of ribosomal RNA genes in genomes. It supports
@@ -814,7 +814,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/bbmap
+- biocontainers: bbmap
   biotools: bbmap
   bunya:
   - 38.96-gcc-10.3.0
@@ -893,7 +893,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/bcftools
+- biocontainers: bcftools
   biotools: bcftools
   bunya:
   - 1.12-gcc-10.3.0
@@ -1065,7 +1065,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/beagle
+- biocontainers: beagle
   biotools: beagle
   bunya:
   - 5.4.22jul22.46e-java-11
@@ -1131,7 +1131,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/beast
+- biocontainers: beast
   biotools: beast
   bunya: ''
   description: The Bayesian Evolutionary Analysis Sampling Trees is a cross-platform
@@ -1229,7 +1229,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/bedtools
+- biocontainers: bedtools
   biotools: bedtools
   bunya:
   - 2.30.0-gcc-10.3.0
@@ -1629,7 +1629,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/bioconductor-biomformat
+- biocontainers: bioconductor-biomformat
   biotools: biomformat
   bunya: ''
   description: This package includes basic tools for reading biom-format files, accessing
@@ -1688,7 +1688,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/bioperl
+- biocontainers: bioperl
   biotools: bioperl
   bunya:
   - 1.7.8-gcccore-10.3.0
@@ -1806,7 +1806,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/bismark
+- biocontainers: bismark
   biotools: bismark
   bunya: ''
   description: Bismark is a tool to map bisulfite treated sequencing reads and perform
@@ -2152,7 +2152,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/bowtie
+- biocontainers: bowtie
   biotools: bowtie
   bunya:
   - 1.3.1-gcc-11.3.0
@@ -2209,7 +2209,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/bowtie2
+- biocontainers: bowtie2
   biotools: bowtie2
   bunya:
   - 2.4.4-gcc-10.3.0
@@ -2373,7 +2373,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/busco
+- biocontainers: busco
   biotools: busco
   bunya:
   - 5.4.2-foss-2021a
@@ -2456,7 +2456,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/bwa
+- biocontainers: bwa
   biotools: bwa
   bunya:
   - 0.7.17-gcc-10.3.0
@@ -2767,7 +2767,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/canu
+- biocontainers: canu
   biotools: canu
   bunya:
   - 2.2-gcccore-10.3.0
@@ -2946,7 +2946,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/cd-hit
+- biocontainers: cd-hit
   biotools: cd-hit
   bunya:
   - 4.8.1-gcc-10.3.0
@@ -3027,7 +3027,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/cellprofiler
+- biocontainers: cellprofiler
   biotools: CellProfiler
   bunya: ''
   description: Tool for quantifying data from biological images, particularly in high-throughput
@@ -3400,7 +3400,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/bioconductor-chipseeker
+- biocontainers: bioconductor-chipseeker
   biotools: chipseeker
   bunya: ''
   description: This package implements functions to retrieve the nearest genes around
@@ -3520,7 +3520,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/circos
+- biocontainers: circos
   biotools: circos
   bunya: ''
   description: Circos is tool for visualizing data in a circular format. It was developed
@@ -3724,7 +3724,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/clustalo
+- biocontainers: clustalo
   biotools: clustalo
   bunya: ''
   description: "Multiple sequence alignment software. The name is occassionally spelled\
@@ -3761,7 +3761,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/clustalw
+- biocontainers: clustalw
   biotools: clustalw
   bunya: ''
   description: Multiple sequence alignment software. Old deprecated versions. Even
@@ -3909,7 +3909,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/cpat
+- biocontainers: cpat
   biotools: cpat
   bunya: ''
   description: "CPAT (Coding-Potential Assessment Tool) is a logistic regression model-based\
@@ -4050,7 +4050,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/cufflinks
+- biocontainers: cufflinks
   biotools: cufflinks
   bunya: ''
   description: Cufflinks assembles transcripts and estimates their abundances in RNA-Seq
@@ -4118,7 +4118,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/bioconductor-cummerbund
+- biocontainers: bioconductor-cummerbund
   biotools: cummerbund
   bunya: ''
   description: Allows for persistent storage, access, exploration, and manipulation
@@ -4507,7 +4507,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/deeptools
+- biocontainers: deeptools
   biotools: deeptools
   bunya:
   - 3.5.0-foss-2021a
@@ -4601,7 +4601,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/dendropy
+- biocontainers: dendropy
   biotools: dendropy
   bunya:
   - 4.5.2-gcccore-10.3.0
@@ -4674,7 +4674,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/bioconductor-dexseq
+- biocontainers: bioconductor-dexseq
   biotools: dexseq
   bunya: ''
   description: The package is focused on finding differential exon usage using RNA-seq
@@ -5096,7 +5096,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/bioconductor-edger
+- biocontainers: bioconductor-edger
   biotools: edger
   bunya: ''
   description: Differential expression analysis of RNA-seq expression profiles with
@@ -5276,7 +5276,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/bioconductor-egsea
+- biocontainers: bioconductor-egsea
   biotools: egsea
   bunya: ''
   description: This package implements the Ensemble of Gene Set Enrichment Analyses
@@ -5364,7 +5364,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/emboss
+- biocontainers: emboss
   biotools: emboss
   bunya: ''
   description: Diverse suite of tools for sequence analysis; many programs analagous
@@ -5999,7 +5999,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/exonerate
+- biocontainers: exonerate
   biotools: exonerate
   bunya:
   - 2.4.0--hf34a1b8_7
@@ -6314,7 +6314,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/fastp
+- biocontainers: fastp
   biotools: fastp
   bunya:
   - 0.23.2-gcc-11.3.0
@@ -6347,7 +6347,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/fastqc
+- biocontainers: fastqc
   biotools: fastqc
   bunya:
   - 0.11.9-java-11
@@ -6424,7 +6424,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/fasttree
+- biocontainers: fasttree
   biotools: fasttree
   bunya:
   - 2.1.11-gcccore-10.3.0
@@ -6458,7 +6458,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/fastx-toolkit
+- biocontainers: fastx-toolkit
   biotools: fastx-toolkit
   bunya: ''
   description: Collection of command line tools for Short-Reads FASTA/FASTQ files
@@ -7030,7 +7030,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/freebayes
+- biocontainers: freebayes
   biotools: freebayes
   bunya:
   - 1.3.6-foss-2021a-r-4.1.0
@@ -7290,190 +7290,190 @@
   - description: 'LAV to BED: Converts a LAV formatted file to BED format'
     title: LAV to BED 1.0.0
     url: https://usegalaxy.org.au/root?tool_id=lav_to_bed1
-  - description: 'OpenBabel converter for molecular formats: '
-    title: OpenBabel converter for molecular formats 2.4.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_molecules
-  - description: 'Convert FASTQ files to seek locations: '
-    title: Convert FASTQ files to seek locations 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fastq_to_fqtoc0
-  - description: 'Convert GRO to PDB: '
-    title: Convert GRO to PDB 1.0.0
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_Gro_to_Pdb_0
-  - description: 'Convert plink pbed to linkage lped: '
-    title: Convert plink pbed to linkage lped 0.02
-    url: https://usegalaxy.org.au/root?tool_id=pbed2lpedconvert
-  - description: 'Convert compressed and uncompressed BCF files: '
-    title: Convert compressed and uncompressed BCF files 0.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bcf_uncompressed_to_bcf
-  - description: 'Convert uncompressed file to compressed: '
-    title: Convert uncompressed file to compressed 1.16+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_uncompressed_to_gz
-  - description: 'Convert Genomic Intervals To Coverage: '
-    title: Convert Genomic Intervals To Coverage 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_bigwig_0
+  - description: 'Convert lped to fped: '
+    title: Convert lped to fped 0.02
+    url: https://usegalaxy.org.au/root?tool_id=lped2fpedconvert
   - description: 'Convert FASTA to len file: '
     title: Convert FASTA to len file 1.0.1
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fasta_to_len
-  - description: 'Convert BAM to coordinate-sorted BAM: '
-    title: Convert BAM to coordinate-sorted BAM 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bam_to_coodinate_sorted_bam
-  - description: 'Convert BigWig to Wiggle: Convert bigWig to wig'
-    title: Convert BigWig to Wiggle 377+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=bigwigtowig
-  - description: 'Convert Interval to tabix: '
-    title: Convert Interval to tabix 1.0.2
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_tabix_0
-  - description: 'Convert compressed file to uncompressed.: '
-    title: Convert compressed file to uncompressed. 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bz2_to_uncompressed
-  - description: 'Convert XTC, DCD, and TRR: '
-    title: Convert XTC, DCD, and TRR 1.0.0
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_mdconvert
-  - description: 'Convert tabular to CSV: '
-    title: Convert tabular to CSV 1.0.0
-    url: https://usegalaxy.org.au/root?tool_id=tabular_to_csv
-  - description: 'Convert compressed file to uncompressed.: '
-    title: Convert compressed file to uncompressed. 1.0.0
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_gz_to_uncompressed
-  - description: 'Convert SAM to BigWig: '
-    title: Convert SAM to BigWig 1.0.3
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_sam_to_bigwig_0
-  - description: 'Convert CML to SMILES: '
-    title: Convert CML to SMILES 2.4.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_cml_to_smiles
-  - description: 'Convert Genomic Intervals To Strict BED: '
-    title: Convert Genomic Intervals To Strict BED 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_bedstrict_0
-  - description: 'Convert InChI to MOL: '
-    title: Convert InChI to MOL 2.4.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_inchi_to_mol
-  - description: 'Convert FASTA to Bowtie color space Index: '
-    title: Convert FASTA to Bowtie color space Index 1.2.3
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fasta_to_bowtie_color_index
-  - description: 'Convert Interval to BGZIP: '
-    title: Convert Interval to BGZIP 1.0.3
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_bgzip_0
-  - description: 'Convert CRAM to BAM: '
-    title: Convert CRAM to BAM 1.0.2
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_cram_to_bam_0
   - description: 'Convert plink pbed to ld reduced format: '
     title: Convert plink pbed to ld reduced format 0.02
     url: https://usegalaxy.org.au/root?tool_id=pbed2ldindepconvert
-  - description: 'Convert BAM to BigWig: '
-    title: Convert BAM to BigWig 1.0.2
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bam_to_bigwig_0
+  - description: 'Convert uncompressed file to compressed: '
+    title: Convert uncompressed file to compressed 1.16+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_uncompressed_to_gz
+  - description: 'Convert BED, GFF, or VCF to BigWig: '
+    title: Convert BED, GFF, or VCF to BigWig 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bed_gff_or_vcf_to_bigwig_0
+  - description: 'Convert compressed and uncompressed BCF files: '
+    title: Convert compressed and uncompressed BCF files 0.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bcf_uncompressed_to_bcf
+  - description: 'Convert Interval to tabix: '
+    title: Convert Interval to tabix 1.0.2
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_tabix_0
+  - description: 'Convert InChI to MOL: '
+    title: Convert InChI to MOL 2.4.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_inchi_to_mol
+  - description: 'Convert CRAM to BAM: '
+    title: Convert CRAM to BAM 1.0.2
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_cram_to_bam_0
+  - description: 'Convert compressed file to uncompressed.: '
+    title: Convert compressed file to uncompressed. 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bz2_to_uncompressed
+  - description: 'Convert Wiggle to BigWig: '
+    title: Convert Wiggle to BigWig 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_wig_to_bigwig
+  - description: 'Convert GFF to BED: '
+    title: Convert GFF to BED 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_gff_to_bed_0
+  - description: 'Convert Picard Interval List to BED6: converter'
+    title: Convert Picard Interval List to BED6 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_picard_interval_list_to_bed6
   - description: 'Convert Ref taxonomy to Seq Taxonomy: converts 2 or 3 column sequence
       taxonomy file to a 2 column mothur taxonomy_outline format'
     title: Convert Ref taxonomy to Seq Taxonomy 1.0.1
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_ref_to_seq_taxomony
-  - description: 'Convert BED to Feature Location Index: '
-    title: Convert BED to Feature Location Index 1.0.0
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bed_to_fli_0
-  - description: 'Convert GFF to Interval Index: '
-    title: Convert GFF to Interval Index 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_gff_to_interval_index_0
-  - description: 'Convert Wiggle to BigWig: '
-    title: Convert Wiggle to BigWig 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_wig_to_bigwig
-  - description: 'Convert Picard Interval List to BED6: converter'
-    title: Convert Picard Interval List to BED6 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_picard_interval_list_to_bed6
-  - description: 'Convert BED, GFF, or VCF to BigWig: '
-    title: Convert BED, GFF, or VCF to BigWig 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bed_gff_or_vcf_to_bigwig_0
-  - description: 'Convert GFF to BED: '
-    title: Convert GFF to BED 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_gff_to_bed_0
-  - description: 'Convert FASTA to Tabular: '
-    title: Convert FASTA to Tabular 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fasta_to_tabular
-  - description: 'Convert PDB to GRO: '
-    title: Convert PDB to GRO 1.0.0
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_Pdb_to_Gro_0
+  - description: 'Convert Interval to BGZIP: '
+    title: Convert Interval to BGZIP 1.0.3
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_bgzip_0
+  - description: 'Convert FASTA to Bowtie base space Index: '
+    title: Convert FASTA to Bowtie base space Index 1.3.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fasta_to_bowtie_base_index
   - description: 'Convert Genomic Intervals To Strict BED6: '
     title: Convert Genomic Intervals To Strict BED6 1.0.1
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_bed6_0
-  - description: 'Convert BedGraph to BigWig: '
-    title: Convert BedGraph to BigWig 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bedgraph_to_bigwig
+  - description: 'Convert FASTQ files to seek locations: '
+    title: Convert FASTQ files to seek locations 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fastq_to_fqtoc0
+  - description: 'Convert XTC, DCD, and TRR: '
+    title: Convert XTC, DCD, and TRR 1.0.0
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_mdconvert
+  - description: 'Convert FASTA to Tabular: '
+    title: Convert FASTA to Tabular 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fasta_to_tabular
+  - description: 'Convert BAM to coordinate-sorted BAM: '
+    title: Convert BAM to coordinate-sorted BAM 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bam_to_coodinate_sorted_bam
+  - description: 'Convert compressed file to uncompressed.: '
+    title: Convert compressed file to uncompressed. 1.0.0
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_gz_to_uncompressed
+  - description: 'Convert FASTA to Bowtie color space Index: '
+    title: Convert FASTA to Bowtie color space Index 1.2.3
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fasta_to_bowtie_color_index
   - description: 'Convert tabular to dbnsfp: '
     title: Convert tabular to dbnsfp 1.0.2
     url: https://usegalaxy.org.au/root?tool_id=tabular_to_dbnsfp
-  - description: 'Convert neostore.zip files to neostore: '
-    title: Convert neostore.zip files to neostore 1.0.0
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_neostorezip_to_neostore
-  - description: 'Convert Bam to Bai: '
-    title: Convert Bam to Bai 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_Bam_Bai_0
+  - description: 'OpenBabel converter for molecular formats: '
+    title: OpenBabel converter for molecular formats 2.4.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_molecules
   - description: 'Convert Wiggle to Interval: '
     title: Convert Wiggle to Interval 1.0.1
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_wiggle_to_interval_0
+  - description: 'Convert GFF to Interval Index: '
+    title: Convert GFF to Interval Index 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_gff_to_interval_index_0
   - description: 'Convert tar to directory: '
     title: Convert tar to directory 1.0.1
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_tar_to_directory
-  - description: 'Convert BAM to queryname-sorted BAM: '
-    title: Convert BAM to queryname-sorted BAM 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bam_to_qname_sorted_bam
-  - description: 'Convert FASTA to 2bit: '
-    title: Convert FASTA to 2bit 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fasta_to_2bit
+  - description: 'Convert neostore.zip files to neostore: '
+    title: Convert neostore.zip files to neostore 1.0.0
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_neostorezip_to_neostore
+  - description: 'SMILES to SMILES: '
+    title: SMILES to SMILES 2.4.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_smiles_to_smiles
+  - description: 'Convert BedGraph to BigWig: '
+    title: Convert BedGraph to BigWig 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bedgraph_to_bigwig
   - description: 'Convert Genomic Intervals To Strict BED12: '
     title: Convert Genomic Intervals To Strict BED12 1.0.0
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_bed12_0
   - description: 'Convert Biom datasets: '
     title: Convert Biom datasets 2.1.5
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_biom
-  - description: 'Convert FASTA to Bowtie base space Index: '
-    title: Convert FASTA to Bowtie base space Index 1.3.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fasta_to_bowtie_base_index
-  - description: 'Convert Len file to Linecount: '
-    title: Convert Len file to Linecount 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_len_to_linecount
-  - description: 'Convert FASTA to fai file: '
-    title: Convert FASTA to fai file 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fasta_to_fai
-  - description: 'Convert MAF to Fasta: '
-    title: Convert MAF to Fasta 1.0.2
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_maf_to_fasta_0
+  - description: 'Convert BAM to queryname-sorted BAM: '
+    title: Convert BAM to queryname-sorted BAM 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bam_to_qname_sorted_bam
   - description: 'Convert SMILES to MOL: '
     title: Convert SMILES to MOL 2.4.1
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_SMILES_to_MOL
-  - description: 'Convert BGZ VCF to tabix: '
-    title: Convert BGZ VCF to tabix 1.0.2
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_vcf_bgzip_to_tabix_0
+  - description: 'Convert tabular to CSV: '
+    title: Convert tabular to CSV 1.0.0
+    url: https://usegalaxy.org.au/root?tool_id=tabular_to_csv
   - description: 'Convert SAM to BAM without sorting: '
     title: Convert SAM to BAM without sorting 1.0.1
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_sam_to_unsorted_bam
-  - description: 'SMILES to SMILES: '
-    title: SMILES to SMILES 2.4.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_smiles_to_smiles
-  - description: 'Convert lped to plink pbed: '
-    title: Convert lped to plink pbed 0.02
-    url: https://usegalaxy.org.au/root?tool_id=lped2pbedconvert
-  - description: 'Convert lped to fped: '
-    title: Convert lped to fped 0.02
-    url: https://usegalaxy.org.au/root?tool_id=lped2fpedconvert
-  - description: 'Convert GFF to Feature Location Index: '
-    title: Convert GFF to Feature Location Index 1.0.0
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_gff_to_fli_0
-  - description: 'Convert Parquet to csv: '
-    title: Convert Parquet to csv 1.0.0
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_parquet_to_csv
-  - description: 'Convert MAF to Genomic Intervals: '
-    title: Convert MAF to Genomic Intervals 1.0.3
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_maf_to_interval_0
-  - description: 'Convert CSV to tabular: '
-    title: Convert CSV to tabular 1.0.0
-    url: https://usegalaxy.org.au/root?tool_id=csv_to_tabular
-  - description: 'Convert Genomic Intervals To BED: '
-    title: Convert Genomic Intervals To BED 1.0.0
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_bed_0
+  - description: 'Convert Len file to Linecount: '
+    title: Convert Len file to Linecount 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_len_to_linecount
+  - description: 'Convert MAF to Fasta: '
+    title: Convert MAF to Fasta 1.0.2
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_maf_to_fasta_0
+  - description: 'Convert BGZ VCF to tabix: '
+    title: Convert BGZ VCF to tabix 1.0.2
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_vcf_bgzip_to_tabix_0
   - description: 'Convert BED to GFF: '
     title: Convert BED to GFF 2.0.1
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bed_to_gff_0
+  - description: 'Convert BAM to BigWig: '
+    title: Convert BAM to BigWig 1.0.2
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bam_to_bigwig_0
+  - description: 'Convert FASTA to fai file: '
+    title: Convert FASTA to fai file 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fasta_to_fai
+  - description: 'Convert PDB to GRO: '
+    title: Convert PDB to GRO 1.0.0
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_Pdb_to_Gro_0
+  - description: 'Convert GFF to Feature Location Index: '
+    title: Convert GFF to Feature Location Index 1.0.0
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_gff_to_fli_0
+  - description: 'Convert lped to plink pbed: '
+    title: Convert lped to plink pbed 0.02
+    url: https://usegalaxy.org.au/root?tool_id=lped2pbedconvert
+  - description: 'Convert FASTA to 2bit: '
+    title: Convert FASTA to 2bit 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fasta_to_2bit
+  - description: 'Convert MAF to Genomic Intervals: '
+    title: Convert MAF to Genomic Intervals 1.0.3
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_maf_to_interval_0
+  - description: 'Convert Parquet to csv: '
+    title: Convert Parquet to csv 1.0.0
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_parquet_to_csv
+  - description: 'Convert Genomic Intervals To BED: '
+    title: Convert Genomic Intervals To BED 1.0.0
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_bed_0
+  - description: 'Convert CSV to tabular: '
+    title: Convert CSV to tabular 1.0.0
+    url: https://usegalaxy.org.au/root?tool_id=csv_to_tabular
   - description: 'Convert MOL2 to MOL: '
     title: Convert MOL2 to MOL 2.4.1
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_mol2_to_mol
+  - description: 'Convert plink pbed to linkage lped: '
+    title: Convert plink pbed to linkage lped 0.02
+    url: https://usegalaxy.org.au/root?tool_id=pbed2lpedconvert
+  - description: 'Convert Genomic Intervals To Coverage: '
+    title: Convert Genomic Intervals To Coverage 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_bigwig_0
+  - description: 'Convert GRO to PDB: '
+    title: Convert GRO to PDB 1.0.0
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_Gro_to_Pdb_0
+  - description: 'Convert BED to Feature Location Index: '
+    title: Convert BED to Feature Location Index 1.0.0
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bed_to_fli_0
+  - description: 'Convert BigWig to Wiggle: Convert bigWig to wig'
+    title: Convert BigWig to Wiggle 377+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=bigwigtowig
+  - description: 'Convert SAM to BigWig: '
+    title: Convert SAM to BigWig 1.0.3
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_sam_to_bigwig_0
+  - description: 'Convert Genomic Intervals To Strict BED: '
+    title: Convert Genomic Intervals To Strict BED 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_bedstrict_0
+  - description: 'Convert CML to SMILES: '
+    title: Convert CML to SMILES 2.4.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_cml_to_smiles
+  - description: 'Convert Bam to Bai: '
+    title: Convert Bam to Bai 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_Bam_Bai_0
   homepage: ''
   id: Galaxy CONVERTER
   license: ''
@@ -8014,7 +8014,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/gatk
+- biocontainers: gatk
   biotools: gatk
   bunya:
   - 4.3.0.0-gcccore-11.3.0-java-11
@@ -8100,7 +8100,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/gcta
+- biocontainers: gcta
   biotools: gcta
   bunya:
   - 1.94.0beta-gfbf-2022a
@@ -8453,7 +8453,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/genometools
+- biocontainers: genometools
   biotools: genometools
   bunya: ''
   description: Free collection of bioinformatics tools for genome informatics.
@@ -8836,7 +8836,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/gmap
+- biocontainers: gmap
   biotools: gmap
   bunya:
   - 2023.04.28
@@ -8987,7 +8987,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/bioconductor-goseq
+- biocontainers: bioconductor-goseq
   biotools: goseq
   bunya: ''
   description: Detect Gene Ontology and/or other user defined categories which are
@@ -9722,7 +9722,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/hisat2
+- biocontainers: hisat2
   biotools: hisat2
   bunya:
   - 2.2.1-gompi-2021a
@@ -9886,7 +9886,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/htseq
+- biocontainers: htseq
   biotools: htseq
   bunya:
   - 2.0.2-foss-2022a
@@ -9916,7 +9916,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/htslib-test
+- biocontainers: htslib-test
   biotools: htslib
   bunya:
   - 1.12-gcc-10.3.0
@@ -10329,7 +10329,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/igv
+- biocontainers: igv
   biotools: igv
   bunya: ''
   description: High-performance visualization tool for interactive exploration of
@@ -10559,7 +10559,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/isee-galaxy
+- biocontainers: isee-galaxy
   biotools: isee
   bunya: ''
   description: Provides functions for creating an interactive Shiny-based graphical
@@ -10882,7 +10882,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/jbrowse
+- biocontainers: jbrowse
   biotools: jbrowse
   bunya: ''
   description: Slick, speedy genome browser with a responsive and dynamic AJAX interface
@@ -10938,7 +10938,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/jellyfish
+- biocontainers: jellyfish
   biotools: jellyfish
   bunya:
   - 2.3.0-gcc-10.3.0
@@ -11140,7 +11140,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/khmer
+- biocontainers: khmer
   biotools: khmer
   bunya: ''
   description: khmer is a set of command-line tools for working with DNA shotgun sequencing
@@ -11212,7 +11212,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/kmc
+- biocontainers: kmc
   biotools: kmc
   bunya: ''
   description: KMC is a utility designed for counting k-mers (sequences of consecutive
@@ -11268,7 +11268,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/kraken
+- biocontainers: kraken
   biotools: kraken
   bunya: ''
   description: System for assigning taxonomic labels to short DNA sequences, usually
@@ -11374,7 +11374,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/krakentools
+- biocontainers: krakentools
   biotools: krakentools
   bunya: ''
   description: KrakenTools provides individual scripts to analyze Kraken/Kraken2/Bracken/KrakenUniq
@@ -11416,7 +11416,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/krona
+- biocontainers: krona
   biotools: krona
   bunya: ''
   description: Krona creates interactive HTML5 charts of hierarchical data (such as
@@ -11634,7 +11634,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/bioconductor-limma
+- biocontainers: bioconductor-limma
   biotools: limma
   bunya: ''
   description: Data analysis, linear models and differential expression for microarray
@@ -12059,7 +12059,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/maker
+- biocontainers: maker
   biotools: maker
   bunya:
   - 3.01.03--pl5262h8f1cd36_2
@@ -12166,7 +12166,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/mash
+- biocontainers: mash
   biotools: mash
   bunya:
   - 2.3-gcc-10.3.0
@@ -12392,7 +12392,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/maxquant
+- biocontainers: maxquant
   biotools: maxquant
   bunya:
   - 2.2.0.0-gcccore-11.3.0
@@ -12457,7 +12457,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/mcl
+- biocontainers: mcl
   biotools: mcl
   bunya: ''
   description: MCL is a clustering algorithm widely used in bioinformatics and gaining
@@ -13298,7 +13298,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/minia
+- biocontainers: minia
   biotools: minia
   bunya: ''
   description: Short-read assembler based on a de Bruijn graph, capable of assembling
@@ -13409,7 +13409,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/minimap2
+- biocontainers: minimap2
   biotools: minimap2
   bunya:
   - 2.24-gcccore-11.3.0
@@ -13469,7 +13469,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/mira
+- biocontainers: mira
   biotools: mira
   bunya:
   - 4.9.6--1
@@ -13649,7 +13649,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/mlst
+- biocontainers: mlst
   biotools: mlst
   bunya:
   - 2.23.0--hdfd78af_1
@@ -13881,7 +13881,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/mosdepth
+- biocontainers: mosdepth
   biotools: mosdepth
   bunya: ''
   description: Fast BAM/CRAM depth calculation for WGS, exome, or targeted sequencing.
@@ -14578,7 +14578,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/bioconductor-msstats
+- biocontainers: bioconductor-msstats
   biotools: msstats
   bunya: ''
   description: Statistical tool for quantitative mass spectrometry-based proteomics.
@@ -14674,7 +14674,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/multiqc
+- biocontainers: multiqc
   biotools: multiqc
   bunya:
   - 1.11-foss-2021a
@@ -14722,7 +14722,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/mummer
+- biocontainers: mummer
   biotools: mummer
   bunya: ''
   description: MUMmer is a modular system for the rapid whole genome alignment of
@@ -15030,7 +15030,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/nanopolish
+- biocontainers: nanopolish
   biotools: nanopolish
   bunya:
   - 0.14.0--hb24e783_1
@@ -15131,7 +15131,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/ncbi-datasets-cli
+- biocontainers: ncbi-datasets-cli
   biotools: ncbi_datasets
   bunya: ''
   description: NCBI Datasets is a new resource that lets you easily gather data from
@@ -15574,7 +15574,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/ngsutils
+- biocontainers: ngsutils
   biotools: ngsutils
   bunya: ''
   description: NGSUtils is a suite of software tools for working with next-generation
@@ -15699,7 +15699,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/obitools
+- biocontainers: obitools
   biotools: obitools
   bunya: ''
   description: Set of python programs developed to simplify the manipulation of sequence
@@ -15781,7 +15781,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/openms
+- biocontainers: openms
   biotools: openms
   bunya: ''
   description: Open source library and a collection of tools and interfaces for the
@@ -16319,7 +16319,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/bioconductor-pathview
+- biocontainers: bioconductor-pathview
   biotools: pathview
   bunya: ''
   description: Tool set for pathway based data integration and visualization that
@@ -16606,7 +16606,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/percolator
+- biocontainers: percolator
   biotools: percolator
   bunya: ''
   description: Semi-supervised learning for peptide identification from MS/MS data.
@@ -16785,7 +16785,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/bioconductor-phyloseq
+- biocontainers: bioconductor-phyloseq
   biotools: phyloseq
   bunya: ''
   description: Provides a set of classes and tools to facilitate the import, storage,
@@ -16821,7 +16821,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/phyml
+- biocontainers: phyml
   biotools: phyml
   bunya: ''
   description: Phylogenetic estimation software using Maximum Likelihood
@@ -16867,7 +16867,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/picard
+- biocontainers: picard
   biotools: picard_tools
   bunya:
   - 2.25.1-java-11
@@ -17161,7 +17161,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/pilon
+- biocontainers: pilon
   biotools: pilon
   bunya: ''
   description: Read alignment analysis to diagnose, report, and automatically improve
@@ -17260,7 +17260,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/plink
+- biocontainers: plink
   biotools: plink
   bunya:
   - 2.00a3.6-gcc-11.3.0
@@ -17360,7 +17360,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/poretools
+- biocontainers: poretools
   biotools: poretools
   bunya: ''
   description: Flexible toolkit for exploring datasets generated by nanopore sequencing
@@ -17426,7 +17426,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/bioconductor-clstutils
+- biocontainers: bioconductor-clstutils
   biotools: clstutils
   bunya:
   - 1.1.alpha19
@@ -17588,7 +17588,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/prokka
+- biocontainers: prokka
   biotools: prokka
   bunya:
   - 1.14.5-gompi-2021a
@@ -18471,7 +18471,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/qualimap
+- biocontainers: qualimap
   biotools: qualimap
   bunya: ''
   description: Platform-independent application written in Java and R that provides
@@ -18936,7 +18936,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/raxml
+- biocontainers: raxml
   biotools: raxml
   bunya:
   - 8.2.12
@@ -19446,7 +19446,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/roary
+- biocontainers: roary
   biotools: roary
   bunya: ''
   description: A high speed stand alone pan genome pipeline, which takes annotated
@@ -19478,7 +19478,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/rsem
+- biocontainers: rsem
   biotools: rsem
   bunya:
   - 1.3.3--pl5321ha04fe3b_5
@@ -19508,7 +19508,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/rseqc
+- biocontainers: rseqc
   biotools: rseqc
   bunya: ''
   description: Provides a number of useful modules that can comprehensively evaluate
@@ -19941,7 +19941,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/samblaster
+- biocontainers: samblaster
   biotools: samblaster
   bunya: ''
   description: A tool to mark duplicates and extract discordant and split reads from
@@ -19969,7 +19969,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/samtools
+- biocontainers: samtools
   biotools: samtools
   bunya:
   - 1.13-gcc-10.3.0
@@ -20482,7 +20482,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/sepp
+- biocontainers: sepp
   biotools: sepp
   bunya:
   - 4.5.0-foss-2021a
@@ -20612,7 +20612,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/seqtk
+- biocontainers: seqtk
   biotools: seqtk
   bunya:
   - 1.3-gcc-10.3.0
@@ -20754,7 +20754,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/shovill
+- biocontainers: shovill
   biotools: shovill
   bunya:
   - 1.1.0
@@ -21074,7 +21074,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/snakemake
+- biocontainers: snakemake
   biotools: snakemake
   bunya:
   - 6.6.1-foss-2021a
@@ -21106,7 +21106,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/snap
+- biocontainers: snap
   biotools: snap
   bunya:
   - '2013_11_29'
@@ -21178,7 +21178,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/sniffles
+- biocontainers: sniffles
   biotools: sniffles
   bunya: ''
   description: An algorithm for structural variation detection from third generation
@@ -21216,7 +21216,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/snippy
+- biocontainers: snippy
   biotools: snippy
   bunya: ''
   description: Rapid haploid variant calling and core SNP phylogeny generation.
@@ -21301,7 +21301,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/snpeff
+- biocontainers: snpeff
   biotools: snpeff
   bunya: ''
   description: Variant annotation and effect prediction tool. It annotates and predicts
@@ -21498,7 +21498,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/sortmerna
+- biocontainers: sortmerna
   biotools: sortmerna
   bunya:
   - 4.3.6--h9ee0642_0
@@ -21551,7 +21551,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/spades
+- biocontainers: spades
   biotools: spades
   bunya:
   - 3.15.3-gcc-10.3.0
@@ -21790,7 +21790,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/stacks
+- biocontainers: stacks
   biotools: stacks
   bunya: ''
   description: Developed to work with restriction enzyme based sequence data, such
@@ -21901,7 +21901,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/star
+- biocontainers: star
   biotools: star
   bunya:
   - 2.7.9a-gcc-10.3.0
@@ -22048,7 +22048,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/subread
+- biocontainers: subread
   biotools: subread
   bunya: ''
   description: Subread is a general-purpose read aligner which can be used to map
@@ -22631,7 +22631,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/tophat
+- biocontainers: tophat
   biotools: tophat
   bunya: ''
   description: Program that aligns RNA-Seq reads to a genome in order to identify
@@ -23007,7 +23007,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/trimmomatic
+- biocontainers: trimmomatic
   biotools: trimmomatic
   bunya:
   - 0.39-java-11
@@ -23335,7 +23335,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/unicycler
+- biocontainers: unicycler
   biotools: unicycler
   bunya: ''
   description: A tool for assembling bacterial genomes from a combination of short
@@ -23603,7 +23603,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/varscan
+- biocontainers: varscan
   biotools: varscan
   bunya: ''
   description: VarScan, an open source tool for variant detection that is compatible
@@ -23753,7 +23753,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/perl-vcftools-vcf
+- biocontainers: perl-vcftools-vcf
   biotools: vcftools
   bunya:
   - 0.1.16-gcc-10.3.0
@@ -23790,7 +23790,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/velvet
+- biocontainers: velvet
   biotools: velvet
   bunya: ''
   description: A de novo genomic assembler specially designed for short read sequencing
@@ -23878,7 +23878,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/vsearch
+- biocontainers: vsearch
   biotools: vsearch
   bunya: ''
   description: High-throughput search and clustering sequence analysis tool. It supports
@@ -24328,7 +24328,7 @@
   resources:
   - title: Documentation link
     url: https://github.com/AustralianBioCommons/xml4ena
-- biocontainers: https://biocontainers.pro/tools/xpore
+- biocontainers: xpore
   biotools: xpore
   bunya:
   - 2.1--pyh5e36f6f_0
@@ -24364,7 +24364,7 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: https://biocontainers.pro/tools/tandem
+- biocontainers: tandem
   biotools: xtandem
   bunya: ''
   description: Matches tandem mass spectra with peptide sequences.
