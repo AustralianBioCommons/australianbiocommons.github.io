@@ -674,6 +674,13 @@
   - Data management
   - Sequence analysis
   galaxy:
+  - description: 'Operate on and transform BAM: datasets in various ways'
+    title: Operate on and transform BAM 2.5.2+galaxy2
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fbamtools%2Fbamtools%2F2.5.2%2Bgalaxy2
+  - description: 'Split BAM by reads mapping status: into a mapped and an unmapped
+      dataset'
+    title: Split BAM by reads mapping status 2.5.2+galaxy2
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fbamtools_split_mapped%2Fbamtools_split_mapped%2F2.5.2%2Bgalaxy2
   - description: 'Split BAM by read tag value: into a dataset list collection'
     title: Split BAM by read tag value 2.5.2+galaxy2
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fbamtools_split_tag%2Fbamtools_split_tag%2F2.5.2%2Bgalaxy2
@@ -3432,6 +3439,45 @@
   - title: 'ChIP seeker: An R/Bioconductor package for ChIP peak annotation, comparison
       and visualization'
     url: https://doi.org/10.1093/bioinformatics/btv145
+  resources:
+  - title: .nan
+    url: .nan
+- biocontainers: ''
+  biotools: chira
+  bunya: ''
+  description: ChiRA is a tool suite to analyze RNA-RNA interactome experimental data
+    such as CLASH, CLEAR-CLIP, PARIS, SPLASH, etc.
+  edam-inputs: ''
+  edam-operations: ''
+  edam-outputs: ''
+  edam-topics:
+  - RNA
+  - Molecular interactions, pathways and networks
+  - Functional, regulatory and non-coding RNA
+  galaxy:
+  - description: 'ChiRA qauntify: quantify aligned loci to score the alignments'
+    title: ChiRA qauntify 1.4.30
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fchira_quantify%2Fchira_quantify%2F1.4.30
+  - description: 'ChiRA merge: merge aligned positions'
+    title: ChiRA merge 1.4.30
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fchira_merge%2Fchira_merge%2F1.4.30
+  - description: 'ChiRA extract: extrat the chimeras'
+    title: ChiRA extract 1.4.31
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fchira_extract%2Fchira_extract%2F1.4.31
+  - description: 'ChiRA collapse: deduplicate fastq reads'
+    title: ChiRA collapse 1.4.31
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fchira_collapse%2Fchira_collapse%2F1.4.31
+  - description: 'ChiRA map: map reads to trascriptome'
+    title: ChiRA map 1.4.30
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fchira_map%2Fchira_map%2F1.4.30
+  homepage: https://github.com/pavanvidem/chira
+  id: chira
+  license: GPL-3.0
+  name: ChiRA
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications: ''
   resources:
   - title: .nan
     url: .nan
@@ -7190,6 +7236,9 @@
   edam-outputs: ''
   edam-topics: ''
   galaxy:
+  - description: 'Split by group: '
+    title: Split by group 0.6
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Fsplit_file_on_column%2Ftp_split_on_column%2F0.6
   - description: 'Split file: to dataset collection'
     title: Split file 0.5.2
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Fsplit_file_to_collection%2Fsplit_file_to_collection%2F0.5.2
@@ -7308,145 +7357,151 @@
   - description: 'LAV to BED: Converts a LAV formatted file to BED format'
     title: LAV to BED 1.0.0
     url: https://usegalaxy.org.au/root?tool_id=lav_to_bed1
-  - description: 'Convert Genomic Intervals To Strict BED: '
-    title: Convert Genomic Intervals To Strict BED 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_bedstrict_0
-  - description: 'OpenBabel converter for molecular formats: '
-    title: OpenBabel converter for molecular formats 2.4.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_molecules
+  - description: 'Convert SAM to BAM without sorting: '
+    title: Convert SAM to BAM without sorting 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_sam_to_unsorted_bam
   - description: 'Convert FASTQ files to seek locations: '
     title: Convert FASTQ files to seek locations 1.0.1
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fastq_to_fqtoc0
   - description: 'Convert Wiggle to BigWig: '
     title: Convert Wiggle to BigWig 1.0.1
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_wig_to_bigwig
-  - description: 'Convert BAM to BigWig: '
-    title: Convert BAM to BigWig 1.0.2
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bam_to_bigwig_0
-  - description: 'Convert uncompressed file to compressed: '
-    title: Convert uncompressed file to compressed 1.16+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_uncompressed_to_gz
-  - description: 'Convert MOL2 to MOL: '
-    title: Convert MOL2 to MOL 2.4.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_mol2_to_mol
-  - description: 'Convert Picard Interval List to BED6: converter'
-    title: Convert Picard Interval List to BED6 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_picard_interval_list_to_bed6
-  - description: 'Convert Interval to BGZIP: '
-    title: Convert Interval to BGZIP 1.0.3
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_bgzip_0
-  - description: 'Convert tabular to CSV: '
-    title: Convert tabular to CSV 1.0.0
-    url: https://usegalaxy.org.au/root?tool_id=tabular_to_csv
-  - description: 'Convert Genomic Intervals To Strict BED12: '
-    title: Convert Genomic Intervals To Strict BED12 1.0.0
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_bed12_0
-  - description: 'Convert compressed file to uncompressed.: '
-    title: Convert compressed file to uncompressed. 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bz2_to_uncompressed
   - description: 'Convert GRO to PDB: '
     title: Convert GRO to PDB 1.0.0
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_Gro_to_Pdb_0
+  - description: 'Convert uncompressed file to compressed: '
+    title: Convert uncompressed file to compressed 1.16+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_uncompressed_to_gz
+  - description: 'Convert Interval to BGZIP: '
+    title: Convert Interval to BGZIP 1.0.3
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_bgzip_0
+  - description: 'Convert BAM to coordinate-sorted BAM: '
+    title: Convert BAM to coordinate-sorted BAM 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bam_to_coodinate_sorted_bam
+  - description: 'Convert BAM to BigWig: '
+    title: Convert BAM to BigWig 1.0.2
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bam_to_bigwig_0
+  - description: 'OpenBabel converter for molecular formats: '
+    title: OpenBabel converter for molecular formats 2.4.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_molecules
+  - description: 'Convert Picard Interval List to BED6: converter'
+    title: Convert Picard Interval List to BED6 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_picard_interval_list_to_bed6
+  - description: 'Convert tabular to CSV: '
+    title: Convert tabular to CSV 1.0.0
+    url: https://usegalaxy.org.au/root?tool_id=tabular_to_csv
+  - description: 'Convert compressed file to uncompressed.: '
+    title: Convert compressed file to uncompressed. 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bz2_to_uncompressed
+  - description: 'Convert Genomic Intervals To Strict BED12: '
+    title: Convert Genomic Intervals To Strict BED12 1.0.0
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_bed12_0
   - description: 'Convert MAF to Genomic Intervals: '
     title: Convert MAF to Genomic Intervals 1.0.3
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_maf_to_interval_0
+  - description: 'Convert XTC, DCD, and TRR: '
+    title: Convert XTC, DCD, and TRR 1.0.0
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_mdconvert
   - description: 'Convert lped to plink pbed: '
     title: Convert lped to plink pbed 0.02
     url: https://usegalaxy.org.au/root?tool_id=lped2pbedconvert
   - description: 'Convert BED, GFF, or VCF to BigWig: '
     title: Convert BED, GFF, or VCF to BigWig 1.0.1
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bed_gff_or_vcf_to_bigwig_0
-  - description: 'Convert FASTA to Tabular: '
-    title: Convert FASTA to Tabular 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fasta_to_tabular
-  - description: 'Convert compressed file to uncompressed.: '
-    title: Convert compressed file to uncompressed. 1.0.0
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_gz_to_uncompressed
-  - description: 'Convert Len file to Linecount: '
-    title: Convert Len file to Linecount 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_len_to_linecount
-  - description: 'Convert BAM to coordinate-sorted BAM: '
-    title: Convert BAM to coordinate-sorted BAM 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bam_to_coodinate_sorted_bam
-  - description: 'Convert SMILES to MOL: '
-    title: Convert SMILES to MOL 2.4.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_SMILES_to_MOL
-  - description: 'Convert XTC, DCD, and TRR: '
-    title: Convert XTC, DCD, and TRR 1.0.0
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_mdconvert
-  - description: 'Convert GFF to Interval Index: '
-    title: Convert GFF to Interval Index 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_gff_to_interval_index_0
-  - description: 'Convert BigWig to Wiggle: Convert bigWig to wig'
-    title: Convert BigWig to Wiggle 377+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=bigwigtowig
   - description: 'Convert CML to SMILES: '
     title: Convert CML to SMILES 2.4.1
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_cml_to_smiles
-  - description: 'Convert compressed and uncompressed BCF files: '
-    title: Convert compressed and uncompressed BCF files 0.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bcf_uncompressed_to_bcf
-  - description: 'Convert tar to directory: '
-    title: Convert tar to directory 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_tar_to_directory
+  - description: 'Convert compressed file to uncompressed.: '
+    title: Convert compressed file to uncompressed. 1.0.0
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_gz_to_uncompressed
+  - description: 'Convert FASTA to Tabular: '
+    title: Convert FASTA to Tabular 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fasta_to_tabular
+  - description: 'Convert Interval to tabix: '
+    title: Convert Interval to tabix 1.0.2
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_tabix_0
+  - description: 'Convert Len file to Linecount: '
+    title: Convert Len file to Linecount 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_len_to_linecount
+  - description: 'Convert MOL2 to MOL: '
+    title: Convert MOL2 to MOL 2.4.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_mol2_to_mol
+  - description: 'Convert SMILES to MOL: '
+    title: Convert SMILES to MOL 2.4.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_SMILES_to_MOL
+  - description: 'Convert GFF to Interval Index: '
+    title: Convert GFF to Interval Index 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_gff_to_interval_index_0
   - description: 'Convert InChI to MOL: '
     title: Convert InChI to MOL 2.4.1
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_inchi_to_mol
-  - description: 'Convert Genomic Intervals To BED: '
-    title: Convert Genomic Intervals To BED 1.0.0
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_bed_0
+  - description: 'Convert BigWig to Wiggle: Convert bigWig to wig'
+    title: Convert BigWig to Wiggle 377+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=bigwigtowig
+  - description: 'Convert compressed and uncompressed BCF files: '
+    title: Convert compressed and uncompressed BCF files 0.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bcf_uncompressed_to_bcf
   - description: 'Convert Ref taxonomy to Seq Taxonomy: converts 2 or 3 column sequence
       taxonomy file to a 2 column mothur taxonomy_outline format'
     title: Convert Ref taxonomy to Seq Taxonomy 1.0.1
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_ref_to_seq_taxomony
-  - description: 'SMILES to SMILES: '
-    title: SMILES to SMILES 2.4.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_smiles_to_smiles
+  - description: 'Convert tar to directory: '
+    title: Convert tar to directory 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_tar_to_directory
+  - description: 'Convert Genomic Intervals To BED: '
+    title: Convert Genomic Intervals To BED 1.0.0
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_bed_0
+  - description: 'Convert SAM to BigWig: '
+    title: Convert SAM to BigWig 1.0.3
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_sam_to_bigwig_0
   - description: 'Convert BAM to queryname-sorted BAM: '
     title: Convert BAM to queryname-sorted BAM 1.0.1
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bam_to_qname_sorted_bam
   - description: 'Convert FASTA to Bowtie base space Index: '
     title: Convert FASTA to Bowtie base space Index 1.3.1
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fasta_to_bowtie_base_index
-  - description: 'Convert Interval to tabix: '
-    title: Convert Interval to tabix 1.0.2
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_tabix_0
-  - description: 'Convert FASTA to fai file: '
-    title: Convert FASTA to fai file 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fasta_to_fai
   - description: 'Convert plink pbed to ld reduced format: '
     title: Convert plink pbed to ld reduced format 0.02
     url: https://usegalaxy.org.au/root?tool_id=pbed2ldindepconvert
+  - description: 'Convert FASTA to fai file: '
+    title: Convert FASTA to fai file 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fasta_to_fai
   - description: 'Convert BGZ VCF to tabix: '
     title: Convert BGZ VCF to tabix 1.0.2
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_vcf_bgzip_to_tabix_0
-  - description: 'Convert plink pbed to linkage lped: '
-    title: Convert plink pbed to linkage lped 0.02
-    url: https://usegalaxy.org.au/root?tool_id=pbed2lpedconvert
   - description: 'Convert neostore.zip files to neostore: '
     title: Convert neostore.zip files to neostore 1.0.0
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_neostorezip_to_neostore
-  - description: 'Convert Genomic Intervals To Strict BED6: '
-    title: Convert Genomic Intervals To Strict BED6 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_bed6_0
+  - description: 'Convert plink pbed to linkage lped: '
+    title: Convert plink pbed to linkage lped 0.02
+    url: https://usegalaxy.org.au/root?tool_id=pbed2lpedconvert
+  - description: 'Convert BedGraph to BigWig: '
+    title: Convert BedGraph to BigWig 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bedgraph_to_bigwig
+  - description: 'SMILES to SMILES: '
+    title: SMILES to SMILES 2.4.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_smiles_to_smiles
   - description: 'Convert Wiggle to Interval: '
     title: Convert Wiggle to Interval 1.0.1
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_wiggle_to_interval_0
-  - description: 'Convert PDB to GRO: '
-    title: Convert PDB to GRO 1.0.0
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_Pdb_to_Gro_0
-  - description: 'Convert FASTA to Bowtie color space Index: '
-    title: Convert FASTA to Bowtie color space Index 1.2.3
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fasta_to_bowtie_color_index
   - description: 'Convert MAF to Fasta: '
     title: Convert MAF to Fasta 1.0.2
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_maf_to_fasta_0
+  - description: 'Convert FASTA to Bowtie color space Index: '
+    title: Convert FASTA to Bowtie color space Index 1.2.3
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fasta_to_bowtie_color_index
+  - description: 'Convert Genomic Intervals To Strict BED6: '
+    title: Convert Genomic Intervals To Strict BED6 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_bed6_0
+  - description: 'Convert Genomic Intervals To Coverage: '
+    title: Convert Genomic Intervals To Coverage 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_bigwig_0
   - description: 'Convert GFF to Feature Location Index: '
     title: Convert GFF to Feature Location Index 1.0.0
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_gff_to_fli_0
-  - description: 'Convert SAM to BigWig: '
-    title: Convert SAM to BigWig 1.0.3
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_sam_to_bigwig_0
+  - description: 'Convert PDB to GRO: '
+    title: Convert PDB to GRO 1.0.0
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_Pdb_to_Gro_0
   - description: 'Convert CRAM to BAM: '
     title: Convert CRAM to BAM 1.0.2
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_cram_to_bam_0
@@ -7459,15 +7514,12 @@
   - description: 'Convert Biom datasets: '
     title: Convert Biom datasets 2.1.5
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_biom
-  - description: 'Convert CSV to tabular: '
-    title: Convert CSV to tabular 1.0.0
-    url: https://usegalaxy.org.au/root?tool_id=csv_to_tabular
   - description: 'Convert Bam to Bai: '
     title: Convert Bam to Bai 1.0.1
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_Bam_Bai_0
-  - description: 'Convert Genomic Intervals To Coverage: '
-    title: Convert Genomic Intervals To Coverage 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_bigwig_0
+  - description: 'Convert CSV to tabular: '
+    title: Convert CSV to tabular 1.0.0
+    url: https://usegalaxy.org.au/root?tool_id=csv_to_tabular
   - description: 'Convert tabular to dbnsfp: '
     title: Convert tabular to dbnsfp 1.0.2
     url: https://usegalaxy.org.au/root?tool_id=tabular_to_dbnsfp
@@ -7486,12 +7538,9 @@
   - description: 'Convert FASTA to len file: '
     title: Convert FASTA to len file 1.0.1
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fasta_to_len
-  - description: 'Convert BedGraph to BigWig: '
-    title: Convert BedGraph to BigWig 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bedgraph_to_bigwig
-  - description: 'Convert SAM to BAM without sorting: '
-    title: Convert SAM to BAM without sorting 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_sam_to_unsorted_bam
+  - description: 'Convert Genomic Intervals To Strict BED: '
+    title: Convert Genomic Intervals To Strict BED 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_bedstrict_0
   homepage: ''
   id: Galaxy CONVERTER
   license: ''
@@ -7512,6 +7561,9 @@
   edam-outputs: ''
   edam-topics: ''
   galaxy:
+  - description: 'EGA Download Client: '
+    title: EGA Download Client 5.0.2+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fega_download_client%2Fpyega3%2F5.0.2%2Bgalaxy0
   - description: 'UCSC Main: table browser'
     title: UCSC Main 1.0.0
     url: https://usegalaxy.org.au//tool_runner/data_source_redirect?tool_id=ucsc_table_direct1
@@ -7786,6 +7838,9 @@
   edam-outputs: ''
   edam-topics: ''
   galaxy:
+  - description: 'Add input name as column: to an existing tabular file'
+    title: Add input name as column 0.2.0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fmvdbeek%2Fadd_input_name_as_column%2FaddName%2F0.2.0
   - description: 'SQLite to tabular: for SQL query'
     title: SQLite to tabular 3.2.1
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fsqlite_to_tabular%2Fsqlite_to_tabular%2F3.2.1
@@ -9459,6 +9514,36 @@
   - title: .nan
     url: .nan
 - biocontainers: ''
+  biotools: helixer
+  bunya: ''
+  description: Deep Learning to predict gene annotations
+  edam-inputs: []
+  edam-operations:
+  - Gene prediction
+  - Genome annotation
+  edam-outputs: []
+  edam-topics:
+  - Sequence analysis
+  - Gene transcripts
+  galaxy:
+  - description: 'Helixer: gene calling'
+    title: Helixer 0.3.2
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgenouest%2Fhelixer%2Fhelixer%2F0.3.2
+  homepage: https://github.com/weberlab-hhu/Helixer
+  id: helixer
+  license: GPL-3.0
+  name: Helixer
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications:
+  - title: 'Helixer: Cross-species gene annotation of large eukaryotic genomes using
+      deep learning'
+    url: https://doi.org/10.1093/bioinformatics/btaa1044
+  resources:
+  - title: .nan
+    url: .nan
+- biocontainers: ''
   biotools: hgv_david
   bunya: ''
   description: This tool provides functional annotation for a list of genes by connecting
@@ -9786,6 +9871,10 @@
       cluster consensus matrices'
     title: scHicPlotConsensusMatrices 4.1
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fschicexplorer_schicplotconsensusmatrices%2Fschicexplorer_schicplotconsensusmatrices%2F4.1
+  - description: 'hicPlotTADs: plot Hi-C contact matrices heatmaps alongside other
+      data tracks'
+    title: hicPlotTADs 2.1.4.0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Fhicexplorer_hicplottads%2Fhicexplorer_hicplottads%2F2.1.4.0
   - description: 'hicPlotMatrix: plot a Hi-C contact matrix heatmap'
     title: hicPlotMatrix 3.7.5+galaxy0
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Fhicexplorer_hicplotmatrix%2Fhicexplorer_hicplotmatrix%2F3.7.5%2Bgalaxy0
@@ -12824,6 +12913,10 @@
   - Ecology
   - Sequence assembly
   galaxy:
+  - description: 'megahit contig2fastg: for converting MEGAHIT''s contigs (.fa) to
+      assembly graphs (.fastg)'
+    title: megahit contig2fastg 1.1.3+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fmegahit_contig2fastg%2Fmegahit_contig2fastg%2F1.1.3%2Bgalaxy1
   - description: 'MEGAHIT: for metagenomics assembly'
     title: MEGAHIT 1.2.9+galaxy1
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fmegahit%2Fmegahit%2F1.2.9%2Bgalaxy1
@@ -15919,6 +16012,29 @@
   resources:
   - title: .nan
     url: .nan
+- biocontainers: ''
+  biotools: ''
+  bunya: ''
+  description: ''
+  edam-inputs: ''
+  edam-operations: ''
+  edam-outputs: ''
+  edam-topics: ''
+  galaxy:
+  - description: 'Nucleotide subsequence search: providing regions in BED format'
+    title: Nucleotide subsequence search 0.2
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Ffind_subsequences%2Fbg_find_subsequences%2F0.2
+  homepage: ''
+  id: bg_find_subsequences
+  license: ''
+  name: Nucleotide subsequence search
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications: ''
+  resources:
+  - title: .nan
+    url: .nan
 - biocontainers: obitools
   biotools: obitools
   bunya: ''
@@ -17480,6 +17596,40 @@
   resources:
   - title: .nan
     url: .nan
+- biocontainers: ''
+  biotools: PlasmidFinder
+  bunya: ''
+  description: PlasmidFinder is a tool for the identification and typing of Plasmid
+    Replicons in Whole-Genome Sequencing (WGS).
+  edam-inputs: []
+  edam-operations:
+  - Genome assembly
+  - Scaffolding
+  - Multilocus sequence typing
+  edam-outputs: []
+  edam-topics:
+  - Whole genome sequencing
+  - Sequence assembly
+  - Mapping
+  - Probes and primers
+  galaxy:
+  - description: 'PlasmidFinder: Plasmid identification in bacteria.'
+    title: PlasmidFinder 2.1.6+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fplasmidfinder%2Fplasmidfinder%2F2.1.6%2Bgalaxy1
+  homepage: https://cge.cbs.dtu.dk/services/PlasmidFinder/
+  id: plasmidfinder
+  license: ''
+  name: PlasmidFinder
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications:
+  - title: 'PlasmidFinder and In Silico pMLST: Identification and Typing of Plasmid
+      Replicons in Whole-Genome Sequencing (WGS)'
+    url: https://doi.org/10.1007/978-1-4939-9877-7_20
+  resources:
+  - title: .nan
+    url: .nan
 - biocontainers: plink
   biotools: plink
   bunya:
@@ -18997,6 +19147,89 @@
   - title: .nan
     url: .nan
 - biocontainers: ''
+  biotools: ragtag
+  bunya: ''
+  description: RagTag is a collection of software tools for scaffolding and improving
+    modern genome assemblies.
+  edam-inputs: []
+  edam-operations:
+  - Genome assembly
+  edam-outputs: []
+  edam-topics:
+  - Sequence assembly
+  galaxy:
+  - description: 'RagTag: reference-guided scaffolding of draft genomes'
+    title: RagTag 2.1.0+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fragtag%2Fragtag%2F2.1.0%2Bgalaxy1
+  homepage: https://github.com/malonge/RagTag
+  id: ragtag
+  license: MIT
+  name: ragtag
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications:
+  - title: 'RaGOO: Fast and accurate reference-guided scaffolding of draft genomes'
+    url: https://doi.org/10.1186/s13059-019-1829-6
+  resources:
+  - title: .nan
+    url: .nan
+- biocontainers: ''
+  biotools: RaGOO
+  bunya: ''
+  description: 'fast and accurate reference-guided scaffolding of draft genomes.
+
+
+    Fast Reference-Guided Scaffolding of Genome Assembly Contigs.
+
+
+    Index of /shares/schatzlab/www-data/ragoo.
+
+
+    A tool to order and orient genome assembly contigs via Minimap2 alignments to
+    a reference genome.
+
+
+    Alonge, Michael, et al. "RaGOO: fast and accurate reference-guided scaffolding
+    of draft genomes." Genome biology 20.1 (2019): 1-17.
+
+
+    Contigs and reference fasta files may now be gzipped.
+
+
+    RaGOO is a tool for coalescing genome assembly contigs into pseudochromosomes
+    via minimap2 alignments to a closely related reference genome. The focus of this
+    tool is on practicality and therefore has the following features:'
+  edam-inputs: []
+  edam-operations:
+  - Genome assembly
+  - Sequence trimming
+  - Scaffolding
+  - Genome alignment
+  edam-outputs: []
+  edam-topics:
+  - Sequence assembly
+  - Sequencing
+  - Plant biology
+  - Cell biology
+  galaxy:
+  - description: 'RaGOO: Order and assign scaffolds'
+    title: RaGOO 1.0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdereeper%2Fragoo%2Fragoo%2F1.0
+  homepage: https://github.com/malonge/RaGOO
+  id: ragoo
+  license: MIT
+  name: RaGOO
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications:
+  - title: 'RaGOO: Fast and accurate reference-guided scaffolding of draft genomes'
+    url: https://doi.org/10.1186/S13059-019-1829-6
+  resources:
+  - title: .nan
+    url: .nan
+- biocontainers: ''
   biotools: ramclustr
   bunya: ''
   description: A feature clustering algorithm for non-targeted mass spectrometric
@@ -19666,6 +19899,37 @@
   resources:
   - title: .nan
     url: .nan
+- biocontainers: ''
+  biotools: rnaQUAST
+  bunya: ''
+  description: Quality assessment tool for de novo transcriptome assemblies.
+  edam-inputs: []
+  edam-operations:
+  - De-novo assembly
+  - Transcriptome assembly
+  - Sequence assembly validation
+  edam-outputs: []
+  edam-topics:
+  - Sequence assembly
+  - Transcriptomics
+  - RNA-seq
+  galaxy:
+  - description: 'rnaQUAST: A quality assessment tool for De Novo transcriptome assemblies'
+    title: rnaQUAST 2.2.3+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Frnaquast%2Frna_quast%2F2.2.3%2Bgalaxy0
+  homepage: http://cab.spbu.ru/software/rnaquast/
+  id: rnaquast
+  license: Unlicense
+  name: rnaQUAST
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications:
+  - title: 'RnaQUAST: A quality assessment tool for de novo transcriptome assemblies'
+    url: https://doi.org/10.1093/bioinformatics/btw218
+  resources:
+  - title: .nan
+    url: .nan
 - biocontainers: roary
   biotools: roary
   bunya: ''
@@ -20246,6 +20510,12 @@
   - Sequencing
   - Rare diseases
   galaxy:
+  - description: 'Samtools markdup: marks duplicate alignments'
+    title: Samtools markdup 1.15.1+galaxy2
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fsamtools_markdup%2Fsamtools_markdup%2F1.15.1%2Bgalaxy2
+  - description: 'Samtools coverage: computes the depth at each position or region'
+    title: Samtools coverage 1.15.1+galaxy2
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fsamtools_coverage%2Fsamtools_coverage%2F1.15.1%2Bgalaxy2
   - description: 'Samtools split: BAM dataset on readgroups'
     title: Samtools split 1.15.1+galaxy2
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fsamtools_split%2Fsamtools_split%2F1.15.1%2Bgalaxy2
@@ -20304,6 +20574,10 @@
   - description: 'Samtools depth: compute the depth at each position or region'
     title: Samtools depth 1.15.1+galaxy2
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fsamtools_depth%2Fsamtools_depth%2F1.15.1%2Bgalaxy2
+  - description: 'Samtools fixmate: fill mate coordinates, ISIZE and mate related
+      flags'
+    title: Samtools fixmate 1.15.1+galaxy2
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fsamtools_fixmate%2Fsamtools_fixmate%2F1.15.1%2Bgalaxy2
   - description: 'samtools BAM to CRAM: convert BAM alignments to CRAM format'
     title: samtools BAM to CRAM 1.15.1+galaxy2
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fsamtools_bam_to_cram%2Fsamtools_bam_to_cram%2F1.15.1%2Bgalaxy2
@@ -20947,6 +21221,54 @@
   - description: 'Seurat: - toolkit for exploration of single-cell RNA-seq data'
     title: Seurat 4.3.0.1+galaxy1
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseurat%2Fseurat%2F4.3.0.1%2Bgalaxy1
+  - description: 'Seurat ScaleData: scale and center genes'
+    title: Seurat ScaleData 4.0.4+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Febi-gxa%2Fseurat_scale_data%2Fseurat_scale_data%2F4.0.4%2Bgalaxy0
+  - description: 'Seurat RunTSNE: run t-SNE dimensionality reduction'
+    title: Seurat RunTSNE 4.0.4+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Febi-gxa%2Fseurat_run_tsne%2Fseurat_run_tsne%2F4.0.4%2Bgalaxy0
+  - description: 'Seurat RunPCA: run a PCA dimensionality reduction'
+    title: Seurat RunPCA 4.0.4+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Febi-gxa%2Fseurat_run_pca%2Fseurat_run_pca%2F4.0.4%2Bgalaxy0
+  - description: 'Seurat Read10x: Loads Tabular or 10x data into a serialized seurat
+      R object'
+    title: Seurat Read10x 4.0.4+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Febi-gxa%2Fseurat_read10x%2Fseurat_read10x%2F4.0.4%2Bgalaxy0
+  - description: 'Plot: with Seurat'
+    title: Plot 4.0.4+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Febi-gxa%2Fseurat_plot%2Fseurat_plot%2F4.0.4%2Bgalaxy0
+  - description: 'Seurat FindVariableGenes: identify variable genes'
+    title: Seurat FindVariableGenes 4.0.4+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Febi-gxa%2Fseurat_find_variable_genes%2Fseurat_find_variable_genes%2F4.0.4%2Bgalaxy0
+  - description: 'Seurat FindNeighbours: constructs a Shared Nearest Neighbor (SNN)
+      Graph'
+    title: Seurat FindNeighbours 4.0.4+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Febi-gxa%2Fseurat_find_neighbours%2Fseurat_find_neighbours%2F4.0.4%2Bgalaxy0
+  - description: 'Seurat FindMarkers: find markers (differentially expressed genes)'
+    title: Seurat FindMarkers 4.0.4+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Febi-gxa%2Fseurat_find_markers%2Fseurat_find_markers%2F4.0.4%2Bgalaxy0
+  - description: 'Seurat FilterCells: filter cells in a Seurat object'
+    title: Seurat FilterCells 4.0.4+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Febi-gxa%2Fseurat_filter_cells%2Fseurat_filter_cells%2F4.0.4%2Bgalaxy0
+  - description: 'Seurat Export2CellBrowser: produces files for UCSC CellBrowser import.'
+    title: Seurat Export2CellBrowser 4.0.4+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Febi-gxa%2Fseurat_export_cellbrowser%2Fseurat_export_cellbrowser%2F4.0.4%2Bgalaxy0
+  - description: 'Seurat CreateSeuratObject: create a Seurat object'
+    title: Seurat CreateSeuratObject 2.3.1+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Febi-gxa%2Fseurat_create_seurat_object%2Fseurat_create_seurat_object%2F2.3.1%2Bgalaxy0
+  - description: 'Seurat Plot dimension reduction: graphs the output of a dimensional
+      reduction technique (PCA by default). Cells are colored by their identity class.'
+    title: Seurat Plot dimension reduction 4.0.4+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Febi-gxa%2Fseurat_dim_plot%2Fseurat_dim_plot%2F4.0.4%2Bgalaxy0
+  - description: 'Seurat FindClusters: find clusters of cells'
+    title: Seurat FindClusters 4.0.4+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Febi-gxa%2Fseurat_find_clusters%2Fseurat_find_clusters%2F4.0.4%2Bgalaxy0
+  - description: 'Seurat NormaliseData: normalise data'
+    title: Seurat NormaliseData 4.0.4+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Febi-gxa%2Fseurat_normalise_data%2Fseurat_normalise_data%2F4.0.4%2Bgalaxy0
+  - description: 'Seurat UMAP: dimensionality reduction'
+    title: Seurat UMAP 4.0.4+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Febi-gxa%2Fseurat_run_umap%2Fseurat_run_umap%2F4.0.4%2Bgalaxy0
   homepage: https://satijalab.org/seurat/
   id: seurat
   license: MIT
@@ -24553,6 +24875,14 @@
   - Data visualisation
   - Metabolomics
   galaxy:
+  - description: 'xcms plot raw: Plot raw data filtered by m/z range and retention
+      time (RT) range'
+    title: xcms plot raw 4.0.0+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fworkflow4metabolomics%2Fxcms_plot_raw%2Fxcms_plot_raw%2F4.0.0%2Bgalaxy0
+  - description: 'xcms plot eic: Plot the extracted ion chromatogram (EIC) from mzML
+      file'
+    title: xcms plot eic 4.0.0+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fworkflow4metabolomics%2Fxcms_plot_eic%2Fxcms_plot_eic%2F4.0.0%2Bgalaxy0
   - description: 'xcms get a sampleMetadata file: which need to be filled with extra
       information'
     title: xcms get a sampleMetadata file 3.4.4.0
