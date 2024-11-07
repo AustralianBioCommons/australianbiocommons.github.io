@@ -1,4 +1,4 @@
-from .common import Dataprovider, DB
+from .common import Dataprovider, DB, get_request
 import pandas as pd
 import requests
 import json
@@ -114,57 +114,56 @@ class GalaxyDataProvider(Dataprovider):
     def _query_remote(self):
         self.available_data = {}
         #req = requests.request("get", "https://usegalaxy.org.au/api/tools/?in_panel=False")
-        req = requests.request("get", "https://usegalaxy.org.au/api/tools/")
-        if req.status_code != 200:
-            raise FileNotFoundError(req.url)
-        tool_sections = json.loads(req.text)
-        #Herve Menager via Slack
-        tools_nested = [tool_section.get('elems') for tool_section in tool_sections if 'elems' in tool_section]
-        tools = list(itertools.chain.from_iterable(tools_nested))
+        req = get_request("https://usegalaxy.org.au/api/tools/")
+        if req.status_code == 200:
+            tool_sections = json.loads(req.text)
+            #Herve Menager via Slack
+            tools_nested = [tool_section.get('elems') for tool_section in tool_sections if 'elems' in tool_section]
+            tools = list(itertools.chain.from_iterable(tools_nested))
 
-        #
-        other_galaxy_id_types = {}
-        for tool in tools:
-            galaxy_id = tool["id"]
-            version = tool["version"]
-            # https://stackoverflow.com/a/70672659
-            # https://stackoverflow.com/a/12595082
-            # https://stackoverflow.com/a/4843178
-            # https://stackoverflow.com/a/15340694
-            if isinstance(galaxy_id, str):
-                match_string = "toolshed.g2.bx.psu.edu/repos"
-                if re.search(match_string, galaxy_id):
-                    galaxy_id = "/".join(galaxy_id.split("/")[:-1])
-                else:
-                    other_galaxy_id_types[galaxy_id] = tool
-                    galaxy_id = galaxy_id
-                    #print(other_galaxy_id_types[galaxy_id]["id"])
-            ### example datasource_tool link "/tool_runner/data_source_redirect?tool_id=ucsc_table_direct1"
-            if tool["model_class"] != "ToolSectionLabel" and tool["model_class"] != "ToolSection":
-                if tool["model_class"] == "DataSourceTool":
-                    tool["link"] = tool["link"]
-                else:
-                    # https://stackoverflow.com/a/4945558
-                    tool["link"] = "root?" + tool["link"][13:]
-            biotools_id = None
-            if "xrefs" in tool:
-                for item in tool["xrefs"]:
-                    if item["reftype"] == "bio.tools":
-                        biotools_id = item["value"]
-                        break
-            tool_id_list = []
-            ### removed as prioritising the bio.tools ID here was replicating tools across ToolFinder entries with the same bio.tools ID
-            ### may need to add this back in later, so keep the code
-            ###if biotools_id is not None:
-            ###    tool_id_list = self.parent.get_id_from_alt(ToolMatrixDataProvider.ID_BIO_TOOLS, biotools_id)
-            if len(tool_id_list) == 0:
-                tool_id_list = self.parent.get_id_from_alt(GalaxyDataProvider.GALAXY_ID, galaxy_id)
-            if len(tool_id_list) == 0:
-                self._save_unmatched_(galaxy_id, tool)
-            for tool_id in tool_id_list:
-                if tool_id not in self.available_data:
-                    self.available_data[tool_id] = []
-                self.available_data[tool_id].append(tool)
+            #
+            other_galaxy_id_types = {}
+            for tool in tools:
+                galaxy_id = tool["id"]
+                version = tool["version"]
+                # https://stackoverflow.com/a/70672659
+                # https://stackoverflow.com/a/12595082
+                # https://stackoverflow.com/a/4843178
+                # https://stackoverflow.com/a/15340694
+                if isinstance(galaxy_id, str):
+                    match_string = "toolshed.g2.bx.psu.edu/repos"
+                    if re.search(match_string, galaxy_id):
+                        galaxy_id = "/".join(galaxy_id.split("/")[:-1])
+                    else:
+                        other_galaxy_id_types[galaxy_id] = tool
+                        galaxy_id = galaxy_id
+                        #print(other_galaxy_id_types[galaxy_id]["id"])
+                ### example datasource_tool link "/tool_runner/data_source_redirect?tool_id=ucsc_table_direct1"
+                if tool["model_class"] != "ToolSectionLabel" and tool["model_class"] != "ToolSection":
+                    if tool["model_class"] == "DataSourceTool":
+                        tool["link"] = tool["link"]
+                    else:
+                        # https://stackoverflow.com/a/4945558
+                        tool["link"] = "root?" + tool["link"][13:]
+                biotools_id = None
+                if "xrefs" in tool:
+                    for item in tool["xrefs"]:
+                        if item["reftype"] == "bio.tools":
+                            biotools_id = item["value"]
+                            break
+                tool_id_list = []
+                ### removed as prioritising the bio.tools ID here was replicating tools across ToolFinder entries with the same bio.tools ID
+                ### may need to add this back in later, so keep the code
+                ###if biotools_id is not None:
+                ###    tool_id_list = self.parent.get_id_from_alt(ToolMatrixDataProvider.ID_BIO_TOOLS, biotools_id)
+                if len(tool_id_list) == 0:
+                    tool_id_list = self.parent.get_id_from_alt(GalaxyDataProvider.GALAXY_ID, galaxy_id)
+                if len(tool_id_list) == 0:
+                    self._save_unmatched_(galaxy_id, tool)
+                for tool_id in tool_id_list:
+                    if tool_id not in self.available_data:
+                        self.available_data[tool_id] = []
+                    self.available_data[tool_id].append(tool)
 
     def _render(self, data):
         retval = {}
@@ -269,34 +268,36 @@ class BiocontainersDataProvider(Dataprovider):
         unique_tool_ids.remove(np.nan)
 
         ### import BioContainers metadata via TRS implementation
-        biocontainers = requests.request("get", "https://api.biocontainers.pro/ga4gh/trs/v2/tools?limit=100000&sort_field=id&sort_order=asc")
-        biocontainers_data = json.loads(biocontainers.text)
-        ### create list of bio.tools IDs with their associated BioContainers IDs
-        biocontainers_list = {}
-        for container in range(len(biocontainers_data)):
-            container_id = biocontainers_data[container]["id"]
-            if "identifiers" in biocontainers_data[container]:
-                identifiers = biocontainers_data[container]["identifiers"]
-                # https://stackoverflow.com/a/70672659
-                # https://stackoverflow.com/a/12595082
-                # https://stackoverflow.com/a/4843178
-                # https://stackoverflow.com/a/15340694
-                for id in identifiers:
-                    if isinstance(id, str):
-                        match_string = "biotools:"
-                        if re.search(match_string, id):
-                            biotools_id = id.split(":")[1]
-                    else:
-                        biotools_id = None
-                    if biotools_id not in biocontainers_list:
-                        biocontainers_list[biotools_id] = container_id
+        biocontainers = get_request("https://api.biocontainers.pro/ga4gh/trs/v2/tools?limit=100000&sort_field=id&sort_order=asc")
+        if biocontainers.status_code == 200:
+            biocontainers_data = json.loads(biocontainers.text)
+            ### create list of bio.tools IDs with their associated BioContainers IDs
+            biocontainers_list = {}
+            for container in range(len(biocontainers_data)):
+                container_id = biocontainers_data[container]["id"]
+                if "identifiers" in biocontainers_data[container]:
+                    identifiers = biocontainers_data[container]["identifiers"]
+                    # https://stackoverflow.com/a/70672659
+                    # https://stackoverflow.com/a/12595082
+                    # https://stackoverflow.com/a/4843178
+                    # https://stackoverflow.com/a/15340694
+                    for id in identifiers:
+                        if isinstance(id, str):
+                            match_string = "biotools:"
+                            if re.search(match_string, id):
+                                biotools_id = id.split(":")[1]
+                        else:
+                            biotools_id = None
+                        if biotools_id not in biocontainers_list:
+                            biocontainers_list[biotools_id] = container_id
 
-        for biotools_id in unique_biotools_ids:
-            if biotools_id in biocontainers_list:
-                tool_id = self.parent.get_id_from_alt(ToolMatrixDataProvider.ID_BIO_TOOLS, biotools_id)[0]
-                biocontainers_id = biocontainers_list[biotools_id]
-                #biocontainers_url = "https://biocontainers.pro/tools/" + biocontainers_id
-                self.available_data[tool_id] = biocontainers_id
+            for biotools_id in unique_biotools_ids:
+                if biotools_id in biocontainers_list:
+                    #print(biotools_id, self.parent.get_id_from_alt(ToolMatrixDataProvider.ID_BIO_TOOLS, biotools_id))
+                    tool_id = self.parent.get_id_from_alt(ToolMatrixDataProvider.ID_BIO_TOOLS, biotools_id)[0]
+                    biocontainers_id = biocontainers_list[biotools_id]
+                    #biocontainers_url = "https://biocontainers.pro/tools/" + biocontainers_id
+                    self.available_data[tool_id] = biocontainers_id
 
     def _render(self, data):
         return {Dataprovider.FIELD_NAMES.BIOCONTAINERS_LINK: data}
@@ -312,18 +313,17 @@ class GadiDataProvider(Dataprovider):
     def _query_remote(self):
         self.available_data = {}
         #https://stackoverflow.com/a/8685813
-        req = requests.get("http://gadi-test-apps.nci.org.au:5000/dump", headers={"Authorization": self.key})
-        if req.status_code != 200:
-            raise FileNotFoundError(req.url)
-        for line in req.text.split("\n")[:-1]:
-            line = line.split(",")
-            tool_id = line[0].strip()
-            tool_id = tool_id.lower()
-            version = line[1]
-            #tool_id, version = line.split(",")
-            if tool_id not in self.available_data:
-                self.available_data[tool_id] = []
-            self.available_data[tool_id].append(version)
+        req = get_request("http://130.56.246.237:5000/dump", headers={"Authorization": self.key})
+        if req.status_code == 200:
+            for line in req.text.split("\n")[:-1]:
+                line = line.split(",")
+                tool_id = line[0].strip()
+                tool_id = tool_id.lower()
+                version = line[1]
+                #tool_id, version = line.split(",")
+                if tool_id not in self.available_data:
+                    self.available_data[tool_id] = []
+                self.available_data[tool_id].append(version)
 
     def _render(self, data):
         return {Dataprovider.FIELD_NAMES.NCI_GADI_VERSION: data}
@@ -339,26 +339,26 @@ class if89DataProvider(Dataprovider):
     def _query_remote(self):
         self.available_data = {}
         #https://stackoverflow.com/a/8685813
-        req = requests.get("http://130.56.246.237:5000/dump", headers={"Authorization": self.key})
-        if req.status_code != 200:
-            raise FileNotFoundError(req.url)
-        for line in req.text.split("\n")[:-1]:
-            line = line.split(",")
-            tool_id = line[0].strip()
-            tool_id = tool_id.lower()
-            tool_id = tool_id.replace("genomescope2.0", "genomescope")
-            tool_id = tool_id.replace("genomescope2", "genomescope")
-            tool_id = tool_id.replace("miniconda3", "miniconda")
-            tool_id = tool_id.replace("ipa", "pbipa")
-            tool_id = tool_id.replace("plink2", "plink")
-            tool_id = tool_id.replace("iqtree2", "iq-tree")
-            tool_id = tool_id.replace("sratoolkit", "sra-tools")
-            tool_id = tool_id.replace("cdhit", "cd-hit")
-            tool_id = tool_id.replace("clustal-omega", "clustalo")
-            version = line[1]
-            if tool_id not in self.available_data:
-                self.available_data[tool_id] = []
-            self.available_data[tool_id].append(version)
+        req = get_request("http://130.56.246.237:5000/dump", headers={"Authorization": self.key})
+        
+        if req.status_code == 200:
+            for line in req.text.split("\n")[:-1]:
+                line = line.split(",")
+                tool_id = line[0].strip()
+                tool_id = tool_id.lower()
+                tool_id = tool_id.replace("genomescope2.0", "genomescope")
+                tool_id = tool_id.replace("genomescope2", "genomescope")
+                tool_id = tool_id.replace("miniconda3", "miniconda")
+                tool_id = tool_id.replace("ipa", "pbipa")
+                tool_id = tool_id.replace("plink2", "plink")
+                tool_id = tool_id.replace("iqtree2", "iq-tree")
+                tool_id = tool_id.replace("sratoolkit", "sra-tools")
+                tool_id = tool_id.replace("cdhit", "cd-hit")
+                tool_id = tool_id.replace("clustal-omega", "clustalo")
+                version = line[1]
+                if tool_id not in self.available_data:
+                    self.available_data[tool_id] = []
+                self.available_data[tool_id].append(version)
 
     def _render(self, data):
         return {Dataprovider.FIELD_NAMES.NCI_IF89_VERSION: data}
