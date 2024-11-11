@@ -4,6 +4,10 @@ from abc import abstractmethod
 import pandas as pd
 from typing import List
 import numpy as np
+import requests
+from requests.exceptions import ConnectionError, Timeout, HTTPError, RequestException
+from requests.models import Response
+
 
 class Dataprovider:
     """
@@ -109,6 +113,26 @@ class Dataprovider:
     def get_alt_ids(self):
         return{}
 
+def get_request(url, headers={}):
+    try:
+        req = requests.get(url, headers=headers)
+        req.raise_for_status()
+        print(f"Success- requesting: {url}")
+        return req
+    except ConnectionError:
+        print("Error: Failed to connect to the server. Please check the server address and network connection.")
+    except Timeout:
+        print("Error: The request timed out. Try again later or check the server status.")
+    except HTTPError as http_err:
+        print(f"HTTP error occurred: {http_err}")
+    except RequestException as err:
+        print(f"An error occurred: {err}")
+    
+    failed_response = Response()
+    failed_response.status_code = 400
+    failed_response._content = b'{"error": "Simulated failure"}'
+    return failed_response
+    
 
 class DB:
     """represents the database for all known tools"""

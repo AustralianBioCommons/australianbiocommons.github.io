@@ -5,16 +5,16 @@ from finders import *
 ##########################################
 
 if __name__ == "__main__":
-    mytooldb = toolfinder.ToolDB("external/Matrix_of_Availability_of_Bioinformatics_Tools_across_BioCommons__deployment_version.xlsx")
-    mytooldb.add_provider(ToolMatrixDataProvider("external/Matrix_of_Availability_of_Bioinformatics_Tools_across_BioCommons__deployment_version.xlsx"))
-    mytooldb.add_provider(SetonixDataProvider("external/setonix.txt"))
+    mytooldb = toolfinder.ToolDB("./external/Matrix_of_Availability_of_Bioinformatics_Tools_across_BioCommons__deployment_version.xlsx")
+    mytooldb.add_provider(ToolMatrixDataProvider("./external/Matrix_of_Availability_of_Bioinformatics_Tools_across_BioCommons__deployment_version.xlsx"))
+    mytooldb.add_provider(SetonixDataProvider("./external/setonix.txt"))
     mytooldb.add_provider(QriscloudDataProvider("external/bunya_software.2023.04.03.txt"))
     mytooldb.add_provider(GadiDataProvider("./external/gadi.key.hdr"))
     mytooldb.add_provider(if89DataProvider("./external/bioapps_token.txt"))
-    gdp = GalaxyDataProvider(mytooldb, "./external/galaxy_tools_curation - DATA.csv")
+    gdp = GalaxyDataProvider(mytooldb, "external/galaxy_tools_curation - DATA.csv")
     mytooldb.add_provider(gdp)
-    mytooldb.add_provider(BiotoolsDataProvider("external/Matrix_of_Availability_of_Bioinformatics_Tools_across_BioCommons__deployment_version.xlsx", mytooldb))
-    mytooldb.add_provider(BiocontainersDataProvider("external/Matrix_of_Availability_of_Bioinformatics_Tools_across_BioCommons__deployment_version.xlsx", mytooldb))
+    mytooldb.add_provider(BiotoolsDataProvider("./external/Matrix_of_Availability_of_Bioinformatics_Tools_across_BioCommons__deployment_version.xlsx", mytooldb))
+    mytooldb.add_provider(BiocontainersDataProvider("./external/Matrix_of_Availability_of_Bioinformatics_Tools_across_BioCommons__deployment_version.xlsx", mytooldb))
 
     #print("The following Galaxy Australia bio.tools IDs were not matched to the tool matrix sheet:")
     unresolved_gdp, unmatched_gdp = mytooldb.get_unmatched_ids(gdp)

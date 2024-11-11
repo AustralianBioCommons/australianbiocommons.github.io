@@ -1,4 +1,49 @@
 - class: galaxy
+  doi: 10.48546/workflowhub.workflow.1114.1
+  edam_ops: ''
+  edam_top: ''
+  guide_link: ''
+  launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=1114
+  license: GPL-3.0-or-later
+  projects:
+  - Australian BioCommons
+  - Galaxy Australia
+  remote_link: ''
+  title: Genome assembly workflow for nanopore reads, for TSI
+  tools:
+  - id: https://bio.tools/fastqc
+    name: FastQC
+  - id: https://bio.tools/Flye
+    name: Flye
+  - id: https://bio.tools/bandage
+    name: Bandage
+  updated_at: '2024-09-03'
+  url: /workflows/1114?version=1
+- class: galaxy
+  doi: ''
+  edam_ops:
+  - Sequence assembly validation
+  edam_top:
+  - Sequence assembly
+  guide_link: ''
+  launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=403
+  license: GPL-3.0
+  projects:
+  - Galaxy Australia
+  remote_link: https://github.com/AustralianBioCommons/Genome-assessment-post-assembly
+  title: Genome-assessment-post-assembly
+  tools:
+  - id: https://bio.tools/quast
+    name: QUAST
+  - id: https://bio.tools/busco
+    name: BUSCO
+  - id: https://bio.tools/merqury
+    name: Merqury
+  - id: https://bio.tools/fastx-toolkit
+    name: FASTX-Toolkit
+  updated_at: '2024-08-06'
+  url: /workflows/403?version=5
+- class: galaxy
   doi: 10.48546/workflowhub.workflow.1054.1
   edam_ops: ''
   edam_top: ''
@@ -317,30 +362,6 @@
   updated_at: '2024-04-25'
   url: /workflows/836?version=1
 - class: galaxy
-  doi: 10.48546/workflowhub.workflow.403.4
-  edam_ops:
-  - Sequence assembly validation
-  edam_top:
-  - Sequence assembly
-  guide_link: ''
-  launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=403
-  license: GPL-3.0
-  projects:
-  - Galaxy Australia
-  remote_link: https://github.com/AustralianBioCommons/Genome-assessment-post-assembly
-  title: Genome-assessment-post-assembly
-  tools:
-  - id: https://bio.tools/quast
-    name: QUAST
-  - id: https://bio.tools/busco
-    name: BUSCO
-  - id: https://bio.tools/merqury
-    name: Merqury
-  - id: https://bio.tools/fastx-toolkit
-    name: FASTX-Toolkit
-  updated_at: '2024-04-19'
-  url: /workflows/403?version=4
-- class: galaxy
   doi: ''
   edam_ops: ''
   edam_top: ''
@@ -360,8 +381,8 @@
     name: BUSCO
   - id: https://bio.tools/merqury
     name: Merqury
-  updated_at: '2024-03-13'
-  url: /workflows/794?version=1
+  updated_at: '2024-08-06'
+  url: /workflows/794?version=2
 - class: nextflow
   doi: 10.48546/workflowhub.workflow.683.1
   edam_ops: ''
