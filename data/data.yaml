@@ -785,6 +785,52 @@
   resources:
   - title: .nan
     url: .nan
+- biocontainers: ''
+  biotools: baredsc
+  bunya: ''
+  description: The baredSC (Bayesian Approach to Retreive Expression Distribution
+    of Single Cell) is a tool that uses a Monte-Carlo Markov Chain to estimate a confidence
+    interval on the probability density function (PDF) of expression of one or two
+    genes from single-cell RNA-seq data.
+  edam-inputs: []
+  edam-operations:
+  - Data retrieval
+  - Expression correlation analysis
+  - Differential gene expression profiling
+  edam-outputs: []
+  edam-topics:
+  - RNA-Seq
+  - Cytometry
+  - Transcriptomics
+  - Gene transcripts
+  - Statistics and probability
+  galaxy:
+  - description: 'Combine multiple 2D Models: from baredSC'
+    title: Combine multiple 2D Models 1.1.3+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fbaredsc_combine_2d%2Fbaredsc_combine_2d%2F1.1.3%2Bgalaxy0
+  - description: 'Combine multiple 1D Models: from baredSC'
+    title: Combine multiple 1D Models 1.1.3+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fbaredsc_combine_1d%2Fbaredsc_combine_1d%2F1.1.3%2Bgalaxy0
+  - description: 'baredSC 2d: Compute distribution for a pair of genes'
+    title: baredSC 2d 1.1.3+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fbaredsc_2d%2Fbaredsc_2d%2F1.1.3%2Bgalaxy0
+  - description: 'baredSC 1d: Compute distribution for a single gene'
+    title: baredSC 1d 1.1.3+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fbaredsc_1d%2Fbaredsc_1d%2F1.1.3%2Bgalaxy0
+  homepage: https://github.com/lldelisle/baredSC
+  id: baredsc
+  license: GPL-3.0
+  name: baredSC
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications:
+  - title: 'baredSC: Bayesian approach to retrieve expression distribution of single-cell
+      data'
+    url: https://doi.org/10.1186/S12859-021-04507-8
+  resources:
+  - title: .nan
+    url: .nan
 - biocontainers: barrnap
   biotools: barrnap
   bunya: ''
@@ -3645,6 +3691,45 @@
   resources:
   - title: .nan
     url: .nan
+- biocontainers: cite-seq-count
+  biotools: CITE-seq-Count
+  bunya: ''
+  description: Tool for counting antibody TAGS from a CITE-seq and/or cell hashing
+    experiment.
+  edam-inputs:
+  - formats:
+    - FASTQ
+    term: FASTQ
+  - formats:
+    - CSV
+    term: CSV
+  edam-operations:
+  - RNA-Seq quantification
+  edam-outputs:
+  - formats:
+    - Matrix format
+    term: Matrix format
+  - formats:
+    - YAML
+    term: YAML
+  edam-topics:
+  - Transcriptomics
+  - Immunoproteins and antigens
+  galaxy:
+  - description: 'CITE-seq-Count: Count CMO/HTO'
+    title: CITE-seq-Count 1.4.4+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fcite_seq_count%2Fcite_seq_count%2F1.4.4%2Bgalaxy0
+  homepage: https://hoohm.github.io/CITE-seq-Count/
+  id: CITE-seq-Count
+  license: MIT
+  name: CITE-seq-Count
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications: ''
+  resources:
+  - title: .nan
+    url: .nan
 - biocontainers: ''
   biotools: ''
   bunya: ''
@@ -5851,6 +5936,42 @@
   resources:
   - title: .nan
     url: .nan
+- biocontainers: episcanpy
+  biotools: epiScanpy
+  bunya: ''
+  description: Epigenomics Single Cell Analysis in Python.
+  edam-inputs: []
+  edam-operations:
+  - Enrichment analysis
+  - Imputation
+  edam-outputs: []
+  edam-topics:
+  - Epigenomics
+  - Cell biology
+  - DNA
+  galaxy:
+  - description: 'scATAC-seq Preprocessing: with EpiScanpy'
+    title: scATAC-seq Preprocessing 0.3.2+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fepiscanpy_preprocess%2Fepiscanpy_preprocess%2F0.3.2%2Bgalaxy1
+  - description: 'Build count matrix: with EpiScanpy'
+    title: Build count matrix 0.3.2+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fepiscanpy_build_matrix%2Fepiscanpy_build_matrix%2F0.3.2%2Bgalaxy1
+  - description: 'Cluster, embed and annotate: with EpiScanpy'
+    title: Cluster, embed and annotate 0.3.2+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fepiscanpy_cluster_embed%2Fepiscanpy_cluster_embed%2F0.3.2%2Bgalaxy1
+  homepage: https://github.com/colomemaria/epiScanpy
+  id: epiScanpy
+  license: BSD-3-Clause
+  name: epiScanpy
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications:
+  - title: 10.1101/648097
+    url: https://doi.org/10.1101/648097
+  resources:
+  - title: .nan
+    url: .nan
 - biocontainers: ''
   biotools: ete
   bunya: ''
@@ -7071,6 +7192,39 @@
   resources:
   - title: .nan
     url: .nan
+- biocontainers: control-freec
+  biotools: freec
+  bunya: ''
+  description: A tool for control-free copy number alteration (CNA) and allelic imbalances
+    (LOH) detection using deep-sequencing data, particularly useful for cancer studies.
+  edam-inputs: []
+  edam-operations:
+  - Copy number estimation
+  - Variant calling
+  - Genome alignment
+  edam-outputs: []
+  edam-topics:
+  - DNA structural variation
+  - Oncology
+  - Human genetics
+  - Data mining
+  galaxy:
+  - description: 'Control-FREEC: detects copy-number changes and allelic imbalances'
+    title: Control-FREEC 11.6+galaxy2
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fcontrol_freec%2Fcontrol_freec%2F11.6%2Bgalaxy2
+  homepage: http://boevalab.com/FREEC/
+  id: freec
+  license: ''
+  name: FREEC
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications:
+  - title: 10.1093/bioinformatics/btq635
+    url: https://doi.org/10.1093/bioinformatics/btq635
+  resources:
+  - title: .nan
+    url: .nan
 - biocontainers: ''
   biotools: ''
   bunya:
@@ -7299,6 +7453,9 @@
   - description: 'LAV to BED: Converts a LAV formatted file to BED format'
     title: LAV to BED 1.0.0
     url: https://usegalaxy.org.au/root?tool_id=lav_to_bed1
+  - description: 'Convert a 10X BAM file to FASTQ: '
+    title: Convert a 10X BAM file to FASTQ 1.4.1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2F10x_bamtofastq%2F10x_bamtofastq%2F1.4.1
   - description: 'Convert SAM to BAM without sorting: '
     title: Convert SAM to BAM without sorting 1.0.1
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_sam_to_unsorted_bam
@@ -14826,6 +14983,29 @@
   resources:
   - title: .nan
     url: .nan
+- biocontainers: ''
+  biotools: ''
+  bunya: ''
+  description: ''
+  edam-inputs: ''
+  edam-operations: ''
+  edam-outputs: ''
+  edam-topics: ''
+  galaxy:
+  - description: 'Process single-cell intensities: '
+    title: Process single-cell intensities 0.0.1+galaxy5
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgoeckslab%2Fcell_intensity_processing%2Fcell_intensity_processing%2F0.0.1%2Bgalaxy5
+  homepage: ''
+  id: mti
+  license: ''
+  name: multiplexed tissue imaging (MTI)
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications: ''
+  resources:
+  - title: .nan
+    url: .nan
 - biocontainers: multiqc
   biotools: multiqc
   bunya:
@@ -17352,6 +17532,45 @@
   - title: .nan
     url: .nan
 - biocontainers: ''
+  biotools: polypolish
+  bunya: ''
+  description: Polypolish is a tool for polishing genome assemblies with short reads.
+    Unlike other tools in this category, Polypolish uses SAM files where each read
+    has been aligned to all possible locations (not just a single best location).
+    This allows it to repair errors in repeat regions that other alignment-based polishers
+    cannot fix.
+  edam-inputs:
+  - formats:
+    - FASTA
+    term: FASTA
+  edam-operations:
+  - Genome assembly
+  - Read mapping
+  - Mapping assembly
+  - Sequencing error detection
+  edam-outputs: []
+  edam-topics:
+  - Sequence assembly
+  - Sequence composition, complexity and repeats
+  - Mapping
+  galaxy:
+  - description: 'Polypolish: Short-read polishing of long-read bacterial genome assemblies'
+    title: Polypolish 0.6.0+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fpolypolish%2Fpolypolish%2F0.6.0%2Bgalaxy0
+  homepage: https://github.com/rrwick/Polypolish
+  id: polypolish
+  license: ''
+  name: Polypolish
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications:
+  - title: 'Polypolish: Short-read polishing of long-read bacterial genome assemblies'
+    url: https://doi.org/10.1371/journal.pcbi.1009802
+  resources:
+  - title: .nan
+    url: .nan
+- biocontainers: ''
   biotools: ''
   bunya: ''
   description: ''
@@ -18847,6 +19066,33 @@
   - title: .nan
     url: .nan
 - biocontainers: ''
+  biotools: rapidnj
+  bunya: ''
+  description: A tool for fast canonical neighbor-joining tree construction.
+  edam-inputs: []
+  edam-operations:
+  - Phylogenetic tree generation
+  edam-outputs: []
+  edam-topics:
+  - Phylogeny
+  galaxy:
+  - description: 'Join neighbors: rapidly with RapidNJ'
+    title: Join neighbors 2.3.2
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Frapidnj%2Frapidnj%2F2.3.2
+  homepage: http://birc.au.dk/software/rapidnj/
+  id: rapidnj
+  license: ''
+  name: RapidNJ
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications:
+  - title: Rapid neighbour-joining
+    url: https://doi.org/10.1007/978-3-540-87361-7_10
+  resources:
+  - title: .nan
+    url: .nan
+- biocontainers: ''
   biotools: ratatosk
   bunya:
   - 0.7.6.3--h43eeafb_2
@@ -19074,6 +19320,39 @@
   publications:
   - title: 'RECON: A program for prediction of nucleosome formation potential'
     url: http://www.ncbi.nlm.nih.gov/pubmed/15215408
+  resources:
+  - title: .nan
+    url: .nan
+- biocontainers: ''
+  biotools: Recentrifuge
+  bunya: ''
+  description: Robust comparative analysis and contamination removal for metagenomics.
+  edam-inputs: []
+  edam-operations:
+  - Taxonomic classification
+  - Expression analysis
+  - Cross-assembly
+  edam-outputs: []
+  edam-topics:
+  - Metagenomics
+  - Microbial ecology
+  - Metagenomic sequencing
+  galaxy:
+  - description: 'Recentrifuge: Robust comparative analysis and contamination removal
+      for metagenomics'
+    title: Recentrifuge 1.15.0+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Frecentrifuge%2Frecentrifuge%2F1.15.0%2Bgalaxy0
+  homepage: https://sites.google.com/view/recentrifuge
+  id: Recentrifuge
+  license: AGPL-3.0
+  name: Recentrifuge
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications:
+  - title: 'Recentrifuge: Robust comparative analysis and contamination removal for
+      metagenomics'
+    url: https://doi.org/10.1371/journal.pcbi.1006967
   resources:
   - title: .nan
     url: .nan
@@ -19835,6 +20114,10 @@
       of transcript abundance from RNA-seq reads'
     title: Salmon quant 1.10.1+galaxy2
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Fsalmon%2Fsalmon%2F1.10.1%2Bgalaxy2
+  - description: 'Alevin: Quantification and analysis of 3-prime tagged-end single-cell
+      sequencing data'
+    title: Alevin 1.10.1+galaxy2
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Falevin%2Falevin%2F1.10.1%2Bgalaxy2
   homepage: https://combine-lab.github.io/salmon
   id: salmon
   license: GPL-3.0
@@ -20306,6 +20589,10 @@
   - description: 'Scater: PCA plot: cell-level reduced dimension of a normalised SCE'
     title: 'Scater: PCA plot 1.22.0'
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fscater_plot_pca%2Fscater_plot_pca%2F1.22.0
+  - description: 'Scater: normalize SCE: Compute normalised expression values for
+      SCE'
+    title: 'Scater: normalize SCE 1.12.2'
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fscater_normalize%2Fscater_normalize%2F1.12.2
   homepage: http://bioconductor.org/packages/release/bioc/html/scater.html
   id: scater
   license: ''
@@ -20479,6 +20766,39 @@
   - '1.4'
   pawsey: ''
   publications: ''
+  resources:
+  - title: .nan
+    url: .nan
+- biocontainers: ''
+  biotools: scran
+  bunya: ''
+  description: Implements a variety of low-level analyses of single-cell RNA-seq data.
+    Methods are provided for normalization of cell-specific biases, assignment of
+    cell cycle phase, and detection of highly variable and significantly correlated
+    genes.
+  edam-inputs: []
+  edam-operations:
+  - RNA-Seq analysis
+  edam-outputs: []
+  edam-topics:
+  - Cell biology
+  - RNA-seq
+  galaxy:
+  - description: 'scran_normalize: Normalize raw counts expression values using deconvolution
+      size factors'
+    title: scran_normalize 1.28.1+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fartbio%2Fgsc_scran_normalize%2Fscran_normalize%2F1.28.1%2Bgalaxy0
+  homepage: http://bioconductor.org/packages/release/bioc/html/scran.html
+  id: scran
+  license: GPL-3.0
+  name: scran
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications:
+  - title: 'A step-by-step workflow for low-level analysis of single-cell RNA-seq
+      data [version 1; referees: 5 approved with reservations]'
+    url: https://doi.org/10.12688/f1000research.9501.1
   resources:
   - title: .nan
     url: .nan
@@ -20961,6 +21281,31 @@
   publications:
   - title: 10.1101/2020.07.06.190629
     url: https://doi.org/10.1101/2020.07.06.190629
+  resources:
+  - title: .nan
+    url: .nan
+- biocontainers: ''
+  biotools: sinto
+  bunya: ''
+  description: Sinto is a toolkit for processing aligned single-cell data.
+  edam-inputs: ''
+  edam-operations: ''
+  edam-outputs: ''
+  edam-topics:
+  - Bioinformatics
+  - Cell biology
+  galaxy:
+  - description: 'Sinto barcode: add cell barcodes to FASTQ read names'
+    title: Sinto barcode 0.10.1+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fsinto_barcode%2Fsinto_barcode%2F0.10.1%2Bgalaxy0
+  homepage: https://timoast.github.io/sinto
+  id: sinto
+  license: MIT
+  name: sinto
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications: ''
   resources:
   - title: .nan
     url: .nan
