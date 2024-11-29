@@ -117,7 +117,7 @@ def get_request(url, headers={}):
     try:
         req = requests.get(url, headers=headers)
         req.raise_for_status()
-        print(f"Success- requesting: {url}")
+        print(f"Success - requesting: {url}")
         return req
     except ConnectionError:
         print("Error: Failed to connect to the server. Please check the server address and network connection.")

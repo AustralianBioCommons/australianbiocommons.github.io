@@ -1,4 +1,47 @@
 - class: galaxy
+  doi: 10.48546/workflowhub.workflow.881.5
+  edam_ops: ''
+  edam_top: ''
+  guide_link: ''
+  launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=881
+  license: GPL-3.0
+  projects:
+  - Australian BioCommons
+  - Galaxy Australia
+  remote_link: ''
+  title: Fgenesh annotation -TSI
+  tools:
+  - id: https://bio.tools/busco
+    name: BUSCO
+  - id: https://bio.tools/fgenesh
+    name: FGENESH
+  updated_at: '2024-11-17'
+  url: /workflows/881?version=5
+- class: galaxy
+  doi: ''
+  edam_ops: ''
+  edam_top:
+  - Metagenomics
+  - Taxonomy
+  guide_link: ''
+  launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=1199
+  license: CC-BY-4.0
+  projects:
+  - QCIF Bioinformatics
+  remote_link: ''
+  title: Taxonomy classification using Kraken2 and Bracken
+  tools:
+  - id: https://bio.tools/kraken2
+    name: kraken2
+  - id: https://bio.tools/bracken
+    name: Bracken
+  - id: https://bio.tools/krakentools
+    name: KrakenTools
+  - id: https://bio.tools/taxonomy_krona_chart
+    name: taxonomy_krona_chart
+  updated_at: '2024-11-13'
+  url: /workflows/1199?version=1
+- class: galaxy
   doi: 10.48546/workflowhub.workflow.1114.1
   edam_ops: ''
   edam_top: ''
@@ -89,23 +132,6 @@
     name: RepeatMasker
   updated_at: '2024-06-20'
   url: /workflows/875?version=3
-- class: galaxy
-  doi: 10.48546/workflowhub.workflow.881.4
-  edam_ops: ''
-  edam_top: ''
-  guide_link: ''
-  launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=881
-  license: GPL-3.0
-  projects:
-  - Australian BioCommons
-  - Galaxy Australia
-  remote_link: ''
-  title: Fgenesh annotation -TSI
-  tools:
-  - id: https://bio.tools/busco
-    name: BUSCO
-  updated_at: '2024-06-18'
-  url: /workflows/881?version=4
 - class: galaxy
   doi: ''
   edam_ops: ''
