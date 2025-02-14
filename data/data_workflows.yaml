@@ -1,24 +1,35 @@
-- class: galaxy
-  doi: 10.48546/workflowhub.workflow.881.5
+- class: nextflow
+  doi: 10.48546/workflowhub.workflow.1263.1
+  edam_ops: ''
+  edam_top:
+  - Bioinformatics
+  - Genomics
+  guide_link: ''
+  launch_link: ''
+  license: GPL-3.0
+  projects:
+  - Sydney Informatics Hub
+  remote_link: https://github.com/Sydney-Informatics-Hub/ONT-bacpac-nf
+  title: ONT-bacpac-nf
+  tools: ''
+  updated_at: '2025-01-31'
+  url: /workflows/1263?version=1
+- class: nextflow
+  doi: 10.48546/workflowhub.workflow.683.3
   edam_ops: ''
   edam_top: ''
   guide_link: ''
-  launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=881
-  license: GPL-3.0
+  launch_link: ''
+  license: MIT
   projects:
-  - Australian BioCommons
-  - Galaxy Australia
-  remote_link: ''
-  title: Fgenesh annotation -TSI
-  tools:
-  - id: https://bio.tools/busco
-    name: BUSCO
-  - id: https://bio.tools/fgenesh
-    name: FGENESH
-  updated_at: '2024-11-17'
-  url: /workflows/881?version=5
+  - QCIF Bioinformatics
+  remote_link: https://github.com/eresearchqut/ontvisc.git
+  title: ONTViSc (ONT-based Viral Screening for Biosecurity)
+  tools: ''
+  updated_at: '2024-12-18'
+  url: /workflows/683?version=3
 - class: galaxy
-  doi: ''
+  doi: 10.48546/workflowhub.workflow.1199.2
   edam_ops: ''
   edam_top:
   - Metagenomics
@@ -39,8 +50,67 @@
     name: KrakenTools
   - id: https://bio.tools/taxonomy_krona_chart
     name: taxonomy_krona_chart
-  updated_at: '2024-11-13'
-  url: /workflows/1199?version=1
+  updated_at: '2024-12-10'
+  url: /workflows/1199?version=2
+- class: nextflow
+  doi: ''
+  edam_ops: ''
+  edam_top: ''
+  guide_link: ''
+  launch_link: ''
+  license: MIT
+  projects:
+  - National Computational Infrastructure (NCI) WorkflowHub team
+  remote_link: https://github.com/kisarur/deepvariant-nextflow.git
+  title: deepvariant-nextflow
+  tools:
+  - id: https://bio.tools/nextflow
+    name: Nextflow
+  - id: https://bio.tools/deepvariant
+    name: DeepVariant
+  updated_at: '2024-12-16'
+  url: /workflows/1222?version=2
+- class: galaxy
+  doi: ''
+  edam_ops: ''
+  edam_top: ''
+  guide_link: ''
+  launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=403
+  license: GPL-3.0
+  projects:
+  - Galaxy Australia
+  remote_link: https://github.com/AustralianBioCommons/Genome-assessment-post-assembly.git
+  title: Genome-assessment-post-assembly
+  tools:
+  - id: https://bio.tools/quast
+    name: QUAST
+  - id: https://bio.tools/busco
+    name: BUSCO
+  - id: https://bio.tools/merqury
+    name: Merqury
+  - id: https://bio.tools/fastx-toolkit
+    name: FASTX-Toolkit
+  updated_at: '2024-12-04'
+  url: /workflows/403?version=9
+- class: galaxy
+  doi: 10.48546/workflowhub.workflow.881.5
+  edam_ops: ''
+  edam_top: ''
+  guide_link: ''
+  launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=881
+  license: GPL-3.0
+  projects:
+  - Australian BioCommons
+  - Galaxy Australia
+  remote_link: ''
+  title: Fgenesh annotation -TSI
+  tools:
+  - id: https://bio.tools/busco
+    name: BUSCO
+  - id: https://bio.tools/fgenesh
+    name: FGENESH
+  updated_at: '2024-11-17'
+  url: /workflows/881?version=5
 - class: galaxy
   doi: 10.48546/workflowhub.workflow.1114.1
   edam_ops: ''
@@ -62,30 +132,6 @@
     name: Bandage
   updated_at: '2024-09-03'
   url: /workflows/1114?version=1
-- class: galaxy
-  doi: ''
-  edam_ops:
-  - Sequence assembly validation
-  edam_top:
-  - Sequence assembly
-  guide_link: ''
-  launch_link: https://usegalaxy.org.au/workflows/trs_import?trs_server=workflowhub.eu&trs_id=403
-  license: GPL-3.0
-  projects:
-  - Galaxy Australia
-  remote_link: https://github.com/AustralianBioCommons/Genome-assessment-post-assembly
-  title: Genome-assessment-post-assembly
-  tools:
-  - id: https://bio.tools/quast
-    name: QUAST
-  - id: https://bio.tools/busco
-    name: BUSCO
-  - id: https://bio.tools/merqury
-    name: Merqury
-  - id: https://bio.tools/fastx-toolkit
-    name: FASTX-Toolkit
-  updated_at: '2024-08-06'
-  url: /workflows/403?version=5
 - class: galaxy
   doi: 10.48546/workflowhub.workflow.1054.1
   edam_ops: ''
@@ -409,20 +455,6 @@
     name: Merqury
   updated_at: '2024-08-06'
   url: /workflows/794?version=2
-- class: nextflow
-  doi: 10.48546/workflowhub.workflow.683.1
-  edam_ops: ''
-  edam_top: ''
-  guide_link: ''
-  launch_link: ''
-  license: CC-BY-4.0
-  projects:
-  - Australian BioCommons
-  remote_link: https://github.com/eresearchqut/ontvisc.git
-  title: ONTViSc (ONT-based Viral Screening for Biosecurity)
-  tools: ''
-  updated_at: '2024-02-19'
-  url: /workflows/683?version=1
 - class: nextflow
   doi: ''
   edam_ops: ''
