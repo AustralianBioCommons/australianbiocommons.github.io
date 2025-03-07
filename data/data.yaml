@@ -241,6 +241,7 @@
   biotools: anaconda
   bunya:
   - '2022.05'
+  - 2023.09-0                          (D)
   description: "Software package specially developed for the study of genes\u2019\
     \ primary structure. It uses gene sequences downloaded from public databases,\
     \ as FASTA and GenBank, and it applies a set of statistical and visualization\
@@ -607,7 +608,7 @@
   biotools: augustus
   bunya:
   - 3.4.0-foss-2021a
-  - 3.5.0-foss-2022a                 (D)
+  - 3.5.0-foss-2022a                    (D)
   description: AUGUSTUS is a eukaryotic gene prediction tool. It can integrate evidence,
     e.g. from RNA-Seq, ESTs, proteomics, but can also predict genes ab initio. The
     PPX extension to AUGUSTUS can take a protein sequence multiple sequence alignment
@@ -774,7 +775,7 @@
   biotools: bamtools
   bunya:
   - 2.5.2-gcc-10.3.0
-  - 2.5.2-gcc-11.3.0                 (D)
+  - 2.5.2-gcc-11.3.0                    (D)
   description: BamTools provides a fast, flexible C++ API & toolkit for reading, writing,
     and managing BAM files.
   edam-inputs: []
@@ -965,7 +966,7 @@
 - biocontainers: ''
   biotools: ''
   bunya:
-  - 1.5.3        matlab
+  - 1.5.3
   description: ''
   edam-inputs: ''
   edam-operations: ''
@@ -987,7 +988,7 @@
   biotools: bbmap
   bunya:
   - 38.96-gcc-10.3.0
-  - 39.01-gcc-11.3.0                    (D)
+  - 39.01-gcc-11.3.0                       (D)
   description: BBMap is a fast splice-aware aligner for RNA and DNA.  It is faster
     than almost all short-read aligners, yet retains unrivaled sensitivity and specificity,
     particularly for reads with many errors and indels.
@@ -1106,7 +1107,8 @@
   biotools: bcftools
   bunya:
   - 1.12-gcc-10.3.0
-  - 1.15.1-gcc-11.3.0                (D)
+  - 1.15.1-gcc-11.3.0
+  - 1.18-gcc-12.3.0                     (D)
   description: BCFtools is a set of utilities that manipulate variant calls in the
     Variant Call Format (VCF) and its binary counterpart BCF. All commands work transparently
     with both VCFs and BCFs, both uncompressed and BGZF-compressed.
@@ -1310,7 +1312,7 @@
   biotools: beagle-lib
   bunya:
   - 3.1.2-gcc-11.3.0
-  - 4.0.0-gcc-11.3.0               (D)
+  - 4.0.0-gcc-11.3.0                  (D)
   description: BEAGLE is a high-performance library that can perform the core calculations
     at the heart of most Bayesian and Maximum Likelihood phylogenetics packages.
   edam-inputs: []
@@ -1438,7 +1440,7 @@
   biotools: bedtools
   bunya:
   - 2.30.0-gcc-10.3.0
-  - 2.30.0-gcc-11.3.0                (D)
+  - 2.30.0-gcc-11.3.0                   (D)
   description: BEDTools is an extensive suite of utilities for comparing genomic features
     in BED format.
   edam-inputs: []
@@ -1703,7 +1705,7 @@
   biotools: ''
   bunya:
   - 1.7.3-gcc-10.3.0
-  - 1.7.3-gcc-11.3.0       (D)
+  - 1.7.3-gcc-11.3.0          (D)
   description: ''
   edam-inputs: ''
   edam-operations: ''
@@ -1870,7 +1872,7 @@
   biotools: bioperl
   bunya:
   - 1.7.8-gcccore-10.3.0
-  - 1.7.8-gcccore-11.3.0              (D)
+  - 1.7.8-gcccore-11.3.0                 (D)
   description: A collection of Perl modules that facilitate the development of Perl
     scripts for bioinformatics applications.  It provides software modules for many
     of the typical tasks of bioinformatics programming.
@@ -1901,7 +1903,7 @@
   biotools: biopython
   bunya:
   - 1.79-foss-2021a
-  - 1.79-foss-2022a                 (D)
+  - 1.79-foss-2022a                    (D)
   description: Biopython is a set of freely available tools for biological computation
     written in Python by an international team of developers.
   edam-inputs: []
@@ -2086,7 +2088,7 @@
   biotools: blast
   bunya:
   - 2.11.0-gompi-2021a
-  - 2.13.0-gompi-2022a                 (D)
+  - 2.13.0-gompi-2022a                    (D)
   description: A tool that finds regions of similarity between biological sequences.
     The program compares nucleotide or protein sequences to sequence databases and
     calculates the statistical significance.
@@ -2297,7 +2299,8 @@
   biotools: boost
   bunya:
   - 1.76.0-gcc-10.3.0
-  - 1.79.0-gcc-11.3.0                   (D)
+  - 1.79.0-gcc-11.3.0
+  - 1.82.0-gcc-12.3.0                      (D)
   description: Boost is a set of libraries for the C++ programming language that provides
     support for tasks and structures such as linear algebra, pseudorandom number generation,
     multithreading, image processing, regular expressions, and unit testing.
@@ -2387,7 +2390,7 @@
   biotools: bowtie2
   bunya:
   - 2.4.4-gcc-10.3.0
-  - 2.4.5-gcc-11.3.0                  (D)
+  - 2.4.5-gcc-11.3.0                     (D)
   description: 'Bowtie 2 is an ultrafast and memory-efficient tool for aligning sequencing
     reads to long reference sequences. It is particularly good at aligning reads of
     about 50 up to 100s or 1,000s of characters, and particularly good at aligning
@@ -2550,7 +2553,7 @@
   biotools: busco
   bunya:
   - 5.4.2-foss-2021a
-  - 5.4.5-foss-2022a                    (D)
+  - 5.4.5-foss-2022a                       (D)
   description: Provides measures for quantitative assessment of genome assembly, gene
     set, and transcriptome completeness based on evolutionarily informed expectations
     of gene content from near-universal single-copy orthologs.
@@ -2635,7 +2638,7 @@
   biotools: bwa
   bunya:
   - 0.7.17-gcc-10.3.0
-  - 0.7.17-gcccore-11.3.0                 (D)
+  - 0.7.17-gcccore-11.3.0                    (D)
   description: Fast, accurate, memory-efficient aligner for short and long sequencing
     reads
   edam-inputs:
@@ -2928,7 +2931,7 @@
   biotools: canu
   bunya:
   - 2.2-gcccore-10.3.0
-  - 2.2-gcccore-11.3.0                   (D)
+  - 2.2-gcccore-11.3.0                      (D)
   description: De-novo assembly tool for long read chemistry like Nanopore data and
     PacBio data.
   edam-inputs: []
@@ -3104,7 +3107,7 @@
   biotools: cd-hit
   bunya:
   - 4.8.1-gcc-10.3.0
-  - 4.8.1-gcc-11.3.0                   (D)
+  - 4.8.1-gcc-11.3.0                      (D)
   description: Cluster a nucleotide dataset into representative sequences.
   edam-inputs:
   - formats:
@@ -3409,7 +3412,7 @@
   biotools: checkm
   bunya:
   - 1.1.3-foss-2021a
-  - 1.2.2-foss-2022a                   (D)
+  - 1.2.2-foss-2022a                      (D)
   description: CheckM provides a set of tools for assessing the quality of genomes
     recovered from isolates, single cells, or metagenomes.
   edam-inputs: []
@@ -4354,7 +4357,7 @@
 - biocontainers: ''
   biotools: Crisflash
   bunya:
-  - 1.2.0        star-ccm+
+  - 1.2.0
   description: Software to generate CRISPR guide RNAs against genomes annotated with
     individual variation.
   edam-inputs: ''
@@ -4606,7 +4609,7 @@
   biotools: cutadapt
   bunya:
   - 3.4-gcccore-10.3.0
-  - 4.2-gcccore-11.3.0               (D)
+  - 4.2-gcccore-11.3.0                  (D)
   description: Find and remove adapter sequences, primers, poly-A tails and other
     types of unwanted sequence from your high-throughput sequencing reads.
   edam-inputs:
@@ -4898,7 +4901,7 @@
   biotools: deeptools
   bunya:
   - 3.5.0-foss-2021a
-  - 3.5.2-foss-2022a                (D)
+  - 3.5.2-foss-2022a                   (D)
   description: User-friendly tools for the normalization and visualization of deep-sequencing
     data.
   edam-inputs: []
@@ -4992,7 +4995,7 @@
   biotools: dendropy
   bunya:
   - 4.5.2-gcccore-10.3.0
-  - 4.5.2-gcccore-11.3.0             (D)
+  - 4.5.2-gcccore-11.3.0                (D)
   description: DendroPy is a Python library for phylogenetic computing. It provides
     classes and functions for the simulation, processing, and manipulation of phylogenetic
     trees and character matrices, and supports the reading and writing of phylogenetic
@@ -5136,7 +5139,8 @@
     url: .nan
 - biocontainers: ''
   biotools: DIA-NN
-  bunya: ''
+  bunya:
+  - 1.8.1
   description: 'Neural networks and interference correction enable deep proteome coverage
     in high throughput.
 
@@ -5224,7 +5228,7 @@
   biotools: diamond
   bunya:
   - 2.0.13-gcc-10.3.0
-  - 2.1.0-gcc-11.3.0                  (D)
+  - 2.1.0-gcc-11.3.0                     (D)
   - 2.1.7
   description: Sequence aligner for protein and translated DNA searches and functions
     as a drop-in replacement for the NCBI BLAST software tools. It is suitable for
@@ -5481,6 +5485,9 @@
   biotools: easybuild
   bunya:
   - 4.8.0
+  - 4.9.0
+  - 4.9.3
+  - 4.9.4                              (D)
   description: EasyBuild is a software build and installation framework that allows
     you to manage (scientific) software on High Performance Computing (HPC) systems
     in an efficient way.
@@ -7281,9 +7288,14 @@
 - biocontainers: ''
   biotools: ''
   bunya:
+  - .2.6.4-gcccore-10.3.0                   (H)
+  - .2.6.4-gcccore-11.3.0                   (H)
+  - .2.6.4-gcccore-12.3.0                   (H)
+  - .2.6.4-gcccore-13.3.0                   (H)
+  - .2.6.4                                  (H)
   - 2.6.4-gcccore-10.3.0
   - 2.6.4-gcccore-11.3.0
-  - 2.6.4-gcccore-12.3.0                 (D)
+  - 2.6.4-gcccore-12.3.0                    (D)
   description: ''
   edam-inputs: ''
   edam-operations: ''
@@ -7582,6 +7594,37 @@
   - title: .nan
     url: .nan
 - biocontainers: ''
+  biotools: freesurfer
+  bunya:
+  - 7.3.2
+  description: Wrapper functions that interface with 'Freesurfer', a powerful and
+    commonly-used 'neuroimaging' software, using system commands. The goal is to be
+    able to interface with 'Freesurfer' completely in R, where you pass R objects
+    of class 'nifti', implemented by package 'oro.nifti', and the function executes
+    an 'Freesurfer' command and returns an R object of class 'nifti' or necessary
+    output.
+  edam-inputs: []
+  edam-operations:
+  - Service invocation
+  edam-outputs: []
+  edam-topics:
+  - MRI
+  galaxy: ''
+  homepage: https://cran.r-project.org/web/packages/freesurfer/index.html
+  id: freesurfer
+  license: GPL-3.0
+  name: freesurfer
+  nci-gadi: ''
+  nci-if89: ''
+  pawsey: ''
+  publications:
+  - title: 'Freesurfer: Connecting the Freesurfer software with R [version 1; referees:
+      2 approved]'
+    url: https://doi.org/10.12688/f1000research.14361.1
+  resources:
+  - title: .nan
+    url: .nan
+- biocontainers: ''
   biotools: ''
   bunya:
   - 20141119-gcccore-10.3.0
@@ -7815,39 +7858,36 @@
   - description: 'Convert BED, GFF, or VCF to BigWig: '
     title: Convert BED, GFF, or VCF to BigWig 1.0.1
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bed_gff_or_vcf_to_bigwig_0
-  - description: 'Convert FASTQ files to seek locations: '
-    title: Convert FASTQ files to seek locations 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fastq_to_fqtoc0
-  - description: 'OpenBabel converter for molecular formats: '
-    title: OpenBabel converter for molecular formats 2.4.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_molecules
-  - description: 'Convert GFF to Feature Location Index: '
-    title: Convert GFF to Feature Location Index 1.0.0
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_gff_to_fli_0
   - description: 'Convert uncompressed file to compressed: '
     title: Convert uncompressed file to compressed 1.16+galaxy0
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_uncompressed_to_gz
+  - description: 'Convert FASTQ files to seek locations: '
+    title: Convert FASTQ files to seek locations 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fastq_to_fqtoc0
+  - description: 'Convert GFF to Feature Location Index: '
+    title: Convert GFF to Feature Location Index 1.0.0
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_gff_to_fli_0
+  - description: 'OpenBabel converter for molecular formats: '
+    title: OpenBabel converter for molecular formats 2.4.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_molecules
   - description: 'Convert Genomic Intervals To Strict BED: '
     title: Convert Genomic Intervals To Strict BED 1.0.1
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_bedstrict_0
   - description: 'Convert InChI to MOL: '
     title: Convert InChI to MOL 2.4.1
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_inchi_to_mol
-  - description: 'Convert BigWig to Wiggle: Convert bigWig to wig'
-    title: Convert BigWig to Wiggle 377+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=bigwigtowig
-  - description: 'Convert BAM to queryname-sorted BAM: '
-    title: Convert BAM to queryname-sorted BAM 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bam_to_qname_sorted_bam
   - description: 'Convert FASTA to Bowtie color space Index: '
     title: Convert FASTA to Bowtie color space Index 1.2.3
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fasta_to_bowtie_color_index
-  - description: 'Convert FASTA to Bowtie base space Index: '
-    title: Convert FASTA to Bowtie base space Index 1.3.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fasta_to_bowtie_base_index
+  - description: 'Convert BAM to queryname-sorted BAM: '
+    title: Convert BAM to queryname-sorted BAM 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bam_to_qname_sorted_bam
   - description: 'Convert plink pbed to linkage lped: '
     title: Convert plink pbed to linkage lped 0.02
     url: https://usegalaxy.org.au/root?tool_id=pbed2lpedconvert
+  - description: 'Convert FASTA to Bowtie base space Index: '
+    title: Convert FASTA to Bowtie base space Index 1.3.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fasta_to_bowtie_base_index
   - description: 'Convert compressed file to uncompressed.: '
     title: Convert compressed file to uncompressed. 1.0.0
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_gz_to_uncompressed
@@ -7857,15 +7897,15 @@
   - description: 'Convert compressed and uncompressed BCF files: '
     title: Convert compressed and uncompressed BCF files 0.0.1
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bcf_uncompressed_to_bcf
+  - description: 'Convert BAM to coordinate-sorted BAM: '
+    title: Convert BAM to coordinate-sorted BAM 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bam_to_coodinate_sorted_bam
   - description: 'Convert compressed file to uncompressed.: '
     title: Convert compressed file to uncompressed. 1.0.1
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bz2_to_uncompressed
   - description: 'Convert XTC, DCD, and TRR: '
     title: Convert XTC, DCD, and TRR 1.0.0
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_mdconvert
-  - description: 'Convert BAM to coordinate-sorted BAM: '
-    title: Convert BAM to coordinate-sorted BAM 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bam_to_coodinate_sorted_bam
   - description: 'Convert Ref taxonomy to Seq Taxonomy: converts 2 or 3 column sequence
       taxonomy file to a 2 column mothur taxonomy_outline format'
     title: Convert Ref taxonomy to Seq Taxonomy 1.0.1
@@ -7876,9 +7916,15 @@
   - description: 'Convert Picard Interval List to BED6: converter'
     title: Convert Picard Interval List to BED6 1.0.1
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_picard_interval_list_to_bed6
+  - description: 'Convert GFF to Interval Index: '
+    title: Convert GFF to Interval Index 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_gff_to_interval_index_0
   - description: 'Convert BED to Feature Location Index: '
     title: Convert BED to Feature Location Index 1.0.0
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bed_to_fli_0
+  - description: 'Convert SMILES to MOL: '
+    title: Convert SMILES to MOL 2.4.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_SMILES_to_MOL
   - description: 'Convert Bam to Bai: '
     title: Convert Bam to Bai 1.0.1
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_Bam_Bai_0
@@ -7906,9 +7952,6 @@
   - description: 'Convert BedGraph to BigWig: '
     title: Convert BedGraph to BigWig 1.0.1
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bedgraph_to_bigwig
-  - description: 'Convert neostore.zip files to neostore: '
-    title: Convert neostore.zip files to neostore 1.0.0
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_neostorezip_to_neostore
   - description: 'Convert FASTA to len file: '
     title: Convert FASTA to len file 1.0.1
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fasta_to_len
@@ -7921,36 +7964,27 @@
   - description: 'Convert BED to GFF: '
     title: Convert BED to GFF 2.0.1
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bed_to_gff_0
-  - description: 'Convert Genomic Intervals To BED: '
-    title: Convert Genomic Intervals To BED 1.0.0
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_bed_0
   - description: 'Convert Genomic Intervals To Strict BED12: '
     title: Convert Genomic Intervals To Strict BED12 1.0.0
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_bed12_0
   - description: 'Convert tabular to dbnsfp: '
     title: Convert tabular to dbnsfp 1.0.2
     url: https://usegalaxy.org.au/root?tool_id=tabular_to_dbnsfp
-  - description: 'Convert SMILES to MOL: '
-    title: Convert SMILES to MOL 2.4.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_SMILES_to_MOL
-  - description: 'Convert Biom datasets: '
-    title: Convert Biom datasets 2.1.5
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_biom
-  - description: 'Convert GFF to Interval Index: '
-    title: Convert GFF to Interval Index 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_gff_to_interval_index_0
   - description: 'Convert PDB to GRO: '
     title: Convert PDB to GRO 1.0.0
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_Pdb_to_Gro_0
+  - description: 'Convert neostore.zip files to neostore: '
+    title: Convert neostore.zip files to neostore 1.0.0
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_neostorezip_to_neostore
+  - description: 'Convert Biom datasets: '
+    title: Convert Biom datasets 2.1.5
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_biom
   - description: 'Convert Len file to Linecount: '
     title: Convert Len file to Linecount 1.0.1
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_len_to_linecount
   - description: 'Convert FASTA to fai file: '
     title: Convert FASTA to fai file 1.0.1
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fasta_to_fai
-  - description: 'SMILES to SMILES: '
-    title: SMILES to SMILES 2.4.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_smiles_to_smiles
   - description: 'Convert lped to fped: '
     title: Convert lped to fped 0.02
     url: https://usegalaxy.org.au/root?tool_id=lped2fpedconvert
@@ -7960,12 +7994,15 @@
   - description: 'Convert BGZ VCF to tabix: '
     title: Convert BGZ VCF to tabix 1.0.2
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_vcf_bgzip_to_tabix_0
-  - description: 'Convert SAM to BAM without sorting: '
-    title: Convert SAM to BAM without sorting 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_sam_to_unsorted_bam
+  - description: 'Convert Genomic Intervals To BED: '
+    title: Convert Genomic Intervals To BED 1.0.0
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_bed_0
   - description: 'Convert tabular to CSV: '
     title: Convert tabular to CSV 1.0.0
     url: https://usegalaxy.org.au/root?tool_id=tabular_to_csv
+  - description: 'Convert SAM to BAM without sorting: '
+    title: Convert SAM to BAM without sorting 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_sam_to_unsorted_bam
   - description: 'Convert GFF to BED: '
     title: Convert GFF to BED 1.0.1
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_gff_to_bed_0
@@ -7975,21 +8012,27 @@
   - description: 'Convert Parquet to csv: '
     title: Convert Parquet to csv 1.0.0
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_parquet_to_csv
+  - description: 'Convert BigWig to Wiggle: Convert bigWig to wig'
+    title: Convert BigWig to Wiggle 377+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=bigwigtowig
   - description: 'Convert CSV to tabular: '
     title: Convert CSV to tabular 1.0.0
     url: https://usegalaxy.org.au/root?tool_id=csv_to_tabular
   - description: 'Convert lped to plink pbed: '
     title: Convert lped to plink pbed 0.02
     url: https://usegalaxy.org.au/root?tool_id=lped2pbedconvert
-  - description: 'Convert GRO to PDB: '
-    title: Convert GRO to PDB 1.0.0
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_Gro_to_Pdb_0
   - description: 'Convert MAF to Genomic Intervals: '
     title: Convert MAF to Genomic Intervals 1.0.3
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_maf_to_interval_0
+  - description: 'Convert GRO to PDB: '
+    title: Convert GRO to PDB 1.0.0
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_Gro_to_Pdb_0
   - description: 'Convert Genomic Intervals To Coverage: '
     title: Convert Genomic Intervals To Coverage 1.0.1
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_bigwig_0
+  - description: 'SMILES to SMILES: '
+    title: SMILES to SMILES 2.4.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_smiles_to_smiles
   - description: 'Convert CML to SMILES: '
     title: Convert CML to SMILES 2.4.1
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_cml_to_smiles
@@ -9371,7 +9414,8 @@
   biotools: ''
   bunya:
   - 9.54.0-gcccore-10.3.0
-  - 9.56.1-gcccore-11.3.0         (D)
+  - 9.56.1-gcccore-11.3.0
+  - 10.01.2-gcccore-12.3.0           (D)
   description: ''
   edam-inputs: ''
   edam-operations: ''
@@ -9463,7 +9507,7 @@
   biotools: parallel
   bunya:
   - 20210622-gcccore-10.3.0
-  - 20220722-gcccore-11.3.0          (D)
+  - 20220722-gcccore-11.3.0             (D)
   description: GNU parallel is a shell tool for executing jobs in parallel using one
     or more computers. A job can be a single command or a small script that has to
     be run for each of the lines in the input. The typical input is a list of files,
@@ -9493,7 +9537,8 @@
   biotools: gsl
   bunya:
   - 2.7-gcc-10.3.0
-  - 2.7-gcc-11.3.0                        (D)
+  - 2.7-gcc-11.3.0
+  - 2.7-gcc-12.3.0                           (D)
   description: The GNU Scientific Library (GSL) is a numerical library for C and C++
     programmers.
   edam-inputs: ''
@@ -9656,6 +9701,8 @@
   biotools: gromacs
   bunya:
   - 2021.3-foss-2021a
+  - 2022-AMD-MI210
+  - 2022-AMD-MI300x
   description: Versatile package to perform molecular dynamics, i.e. simulate the
     Newtonian equations of motion for systems with hundreds to millions of particles.
     It is primarily designed for biochemical molecules like proteins, lipids and nucleic
@@ -9738,6 +9785,7 @@
   biotools: GTDB-Tk
   bunya:
   - 2.0.0-foss-2021a
+  - 2.4.0
   - 2.2.6
   description: 'a toolkit to classify genomes with the Genome Taxonomy Database.
 
@@ -9866,7 +9914,8 @@
   biotools: ''
   bunya:
   - 1.10-gcccore-10.3.0
-  - 1.12-gcccore-11.3.0                  (D)
+  - 1.12-gcccore-11.3.0
+  - 1.12-gcccore-12.3.0                     (D)
   description: ''
   edam-inputs: ''
   edam-operations: ''
@@ -10544,7 +10593,7 @@
   biotools: hmmer3
   bunya:
   - 3.3.2-gompi-2021a
-  - 3.3.2-gompi-2022a                   (D)
+  - 3.3.2-gompi-2022a                      (D)
   description: This tool is used for searching sequence databases for homologs of
     protein sequences, and for making protein sequence alignments. It implements methods
     using probabilistic models called profile hidden Markov models. The new HMMER3
@@ -10654,7 +10703,8 @@
   biotools: htslib
   bunya:
   - 1.12-gcc-10.3.0
-  - 1.15.1-gcc-11.3.0                  (D)
+  - 1.15.1-gcc-11.3.0
+  - 1.18-gcc-12.3.0                       (D)
   description: The main purpose of HTSlib is to provide access to genomic information
     files, both alignment data (SAM, BAM, and CRAM formats) and variant data (VCF
     and BCF formats). The library also provides interfaces to access and index genome
@@ -10920,7 +10970,8 @@
   biotools: ''
   bunya:
   - 7.0.11-14-gcccore-10.3.0
-  - 7.1.0-37-gcccore-11.3.0       (D)
+  - 7.1.0-37-gcccore-11.3.0
+  - 7.1.1-15-gcccore-12.3.0          (D)
   description: ''
   edam-inputs: ''
   edam-operations: ''
@@ -11148,7 +11199,8 @@
 - biocontainers: ''
   biotools: ipyrad
   bunya:
-  - 0.9.93
+  - 0.9.93-new
+  - 0.9.93                                (D)
   description: "Interactive assembly and analysis of RADseq datasets.\n\nipyrad: interactive\
     \ assembly and analysis of RAD-seq data sets.\n\nWelcome to ipyrad, an interactive\
     \ toolkit for assembly and analysis of restriction-site associated genomic data\
@@ -11494,6 +11546,7 @@
   biotools: jags
   bunya:
   - 4.3.0-foss-2021a
+  - .4.3.2-foss-2023a             (H)
   description: JAGS is Just Another Gibbs Sampler. It is a program for analysis of
     Bayesian hierarchical models using Markov Chain Monte Carlo (MCMC) simulation.
   edam-inputs: ''
@@ -11578,7 +11631,8 @@
   biotools: ''
   bunya:
   - 2.1-gcccore-10.3.0
-  - 2.1-gcccore-11.3.0                (D)
+  - 2.1-gcccore-11.3.0
+  - 2.1-gcccore-12.3.0                   (D)
   description: ''
   edam-inputs: ''
   edam-operations: ''
@@ -11679,7 +11733,7 @@
   biotools: jellyfish
   bunya:
   - 2.3.0-gcc-10.3.0
-  - 2.3.0-gcc-11.3.0                (D)
+  - 2.3.0-gcc-11.3.0                   (D)
   description: A command-line algorithm for counting k-mers in DNA sequence.
   edam-inputs:
   - formats:
@@ -12112,7 +12166,7 @@
   biotools: kraken2
   bunya:
   - 2.1.2-gompi-2021a
-  - 2.1.2-gompi-2022a                 (D)
+  - 2.1.2-gompi-2022a                    (D)
   description: Kraken 2 is the newest version of Kraken, a taxonomic classification
     system using exact k-mer matches to achieve high accuracy and fast classification
     speeds. This classifier matches each k-mer within a query sequence to the lowest
@@ -12596,7 +12650,7 @@
   biotools: ''
   bunya:
   - 5.5.2.11-gcc-10.3.0
-  - 5.5.2.11-gcc-11.3.0               (D)
+  - 5.5.2.11-gcc-11.3.0                  (D)
   description: ''
   edam-inputs: ''
   edam-operations: ''
@@ -12647,7 +12701,7 @@
   biotools: ''
   bunya:
   - 5.4.3-gcccore-10.3.0
-  - 5.4.4-gcccore-11.3.0                  (D)
+  - 5.4.4-gcccore-11.3.0                     (D)
   description: ''
   edam-inputs: ''
   edam-operations: ''
@@ -12750,7 +12804,7 @@
   biotools: ''
   bunya:
   - 1.3.0-gompi-2021a
-  - 1.3.0-gompi-2022a               (D)
+  - 1.3.0-gompi-2022a                  (D)
   description: ''
   edam-inputs: ''
   edam-operations: ''
@@ -13170,7 +13224,7 @@
   biotools: matplotlib
   bunya:
   - 3.4.2-foss-2021a
-  - 3.5.2-foss-2022a               (D)
+  - 3.5.2-foss-2022a                  (D)
   description: Matplotlib is a comprehensive library for creating static, animated,
     and interactive visualizations in Python. Matplotlib makes easy things easy and
     hard things possible.
@@ -13457,7 +13511,7 @@
   biotools: megahit
   bunya:
   - 1.2.9-gcccore-10.3.0
-  - 1.2.9-gcccore-11.3.0              (D)
+  - 1.2.9-gcccore-11.3.0                 (D)
   description: Single node assembler for large and complex metagenomics NGS reads,
     such as soil. It makes use of succinct de Bruijn graph to achieve low memory usage,
     whereas its goal is not to make memory usage as low as possible.
@@ -13750,7 +13804,7 @@
   biotools: MetaEuk
   bunya:
   - 5-gcc-10.3.0
-  - 6-gcc-11.3.0                      (D)
+  - 6-gcc-11.3.0                         (D)
   description: MetaEuk - sensitive, high-throughput gene discovery and annotation
     for large-scale eukaryotic metagenomics
   edam-inputs:
@@ -13823,7 +13877,8 @@
     url: .nan
 - biocontainers: ''
   biotools: metaphlan
-  bunya: ''
+  bunya:
+  - 4.1.1
   description: Computational tool for profiling the composition of microbial communities
     from metagenomic shotgun sequencing data.
   edam-inputs: []
@@ -14313,6 +14368,7 @@
   biotools: ''
   bunya:
   - 4.12.0
+  - 23.9.0-0                          (D)
   description: ''
   edam-inputs: ''
   edam-operations: ''
@@ -14631,7 +14687,8 @@
     url: .nan
 - biocontainers: ''
   biotools: MMseqs2
-  bunya: ''
+  bunya:
+  - 15-6f452
   description: "MMseqs2 (Many-against-Many sequence searching) is a software suite\
     \ to search and cluster huge protein and nucleotide sequence sets. MMseqs2 is\
     \ open source GPL-licensed software implemented in C++ for Linux, MacOS, and (as\
@@ -15339,6 +15396,7 @@
   biotools: mrbayes
   bunya:
   - 3.2.7a-foss-2022a
+  - 3.2.7-gompi-2022a                    (D)
   description: Program for Bayesian inference and model choice across a wide range
     of phylogenetic and evolutionary models. It uses Markov chain Monte Carlo (MCMC)
     methods to estimate the posterior distribution of model parameters.
@@ -15648,7 +15706,7 @@
   biotools: multiqc
   bunya:
   - 1.11-foss-2021a
-  - 1.14-foss-2022a                   (D)
+  - 1.14-foss-2022a                      (D)
   description: MultiQC aggregates results from multiple bioinformatics analyses across
     many samples into a single report. It searches a given directory for analysis
     logs and compiles a HTML report. It's a general use tool, perfect for summarising
@@ -15694,7 +15752,9 @@
     url: .nan
 - biocontainers: mummer
   biotools: mummer
-  bunya: ''
+  bunya:
+  - 3.23-gcccore-10.3.0
+  - 4.0.0rc1-gcccore-11.3.0               (D)
   description: MUMmer is a modular system for the rapid whole genome alignment of
     finished or draft sequence. Basically it is a ultra-fast alignment of large-scale
     DNA and protein sequences
@@ -16215,7 +16275,7 @@
   biotools: ''
   bunya:
   - 2.10.9-gompi-2021a
-  - 3.0.2-gompi-2022a                (D)
+  - 3.0.2-gompi-2022a                   (D)
   description: ''
   edam-inputs: ''
   edam-operations: ''
@@ -16237,7 +16297,8 @@
   biotools: netcdf
   bunya:
   - 4.8.0-gompi-2021a
-  - 4.9.0-gompi-2022a                  (D)
+  - 4.9.0-gompi-2022a
+  - 4.9.2-gompi-2023a                     (D)
   description: NetCDF (Network Common Data Form) is a set of software libraries and
     machine-independent data formats that support the creation, access, and sharing
     of array-oriented scientific data.
@@ -16328,6 +16389,7 @@
   biotools: nextflow
   bunya:
   - 22.10.1
+  - 23.04.2                             (D)
   description: Nextflow enables scalable and reproducible scientific workflows using
     software containers. It allows the adaptation of pipelines written in the most
     common scripting languages.
@@ -16494,7 +16556,9 @@
   biotools: ninja
   bunya:
   - 1.10.2-gcccore-10.3.0
-  - 1.10.2-gcccore-11.3.0               (D)
+  - 1.10.2-gcccore-11.3.0
+  - 1.11.1-gcccore-12.3.0
+  - 1.12.1-gcccore-13.3.0                  (D)
   description: Nearly Infinite Neighbor Joining Application
   edam-inputs: ''
   edam-operations: ''
@@ -16690,7 +16754,7 @@
   biotools: ''
   bunya:
   - 3.1.1-gompi-2021a
-  - 3.1.1-gompi-2022a               (D)
+  - 3.1.1-gompi-2022a                  (D)
   description: ''
   edam-inputs: ''
   edam-operations: ''
@@ -18533,7 +18597,7 @@
   biotools: gmv
   bunya:
   - 2.6.3-gcccore-10.3.0
-  - 2.6.3-gcccore-11.3.0             (D)
+  - 2.6.3-gcccore-11.3.0                (D)
   description: The pipeline runs PRODIGAL gene predictions on all genomes, runs pan-reciprocal
     BLAST, and identifies ortholog sets. For a set of orthologous genes, if the positions
     of the PRODIGAL selected starts coincide in a multiple sequence alignment, they
@@ -18625,7 +18689,7 @@
   biotools: prokka
   bunya:
   - 1.14.5-gompi-2021a
-  - 1.14.5-gompi-2022a                 (D)
+  - 1.14.5-gompi-2022a                    (D)
   description: Software tool to annotate bacterial, archaeal and viral genomes quickly
     and produce standards-compliant output files.
   edam-inputs: []
@@ -18718,7 +18782,7 @@
   biotools: ''
   bunya:
   - 0.3.18-foss-2021a
-  - 0.3.18-foss-2022a                (D)
+  - 0.3.18-foss-2022a                   (D)
   description: ''
   edam-inputs: ''
   edam-operations: ''
@@ -18845,7 +18909,7 @@
   biotools: pysam
   bunya:
   - 0.16.0.1-gcc-10.3.0
-  - 0.19.1-gcc-11.3.0                   (D)
+  - 0.19.1-gcc-11.3.0                      (D)
   description: A Python module for reading and manipulating SAM/BAM/VCF/BCF files.
   edam-inputs: []
   edam-operations:
@@ -19644,7 +19708,7 @@
   biotools: quast
   bunya:
   - 5.0.2-foss-2021a
-  - 5.2.0-foss-2022a                    (D)
+  - 5.2.0-foss-2022a                       (D)
   description: "QUAST stands for QUality ASsessment Tool.  \nIt evaluates a quality\
     \ of genome assemblies by computing various metrics and providing nice reports."
   edam-inputs: []
@@ -19719,7 +19783,12 @@
   bunya:
   - 4.1.0-foss-2021a
   - 4.2.1-foss-2021a
-  - 4.2.1-foss-2022a                        (D)
+  - 4.2.1-foss-2022a
+  - 4.3.3-gfbf-2023a
+  - 4.4.0-gfbf-2023a                           (D)
+  - .4.4.0-gfbf-2023a                (H)
+  - 4.4.0-combo-EPYC3-only
+  - 4.4.1
   description: Free software environment for statistical computing and graphics.
   edam-inputs: []
   edam-operations:
@@ -19787,7 +19856,8 @@
     url: .nan
 - biocontainers: ''
   biotools: Racon
-  bunya: ''
+  bunya:
+  - 1.5.0
   description: 'Consensus module for raw de novo DNA assembly of long uncorrected
     reads
 
@@ -20463,6 +20533,7 @@
   biotools: rjags
   bunya:
   - 4-10-foss-2021a-r-4.1.0
+  - .4-15-foss-2023a-r-4.4.0     (H)
   description: 'The rjags package provides an interface from R to the JAGS library
     for Bayesian data analysis. JAGS uses Markov Chain Monte Carlo (MCMC) to generate
     a sequence of dependent samples
@@ -20804,7 +20875,13 @@
     url: .nan
 - biocontainers: ''
   biotools: rstudio
-  bunya: ''
+  bunya:
+  - .2024.04.2-r4.3.3          (H)
+  - 2023.12.1-r4.2.1
+  - 2024.04.2-r4.2.1
+  - 2024.04.2-r4.4.1
+  - 2024.12.0-r4.4.2_full-CRAN
+  - 2024.12.1-r4.4.2           (D)
   description: Integrated development environment (IDE) for the R programming language.
   edam-inputs: []
   edam-operations:
@@ -20943,7 +21020,7 @@
   biotools: salmon
   bunya:
   - 1.4.0-gompi-2021a
-  - 1.9.0-gcc-11.3.0                   (D)
+  - 1.9.0-gcc-11.3.0                      (D)
   description: A tool for transcript expression quantification from RNA-seq data
   edam-inputs:
   - formats:
@@ -21152,7 +21229,8 @@
   bunya:
   - 1.13-gcc-10.3.0
   - 1.13-gcc-11.3.0
-  - 1.16.1-gcc-11.3.0                (D)
+  - 1.16.1-gcc-11.3.0
+  - 1.18-gcc-12.3.0                     (D)
   description: SAMtools and BCFtools are widely used programs for processing and analysing
     high-throughput sequencing data. They include tools for file format conversion
     and manipulation, sorting, querying, statistics, variant calling, and effect analysis
@@ -21557,6 +21635,7 @@
   biotools: ''
   bunya:
   - 0.11.1-gcccore-10.3.0
+  - 0.17.6-gcccore-12.3.0           (D)
   description: ''
   edam-inputs: ''
   edam-operations: ''
@@ -21802,7 +21881,7 @@
   biotools: sepp
   bunya:
   - 4.5.0-foss-2021a
-  - 4.5.1-foss-2022a                     (D)
+  - 4.5.1-foss-2022a                        (D)
   description: "SEPP stands for SAT\xE9-Enabled Phylogenetic Placement and addresses\
     \ the problem of phylogenetic placement for meta-genomic short reads"
   edam-inputs:
@@ -21974,7 +22053,7 @@
   biotools: seqtk
   bunya:
   - 1.3-gcc-10.3.0
-  - 1.3-gcc-11.3.0                      (D)
+  - 1.3-gcc-11.3.0                         (D)
   description: A tool for processing sequences in the FASTA or FASTQ format. It parses
     both FASTA and FASTQ files which can also be optionally compressed by gzip.
   edam-inputs: []
@@ -22509,7 +22588,7 @@
   biotools: snakemake
   bunya:
   - 6.6.1-foss-2021a
-  - 7.22.0-foss-2022a               (D)
+  - 7.22.0-foss-2022a                  (D)
   description: Workflow engine and language. It aims to reduce the complexity of creating
     workflows by providing a fast and comfortable execution environment, together
     with a clean and modern domain specific specification language (DSL) in python
@@ -22615,7 +22694,8 @@
   biotools: SNAPPy
   bunya:
   - 1.1.8-gcccore-10.3.0
-  - 1.1.9-gcccore-11.3.0               (D)
+  - 1.1.9-gcccore-11.3.0
+  - 1.1.10-gcccore-12.3.0                 (D)
   description: "a snakemake pipeline for scalable HIV-1 subtyping by phylogenetic\
     \ pairing | SNAPPy is a Snakemake pipeline for HIV-1 subtyping by phylogenetic\
     \ pairing | This is the repository for SNAPPy, a Snakemake pipeline for HIV-1\
@@ -23002,7 +23082,7 @@
   biotools: spades
   bunya:
   - 3.15.3-gcc-10.3.0
-  - 3.15.5-gcc-11.3.0                  (D)
+  - 3.15.5-gcc-11.3.0                     (D)
   description: "St. Petersburg genome assembler \u2013 is intended for both standard\
     \ isolates and single-cell MDA bacteria assemblies. SPAdes 3.9 works with Illumina\
     \ or IonTorrent reads and is capable of providing hybrid assemblies using PacBio,\
@@ -23177,7 +23257,11 @@
     url: .nan
 - biocontainers: ''
   biotools: ''
-  bunya: ''
+  bunya:
+  - .3.35.4-gcccore-10.3.0                (H)
+  - .3.38.3-gcccore-11.3.0                (H)
+  - .3.42.0-gcccore-12.3.0                (H)
+  - .3.45.3-gcccore-13.3.0                (H)
   description: ''
   edam-inputs: ''
   edam-operations: ''
@@ -23473,7 +23557,7 @@
   biotools: star
   bunya:
   - 2.7.9a-gcc-10.3.0
-  - 2.7.10b-gcc-11.3.0                   (D)
+  - 2.7.10b-gcc-11.3.0                      (D)
   - 2.7.10a--h9ee0642_0
   description: Ultrafast universal RNA-seq data aligner
   edam-inputs:
@@ -23752,7 +23836,8 @@
     url: .nan
 - biocontainers: ''
   biotools: SyRI
-  bunya: ''
+  bunya:
+  - 1.7.0
   description: 'SyRI is tool for finding genomic rearrangements and local sequence
     differences from whole-genome assemblies.
 
@@ -23858,7 +23943,7 @@
   biotools: tbl2asn
   bunya:
   - 20220427-linux64
-  - 20230119-linux64                  (D)
+  - 20230119-linux64                     (D)
   description: Tbl2asn is a command-line program that automates the creation of sequence
     records for submission to GenBank. It uses many of the same functions as Genome
     Workbench but is driven generally by data files. Tbl2asn generates .sqn files
@@ -24833,7 +24918,8 @@
     url: .nan
 - biocontainers: unicycler
   biotools: unicycler
-  bunya: ''
+  bunya:
+  - 0.5.0
   description: A tool for assembling bacterial genomes from a combination of short
     (2nd generation) and long (3rd generation) sequencing reads.
   edam-inputs:
@@ -25048,7 +25134,8 @@
   bunya:
   - 6.0-gcccore-10.3.0
   - 6.0-gcccore-11.3.0
-  - 6.0-gcccore-12.3.0                  (D)
+  - 6.0-gcccore-12.3.0
+  - 6.0-gcccore-13.3.0                     (D)
   description: ''
   edam-inputs: ''
   edam-operations: ''
@@ -25276,7 +25363,7 @@
   biotools: vcftools
   bunya:
   - 0.1.16-gcc-10.3.0
-  - 0.1.16-gcc-11.3.0                (D)
+  - 0.1.16-gcc-11.3.0                   (D)
   description: Provide easily accessible methods for working with complex genetic
     variation data in the form of VCF files.
   edam-inputs: []
