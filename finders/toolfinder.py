@@ -85,10 +85,9 @@ class QriscloudDataProvider(Dataprovider):
                 toolID = toolID.lower()
                 toolID = toolID.replace("miniconda3", "miniconda")
                 toolID = toolID.replace("alphafold", "alphafold_2")
-                toolID = toolID.replace("cellranger - arc", "cellranger")
-                toolID = toolID.replace("chai - lab", "chai-1")
+                toolID = toolID.replace("cellranger-arc", "cellranger")
+                toolID = toolID.replace("chai-lab", "chai-1")
                 toolID = toolID.replace("localcolabfold", "colabfold")
-
                 toolID = toolID.replace("salsa2", "salsa")
                 toolID = toolID.replace("anaconda3", "anaconda")
                 toolID = toolID.replace("braker3", "braker")
