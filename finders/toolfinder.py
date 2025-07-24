@@ -152,7 +152,7 @@ class GalaxyDataProvider(Dataprovider):
                 biotools_id = None
                 if "xrefs" in tool:
                     for item in tool["xrefs"]:
-                        if item["reftype"] == "bio.tools":
+                        if item["type"] == "bio.tools":
                             biotools_id = item["value"]
                             break
                 tool_id_list = []
