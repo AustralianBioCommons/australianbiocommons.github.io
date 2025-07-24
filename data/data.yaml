@@ -372,6 +372,9 @@
   edam-outputs: ''
   edam-topics: ''
   galaxy:
+  - description: 'Import Anndata: from different formats'
+    title: Import Anndata 0.10.9+galaxy2
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fanndata_import%2Fanndata_import%2F0.10.9%2Bgalaxy2
   - description: 'Loom operations: Manipulate, export and import loom data'
     title: Loom operations 0.10.9+galaxy1
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fmodify_loom%2Fmodify_loom%2F0.10.9%2Bgalaxy1
@@ -381,9 +384,6 @@
   - description: 'Inspect AnnData: object'
     title: Inspect AnnData 0.10.9+galaxy1
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fanndata_inspect%2Fanndata_inspect%2F0.10.9%2Bgalaxy1
-  - description: 'Import Anndata: from different formats'
-    title: Import Anndata 0.10.9+galaxy1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fanndata_import%2Fanndata_import%2F0.10.9%2Bgalaxy1
   - description: 'Export AnnData: matrix and annotations'
     title: Export AnnData 0.10.9+galaxy1
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fanndata_export%2Fanndata_export%2F0.10.9%2Bgalaxy1
@@ -569,27 +569,6 @@
   edam-operations: ''
   edam-outputs: ''
   edam-topics: ''
-  galaxy: ''
-  homepage: ''
-  id: argtable
-  license: ''
-  name: argtable
-  nci-gadi: ''
-  nci-if89:
-  - '2.13'
-  pawsey: ''
-  publications: ''
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: ''
-  biotools: ''
-  bunya: ''
-  description: ''
-  edam-inputs: ''
-  edam-operations: ''
-  edam-outputs: ''
-  edam-topics: ''
   galaxy:
   - description: 'AARNet FileSender: transfer files with AARNet''s FileSender Service'
     title: AARNet FileSender 3.0.0+galaxy3
@@ -631,15 +610,15 @@
   - RNA splicing
   - DNA structural variation
   galaxy:
-  - description: 'Arriba Draw Fusions: '
-    title: Arriba Draw Fusions 2.4.0+galaxy2
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Farriba_draw_fusions%2Farriba_draw_fusions%2F2.4.0%2Bgalaxy2
   - description: 'Arriba: detect gene fusions from STAR aligned RNA-Seq data'
-    title: Arriba 2.4.0+galaxy2
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Farriba%2Farriba%2F2.4.0%2Bgalaxy2
+    title: Arriba 2.5.0+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Farriba%2Farriba%2F2.5.0%2Bgalaxy0
   - description: 'Arriba Get Filters: to history'
-    title: Arriba Get Filters 2.4.0+galaxy2
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Farriba_get_filters%2Farriba_get_filters%2F2.4.0%2Bgalaxy2
+    title: Arriba Get Filters 2.5.0+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Farriba_get_filters%2Farriba_get_filters%2F2.5.0%2Bgalaxy0
+  - description: 'Arriba Draw Fusions: '
+    title: Arriba Draw Fusions 2.5.0+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Farriba_draw_fusions%2Farriba_draw_fusions%2F2.5.0%2Bgalaxy0
   homepage: https://github.com/suhrig/arriba/
   id: arriba
   license: MIT
@@ -677,12 +656,12 @@
   galaxy:
   - description: 'ARTIC minion: Build consensus sequence and call variants from amplicon-based
       nanopore sequence data'
-    title: ARTIC minion 1.6.0+galaxy1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fartic_minion%2Fartic_minion%2F1.6.0%2Bgalaxy1
+    title: ARTIC minion 1.7.3+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fartic_minion%2Fartic_minion%2F1.7.3%2Bgalaxy0
   - description: 'ARTIC guppyplex: Filter Nanopore reads by read length and (optionally)
       quality'
-    title: ARTIC guppyplex 1.6.0+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fartic_guppyplex%2Fartic_guppyplex%2F1.6.0%2Bgalaxy0
+    title: ARTIC guppyplex 1.7.3+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fartic_guppyplex%2Fartic_guppyplex%2F1.7.3%2Bgalaxy0
   homepage: https://github.com/artic-network/fieldbioinformatics
   id: artic
   license: MIT
@@ -713,11 +692,11 @@
   - Gene and protein families
   galaxy:
   - description: 'Augustus: gene prediction for prokaryotic and eukaryotic genomes'
-    title: Augustus 3.4.0+galaxy3
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Faugustus%2Faugustus%2F3.4.0%2Bgalaxy3
+    title: Augustus 3.5.0+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Faugustus%2Faugustus%2F3.5.0%2Bgalaxy0
   - description: 'Train Augustus: ab-initio gene predictor'
-    title: Train Augustus 3.4.0+galaxy3
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Faugustus_training%2Faugustus_training%2F3.4.0%2Bgalaxy3
+    title: Train Augustus 3.5.0+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Faugustus_training%2Faugustus_training%2F3.5.0%2Bgalaxy0
   homepage: http://bioinf.uni-greifswald.de/augustus
   id: augustus
   license: Artistic-1.0
@@ -845,8 +824,8 @@
   galaxy:
   - description: 'Bakta: Rapid and standardized annotation of bacterial genomes, MAGs
       and plasmids'
-    title: Bakta 1.9.4+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fbakta%2Fbakta%2F1.9.4%2Bgalaxy0
+    title: Bakta 1.9.4+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fbakta%2Fbakta%2F1.9.4%2Bgalaxy1
   homepage: https://github.com/oschwengers/bakta
   id: bakta
   license: GPL-3.0
@@ -878,9 +857,12 @@
   - Data management
   - Sequence analysis
   galaxy:
+  - description: 'Filter BAM: datasets on a variety of attributes'
+    title: Filter BAM 2.5.2+galaxy3
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fbamtools_filter%2FbamFilter%2F2.5.2%2Bgalaxy3
   - description: 'Operate on and transform BAM: datasets in various ways'
-    title: Operate on and transform BAM 2.5.2+galaxy2
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fbamtools%2Fbamtools%2F2.5.2%2Bgalaxy2
+    title: Operate on and transform BAM 2.5.2+galaxy3
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fbamtools%2Fbamtools%2F2.5.2%2Bgalaxy3
   - description: 'Split BAM by reads mapping status: into a mapped and an unmapped
       dataset'
     title: Split BAM by reads mapping status 2.5.2+galaxy2
@@ -888,9 +870,6 @@
   - description: 'Split BAM by read tag value: into a dataset list collection'
     title: Split BAM by read tag value 2.5.2+galaxy2
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fbamtools_split_tag%2Fbamtools_split_tag%2F2.5.2%2Bgalaxy2
-  - description: 'Filter BAM: datasets on a variety of attributes'
-    title: Filter BAM 2.5.2+galaxy2
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fbamtools_filter%2FbamFilter%2F2.5.2%2Bgalaxy2
   - description: 'Split BAM into paired- and single-end: reads datasets'
     title: Split BAM into paired- and single-end 2.5.2+galaxy2
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fbamtools_split_paired%2Fbamtools_split_paired%2F2.5.2%2Bgalaxy2
@@ -1541,8 +1520,8 @@
   - Genomics
   galaxy:
   - description: 'bedtools RandomBed: generate random intervals in a genome'
-    title: bedtools RandomBed 2.31.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fbedtools%2Fbedtools_randombed%2F2.31.1%2Bgalaxy0
+    title: bedtools RandomBed 2.31.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fbedtools%2Fbedtools_randombed%2F2.31.1%2Bgalaxy1
   - description: 'bedtools MapBed: apply a function to a column for each overlapping
       interval'
     title: bedtools MapBed 2.31.1.3
@@ -1581,8 +1560,8 @@
     title: bedtools AnnotateBed 2.31.1
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fbedtools%2Fbedtools_annotatebed%2F2.31.1
   - description: 'bedtools GroupByBed: group by common cols and summarize other cols'
-    title: bedtools GroupByBed 2.31.1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fbedtools%2Fbedtools_groupbybed%2F2.31.1
+    title: bedtools GroupByBed 2.31.1+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fbedtools%2Fbedtools_groupbybed%2F2.31.1%2Bgalaxy0
   - description: 'bedtools WindowBed: find overlapping intervals within a window around
       an interval'
     title: bedtools WindowBed 2.31.1
@@ -1593,8 +1572,8 @@
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fbedtools%2Fbedtools_jaccard%2F2.31.1
   - description: 'bedtools MergeBED: combine overlapping/nearby intervals into a single
       interval'
-    title: bedtools MergeBED 2.31.1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fbedtools%2Fbedtools_mergebed%2F2.31.1
+    title: bedtools MergeBED 2.31.1+galaxy2
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fbedtools%2Fbedtools_mergebed%2F2.31.1%2Bgalaxy2
   - description: 'bedtools NucBed: profile the nucleotide content of intervals in
       a FASTA file'
     title: bedtools NucBed 2.31.1
@@ -1620,8 +1599,8 @@
     title: bedtools ReldistBed 2.31.1
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fbedtools%2Fbedtools_reldistbed%2F2.31.1
   - description: 'bedtools MakeWindowsBed: make interval windows across a genome'
-    title: bedtools MakeWindowsBed 2.31.1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fbedtools%2Fbedtools_makewindowsbed%2F2.31.1
+    title: bedtools MakeWindowsBed 2.31.1+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fbedtools%2Fbedtools_makewindowsbed%2F2.31.1%2Bgalaxy0
   - description: 'bedtools LinksBed: create a HTML page of links to UCSC locations'
     title: bedtools LinksBed 2.31.1
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fbedtools%2Fbedtools_links%2F2.31.1
@@ -1651,8 +1630,8 @@
     title: bedtools BED to IGV 2.31.1
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fbedtools%2Fbedtools_bedtoigv%2F2.31.1
   - description: 'bedtools ShuffleBed: randomly redistrubute intervals in a genome'
-    title: bedtools ShuffleBed 2.31.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fbedtools%2Fbedtools_shufflebed%2F2.31.1%2Bgalaxy0
+    title: bedtools ShuffleBed 2.31.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fbedtools%2Fbedtools_shufflebed%2F2.31.1%2Bgalaxy1
   - description: 'bedtools BAM to BED: converter'
     title: bedtools BAM to BED 2.31.1+galaxy0
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fbedtools%2Fbedtools_bamtobed%2F2.31.1%2Bgalaxy0
@@ -1664,8 +1643,8 @@
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fbedtools%2Fbedtools_overlapbed%2F2.31.1
   - description: 'bedtools ClosestBed: find the closest, potentially non-overlapping
       interval'
-    title: bedtools ClosestBed 2.31.1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fbedtools%2Fbedtools_closestbed%2F2.31.1
+    title: bedtools ClosestBed 2.31.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fbedtools%2Fbedtools_closestbed%2F2.31.1%2Bgalaxy1
   - description: 'bedtools Multiple Intersect: identifies common intervals among multiple
       interval files'
     title: bedtools Multiple Intersect 2.31.1
@@ -1675,8 +1654,8 @@
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fbedtools%2Fbedtools_bamtofastq%2F2.27.1
   - description: 'Annotate DESeq2/DEXSeq output tables: Append annotation from GTF
       to differential expression tool outputs'
-    title: Annotate DESeq2/DEXSeq output tables 1.1.0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fdeg_annotate%2Fdeg_annotate%2F1.1.0
+    title: Annotate DESeq2/DEXSeq output tables 1.1.0+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fdeg_annotate%2Fdeg_annotate%2F1.1.0%2Bgalaxy1
   homepage: https://github.com/arq5x/bedtools2
   id: bedtools
   license: GPL-2.0
@@ -2064,8 +2043,8 @@
     title: Kraken taxonomic report 0.0.3+galaxy1
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fkraken_taxonomy_report%2Fkraken_taxonomy_report%2F0.0.3%2Bgalaxy1
   - description: 'Align structures and compute relative RMSDs: using Biopython'
-    title: Align structures and compute relative RMSDs 1.79+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fchemteam%2Fbiopdb_align_and_rmsd%2Fbiopdb_align_and_rmsd%2F1.79%2Bgalaxy0
+    title: Align structures and compute relative RMSDs 1.79+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fchemteam%2Fbiopdb_align_and_rmsd%2Fbiopdb_align_and_rmsd%2F1.79%2Bgalaxy1
   homepage: http://biopython.org/
   id: biopython
   license: MIT
@@ -2106,8 +2085,8 @@
   - NMR
   galaxy:
   - description: 'BioTransformer: '
-    title: BioTransformer 3.0.20230403+galaxy3
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frecetox%2Fbiotransformer%2Fbiotransformer%2F3.0.20230403%2Bgalaxy3
+    title: BioTransformer 3.0.20230403+galaxy4
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frecetox%2Fbiotransformer%2Fbiotransformer%2F3.0.20230403%2Bgalaxy4
   homepage: https://biotransformer.ca
   id: biotransformer
   license: LGPL-3.0
@@ -2248,62 +2227,62 @@
   - Bioinformatics
   galaxy:
   - description: 'NCBI BLAST+ segmasker: low-complexity regions in protein sequences'
-    title: NCBI BLAST+ segmasker 2.14.1+galaxy2
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_segmasker_wrapper%2F2.14.1%2Bgalaxy2
+    title: NCBI BLAST+ segmasker 2.16.0+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_segmasker_wrapper%2F2.16.0%2Bgalaxy0
   - description: 'NCBI BLAST+ convert2blastmask: Convert masking information in lower-case
       masked FASTA input to file formats suitable for makeblastdb'
-    title: NCBI BLAST+ convert2blastmask 2.14.1+galaxy2
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_convert2blastmask_wrapper%2F2.14.1%2Bgalaxy2
+    title: NCBI BLAST+ convert2blastmask 2.16.0+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_convert2blastmask_wrapper%2F2.16.0%2Bgalaxy0
   - description: 'NCBI BLAST+ makeblastdb: Make BLAST database'
-    title: NCBI BLAST+ makeblastdb 2.14.1+galaxy2
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_makeblastdb%2F2.14.1%2Bgalaxy2
+    title: NCBI BLAST+ makeblastdb 2.16.0+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_makeblastdb%2F2.16.0%2Bgalaxy0
   - description: 'NCBI BLAST+ blastn: Search nucleotide database with nucleotide query
       sequence(s)'
-    title: NCBI BLAST+ blastn 2.14.1+galaxy2
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_blastn_wrapper%2F2.14.1%2Bgalaxy2
+    title: NCBI BLAST+ blastn 2.16.0+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_blastn_wrapper%2F2.16.0%2Bgalaxy0
   - description: 'NCBI BLAST+ tblastx: Search translated nucleotide database with
       translated nucleotide query sequence(s)'
-    title: NCBI BLAST+ tblastx 2.14.1+galaxy2
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_tblastx_wrapper%2F2.14.1%2Bgalaxy2
+    title: NCBI BLAST+ tblastx 2.16.0+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_tblastx_wrapper%2F2.16.0%2Bgalaxy0
   - description: 'NCBI BLAST+ tblastn: Search translated nucleotide database with
       protein query sequence(s)'
-    title: NCBI BLAST+ tblastn 2.14.1+galaxy2
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_tblastn_wrapper%2F2.14.1%2Bgalaxy2
+    title: NCBI BLAST+ tblastn 2.16.0+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_tblastn_wrapper%2F2.16.0%2Bgalaxy0
   - description: 'BLAST XML to tabular: Convert BLAST XML output to tabular'
-    title: BLAST XML to tabular 2.14.1+galaxy2
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fblastxml_to_tabular%2F2.14.1%2Bgalaxy2
+    title: BLAST XML to tabular 2.16.0+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fblastxml_to_tabular%2F2.16.0%2Bgalaxy0
   - description: 'NCBI get species taxids: '
-    title: NCBI get species taxids 2.14.1+galaxy2
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fget_species_taxids%2F2.14.1%2Bgalaxy2
+    title: NCBI get species taxids 2.16.0+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fget_species_taxids%2F2.16.0%2Bgalaxy0
   - description: 'NCBI BLAST+ rpstblastn: Search protein domain database (PSSMs) with
       translated nucleotide query sequence(s)'
-    title: NCBI BLAST+ rpstblastn 2.14.1+galaxy2
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_rpstblastn_wrapper%2F2.14.1%2Bgalaxy2
+    title: NCBI BLAST+ rpstblastn 2.16.0+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_rpstblastn_wrapper%2F2.16.0%2Bgalaxy0
   - description: 'NCBI BLAST+ blastdbcmd entry(s): Extract sequence(s) from BLAST
       database'
-    title: NCBI BLAST+ blastdbcmd entry(s) 2.14.1+galaxy2
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_blastdbcmd_wrapper%2F2.14.1%2Bgalaxy2
+    title: NCBI BLAST+ blastdbcmd entry(s) 2.16.0+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_blastdbcmd_wrapper%2F2.16.0%2Bgalaxy0
   - description: 'NCBI BLAST+ blastx: Search protein database with translated nucleotide
       query sequence(s)'
-    title: NCBI BLAST+ blastx 2.14.1+galaxy2
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_blastx_wrapper%2F2.14.1%2Bgalaxy2
+    title: NCBI BLAST+ blastx 2.16.0+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_blastx_wrapper%2F2.16.0%2Bgalaxy0
   - description: 'NCBI BLAST+ dustmasker: masks low complexity regions'
-    title: NCBI BLAST+ dustmasker 2.14.1+galaxy2
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_dustmasker_wrapper%2F2.14.1%2Bgalaxy2
+    title: NCBI BLAST+ dustmasker 2.16.0+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_dustmasker_wrapper%2F2.16.0%2Bgalaxy0
   - description: 'NCBI BLAST+ makeprofiledb: Make profile database'
-    title: NCBI BLAST+ makeprofiledb 2.14.1+galaxy2
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_makeprofiledb%2F2.14.1%2Bgalaxy2
+    title: NCBI BLAST+ makeprofiledb 2.16.0+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_makeprofiledb%2F2.16.0%2Bgalaxy0
   - description: 'NCBI BLAST+ blastp: Search protein database with protein query sequence(s)'
-    title: NCBI BLAST+ blastp 2.14.1+galaxy2
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_blastp_wrapper%2F2.14.1%2Bgalaxy2
+    title: NCBI BLAST+ blastp 2.16.0+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_blastp_wrapper%2F2.16.0%2Bgalaxy0
   - description: 'NCBI BLAST+ rpsblast: Search protein domain database (PSSMs) with
       protein query sequence(s)'
-    title: NCBI BLAST+ rpsblast 2.14.1+galaxy2
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_rpsblast_wrapper%2F2.14.1%2Bgalaxy2
+    title: NCBI BLAST+ rpsblast 2.16.0+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_rpsblast_wrapper%2F2.16.0%2Bgalaxy0
   - description: 'NCBI BLAST+ database info: Show BLAST database information from
       blastdbcmd'
-    title: NCBI BLAST+ database info 2.14.1+galaxy2
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_blastdbcmd_info%2F2.14.1%2Bgalaxy2
+    title: NCBI BLAST+ database info 2.16.0+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fncbi_blast_plus%2Fncbi_blastdbcmd_info%2F2.16.0%2Bgalaxy0
   homepage: https://blast.ncbi.nlm.nih.gov/Blast.cgi
   id: blast+
   license: ''
@@ -2597,8 +2576,10 @@
 - biocontainers: ''
   biotools: bracken
   bunya: ''
-  description: Statistical method that computes the abundance of species in DNA sequences
-    from a metagenomics sample.
+  description: Bracken is a companion program to Kraken 1, KrakenUniq, or Kraken 2
+    While Kraken classifies reads to multiple levels in the taxonomic tree, Bracken
+    allows estimation of abundance at a single level using those classifications (e.g.
+    Bracken can estimate abundance of species within a sample).
   edam-inputs: []
   edam-operations:
   - Statistical calculation
@@ -2609,8 +2590,8 @@
   galaxy:
   - description: 'Bracken: to re-estimate abundance at a taxonomic level from kraken
       output'
-    title: Bracken 3.0+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fbracken%2Fest_abundance%2F3.0%2Bgalaxy0
+    title: Bracken 3.1+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fbracken%2Fest_abundance%2F3.1%2Bgalaxy0
   homepage: https://ccb.jhu.edu/software/bracken/
   id: bracken
   license: GPL-3.0
@@ -2717,9 +2698,6 @@
     term: FASTA
   edam-operations:
   - Sequence assembly validation
-  - Scaffolding
-  - Genome assembly
-  - Transcriptome assembly
   edam-outputs:
   - formats: []
     term: Sequence report
@@ -2730,8 +2708,8 @@
   - Sequence analysis
   galaxy:
   - description: 'Busco: Assess genome assembly and annotation completeness'
-    title: Busco 5.8.0+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fbusco%2Fbusco%2F5.8.0%2Bgalaxy0
+    title: Busco 5.8.0+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fbusco%2Fbusco%2F5.8.0%2Bgalaxy1
   homepage: https://busco.ezlab.org/
   id: busco
   license: ''
@@ -2809,11 +2787,11 @@
   galaxy:
   - description: 'Map with BWA-MEM: - map medium and long reads (> 100 bp) against
       reference genome'
-    title: Map with BWA-MEM 0.7.18
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fbwa%2Fbwa_mem%2F0.7.18
+    title: Map with BWA-MEM 0.7.19
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fbwa%2Fbwa_mem%2F0.7.19
   - description: 'Map with BWA: - map short reads (< 100 bp) against reference genome'
-    title: Map with BWA 0.7.18
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fbwa%2Fbwa%2F0.7.18
+    title: Map with BWA 0.7.19
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fbwa%2Fbwa%2F0.7.19
   homepage: http://bio-bwa.sourceforge.net
   id: bwa
   license: MIT
@@ -2858,8 +2836,8 @@
   galaxy:
   - description: 'BWA-MEM2: - map medium and long reads (> 100 bp) against reference
       genome'
-    title: BWA-MEM2 2.2.1+galaxy1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fbwa_mem2%2Fbwa_mem2%2F2.2.1%2Bgalaxy1
+    title: BWA-MEM2 2.2.1+galaxy4
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fbwa_mem2%2Fbwa_mem2%2F2.2.1%2Bgalaxy4
   homepage: https://github.com/bwa-mem2/bwa-mem2
   id: bwa-mem2
   license: MIT
@@ -3643,40 +3621,40 @@
   - Metagenomics
   - Data quality management
   galaxy:
+  - description: 'CheckM tree_qa: Assess phylogenetic markers in the genome tree'
+    title: CheckM tree_qa 1.2.4+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fcheckm_tree_qa%2Fcheckm_tree_qa%2F1.2.4%2Bgalaxy1
   - description: 'CheckM taxon_set: Generate taxonomic-specific marker set'
-    title: CheckM taxon_set 1.2.3+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fcheckm_taxon_set%2Fcheckm_taxon_set%2F1.2.3%2Bgalaxy0
+    title: CheckM taxon_set 1.2.4+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fcheckm_taxon_set%2Fcheckm_taxon_set%2F1.2.4%2Bgalaxy1
+  - description: 'CheckM plot: for assessing the quality of genome bins'
+    title: CheckM plot 1.2.4+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fcheckm_plot%2Fcheckm_plot%2F1.2.4%2Bgalaxy1
+  - description: 'CheckM tree: Place bins in the genome tree'
+    title: CheckM tree 1.2.4+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fcheckm_tree%2Fcheckm_tree%2F1.2.4%2Bgalaxy1
+  - description: 'CheckM tetra: Calculate tetranucleotide signature of sequences'
+    title: CheckM tetra 1.2.4+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fcheckm_tetra%2Fcheckm_tetra%2F1.2.4%2Bgalaxy1
   - description: 'CheckM taxonomy_wf: Analyze all genome bins with the same marker
       set'
-    title: CheckM taxonomy_wf 1.2.3+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fcheckm_taxonomy_wf%2Fcheckm_taxonomy_wf%2F1.2.3%2Bgalaxy0
-  - description: 'CheckM tree_qa: Assess phylogenetic markers in the genome tree'
-    title: CheckM tree_qa 1.2.3+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fcheckm_tree_qa%2Fcheckm_tree_qa%2F1.2.3%2Bgalaxy0
-  - description: 'CheckM tree: Place bins in the genome tree'
-    title: CheckM tree 1.2.3+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fcheckm_tree%2Fcheckm_tree%2F1.2.3%2Bgalaxy0
-  - description: 'CheckM tetra: Calculate tetranucleotide signature of sequences'
-    title: CheckM tetra 1.2.3+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fcheckm_tetra%2Fcheckm_tetra%2F1.2.3%2Bgalaxy0
-  - description: 'CheckM qa: Assess bins for contamination and completeness'
-    title: CheckM qa 1.2.3+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fcheckm_qa%2Fcheckm_qa%2F1.2.3%2Bgalaxy0
-  - description: 'CheckM plot: for assessing the quality of genome bins'
-    title: CheckM plot 1.2.3+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fcheckm_plot%2Fcheckm_plot%2F1.2.3%2Bgalaxy0
+    title: CheckM taxonomy_wf 1.2.4+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fcheckm_taxonomy_wf%2Fcheckm_taxonomy_wf%2F1.2.4%2Bgalaxy1
   - description: 'CheckM lineage_wf: Assessing the completeness and contamination
       of genome bins using lineage-specific marker sets'
-    title: CheckM lineage_wf 1.2.3+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fcheckm_lineage_wf%2Fcheckm_lineage_wf%2F1.2.3%2Bgalaxy0
-  - description: 'CheckM lineage_set: Infer lineage-specific marker sets for each
-      bin'
-    title: CheckM lineage_set 1.2.3+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fcheckm_lineage_set%2Fcheckm_lineage_set%2F1.2.3%2Bgalaxy0
+    title: CheckM lineage_wf 1.2.4+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fcheckm_lineage_wf%2Fcheckm_lineage_wf%2F1.2.4%2Bgalaxy1
   - description: 'CheckM analyze: Identify marker genes in bins and calculate genome
       statistics'
-    title: CheckM analyze 1.2.3+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fcheckm_analyze%2Fcheckm_analyze%2F1.2.3%2Bgalaxy0
+    title: CheckM analyze 1.2.4+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fcheckm_analyze%2Fcheckm_analyze%2F1.2.4%2Bgalaxy1
+  - description: 'CheckM qa: Assess bins for contamination and completeness'
+    title: CheckM qa 1.2.4+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fcheckm_qa%2Fcheckm_qa%2F1.2.4%2Bgalaxy1
+  - description: 'CheckM lineage_set: Infer lineage-specific marker sets for each
+      bin'
+    title: CheckM lineage_set 1.2.4+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fcheckm_lineage_set%2Fcheckm_lineage_set%2F1.2.4%2Bgalaxy1
   homepage: https://ecogenomics.github.io/CheckM
   id: checkm
   license: GPL-3.0
@@ -4491,14 +4469,20 @@
 - biocontainers: ''
   biotools: compleasm
   bunya: ''
-  description: '"Compleasm: a faster and more accurate reimplementation of BUSCO"'
-  edam-inputs: []
+  description: 'Compleasm: a faster and more accurate reimplementation of BUSCO.
+
+    It provides measures for quantitative assessment of genome assembly, gene set,
+    and transcriptome completeness based on evolutionarily informed expectations of
+    gene content from near-universal single-copy orthologs.'
+  edam-inputs:
+  - formats:
+    - FASTA-like
+    term: FASTA-like
   edam-operations:
   - Sequence assembly validation
-  - Sequence analysis
-  - Scaffolding
-  - Transcriptome assembly
-  edam-outputs: []
+  edam-outputs:
+  - formats: []
+    term: Sequence report
   edam-topics:
   - Sequence assembly
   - Genomics
@@ -4516,7 +4500,7 @@
   nci-if89: ''
   pawsey: ''
   publications:
-  - title: 10.1093/bioinformatics/btad595
+  - title: 'compleasm: a faster and more accurate reimplementation of BUSCO'
     url: https://doi.org/10.1093/bioinformatics/btad595
   resources:
   - title: .nan
@@ -4560,27 +4544,6 @@
   name: CompuCell3D
   nci-gadi: ''
   nci-if89: ''
-  pawsey: ''
-  publications: ''
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: ''
-  biotools: ''
-  bunya: ''
-  description: ''
-  edam-inputs: ''
-  edam-operations: ''
-  edam-outputs: ''
-  edam-topics: ''
-  galaxy: ''
-  homepage: ''
-  id: cookiecutter
-  license: ''
-  name: cookiecutter
-  nci-gadi: ''
-  nci-if89:
-  - 2.4.0
   pawsey: ''
   publications: ''
   resources:
@@ -4951,8 +4914,8 @@
   - Sequencing
   galaxy:
   - description: 'Cutadapt: Remove adapter sequences from FASTQ/FASTA'
-    title: Cutadapt 5.0+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Flparsons%2Fcutadapt%2Fcutadapt%2F5.0%2Bgalaxy0
+    title: Cutadapt 5.1+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Flparsons%2Fcutadapt%2Fcutadapt%2F5.1%2Bgalaxy0
   homepage: https://pypi.org/project/cutadapt/
   id: cutadapt
   license: MIT
@@ -4995,8 +4958,8 @@
   - Computer science
   galaxy:
   - description: 'cuteSV: detects long-read-based SVs'
-    title: cuteSV 2.1.1+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fcutesv%2Fcutesv%2F2.1.1%2Bgalaxy0
+    title: cuteSV 2.1.2+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fcutesv%2Fcutesv%2F2.1.2%2Bgalaxy0
   homepage: https://github.com/tjiangHIT/cuteSV
   id: cutesv
   license: MIT
@@ -5110,8 +5073,8 @@
   edam-topics: ''
   galaxy:
   - description: 'Datamash: (operations on tabular data)'
-    title: Datamash 1.8+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fdatamash_ops%2Fdatamash_ops%2F1.8%2Bgalaxy0
+    title: Datamash 1.9+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fdatamash_ops%2Fdatamash_ops%2F1.9%2Bgalaxy0
   homepage: ''
   id: datamash
   license: ''
@@ -5141,70 +5104,6 @@
   name: dbbuilder
   nci-gadi: ''
   nci-if89: ''
-  pawsey: ''
-  publications: ''
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: ''
-  biotools: ''
-  bunya: ''
-  description: ''
-  edam-inputs: ''
-  edam-operations: ''
-  edam-outputs: ''
-  edam-topics: ''
-  galaxy: ''
-  homepage: ''
-  id: dcm2niix
-  license: ''
-  name: dcm2niix
-  nci-gadi: ''
-  nci-if89:
-  - 1.0.20220720
-  - 1.0.20230411
-  pawsey: ''
-  publications: ''
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: ''
-  biotools: ''
-  bunya: ''
-  description: ''
-  edam-inputs: ''
-  edam-operations: ''
-  edam-outputs: ''
-  edam-topics: ''
-  galaxy: ''
-  homepage: ''
-  id: deepconsensus-cpu
-  license: ''
-  name: DeepConsensus (CPU)
-  nci-gadi: ''
-  nci-if89:
-  - 1.0.0
-  pawsey: ''
-  publications: ''
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: ''
-  biotools: ''
-  bunya: ''
-  description: ''
-  edam-inputs: ''
-  edam-operations: ''
-  edam-outputs: ''
-  edam-topics: ''
-  galaxy: ''
-  homepage: ''
-  id: deepconsensus-gpu
-  license: ''
-  name: DeepConsensus (GPU)
-  nci-gadi: ''
-  nci-if89:
-  - 1.2.0
   pawsey: ''
   publications: ''
   resources:
@@ -5510,8 +5409,8 @@
   - Small molecules
   galaxy:
   - description: 'DIA-NN: is a software for DIA/SWATH data processing'
-    title: DIA-NN 1.8.1+galaxy3
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fdiann%2Fdiann%2F1.8.1%2Bgalaxy3
+    title: DIA-NN 1.8.1+galaxy5
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fdiann%2Fdiann%2F1.8.1%2Bgalaxy5
   homepage: https://github.com/vdemichev/diann
   id: diann
   license: ''
@@ -5588,14 +5487,14 @@
   - Proteins
   galaxy:
   - description: 'Diamond: alignment tool for short sequences against a protein database'
-    title: Diamond 2.1.11+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Fdiamond%2Fbg_diamond%2F2.1.11%2Bgalaxy0
+    title: Diamond 2.1.12+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Fdiamond%2Fbg_diamond%2F2.1.12%2Bgalaxy0
   - description: 'Diamond makedb: Build database from a FASTA file'
-    title: Diamond makedb 2.1.11+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Fdiamond%2Fbg_diamond_makedb%2F2.1.11%2Bgalaxy0
+    title: Diamond makedb 2.1.12+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Fdiamond%2Fbg_diamond_makedb%2F2.1.12%2Bgalaxy0
   - description: 'Diamond view: generate formatted output from DAA files'
-    title: Diamond view 2.1.11+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Fdiamond%2Fbg_diamond_view%2F2.1.11%2Bgalaxy0
+    title: Diamond view 2.1.12+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Fdiamond%2Fbg_diamond_view%2F2.1.12%2Bgalaxy0
   homepage: https://github.com/bbuchfink/diamond
   id: diamond
   license: AGPL-3.0
@@ -5710,16 +5609,16 @@
   edam-topics:
   - Sequence analysis
   galaxy:
+  - description: 'Dorado: basecaller for raw Oxford Nanopore data'
+    title: Dorado 0.9.5+bd7fb217+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxy-australia%2Fdorado%2Fdorado%2F0.9.5%2Bbd7fb217%2Bgalaxy1
   - description: 'Dorado adapter and primer trimming: for Oxford Nanopore (ONT) DNA
       reads'
-    title: Dorado adapter and primer trimming 0.8.2+6b413c9+galaxy1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxy-australia%2Fdorado_trimming%2Fdorado_trimming%2F0.8.2%2B6b413c9%2Bgalaxy1
-  - description: 'Dorado: basecaller for raw Oxford Nanopore data'
-    title: Dorado 0.8.2+6b413c9+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxy-australia%2Fdorado%2Fdorado%2F0.8.2%2B6b413c9%2Bgalaxy0
+    title: Dorado adapter and primer trimming 0.9.5+bd7fb217+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxy-australia%2Fdorado_trimming%2Fdorado_trimming%2F0.9.5%2Bbd7fb217%2Bgalaxy1
   - description: 'fast5 to pod5: converter for raw Oxford Nanopore data'
-    title: fast5 to pod5 0.8.2+6b413c9+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxy-australia%2Fdorado_pod5_convert%2Fdorado_pod5_convert%2F0.8.2%2B6b413c9%2Bgalaxy0
+    title: fast5 to pod5 0.9.5+bd7fb217+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxy-australia%2Fdorado_pod5_convert%2Fdorado_pod5_convert%2F0.9.5%2Bbd7fb217%2Bgalaxy0
   homepage: https://github.com/nanoporetech/dorado
   id: dorado
   license: ''
@@ -6611,8 +6510,8 @@
   galaxy:
   - description: 'ENA Upload tool: Submission of (meta)data to the European Nucleotide
       Archive (ENA)'
-    title: ENA Upload tool 0.8.0+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fena_upload%2Fena_upload%2F0.8.0%2Bgalaxy0
+    title: ENA Upload tool 0.9.0+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fena_upload%2Fena_upload%2F0.9.0%2Bgalaxy0
   - description: 'ENA upload table builder: create tables for the ENA upload tool
       from metadata templates'
     title: ENA upload table builder 0.1.0+galaxy0
@@ -6698,27 +6597,6 @@
   name: enrichm
   nci-gadi: ''
   nci-if89: ''
-  pawsey: ''
-  publications: ''
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: ''
-  biotools: ''
-  bunya: ''
-  description: ''
-  edam-inputs: ''
-  edam-operations: ''
-  edam-outputs: ''
-  edam-topics: ''
-  galaxy: ''
-  homepage: ''
-  id: ensembl-vep
-  license: ''
-  name: ensembl-vep
-  nci-gadi: ''
-  nci-if89:
-  - '106.1'
   pawsey: ''
   publications: ''
   resources:
@@ -7321,8 +7199,8 @@
   - Probes and primers
   galaxy:
   - description: 'fastp: fast all-in-one preprocessing for FASTQ files'
-    title: fastp 0.24.0+galaxy4
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ffastp%2Ffastp%2F0.24.0%2Bgalaxy4
+    title: fastp 1.0.1+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ffastp%2Ffastp%2F1.0.1%2Bgalaxy0
   homepage: https://github.com/OpenGene/fastp
   id: fastp
   license: MIT
@@ -7625,8 +7503,8 @@
   galaxy:
   - description: 'featureCounts: Measure gene expression in RNA-Seq experiments from
       SAM or BAM files'
-    title: featureCounts 2.0.8+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ffeaturecounts%2Ffeaturecounts%2F2.0.8%2Bgalaxy0
+    title: featureCounts 2.1.1+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ffeaturecounts%2Ffeaturecounts%2F2.1.1%2Bgalaxy0
   homepage: http://bioconductor.org/packages/release/bioc/html/Rsubread.html
   id: featurecounts
   license: GPL-3.0
@@ -7823,13 +7701,19 @@
     for a wide range of datasets, from small bacterial projects to large mammalian-scale
     assemblies. The package represents a complete pipeline: it takes raw PB / ONT
     reads as input and outputs polished contigs.'
-  edam-inputs: []
+  edam-inputs:
+  - formats:
+    - FASTQ
+    term: FASTQ
   edam-operations:
   - Genome assembly
   - De-novo assembly
   - Mapping assembly
   - Cross-assembly
-  edam-outputs: []
+  edam-outputs:
+  - formats:
+    - FASTA
+    term: FASTA
   edam-topics:
   - Sequence assembly
   - Metagenomics
@@ -7837,11 +7721,11 @@
   - Genomics
   galaxy:
   - description: 'Flye: de novo assembler for single molecule sequencing reads'
-    title: Flye 2.9.5+galaxy1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Fflye%2Fflye%2F2.9.5%2Bgalaxy1
+    title: Flye 2.9.6+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Fflye%2Fflye%2F2.9.6%2Bgalaxy0
   homepage: https://github.com/fenderglass/Flye
   id: flye
-  license: ''
+  license: BSD-3-Clause
   name: Flye
   nci-gadi: ''
   nci-if89:
@@ -8066,11 +7950,11 @@
   - Rare diseases
   galaxy:
   - description: 'FreeBayes: bayesian genetic variant detector'
-    title: FreeBayes 1.3.9+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Ffreebayes%2Ffreebayes%2F1.3.9%2Bgalaxy0
+    title: FreeBayes 1.3.10+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Ffreebayes%2Ffreebayes%2F1.3.10%2Bgalaxy0
   - description: 'BamLeftAlign: indels in BAM datasets'
-    title: BamLeftAlign 1.3.9
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Ffreebayes%2Fbamleftalign%2F1.3.9
+    title: BamLeftAlign 1.3.10+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Ffreebayes%2Fbamleftalign%2F1.3.10%2Bgalaxy0
   homepage: https://github.com/ekg/freebayes
   id: freebayes
   license: MIT
@@ -8179,21 +8063,21 @@
   edam-topics:
   - Genomics
   galaxy:
+  - description: 'Funannotate compare: annotations'
+    title: Funannotate compare 1.8.17+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ffunannotate_compare%2Ffunannotate_compare%2F1.8.17%2Bgalaxy0
   - description: 'Sort assembly: '
     title: Sort assembly 1.8.17+galaxy0
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ffunannotate_sort%2Ffunannotate_sort%2F1.8.17%2Bgalaxy0
   - description: 'Funannotate assembly clean: '
     title: Funannotate assembly clean 1.8.17+galaxy0
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ffunannotate_clean%2Ffunannotate_clean%2F1.8.17%2Bgalaxy0
-  - description: 'Funannotate compare: annotations'
-    title: Funannotate compare 1.8.15+galaxy5
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ffunannotate_compare%2Ffunannotate_compare%2F1.8.15%2Bgalaxy5
+  - description: 'Funannotate functional: annotation'
+    title: Funannotate functional 1.8.17+galaxy5
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ffunannotate_annotate%2Ffunannotate_annotate%2F1.8.17%2Bgalaxy5
   - description: 'Funannotate predict annotation: '
     title: Funannotate predict annotation 1.8.15+galaxy5
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ffunannotate_predict%2Ffunannotate_predict%2F1.8.15%2Bgalaxy5
-  - description: 'Funannotate functional: annotation'
-    title: Funannotate functional 1.8.15+galaxy5
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ffunannotate_annotate%2Ffunannotate_annotate%2F1.8.15%2Bgalaxy5
   homepage: https://github.com/nextgenusfs/funannotate
   id: funannotate
   license: BSD-2-Clause
@@ -8321,7 +8205,7 @@
     title: Build list 1.2.0
     url: https://usegalaxy.org.au/root?tool_id=__BUILD_LIST__
   - description: 'Extract dataset: '
-    title: Extract dataset 1.0.1
+    title: Extract dataset 1.0.2
     url: https://usegalaxy.org.au/root?tool_id=__EXTRACT_DATASET__
   homepage: ''
   id: galaxy_collection_operations
@@ -8399,190 +8283,190 @@
   - description: 'Convert a 10X BAM file to FASTQ: '
     title: Convert a 10X BAM file to FASTQ 1.4.1
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2F10x_bamtofastq%2F10x_bamtofastq%2F1.4.1
-  - description: 'Convert Genomic Intervals To BED: '
-    title: Convert Genomic Intervals To BED 1.0.0
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_bed_0
-  - description: 'Convert Picard Interval List to BED6: converter'
-    title: Convert Picard Interval List to BED6 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_picard_interval_list_to_bed6
-  - description: 'Convert Len file to Linecount: '
-    title: Convert Len file to Linecount 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_len_to_linecount
-  - description: 'Convert neostore.zip files to neostore: '
-    title: Convert neostore.zip files to neostore 1.0.0
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_neostorezip_to_neostore
-  - description: 'Convert compressed file to uncompressed.: '
-    title: Convert compressed file to uncompressed. 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bz2_to_uncompressed
+  - description: 'Convert FASTA to 2bit: '
+    title: Convert FASTA to 2bit 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fasta_to_2bit
+  - description: 'Convert uncompressed file to compressed: '
+    title: Convert uncompressed file to compressed 1.16+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_uncompressed_to_gz
   - description: 'Convert Interval to tabix: '
     title: Convert Interval to tabix 1.0.2
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_tabix_0
   - description: 'Convert compressed file to uncompressed.: '
     title: Convert compressed file to uncompressed. 1.0.0
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_gz_to_uncompressed
-  - description: 'Convert FASTA to fai file: '
-    title: Convert FASTA to fai file 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fasta_to_fai
-  - description: 'Convert GFF to Interval Index: '
-    title: Convert GFF to Interval Index 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_gff_to_interval_index_0
-  - description: 'Convert BED, GFF, or VCF to BigWig: '
-    title: Convert BED, GFF, or VCF to BigWig 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bed_gff_or_vcf_to_bigwig_0
-  - description: 'Convert FASTA to Bowtie base space Index: '
-    title: Convert FASTA to Bowtie base space Index 1.3.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fasta_to_bowtie_base_index
-  - description: 'Convert Genomic Intervals To Strict BED12: '
-    title: Convert Genomic Intervals To Strict BED12 1.0.0
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_bed12_0
-  - description: 'Convert tabular to CSV: '
-    title: Convert tabular to CSV 1.0.0
-    url: https://usegalaxy.org.au/root?tool_id=tabular_to_csv
+  - description: 'OpenBabel converter for molecular formats: '
+    title: OpenBabel converter for molecular formats 2.4.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_molecules
+  - description: 'Convert neostore.zip files to neostore: '
+    title: Convert neostore.zip files to neostore 1.0.0
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_neostorezip_to_neostore
+  - description: 'Convert BAM to queryname-sorted BAM: '
+    title: Convert BAM to queryname-sorted BAM 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bam_to_qname_sorted_bam
+  - description: 'Unpack archive to directory: '
+    title: Unpack archive to directory 1.0.0
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_archive_to_directory
+  - description: 'Convert CRAM to BAM: '
+    title: Convert CRAM to BAM 1.0.2
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_cram_to_bam_0
+  - description: 'Convert Biom datasets: '
+    title: Convert Biom datasets 2.1.5
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_biom
+  - description: 'Convert GRO to PDB: '
+    title: Convert GRO to PDB 1.0.0
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_Gro_to_Pdb_0
+  - description: 'Convert BED to Feature Location Index: '
+    title: Convert BED to Feature Location Index 1.0.0
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bed_to_fli_0
+  - description: 'Convert FASTQ files to seek locations: '
+    title: Convert FASTQ files to seek locations 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fastq_to_fqtoc0
+  - description: 'Convert Interval to BGZIP: '
+    title: Convert Interval to BGZIP 1.0.3
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_bgzip_0
   - description: 'Convert lped to fped: '
     title: Convert lped to fped 0.02
     url: https://usegalaxy.org.au/root?tool_id=lped2fpedconvert
   - description: 'Convert BedGraph to BigWig: '
     title: Convert BedGraph to BigWig 1.0.1
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bedgraph_to_bigwig
-  - description: 'Convert uncompressed file to compressed: '
-    title: Convert uncompressed file to compressed 1.16+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_uncompressed_to_gz
-  - description: 'Convert Genomic Intervals To Coverage: '
-    title: Convert Genomic Intervals To Coverage 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_bigwig_0
-  - description: 'Convert FASTA to len file: '
-    title: Convert FASTA to len file 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fasta_to_len
-  - description: 'Convert Genomic Intervals To Strict BED6: '
-    title: Convert Genomic Intervals To Strict BED6 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_bed6_0
-  - description: 'Convert SAM to BAM without sorting: '
-    title: Convert SAM to BAM without sorting 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_sam_to_unsorted_bam
-  - description: 'Convert Biom datasets: '
-    title: Convert Biom datasets 2.1.5
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_biom
-  - description: 'OpenBabel converter for molecular formats: '
-    title: OpenBabel converter for molecular formats 2.4.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_molecules
-  - description: 'Convert tabular to dbnsfp: '
-    title: Convert tabular to dbnsfp 1.0.2
-    url: https://usegalaxy.org.au/root?tool_id=tabular_to_dbnsfp
-  - description: 'Convert BGZ VCF to tabix: '
-    title: Convert BGZ VCF to tabix 1.0.2
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_vcf_bgzip_to_tabix_0
-  - description: 'Convert Genomic Intervals To Strict BED: '
-    title: Convert Genomic Intervals To Strict BED 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_bedstrict_0
-  - description: 'Convert MOL2 to MOL: '
-    title: Convert MOL2 to MOL 2.4.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_mol2_to_mol
-  - description: 'Convert Wiggle to Interval: '
-    title: Convert Wiggle to Interval 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_wiggle_to_interval_0
-  - description: 'Convert SMILES to MOL: '
-    title: Convert SMILES to MOL 2.4.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_SMILES_to_MOL
-  - description: 'Convert FASTA to 2bit: '
-    title: Convert FASTA to 2bit 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fasta_to_2bit
-  - description: 'Convert BED to Feature Location Index: '
-    title: Convert BED to Feature Location Index 1.0.0
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bed_to_fli_0
-  - description: 'Convert GFF to Feature Location Index: '
-    title: Convert GFF to Feature Location Index 1.0.0
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_gff_to_fli_0
-  - description: 'Convert plink pbed to ld reduced format: '
-    title: Convert plink pbed to ld reduced format 0.02
-    url: https://usegalaxy.org.au/root?tool_id=pbed2ldindepconvert
-  - description: 'Convert CML to SMILES: '
-    title: Convert CML to SMILES 2.4.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_cml_to_smiles
-  - description: 'Convert BED to GFF: '
-    title: Convert BED to GFF 2.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bed_to_gff_0
-  - description: 'Convert FASTQ files to seek locations: '
-    title: Convert FASTQ files to seek locations 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fastq_to_fqtoc0
-  - description: 'Convert BAM to queryname-sorted BAM: '
-    title: Convert BAM to queryname-sorted BAM 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bam_to_qname_sorted_bam
-  - description: 'Convert MAF to Genomic Intervals: '
-    title: Convert MAF to Genomic Intervals 1.0.3
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_maf_to_interval_0
-  - description: 'Convert Wiggle to BigWig: '
-    title: Convert Wiggle to BigWig 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_wig_to_bigwig
-  - description: 'Convert lped to plink pbed: '
-    title: Convert lped to plink pbed 0.02
-    url: https://usegalaxy.org.au/root?tool_id=lped2pbedconvert
-  - description: 'Convert Bam to Bai: '
-    title: Convert Bam to Bai 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_Bam_Bai_0
-  - description: 'Convert BAM to BigWig: '
-    title: Convert BAM to BigWig 1.0.2
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bam_to_bigwig_0
-  - description: 'Convert FASTA to Bowtie color space Index: '
-    title: Convert FASTA to Bowtie color space Index 1.2.3
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fasta_to_bowtie_color_index
-  - description: 'Convert compressed and uncompressed BCF files: '
-    title: Convert compressed and uncompressed BCF files 0.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bcf_uncompressed_to_bcf
-  - description: 'Convert CRAM to BAM: '
-    title: Convert CRAM to BAM 1.0.2
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_cram_to_bam_0
-  - description: 'Convert BigWig to Wiggle: Convert bigWig to wig'
-    title: Convert BigWig to Wiggle 377+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=bigwigtowig
-  - description: 'Convert FASTA to Tabular: '
-    title: Convert FASTA to Tabular 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fasta_to_tabular
-  - description: 'Unpack archive to directory: '
-    title: Unpack archive to directory 1.0.0
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_archive_to_directory
-  - description: 'Convert MAF to Fasta: '
-    title: Convert MAF to Fasta 1.0.2
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_maf_to_fasta_0
-  - description: 'Convert plink pbed to linkage lped: '
-    title: Convert plink pbed to linkage lped 0.02
-    url: https://usegalaxy.org.au/root?tool_id=pbed2lpedconvert
-  - description: 'Convert InChI to MOL: '
-    title: Convert InChI to MOL 2.4.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_inchi_to_mol
-  - description: 'Convert Interval to BGZIP: '
-    title: Convert Interval to BGZIP 1.0.3
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_bgzip_0
-  - description: 'Convert GFF to BED: '
-    title: Convert GFF to BED 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_gff_to_bed_0
-  - description: 'Convert SAM to BigWig: '
-    title: Convert SAM to BigWig 1.0.3
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_sam_to_bigwig_0
-  - description: 'Convert PDB to GRO: '
-    title: Convert PDB to GRO 1.0.0
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_Pdb_to_Gro_0
-  - description: 'Convert Parquet to csv: '
-    title: Convert Parquet to csv 1.0.0
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_parquet_to_csv
-  - description: 'SMILES to SMILES: '
-    title: SMILES to SMILES 2.4.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_smiles_to_smiles
   - description: 'Convert XTC, DCD, and TRR: '
     title: Convert XTC, DCD, and TRR 1.0.0
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_mdconvert
+  - description: 'Convert compressed file to uncompressed.: '
+    title: Convert compressed file to uncompressed. 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bz2_to_uncompressed
+  - description: 'Convert FASTA to fai file: '
+    title: Convert FASTA to fai file 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fasta_to_fai
+  - description: 'Convert MAF to Genomic Intervals: '
+    title: Convert MAF to Genomic Intervals 1.0.3
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_maf_to_interval_0
+  - description: 'Convert BGZ VCF to tabix: '
+    title: Convert BGZ VCF to tabix 1.0.2
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_vcf_bgzip_to_tabix_0
+  - description: 'Convert SAM to BigWig: '
+    title: Convert SAM to BigWig 1.0.3
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_sam_to_bigwig_0
+  - description: 'SMILES to SMILES: '
+    title: SMILES to SMILES 2.4.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_smiles_to_smiles
+  - description: 'Convert Genomic Intervals To Strict BED: '
+    title: Convert Genomic Intervals To Strict BED 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_bedstrict_0
+  - description: 'Convert BAM to coordinate-sorted BAM: '
+    title: Convert BAM to coordinate-sorted BAM 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bam_to_coodinate_sorted_bam
+  - description: 'Convert tabular to dbnsfp: '
+    title: Convert tabular to dbnsfp 1.0.2
+    url: https://usegalaxy.org.au/root?tool_id=tabular_to_dbnsfp
+  - description: 'Convert Parquet to csv: '
+    title: Convert Parquet to csv 1.0.0
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_parquet_to_csv
+  - description: 'Convert Genomic Intervals To Strict BED12: '
+    title: Convert Genomic Intervals To Strict BED12 1.0.0
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_bed12_0
+  - description: 'Convert BED to GFF: '
+    title: Convert BED to GFF 2.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bed_to_gff_0
+  - description: 'Convert BED, GFF, or VCF to BigWig: '
+    title: Convert BED, GFF, or VCF to BigWig 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bed_gff_or_vcf_to_bigwig_0
+  - description: 'Convert CML to SMILES: '
+    title: Convert CML to SMILES 2.4.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_cml_to_smiles
+  - description: 'Convert GFF to Interval Index: '
+    title: Convert GFF to Interval Index 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_gff_to_interval_index_0
+  - description: 'Convert plink pbed to linkage lped: '
+    title: Convert plink pbed to linkage lped 0.02
+    url: https://usegalaxy.org.au/root?tool_id=pbed2lpedconvert
+  - description: 'Convert FASTA to Bowtie color space Index: '
+    title: Convert FASTA to Bowtie color space Index 1.2.3
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fasta_to_bowtie_color_index
+  - description: 'Convert BigWig to Wiggle: Convert bigWig to wig'
+    title: Convert BigWig to Wiggle 377+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=bigwigtowig
+  - description: 'Convert tabular to CSV: '
+    title: Convert tabular to CSV 1.0.0
+    url: https://usegalaxy.org.au/root?tool_id=tabular_to_csv
+  - description: 'Convert GFF to Feature Location Index: '
+    title: Convert GFF to Feature Location Index 1.0.0
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_gff_to_fli_0
+  - description: 'Convert BAM to BigWig: '
+    title: Convert BAM to BigWig 1.0.2
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bam_to_bigwig_0
+  - description: 'Convert Wiggle to Interval: '
+    title: Convert Wiggle to Interval 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_wiggle_to_interval_0
+  - description: 'Convert FASTA to len file: '
+    title: Convert FASTA to len file 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fasta_to_len
+  - description: 'Convert SAM to BAM without sorting: '
+    title: Convert SAM to BAM without sorting 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_sam_to_unsorted_bam
   - description: 'Convert CSV to tabular: '
     title: Convert CSV to tabular 1.0.0
     url: https://usegalaxy.org.au/root?tool_id=csv_to_tabular
-  - description: 'Convert GRO to PDB: '
-    title: Convert GRO to PDB 1.0.0
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_Gro_to_Pdb_0
+  - description: 'Convert Genomic Intervals To BED: '
+    title: Convert Genomic Intervals To BED 1.0.0
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_bed_0
+  - description: 'Convert Wiggle to BigWig: '
+    title: Convert Wiggle to BigWig 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_wig_to_bigwig
+  - description: 'Convert Genomic Intervals To Coverage: '
+    title: Convert Genomic Intervals To Coverage 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_bigwig_0
+  - description: 'Convert FASTA to Bowtie base space Index: '
+    title: Convert FASTA to Bowtie base space Index 1.3.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fasta_to_bowtie_base_index
+  - description: 'Convert Genomic Intervals To Strict BED6: '
+    title: Convert Genomic Intervals To Strict BED6 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_bed6_0
+  - description: 'Convert PDB to GRO: '
+    title: Convert PDB to GRO 1.0.0
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_Pdb_to_Gro_0
+  - description: 'Convert compressed and uncompressed BCF files: '
+    title: Convert compressed and uncompressed BCF files 0.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bcf_uncompressed_to_bcf
+  - description: 'Convert MAF to Fasta: '
+    title: Convert MAF to Fasta 1.0.2
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_maf_to_fasta_0
+  - description: 'Convert InChI to MOL: '
+    title: Convert InChI to MOL 2.4.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_inchi_to_mol
+  - description: 'Convert plink pbed to ld reduced format: '
+    title: Convert plink pbed to ld reduced format 0.02
+    url: https://usegalaxy.org.au/root?tool_id=pbed2ldindepconvert
+  - description: 'Convert FASTA to Tabular: '
+    title: Convert FASTA to Tabular 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fasta_to_tabular
+  - description: 'Convert Len file to Linecount: '
+    title: Convert Len file to Linecount 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_len_to_linecount
   - description: 'Convert Ref taxonomy to Seq Taxonomy: converts 2 or 3 column sequence
       taxonomy file to a 2 column mothur taxonomy_outline format'
     title: Convert Ref taxonomy to Seq Taxonomy 1.0.1
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_ref_to_seq_taxomony
-  - description: 'Convert BAM to coordinate-sorted BAM: '
-    title: Convert BAM to coordinate-sorted BAM 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bam_to_coodinate_sorted_bam
+  - description: 'Convert Bam to Bai: '
+    title: Convert Bam to Bai 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_Bam_Bai_0
+  - description: 'Convert lped to plink pbed: '
+    title: Convert lped to plink pbed 0.02
+    url: https://usegalaxy.org.au/root?tool_id=lped2pbedconvert
+  - description: 'Convert GFF to BED: '
+    title: Convert GFF to BED 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_gff_to_bed_0
+  - description: 'Convert MOL2 to MOL: '
+    title: Convert MOL2 to MOL 2.4.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_mol2_to_mol
+  - description: 'Convert Picard Interval List to BED6: converter'
+    title: Convert Picard Interval List to BED6 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_picard_interval_list_to_bed6
+  - description: 'Convert SMILES to MOL: '
+    title: Convert SMILES to MOL 2.4.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_SMILES_to_MOL
   homepage: ''
   id: Galaxy CONVERTER
   license: ''
@@ -8675,9 +8559,6 @@
   - description: 'Filter: data on any column using simple expressions'
     title: Filter 1.1.1
     url: https://usegalaxy.org.au/root?tool_id=Filter1
-  - description: 'Sort: data in ascending or descending order'
-    title: Sort 1.2.0
-    url: https://usegalaxy.org.au/root?tool_id=sort1
   - description: 'Select: lines that match an expression'
     title: Select 1.0.4
     url: https://usegalaxy.org.au/root?tool_id=Grep1
@@ -8713,12 +8594,12 @@
   edam-outputs: ''
   edam-topics: ''
   galaxy:
+  - description: 'Volcano Plot: create a volcano plot'
+    title: Volcano Plot 3.5.2+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fvolcanoplot%2Fvolcanoplot%2F3.5.2%2Bgalaxy0
   - description: 'Histogram: of a numeric column'
     title: Histogram 1.0.5
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fhistogram%2Fhistogram_rpy%2F1.0.5
-  - description: 'Volcano Plot: create a volcano plot'
-    title: Volcano Plot 0.0.7
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fvolcanoplot%2Fvolcanoplot%2F0.0.7
   - description: 'Plot RagTag output: to compare query contigs to the reference'
     title: Plot RagTag output 0.0.4
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxy-australia%2Fplot_ragtag_paf%2Fplot_ragtag_paf%2F0.0.4
@@ -8896,12 +8777,12 @@
   edam-outputs: ''
   edam-topics: ''
   galaxy:
-  - description: 'Reverse: columns in a tabular file'
-    title: Reverse 1.8+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fdatamash_reverse%2Fdatamash_reverse%2F1.8%2Bgalaxy0
   - description: 'Transpose: rows/columns in a tabular file'
-    title: Transpose 1.8+galaxy1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fdatamash_transpose%2Fdatamash_transpose%2F1.8%2Bgalaxy1
+    title: Transpose 1.9+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fdatamash_transpose%2Fdatamash_transpose%2F1.9%2Bgalaxy0
+  - description: 'Reverse: columns in a tabular file'
+    title: Reverse 1.9+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fdatamash_reverse%2Fdatamash_reverse%2F1.9%2Bgalaxy0
   - description: 'Join two Datasets: side by side on a specified field'
     title: Join two Datasets 2.1.3
     url: https://usegalaxy.org.au/root?tool_id=join1
@@ -8936,11 +8817,11 @@
     title: Extract element identifiers 0.0.2
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fcollection_element_identifiers%2Fcollection_element_identifiers%2F0.0.2
   - description: 'Number lines: '
-    title: Number lines 9.5+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Ftext_processing%2Fnl%2F9.5%2Bgalaxy0
+    title: Number lines 9.5+galaxy2
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Ftext_processing%2Fnl%2F9.5%2Bgalaxy2
   - description: 'Table Compute: computes operations on table data'
-    title: Table Compute 1.2.4+galaxy1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ftable_compute%2Ftable_compute%2F1.2.4%2Bgalaxy1
+    title: Table Compute 1.2.4+galaxy2
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ftable_compute%2Ftable_compute%2F1.2.4%2Bgalaxy2
   - description: 'Add input name as column: to an existing tabular file'
     title: Add input name as column 0.2.0
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fmvdbeek%2Fadd_input_name_as_column%2FaddName%2F0.2.0
@@ -9589,27 +9470,6 @@
   - title: .nan
     url: .nan
 - biocontainers: ''
-  biotools: ''
-  bunya: ''
-  description: ''
-  edam-inputs: ''
-  edam-operations: ''
-  edam-outputs: ''
-  edam-topics: ''
-  galaxy: ''
-  homepage: ''
-  id: generode
-  license: ''
-  name: generode
-  nci-gadi: ''
-  nci-if89:
-  - 0.5.1
-  pawsey: ''
-  publications: ''
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: ''
   biotools: GenomeScope_2.0
   bunya: ''
   description: Reference-free profiling of polyploid genomes | We have developed GenomeScope
@@ -9754,8 +9614,8 @@
   - Computational biology
   galaxy:
   - description: 'gfastats: The swiss army knife for Genome Assembly'
-    title: gfastats 1.3.10+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Fgfastats%2Fgfastats%2F1.3.10%2Bgalaxy0
+    title: gfastats 1.3.11+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Fgfastats%2Fgfastats%2F1.3.11%2Bgalaxy0
   homepage: https://github.com/vgl-hub/gfastats
   id: gfastats
   license: MIT
@@ -9786,8 +9646,8 @@
     title: Convert gffCompare annotated GTF to BED 0.2.1
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fgffcompare_to_bed%2Fgffcompare_to_bed%2F0.2.1
   - description: 'GffCompare: compare assembled transcripts to a reference annotation'
-    title: GffCompare 0.12.6+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fgffcompare%2Fgffcompare%2F0.12.6%2Bgalaxy0
+    title: GffCompare 0.12.9+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fgffcompare%2Fgffcompare%2F0.12.9%2Bgalaxy0
   homepage: https://ccb.jhu.edu/software/stringtie/gff.shtml
   id: gffcompare
   license: MIT
@@ -9841,24 +9701,24 @@
   edam-topics:
   - Data visualisation
   galaxy:
+  - description: 'Violin plot w ggplot2: '
+    title: Violin plot w ggplot2 3.5.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fggplot2_violin%2Fggplot2_violin%2F3.5.1%2Bgalaxy1
+  - description: 'Scatterplot with ggplot2: '
+    title: Scatterplot with ggplot2 3.5.1+galaxy2
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fggplot2_point%2Fggplot2_point%2F3.5.1%2Bgalaxy2
+  - description: 'Histogram with ggplot2: '
+    title: Histogram with ggplot2 3.5.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fggplot2_histogram%2Fggplot2_histogram%2F3.5.1%2Bgalaxy1
+  - description: 'Heatmap w ggplot: '
+    title: Heatmap w ggplot 3.5.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fggplot2_heatmap%2Fggplot2_heatmap%2F3.5.1%2Bgalaxy1
   - description: 'heatmap2: '
     title: heatmap2 3.2.0+galaxy1
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fggplot2_heatmap2%2Fggplot2_heatmap2%2F3.2.0%2Bgalaxy1
-  - description: 'Violin plot w ggplot2: '
-    title: Violin plot w ggplot2 3.4.0+galaxy1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fggplot2_violin%2Fggplot2_violin%2F3.4.0%2Bgalaxy1
   - description: 'PCA plot w ggplot2: '
-    title: PCA plot w ggplot2 3.4.0+galaxy1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fggplot2_pca%2Fggplot2_pca%2F3.4.0%2Bgalaxy1
-  - description: 'Heatmap w ggplot: '
-    title: Heatmap w ggplot 3.4.0+galaxy1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fggplot2_heatmap%2Fggplot2_heatmap%2F3.4.0%2Bgalaxy1
-  - description: 'Histogram with ggplot2: '
-    title: Histogram with ggplot2 3.4.0+galaxy1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fggplot2_histogram%2Fggplot2_histogram%2F3.4.0%2Bgalaxy1
-  - description: 'Scatterplot with ggplot2: '
-    title: Scatterplot with ggplot2 3.4.0+galaxy1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fggplot2_point%2Fggplot2_point%2F3.4.0%2Bgalaxy1
+    title: PCA plot w ggplot2 3.5.1+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fggplot2_pca%2Fggplot2_pca%2F3.5.1%2Bgalaxy1
   homepage: http://ggplot2.org/
   id: ggplot2
   license: ''
@@ -10324,8 +10184,8 @@
   - Proteins
   galaxy:
   - description: 'GTDB-Tk Classify genomes: by placement in GTDB reference tree'
-    title: GTDB-Tk Classify genomes 2.4.0+galaxy1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fgtdbtk_classify_wf%2Fgtdbtk_classify_wf%2F2.4.0%2Bgalaxy1
+    title: GTDB-Tk Classify genomes 2.4.1+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fgtdbtk_classify_wf%2Fgtdbtk_classify_wf%2F2.4.1%2Bgalaxy0
   homepage: https://github.com/ecogenomics/gtdbtk
   id: gtdb-tk
   license: GPL-3.0
@@ -10995,8 +10855,8 @@
   - Sequence assembly
   galaxy:
   - description: 'Hifiasm: haplotype-resolved de novo assembler for PacBio Hifi reads'
-    title: Hifiasm 0.24.0+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Fhifiasm%2Fhifiasm%2F0.24.0%2Bgalaxy0
+    title: Hifiasm 0.25.0+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Fhifiasm%2Fhifiasm%2F0.25.0%2Bgalaxy0
   homepage: https://github.com/chhylp123/hifiasm
   id: hifiasm
   license: MIT
@@ -11077,27 +10937,6 @@
     url: https://doi.org/10.1038/nprot.2016.095
   - title: Simulation-based comprehensive benchmarking of RNA-seq aligners
     url: https://doi.org/10.1038/nmeth.4106
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: ''
-  biotools: ''
-  bunya: ''
-  description: ''
-  edam-inputs: ''
-  edam-operations: ''
-  edam-outputs: ''
-  edam-topics: ''
-  galaxy: ''
-  homepage: ''
-  id: hmmcleaner
-  license: ''
-  name: hmmcleaner
-  nci-gadi: ''
-  nci-if89:
-  - '0.180750'
-  pawsey: ''
-  publications: ''
   resources:
   - title: .nan
     url: .nan
@@ -11808,8 +11647,8 @@
   galaxy:
   - description: 'IQ-TREE: Phylogenomic / evolutionary tree construction from multiple
       sequences'
-    title: IQ-TREE 2.4.0+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fiqtree%2Fiqtree%2F2.4.0%2Bgalaxy0
+    title: IQ-TREE 2.4.0+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fiqtree%2Fiqtree%2F2.4.0%2Bgalaxy1
   homepage: http://www.cibiv.at/software/iqtree/
   id: iq-tree
   license: ''
@@ -11873,8 +11712,8 @@
   - Genetic variation
   galaxy:
   - description: 'ISEScan: Insertion Sequence Elements detection in prokaryotic genomes'
-    title: ISEScan 1.7.2.3+galaxy1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fisescan%2Fisescan%2F1.7.2.3%2Bgalaxy1
+    title: ISEScan 1.7.3+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fisescan%2Fisescan%2F1.7.3%2Bgalaxy0
   homepage: https://github.com/xiezhq/ISEScan
   id: isescan
   license: ''
@@ -11933,8 +11772,8 @@
   galaxy:
   - description: 'isolib: create an isotopic pattern library for given compounds and
       adducts based on enviPat'
-    title: isolib 2.6+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frecetox%2Fisolib%2Fisolib%2F2.6%2Bgalaxy0
+    title: isolib 2.6+galaxy3
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frecetox%2Fisolib%2Fisolib%2F2.6%2Bgalaxy3
   homepage: ''
   id: isolib
   license: ''
@@ -12038,8 +11877,8 @@
     title: ivar filtervariants 1.4.4+galaxy0
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fivar_filtervariants%2Fivar_filtervariants%2F1.4.4%2Bgalaxy0
   - description: 'ivar trim: Trim reads in aligned BAM'
-    title: ivar trim 1.4.3+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fivar_trim%2Fivar_trim%2F1.4.3%2Bgalaxy0
+    title: ivar trim 1.4.4+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fivar_trim%2Fivar_trim%2F1.4.4%2Bgalaxy0
   - description: 'ivar consensus: Call consensus from aligned BAM file'
     title: ivar consensus 1.4.4+galaxy0
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fivar_consensus%2Fivar_consensus%2F1.4.4%2Bgalaxy0
@@ -12161,27 +12000,6 @@
   publications:
   - title: 10.1101/2021.05.27.445886
     url: https://doi.org/10.1101/2021.05.27.445886
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: ''
-  biotools: ''
-  bunya: ''
-  description: ''
-  edam-inputs: ''
-  edam-operations: ''
-  edam-outputs: ''
-  edam-topics: ''
-  galaxy: ''
-  homepage: ''
-  id: jdk
-  license: ''
-  name: Java Development Kit (JDK)
-  nci-gadi: ''
-  nci-if89:
-  - 11.0.2
-  pawsey: ''
-  publications: ''
   resources:
   - title: .nan
     url: .nan
@@ -12725,11 +12543,16 @@
   bunya:
   - 2.1.2-gompi-2021a
   - 2.1.2-gompi-2022a                    (D)
-  description: Kraken 2 is the newest version of Kraken, a taxonomic classification
-    system using exact k-mer matches to achieve high accuracy and fast classification
-    speeds. This classifier matches each k-mer within a query sequence to the lowest
-    common ancestor (LCA) of all genomes containing the given k-mer. The k-mer assignments
-    inform the classification algorithm.
+  description: "Kraken 2 is the newest version of Kraken, a taxonomic classification\
+    \ system using exact k-mer matches to achieve high accuracy and fast classification\
+    \ speeds. This classifier matches each k-mer within a query sequence to the lowest\
+    \ common ancestor (LCA) of all genomes containing the given k-mer. The k-mer assignments\
+    \ inform the classification algorithm.\nAny assumption that Kraken\u2019s raw\
+    \ read assignments can be directly translated into species or strain-level abundance\
+    \ estimates is flawed. Bracken (Bayesian Reestimation of Abundance after Classification\
+    \ with KrakEN), estimates species abundances in metagenomics samples by probabilistically\
+    \ re-distributing reads in the taxonomic tree. (Lu, Jennifer et al. \u201CBracken:\
+    \ estimating species abundance in metagenomics data.\u201D)"
   edam-inputs:
   - formats:
     - FASTQ
@@ -12744,6 +12567,8 @@
   edam-topics:
   - Taxonomy
   - Metagenomics
+  - Microbial ecology
+  - Microbiology
   galaxy:
   - description: 'Kraken2: assign taxonomic labels to sequencing reads'
     title: Kraken2 2.1.3+galaxy1
@@ -13400,12 +13225,12 @@
   - Sequence analysis
   galaxy:
   - description: 'MAFFT: Multiple alignment program for amino acid or nucleotide sequences'
-    title: MAFFT 7.526+galaxy1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frnateam%2Fmafft%2Frbc_mafft%2F7.526%2Bgalaxy1
+    title: MAFFT 7.526+galaxy2
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frnateam%2Fmafft%2Frbc_mafft%2F7.526%2Bgalaxy2
   - description: 'MAFFT add: Align a sequence,alignment or fragments to an existing
       alignment.'
-    title: MAFFT add 7.526+galaxy1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frnateam%2Fmafft%2Frbc_mafft_add%2F7.526%2Bgalaxy1
+    title: MAFFT add 7.526+galaxy2
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frnateam%2Fmafft%2Frbc_mafft_add%2F7.526%2Bgalaxy2
   homepage: http://mafft.cbrc.jp/alignment/server/index.html
   id: mafft
   license: BSD-Source-Code
@@ -13567,6 +13392,9 @@
   - formats:
     - imzML metadata file
     term: imzML metadata file
+  - formats:
+    - ibd
+    term: ibd
   edam-operations:
   - Quantification
   - Spectrum calculation
@@ -13720,63 +13548,63 @@
   edam-topics:
   - Metabolomics
   galaxy:
+  - description: 'matchms split library: split a large library into subsets'
+    title: matchms split library 0.30.2+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frecetox%2Fmatchms_split%2Fmatchms_split%2F0.30.2%2Bgalaxy0
+  - description: 'matchms spectral similarity: matchms spectral similarity calculation'
+    title: matchms spectral similarity 0.30.2+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frecetox%2Fmatchms_spectral_similarity%2Fmatchms_spectral_similarity%2F0.30.2%2Bgalaxy0
+  - description: 'matchms remove spectra: Filters spectra based on metadata presence'
+    title: matchms remove spectra 0.30.2+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frecetox%2Fmatchms_remove_spectra%2Fmatchms_remove_spectra%2F0.30.2%2Bgalaxy0
+  - description: 'matchms networking: create similarity network graph from matchms
+      similarity scores'
+    title: matchms networking 0.30.2+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frecetox%2Fmatchms_networking%2Fmatchms_networking%2F0.30.2%2Bgalaxy0
+  - description: 'matchms metadata match: matchms metadata match calculation for numeric
+      fields based on tolerance'
+    title: matchms metadata match 0.30.2+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frecetox%2Fmatchms_metadata_match%2Fmatchms_metadata_match%2F0.30.2%2Bgalaxy0
+  - description: 'matchms metadata export: extract all metadata from mass spectra
+      file to tabular format'
+    title: matchms metadata export 0.30.2+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frecetox%2Fmatchms_metadata_export%2Fmatchms_metadata_export%2F0.30.2%2Bgalaxy0
+  - description: 'matchms scores formatter: reformat scores object of matchms to long
+      format table'
+    title: matchms scores formatter 0.30.2+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frecetox%2Fmatchms_formatter%2Fmatchms_formatter%2F0.30.2%2Bgalaxy0
+  - description: 'matchms fingerprint similarity: calculate similarity between molecular
+      fingerprints calculated from structural spectrum metadata descriptors'
+    title: matchms fingerprint similarity 0.30.2+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frecetox%2Fmatchms_fingerprint_similarity%2Fmatchms_fingerprint_similarity%2F0.30.2%2Bgalaxy0
+  - description: 'matchms filtering: filter and normalize mass spectrometry data'
+    title: matchms filtering 0.30.2+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frecetox%2Fmatchms_filtering%2Fmatchms_filtering%2F0.30.2%2Bgalaxy0
+  - description: 'matchms convert: convert between mass spectral library formats (.mgf/.msp/.json)
+      using matchms'
+    title: matchms convert 0.30.2+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frecetox%2Fmatchms_convert%2Fmatchms_convert%2F0.30.2%2Bgalaxy0
+  - description: 'matchms add key: Set metadata key in MSP to static value'
+    title: matchms add key 0.30.2+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frecetox%2Fmatchms_add_key%2Fmatchms_add_key%2F0.30.2%2Bgalaxy0
   - description: 'recetox-xMSannotator: annotate peak intensity table including scores
       and confidence levels'
     title: recetox-xMSannotator 0.10.0+galaxy1
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frecetox%2Frecetox_xmsannotator_advanced%2Frecetox_xmsannotator_advanced%2F0.10.0%2Bgalaxy1
-  - description: 'matchms split library: split a large library into subsets'
-    title: matchms split library 0.27.0+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frecetox%2Fmatchms_split%2Fmatchms_split%2F0.27.0%2Bgalaxy0
-  - description: 'matchms networking: create similarity network graph from matchms
-      similarity scores'
-    title: matchms networking 0.27.0+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frecetox%2Fmatchms_networking%2Fmatchms_networking%2F0.27.0%2Bgalaxy0
-  - description: 'matchms metadata export: extract all metadata from mass spectra
-      file to tabular format'
-    title: matchms metadata export 0.27.0+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frecetox%2Fmatchms_metadata_export%2Fmatchms_metadata_export%2F0.27.0%2Bgalaxy0
-  - description: 'matchms fingerprint similarity: calculate similarity between molecular
-      fingerprints calculated from structural spectrum metadata descriptors'
-    title: matchms fingerprint similarity 0.27.0+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frecetox%2Fmatchms_fingerprint_similarity%2Fmatchms_fingerprint_similarity%2F0.27.0%2Bgalaxy0
-  - description: 'matchms filtering: filter and normalize mass spectrometry data'
-    title: matchms filtering 0.27.0+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frecetox%2Fmatchms_filtering%2Fmatchms_filtering%2F0.27.0%2Bgalaxy0
-  - description: 'matchms convert: convert between mass spectral library formats (.mgf/.msp/.json)
-      using matchms'
-    title: matchms convert 0.27.0+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frecetox%2Fmatchms_convert%2Fmatchms_convert%2F0.27.0%2Bgalaxy0
-  - description: 'matchms remove spectra: Filters spectra based on metadata presence'
-    title: matchms remove spectra 0.27.0+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frecetox%2Fmatchms_remove_spectra%2Fmatchms_remove_spectra%2F0.27.0%2Bgalaxy0
   - description: 'matchms remove key: Remove metadata entry for all spectra in a library'
-    title: matchms remove key 0.27.0+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frecetox%2Fmatchms_remove_key%2Fmatchms_remove_key%2F0.27.0%2Bgalaxy0
+    title: matchms remove key 0.30.2+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frecetox%2Fmatchms_remove_key%2Fmatchms_remove_key%2F0.30.2%2Bgalaxy0
   - description: 'matchms metadata merge: Merge metadata csv into MSP by a specified
       column'
-    title: matchms metadata merge 0.27.0+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frecetox%2Fmatchms_metadata_merge%2Fmatchms_metadata_merge%2F0.27.0%2Bgalaxy0
-  - description: 'matchms add key: Set metadata key in MSP to static value'
-    title: matchms add key 0.27.0+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frecetox%2Fmatchms_add_key%2Fmatchms_add_key%2F0.27.0%2Bgalaxy0
-  - description: 'matchms scores formatter: reformat scores object of matchms to long
-      format table'
-    title: matchms scores formatter 0.27.0+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frecetox%2Fmatchms_formatter%2Fmatchms_formatter%2F0.27.0%2Bgalaxy0
-  - description: 'matchms metadata match: matchms metadata match calculation for numeric
-      fields based on tolerance'
-    title: matchms metadata match 0.27.0+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frecetox%2Fmatchms_metadata_match%2Fmatchms_metadata_match%2F0.27.0%2Bgalaxy0
+    title: matchms metadata merge 0.30.2+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frecetox%2Fmatchms_metadata_merge%2Fmatchms_metadata_merge%2F0.30.2%2Bgalaxy0
   - description: 'matchms similarity: calculate the similarity score and matched peaks'
     title: matchms similarity 0.20.0+galaxy0
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frecetox%2Fmatchms_similarity%2Fmatchms_similarity%2F0.20.0%2Bgalaxy0
-  - description: 'matchms spectral similarity: matchms spectral similarity calculation'
-    title: matchms spectral similarity 0.27.0+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frecetox%2Fmatchms_spectral_similarity%2Fmatchms_spectral_similarity%2F0.27.0%2Bgalaxy0
   - description: 'matchms subsetting: Extract spectra from a library given unique
       metadata identifier'
-    title: matchms subsetting 0.27.0+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frecetox%2Fmatchms_subsetting%2Fmatchms_subsetting%2F0.27.0%2Bgalaxy0
+    title: matchms subsetting 0.30.2+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frecetox%2Fmatchms_subsetting%2Fmatchms_subsetting%2F0.30.2%2Bgalaxy0
   homepage: https://github.com/matchms/matchms
   id: matchms
   license: Apache-2.0
@@ -14498,11 +14326,18 @@
   - 4.1.1
   description: Computational tool for profiling the composition of microbial communities
     from metagenomic shotgun sequencing data.
-  edam-inputs: []
+  edam-inputs:
+  - formats:
+    - FASTQ
+    - FASTA
+    - SAM
+    term: SAM
   edam-operations:
-  - Nucleic acid sequence analysis
-  - Phylogenetic tree analysis
-  edam-outputs: []
+  - Taxonomic classification
+  edam-outputs:
+  - formats:
+    - DSV
+    term: DSV
   edam-topics:
   - Metagenomics
   - Phylogenomics
@@ -14519,7 +14354,7 @@
   - description: 'Format MetaPhlAn2: output for Krona'
     title: Format MetaPhlAn2 2.6.0.0
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fmetaphlan2krona%2Fmetaphlan2krona%2F2.6.0.0
-  homepage: http://huttenhower.sph.harvard.edu/metaphlan
+  homepage: http://segatalab.cibio.unitn.it/tools/metaphlan/index.html
   id: metaphlan
   license: MIT
   name: MetaPhlAn
@@ -14659,8 +14494,8 @@
   - Sequence analysis
   galaxy:
   - description: 'metaSPAdes: metagenome assembler'
-    title: metaSPAdes 4.1.0+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fnml%2Fmetaspades%2Fmetaspades%2F4.1.0%2Bgalaxy0
+    title: metaSPAdes 4.2.0+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fnml%2Fmetaspades%2Fmetaspades%2F4.2.0%2Bgalaxy0
   homepage: http://cab.spbu.ru/software/spades/
   id: metaspades
   license: ''
@@ -15210,9 +15045,9 @@
   - Sequence analysis
   - Genomics
   galaxy:
-  - description: 'MitoHiFi: assembly mitogenomes from Pacbio HiFi reads'
-    title: MitoHiFi 3+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Fmitohifi%2Fmitohifi%2F3%2Bgalaxy0
+  - description: 'MitoHiFi: Assemble mitogenomes from Pacbio HiFi reads'
+    title: MitoHiFi 3.2.3+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Fmitohifi%2Fmitohifi%2F3.2.3%2Bgalaxy0
   homepage: https://github.com/marcelauliano/MitoHiFi
   id: mitohifi
   license: MIT
@@ -15440,29 +15275,6 @@
   publications:
   - title: 'MoFF: A robust and automated approach to extract peptide ion intensities'
     url: https://doi.org/10.1038/nmeth.4075
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: ''
-  biotools: ''
-  bunya: ''
-  description: ''
-  edam-inputs: ''
-  edam-operations: ''
-  edam-outputs: ''
-  edam-topics: ''
-  galaxy: ''
-  homepage: ''
-  id: monailabel
-  license: ''
-  name: MONAI Label
-  nci-gadi: ''
-  nci-if89:
-  - 0.6.0
-  - 0.7.0
-  - 0.8.0
-  pawsey: ''
-  publications: ''
   resources:
   - title: .nan
     url: .nan
@@ -16114,8 +15926,8 @@
   - Proteomics experiment
   galaxy:
   - description: 'msconvert: Convert and/or filter mass spectrometry files'
-    title: msconvert 3.0.20287.4
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fmsconvert%2Fmsconvert%2F3.0.20287.4
+    title: msconvert 3.0.20287.2
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fmsconvert%2Fmsconvert%2F3.0.20287.2
   homepage: http://proteowizard.sourceforge.net/tools.shtml
   id: msconvert
   license: Apache-2.0
@@ -16220,8 +16032,8 @@
   - Data submission, annotation and curation
   galaxy:
   - description: 'MSMetaEnhancer: annotate MS data'
-    title: MSMetaEnhancer 0.4.0+galaxy1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frecetox%2Fmsmetaenhancer%2Fmsmetaenhancer%2F0.4.0%2Bgalaxy1
+    title: MSMetaEnhancer 0.4.1+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frecetox%2Fmsmetaenhancer%2Fmsmetaenhancer%2F0.4.1%2Bgalaxy0
   homepage: https://github.com/RECETOX/MSMetaEnhancer
   id: msmetaenhancer
   license: MIT
@@ -16771,27 +16583,6 @@
   edam-operations: ''
   edam-outputs: ''
   edam-topics: ''
-  galaxy: ''
-  homepage: ''
-  id: nanosv
-  license: ''
-  name: NanoSV
-  nci-gadi: ''
-  nci-if89:
-  - 1.2.4
-  pawsey: ''
-  publications: ''
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: ''
-  biotools: ''
-  bunya: ''
-  description: ''
-  edam-inputs: ''
-  edam-operations: ''
-  edam-outputs: ''
-  edam-topics: ''
   galaxy:
   - description: 'Natural Product likeness calculator: - calculates the similarity
       of the molecule to the structure space covered by known natural products'
@@ -17226,27 +17017,6 @@
   name: NOVOPlasty
   nci-gadi: ''
   nci-if89: ''
-  pawsey: ''
-  publications: ''
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: ''
-  biotools: ''
-  bunya: ''
-  description: ''
-  edam-inputs: ''
-  edam-operations: ''
-  edam-outputs: ''
-  edam-topics: ''
-  galaxy: ''
-  homepage: ''
-  id: nseg
-  license: ''
-  name: nseg
-  nci-gadi: ''
-  nci-if89:
-  - 1.0.1
   pawsey: ''
   publications: ''
   resources:
@@ -17704,27 +17474,6 @@
   - title: .nan
     url: .nan
 - biocontainers: ''
-  biotools: ''
-  bunya: ''
-  description: ''
-  edam-inputs: ''
-  edam-operations: ''
-  edam-outputs: ''
-  edam-topics: ''
-  galaxy: ''
-  homepage: ''
-  id: orad
-  license: ''
-  name: DRAGEN ORA
-  nci-gadi: ''
-  nci-if89:
-  - 2.6.1
-  pawsey: ''
-  publications: ''
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: ''
   biotools: OrthoFinder
   bunya: ''
   description: OrthoFinder is a fast, accurate and comprehensive platform for comparative
@@ -17846,8 +17595,8 @@
   - Sequencing
   galaxy:
   - description: 'Panaroo: A Bacterial Pangenome Analysis Pipeline'
-    title: Panaroo 1.5.0+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxy-australia%2Fpanaroo%2Fpanaroo%2F1.5.0%2Bgalaxy0
+    title: Panaroo 1.5.2+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxy-australia%2Fpanaroo%2Fpanaroo%2F1.5.2%2Bgalaxy0
   homepage: https://github.com/gtonkinhill/panaroo
   id: panaroo
   license: MIT
@@ -18046,11 +17795,16 @@
     contaminants as well as many non-pathogenic microbiota. Researchers can analyze,
     display and transform results from the Kraken and Centrifuge classifiers using
     interactive tables, heatmaps and flow diagrams.
-  edam-inputs: []
+  edam-inputs:
+  - formats:
+    - TSV
+    term: TSV
   edam-operations:
   - Annotation
   - Taxonomic classification
-  edam-outputs: []
+  edam-outputs:
+  - formats: []
+    term: Plot
   edam-topics:
   - Metagenomics
   - Model organisms
@@ -18396,27 +18150,6 @@
   - title: Semi-supervised learning for peptide identification from shotgun proteomics
       datasets
     url: https://doi.org/10.1038/nmeth1113
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: ''
-  biotools: ''
-  bunya: ''
-  description: ''
-  edam-inputs: ''
-  edam-operations: ''
-  edam-outputs: ''
-  edam-topics: ''
-  galaxy: ''
-  homepage: ''
-  id: perllib
-  license: ''
-  name: perllib
-  nci-gadi: ''
-  nci-if89:
-  - v5.26.3
-  pawsey: ''
-  publications: ''
   resources:
   - title: .nan
     url: .nan
@@ -19268,8 +19001,8 @@
   - Mapping
   galaxy:
   - description: 'Pretext Snapshot: image generator for Pretext contact maps'
-    title: Pretext Snapshot 0.0.4+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fpretext_snapshot%2Fpretext_snapshot%2F0.0.4%2Bgalaxy0
+    title: Pretext Snapshot 0.0.5+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fpretext_snapshot%2Fpretext_snapshot%2F0.0.5%2Bgalaxy0
   homepage: https://github.com/wtsi-hpag/PretextView
   id: pretextview
   license: MIT
@@ -19461,12 +19194,21 @@
     be run simultaneously. Among all the steps, although step 4 is optional, we highly
     recommend our users to do so, because assemblers may produce overrepresented seqeuences.
     In such a case, The final step 4 can be applied to remove those seqeuences'
-  edam-inputs: []
+  edam-inputs:
+  - formats:
+    - FASTQ
+    term: FASTQ
+  - formats:
+    - FASTA
+    term: FASTA
   edam-operations:
   - Genome assembly
   - Read binning
   - Scaffolding
-  edam-outputs: []
+  edam-outputs:
+  - formats:
+    - FASTA
+    term: FASTA
   edam-topics:
   - Sequence assembly
   galaxy:
@@ -19695,16 +19437,16 @@
   galaxy:
   - description: 'QCxMS production run: Production run to obtain a QCxMS simulated
       mass spectrum'
-    title: QCxMS production run 5.2.1+galaxy3
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frecetox%2Fqcxms_production_run%2Fqcxms_production_run%2F5.2.1%2Bgalaxy3
+    title: QCxMS production run 5.2.1+galaxy4
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frecetox%2Fqcxms_production_run%2Fqcxms_production_run%2F5.2.1%2Bgalaxy4
   - description: 'QCxMS get results: Get result of the Production run to obtain a
       QCxMS simulated mass spectrum'
-    title: QCxMS get results 5.2.1+galaxy2
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frecetox%2Fqcxms_getres%2Fqcxms_getres%2F5.2.1%2Bgalaxy2
+    title: QCxMS get results 5.2.1+galaxy3
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frecetox%2Fqcxms_getres%2Fqcxms_getres%2F5.2.1%2Bgalaxy3
   - description: 'QCxMS neutral run: required as first step to prepare for the production
       runs'
-    title: QCxMS neutral run 5.2.1+galaxy5
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frecetox%2Fqcxms_neutral_run%2Fqcxms_neutral_run%2F5.2.1%2Bgalaxy5
+    title: QCxMS neutral run 5.2.1+galaxy6
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frecetox%2Fqcxms_neutral_run%2Fqcxms_neutral_run%2F5.2.1%2Bgalaxy6
   homepage: https://github.com/qcxms/QCxMS
   id: qcxms
   license: LGPL-3.0
@@ -19720,18 +19462,17 @@
   biotools: qiime2
   bunya:
   - '2022.8'
-  description: "QIIME 2\u2122 is a next-generation microbiome bioinformatics platform\
-    \ that is extensible, free, open source, and community developed."
+  description: QIIME 2 is an AI-ready microbiome multi-omics data science platform
+    that is trusted, free, open source, extensible, and community developed and supported
+    bioinformatics.
   edam-inputs: []
   edam-operations:
   - Demultiplexing
   - Visualisation
   - Taxonomic classification
-  - Phylogenetic analysis
   edam-outputs: []
   edam-topics:
   - Microbial ecology
-  - Phylogeny
   - Metatranscriptomics
   - Metagenomics
   galaxy:
@@ -20332,18 +20073,17 @@
   biotools: qiime2
   bunya:
   - '2023.9'
-  description: "QIIME 2\u2122 is a next-generation microbiome bioinformatics platform\
-    \ that is extensible, free, open source, and community developed."
+  description: QIIME 2 is an AI-ready microbiome multi-omics data science platform
+    that is trusted, free, open source, extensible, and community developed and supported
+    bioinformatics.
   edam-inputs: []
   edam-operations:
   - Demultiplexing
   - Visualisation
   - Taxonomic classification
-  - Phylogenetic analysis
   edam-outputs: []
   edam-topics:
   - Microbial ecology
-  - Phylogeny
   - Metatranscriptomics
   - Metagenomics
   galaxy: ''
@@ -20365,18 +20105,17 @@
   biotools: qiime2
   bunya:
   - '2023.9'
-  description: "QIIME 2\u2122 is a next-generation microbiome bioinformatics platform\
-    \ that is extensible, free, open source, and community developed."
+  description: QIIME 2 is an AI-ready microbiome multi-omics data science platform
+    that is trusted, free, open source, extensible, and community developed and supported
+    bioinformatics.
   edam-inputs: []
   edam-operations:
   - Demultiplexing
   - Visualisation
   - Taxonomic classification
-  - Phylogenetic analysis
   edam-outputs: []
   edam-topics:
   - Microbial ecology
-  - Phylogeny
   - Metatranscriptomics
   - Metagenomics
   galaxy: ''
@@ -20515,7 +20254,10 @@
   - 5.2.0-foss-2022a                       (D)
   description: "QUAST stands for QUality ASsessment Tool.  \nIt evaluates a quality\
     \ of genome assemblies by computing various metrics and providing nice reports."
-  edam-inputs: []
+  edam-inputs:
+  - formats:
+    - FASTA
+    term: FASTA
   edam-operations:
   - Visualisation
   - Sequence assembly validation
@@ -20703,11 +20445,24 @@
     and consensus steps, while providing a speedup of several times compared to those
     methods. It supports data produced by both Pacific Biosciences and Oxford Nanopore
     Technologies.'
-  edam-inputs: []
+  edam-inputs:
+  - formats:
+    - BAM
+    - SAM
+    term: SAM
+  - formats:
+    - FASTQ
+    term: FASTQ
+  - formats:
+    - FASTA
+    term: FASTA
   edam-operations:
   - Genome assembly
   - Mapping assembly
-  edam-outputs: []
+  edam-outputs:
+  - formats:
+    - FASTA
+    term: FASTA
   edam-topics:
   - Whole genome sequencing
   - Sequence assembly
@@ -20791,14 +20546,14 @@
   edam-topics:
   - Metabolomics
   galaxy:
+  - description: 'RAMClustR: A feature clustering algorithm for non-targeted mass
+      spectrometric metabolomics data.'
+    title: RAMClustR 1.3.1+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frecetox%2Framclustr%2Framclustr%2F1.3.1%2Bgalaxy0
   - description: 'RAMClustR define experiment: Definition of experimental design used
       for record keeping and writing spectra data.'
     title: RAMClustR define experiment 1.0.2+galaxy2
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frecetox%2Framclustr_define_experiment%2Framclustr_define_experiment%2F1.0.2%2Bgalaxy2
-  - description: 'RAMClustR: A feature clustering algorithm for non-targeted mass
-      spectrometric metabolomics data.'
-    title: RAMClustR 1.3.0+galaxy7
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frecetox%2Framclustr%2Framclustr%2F1.3.0%2Bgalaxy7
   homepage: https://github.com/cbroeckl/RAMClustR
   id: ramclustr
   license: GPL-2.0
@@ -21103,8 +20858,8 @@
   galaxy:
   - description: 'Recentrifuge: Robust comparative analysis and contamination removal
       for metagenomics'
-    title: Recentrifuge 1.15.0+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Frecentrifuge%2Frecentrifuge%2F1.15.0%2Bgalaxy0
+    title: Recentrifuge 1.16.1+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Frecentrifuge%2Frecentrifuge%2F1.16.1%2Bgalaxy0
   homepage: https://sites.google.com/view/recentrifuge
   id: Recentrifuge
   license: AGPL-3.0
@@ -21314,7 +21069,10 @@
     programs ( RECON, RepeatScout and LtrHarvest/Ltr_retriever ) which employ complementary
     computational methods for identifying repeat element boundaries and family relationships
     from sequence data.
-  edam-inputs: []
+  edam-inputs:
+  - formats:
+    - FASTA
+    term: FASTA
   edam-operations:
   - Genome assembly
   - de Novo sequencing
@@ -21332,7 +21090,7 @@
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fcsbl%2Frepeatmodeler%2Frepeatmodeler%2F2.0.4%2Bgalaxy1
   homepage: https://github.com/Dfam-consortium/RepeatModeler
   id: repeatmodeler
-  license: ''
+  license: OSL-2.0
   name: RepeatModeler2
   nci-gadi: ''
   nci-if89:
@@ -21565,34 +21323,6 @@
   name: rmats-turbo
   nci-gadi: ''
   nci-if89: ''
-  pawsey: ''
-  publications: ''
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: ''
-  biotools: rmblast
-  bunya: ''
-  description: RMBlast is a RepeatMasker compatible version of the standard NCBI blastn
-    program. The primary difference between this distribution and the NCBI distribution
-    is the addition of a new program "rmblastn" for use with RepeatMasker and RepeatModeler.
-  edam-inputs:
-  - formats: []
-    term: Sequence
-  edam-operations:
-  - Sequence analysis
-  edam-outputs: []
-  edam-topics:
-  - Genomics
-  galaxy: ''
-  homepage: http://www.repeatmasker.org/RMBlast.html
-  id: rmblast
-  license: OSL-2.1
-  name: rmblast
-  nci-gadi: ''
-  nci-if89:
-  - 2.11.0
-  - 2.14.0
   pawsey: ''
   publications: ''
   resources:
@@ -22242,12 +21972,12 @@
     term: CRAM
   edam-operations:
   - Indexing
-  - Editing
-  - Parsing
+  - Data editing
+  - Data parsing
   - Visualisation
-  - Formatting
-  - Sorting
-  - Filtering
+  - Data formatting
+  - Data sorting
+  - Data filtering
   edam-outputs:
   - formats:
     - BAM
@@ -22261,76 +21991,77 @@
   - Rare diseases
   galaxy:
   - description: 'Samtools view: - reformat, filter, or subsample SAM, BAM or CRAM'
-    title: Samtools view 1.20+galaxy3
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fsamtools_view%2Fsamtools_view%2F1.20%2Bgalaxy3
+    title: Samtools view 1.21+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fsamtools_view%2Fsamtools_view%2F1.21%2Bgalaxy0
+  - description: 'Samtools stats: generate statistics for BAM dataset'
+    title: Samtools stats 2.0.7
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fsamtools_stats%2Fsamtools_stats%2F2.0.7
+  - description: 'Samtools sort: order of storing aligned sequences'
+    title: Samtools sort 2.0.7
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fsamtools_sort%2Fsamtools_sort%2F2.0.7
+  - description: 'Slice: BAM by genomic regions'
+    title: Slice 2.0.5
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fsamtools_slice_bam%2Fsamtools_slice_bam%2F2.0.5
+  - description: 'Samtools reheader: copy SAM/BAM header between datasets'
+    title: Samtools reheader 2.0.5
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fsamtools_reheader%2Fsamtools_reheader%2F2.0.5
+  - description: 'Samtools mpileup: multi-way pileup of variants'
+    title: Samtools mpileup 2.1.9
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fsamtools_mpileup%2Fsamtools_mpileup%2F2.1.9
+  - description: 'Samtools idxstats: reports stats of the BAM index file'
+    title: Samtools idxstats 2.0.7
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fsamtools_idxstats%2Fsamtools_idxstats%2F2.0.7
+  - description: 'Samtools calmd: recalculate MD/NM tags'
+    title: Samtools calmd 2.0.6
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fsamtools_calmd%2Fsamtools_calmd%2F2.0.6
+  - description: 'Samtools bedcov: calculate read depth for a set of genomic intervals'
+    title: Samtools bedcov 2.0.6
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fsamtools_bedcov%2Fsamtools_bedcov%2F2.0.6
+  - description: 'SAM-to-BAM: convert SAM to BAM'
+    title: SAM-to-BAM 2.1.4
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fsam_to_bam%2Fsam_to_bam%2F2.1.4
+  - description: 'Samtools merge: merge multiple sorted alignment files'
+    title: Samtools merge 1.21+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fsamtools_merge%2Fsamtools_merge%2F1.21%2Bgalaxy0
+  - description: 'Samtools flagstat: tabulate descriptive stats for BAM datset'
+    title: Samtools flagstat 2.0.7
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fsamtools_flagstat%2Fsamtools_flagstat%2F2.0.7
+  - description: 'Samtools fastx: extract FASTA or FASTQ from alignment files'
+    title: Samtools fastx 1.21+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fsamtools_fastx%2Fsamtools_fastx%2F1.21%2Bgalaxy0
+  - description: 'Samtools coverage: Produces a histogram or table of coverage per
+      chromosome'
+    title: Samtools coverage 1.21+galaxy3
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fsamtools_coverage%2Fsamtools_coverage%2F1.21%2Bgalaxy3
+  - description: 'BAM-to-SAM: convert BAM to SAM'
+    title: BAM-to-SAM 2.0.6
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fbam_to_sam%2Fbam_to_sam%2F2.0.6
   - description: 'Samtools split: BAM dataset on readgroups'
     title: Samtools split 1.20+galaxy2
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fsamtools_split%2Fsamtools_split%2F1.20%2Bgalaxy2
-  - description: 'Samtools merge: merge multiple sorted alignment files'
-    title: Samtools merge 1.20+galaxy2
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fsamtools_merge%2Fsamtools_merge%2F1.20%2Bgalaxy2
   - description: 'Samtools markdup: marks duplicate alignments'
     title: Samtools markdup 1.20+galaxy2
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fsamtools_markdup%2Fsamtools_markdup%2F1.20%2Bgalaxy2
   - description: 'Samtools fixmate: fill mate coordinates, ISIZE and mate related
       flags'
-    title: Samtools fixmate 1.20+galaxy2
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fsamtools_fixmate%2Fsamtools_fixmate%2F1.20%2Bgalaxy2
-  - description: 'Samtools fastx: extract FASTA or FASTQ from alignment files'
-    title: Samtools fastx 1.20+galaxy2
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fsamtools_fastx%2Fsamtools_fastx%2F1.20%2Bgalaxy2
-  - description: 'Samtools coverage: computes the depth at each position or region'
-    title: Samtools coverage 1.15.1+galaxy2
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fsamtools_coverage%2Fsamtools_coverage%2F1.15.1%2Bgalaxy2
-  - description: 'Samtools calmd: recalculate MD/NM tags'
-    title: Samtools calmd 2.0.4
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fsamtools_calmd%2Fsamtools_calmd%2F2.0.4
-  - description: 'Samtools stats: generate statistics for BAM dataset'
-    title: Samtools stats 2.0.5
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fsamtools_stats%2Fsamtools_stats%2F2.0.5
-  - description: 'Slice: BAM by genomic regions'
-    title: Slice 2.0.3
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fsamtools_slice_bam%2Fsamtools_slice_bam%2F2.0.3
-  - description: 'Samtools reheader: copy SAM/BAM header between datasets'
-    title: Samtools reheader 2.0.3
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fsamtools_reheader%2Fsamtools_reheader%2F2.0.3
-  - description: 'Samtools mpileup: multi-way pileup of variants'
-    title: Samtools mpileup 2.1.7
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fsamtools_mpileup%2Fsamtools_mpileup%2F2.1.7
-  - description: 'Samtools idxstats: reports stats of the BAM index file'
-    title: Samtools idxstats 2.0.5
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fsamtools_idxstats%2Fsamtools_idxstats%2F2.0.5
-  - description: 'Samtools bedcov: calculate read depth for a set of genomic intervals'
-    title: Samtools bedcov 2.0.4
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fsamtools_bedcov%2Fsamtools_bedcov%2F2.0.4
-  - description: 'BAM-to-SAM: convert BAM to SAM'
-    title: BAM-to-SAM 2.0.4
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fbam_to_sam%2Fbam_to_sam%2F2.0.4
-  - description: 'SAM-to-BAM: convert SAM to BAM'
-    title: SAM-to-BAM 2.1.2
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fsam_to_bam%2Fsam_to_bam%2F2.1.2
+    title: Samtools fixmate 1.21+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fsamtools_fixmate%2Fsamtools_fixmate%2F1.21%2Bgalaxy0
   - description: 'Filter SAM or BAM, output SAM or BAM: files on FLAG MAPQ RG LN or
       by region'
     title: Filter SAM or BAM, output SAM or BAM 1.8+galaxy1
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fsamtool_filter2%2Fsamtool_filter2%2F1.8%2Bgalaxy1
-  - description: 'Samtools flagstat: tabulate descriptive stats for BAM datset'
-    title: Samtools flagstat 2.0.5
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fsamtools_flagstat%2Fsamtools_flagstat%2F2.0.5
   - description: 'Samtools phase: call and phase heterozygous SNPs'
     title: Samtools phase 2.0.2
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fsamtools_phase%2Fsamtools_phase%2F2.0.2
   - description: 'RmDup: remove PCR duplicates'
     title: RmDup 2.0.1
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fsamtools_rmdup%2Fsamtools_rmdup%2F2.0.1
-  - description: 'Samtools sort: order of storing aligned sequences'
-    title: Samtools sort 2.0.5
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fsamtools_sort%2Fsamtools_sort%2F2.0.5
   - description: 'Samtools depth: compute the depth at each position or region'
-    title: Samtools depth 1.15.1+galaxy2
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fsamtools_depth%2Fsamtools_depth%2F1.15.1%2Bgalaxy2
+    title: Samtools depth 1.21+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fsamtools_depth%2Fsamtools_depth%2F1.21%2Bgalaxy0
   - description: 'samtools BAM to CRAM: convert BAM alignments to CRAM format'
-    title: samtools BAM to CRAM 1.20+galaxy2
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fsamtools_bam_to_cram%2Fsamtools_bam_to_cram%2F1.20%2Bgalaxy2
+    title: samtools BAM to CRAM 1.21+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fsamtools_bam_to_cram%2Fsamtools_bam_to_cram%2F1.21%2Bgalaxy0
   homepage: http://www.htslib.org/
   id: samtools
   license: MIT
@@ -22418,16 +22149,27 @@
     includes preprocessing, visualization, clustering, pseudotime and trajectory inference
     and differential expression testing. The Python-based implementation efficiently
     deals with datasets of more than one million cells.
-  edam-inputs: []
+  edam-inputs:
+  - formats:
+    - HDF5
+    term: HDF5
   edam-operations:
   - Differential gene expression analysis
-  edam-outputs: []
+  - Principal component visualisation
+  - Expression profile clustering
+  edam-outputs:
+  - formats:
+    - HDF5
+    term: HDF5
   edam-topics:
   - Gene expression
   - Cell biology
   - Genetics
   - Single-cell sequencing
   galaxy:
+  - description: 'Scanpy Inspect and manipulate: '
+    title: Scanpy Inspect and manipulate 1.10.2+galaxy2
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fscanpy_inspect%2Fscanpy_inspect%2F1.10.2%2Bgalaxy2
   - description: 'Scanpy filter: mark and subsample'
     title: Scanpy filter 1.10.2+galaxy3
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fscanpy_filter%2Fscanpy_filter%2F1.10.2%2Bgalaxy3
@@ -22446,9 +22188,6 @@
   - description: 'Scanpy cluster, embed: and infer trajectories'
     title: Scanpy cluster, embed 1.10.2+galaxy2
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fscanpy_cluster_reduce_dimension%2Fscanpy_cluster_reduce_dimension%2F1.10.2%2Bgalaxy2
-  - description: 'Scanpy Inspect and manipulate: '
-    title: Scanpy Inspect and manipulate 1.10.2+galaxy1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fscanpy_inspect%2Fscanpy_inspect%2F1.10.2%2Bgalaxy1
   - description: 'Scanpy ScaleData: to make expression variance the same for all genes'
     title: Scanpy ScaleData 1.9.3+galaxy0
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Febi-gxa%2Fscanpy_scale_data%2Fscanpy_scale_data%2F1.9.3%2Bgalaxy0
@@ -22690,6 +22429,9 @@
   - Software engineering
   - Literature and language
   galaxy:
+  - description: 'Threshold image: with scikit-image'
+    title: Threshold image 0.25.0+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fimgteam%2F2d_auto_threshold%2Fip_threshold%2F0.25.0%2Bgalaxy0
   - description: 'Split objects: Split binary image by using watershed'
     title: Split objects 0.0.1
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fimgteam%2F2d_split_binaryimage_by_watershed%2Fip_2d_split_binaryimage_by_watershed%2F0.0.1
@@ -22699,9 +22441,6 @@
   - description: 'Filter label map by rules: '
     title: Filter label map by rules 0.0.1-4
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fimgteam%2F2d_filter_segmentation_by_features%2Fip_2d_filter_segmentation_by_features%2F0.0.1-4
-  - description: 'Threshold image: with scikit-image'
-    title: Threshold image 0.18.1+galaxy3
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fimgteam%2F2d_auto_threshold%2Fip_threshold%2F0.18.1%2Bgalaxy3
   - description: 'Extract image features: with scikit-image'
     title: Extract image features 0.18.1+galaxy0
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fimgteam%2F2d_feature_extraction%2Fip_2d_feature_extraction%2F0.18.1%2Bgalaxy0
@@ -22712,8 +22451,8 @@
     title: Perform histogram equalization 0.18.1+galaxy0
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fimgteam%2F2d_histogram_equalization%2Fip_histogram_equalization%2F0.18.1%2Bgalaxy0
   - description: 'Convert binary image to label map: '
-    title: Convert binary image to label map 0.5+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fimgteam%2Fbinary2labelimage%2Fip_binary_to_labelimage%2F0.5%2Bgalaxy0
+    title: Convert binary image to label map 0.6+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fimgteam%2Fbinary2labelimage%2Fip_binary_to_labelimage%2F0.6%2Bgalaxy0
   homepage: http://scikit-image.org
   id: scikit-image
   license: BSD-3-Clause
@@ -22791,27 +22530,6 @@
   name: Scikit-learn
   nci-gadi: ''
   nci-if89: ''
-  pawsey: ''
-  publications: ''
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: ''
-  biotools: ''
-  bunya: ''
-  description: ''
-  edam-inputs: ''
-  edam-operations: ''
-  edam-outputs: ''
-  edam-topics: ''
-  galaxy: ''
-  homepage: https://www.webscipio.org/
-  id: scipio
-  license: ''
-  name: scipio
-  nci-gadi: ''
-  nci-if89:
-  - '1.4'
   pawsey: ''
   publications: ''
   resources:
@@ -23031,23 +22749,23 @@
   - Sequence analysis
   galaxy:
   - description: 'SeqKit statistics: of FASTA/Q files'
-    title: SeqKit statistics 2.10.0+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqkit_stats%2Fseqkit_stats%2F2.10.0%2Bgalaxy0
-  - description: 'SeqKit sort: FASTA or FASTQ files'
-    title: SeqKit sort 2.10.0+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqkit_sort%2Fseqkit_sort%2F2.10.0%2Bgalaxy0
+    title: SeqKit statistics 2.10.0+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqkit_stats%2Fseqkit_stats%2F2.10.0%2Bgalaxy1
   - description: 'SeqKit locate: subsequences/motifs, mismatch allowed'
-    title: SeqKit locate 2.10.0+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqkit_locate%2Fseqkit_locate%2F2.10.0%2Bgalaxy0
+    title: SeqKit locate 2.10.0+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqkit_locate%2Fseqkit_locate%2F2.10.0%2Bgalaxy1
   - description: 'SeqKit Head: Displays N records of a FASTA or FASTQ file'
-    title: SeqKit Head 2.10.0+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqkit_head%2Fseqkit_head%2F2.10.0%2Bgalaxy0
-  - description: 'SeqKit translate: nucleotid to protein sequence'
-    title: SeqKit translate 2.10.0+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqkit_translate%2Fseqkit_translate%2F2.10.0%2Bgalaxy0
+    title: SeqKit Head 2.10.0+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqkit_head%2Fseqkit_head%2F2.10.0%2Bgalaxy1
   - description: 'SeqKit fx2tab: convert FASTA/Q to tabular'
-    title: SeqKit fx2tab 2.10.0+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqkit_fx2tab%2Fseqkit_fx2tab%2F2.10.0%2Bgalaxy0
+    title: SeqKit fx2tab 2.10.0+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqkit_fx2tab%2Fseqkit_fx2tab%2F2.10.0%2Bgalaxy1
+  - description: 'SeqKit sort: FASTA or FASTQ files'
+    title: SeqKit sort 2.10.0+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqkit_sort%2Fseqkit_sort%2F2.10.0%2Bgalaxy1
+  - description: 'SeqKit translate: nucleotid to protein sequence'
+    title: SeqKit translate 2.10.0+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqkit_translate%2Fseqkit_translate%2F2.10.0%2Bgalaxy1
   homepage: https://bioinf.shenwei.me/seqkit/
   id: seqkit
   license: ''
@@ -23100,52 +22818,52 @@
   edam-topics:
   - Data management
   galaxy:
-  - description: 'seqtk_seq: common transformation of FASTA/Q'
-    title: seqtk_seq 1.4+galaxy1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_seq%2F1.4%2Bgalaxy1
-  - description: 'seqtk_mergefa: Merge two FASTA/Q files into a FASTA file output'
-    title: seqtk_mergefa 1.4+galaxy1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_mergefa%2F1.4%2Bgalaxy1
   - description: 'seqtk_telo: find telomeres'
-    title: seqtk_telo 1.4+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_telo%2F1.4%2Bgalaxy0
+    title: seqtk_telo 1.5+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_telo%2F1.5%2Bgalaxy0
   - description: 'seqtk_mutfa: point mutate FASTA at specified positions'
-    title: seqtk_mutfa 1.4+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_mutfa%2F1.4%2Bgalaxy0
+    title: seqtk_mutfa 1.5+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_mutfa%2F1.5%2Bgalaxy0
   - description: 'seqtk_subseq: extract subsequences from FASTA/Q files'
-    title: seqtk_subseq 1.4+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_subseq%2F1.4%2Bgalaxy0
+    title: seqtk_subseq 1.5+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_subseq%2F1.5%2Bgalaxy0
   - description: 'seqtk_cutN: cut sequence at long N'
-    title: seqtk_cutN 1.4+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_cutN%2F1.4%2Bgalaxy0
+    title: seqtk_cutN 1.5+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_cutN%2F1.5%2Bgalaxy0
   - description: 'seqtk_listhet: extract the position of each het'
-    title: seqtk_listhet 1.4+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_listhet%2F1.4%2Bgalaxy0
+    title: seqtk_listhet 1.5+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_listhet%2F1.5%2Bgalaxy0
   - description: 'seqtk_mergepe: interleave two unpaired FASTA/Q files for a paired-end
       file'
-    title: seqtk_mergepe 1.4+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_mergepe%2F1.4%2Bgalaxy0
+    title: seqtk_mergepe 1.5+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_mergepe%2F1.5%2Bgalaxy0
+  - description: 'seqtk_seq: common transformation of FASTA/Q'
+    title: seqtk_seq 1.5+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_seq%2F1.5%2Bgalaxy1
+  - description: 'seqtk_mergefa: Merge two FASTA/Q files into a FASTA file output'
+    title: seqtk_mergefa 1.5+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_mergefa%2F1.5%2Bgalaxy1
   - description: 'seqtk_sample: random subsample of fasta or fastq sequences'
-    title: seqtk_sample 1.4+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_sample%2F1.4%2Bgalaxy0
+    title: seqtk_sample 1.5+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_sample%2F1.5%2Bgalaxy0
   - description: 'seqtk_dropse: drop unpaired from interleaved Paired End FASTA/Q'
-    title: seqtk_dropse 1.4+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_dropse%2F1.4%2Bgalaxy0
+    title: seqtk_dropse 1.5+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_dropse%2F1.5%2Bgalaxy0
   - description: 'seqtk_fqchk: fastq QC (base/quality summary)'
-    title: seqtk_fqchk 1.4+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_fqchk%2F1.4%2Bgalaxy0
+    title: seqtk_fqchk 1.5+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_fqchk%2F1.5%2Bgalaxy0
   - description: 'seqtk_trimfq: trim FASTQ using the Phred algorithm'
-    title: seqtk_trimfq 1.4+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_trimfq%2F1.4%2Bgalaxy0
+    title: seqtk_trimfq 1.5+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_trimfq%2F1.5%2Bgalaxy0
   - description: 'seqtk_randbase: choose a random base from hets'
-    title: seqtk_randbase 1.4+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_randbase%2F1.4%2Bgalaxy0
+    title: seqtk_randbase 1.5+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_randbase%2F1.5%2Bgalaxy0
   - description: 'seqtk_hety: regional heterozygosity'
-    title: seqtk_hety 1.4+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_hety%2F1.4%2Bgalaxy0
+    title: seqtk_hety 1.5+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_hety%2F1.5%2Bgalaxy0
   - description: 'seqtk_comp: get the nucleotide composition of FASTA/Q'
-    title: seqtk_comp 1.4+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_comp%2F1.4%2Bgalaxy0
+    title: seqtk_comp 1.5+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fseqtk%2Fseqtk_comp%2F1.5%2Bgalaxy0
   homepage: https://github.com/lh3/seqtk
   id: seqtk
   license: MIT
@@ -24181,34 +23899,34 @@
   edam-topics:
   - Sequence assembly
   galaxy:
+  - description: 'rnaSPAdes: de novo transcriptome assembler'
+    title: rnaSPAdes 4.2.0+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Frnaspades%2Frnaspades%2F4.2.0%2Bgalaxy0
   - description: 'rnaviralSPAdes: de novo assembler for transcriptomes, metatranscriptomes
       and metaviromes'
-    title: rnaviralSPAdes 4.1.0+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fspades_rnaviralspades%2Fspades_rnaviralspades%2F4.1.0%2Bgalaxy0
-  - description: 'metaviralSPAdes: extract and assembly viral genomes from metagenomic
-      data'
-    title: metaviralSPAdes 4.1.0+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fspades_metaviralspades%2Fspades_metaviralspades%2F4.1.0%2Bgalaxy0
-  - description: 'coronaSPAdes: SARS-CoV-2 de novo genome assembler'
-    title: coronaSPAdes 4.1.0+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fspades_coronaspades%2Fspades_coronaspades%2F4.1.0%2Bgalaxy0
-  - description: 'SPAdes: genome assembler for genomes of regular and single-cell
-      projects'
-    title: SPAdes 4.1.0+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fnml%2Fspades%2Fspades%2F4.1.0%2Bgalaxy0
-  - description: 'rnaSPAdes: de novo transcriptome assembler'
-    title: rnaSPAdes 4.1.0+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Frnaspades%2Frnaspades%2F4.1.0%2Bgalaxy0
-  - description: 'biosyntheticSPAdes: biosynthetic gene cluster assembly'
-    title: biosyntheticSPAdes 4.1.0+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fspades_biosyntheticspades%2Fspades_biosyntheticspades%2F4.1.0%2Bgalaxy0
+    title: rnaviralSPAdes 4.2.0+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fspades_rnaviralspades%2Fspades_rnaviralspades%2F4.2.0%2Bgalaxy0
+  - description: 'plasmidSPAdes: extract and assembly plasmids from WGS data'
+    title: plasmidSPAdes 4.2.0+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fspades_plasmidspades%2Fspades_plasmidspades%2F4.2.0%2Bgalaxy0
   - description: 'metaplasmidSPAdes: extract and assembly plasmids from metagenomic
       data'
-    title: metaplasmidSPAdes 4.1.0+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fspades_metaplasmidspades%2Fspades_metaplasmidspades%2F4.1.0%2Bgalaxy0
-  - description: 'plasmidSPAdes: extract and assembly plasmids from WGS data'
-    title: plasmidSPAdes 4.1.0+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fspades_plasmidspades%2Fspades_plasmidspades%2F4.1.0%2Bgalaxy0
+    title: metaplasmidSPAdes 4.2.0+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fspades_metaplasmidspades%2Fspades_metaplasmidspades%2F4.2.0%2Bgalaxy0
+  - description: 'coronaSPAdes: SARS-CoV-2 de novo genome assembler'
+    title: coronaSPAdes 4.2.0+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fspades_coronaspades%2Fspades_coronaspades%2F4.2.0%2Bgalaxy0
+  - description: 'SPAdes: genome assembler for genomes of regular and single-cell
+      projects'
+    title: SPAdes 4.2.0+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fnml%2Fspades%2Fspades%2F4.2.0%2Bgalaxy0
+  - description: 'metaviralSPAdes: extract and assembly viral genomes from metagenomic
+      data'
+    title: metaviralSPAdes 4.2.0+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fspades_metaviralspades%2Fspades_metaviralspades%2F4.2.0%2Bgalaxy0
+  - description: 'biosyntheticSPAdes: biosynthetic gene cluster assembly'
+    title: biosyntheticSPAdes 4.2.0+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fspades_biosyntheticspades%2Fspades_biosyntheticspades%2F4.2.0%2Bgalaxy0
   homepage: http://cab.spbu.ru/software/spades/
   id: spades
   license: GPL-2.0
@@ -24423,13 +24141,13 @@
   edam-topics:
   - Virology
   galaxy:
+  - description: 'Squirrel QC: QC of MPXV (Mpox virus) sequences'
+    title: Squirrel QC 1.0.13+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fsquirrel_qc%2Fsquirrel_qc%2F1.0.13%2Bgalaxy1
   - description: 'Squirrel Phylo: Phylogenetic and APOBEC3 analysis of MPXV (Mpox
       virus)'
-    title: Squirrel Phylo 1.0.13+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fsquirrel_phylo%2Fsquirrel_phylo%2F1.0.13%2Bgalaxy0
-  - description: 'Squirrel QC: QC of MPXV (Mpox virus) sequences'
-    title: Squirrel QC 1.0.13+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fsquirrel_qc%2Fsquirrel_qc%2F1.0.13%2Bgalaxy0
+    title: Squirrel Phylo 1.0.13+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fsquirrel_phylo%2Fsquirrel_phylo%2F1.0.13%2Bgalaxy1
   homepage: https://github.com/aineniamh/squirrel
   id: squirrel
   license: ''
@@ -24668,11 +24386,11 @@
   galaxy:
   - description: 'RNA STARSolo: mapping, demultiplexing and gene quantification for
       single cell RNA-seq'
-    title: RNA STARSolo 2.7.11a+galaxy1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Frna_starsolo%2Frna_starsolo%2F2.7.11a%2Bgalaxy1
+    title: RNA STARSolo 2.7.11b+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Frna_starsolo%2Frna_starsolo%2F2.7.11b%2Bgalaxy0
   - description: 'RNA STAR: Gapped-read mapper for RNA-seq data'
-    title: RNA STAR 2.7.11a+galaxy1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Frgrnastar%2Frna_star%2F2.7.11a%2Bgalaxy1
+    title: RNA STAR 2.7.11b+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Frgrnastar%2Frna_star%2F2.7.11b%2Bgalaxy0
   homepage: http://code.google.com/p/rna-star/
   id: star
   license: GPL-3.0
@@ -25080,8 +24798,8 @@
   galaxy:
   - description: 'TB-Profiler Profile: Infer strain types and drug resistance markers
       from sequences'
-    title: TB-Profiler Profile 6.4.0+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ftbprofiler%2Ftb_profiler_profile%2F6.4.0%2Bgalaxy0
+    title: TB-Profiler Profile 6.6.4+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ftbprofiler%2Ftb_profiler_profile%2F6.6.4%2Bgalaxy0
   homepage: https://github.com/jodyphelan/TBProfiler
   id: tbprofiler
   license: GPL-3.0
@@ -25196,62 +24914,62 @@
   edam-topics: ''
   galaxy:
   - description: 'Join: two files'
-    title: Join 9.5+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Ftext_processing%2Ftp_easyjoin_tool%2F9.5%2Bgalaxy0
+    title: Join 9.5+galaxy2
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Ftext_processing%2Ftp_easyjoin_tool%2F9.5%2Bgalaxy2
   - description: 'Sort a row: according to their columns'
-    title: Sort a row 9.5+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Ftext_processing%2Ftp_sort_rows%2F9.5%2Bgalaxy0
+    title: Sort a row 9.5+galaxy2
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Ftext_processing%2Ftp_sort_rows%2F9.5%2Bgalaxy2
   - description: 'Text transformation: with sed'
-    title: Text transformation 9.5+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Ftext_processing%2Ftp_sed_tool%2F9.5%2Bgalaxy0
+    title: Text transformation 9.5+galaxy2
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Ftext_processing%2Ftp_sed_tool%2F9.5%2Bgalaxy2
   - description: 'Select first: lines from a dataset (head)'
-    title: Select first 9.5+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Ftext_processing%2Ftp_head_tool%2F9.5%2Bgalaxy0
+    title: Select first 9.5+galaxy2
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Ftext_processing%2Ftp_head_tool%2F9.5%2Bgalaxy2
   - description: 'Create text file: with recurring lines'
-    title: Create text file 9.5+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Ftext_processing%2Ftp_text_file_with_recurring_lines%2F9.5%2Bgalaxy0
+    title: Create text file 9.5+galaxy2
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Ftext_processing%2Ftp_text_file_with_recurring_lines%2F9.5%2Bgalaxy2
   - description: 'Concatenate datasets: tail-to-head (cat)'
-    title: Concatenate datasets 9.5+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Ftext_processing%2Ftp_cat%2F9.5%2Bgalaxy0
+    title: Concatenate datasets 9.5+galaxy2
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Ftext_processing%2Ftp_cat%2F9.5%2Bgalaxy2
   - description: 'tac: reverse a file (reverse cat)'
-    title: tac 9.5+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Ftext_processing%2Ftp_tac%2F9.5%2Bgalaxy0
+    title: tac 9.5+galaxy2
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Ftext_processing%2Ftp_tac%2F9.5%2Bgalaxy2
   - description: 'Unfold: columns from a table'
-    title: Unfold 9.5+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Ftext_processing%2Ftp_unfold_column_tool%2F9.5%2Bgalaxy0
+    title: Unfold 9.5+galaxy2
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Ftext_processing%2Ftp_unfold_column_tool%2F9.5%2Bgalaxy2
   - description: 'Search in textfiles: (grep)'
-    title: Search in textfiles 9.5+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Ftext_processing%2Ftp_grep_tool%2F9.5%2Bgalaxy0
+    title: Search in textfiles 9.5+galaxy2
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Ftext_processing%2Ftp_grep_tool%2F9.5%2Bgalaxy2
   - description: 'Advanced Cut: columns from a table (cut)'
-    title: Advanced Cut 9.5+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Ftext_processing%2Ftp_cut_tool%2F9.5%2Bgalaxy0
+    title: Advanced Cut 9.5+galaxy2
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Ftext_processing%2Ftp_cut_tool%2F9.5%2Bgalaxy2
   - description: 'Sort: data in ascending or descending order'
-    title: Sort 9.5+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Ftext_processing%2Ftp_sort_header_tool%2F9.5%2Bgalaxy0
+    title: Sort 9.5+galaxy2
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Ftext_processing%2Ftp_sort_header_tool%2F9.5%2Bgalaxy2
   - description: 'Replace Text: in entire line'
-    title: Replace Text 9.5+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Ftext_processing%2Ftp_replace_in_line%2F9.5%2Bgalaxy0
+    title: Replace Text 9.5+galaxy2
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Ftext_processing%2Ftp_replace_in_line%2F9.5%2Bgalaxy2
   - description: 'Replace Text: in a specific column'
-    title: Replace Text 9.5+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Ftext_processing%2Ftp_replace_in_column%2F9.5%2Bgalaxy0
+    title: Replace Text 9.5+galaxy2
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Ftext_processing%2Ftp_replace_in_column%2F9.5%2Bgalaxy2
   - description: 'Replace: parts of text'
-    title: Replace 9.5+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Ftext_processing%2Ftp_find_and_replace%2F9.5%2Bgalaxy0
+    title: Replace 9.5+galaxy2
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Ftext_processing%2Ftp_find_and_replace%2F9.5%2Bgalaxy2
   - description: 'Multi-Join: (combine multiple files)'
-    title: Multi-Join 9.5+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Ftext_processing%2Ftp_multijoin_tool%2F9.5%2Bgalaxy0
+    title: Multi-Join 9.5+galaxy2
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Ftext_processing%2Ftp_multijoin_tool%2F9.5%2Bgalaxy2
   - description: 'Select last: lines from a dataset (tail)'
-    title: Select last 9.5+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Ftext_processing%2Ftp_tail_tool%2F9.5%2Bgalaxy0
+    title: Select last 9.5+galaxy2
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Ftext_processing%2Ftp_tail_tool%2F9.5%2Bgalaxy2
   - description: 'Unique: occurrences of each record'
-    title: Unique 9.5+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Ftext_processing%2Ftp_sorted_uniq%2F9.5%2Bgalaxy0
+    title: Unique 9.5+galaxy2
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Ftext_processing%2Ftp_sorted_uniq%2F9.5%2Bgalaxy2
   - description: 'Unique lines: assuming sorted input file'
-    title: Unique lines 9.5+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Ftext_processing%2Ftp_uniq_tool%2F9.5%2Bgalaxy0
+    title: Unique lines 9.5+galaxy2
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Ftext_processing%2Ftp_uniq_tool%2F9.5%2Bgalaxy2
   - description: 'Text reformatting: with awk'
-    title: Text reformatting 9.5+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Ftext_processing%2Ftp_awk_tool%2F9.5%2Bgalaxy0
+    title: Text reformatting 9.5+galaxy2
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Ftext_processing%2Ftp_awk_tool%2F9.5%2Bgalaxy2
   homepage: ''
   id: text_processing
   license: ''
@@ -25287,8 +25005,8 @@
   - Metabolomics
   galaxy:
   - description: 'Thermo: RAW file converter'
-    title: Thermo 1.3.4+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fthermo_raw_file_converter%2Fthermo_raw_file_converter%2F1.3.4%2Bgalaxy0
+    title: Thermo 1.3.4+galaxy1
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Fthermo_raw_file_converter%2Fthermo_raw_file_converter%2F1.3.4%2Bgalaxy1
   homepage: https://github.com/compomics/ThermoRawFileParser
   id: ThermoRawFileParser
   license: Apache-2.0
@@ -25429,21 +25147,21 @@
   - Sequencing
   - Mobile genetic elements
   galaxy:
-  - description: 'TRANSIT Tn5Gaps: - determine essential genes'
-    title: TRANSIT Tn5Gaps 3.0.2+galaxy1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ftransit_tn5gaps%2Ftransit_tn5gaps%2F3.0.2%2Bgalaxy1
-  - description: 'Convert GFF3: to prot_table for TRANSIT'
-    title: Convert GFF3 3.0.2+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fgff_to_prot%2Fgff_to_prot%2F3.0.2%2Bgalaxy0
   - description: 'TRANSIT Resampling: - determine per-gene p-values'
-    title: TRANSIT Resampling 3.0.2+galaxy1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ftransit_resampling%2Ftransit_resampling%2F3.0.2%2Bgalaxy1
-  - description: 'TRANSIT HMM: - determine essentiality of a genome'
-    title: TRANSIT HMM 3.0.2+galaxy1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ftransit_hmm%2Ftransit_hmm%2F3.0.2%2Bgalaxy1
+    title: TRANSIT Resampling 3.2.3+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ftransit_resampling%2Ftransit_resampling%2F3.2.3%2Bgalaxy0
   - description: 'TRANSIT Gumbel: - determine essential genes'
-    title: TRANSIT Gumbel 3.0.2+galaxy1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ftransit_gumbel%2Ftransit_gumbel%2F3.0.2%2Bgalaxy1
+    title: TRANSIT Gumbel 3.2.3+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ftransit_gumbel%2Ftransit_gumbel%2F3.2.3%2Bgalaxy0
+  - description: 'TRANSIT Tn5Gaps: - determine essential genes'
+    title: TRANSIT Tn5Gaps 3.2.3+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ftransit_tn5gaps%2Ftransit_tn5gaps%2F3.2.3%2Bgalaxy0
+  - description: 'Convert GFF3: to prot_table for TRANSIT'
+    title: Convert GFF3 3.2.3+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fgff_to_prot%2Fgff_to_prot%2F3.2.3%2Bgalaxy0
+  - description: 'TRANSIT HMM: - determine essentiality of a genome'
+    title: TRANSIT HMM 3.2.3+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Ftransit_hmm%2Ftransit_hmm%2F3.2.3%2Bgalaxy0
   homepage: http://saclab.tamu.edu/essentiality/transit/
   id: transit
   license: ''
@@ -25509,48 +25227,6 @@
   - title: .nan
     url: .nan
 - biocontainers: ''
-  biotools: ''
-  bunya: ''
-  description: ''
-  edam-inputs: ''
-  edam-operations: ''
-  edam-outputs: ''
-  edam-topics: ''
-  galaxy: ''
-  homepage: ''
-  id: transvar
-  license: ''
-  name: TransVar
-  nci-gadi: ''
-  nci-if89:
-  - 2.4.0
-  pawsey: ''
-  publications: ''
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: ''
-  biotools: ''
-  bunya: ''
-  description: ''
-  edam-inputs: ''
-  edam-operations: ''
-  edam-outputs: ''
-  edam-topics: ''
-  galaxy: ''
-  homepage: ''
-  id: treeshrink
-  license: ''
-  name: TreeShrink
-  nci-gadi: ''
-  nci-if89:
-  - 1.3.9
-  pawsey: ''
-  publications: ''
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: ''
   biotools: trf
   bunya: ''
   description: Tandem Repeats Finder. Find tandem repeats in DNA sequences without
@@ -25579,27 +25255,6 @@
   publications:
   - title: 'Tandem repeats finder: A program to analyze DNA sequences'
     url: https://doi.org/10.1093/nar/27.2.573
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: ''
-  biotools: ''
-  bunya: ''
-  description: ''
-  edam-inputs: ''
-  edam-operations: ''
-  edam-outputs: ''
-  edam-topics: ''
-  galaxy: ''
-  homepage: ''
-  id: trf-mod
-  license: ''
-  name: TRF-mod
-  nci-gadi: ''
-  nci-if89:
-  - 4.10.0
-  pawsey: ''
-  publications: ''
   resources:
   - title: .nan
     url: .nan
@@ -25665,8 +25320,8 @@
   - Sequence analysis
   galaxy:
   - description: 'Trim Galore!: Quality and adapter trimmer of reads'
-    title: Trim Galore! 0.6.7+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Ftrim_galore%2Ftrim_galore%2F0.6.7%2Bgalaxy0
+    title: Trim Galore! 0.6.10+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2Ftrim_galore%2Ftrim_galore%2F0.6.10%2Bgalaxy0
   homepage: https://www.bioinformatics.babraham.ac.uk/projects/trim_galore/
   id: trim_galore
   license: ''
@@ -25934,18 +25589,18 @@
   - Sequence analysis
   galaxy:
   - description: 'faSplit: Split a FASTA file'
-    title: faSplit 469
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fucsc_fasplit%2Ffasplit%2F469
+    title: faSplit 482
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fucsc_fasplit%2Ffasplit%2F482
   - description: 'faToVcf: Convert a FASTA alignment file to Variant Call Format (VCF)
       single-nucleotide diffs'
-    title: faToVcf 473+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fucsc_fatovcf%2Ffatovcf%2F473%2Bgalaxy0
-  - description: 'wigtobigwig: bedGraph or Wig to bigWig converter'
-    title: wigtobigwig 472+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fucsc_wigtobigwig%2Fucsc_wigtobigwig%2F472%2Bgalaxy0
+    title: faToVcf 482+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fucsc_fatovcf%2Ffatovcf%2F482%2Bgalaxy0
   - description: 'twoBitToFa: Convert all or part of .2bit file to FASTA'
-    title: twoBitToFa 472
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fucsc_twobittofa%2Fucsc-twobittofa%2F472
+    title: twoBitToFa 482
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fucsc_twobittofa%2Fucsc-twobittofa%2F482
+  - description: 'wigtobigwig: bedGraph or Wig to bigWig converter'
+    title: wigtobigwig 482+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fucsc_wigtobigwig%2Fucsc_wigtobigwig%2F482%2Bgalaxy0
   - description: 'Convert GTF to BED12: '
     title: Convert GTF to BED12 357
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fgtftobed12%2Fgtftobed12%2F357
@@ -26068,8 +25723,8 @@
   - Workflows
   galaxy:
   - description: 'Unipept: retrieve taxonomy for peptides'
-    title: Unipept 4.5.1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Funipept%2Funipept%2F4.5.1
+    title: Unipept 6.2.4+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fgalaxyp%2Funipept%2Funipept%2F6.2.4%2Bgalaxy0
   homepage: http://unipept.ugent.be/
   id: unipept
   license: MIT
@@ -26463,13 +26118,7 @@
   edam-outputs: []
   edam-topics:
   - Genetic variation
-  galaxy:
-  - description: 'Intersect: multiple VCF datasets'
-    title: Intersect 0.1.1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fvcftools_isec%2Fvcftools_isec%2F0.1.1
-  - description: 'Merge: multiple VCF datasets'
-    title: Merge 0.1.1
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fdevteam%2Fvcftools_merge%2Fvcftools_merge%2F0.1.1
+  galaxy: ''
   homepage: https://vcftools.github.io/index.html
   id: vcftools
   license: GPL-3.0
@@ -26497,8 +26146,8 @@
   edam-topics: ''
   galaxy:
   - description: 'velocyto CLI: pre-process data for the analysis of RNA velocity'
-    title: velocyto CLI 0.17.17+galaxy2
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fvelocyto_cli%2Fvelocyto_cli%2F0.17.17%2Bgalaxy2
+    title: velocyto CLI 0.17.17+galaxy3
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fiuc%2Fvelocyto_cli%2Fvelocyto_cli%2F0.17.17%2Bgalaxy3
   homepage: http://velocyto.org/
   id: velocyto
   license: ''
@@ -26692,8 +26341,8 @@
   - Metabolomics
   galaxy:
   - description: 'WaveICA: removal of batch effects for untargeted metabolomics data'
-    title: WaveICA 0.2.0+galaxy8
-    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frecetox%2Fwaveica%2Fwaveica%2F0.2.0%2Bgalaxy8
+    title: WaveICA 0.2.0+galaxy9
+    url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Frecetox%2Fwaveica%2Fwaveica%2F0.2.0%2Bgalaxy9
   homepage: https://github.com/RECETOX/WaveICA
   id: waveica
   license: MIT
@@ -27011,12 +26660,12 @@
     untargeted analyte profiling.
   edam-inputs:
   - formats:
-    - netCDF
+    - NetCDF
     - mzML
     - mzXML
     term: mzXML
   - formats:
-    - netCDF
+    - NetCDF
     - mzML
     - mzXML
     term: mzXML
@@ -27024,13 +26673,13 @@
   - Mass spectrum visualisation
   - Label-free quantification
   - Validation
-  - Filtering
   - Chromatographic alignment
   - Peak detection
   - Chromatogram visualisation
+  - Data filtering
   edam-outputs:
   - formats:
-    - netCDF
+    - NetCDF
     - mzQuantML
     term: mzQuantML
   edam-topics:
@@ -27082,7 +26731,8 @@
   nci-if89: ''
   pawsey: ''
   publications:
-  - title: 10.1093/bioinformatics/btq441
+  - title: Correction of mass calibration gaps in liquid chromatography-mass spectrometry
+      metabolomics data
     url: https://doi.org/10.1093/bioinformatics/btq441
   resources:
   - title: .nan

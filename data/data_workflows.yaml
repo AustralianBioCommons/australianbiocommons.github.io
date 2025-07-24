@@ -1,4 +1,19 @@
 - class: nextflow
+  doi: 10.48546/workflowhub.workflow.1782.3
+  edam_ops: ''
+  edam_top: ''
+  guide_link: ''
+  launch_link: ''
+  license: MIT
+  projects:
+  - QCIF Bioinformatics
+  remote_link: https://github.com/qcif/taxapus.git
+  title: TAXODACTYL - High-confidence, evidence-based taxonomic assignment of DNA
+    sequences
+  tools: ''
+  updated_at: '2025-07-08'
+  url: /workflows/1782?version=3
+- class: nextflow
   doi: 10.48546/workflowhub.workflow.1263.1
   edam_ops: ''
   edam_top:
