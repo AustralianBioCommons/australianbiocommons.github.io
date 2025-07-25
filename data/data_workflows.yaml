@@ -1,3 +1,67 @@
+- class: shell_script
+  doi: 10.48546/workflowhub.workflow.148.1
+  edam_ops:
+  - Genome analysis
+  - Genome comparison
+  - Variant calling
+  edam_top:
+  - Bioinformatics
+  - Biomedical science
+  - Genetic variation
+  - Whole genome sequencing
+  guide_link: https://github.com/Sydney-Informatics-Hub/Somatic-ShortV#somatic-shortv
+  launch_link: ''
+  license: GPL-3.0
+  projects:
+  - Sydney Informatics Hub
+  remote_link: ''
+  title: Somatic-ShortV @ NCI-Gadi
+  tools: ''
+  updated_at: '2025-07-25'
+  url: /workflows/148?version=1
+- class: shell_script
+  doi: 10.48546/workflowhub.workflow.143.1
+  edam_ops:
+  - Indel detection
+  - SNP detection
+  - Variant calling
+  - Variant filtering
+  edam_top:
+  - DNA mutation
+  - DNA polymorphism
+  - Genetic variation
+  - Genomics
+  - Population genomics
+  - Whole genome sequencing
+  guide_link: https://github.com/Sydney-Informatics-Hub/Germline-ShortV#germline-shortv
+  launch_link: ''
+  license: GPL-3.0
+  projects:
+  - Australian BioCommons
+  - Sydney Informatics Hub
+  remote_link: ''
+  title: Germline-ShortV @ NCI-Gadi
+  tools: ''
+  updated_at: '2025-07-25'
+  url: /workflows/143?version=1
+- class: shell_script
+  doi: 10.48546/workflowhub.workflow.153.1
+  edam_ops:
+  - Variant calling
+  - Variant filtering
+  edam_top:
+  - Genetic variation
+  - Whole genome sequencing
+  guide_link: https://github.com/Sydney-Informatics-Hub/Bootstrapping-for-BQSR#introduction
+  launch_link: ''
+  license: GPL-3.0
+  projects:
+  - Sydney Informatics Hub
+  remote_link: ''
+  title: Bootstrapping-for-BQSR @ NCI-Gadi
+  tools: ''
+  updated_at: '2025-07-25'
+  url: /workflows/153?version=1
 - class: nextflow
   doi: 10.48546/workflowhub.workflow.1782.3
   edam_ops: ''
@@ -764,7 +828,7 @@
   remote_link: ''
   title: Fastq-to-bam @ NCI-Gadi
   tools: ''
-  updated_at: '2023-01-16'
+  updated_at: '2025-07-25'
   url: /workflows/146?version=1
 - class: shell_script
   doi: 10.48546/workflowhub.workflow.152.1
@@ -1221,52 +1285,6 @@
   updated_at: '2023-01-30'
   url: /workflows/226?version=1
 - class: shell_script
-  doi: 10.48546/workflowhub.workflow.143.1
-  edam_ops:
-  - Indel detection
-  - SNP detection
-  - Variant calling
-  - Variant filtering
-  edam_top:
-  - DNA mutation
-  - DNA polymorphism
-  - Genetic variation
-  - Genomics
-  - Population genomics
-  - Whole genome sequencing
-  guide_link: https://github.com/Sydney-Informatics-Hub/Germline-ShortV#germline-shortv
-  launch_link: ''
-  license: GPL-3.0
-  projects:
-  - Australian BioCommons
-  - Sydney Informatics Hub
-  remote_link: ''
-  title: Germline-ShortV @ NCI-Gadi
-  tools: ''
-  updated_at: '2023-01-16'
-  url: /workflows/143?version=1
-- class: shell_script
-  doi: 10.48546/workflowhub.workflow.148.1
-  edam_ops:
-  - Genome analysis
-  - Genome comparison
-  - Variant calling
-  edam_top:
-  - Bioinformatics
-  - Biomedical science
-  - Genetic variation
-  - Whole genome sequencing
-  guide_link: https://github.com/Sydney-Informatics-Hub/Somatic-ShortV#somatic-shortv
-  launch_link: ''
-  license: GPL-3.0
-  projects:
-  - Sydney Informatics Hub
-  remote_link: ''
-  title: Somatic-ShortV @ NCI-Gadi
-  tools: ''
-  updated_at: '2023-01-16'
-  url: /workflows/148?version=1
-- class: shell_script
   doi: 10.48546/workflowhub.workflow.151.1
   edam_ops:
   - De-novo assembly
@@ -1321,24 +1339,6 @@
   tools: ''
   updated_at: '2023-01-16'
   url: /workflows/150?version=1
-- class: shell_script
-  doi: 10.48546/workflowhub.workflow.153.1
-  edam_ops:
-  - Variant calling
-  - Variant filtering
-  edam_top:
-  - Genetic variation
-  - Whole genome sequencing
-  guide_link: https://github.com/Sydney-Informatics-Hub/Bootstrapping-for-BQSR#introduction
-  launch_link: ''
-  license: GPL-3.0
-  projects:
-  - Sydney Informatics Hub
-  remote_link: ''
-  title: Bootstrapping-for-BQSR @ NCI-Gadi
-  tools: ''
-  updated_at: '2023-01-16'
-  url: /workflows/153?version=1
 - class: shell_script
   doi: 10.48546/workflowhub.workflow.145.1
   edam_ops:
