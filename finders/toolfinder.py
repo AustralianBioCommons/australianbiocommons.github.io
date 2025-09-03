@@ -485,7 +485,7 @@ class ToolDB(DB):
         tool_list_dictionary = list(map(ToolDB.convert_tool_to_yaml, tool_list))
         # filter null values from tool list (i.e. those annotated with "n" for the "include?" field
         tool_list_dictionary = list(filter(lambda x: x is not None, tool_list_dictionary))
-        tool_list_dictionary = list(itertools.filterfalse(lambda x: x['galaxy'] == "" and x['nci-gadi'] == "" and x['nci-if89'] == "" and x['pawsey'] == "" and x['bunya'] == "" and pd.isna(x['resources'][0]['url']), tool_list_dictionary))
+        tool_list_dictionary = list(itertools.filterfalse(lambda x: x['galaxy'] == None and x['nci-gadi'] == None and x['nci-if89'] == None and x['pawsey'] == None and x['bunya'] == None and pd.isna(x['resources'][0]['url']), tool_list_dictionary))
         # see https://stackoverflow.com/q/71281303
         # see https://stackoverflow.com/a/6160082
         with open("data/data.yaml", 'w') as file:

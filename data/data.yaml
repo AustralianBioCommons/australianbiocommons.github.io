@@ -184,26 +184,6 @@
   edam-operations: null
   edam-outputs: null
   edam-topics: null
-  galaxy: null
-  homepage: null
-  id: aggregate_scores_in_intervals2
-  license: null
-  name: aggregate_scores_in_intervals2
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
   galaxy:
   - description: 'Pharmacophore alignment: and optimization (Align-it)'
     title: Pharmacophore alignment 1.0.4+galaxy0
@@ -219,61 +199,6 @@
   nci-if89: null
   pawsey: null
   publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: allhic
-  bunya: null
-  description: Genome scaffolding based on HiC data in heterozygous and high ploidy
-    genomes
-  edam-inputs: []
-  edam-operations:
-  - Scaffolding
-  edam-outputs: []
-  edam-topics:
-  - Data mining
-  - Machine learning
-  galaxy: null
-  homepage: https://github.com/tanghaibao/allhic
-  id: allhic
-  license: BSD-2-Clause
-  name: allhic
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: Assembly of allele-aware, chromosomal-scale autopolyploid genomes based
-      on Hi-C data
-    url: https://doi.org/10.1038/s41477-019-0487-8
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: allpaths-lg
-  bunya: null
-  description: Short read assembler that works on both small and large (mammalian
-    size) genomes.
-  edam-inputs: []
-  edam-operations:
-  - Sequence assembly
-  - Genetic variation analysis
-  edam-outputs: []
-  edam-topics:
-  - Sequence assembly
-  - Genetic variation
-  galaxy: null
-  homepage: https://www.broadinstitute.org/computational-rd/computational-research-and-development
-  id: allpathslg
-  license: MIT
-  name: allpathslg
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: High-quality draft assemblies of mammalian genomes from massively parallel
-      sequence data
-    url: https://doi.org/10.1073/pnas.1017351108
   resources:
   - title: .nan
     url: .nan
@@ -403,34 +328,6 @@
   - title: .nan
     url: .nan
 - biocontainers: null
-  biotools: amos
-  bunya: null
-  description: AMOS is a Modular, Open-Source whole genome assembler.
-  edam-inputs: []
-  edam-operations:
-  - Sequence assembly visualisation
-  - Formatting
-  - Sequence assembly
-  - Sequence assembly validation
-  edam-outputs: []
-  edam-topics:
-  - Genomics
-  - Sequence assembly
-  galaxy: null
-  homepage: http://amos.sourceforge.net/
-  id: amos
-  license: null
-  name: amos
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: Comparative genome assembly.
-    url: http://www.ncbi.nlm.nih.gov/pubmed/15383210
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
   biotools: anaconda
   bunya:
   - '2022.05'
@@ -460,46 +357,6 @@
   publications:
   - title: 10.1055/s-0038-1634061
     url: https://doi.org/10.1055/s-0038-1634061
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: angsd
-  bunya: null
-  description: Software for analyzing next generation sequencing data. The software
-    can handle a number of different input types from mapped reads to imputed genotype
-    probabilities. Most methods take genotype uncertainty into account instead of
-    basing the analysis on called genotypes. This is especially useful for low and
-    medium depth data.
-  edam-inputs:
-  - formats:
-    - BAM
-    - VCF
-    - CRAM
-    term: CRAM
-  edam-operations:
-  - Sequence analysis
-  - Genotyping
-  - Statistical calculation
-  edam-outputs:
-  - formats:
-    - Textual format
-    - MAF
-    term: MAF
-  edam-topics:
-  - Population genetics
-  - Statistics and probability
-  galaxy: null
-  homepage: http://www.popgen.dk/angsd
-  id: angsd
-  license: GPL-2.0
-  name: ANGSD
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 'ANGSD: Analysis of Next Generation Sequencing Data'
-    url: https://doi.org/10.1186/s12859-014-0356-4
   resources:
   - title: .nan
     url: .nan
@@ -773,40 +630,6 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: artemis
-  biotools: artemis
-  bunya: null
-  description: Free genome browser and annotation tool that allows visualisation of
-    sequence features, next generation data and the results of analyses within the
-    context of the sequence, and also its six-frame translation.
-  edam-inputs: []
-  edam-operations:
-  - Genome visualisation
-  edam-outputs: []
-  edam-topics:
-  - Data visualisation
-  galaxy: null
-  homepage: http://www.sanger.ac.uk/science/tools/artemis
-  id: artemis
-  license: null
-  name: Artemis
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 'Artemis: An integrated platform for visualization and analysis of high-throughput
-      sequence-based experimental data'
-    url: https://doi.org/10.1093/bioinformatics/btr703
-  - title: 'Artemis and ACT: Viewing, annotating and comparing sequences stored in
-      a relational database'
-    url: https://doi.org/10.1093/bioinformatics/btn529
-  - title: Viewing and annotating sequence data with Artemis.
-    url: https://doi.org/10.1093/bib/4.2.124
-  - title: 'Artemis: Sequence visualization and annotation'
-    url: https://doi.org/10.1093/bioinformatics/16.10.944
-  resources:
-  - title: .nan
-    url: .nan
 - biocontainers: null
   biotools: artic
   bunya: null
@@ -847,39 +670,6 @@
   nci-if89: null
   pawsey: null
   publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: astral
-  bunya: null
-  description: Java program for estimating a species tree given a set of unrooted
-    gene trees.
-  edam-inputs: []
-  edam-operations:
-  - Phylogenetic tree generation
-  edam-outputs: []
-  edam-topics:
-  - Phylogenetics
-  - Molecular genetics
-  - Statistics and probability
-  galaxy: null
-  homepage: https://github.com/smirarab/ASTRAL
-  id: astral
-  license: null
-  name: ASTRAL
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 'ASTRAL-II: Coalescent-based species tree estimation with many hundreds
-      of taxa and thousands of genes'
-    url: https://doi.org/10.1093/bioinformatics/btv234
-  - title: 'ASTRAL: Genome-scale coalescent-based species tree estimation'
-    url: https://doi.org/10.1093/bioinformatics/btu462
-  - title: 'ASTRAL-III: Polynomial time species tree reconstruction from partially
-      resolved gene trees'
-    url: https://doi.org/10.1186/s12859-018-2129-y
   resources:
   - title: .nan
     url: .nan
@@ -1050,56 +840,6 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: null
-  biotools: bamkit
-  bunya: null
-  description: Bamkit is a collection of tools for common BAM file manipulations
-  edam-inputs: []
-  edam-operations:
-  - Data handling
-  edam-outputs: []
-  edam-topics:
-  - Sequence analysis
-  galaxy: null
-  homepage: https://github.com/hall-lab/bamkit
-  id: bamkit
-  license: MIT
-  name: bamkit
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: bamm
-  bunya: null
-  description: 'de-novo motif discovery and regulatory sequence analysis.
-
-    Discovery of regulatory motifs with higher-order Bayesian Markov Models (BaMMs)'
-  edam-inputs: []
-  edam-operations:
-  - Sequence motif recognition
-  edam-outputs: []
-  edam-topics:
-  - Sequence sites, features and motifs
-  - ChIP-seq
-  galaxy: null
-  homepage: https://bammmotif.mpibpc.mpg.de
-  id: bamm
-  license: AGPL-3.0
-  name: bamm
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: The BaMM web server for de-novo motif discovery and regulatory sequence
-      analysis
-    url: https://doi.org/10.1093/nar/gky431
-  resources:
-  - title: .nan
-    url: .nan
 - biocontainers: bamtools
   biotools: bamtools
   bunya:
@@ -1208,26 +948,6 @@
   publications:
   - title: 'Bandage: Interactive visualization of de novo genome assemblies'
     url: https://doi.org/10.1093/bioinformatics/btv383
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: barchart_gnuplot
-  license: null
-  name: barchart_gnuplot
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
   resources:
   - title: .nan
     url: .nan
@@ -1843,26 +1563,6 @@
   - title: .nan
     url: .nan
 - biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: bed_to_bigBed
-  license: null
-  name: bed_to_bigBed
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
   biotools: bed_to_protein_map
   bunya: null
   description: Convert a BED format file of the proteins from a proteomics search
@@ -1881,26 +1581,6 @@
   id: bed_to_protein_map
   license: Not licensed
   name: bed_to_protein_map
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: bed2gff1
-  license: null
-  name: bed2gff1
   nci-gadi: null
   nci-if89: null
   pawsey: null
@@ -2197,26 +1877,6 @@
     url: .nan
 - biocontainers: null
   biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: https://www.yumpu.com/en/document/view/3851346/bio-roll-users-guide-rocks-clusters
-  id: bio-roll
-  license: null
-  name: bio-roll
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
   bunya:
   - 1.7.3-gcc-10.3.0
   - 1.7.3-gcc-11.3.0          (D)
@@ -2303,78 +1963,6 @@
   - title: .nan
     url: .nan
 - biocontainers: null
-  biotools: biobambam
-  bunya: null
-  description: Tools for early stage NGS alignment file processing including fast
-    sorting and duplicate marking.
-  edam-inputs: []
-  edam-operations:
-  - Filtering
-  edam-outputs: []
-  edam-topics:
-  - Sequencing
-  galaxy: null
-  homepage: http://www.sanger.ac.uk/science/tools/biobambam
-  id: biobambam
-  license: GPL-3.0
-  name: biobambam
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 'Biobambam: Tools for read pair collation based algorithms on BAM files'
-    url: https://doi.org/10.1186/1751-0473-9-13
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: bioconductor
-  bunya: null
-  description: Open development software project, based on the R programming language,
-    providing tools for the analysis of high-throughput genomic data. The project
-    aims to enable interdisciplinary research, collaboration and rapid development
-    of scientific software.
-  edam-inputs:
-  - formats: []
-    term: Sequence
-  - formats: []
-    term: Data reference
-  - formats: []
-    term: Experimental measurement
-  edam-operations:
-  - Analysis
-  - Data handling
-  - Statistical calculation
-  edam-outputs:
-  - formats:
-    - Workflow format
-    term: Workflow format
-  - formats: []
-    term: Ontology data
-  - formats: []
-    term: Report
-  edam-topics:
-  - Bioinformatics
-  - Computational biology
-  - Data management
-  - Statistics and probability
-  galaxy: null
-  homepage: http://www.bioconductor.org
-  id: bioconductor
-  license: null
-  name: bioconductor
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 10.1186/gb-2004-5-10-r80
-    url: https://doi.org/10.1186/gb-2004-5-10-r80
-  - title: Orchestrating high-throughput genomic analysis with Bioconductor
-    url: https://doi.org/10.1038/nmeth.3252
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
   biotools: null
   bunya:
   - 3.01-gcc-11.3.0
@@ -2409,26 +1997,6 @@
   id: bioformats2raw
   license: null
   name: bioformats2raw
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: https://github.com/Bio-Linux
-  id: biolinux
-  license: null
-  name: biolinux
   nci-gadi: null
   nci-if89: null
   pawsey: null
@@ -2818,53 +2386,6 @@
   - title: .nan
     url: .nan
 - biocontainers: null
-  biotools: blast
-  bunya: null
-  description: A tool that finds regions of similarity between biological sequences.
-    The program compares nucleotide or protein sequences to sequence databases and
-    calculates the statistical significance.
-  edam-inputs:
-  - formats:
-    - FASTA
-    term: FASTA
-  edam-operations:
-  - Sequence similarity search
-  - Sequence alignment
-  edam-outputs:
-  - formats:
-    - BLAST XML results format
-    - BLAST XML v2 results format
-    - TSV
-    - CSV
-    - ASN.1 sequence format
-    - JSON
-    - Binary format
-    - Textual format
-    term: Textual format
-  edam-topics:
-  - Sequence analysis
-  - Bioinformatics
-  galaxy: null
-  homepage: https://blast.ncbi.nlm.nih.gov/Blast.cgi
-  id: blast2
-  license: null
-  name: BLAST2
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: Basic local alignment search tool
-    url: https://doi.org/10.1016/S0022-2836(05)80360-2
-  - title: Benchmarking the next generation of homology inference tools
-    url: https://doi.org/10.1093/bioinformatics/btw305
-  - title: 'NCBI BLAST: a better web interface.'
-    url: https://doi.org/10.1093/nar/gkn201
-  - title: 'BLAST: a more efficient report with usability improvements.'
-    url: https://doi.org/10.1093/nar/gkt282
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
   biotools: blat
   bunya:
   - 3.7-gcc-11.3.0
@@ -3136,46 +2657,6 @@
   - title: .nan
     url: .nan
 - biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: bp_genbank2gff3
-  license: null
-  name: bp_genbank2gff3
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: bq_radiomics
-  license: null
-  name: bq_radiomics
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
   biotools: bracken
   bunya: null
   description: Bracken is a companion program to Kraken 1, KrakenUniq, or Kraken 2
@@ -3240,32 +2721,6 @@
   - title: .nan
     url: .nan
 - biocontainers: null
-  biotools: breakdancer
-  bunya: null
-  description: Application for detecting structural rearrangements and indels in short
-    read sequencing data.
-  edam-inputs: []
-  edam-operations:
-  - Variant calling
-  edam-outputs: []
-  edam-topics:
-  - Genomics
-  - DNA structural variation
-  galaxy: null
-  homepage: http://sourceforge.net/projects/breakdancer/
-  id: breakdancer
-  license: GPL-3.0
-  name: breakdancer
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 10.1038/nmeth.1363
-    url: https://doi.org/10.1038/nmeth.1363
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
   biotools: breseq
   bunya: null
   description: Runs Breseq software on a set of fastq files.
@@ -3309,58 +2764,6 @@
     url: https://doi.org/10.1093/nar/gkw343
   - title: 10.7490/f1000research.1114334.1
     url: https://doi.org/10.7490/f1000research.1114334.1
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: bsmap
-  bunya: null
-  description: short reads mapping software for bisulfite sequencing
-  edam-inputs: []
-  edam-operations:
-  - Read mapping
-  - Bisulfite mapping
-  edam-outputs: []
-  edam-topics:
-  - Epigenetics
-  galaxy: null
-  homepage: https://code.google.com/archive/p/bsmap/
-  id: bsmap
-  license: GPL-3.0
-  name: bsmap
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 10.1186/1471-2105-10-232
-    url: https://doi.org/10.1186/1471-2105-10-232
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: bs-seeker2
-  bunya: null
-  description: A versatile aligning pipeline for bisulfite sequencing data.
-  edam-inputs: []
-  edam-operations:
-  - Bisulfite mapping
-  edam-outputs: []
-  edam-topics:
-  - Methylated DNA immunoprecipitation
-  - Sequencing
-  - Mapping
-  - Nucleic acid structure analysis
-  galaxy: null
-  homepage: http://pellegrini-legacy.mcdb.ucla.edu/bs_seeker2/
-  id: bsseeker2
-  license: MIT
-  name: bsseeker2
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 'BS-Seeker2: A versatile aligning pipeline for bisulfite sequencing data'
-    url: https://doi.org/10.1186/1471-2164-14-774
   resources:
   - title: .nan
     url: .nan
@@ -3918,26 +3321,6 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: cat1
-  license: null
-  name: cat1
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
 - biocontainers: cd-hit
   biotools: cd-hit
   bunya:
@@ -4019,30 +3402,6 @@
   publications:
   - title: 'CEL-Seq2: Sensitive highly-multiplexed single-cell RNA-Seq'
     url: https://doi.org/10.1186/s13059-016-0938-8
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: cabog
-  bunya: null
-  description: Celera Assembler is scientific software for DNA research.
-  edam-inputs: []
-  edam-operations:
-  - Sequence assembly
-  edam-outputs: []
-  edam-topics:
-  - Sequence assembly
-  galaxy: null
-  homepage: http://wgs-assembler.sourceforge.net/
-  id: celera
-  license: null
-  name: Celera / wgs-assembler
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 10.1093/bioinformatics/btn548
-    url: https://doi.org/10.1093/bioinformatics/btn548
   resources:
   - title: .nan
     url: .nan
@@ -4239,26 +3598,6 @@
   - title: .nan
     url: .nan
 - biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: cellranger-arc
-  license: null
-  name: cellranger-arc
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
   biotools: cellxgene
   bunya: null
   description: cellxgene (pronounced "cell-by-gene") is an interactive data explorer
@@ -4338,26 +3677,6 @@
   id: chai-1
   license: null
   name: Chai-1
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: ChangeCase
-  license: null
-  name: ChangeCase
   nci-gadi: null
   nci-if89: null
   pawsey: null
@@ -4462,41 +3781,6 @@
   id: checkm-database
   license: GPL-3.0
   name: checkm-database
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 'CheckM: Assessing the quality of microbial genomes recovered from isolates,
-      single cells, and metagenomes'
-    url: https://doi.org/10.1101/gr.186072.114
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: checkm
-  bunya: null
-  description: CheckM provides a set of tools for assessing the quality of genomes
-    recovered from isolates, single cells, or metagenomes.
-  edam-inputs: []
-  edam-operations:
-  - Sequence assembly validation
-  - Validation
-  - Sequence composition calculation
-  - Sequencing quality control
-  - Statistical calculation
-  edam-outputs: []
-  edam-topics:
-  - Genomics
-  - Phylogenomics
-  - Phylogenetics
-  - Taxonomy
-  - Metagenomics
-  - Data quality management
-  galaxy: null
-  homepage: https://ecogenomics.github.io/CheckM
-  id: checkm-genome
-  license: GPL-3.0
-  name: checkm-genome
   nci-gadi: null
   nci-if89: null
   pawsey: null
@@ -4789,27 +4073,6 @@
   publications:
   - title: Ultra-fast genome comparison for large-scale genomic experiments
     url: https://doi.org/10.1038/s41598-019-46773-w
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: chunkchromosome
-  bunya: null
-  description: ChunkChromosome is a helper utility for minimac and MaCH. It can be
-    used to facilitate analyses of very large datasets in overlapping slices.
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: https://genome.sph.umich.edu/wiki/ChunkChromosome
-  id: chunkchromosome
-  license: null
-  name: chunkchromosome
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
   resources:
   - title: .nan
     url: .nan
@@ -5216,29 +4479,6 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: null
-  biotools: clusteringsuite
-  bunya: null
-  description: The ClusteringSuite is the software package that includes the cluster
-    analysis tool.
-  edam-inputs: []
-  edam-operations:
-  - Clustering
-  edam-outputs: []
-  edam-topics:
-  - Statistics and probability
-  galaxy: null
-  homepage: https://github.com/bsc-performance-tools/clustering-suite
-  id: clusteringsuite
-  license: null
-  name: clusteringsuite
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
 - biocontainers: cnvkit
   biotools: cnvkit
   bunya: null
@@ -5486,26 +4726,6 @@
   - title: .nan
     url: .nan
 - biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: combine_metaphlan2_humann2
-  license: null
-  name: combine_metaphlan2_humann2
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
   biotools: compleasm
   bunya: null
   description: 'Compleasm: a faster and more accurate reimplementation of BUSCO.
@@ -5581,46 +4801,6 @@
   id: compucell3d
   license: null
   name: CompuCell3D
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: Convert characters1
-  license: null
-  name: Convert characters1
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: CONVERTER_neostorezip_to_neostore
-  license: null
-  name: CONVERTER_neostorezip_to_neostore
   nci-gadi: null
   nci-if89: null
   pawsey: null
@@ -5731,26 +4911,6 @@
   - title: .nan
     url: .nan
 - biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: createInterval
-  license: null
-  name: createInterval
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
   biotools: Crisflash
   bunya:
   - 1.2.0
@@ -5852,50 +5012,6 @@
   id: ctsm_fates
   license: null
   name: CTSM/FATES-EMERALD
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: https://developer.nvidia.com/cuda-toolkit
-  id: cuda
-  license: null
-  name: cuda
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: cuDNN
-  bunya: null
-  description: "The NVIDIA CUDA\xAE Deep Neural Network library (cuDNN) is a GPU-accelerated\
-    \ library of primitives for deep neural networks. cuDNN provides highly tuned\
-    \ implementations for standard routines such as forward and backward convolution,\
-    \ pooling, normalization, and activation layers."
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics:
-  - Machine learning
-  galaxy: null
-  homepage: https://developer.nvidia.com/cudnn
-  id: cudnn
-  license: null
-  name: cudnn
   nci-gadi: null
   nci-if89: null
   pawsey: null
@@ -6067,26 +5183,6 @@
   - title: .nan
     url: .nan
 - biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: Cut1
-  license: null
-  name: Cut1
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
   biotools: cutadapt
   bunya:
   - 3.4-gcccore-10.3.0
@@ -6178,37 +5274,6 @@
     url: https://doi.org/10.1101/780700
   - title: Long-read-based human genomic structural variation detection with cuteSV
     url: https://doi.org/10.1186/s13059-020-02107-y
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: cytoscape
-  bunya: null
-  description: Open source software platform for visualizing molecular interaction
-    networks and biological pathways and integrating these networks with annotations,
-    gene expression profiles and other state data.
-  edam-inputs: []
-  edam-operations:
-  - Network simulation
-  - Pathway or network visualisation
-  edam-outputs: []
-  edam-topics:
-  - Bioinformatics
-  - Molecular interactions, pathways and networks
-  - Data visualisation
-  - Rare diseases
-  galaxy: null
-  homepage: http://www.cytoscape.org/
-  id: cytoscape
-  license: null
-  name: cytoscape
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 'Cytoscape: A software Environment for integrated models of biomolecular
-      interaction networks'
-    url: https://doi.org/10.1101/gr.1239303
   resources:
   - title: .nan
     url: .nan
@@ -6567,38 +5632,6 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: null
-  biotools: deepvariant
-  bunya: null
-  description: DeepVariant is a deep learning-based variant caller that takes aligned
-    reads (in BAM or CRAM format), produces pileup image tensors from them, classifies
-    each tensor using a convolutional neural network, and finally reports the results
-    in a standard VCF or gVCF file.
-  edam-inputs: []
-  edam-operations:
-  - Variant calling
-  - Genotyping
-  edam-outputs: []
-  edam-topics:
-  - Whole genome sequencing
-  - Exome sequencing
-  - Genotype and phenotype
-  - Genomics
-  - DNA polymorphism
-  galaxy: null
-  homepage: https://github.com/google/deepvariant
-  id: deepvariant
-  license: BSD-3-Clause
-  name: deepvariant
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: Accurate, scalable cohort variant calls using DeepVariant and GLnexus
-    url: https://doi.org/10.1093/bioinformatics/btaa1081
-  resources:
-  - title: .nan
-    url: .nan
 - biocontainers: dendropy
   biotools: dendropy
   bunya:
@@ -6630,26 +5663,6 @@
   publications:
   - title: 'DendroPy: A Python library for phylogenetic computing'
     url: https://doi.org/10.1093/bioinformatics/btq228
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: describe_samples_replicates
-  license: null
-  name: describe_samples_replicates
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
   resources:
   - title: .nan
     url: .nan
@@ -6982,34 +5995,6 @@
   - title: .nan
     url: .nan
 - biocontainers: null
-  biotools: dms_tools2
-  bunya: null
-  description: dms_tools2 is a software package for analyzing deep mutational scanning
-    data. It is tailored to analyze libraries created using comprehensive codon mutagenesis
-    of protein-coding genes
-  edam-inputs: []
-  edam-operations:
-  - Visualisation
-  - Sequence mutation and randomisation
-  edam-outputs: []
-  edam-topics:
-  - Genetic variation
-  galaxy: null
-  homepage: https://github.com/jbloomlab/dms_tools2
-  id: dms_tools2
-  license: GPL-3.0
-  name: dms_tools2
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: Software for the analysis and visualization of deep mutational scanning
-      data
-    url: https://doi.org/10.1186/s12859-015-0590-4
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
   biotools: dorado
   bunya: null
   description: Dorado is a high-performance, easy-to-use, open source basecaller for
@@ -7076,26 +6061,6 @@
   - title: .nan
     url: .nan
 - biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: draw_stacked_barplots
-  license: null
-  name: draw_stacked_barplots
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
   biotools: drep
   bunya:
   - 3.4.2
@@ -7121,26 +6086,6 @@
   - title: 'DRep: A tool for fast and accurate genomic comparisons that enables improved
       genome recovery from metagenomes through de-replication'
     url: https://doi.org/10.1038/ismej.2017.126
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: drishti
-  license: null
-  name: drishti
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
   resources:
   - title: .nan
     url: .nan
@@ -7184,42 +6129,6 @@
     url: https://doi.org/10.1101/234872
   - title: 10.1101/177048
     url: https://doi.org/10.1101/177048
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: dssp
-  bunya: null
-  description: DSSP secondary structure database . It produces secondary structure
-    assignments (and much more) for all protein entries in the Protein Data Bank (PDB).
-  edam-inputs:
-  - formats:
-    - PDB
-    - mmCIF
-    term: mmCIF
-  edam-operations:
-  - Protein structure assignment
-  edam-outputs:
-  - formats:
-    - dssp
-    term: dssp
-  edam-topics:
-  - Proteins
-  - Protein secondary structure
-  galaxy: null
-  homepage: http://swift.cmbi.ru.nl/gv/dssp/
-  id: dssp
-  license: BSD-2-Clause
-  name: dssp
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: A series of PDB-related databanks for everyday needs
-    url: https://doi.org/10.1093/nar/gku1028
-  - title: "Dictionary of protein secondary structure: Pattern recognition of hydrogen\u2010\
-      bonded and geometrical features"
-    url: https://doi.org/10.1002/bip.360221211
   resources:
   - title: .nan
     url: .nan
@@ -7320,54 +6229,6 @@
   nci-if89: null
   pawsey: null
   publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: ebi_sra_main
-  license: null
-  name: ebi_sra_main
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: edena
-  bunya: null
-  description: A program for assembling de novo bacterial genomes from short reads
-    produced by Illumina sequencing platform.
-  edam-inputs: []
-  edam-operations:
-  - De-novo assembly
-  - Data handling
-  edam-outputs: []
-  edam-topics:
-  - Genomics
-  - Microbiology
-  - Sequence assembly
-  galaxy: null
-  homepage: http://www.genomic.ch/edena
-  id: edena
-  license: GPL-3.0
-  name: Edena
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 10.1101/gr.072033.107
-    url: https://doi.org/10.1101/gr.072033.107
   resources:
   - title: .nan
     url: .nan
@@ -8143,52 +7004,6 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: null
-  biotools: ensembl
-  bunya: null
-  description: Genome databases for vertebrates genomes.
-  edam-inputs: []
-  edam-operations:
-  - Deposition
-  - Genome visualisation
-  - Query and retrieval
-  - Genome annotation
-  edam-outputs: []
-  edam-topics:
-  - Genomics
-  - Rare diseases
-  galaxy: null
-  homepage: http://www.ensembl.org/
-  id: ensembl
-  license: null
-  name: Ensembl browser
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: Ensembl 2015
-    url: https://doi.org/10.1093/nar/gku1010
-  - title: The Ensembl genome database project
-    url: https://doi.org/10.1093/nar/30.1.38
-  - title: 10.1093/nar/gkh038
-    url: https://doi.org/10.1093/nar/gkh038
-  - title: 'Ensembl 2002: Accommodating comparative genomics'
-    url: https://doi.org/10.1093/nar/gkg083
-  - title: Ensembl 2005
-    url: https://doi.org/10.1093/nar/gki138
-  - title: Ensembl 2006.
-    url: https://doi.org/10.1093/nar/gkj133
-  - title: Ensembl 2007
-    url: https://doi.org/10.1093/nar/gkl996
-  - title: Ensembl 2008
-    url: https://doi.org/10.1093/nar/gkm988
-  - title: Ensembl 2009
-    url: https://doi.org/10.1093/nar/gkn828
-  - title: Ensembl's 10th year
-    url: https://doi.org/10.1093/nar/gkp972
-  resources:
-  - title: .nan
-    url: .nan
 - biocontainers: episcanpy
   biotools: epiScanpy
   bunya: null
@@ -8341,37 +7156,6 @@
   publications:
   - title: 'EuPathDB: A portal to eukaryotic pathogen databases'
     url: http://www.ncbi.nlm.nih.gov/pubmed/19914931
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: eval
-  bunya: null
-  description: Eval is a flexible tool for analyzing the performance of gene-structure
-    prediction programs. It provides summaries and graphical distributions for many
-    statistics describing any set of annotations, regardless of their source. It also
-    compares sets of predictions to standard annotations and to one another.
-  edam-inputs: []
-  edam-operations:
-  - Prediction and recognition
-  - Standardisation and normalisation
-  - Parsing
-  edam-outputs: []
-  edam-topics:
-  - Gene transcripts
-  - Statistics and probability
-  - Genomics
-  galaxy: null
-  homepage: https://mblab.wustl.edu/software.html
-  id: eval
-  license: null
-  name: eval
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 'Eval: A software package for analysis of genome annotations'
-    url: https://doi.org/10.1186/1471-2105-4-50
   resources:
   - title: .nan
     url: .nan
@@ -8591,26 +7375,6 @@
   - title: .nan
     url: .nan
 - biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: Extract_features1
-  license: null
-  name: Extract_features1
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
   biotools: f5c
   bunya:
   - 1.1--h0326b38_1
@@ -8680,30 +7444,6 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: falcon
-  biotools: falcon
-  bunya: null
-  description: Experimental PacBio diploid assembler.
-  edam-inputs: []
-  edam-operations:
-  - Sequence assembly
-  edam-outputs: []
-  edam-topics:
-  - Sequence assembly
-  galaxy: null
-  homepage: https://github.com/pratas/falcon
-  id: falcon
-  license: null
-  name: Falcon
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 10.5281/zenodo.35745
-    url: https://doi.org/10.5281/zenodo.35745
-  resources:
-  - title: .nan
-    url: .nan
 - biocontainers: null
   biotools: falcon
   bunya:
@@ -8769,126 +7509,6 @@
     url: .nan
 - biocontainers: null
   biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: fasta_concatenate_by_species
-  license: null
-  name: fasta_concatenate_by_species
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: fasta_extract
-  license: null
-  name: fasta_extract
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: fasta_filter_by_length
-  license: null
-  name: fasta_filter_by_length
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: fasta_merge_files_and_filter_unique_sequences
-  license: null
-  name: fasta_merge_files_and_filter_unique_sequences
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: fasta_stats
-  license: null
-  name: fasta_stats
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: fasta_to_tabular
-  license: null
-  name: fasta_to_tabular
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
   bunya:
   - 1.0.0-gcccore-10.3.0
   description: null
@@ -8937,39 +7557,6 @@
   nci-if89: null
   pawsey: null
   publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: fastml
-  biotools: fastml
-  bunya: null
-  description: FastML is a webserver for computing and reconstructing ancestral sequences
-    using maximum likelihood.
-  edam-inputs: []
-  edam-operations:
-  - Metabolic network modelling
-  - Haplotype mapping
-  - Phylogenetic tree generation (maximum likelihood and Bayesian methods)
-  - Phylogenetic tree reconstruction
-  - Ancestral reconstruction
-  edam-outputs: []
-  edam-topics:
-  - Phylogeny
-  - Statistics and probability
-  - Sequencing
-  - Sequence analysis
-  - Experimental design and studies
-  galaxy: null
-  homepage: http://fastml.tau.ac.il/
-  id: fastml
-  license: null
-  name: fastml
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 10.1093/nar/gks498
-    url: https://doi.org/10.1093/nar/gks498
   resources:
   - title: .nan
     url: .nan
@@ -9052,26 +7639,6 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: fastq_quality_boxplot
-  license: null
-  name: fastq_quality_boxplot
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
 - biocontainers: fastqc
   biotools: fastqc
   bunya:
@@ -9147,60 +7714,6 @@
   publications:
   - title: 10.25334/Q4D172
     url: https://doi.org/10.25334/Q4D172
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: faststructure
-  bunya: null
-  description: fastStructure is an algorithm for inferring population structure from
-    large SNP genotype data. It is based on a variational Bayesian framework for posterior
-    inference and is written in Python2.x.
-  edam-inputs: []
-  edam-operations:
-  - Genetic variation analysis
-  edam-outputs: []
-  edam-topics:
-  - Population genetics
-  galaxy: null
-  homepage: http://rajanil.github.io/fastStructure/
-  id: faststructure
-  license: MIT
-  name: faststructure
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 'FastSTRUCTURE: Variational inference of population structure in large
-      SNP data sets'
-    url: https://doi.org/10.1534/genetics.114.164350
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: faststructure
-  bunya: null
-  description: fastStructure is an algorithm for inferring population structure from
-    large SNP genotype data. It is based on a variational Bayesian framework for posterior
-    inference and is written in Python2.x.
-  edam-inputs: []
-  edam-operations:
-  - Genetic variation analysis
-  edam-outputs: []
-  edam-topics:
-  - Population genetics
-  galaxy: null
-  homepage: http://rajanil.github.io/fastStructure/
-  id: biocontainers-faststructure
-  license: MIT
-  name: faststructure (biocontainers)
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 'FastSTRUCTURE: Variational inference of population structure in large
-      SNP data sets'
-    url: https://doi.org/10.1534/genetics.114.164350
   resources:
   - title: .nan
     url: .nan
@@ -9517,26 +8030,6 @@
   id: filter_transcripts_via_tracking
   license: null
   name: Filter Combined Transcripts
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: Filter1
-  license: null
-  name: Filter1
   nci-gadi: null
   nci-if89: null
   pawsey: null
@@ -10227,175 +8720,115 @@
   - description: 'Convert a 10X BAM file to FASTQ: '
     title: Convert a 10X BAM file to FASTQ 1.4.1
     url: https://usegalaxy.org.au/root?tool_id=toolshed.g2.bx.psu.edu%2Frepos%2Fbgruening%2F10x_bamtofastq%2F10x_bamtofastq%2F1.4.1
-  - description: 'Convert Interval to tabix: '
-    title: Convert Interval to tabix 1.0.2
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_tabix_0
-  - description: 'Convert uncompressed file to compressed: '
-    title: Convert uncompressed file to compressed 1.16+galaxy0
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_uncompressed_to_gz
-  - description: 'Convert BGZ VCF to tabix: '
-    title: Convert BGZ VCF to tabix 1.0.2
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_vcf_bgzip_to_tabix_0
-  - description: 'OpenBabel converter for molecular formats: '
-    title: OpenBabel converter for molecular formats 2.4.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_molecules
   - description: 'Convert compressed file to uncompressed.: '
     title: Convert compressed file to uncompressed. 1.0.1
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bz2_to_uncompressed
-  - description: 'Convert compressed file to uncompressed.: '
-    title: Convert compressed file to uncompressed. 1.0.0
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_gz_to_uncompressed
-  - description: 'Convert Genomic Intervals To Coverage: '
-    title: Convert Genomic Intervals To Coverage 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_bigwig_0
-  - description: 'Convert GRO to PDB: '
-    title: Convert GRO to PDB 1.0.0
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_Gro_to_Pdb_0
-  - description: 'Convert Genomic Intervals To Strict BED6: '
-    title: Convert Genomic Intervals To Strict BED6 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_bed6_0
-  - description: 'Unpack archive to directory: '
-    title: Unpack archive to directory 1.0.0
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_archive_to_directory
-  - description: 'Convert Biom datasets: '
-    title: Convert Biom datasets 2.1.5
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_biom
-  - description: 'Convert BED, GFF, or VCF to BigWig: '
-    title: Convert BED, GFF, or VCF to BigWig 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bed_gff_or_vcf_to_bigwig_0
-  - description: 'Convert XTC, DCD, and TRR: '
-    title: Convert XTC, DCD, and TRR 1.0.0
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_mdconvert
-  - description: 'Convert Len file to Linecount: '
-    title: Convert Len file to Linecount 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_len_to_linecount
-  - description: 'Convert FASTA to Bowtie color space Index: '
-    title: Convert FASTA to Bowtie color space Index 1.2.3
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fasta_to_bowtie_color_index
-  - description: 'Convert lped to fped: '
-    title: Convert lped to fped 0.02
-    url: https://usegalaxy.org.au/root?tool_id=lped2fpedconvert
-  - description: 'Convert FASTA to len file: '
-    title: Convert FASTA to len file 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fasta_to_len
-  - description: 'Convert CML to SMILES: '
-    title: Convert CML to SMILES 2.4.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_cml_to_smiles
-  - description: 'Convert SAM to BigWig: '
-    title: Convert SAM to BigWig 1.0.3
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_sam_to_bigwig_0
-  - description: 'Convert PDB to GRO: '
-    title: Convert PDB to GRO 1.0.0
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_Pdb_to_Gro_0
-  - description: 'Convert BAM to queryname-sorted BAM: '
-    title: Convert BAM to queryname-sorted BAM 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bam_to_qname_sorted_bam
-  - description: 'Convert tabular to dbnsfp: '
-    title: Convert tabular to dbnsfp 1.0.2
-    url: https://usegalaxy.org.au/root?tool_id=tabular_to_dbnsfp
-  - description: 'Convert Interval to BGZIP: '
-    title: Convert Interval to BGZIP 1.0.3
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_bgzip_0
-  - description: 'Convert BAM to BigWig: '
-    title: Convert BAM to BigWig 1.0.2
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bam_to_bigwig_0
-  - description: 'Convert CRAM to BAM: '
-    title: Convert CRAM to BAM 1.0.2
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_cram_to_bam_0
-  - description: 'Convert GFF to BED: '
-    title: Convert GFF to BED 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_gff_to_bed_0
-  - description: 'Convert InChI to MOL: '
-    title: Convert InChI to MOL 2.4.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_inchi_to_mol
-  - description: 'Convert tabular to CSV: '
-    title: Convert tabular to CSV 1.0.0
-    url: https://usegalaxy.org.au/root?tool_id=tabular_to_csv
+  - description: 'Convert uncompressed file to compressed: '
+    title: Convert uncompressed file to compressed 1.16+galaxy0
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_uncompressed_to_gz
+  - description: 'OpenBabel converter for molecular formats: '
+    title: OpenBabel converter for molecular formats 2.4.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_molecules
+  - description: 'Convert BedGraph to BigWig: '
+    title: Convert BedGraph to BigWig 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bedgraph_to_bigwig
   - description: 'Convert FASTQ files to seek locations: '
     title: Convert FASTQ files to seek locations 1.0.1
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fastq_to_fqtoc0
-  - description: 'Convert plink pbed to linkage lped: '
-    title: Convert plink pbed to linkage lped 0.02
-    url: https://usegalaxy.org.au/root?tool_id=pbed2lpedconvert
-  - description: 'Convert neostore.zip files to neostore: '
-    title: Convert neostore.zip files to neostore 1.0.0
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_neostorezip_to_neostore
-  - description: 'Convert CSV to tabular: '
-    title: Convert CSV to tabular 1.0.0
-    url: https://usegalaxy.org.au/root?tool_id=csv_to_tabular
+  - description: 'Convert compressed file to uncompressed.: '
+    title: Convert compressed file to uncompressed. 1.0.0
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_gz_to_uncompressed
+  - description: 'Convert SAM to BigWig: '
+    title: Convert SAM to BigWig 1.0.3
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_sam_to_bigwig_0
+  - description: 'Convert Genomic Intervals To Coverage: '
+    title: Convert Genomic Intervals To Coverage 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_bigwig_0
+  - description: 'Convert Bam to Bai: '
+    title: Convert Bam to Bai 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_Bam_Bai_0
   - description: 'Convert from bigBed to ascii bed format.: Convert bigBed to BED'
     title: Convert from bigBed to ascii bed format. 377+galaxy0
     url: https://usegalaxy.org.au/root?tool_id=ucsc_bigbedtobed
-  - description: 'Convert SMILES to MOL: '
-    title: Convert SMILES to MOL 2.4.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_SMILES_to_MOL
-  - description: 'Convert GFF to Interval Index: '
-    title: Convert GFF to Interval Index 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_gff_to_interval_index_0
+  - description: 'Convert tabular to CSV: '
+    title: Convert tabular to CSV 1.0.0
+    url: https://usegalaxy.org.au/root?tool_id=tabular_to_csv
+  - description: 'Convert XTC, DCD, and TRR: '
+    title: Convert XTC, DCD, and TRR 1.0.0
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_mdconvert
+  - description: 'Convert Interval to tabix: '
+    title: Convert Interval to tabix 1.0.2
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_tabix_0
   - description: 'Convert Wiggle to Interval: '
     title: Convert Wiggle to Interval 1.0.1
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_wiggle_to_interval_0
-  - description: 'Convert BAM to coordinate-sorted BAM: '
-    title: Convert BAM to coordinate-sorted BAM 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bam_to_coodinate_sorted_bam
   - description: 'Convert FASTA to Bowtie base space Index: '
     title: Convert FASTA to Bowtie base space Index 1.3.1
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fasta_to_bowtie_base_index
-  - description: 'Convert Picard Interval List to BED6: converter'
-    title: Convert Picard Interval List to BED6 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_picard_interval_list_to_bed6
-  - description: 'Convert MOL2 to MOL: '
-    title: Convert MOL2 to MOL 2.4.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_mol2_to_mol
   - description: 'Convert MAF to Genomic Intervals: '
     title: Convert MAF to Genomic Intervals 1.0.3
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_maf_to_interval_0
   - description: 'Convert Genomic Intervals To Strict BED: '
     title: Convert Genomic Intervals To Strict BED 1.0.1
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_bedstrict_0
-  - description: 'Convert Wiggle to BigWig: '
-    title: Convert Wiggle to BigWig 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_wig_to_bigwig
+  - description: 'Unpack archive to directory: '
+    title: Unpack archive to directory 1.0.0
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_archive_to_directory
+  - description: 'Convert Interval to BGZIP: '
+    title: Convert Interval to BGZIP 1.0.3
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_bgzip_0
+  - description: 'Convert plink pbed to linkage lped: '
+    title: Convert plink pbed to linkage lped 0.02
+    url: https://usegalaxy.org.au/root?tool_id=pbed2lpedconvert
   - description: 'Convert Genomic Intervals To Strict BED12: '
     title: Convert Genomic Intervals To Strict BED12 1.0.0
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_bed12_0
-  - description: 'Convert BedGraph to BigWig: '
-    title: Convert BedGraph to BigWig 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bedgraph_to_bigwig
-  - description: 'Convert Bam to Bai: '
-    title: Convert Bam to Bai 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_Bam_Bai_0
-  - description: 'Convert Parquet to csv: '
-    title: Convert Parquet to csv 1.0.0
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_parquet_to_csv
-  - description: 'Convert BED to Feature Location Index: '
-    title: Convert BED to Feature Location Index 1.0.0
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bed_to_fli_0
-  - description: 'SMILES to SMILES: '
-    title: SMILES to SMILES 2.4.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_smiles_to_smiles
-  - description: 'Convert FASTA to 2bit: '
-    title: Convert FASTA to 2bit 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fasta_to_2bit
-  - description: 'Convert SAM to BAM without sorting: '
-    title: Convert SAM to BAM without sorting 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_sam_to_unsorted_bam
-  - description: 'Convert compressed and uncompressed BCF files: '
-    title: Convert compressed and uncompressed BCF files 0.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bcf_uncompressed_to_bcf
-  - description: 'Convert plink pbed to ld reduced format: '
-    title: Convert plink pbed to ld reduced format 0.02
-    url: https://usegalaxy.org.au/root?tool_id=pbed2ldindepconvert
-  - description: 'Convert FASTA to Tabular: '
-    title: Convert FASTA to Tabular 1.0.1
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fasta_to_tabular
-  - description: 'Convert Genomic Intervals To BED: '
-    title: Convert Genomic Intervals To BED 1.0.0
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_bed_0
   - description: 'Convert Ref taxonomy to Seq Taxonomy: converts 2 or 3 column sequence
       taxonomy file to a 2 column mothur taxonomy_outline format'
     title: Convert Ref taxonomy to Seq Taxonomy 1.0.1
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_ref_to_seq_taxomony
+  - description: 'Convert BAM to queryname-sorted BAM: '
+    title: Convert BAM to queryname-sorted BAM 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bam_to_qname_sorted_bam
+  - description: 'Convert BED, GFF, or VCF to BigWig: '
+    title: Convert BED, GFF, or VCF to BigWig 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bed_gff_or_vcf_to_bigwig_0
+  - description: 'Convert Picard Interval List to BED6: converter'
+    title: Convert Picard Interval List to BED6 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_picard_interval_list_to_bed6
+  - description: 'Convert FASTA to 2bit: '
+    title: Convert FASTA to 2bit 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fasta_to_2bit
+  - description: 'Convert tabular to dbnsfp: '
+    title: Convert tabular to dbnsfp 1.0.2
+    url: https://usegalaxy.org.au/root?tool_id=tabular_to_dbnsfp
+  - description: 'SMILES to SMILES: '
+    title: SMILES to SMILES 2.4.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_smiles_to_smiles
+  - description: 'Convert GFF to Interval Index: '
+    title: Convert GFF to Interval Index 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_gff_to_interval_index_0
+  - description: 'Convert SMILES to MOL: '
+    title: Convert SMILES to MOL 2.4.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_SMILES_to_MOL
+  - description: 'Convert Wiggle to BigWig: '
+    title: Convert Wiggle to BigWig 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_wig_to_bigwig
+  - description: 'Convert Len file to Linecount: '
+    title: Convert Len file to Linecount 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_len_to_linecount
+  - description: 'Convert CSV to tabular: '
+    title: Convert CSV to tabular 1.0.0
+    url: https://usegalaxy.org.au/root?tool_id=csv_to_tabular
+  - description: 'Convert compressed and uncompressed BCF files: '
+    title: Convert compressed and uncompressed BCF files 0.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bcf_uncompressed_to_bcf
+  - description: 'Convert GFF to BED: '
+    title: Convert GFF to BED 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_gff_to_bed_0
+  - description: 'Convert BAM to coordinate-sorted BAM: '
+    title: Convert BAM to coordinate-sorted BAM 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bam_to_coodinate_sorted_bam
   - description: 'Convert GFF to Feature Location Index: '
     title: Convert GFF to Feature Location Index 1.0.0
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_gff_to_fli_0
@@ -10405,15 +8838,75 @@
   - description: 'Convert FASTA to fai file: '
     title: Convert FASTA to fai file 1.0.1
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fasta_to_fai
-  - description: 'Convert MAF to Fasta: '
-    title: Convert MAF to Fasta 1.0.2
-    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_maf_to_fasta_0
+  - description: 'Convert Parquet to csv: '
+    title: Convert Parquet to csv 1.0.0
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_parquet_to_csv
+  - description: 'Convert plink pbed to ld reduced format: '
+    title: Convert plink pbed to ld reduced format 0.02
+    url: https://usegalaxy.org.au/root?tool_id=pbed2ldindepconvert
+  - description: 'Convert CML to SMILES: '
+    title: Convert CML to SMILES 2.4.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_cml_to_smiles
   - description: 'Convert BED to GFF: '
     title: Convert BED to GFF 2.0.1
     url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bed_to_gff_0
   - description: 'Convert BigWig to Wiggle: Convert bigWig to wig'
     title: Convert BigWig to Wiggle 377+galaxy0
     url: https://usegalaxy.org.au/root?tool_id=bigwigtowig
+  - description: 'Convert Genomic Intervals To BED: '
+    title: Convert Genomic Intervals To BED 1.0.0
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_bed_0
+  - description: 'Convert neostore.zip files to neostore: '
+    title: Convert neostore.zip files to neostore 1.0.0
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_neostorezip_to_neostore
+  - description: 'Convert BED to Feature Location Index: '
+    title: Convert BED to Feature Location Index 1.0.0
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bed_to_fli_0
+  - description: 'Convert SAM to BAM without sorting: '
+    title: Convert SAM to BAM without sorting 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_sam_to_unsorted_bam
+  - description: 'Convert FASTA to Tabular: '
+    title: Convert FASTA to Tabular 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fasta_to_tabular
+  - description: 'Convert MAF to Fasta: '
+    title: Convert MAF to Fasta 1.0.2
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_maf_to_fasta_0
+  - description: 'Convert BGZ VCF to tabix: '
+    title: Convert BGZ VCF to tabix 1.0.2
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_vcf_bgzip_to_tabix_0
+  - description: 'Convert PDB to GRO: '
+    title: Convert PDB to GRO 1.0.0
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_Pdb_to_Gro_0
+  - description: 'Convert Genomic Intervals To Strict BED6: '
+    title: Convert Genomic Intervals To Strict BED6 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_interval_to_bed6_0
+  - description: 'Convert Biom datasets: '
+    title: Convert Biom datasets 2.1.5
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_biom
+  - description: 'Convert GRO to PDB: '
+    title: Convert GRO to PDB 1.0.0
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_Gro_to_Pdb_0
+  - description: 'Convert FASTA to Bowtie color space Index: '
+    title: Convert FASTA to Bowtie color space Index 1.2.3
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fasta_to_bowtie_color_index
+  - description: 'Convert lped to fped: '
+    title: Convert lped to fped 0.02
+    url: https://usegalaxy.org.au/root?tool_id=lped2fpedconvert
+  - description: 'Convert FASTA to len file: '
+    title: Convert FASTA to len file 1.0.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_fasta_to_len
+  - description: 'Convert MOL2 to MOL: '
+    title: Convert MOL2 to MOL 2.4.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_mol2_to_mol
+  - description: 'Convert BAM to BigWig: '
+    title: Convert BAM to BigWig 1.0.2
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_bam_to_bigwig_0
+  - description: 'Convert CRAM to BAM: '
+    title: Convert CRAM to BAM 1.0.2
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_cram_to_bam_0
+  - description: 'Convert InChI to MOL: '
+    title: Convert InChI to MOL 2.4.1
+    url: https://usegalaxy.org.au/root?tool_id=CONVERTER_inchi_to_mol
   homepage: null
   id: Galaxy CONVERTER
   license: null
@@ -11336,26 +9829,6 @@
   - title: .nan
     url: .nan
 - biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: GeneBed_Maf_Fasta2
-  license: null
-  name: GeneBed_Maf_Fasta2
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
   biotools: gene.iobio
   bunya: null
   description: 'An interactive web tool for versatile, clinically-driven variant interrogation
@@ -11394,41 +9867,6 @@
   publications:
   - title: 10.1101/2020.11.05.20224865
     url: https://doi.org/10.1101/2020.11.05.20224865
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: geneid
-  bunya: null
-  description: Ab initio gene finding program used to predict genes along DNA sequences
-    in a large set of organisms.
-  edam-inputs:
-  - formats: []
-    term: Nucleic acid sequence
-  edam-operations:
-  - Genome annotation
-  edam-outputs:
-  - formats: []
-    term: Nucleic acid features
-  edam-topics:
-  - Nucleic acid sites, features and motifs
-  - Sequence analysis
-  - DNA
-  - Gene structure
-  - Molecular genetics
-  galaxy: null
-  homepage: http://genome.crg.es/software/geneid/index.html
-  id: geneid
-  license: GPL-3.0
-  name: geneid
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: Using geneid to identify genes.
-    url: https://doi.org/10.1002/0471250953.bi0403s18
-  - title: GeneId in Drosophila
-    url: https://doi.org/10.1101/gr.10.4.511
   resources:
   - title: .nan
     url: .nan
@@ -11541,71 +9979,6 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: bioconductor-genomicfeatures
-  biotools: genomicfeatures
-  bunya: null
-  description: A set of tools and methods for making and manipulating transcript centric
-    annotations. With these tools the user can easily download the genomic locations
-    of the transcripts, exons and CDS of a given organism, from either the UCSC Genome
-    Browser or a BioMart database. This information is then stored in a local database
-    that keeps track of the relationship between transcripts, exons, CDS and genes.
-  edam-inputs:
-  - formats:
-    - Textual format
-    - GFF3
-    - SQLite format
-    - GTF
-    term: GTF
-  - formats:
-    - Textual format
-    - GFF3
-    - SQLite format
-    - GTF
-    term: GTF
-  - formats:
-    - Textual format
-    - GFF3
-    - SQLite format
-    - GTF
-    term: GTF
-  edam-operations:
-  - Data retrieval
-  - Data handling
-  edam-outputs:
-  - formats:
-    - Textual format
-    - SQLite format
-    term: SQLite format
-  - formats:
-    - Textual format
-    - SQLite format
-    term: SQLite format
-  - formats:
-    - Textual format
-    - SQLite format
-    term: SQLite format
-  - formats:
-    - Textual format
-    - SQLite format
-    term: SQLite format
-  edam-topics:
-  - ChIP-seq
-  - RNA-seq
-  - Data management
-  galaxy: null
-  homepage: http://bioconductor.org/packages/release/bioc/html/GenomicFeatures.html
-  id: genomicfeatures
-  license: Artistic-2.0
-  name: genomicfeatures
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: Software for Computing and Annotating Genomic Ranges
-    url: https://doi.org/10.1371/journal.pcbi.1003118
-  resources:
-  - title: .nan
-    url: .nan
 - biocontainers: null
   biotools: null
   bunya: null
@@ -11622,26 +9995,6 @@
   id: genrich
   license: null
   name: genrich
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: get_pdb_file
-  license: null
-  name: get_pdb_file
   nci-gadi: null
   nci-if89: null
   pawsey: null
@@ -11693,26 +10046,6 @@
   - title: .nan
     url: .nan
 - biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: gfa_to_fa
-  license: null
-  name: gfa_to_fa
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
   biotools: gfastats
   bunya: null
   description: gfastats is a single fast and exhaustive tool for summary statistics
@@ -11743,86 +10076,6 @@
   - title: .nan
     url: .nan
 - biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: gff
-  license: null
-  name: gff
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: gff_filter_by_attribute
-  license: null
-  name: gff_filter_by_attribute
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: gff_filter_by_feature_count
-  license: null
-  name: gff_filter_by_feature_count
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: gff2bed1
-  license: null
-  name: gff2bed1
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
   biotools: gffcompare
   bunya:
   - 0.12.2-gcc-10.3.0
@@ -11846,26 +10099,6 @@
   id: gffcompare
   license: MIT
   name: gffcompare
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: gffcompare_to_bed
-  license: null
-  name: gffcompare_to_bed
   nci-gadi: null
   nci-if89: null
   pawsey: null
@@ -12030,67 +10263,6 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: glimmer
-  biotools: glimmer
-  bunya: null
-  description: System for finding genes in microbial DNA, especially the genomes of
-    bacteria, archaea, and viruses. It uses interpolated Markov models (IMMs) to identify
-    the coding regions and distinguish them from noncoding DNA.
-  edam-inputs: []
-  edam-operations:
-  - Gene prediction
-  edam-outputs: []
-  edam-topics:
-  - Gene structure
-  galaxy: null
-  homepage: https://ccb.jhu.edu/software/glimmer/
-  id: glimmer
-  license: null
-  name: glimmer
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: Identifying bacterial genes and endosymbiont DNA with Glimmer
-    url: https://doi.org/10.1093/bioinformatics/btm009
-  - title: Improved microbial gene identification with GLIMMER
-    url: https://doi.org/10.1093/nar/27.23.4636
-  - title: Microbial gene identification using interpolated Markov models
-    url: https://doi.org/10.1093/nar/26.2.544
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: glimmer-hmm
-  bunya: null
-  description: A new gene finder based on a Generalized Hidden Markov Model. Although
-    the gene finder conforms to the overall mathematical framework of a GHMM, additionally
-    it incorporates splice site models adapted from the GeneSplicer program and a
-    decision tree adapted from GlimmerM. It also utilizes Interpolated Markov Models
-    for the coding and noncoding models . Currently, GlimmerHMM's GHMM structure includes
-    introns of each phase, intergenic regions, and four types of exons.
-  edam-inputs: []
-  edam-operations:
-  - Gene prediction
-  - Ab-initio gene prediction
-  edam-outputs: []
-  edam-topics:
-  - Gene structure
-  - Genomics
-  galaxy: null
-  homepage: https://ccb.jhu.edu/software/glimmerhmm/
-  id: glimmerhmm
-  license: Artistic-1.0
-  name: glimmerhmm
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 'TigrScan and GlimmerHMM: Two open source ab initio eukaryotic gene-finders'
-    url: https://doi.org/10.1093/bioinformatics/bth315
-  resources:
-  - title: .nan
-    url: .nan
 - biocontainers: null
   biotools: null
   bunya: null
@@ -12163,52 +10335,6 @@
     url: .nan
 - biocontainers: null
   biotools: gmap
-  bunya: null
-  description: Genomic Mapping and Alignment Program for mRNA and EST Sequences.
-  edam-inputs:
-  - formats:
-    - FASTQ-illumina
-    - FASTQ-sanger
-    - FASTA
-    term: FASTA
-  - formats:
-    - FASTQ-illumina
-    - FASTQ-sanger
-    - FASTA
-    term: FASTA
-  - formats:
-    - Textual format
-    term: Textual format
-  - formats:
-    - FASTA
-    term: FASTA
-  edam-operations:
-  - Genetic mapping
-  - Sequence alignment
-  edam-outputs:
-  - formats:
-    - Textual format
-    term: Textual format
-  edam-topics:
-  - Mapping
-  galaxy: null
-  homepage: http://research-pub.gene.com/gmap/
-  id: biocontainers-gmap
-  license: null
-  name: gmap (biocontainers)
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 'GMAP: A genomic mapping and alignment program for mRNA and EST sequences'
-    url: https://doi.org/10.1093/bioinformatics/bti310
-  - title: 10.7490/f1000research.1114334.1
-    url: https://doi.org/10.7490/f1000research.1114334.1
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: gmap
   bunya:
   - 2023-02-17-gcc-11.3.0
   description: Genomic Mapping and Alignment Program for mRNA and EST Sequences.
@@ -12251,26 +10377,6 @@
     url: https://doi.org/10.1093/bioinformatics/bti310
   - title: 10.7490/f1000research.1114334.1
     url: https://doi.org/10.7490/f1000research.1114334.1
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: https://www.gnu.org/
-  id: gnu
-  license: null
-  name: GNU
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
   resources:
   - title: .nan
     url: .nan
@@ -12406,35 +10512,6 @@
   - title: .nan
     url: .nan
 - biocontainers: null
-  biotools: graftm
-  bunya: null
-  description: Scalable, phylogenetically informed classification of genes within
-    metagenomes.
-  edam-inputs: []
-  edam-operations:
-  - Nucleic acid feature detection
-  - Sequence classification
-  edam-outputs: []
-  edam-topics:
-  - Genomics
-  - Metagenomics
-  - Transcriptomics
-  galaxy: null
-  homepage: https://pypi.org/project/graftm/
-  id: graftm
-  license: GPL-3.0
-  name: GraftM
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 'GraftM: a tool for scalable, phylogenetically informed classification
-      of genes within metagenomes'
-    url: https://doi.org/10.1093/nar/gky174
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
   biotools: null
   bunya: null
   description: null
@@ -12494,26 +10571,6 @@
   - title: Compact graphical representation of phylogenetic data and metadata with
       GraPhlAn
     url: https://doi.org/10.7717/peerj.1029
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: Grep1
-  license: null
-  name: Grep1
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
   resources:
   - title: .nan
     url: .nan
@@ -12602,35 +10659,6 @@
   - title: .nan
     url: .nan
 - biocontainers: null
-  biotools: groopm
-  bunya: null
-  description: GroopM is an automated tool for the recovery of population genomes
-    from related metagenomes.
-  edam-inputs: []
-  edam-operations:
-  - Read binning
-  - Parsing
-  - Sequence assembly
-  edam-outputs: []
-  edam-topics:
-  - Metagenomics
-  - Sequence assembly
-  galaxy: null
-  homepage: http://ecogenomics.github.io/GroopM
-  id: groopm
-  license: GPL-3.0
-  name: groopm
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 'GroopM: An automated tool for the recovery of population genomes from
-      related metagenomes'
-    url: https://doi.org/10.7717/peerj.603
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
   biotools: GTDB-Tk
   bunya:
   - 2.0.0-foss-2021a
@@ -12680,66 +10708,6 @@
   - title: .nan
     url: .nan
 - biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: gtf_filter_by_attribute_values_list
-  license: null
-  name: gtf_filter_by_attribute_values_list
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: gtf2bedgraph
-  license: null
-  name: gtf2bedgraph
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: gtf2gene_list
-  license: null
-  name: gtf2gene_list
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
   biotools: gubbins
   bunya: null
   description: Gubbins is a tool for rapid phylogenetic analysis of large samples
@@ -12774,26 +10742,6 @@
     url: .nan
 - biocontainers: null
   biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: guppy
-  license: null
-  name: guppy
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
   bunya:
   - 1.10-gcccore-10.3.0
   - 1.12-gcccore-11.3.0
@@ -12811,34 +10759,6 @@
   id: gzip
   license: null
   name: gzip
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: hadoop
-  bunya: null
-  description: The Apache Hadoop software library is a framework that allows for the
-    distributed processing of large data sets across clusters of computers using simple
-    programming models. It is designed to scale up from single servers to thousands
-    of machines, each offering local computation and storage.
-  edam-inputs: []
-  edam-operations:
-  - Data handling
-  - Query and retrieval
-  edam-outputs: []
-  edam-topics:
-  - Computer science
-  - Data mining
-  - Machine learning
-  galaxy: null
-  homepage: https://hadoop.apache.org/
-  id: hadoop
-  license: Apache-2.0
-  name: Hadoop
   nci-gadi: null
   nci-if89: null
   pawsey: null
@@ -12953,32 +10873,6 @@
   id: hbvar
   license: null
   name: hbvar
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: hclust2
-  bunya: null
-  description: Hclust2 is a handy tool for plotting heat-maps with several useful
-    options to produce high quality figures that can be used in publication.
-  edam-inputs: []
-  edam-operations:
-  - Heat map generation
-  - Visualisation
-  - Clustering
-  edam-outputs: []
-  edam-topics:
-  - Microbiology
-  - Metagenomics
-  galaxy: null
-  homepage: https://github.com/SegataLab/hclust2
-  id: hclust2
-  license: MIT
-  name: Hclust2
   nci-gadi: null
   nci-if89: null
   pawsey: null
@@ -13564,26 +11458,6 @@
   edam-topics: null
   galaxy: null
   homepage: null
-  id: histogram
-  license: null
-  name: histogram
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
   id: hmmcleaner
   license: null
   name: hmmcleaner
@@ -13675,29 +11549,6 @@
     url: https://doi.org/10.1093/nar/gkt263
   - title: 'HMMER web server: 2018 update'
     url: https://doi.org/10.1093/nar/gky448
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: horovod
-  bunya: null
-  description: Horovod is a distributed deep learning training framework for TensorFlow,
-    Keras, PyTorch, and Apache MXNet. The goal of Horovod is to make distributed deep
-    learning fast and easy to use.
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics:
-  - Machine learning
-  galaxy: null
-  homepage: https://github.com/horovod/horovod
-  id: horovod
-  license: Apache-2.0
-  name: horovod
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
   resources:
   - title: .nan
     url: .nan
@@ -14021,51 +11872,6 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: idba
-  biotools: idba
-  bunya: null
-  description: A short read assembler based on iterative De Bruijn graph. It is developed
-    under 64-bit Linux, but should be suitable for all unix-like system.
-  edam-inputs: []
-  edam-operations:
-  - Sequence assembly
-  edam-outputs: []
-  edam-topics:
-  - Sequence assembly
-  galaxy: null
-  homepage: https://i.cs.hku.hk/%7Ealse/idba
-  id: idba-ud
-  license: Unlicense
-  name: idba-ud
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: IDBA - A practical iterative De Bruijn graph De Novo assembler
-    url: https://doi.org/10.1007/978-3-642-12683-3_28
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: https://www.l3harrisgeospatial.com/Software-Technology/IDL
-  id: idl
-  license: null
-  name: IDL
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
 - biocontainers: null
   biotools: ilastik
   bunya:
@@ -14218,61 +12024,6 @@
   - title: .nan
     url: .nan
 - biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: insight-toolkit
-  license: null
-  name: insight-toolkit
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: igv
-  biotools: igv
-  bunya: null
-  description: High-performance visualization tool for interactive exploration of
-    large, integrated datasets. It supports a wide variety of data types and format,
-    including short-read alignments in the SAM/BAM format. Data can be viewed from
-    local files or over the web via http.
-  edam-inputs: []
-  edam-operations:
-  - Visualisation
-  edam-outputs: []
-  edam-topics:
-  - Genomics
-  - Data visualisation
-  - Sequence analysis
-  galaxy: null
-  homepage: http://www.broadinstitute.org/igv/
-  id: igv
-  license: LGPL-2.1
-  name: Integrated Genomics Viewer
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 'Integrative Genomics Viewer (IGV): High-performance genomics data visualization
-      and exploration'
-    url: https://doi.org/10.1093/bib/bbs017
-  - title: Integrative genomics viewer
-    url: https://doi.org/10.1038/nbt.1754
-  - title: 'igv.js: an embeddable JavaScript implementation of the Integrative Genomics
-      Viewer (IGV)'
-    url: https://doi.org/10.1093/bioinformatics/btac830
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
   biotools: integron_finder
   bunya: null
   description: A tool to detect Integron in DNA sequences.
@@ -14360,26 +12111,6 @@
   - title: .nan
     url: .nan
 - biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: intermine_galaxy_exchange
-  license: null
-  name: intermine_galaxy_exchange
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
   biotools: interproscan_4
   bunya:
   - 5.55-88.0-foss-2021a
@@ -14414,66 +12145,6 @@
     url: https://doi.org/10.1093/bioinformatics/btu031
   - title: Search and sequence analysis tools services from EMBL-EBI in 2022
     url: https://doi.org/10.1093/nar/gkac240
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: Interval_Maf_Merged_Fasta2
-  license: null
-  name: Interval_Maf_Merged_Fasta2
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: Interval2Maf_pairwise1
-  license: null
-  name: Interval2Maf_pairwise1
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: Interval2Maf1
-  license: null
-  name: Interval2Maf1
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
   resources:
   - title: .nan
     url: .nan
@@ -14609,26 +12280,6 @@
   - title: 'ISEScan: automated identification of insertion sequence elements in prokaryotic
       genomes'
     url: https://doi.org/10.1093/bioinformatics/btx433
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: islandpath
-  license: null
-  name: islandpath
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
   resources:
   - title: .nan
     url: .nan
@@ -15076,26 +12727,6 @@
   edam-operations: null
   edam-outputs: null
   edam-topics: null
-  galaxy: null
-  homepage: null
-  id: join_files_on_column_fuzzy
-  license: null
-  name: join_files_on_column_fuzzy
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
   galaxy:
   - description: 'JQ: process JSON'
     title: JQ 1.0
@@ -15108,33 +12739,6 @@
   nci-if89: null
   pawsey: null
   publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: juicebox
-  bunya: null
-  description: Juicebox is visualization software for Hi-C data.
-  edam-inputs: []
-  edam-operations:
-  - Visualisation
-  edam-outputs: []
-  edam-topics:
-  - Epigenetics
-  - Sequencing
-  - Mapping
-  - Sequence assembly
-  galaxy: null
-  homepage: https://aidenlab.org/juicebox/
-  id: juicebox
-  license: MIT
-  name: juicebox
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: Juicer Provides a One-Click System for Analyzing Loop-Resolution Hi-C Experiments
-    url: https://doi.org/10.1016/j.cels.2016.07.002
   resources:
   - title: .nan
     url: .nan
@@ -15391,37 +12995,6 @@
     url: https://doi.org/10.1371/journal.pone.0101271
   - title: 10.7287/peerj.preprints.890v1
     url: https://doi.org/10.7287/peerj.preprints.890v1
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: kingfisher
-  bunya: null
-  description: Easier download/extract of FASTA/Q read data and metadata from the
-    ENA, NCBI, AWS or GCP.
-  edam-inputs:
-  - formats: []
-    term: Accession
-  edam-operations:
-  - Data retrieval
-  - Sequence database search (by property)
-  edam-outputs:
-  - formats:
-    - SRA format
-    - FASTQ
-    - FASTA
-    term: FASTA
-  edam-topics:
-  - Nucleic acids
-  galaxy: null
-  homepage: https://github.com/wwood/kingfisher-download
-  id: kingfisher
-  license: GPL-3.0
-  name: Kingfisher
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
   resources:
   - title: .nan
     url: .nan
@@ -15786,26 +13359,6 @@
   edam-operations: null
   edam-outputs: null
   edam-topics: null
-  galaxy: null
-  homepage: null
-  id: lav_to_bed1
-  license: null
-  name: lav_to_bed1
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
   galaxy:
   - description: 'Gene length and GC content: from GTF and FASTA file'
     title: Gene length and GC content 0.1.2
@@ -15966,44 +13519,6 @@
   - title: .nan
     url: .nan
 - biocontainers: null
-  biotools: lipid_maps
-  bunya: null
-  description: LIPID Metabolites And Pathways Strategy (LIPID MAPS) is a consortium
-    that presents a collection of tools for performing tasks such as drawing lipid
-    structures and predicting possible structures from mass spectrometry data.
-  edam-inputs: []
-  edam-operations:
-  - Data retrieval
-  - Protein structure prediction
-  - ID mapping
-  - Mapping
-  edam-outputs: []
-  edam-topics:
-  - Lipids
-  - Endocrinology and metabolism
-  - Small molecules
-  - Mapping
-  galaxy: null
-  homepage: http://www.lipidmaps.org/tools/index.html
-  id: lipid_maps
-  license: null
-  name: Lipid Maps
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 'LMSD: LIPID MAPS structure database'
-    url: http://www.ncbi.nlm.nih.gov/pubmed/17098933
-  - title: 'LMPD: LIPID MAPS proteome database.'
-    url: http://www.ncbi.nlm.nih.gov/pubmed/16381922
-  - title: A comprehensive classification system for lipids
-    url: http://www.ncbi.nlm.nih.gov/pubmed/15722563
-  - title: LIPID MAPS online tools for lipid research
-    url: http://www.ncbi.nlm.nih.gov/pubmed/17584797
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
   biotools: lofreq
   bunya: null
   description: LoFreq* (i.e. LoFreq version 2) is a fast and sensitive variant-caller
@@ -16045,36 +13560,6 @@
   - title: 'LoFreq: A sequence-quality aware, ultra-sensitive variant caller for uncovering
       cell-population heterogeneity from high-throughput sequencing datasets'
     url: https://doi.org/10.1093/nar/gks918
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: longranger
-  biotools: longranger
-  bunya: null
-  description: Long Ranger is a set of five analysis pipelines that processes Chromium
-    sequencing output to align reads and call and phase SNPs, indels, and structural
-    variants.
-  edam-inputs: []
-  edam-operations:
-  - Demultiplexing
-  - Variant calling
-  - Read mapping
-  - Genome alignment
-  edam-outputs: []
-  edam-topics:
-  - Exome sequencing
-  - Genomics
-  - Whole genome sequencing
-  - DNA polymorphism
-  galaxy: null
-  homepage: https://support.10xgenomics.com/genome-exome/software/pipelines/latest/what-is-long-ranger
-  id: longranger
-  license: Proprietary
-  name: Long Ranger
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
   resources:
   - title: .nan
     url: .nan
@@ -16215,82 +13700,6 @@
   - title: .nan
     url: .nan
 - biocontainers: null
-  biotools: mach
-  bunya: null
-  description: Markov Chain based haplotyper that can resolve long haplotypes or infer
-    missing genotypes in samples of unrelated individuals.
-  edam-inputs: []
-  edam-operations:
-  - Haplotype mapping
-  - Imputation
-  edam-outputs: []
-  edam-topics:
-  - Genotype and phenotype
-  - Genotyping experiment
-  - Quantitative genetics
-  galaxy: null
-  homepage: http://csg.sph.umich.edu/abecasis/mach/
-  id: mach
-  license: Not licensed
-  name: mach
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 'MaCH: Using sequence and genotype data to estimate haplotypes and unobserved
-      genotypes'
-    url: https://doi.org/10.1002/gepi.20533
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: macs
-  biotools: macs
-  bunya: null
-  description: Model-based Analysis of ChIP-seq data.
-  edam-inputs:
-  - formats:
-    - TSV
-    term: TSV
-  - formats:
-    - BAM
-    - BED
-    - SAM
-    - TSV
-    term: TSV
-  edam-operations:
-  - Peak calling
-  - Enrichment analysis
-  - Gene regulatory network analysis
-  edam-outputs:
-  - formats:
-    - BED
-    - WIG
-    term: WIG
-  - formats:
-    - TSV
-    term: TSV
-  - formats:
-    - HTML
-    term: HTML
-  edam-topics:
-  - ChIP-seq
-  - Molecular interactions, pathways and networks
-  - Transcription factors and regulatory sites
-  galaxy: null
-  homepage: http://liulab.dfci.harvard.edu/MACS/
-  id: macs
-  license: Artistic-2.0
-  name: macs
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: Model-based analysis of ChIP-Seq (MACS)
-    url: https://doi.org/10.1186/gb-2008-9-9-r137
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
   biotools: macs
   bunya:
   - 2.2.9.1
@@ -16407,226 +13816,6 @@
   id: maeparser
   license: null
   name: maeparser
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: maf_by_block_number1
-  license: null
-  name: maf_by_block_number1
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: MAF_filter
-  license: null
-  name: MAF_filter
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: maf_limit_size1
-  license: null
-  name: maf_limit_size1
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: MAF_Limit_To_Species1
-  license: null
-  name: MAF_Limit_To_Species1
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: MAF_Reverse_Complement_1
-  license: null
-  name: MAF_Reverse_Complement_1
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: MAF_split_blocks_by_species1
-  license: null
-  name: MAF_split_blocks_by_species1
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: maf_stats1
-  license: null
-  name: maf_stats1
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: MAF_Thread_For_Species1
-  license: null
-  name: MAF_Thread_For_Species1
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: MAF_To_BED1
-  license: null
-  name: MAF_To_BED1
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: MAF_To_Fasta1
-  license: null
-  name: MAF_To_Fasta1
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: MAF_To_Interval1
-  license: null
-  name: MAF_To_Interval1
   nci-gadi: null
   nci-if89: null
   pawsey: null
@@ -16858,26 +14047,6 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: music_manipulate_eset
-  license: null
-  name: Manipulate Expression Set Object
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
 - biocontainers: mash
   biotools: mash
   bunya:
@@ -16912,71 +14081,6 @@
   publications:
   - title: 'Mash: Fast genome and metagenome distance estimation using MinHash'
     url: https://doi.org/10.1186/s13059-016-0997-x
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: mash_screen
-  license: null
-  name: mash_screen
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: mash_sketch
-  license: null
-  name: mash_sketch
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: maskrc-svg
-  bunya: null
-  description: Masks recombinant regions in an alignment based on ClonalFrameML or
-    Gubbins output
-  edam-inputs: []
-  edam-operations:
-  - Recombination detection
-  - Visualisation
-  edam-outputs: []
-  edam-topics:
-  - DNA replication and recombination
-  - Structure analysis
-  galaxy: null
-  homepage: https://github.com/kwongj/maskrc-svg
-  id: maskrc-svg
-  license: GPL-3.0
-  name: maskrc-svg
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
   resources:
   - title: .nan
     url: .nan
@@ -17157,34 +14261,6 @@
   - title: .nan
     url: .nan
 - biocontainers: null
-  biotools: mauve
-  bunya: null
-  description: Mauve Genome Alignment software, for comparing two or more draft or
-    finished genomes
-  edam-inputs: []
-  edam-operations:
-  - Sequence alignment comparison
-  - Visualisation
-  - Sequence assembly validation
-  edam-outputs: []
-  edam-topics:
-  - Genomics
-  - Transcriptomics
-  galaxy: null
-  homepage: http://darlinglab.org/mauve
-  id: mauve
-  license: GPL-3.0
-  name: Mauve
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 10.1101/gr.2289704
-    url: https://doi.org/10.1101/gr.2289704
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
   biotools: maxbin
   bunya: null
   description: Software for binning assembled metagenomic sequences based on an Expectation-Maximization
@@ -17263,61 +14339,6 @@
   id: maxquant
   license: null
   name: MaxQuant
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: Visualization of LC-MS/MS proteomics data in MaxQuant
-    url: https://doi.org/10.1002/pmic.201400449
-  - title: MaxQuant for in-depth analysis of large SILAC datasets
-    url: https://doi.org/10.1007/978-1-4939-1142-4_24
-  - title: MaxQuant enables high peptide identification rates, individualized p.p.b.-range
-      mass accuracies and proteome-wide protein quantification
-    url: https://doi.org/10.1038/nbt.1511
-  - title: MaxQuant.Live Enables Enhanced Selectivity and Identification of Peptides
-      Modified by Endogenous SUMO and Ubiquitin
-    url: https://doi.org/10.1021/acs.jproteome.0c00892
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: maxquant
-  bunya: null
-  description: Quantitative proteomics software package designed for analyzing large
-    mass-spectrometric data sets. It is specifically aimed at high-resolution MS data.
-  edam-inputs:
-  - formats:
-    - CSV
-    - TSV
-    - SEQUEST .out file
-    - xlsx
-    term: xlsx
-  edam-operations:
-  - Imputation
-  - Visualisation
-  - Protein quantification
-  - Statistical calculation
-  - Standardisation and normalisation
-  - Heat map generation
-  - Clustering
-  - Principal component plotting
-  edam-outputs:
-  - formats:
-    - CSV
-    term: CSV
-  - formats:
-    - JPG
-    - PNG
-    term: PNG
-  edam-topics:
-  - Proteomics experiment
-  - Proteomics
-  - Statistics and probability
-  galaxy: null
-  homepage: http://www.maxquant.org/
-  id: biocontainers-maxquant
-  license: null
-  name: MaxQuant (biocontainers)
   nci-gadi: null
   nci-if89: null
   pawsey: null
@@ -17603,26 +14624,6 @@
   - title: .nan
     url: .nan
 - biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: merge_cols
-  license: null
-  name: Merge Columns
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
   biotools: merqury
   bunya: null
   description: 'Reference-free quality, completeness, and phasing assessment for genome
@@ -17792,55 +14793,6 @@
   - title: .nan
     url: .nan
 - biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: metabolicmine
-  license: null
-  name: metabolicmine
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: metacv
-  bunya: null
-  description: MetaCV is a composition and phylogeny based algorithm to classify very
-    short metagenomic reads (75-100 bp) into specific taxonomic and functional groups.
-    MetaCV performs (for both sensitivity and specificity) as good as BlastX-based
-    methods on simulated short reads, but runs 300 times faster thus provides effectively
-    and efficiently analysis on huge amount of NGS data.
-  edam-inputs: []
-  edam-operations:
-  - Taxonomic classification
-  - Read mapping
-  edam-outputs: []
-  edam-topics:
-  - Metagenomics
-  - Sequencing
-  - Sequence composition, complexity and repeats
-  galaxy: null
-  homepage: https://sourceforge.net/projects/metacv/
-  id: metacv
-  license: null
-  name: metacv
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
   biotools: MetaDEGalaxy
   bunya: null
   description: 'Galaxy workflow for differential abundance analysis of 16s metagenomic
@@ -17946,30 +14898,6 @@
     url: https://doi.org/10.1186/s40168-020-00808-x
   - title: 10.1101/851964
     url: https://doi.org/10.1101/851964
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: metamaps
-  bunya: null
-  description: MetaMaps is tool specifically developed for the analysis of long-read
-    (PacBio/Oxford Nanopore) metagenomic datasets.
-  edam-inputs: []
-  edam-operations:
-  - Read mapping
-  edam-outputs: []
-  edam-topics:
-  - Metagenomics
-  - Sequence composition, complexity and repeats
-  galaxy: null
-  homepage: https://github.com/DiltheyLab/MetaMaps
-  id: metamaps
-  license: Freeware
-  name: MetaMaps
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
   resources:
   - title: .nan
     url: .nan
@@ -18550,30 +15478,6 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: null
-  biotools: minimac4
-  bunya: null
-  description: Minimac4 is a genotype imputation software.
-  edam-inputs: []
-  edam-operations:
-  - Imputation
-  - Genotyping
-  edam-outputs: []
-  edam-topics:
-  - Genotype and phenotype
-  - Sequencing
-  galaxy: null
-  homepage: https://genome.sph.umich.edu/wiki/Minimac4
-  id: minimac4
-  license: GPL-3.0
-  name: Minimac4
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
 - biocontainers: minimap2
   biotools: minimap2
   bunya:
@@ -18717,32 +15621,6 @@
   nci-if89: null
   pawsey: null
   publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: miso
-  bunya: null
-  description: An alternative to Cufflinks, MISO (Mixture-of-Isoforms) is a probabilistic
-    framework that quantitates the expression level of alternatively spliced genes.
-  edam-inputs: []
-  edam-operations:
-  - RNA-Seq quantification
-  edam-outputs: []
-  edam-topics:
-  - RNA-Seq
-  - RNA splicing
-  galaxy: null
-  homepage: http://genes.mit.edu/burgelab/miso/docs/#releases
-  id: miso
-  license: null
-  name: miso
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 10.1038/nmeth.1528
-    url: https://doi.org/10.1038/nmeth.1528
   resources:
   - title: .nan
     url: .nan
@@ -18984,66 +15862,6 @@
   - title: Universal whole-sequence-based plasmid typing and its utility to prediction
       of host range and epidemiological surveillance
     url: https://doi.org/10.1099/MGEN.0.000435
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: modENCODEfly
-  license: null
-  name: modENCODEfly
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: modENCODEworm
-  license: null
-  name: modENCODEworm
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: modmine
-  license: null
-  name: modmine
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
   resources:
   - title: .nan
     url: .nan
@@ -19622,26 +16440,6 @@
   - title: .nan
     url: .nan
 - biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: mpiblast
-  license: null
-  name: mpiBLAST
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
   biotools: mrbayes
   bunya:
   - 3.2.7a-foss-2022a
@@ -20081,35 +16879,6 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: null
-  biotools: multisnv
-  bunya: null
-  description: multiSNV is a tool for calling somatic single-nucleotide variants (SNVs)
-    using NGS data from a normal and multiple tumour samples of the same patient.
-  edam-inputs: []
-  edam-operations:
-  - Variant calling
-  - Genotyping
-  edam-outputs: []
-  edam-topics:
-  - Sequencing
-  - Genetic variation
-  - Oncology
-  galaxy: null
-  homepage: https://bitbucket.org/joseph07/multisnv/src/master/
-  id: multisnv
-  license: GPL-3.0
-  name: multisnv
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 'MultiSNV: A probabilistic approach for improving detection of somatic
-      point mutations from multiple related tumour samples'
-    url: https://doi.org/10.1093/nar/gkv135
-  resources:
-  - title: .nan
-    url: .nan
 - biocontainers: mummer
   biotools: mummer
   bunya:
@@ -20163,61 +16932,6 @@
     url: https://doi.org/10.1186/gb-2004-5-2-r12
   - title: Fast algorithms for large-scale genome alignment and comparison
     url: https://doi.org/10.1093/nar/30.11.2478
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: muscle
-  biotools: muscle
-  bunya: null
-  description: This tool performs multiple sequence alignments of nucleotide or amino
-    acid sequences.
-  edam-inputs:
-  - formats:
-    - nbrf/pir
-    - FASTA
-    - GCG
-    - PHYLIP format
-    - EMBL format
-    - GenBank format
-    term: GenBank format
-  - formats:
-    - nbrf/pir
-    - FASTA
-    - GCG
-    - PHYLIP format
-    - EMBL format
-    - GenBank format
-    term: GenBank format
-  edam-operations:
-  - Multiple sequence alignment
-  edam-outputs:
-  - formats:
-    - ClustalW format
-    - HTML
-    - PHYLIP format
-    - GCG MSF
-    - FASTA
-    term: FASTA
-  edam-topics:
-  - Sequence analysis
-  galaxy: null
-  homepage: https://www.drive5.com/muscle/
-  id: muscle
-  license: Other
-  name: MUSCLE
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 'MUSCLE: Multiple sequence alignment with high accuracy and high throughput'
-    url: https://doi.org/10.1093/nar/gkh340
-  - title: 10.7490/f1000research.1114334.1
-    url: https://doi.org/10.7490/f1000research.1114334.1
-  - title: 'MUSCLE: A multiple sequence alignment method with reduced time and space
-      complexity'
-    url: https://doi.org/10.1186/1471-2105-5-113
-  - title: 10.1101/2021.06.20.449169
-    url: https://doi.org/10.1101/2021.06.20.449169
   resources:
   - title: .nan
     url: .nan
@@ -20346,26 +17060,6 @@
   id: mztosqlite
   license: null
   name: mztosqlite
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: https://www.nag.com/
-  id: nag
-  license: null
-  name: nag
   nci-gadi: null
   nci-if89: null
   pawsey: null
@@ -20659,37 +17353,6 @@
   - title: .nan
     url: .nan
 - biocontainers: null
-  biotools: ncbi_fcs
-  bunya: null
-  description: The NCBI Foreign Contamination Screen (FCS) is a tool suite for identifying
-    and removing contaminant sequences in genome assemblies. Contaminants are defined
-    as sequences in a dataset that do not originate from the biological source organism
-    and can arise from a variety of environmental and laboratory sources. FCS will
-    help you remove contaminants from genomes before submission to GenBank.
-  edam-inputs: []
-  edam-operations:
-  - Sequence assembly validation
-  - Sequence trimming
-  - Sequence contamination filtering
-  edam-outputs: []
-  edam-topics:
-  - Sequence analysis
-  - Sequence assembly
-  galaxy: null
-  homepage: https://github.com/ncbi/fcs
-  id: ncbi_fcs
-  license: null
-  name: NCBI fcs
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 10.1186/s13059-024-03198-7
-    url: https://doi.org/10.1186/s13059-024-03198-7
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
   biotools: null
   bunya:
   - 2.10.9-gompi-2021a
@@ -20704,113 +17367,6 @@
   id: ncbi-vdb
   license: null
   name: NCBI VDB
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: nccmp
-  bunya: null
-  description: nccmp compares two NetCDF files bitwise, semantically or with a user
-    defined tolerance (absolute or relative percentage).  Parallel comparisons are
-    done in local memory without requiring temporary files.  Highly recommended for
-    regression testing scientific models or datasets in a test-driven development
-    environment.
-  edam-inputs: []
-  edam-operations:
-  - Regression analysis
-  edam-outputs: []
-  edam-topics: null
-  galaxy: null
-  homepage: https://gitlab.com/remikz/nccmp
-  id: nccmp
-  license: GPL-2.0
-  name: nccmp
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: https://www.ncl.ucar.edu/index.shtml
-  id: ncl
-  license: null
-  name: NCL
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: https://www.ncl.ucar.edu/index.shtml
-  id: ncl_ncarg
-  license: null
-  name: NCL
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: nco
-  bunya: null
-  description: The NCO toolkit manipulates and analyzes data stored in netCDF-accessible
-    formats, including DAP, HDF4, and HDF5.
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: http://nco.sourceforge.net/
-  id: nco
-  license: BSD-3-Clause
-  name: NCO
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: ncview
-  bunya: null
-  description: Ncview is a netCDF visual browser.
-  edam-inputs: []
-  edam-operations:
-  - Visualisation
-  edam-outputs: []
-  edam-topics: null
-  galaxy: null
-  homepage: https://cirrus.ucsd.edu/ncview/
-  id: ncview
-  license: GPL-1.0
-  name: Ncview
   nci-gadi: null
   nci-if89: null
   pawsey: null
@@ -20840,35 +17396,6 @@
   nci-if89: null
   pawsey: null
   publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: neurodebian
-  bunya: null
-  description: NeuroDebian is a popular turnkey platform for Neuroscience, where software
-    is integrated, tested, and delivered conveniently and reliably so you could concentrate
-    on your research and not on "system maintenance". It provides a large collection
-    of popular neuroscience research software for the Debian operating system as well
-    as Ubuntu and other derivatives.
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics:
-  - Neurobiology
-  - Medical imaging
-  galaxy: null
-  homepage: http://neuro.debian.net/
-  id: neurodebian
-  license: null
-  name: neurodebian
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 'Open is not enough. Let''s take the next step: An integrated, community-driven
-      computing platform for neuroscience'
-    url: https://doi.org/10.3389/fninf.2012.00022
   resources:
   - title: .nan
     url: .nan
@@ -20936,43 +17463,6 @@
   publications:
   - title: 10.21105/joss.03773
     url: https://doi.org/10.21105/joss.03773
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: nextdenovo
-  bunya: null
-  description: NextDenovo is a string graph-based de novo assembler for long reads
-    (CLR, HiFi and ONT). It uses a "correct-then-assemble" strategy similar to canu
-    (no correction step for PacBio Hifi reads), but requires significantly less computing
-    resources and storages.
-  edam-inputs:
-  - formats:
-    - FASTA
-    - FASTQ
-    term: FASTQ
-  edam-operations:
-  - De-novo assembly
-  - Genome assembly
-  edam-outputs:
-  - formats:
-    - Sequence assembly format (text)
-    - FASTA
-    term: FASTA
-  edam-topics:
-  - Sequencing
-  - Sequence assembly
-  galaxy: null
-  homepage: https://github.com/Nextomics/NextDenovo
-  id: nextdenovo
-  license: GPL-3.0
-  name: NextDenovo
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 10.1101/2023.03.09.531669.
-    url: https://doi.org/10.1101/2023.03.09.531669.
   resources:
   - title: .nan
     url: .nan
@@ -21109,26 +17599,6 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: https://github.com/shenlab-sinai/ngsplot
-  id: ngsplot
-  license: null
-  name: ngsplot
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
 - biocontainers: ngsutils
   biotools: ngsutils
   bunya: null
@@ -21213,26 +17683,6 @@
   - title: .nan
     url: .nan
 - biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: https://nucleoatac.readthedocs.io/en/latest/
-  id: nucleoatac
-  license: null
-  name: nucleoatac
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
   biotools: numpy
   bunya: null
   description: The fundamental package for scientific computing with Python
@@ -21250,29 +17700,6 @@
   id: numpy
   license: BSD-3-Clause
   name: NumPy
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: nvbio
-  bunya: null
-  description: NVBIO is a library of reusable components designed by NVIDIA Corporation
-    to accelerate bioinformatics applications using CUDA.
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics:
-  - Bioinformatics
-  - Computer science
-  galaxy: null
-  homepage: http://nvlabs.github.io/nvbio/index.html
-  id: nvbio
-  license: BSD-3-Clause
-  name: nvbio
   nci-gadi: null
   nci-if89: null
   pawsey: null
@@ -21323,42 +17750,6 @@
   nci-if89: null
   pawsey: null
   publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: oases
-  bunya: null
-  description: De novo transcriptome assembler designed to produce transcripts from
-    short read sequencing technologies. It uploads a preliminary assembly produced
-    by Velvet, and clusters the contigs into small groups, called loci. It then exploits
-    the paired-end read and long read information, when available, to construct transcript
-    isoforms.
-  edam-inputs:
-  - formats: []
-    term: Sequence assembly
-  edam-operations:
-  - Transcriptome assembly
-  edam-outputs:
-  - formats: []
-    term: Sequence assembly
-  edam-topics:
-  - Transcriptomics
-  - Whole genome sequencing
-  - RNA-Seq
-  - Sequence assembly
-  galaxy: null
-  homepage: https://github.com/dzerbino/oases
-  id: oases
-  license: GPL-3.0
-  name: Oases
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 'Oases: Robust de novo RNA-seq assembly across the dynamic range of expression
-      levels'
-    url: https://doi.org/10.1093/bioinformatics/bts094
   resources:
   - title: .nan
     url: .nan
@@ -21775,26 +18166,6 @@
   - title: .nan
     url: .nan
 - biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: https://github.com/CSB5/OPERA-MS
-  id: opera-ms
-  license: null
-  name: OPERA-MS
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
   biotools: optitype
   bunya: null
   description: OptiType is a novel HLA genotyping algorithm based on integer linear
@@ -21865,38 +18236,6 @@
   - title: .nan
     url: .nan
 - biocontainers: null
-  biotools: pepper-deepvariant
-  bunya: null
-  description: PEPPER is a genome inference module based on recurrent neural networks
-    that enables long-read variant calling and nanopore assembly polishing in the
-    PEPPER-Margin-DeepVariant pipeline. This pipeline enables nanopore-based variant
-    calling with DeepVariant.
-  edam-inputs: []
-  edam-operations:
-  - Variant calling
-  - Haplotype mapping
-  - De-novo assembly
-  - Genotyping
-  edam-outputs: []
-  edam-topics:
-  - Sequence assembly
-  - Mapping
-  - Sequencing
-  galaxy: null
-  homepage: https://github.com/kishwarshafin/pepper
-  id: pepper+deepvariant
-  license: MIT
-  name: P.E.P.P.E.R. (+ deep variant)
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 10.1101/2021.03.04.433952
-    url: https://doi.org/10.1101/2021.03.04.433952
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
   biotools: null
   bunya: null
   description: null
@@ -21912,50 +18251,6 @@
   id: pbtk
   license: null
   name: PacBio BAM toolkit
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: pacbioeda
-  bunya: null
-  description: Python scripts for Exploratory Data Analysis of Pacific Biosciences
-    sequence data
-  edam-inputs: []
-  edam-operations:
-  - Local alignment
-  - Filtering
-  edam-outputs: []
-  edam-topics:
-  - Sequencing
-  galaxy: null
-  homepage: https://github.com/TomSkelly/PacBioEDA
-  id: pacbioeda
-  license: GPL-3.0
-  name: PacBioEDA
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: https://pairtools.readthedocs.io/en/latest/
-  id: pairtools
-  license: null
-  name: pairtools
   nci-gadi: null
   nci-if89: null
   pawsey: null
@@ -22124,33 +18419,6 @@
   - title: .nan
     url: .nan
 - biocontainers: null
-  biotools: paraview
-  bunya: null
-  description: "ParaView is an open-source, multi-platform data analysis and visualization\
-    \ application. ParaView users can quickly build visualizations to analyze their\
-    \ data using qualitative and quantitative techniques. The data exploration can\
-    \ be done interactively in 3D or programmatically using ParaView\u2019s batch\
-    \ processing capabilities."
-  edam-inputs: []
-  edam-operations:
-  - Visualisation
-  edam-outputs: []
-  edam-topics:
-  - Data visualisation
-  - Imaging
-  galaxy: null
-  homepage: https://www.paraview.org/
-  id: paraview
-  license: BSD-3-Clause
-  name: ParaView
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
   biotools: null
   bunya: null
   description: null
@@ -22195,26 +18463,6 @@
   id: parsnp
   license: BSD-3-Clause
   name: Parsnp
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: Paste1
-  license: null
-  name: Paste1
   nci-gadi: null
   nci-if89: null
   pawsey: null
@@ -22703,70 +18951,6 @@
   id: phinch
   license: null
   name: phinch
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: phosphomatics
-  bunya: null
-  description: 'Interactive interrogation of substrate-kinase networks in global phosphoproteomics
-    datasets.
-
-
-    Phosphomatics helps you make sense of your high-throughput phosphoproteomics data.
-    Our aim is to help you connect the phosphorylation sties that you observe in your
-    mass spectrometry experiments to known upstream kinases. This provides a greater
-    understanding of the regulatory signaling networks operating in your systems.
-
-
-    You will be automatically redirected to your results once they''re ready.
-
-
-    This may take a minute or two depending on the size of your input data and our
-    server utilisation.'
-  edam-inputs: []
-  edam-operations:
-  - Data retrieval
-  - PTM site prediction
-  edam-outputs: []
-  edam-topics:
-  - Literature and language
-  - Protein modifications
-  - Proteomics experiment
-  - Small molecules
-  - Molecular interactions, pathways and networks
-  galaxy: null
-  homepage: https://phosphomatics.com
-  id: phosphomatics
-  license: null
-  name: Phosphomatics
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 'Phosphomatics: interactive interrogation of substrate-kinase networks
-      in global phosphoproteomics datasets'
-    url: https://doi.org/10.1093/BIOINFORMATICS/BTAA916
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: https://www.php.net/
-  id: php
-  license: null
-  name: PHP
   nci-gadi: null
   nci-if89: null
   pawsey: null
@@ -23329,98 +19513,6 @@
   - title: .nan
     url: .nan
 - biocontainers: null
-  biotools: plink-seq
-  bunya: null
-  description: Analytic tool development for variation data from large-scale resequencing
-    and genotyping projects, particularly whole-exome and whole-genome studies. It
-    is independent of (but designed to be complementary to) the existing PLINK package.
-  edam-inputs: []
-  edam-operations:
-  - Mapping
-  - Variant filtering
-  - Genetic variation analysis
-  edam-outputs: []
-  edam-topics:
-  - Population genetics
-  - Quantitative genetics
-  - Whole genome sequencing
-  galaxy: null
-  homepage: https://atgu.mgh.harvard.edu/plinkseq/
-  id: plinkseq
-  license: Not licensed
-  name: plinkseq
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: plot_from_lda
-  license: null
-  name: plot_from_lda
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: plotly
-  license: null
-  name: plotly
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: pnetcdf
-  bunya: null
-  description: 'PnetCDF: A Parallel I/O Library for NetCDF File Access'
-  edam-inputs: []
-  edam-operations:
-  - Aggregation
-  edam-outputs: []
-  edam-topics:
-  - Computer science
-  galaxy: null
-  homepage: https://parallel-netcdf.github.io/
-  id: pnetcdf
-  license: Freeware
-  name: PnetCDF
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 10.1109/SC.2003.10053
-    url: https://doi.org/10.1109/SC.2003.10053
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
   biotools: null
   bunya: null
   description: null
@@ -23646,26 +19738,6 @@
   - title: .nan
     url: .nan
 - biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: https://github.com/GenABEL-Project/ProbABEL
-  id: probabel
-  license: null
-  name: probabel
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
   biotools: gmv
   bunya:
   - 2.6.3-gcccore-10.3.0
@@ -23788,54 +19860,6 @@
   publications:
   - title: 'Prokka: Rapid prokaryotic genome annotation'
     url: https://doi.org/10.1093/bioinformatics/btu153
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: proovread
-  bunya: null
-  description: Hybrid correction pipeline for SMRT reads, which can be flexibly adapted
-    on existing hardware and infrastructure from a laptop to a high performance computing
-    cluster.
-  edam-inputs: []
-  edam-operations:
-  - Sequencing error detection
-  edam-outputs: []
-  edam-topics:
-  - DNA
-  - Sequencing
-  - Data quality management
-  galaxy: null
-  homepage: http://www.bioinfo.biozentrum.uni-wuerzburg.de/groups/genomics/research/development_of_bioinformatical_tools/
-  id: proovread
-  license: null
-  name: proovread
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 10.1093/bioinformatics/btu392
-    url: https://doi.org/10.1093/bioinformatics/btu392
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: prop_venn
-  license: null
-  name: prop_venn
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
   resources:
   - title: .nan
     url: .nan
@@ -24056,33 +20080,6 @@
   - title: .nan
     url: .nan
 - biocontainers: null
-  biotools: pyrad
-  bunya: null
-  description: Pipeline to assemble de novo RADseq loci with the aim of optimizing
-    coverage across phylogenetic datasets.
-  edam-inputs: []
-  edam-operations:
-  - Sequence assembly
-  edam-outputs: []
-  edam-topics:
-  - Phylogenetics
-  - Sequence assembly
-  - Sequence analysis
-  galaxy: null
-  homepage: http://dereneaton.com/software/pyrad/
-  id: pyrad
-  license: null
-  name: PyRAD
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 10.1093/bioinformatics/btu121
-    url: https://doi.org/10.1093/bioinformatics/btu121
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
   biotools: pysam
   bunya:
   - 0.16.0.1-gcc-10.3.0
@@ -24207,35 +20204,6 @@
   nci-if89: null
   pawsey: null
   publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: qiime
-  biotools: qiime
-  bunya: null
-  description: Open-source bioinformatics pipeline for performing microbiome analysis
-    from raw DNA sequencing data. The pipeline is designed to take users from raw
-    sequencing data generated on the Illumina or other platforms through publication
-    quality graphics and statistics. This includes demultiplexing and quality filtering,
-    OTU picking, taxonomic assignment, and phylogenetic reconstruction, and diversity
-    analyses and visualizations.
-  edam-inputs: []
-  edam-operations:
-  - Analysis
-  edam-outputs: []
-  edam-topics:
-  - Biology
-  galaxy: null
-  homepage: http://qiime.org/
-  id: qiime-modules
-  license: null
-  name: QIIME
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: QIIME allows analysis of high-throughput community sequencing data
-    url: https://doi.org/10.1038/nmeth.f.303
   resources:
   - title: .nan
     url: .nan
@@ -24917,26 +20885,6 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: qual_stats_boxplot
-  license: null
-  name: qual_stats_boxplot
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
 - biocontainers: qualimap
   biotools: qualimap
   bunya: null
@@ -25319,58 +21267,6 @@
   - title: .nan
     url: .nan
 - biocontainers: null
-  biotools: RaGOO
-  bunya: null
-  description: 'fast and accurate reference-guided scaffolding of draft genomes.
-
-
-    Fast Reference-Guided Scaffolding of Genome Assembly Contigs.
-
-
-    Index of /shares/schatzlab/www-data/ragoo.
-
-
-    A tool to order and orient genome assembly contigs via Minimap2 alignments to
-    a reference genome.
-
-
-    Alonge, Michael, et al. "RaGOO: fast and accurate reference-guided scaffolding
-    of draft genomes." Genome biology 20.1 (2019): 1-17.
-
-
-    Contigs and reference fasta files may now be gzipped.
-
-
-    RaGOO is a tool for coalescing genome assembly contigs into pseudochromosomes
-    via minimap2 alignments to a closely related reference genome. The focus of this
-    tool is on practicality and therefore has the following features:'
-  edam-inputs: []
-  edam-operations:
-  - Genome assembly
-  - Sequence trimming
-  - Scaffolding
-  - Genome alignment
-  edam-outputs: []
-  edam-topics:
-  - Sequence assembly
-  - Sequencing
-  - Plant biology
-  - Cell biology
-  galaxy: null
-  homepage: https://github.com/malonge/RaGOO
-  id: ragoo
-  license: MIT
-  name: RaGOO
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 'RaGOO: Fast and accurate reference-guided scaffolding of draft genomes'
-    url: https://doi.org/10.1186/S13059-019-1829-6
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
   biotools: ramclustr
   bunya: null
   description: A feature clustering algorithm for non-targeted mass spectrometric
@@ -25421,55 +21317,6 @@
   - title: 'RAMClust: A novel feature clustering method enables spectral-matching-based
       annotation for metabolomics data'
     url: https://doi.org/10.1021/ac501530d
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: randfold
-  bunya: null
-  description: Secondary structure calculation of non-coding RNA sequences.
-  edam-inputs:
-  - formats: []
-    term: RNA sequence
-  edam-operations:
-  - RNA secondary structure prediction
-  edam-outputs:
-  - formats:
-    - RNA secondary structure format
-    term: RNA secondary structure format
-  edam-topics:
-  - Functional, regulatory and non-coding RNA
-  galaxy: null
-  homepage: http://bioinformatics.psb.ugent.be/software/details/Randfold
-  id: randfold
-  license: null
-  name: randfold
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 10.1093/bioinformatics/bth374
-    url: https://doi.org/10.1093/bioinformatics/bth374
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: random_lines1
-  license: null
-  name: random_lines1
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
   resources:
   - title: .nan
     url: .nan
@@ -25532,50 +21379,6 @@
   publications:
   - title: 10.1101/2020.07.15.204925
     url: https://doi.org/10.1101/2020.07.15.204925
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: ratmine
-  license: null
-  name: ratmine
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: rattle
-  bunya: null
-  description: RATTLE is a tool for reference-free reconstruction and quantification
-    of transcriptomes from long-read sequencing.
-  edam-inputs: []
-  edam-operations:
-  - Quantification
-  edam-outputs: []
-  edam-topics:
-  - Transcriptomics
-  - Sequencing
-  galaxy: null
-  homepage: https://github.com/comprna/RATTLE
-  id: rattle
-  license: GPL-3.0
-  name: RATTLE
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
   resources:
   - title: .nan
     url: .nan
@@ -25682,26 +21485,6 @@
   - title: 'RAxML-VI-HPC: Maximum likelihood-based phylogenetic analyses with thousands
       of taxa and mixed models'
     url: https://doi.org/10.1093/bioinformatics/btl446
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: https://rclone.org/
-  id: rclone
-  license: null
-  name: rclone
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
   resources:
   - title: .nan
     url: .nan
@@ -25975,29 +21758,6 @@
   - title: .nan
     url: .nan
 - biocontainers: null
-  biotools: refinem
-  bunya: null
-  description: RefineM is a set of tools for improving population genomes. It provides
-    methods designed to improve the completeness of a genome along with methods for
-    identifying and removing contamination.
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics:
-  - Population genomics
-  galaxy: null
-  homepage: https://github.com/dparks1134/RefineM
-  id: refinem
-  license: GPL-3.0
-  name: RefineM
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
   biotools: null
   bunya:
   - 3.2.9
@@ -26015,53 +21775,6 @@
   nci-if89: null
   pawsey: null
   publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: Remove beginning1
-  license: null
-  name: Remove beginning1
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: repdenovo
-  bunya: null
-  description: A new method which assembles repeat sequences directly from raw shotgun
-    sequencing data.
-  edam-inputs: []
-  edam-operations:
-  - k-mer counting
-  edam-outputs: []
-  edam-topics:
-  - Sequence assembly
-  - Sequencing
-  - Sequence composition, complexity and repeats
-  galaxy: null
-  homepage: https://github.com/Reedwarbler/REPdenovo
-  id: repdenovo
-  license: null
-  name: REPdenovo
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 10.1371/journal.pone.0150719
-    url: https://doi.org/10.1371/journal.pone.0150719
   resources:
   - title: .nan
     url: .nan
@@ -26184,26 +21897,6 @@
   id: repenrich
   license: null
   name: RepEnrich
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: replace_column_with_key_value_file
-  license: null
-  name: replace_column_with_key_value_file
   nci-gadi: null
   nci-if89: null
   pawsey: null
@@ -26395,26 +22088,6 @@
   edam-operations: null
   edam-outputs: null
   edam-topics: null
-  galaxy: null
-  homepage: https://cran.r-project.org/web/packages/Rmpi/index.html
-  id: rmpi
-  license: null
-  name: rmpi
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
   galaxy:
   - description: 'Analyse canonical genes against ''peak'' data: using RnaChipIntegrator'
     title: Analyse canonical genes against 'peak' data 1.1.0.0
@@ -26494,26 +22167,6 @@
   publications:
   - title: 'Roary: Rapid large-scale prokaryote pan genome analysis'
     url: https://doi.org/10.1093/bioinformatics/btv421
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: row_means
-  license: null
-  name: row_means
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
   resources:
   - title: .nan
     url: .nan
@@ -26813,40 +22466,6 @@
   - title: .nan
     url: .nan
 - biocontainers: null
-  biotools: saige
-  bunya: null
-  description: 'SAIGE is an R package with Scalable and Accurate Implementation of
-    Generalized mixed model. It accounts for sample relatedness and is feasible for
-    genetic association tests in large cohorts and biobanks (N > 400,000).
-
-
-    SAIGE performs single-variant association tests for binary traits and quantitative
-    traits. For binary traits, SAIGE uses the saddlepoint approximation (SPA)(mhof,
-    J. P. , 1961; Kuonen, D. 1999; Dey, R. et.al 2017) to account for case-control
-    imbalance.
-
-
-    SAIGE-GENE (implemented in the SAIGE R package) performs gene- or region-based
-    association tests (Burde, SKAT, SKAT-O) for binary traits and quantitative traits.
-    Note: SAIGE-GENE accounts for case-control imbalance in gene-based tests (>= 0.35.8.5)'
-  edam-inputs: []
-  edam-operations:
-  - Alignment
-  edam-outputs: []
-  edam-topics: null
-  galaxy: null
-  homepage: https://github.com/weizhouUMICH/SAIGE
-  id: saige
-  license: null
-  name: SAIGE
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
   biotools: sailfish
   bunya: null
   description: A software tool that implements a novel, is an alignment-free algorithm
@@ -27090,53 +22709,6 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: samblaster
-  biotools: samblaster
-  bunya: null
-  description: A tool to mark duplicates and extract discordant and split reads from
-    SAM files.
-  edam-inputs: []
-  edam-operations:
-  - Split read mapping
-  edam-outputs: []
-  edam-topics:
-  - DNA
-  - Sequencing
-  - Mapping
-  galaxy: null
-  homepage: https://github.com/GregoryFaust/samblaster
-  id: samblaster
-  license: null
-  name: samblaster
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 10.1093/bioinformatics/btu314
-    url: https://doi.org/10.1093/bioinformatics/btu314
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: sample_seqs
-  license: null
-  name: sample_seqs
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
 - biocontainers: samtools
   biotools: samtools
   bunya:
@@ -27283,32 +22855,6 @@
   id: sanntis
   license: null
   name: sanntis
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: sas-access
-  bunya: null
-  description: SAS is an integrated system of software that enables you to do everything
-    from accessing data across multiple sources to performing sophisticated analyses
-    and delivering information across your organization. SAS foundation products are
-    available as individual software modules, and they serve as the foundation for
-    SAS solutions.
-  edam-inputs: []
-  edam-operations:
-  - Statistical calculation
-  edam-outputs: []
-  edam-topics:
-  - Statistics and probability
-  galaxy: null
-  homepage: https://www.sas.com/en_us/software/foundation.html
-  id: sas
-  license: Proprietary
-  name: SAS
   nci-gadi: null
   nci-if89: null
   pawsey: null
@@ -27492,38 +23038,6 @@
   publications:
   - title: 'SCANPY: Large-scale single-cell gene expression data analysis'
     url: https://doi.org/10.1186/s13059-017-1382-0
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: scarpa
-  bunya: null
-  description: Scarpa is a stand-alone scaffolding tool for NGS data. It can be used
-    together with virtually any genome assembler and any NGS read mapper that supports
-    SAM format. Other features include support for multiple libraries and an option
-    to estimate insert size distributions from data.
-  edam-inputs: []
-  edam-operations:
-  - Scaffolding
-  - Genome assembly
-  - Read pre-processing
-  - Sequence trimming
-  edam-outputs: []
-  edam-topics:
-  - Sequencing
-  - Sequence assembly
-  - DNA polymorphism
-  galaxy: null
-  homepage: http://compbio.cs.toronto.edu/hapsembler/scarpa.html
-  id: scarpa
-  license: GPL-3.0
-  name: Scarpa
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 'SCARPA: Scaffolding reads with practical algorithms'
-    url: https://doi.org/10.1093/bioinformatics/bts716
   resources:
   - title: .nan
     url: .nan
@@ -27811,30 +23325,6 @@
   - title: .nan
     url: .nan
 - biocontainers: null
-  biotools: screed
-  bunya: null
-  description: screed is a tool for short read sequence utils in Python.
-  edam-inputs: []
-  edam-operations:
-  - Data handling
-  - Database search
-  - Formatting
-  edam-outputs: []
-  edam-topics:
-  - Sequencing
-  galaxy: null
-  homepage: https://pypi.org/project/screed/
-  id: screed
-  license: BSD-3-Clause
-  name: screed
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
   biotools: null
   bunya:
   - 1.2.8
@@ -27915,66 +23405,6 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: sdf_to_tab
-  license: null
-  name: Extract values from an SD-file
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: secure_hash_message_digest
-  license: null
-  name: secure_hash_message_digest
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: send_to_cloud
-  license: null
-  name: send_to_cloud
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
 - biocontainers: sepp
   biotools: sepp
   bunya:
@@ -28037,26 +23467,6 @@
   publications:
   - title: 10.1186/1471-2164-13-378
     url: https://doi.org/10.1186/1471-2164-13-378
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: seq_filter_by_id
-  license: null
-  name: seq_filter_by_id
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
   resources:
   - title: .nan
     url: .nan
@@ -28142,51 +23552,6 @@
   - 2.2.0
   - 2.3.1
   - 2.5.1
-  pawsey: null
-  publications:
-  - title: 'SeqKit: A cross-platform and ultrafast toolkit for FASTA/Q file manipulation'
-    url: https://doi.org/10.1371/journal.pone.0163962
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: seqkit
-  bunya: null
-  description: FASTA and FASTQ are basic and ubiquitous formats for storing nucleotide
-    and protein sequences. Common manipulations of FASTA/Q file include converting,
-    searching, filtering, deduplication, splitting, shuffling, and sampling. Existing
-    tools only implement some of these manipulations, and not particularly efficiently,
-    and some are only available for certain operating systems. Furthermore, the complicated
-    installation process of required packages and running environments can render
-    these programs less user friendly. SeqKit demonstrates competitive performance
-    in execution time and memory usage compared to similar tools. The efficiency and
-    usability of SeqKit enable researchers to rapidly accomplish common FASTA/Q file
-    manipulations.
-  edam-inputs:
-  - formats:
-    - FASTA
-    - FASTQ
-    term: FASTQ
-  edam-operations:
-  - DNA transcription
-  - Sequence trimming
-  - DNA translation
-  - Sequence conversion
-  edam-outputs:
-  - formats:
-    - FASTA
-    - FASTQ
-    term: FASTQ
-  edam-topics:
-  - Database management
-  - Sequence analysis
-  galaxy: null
-  homepage: https://bioinf.shenwei.me/seqkit/
-  id: biocontainers-seqkit
-  license: null
-  name: SeqKit (biocontainer)
-  nci-gadi: null
-  nci-if89: null
   pawsey: null
   publications:
   - title: 'SeqKit: A cross-platform and ultrafast toolkit for FASTA/Q file manipulation'
@@ -28292,28 +23657,6 @@
   - title: .nan
     url: .nan
 - biocontainers: null
-  biotools: seqtk-trinity
-  bunya: null
-  description: seqtk-trinity is a toolkit for processing sequences in FASTA/Q formats.
-  edam-inputs: []
-  edam-operations:
-  - Data handling
-  edam-outputs: []
-  edam-topics:
-  - Sequencing
-  galaxy: null
-  homepage: https://github.com/trinityrnaseq/seqtk-trinity
-  id: seqtk-trinity
-  license: MIT
-  name: seqtk-trinity
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
   biotools: seurat
   bunya: null
   description: Seurat is an R package designed for QC, analysis, and exploration of
@@ -28414,53 +23757,6 @@
   - title: .nan
     url: .nan
 - biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: Sff_extractor
-  license: null
-  name: Sff_extractor
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: shapeit
-  bunya: null
-  description: Fast and accurate method for estimation of haplotypes (aka phasing)
-    from genotype or sequencing data.
-  edam-inputs: []
-  edam-operations:
-  - Haplotype mapping
-  - Imputation
-  edam-outputs: []
-  edam-topics:
-  - Genotype and phenotype
-  - Genotyping experiment
-  galaxy: null
-  homepage: https://mathgen.stats.ox.ac.uk/genetics_software/shapeit/shapeit.html
-  id: shapeit
-  license: Other
-  name: shapeit
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: A linear complexity phasing method for thousands of genomes
-    url: https://doi.org/10.1038/nmeth.1785
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
   biotools: shasta
   bunya: null
   description: De novo assembly from Oxford Nanopore reads.
@@ -28535,46 +23831,6 @@
   - title: .nan
     url: .nan
 - biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: Show beginning1
-  license: null
-  name: Show beginning1
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: Show tail1
-  license: null
-  name: Show tail1
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
   biotools: sicer
   bunya: null
   description: A clustering approach for identification of enriched domains from histone
@@ -28601,37 +23857,6 @@
   publications:
   - title: 10.1093/bioinformatics/btp340
     url: https://doi.org/10.1093/bioinformatics/btp340
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: sickle
-  biotools: sickle
-  bunya: null
-  description: A  tool that uses sliding windows along with quality and length thresholds
-    to determine when quality is sufficiently low to trim the 3'-end of reads and
-    also determines when the quality is sufficiently high enough to trim the 5'-end
-    of reads.
-  edam-inputs:
-  - formats:
-    - FASTQ
-    term: FASTQ
-  edam-operations:
-  - Sequence trimming
-  edam-outputs:
-  - formats:
-    - FASTQ
-    term: FASTQ
-  edam-topics:
-  - Data quality management
-  galaxy: null
-  homepage: https://github.com/najoshi/sickle
-  id: sickle
-  license: MIT
-  name: sickle
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
   resources:
   - title: .nan
     url: .nan
@@ -28802,37 +24027,6 @@
   - title: .nan
     url: .nan
 - biocontainers: null
-  biotools: skewer
-  bunya: null
-  description: Skewer implements a novel dynamic programming algorithm dedicated to
-    the task of adapter trimming and it is specially designed for processing illumina
-    paired-end sequences.
-  edam-inputs: []
-  edam-operations:
-  - Read pre-processing
-  - Primer removal
-  - Read mapping
-  - Sequence trimming
-  edam-outputs: []
-  edam-topics:
-  - RNA-Seq
-  - Sequence assembly
-  - Sequencing
-  galaxy: null
-  homepage: https://sourceforge.net/projects/skewer/
-  id: skewer
-  license: null
-  name: skewer
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 10.1186/1471-2105-15-182
-    url: https://doi.org/10.1186/1471-2105-15-182
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
   biotools: null
   bunya: null
   description: null
@@ -28930,33 +24124,6 @@
   nci-if89: null
   pawsey: null
   publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: smrt_analysis
-  bunya: null
-  description: Abioinformatics software suite for analyzing single molecule, real-time
-    DNA sequencing data from Pacific Biosciences.
-  edam-inputs: []
-  edam-operations:
-  - Sequence analysis
-  edam-outputs: []
-  edam-topics:
-  - DNA
-  - Sequencing
-  - Data visualisation
-  galaxy: null
-  homepage: http://www.pacb.com/products-and-services/analytical-software/smrt-analysis/
-  id: smrtlink
-  license: null
-  name: SMRT Link / Analysis
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 10.1186/2041-9414-2-10
-    url: https://doi.org/10.1186/2041-9414-2-10
   resources:
   - title: .nan
     url: .nan
@@ -29443,142 +24610,6 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: null
-  biotools: soap
-  bunya: null
-  description: Short Oligonucleotide Analysis Package. Efficient gapped and ungapped
-    alignment of short oligonucleotides onto reference sequences and full solution
-    to next generation sequencing data analysis.
-  edam-inputs: []
-  edam-operations:
-  - Read mapping
-  - Sequence alignment
-  edam-outputs: []
-  edam-topics:
-  - Sequence assembly
-  galaxy: null
-  homepage: http://soap.genomics.org.cn/
-  id: soap
-  license: GPL-3.0
-  name: soap
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 'SOAP: Short oligonucleotide alignment program'
-    url: https://doi.org/10.1093/bioinformatics/btn025
-  - title: 'SOAP3-dp: Fast, Accurate and Sensitive GPU-Based Short Read Aligner'
-    url: https://doi.org/10.1371/journal.pone.0065632
-  - title: 'SOAP3-dp: Fast, Accurate and Sensitive GPU-Based Short Read Aligner'
-    url: https://doi.org/10.1371/journal.pone.0065632
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: soap3-gpu
-  bunya: null
-  description: SOAP3 is a GPU-based software for aligning short reads to a reference
-    sequence.
-  edam-inputs: []
-  edam-operations:
-  - Read mapping
-  - Sequence alignment
-  edam-outputs: []
-  edam-topics:
-  - Sequence analysis
-  - Whole genome sequencing
-  galaxy: null
-  homepage: https://i.cs.hku.hk/2bwt-tools/soap3/index.html
-  id: soap3-gpu
-  license: GPL-2.0
-  name: soap3-gpu
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 'SOAP3: Ultra-fast GPU-based parallel alignment tool for short reads'
-    url: https://doi.org/10.1093/bioinformatics/bts061
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: soapdenovo2
-  bunya: null
-  description: SOAPdenovo2 is a next generation sequencing reads de novo assembler.
-  edam-inputs: []
-  edam-operations:
-  - Scaffolding
-  - De-novo assembly
-  - Genome assembly
-  - Sorting
-  edam-outputs: []
-  edam-topics:
-  - Sequence assembly
-  - Sequencing
-  - Metagenomics
-  galaxy: null
-  homepage: https://github.com/aquaskyline/SOAPdenovo2
-  id: soapdenovo2
-  license: GPL-3.0
-  name: SOAPdenovo2
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 'SOAPdenovo2: An empirically improved memory-efficient short-read de novo
-      assembler'
-    url: https://doi.org/10.1186/2047-217X-1-18
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: soapsnp
-  biotools: soapsnp
-  bunya: null
-  description: Accurate consensus sequence builder based on soap1 and SOAPaligner/soap2's
-    alignment output. It calculates a quality score for each consensus base, which
-    can be used for any latter process to call SNPs.
-  edam-inputs: []
-  edam-operations:
-  - Variant calling
-  edam-outputs: []
-  edam-topics:
-  - Sequence assembly
-  - DNA polymorphism
-  - Human biology
-  galaxy: null
-  homepage: http://soap.genomics.org.cn/soapsnp.html
-  id: soapsnp
-  license: null
-  name: SOAPsnp
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 10.1101/gr.088013.108
-    url: https://doi.org/10.1101/gr.088013.108
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: sort1
-  license: null
-  name: sort1
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
 - biocontainers: sortmerna
   biotools: sortmerna
   bunya:
@@ -29811,26 +24842,6 @@
     url: .nan
 - biocontainers: null
   biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: split_file_to_collection
-  license: null
-  name: split_file_to_collection
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
   bunya:
   - .3.35.4-gcccore-10.3.0                (H)
   - .3.38.3-gcccore-11.3.0                (H)
@@ -29856,26 +24867,6 @@
     url: .nan
 - biocontainers: null
   biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: sqlite_to_tabular
-  license: null
-  name: sqlite_to_tabular
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
   bunya:
   - '5.2'
   description: null
@@ -29892,39 +24883,6 @@
   nci-if89: null
   pawsey: null
   publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: squeezemeta
-  bunya: null
-  description: SqueezeMeta is a fully automated metagenomics pipeline, from reads
-    to bins.
-  edam-inputs: []
-  edam-operations:
-  - Read binning
-  - Sequence assembly
-  - Sequence trimming
-  edam-outputs: []
-  edam-topics:
-  - Metagenomics
-  - Metatranscriptomics
-  - RNA-Seq
-  - Microbial ecology
-  galaxy: null
-  homepage: https://github.com/jtamames/SqueezeMeta
-  id: squeezemeta
-  license: GPL-3.0
-  name: SqueezeMeta
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: SqueezeMeta, a highly portable, fully automatic metagenomic analysis pipeline
-    url: https://doi.org/10.3389/fmicb.2018.03349
-  - title: 'SQMtools: Automated processing and visual analysis of ''omics data with
-      R and anvi''o'
-    url: https://doi.org/10.1186/s12859-020-03703-2
   resources:
   - title: .nan
     url: .nan
@@ -29993,26 +24951,6 @@
   id: squirrel
   license: null
   name: squirrel
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: sra_source
-  license: null
-  name: sra_source
   nci-gadi: null
   nci-if89: null
   pawsey: null
@@ -30370,45 +25308,6 @@
   resources:
   - title: .nan
     url: .nan
-- biocontainers: null
-  biotools: structure
-  bunya: null
-  description: The program structureis a free software package for using multi-locus
-    genotype data to investigate population structure. Its uses include inferring
-    the presence of distinct populations, assigning individuals to populations, studying
-    hybrid zones, identifying migrants and admixed individuals, and estimating population
-    allele frequencies in situations where many individuals are migrants or admixed.
-  edam-inputs: []
-  edam-operations:
-  - Genetic variation analysis
-  edam-outputs: []
-  edam-topics:
-  - Population genetics
-  galaxy: null
-  homepage: https://web.stanford.edu/group/pritchardlab/structure.html
-  id: structure
-  license: Not licensed
-  name: structure
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: Inference of population structure using multilocus genotype data
-    url: https://doi.org/10.1093/genetics/155.2.945
-  - title: 10.1093/genetics/164.4.1567
-    url: https://doi.org/10.1093/genetics/164.4.1567
-  - title: 'Inference of population structure using multilocus genotype data: Dominant
-      markers and null alleles'
-    url: https://doi.org/10.1111/j.1471-8286.2007.01758.x
-  - title: Inferring weak population structure with the assistance of sample group
-      information
-    url: https://doi.org/10.1111/j.1755-0998.2009.02591.x
-  - title: 'Detecting the number of clusters of individuals using the software STRUCTURE:
-      A simulation study'
-    url: https://doi.org/10.1111/j.1365-294x.2005.02553.x
-  resources:
-  - title: .nan
-    url: .nan
 - biocontainers: subread
   biotools: subread
   bunya: null
@@ -30446,26 +25345,6 @@
   - title: .nan
     url: .nan
 - biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: Summary_Statistics1
-  license: null
-  name: Summary_Statistics1
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
   biotools: super-focus
   bunya: null
   description: An agile homology-based approach using a reduced SEED database to report
@@ -30490,41 +25369,6 @@
   publications:
   - title: 10.1093/bioinformatics/btv584
     url: https://doi.org/10.1093/bioinformatics/btv584
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: supernova
-  bunya: null
-  description: Supernova is a software package for de novo assembly from Chromium
-    Linked-Reads that are made from a single whole-genome library from an individual
-    DNA source. A key feature of Supernova is that it creates diploid assemblies,
-    thus separately representing maternal and paternal chromosomes over very long
-    distances. Almost all other methods instead merge homologous chromosomes into
-    single incorrect 'consensus' sequences. Supernova is the only practical method
-    for creating diploid assemblies of large genomes.
-  edam-inputs: []
-  edam-operations:
-  - Demultiplexing
-  - De-novo assembly
-  - Indexing
-  - Sequence trimming
-  edam-outputs: []
-  edam-topics:
-  - Sequencing
-  - Whole genome sequencing
-  - Sequence assembly
-  galaxy: null
-  homepage: https://support.10xgenomics.com/de-novo-assembly/software/overview/latest/welcome
-  id: supernova
-  license: Proprietary
-  name: Supernova
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: Direct determination of diploid genome sequences
-    url: https://doi.org/10.1101/gr.214874.116
   resources:
   - title: .nan
     url: .nan
@@ -30597,80 +25441,6 @@
   - title: .nan
     url: .nan
 - biocontainers: null
-  biotools: SVJedi
-  bunya: null
-  description: 'Genotyping structural variations with long reads.
-
-
-    SVJedi : Genotyping structural variations with long read data.
-
-
-    SVJedi is a structural variation (SV) genotyper for long read data. Based on a
-    representation of the different alleles, it estimates the genotype of each variant
-    in a given individual sample based on allele-specific alignment counts. SVJedi
-    takes as input a variant file (VCF), a reference genome (fasta) and a long read
-    file (fasta/fastq) and outputs the initial variant file with an additional column
-    containing genotyping information (VCF)'
-  edam-inputs: []
-  edam-operations:
-  - SNP detection
-  - Variant calling
-  - Genotyping
-  - Read mapping
-  edam-outputs: []
-  edam-topics:
-  - Genotype and phenotype
-  - DNA structural variation
-  - Sequencing
-  - Mapping
-  - Sequence assembly
-  galaxy: null
-  homepage: https://github.com/llecompte/SVJedi.git
-  id: svjedi
-  license: AGPL-3.0
-  name: svjedi
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 10.1101/849208
-    url: https://doi.org/10.1101/849208
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: svtyper
-  bunya: null
-  description: SVTyper performs breakpoint genotyping of structural variants (SVs)
-    using whole genome sequencing data.
-  edam-inputs: []
-  edam-operations:
-  - Genotyping
-  - Variant calling
-  - Variant prioritisation
-  - Haplotype mapping
-  edam-outputs: []
-  edam-topics:
-  - Genetic variation
-  - Genomics
-  - Genotype and phenotype
-  - Whole genome sequencing
-  - Oncology
-  galaxy: null
-  homepage: https://github.com/hall-lab/svtyper
-  id: svtyper
-  license: MIT
-  name: svtyper
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 'SpeedSeq: Ultra-fast personal genome analysis and interpretation'
-    url: https://doi.org/10.1038/nmeth.3505
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
   biotools: SyRI
   bunya:
   - 1.7.0
@@ -30719,94 +25489,6 @@
   - title: .nan
     url: .nan
 - biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: t_test_two_samples
-  license: null
-  name: t_test_two_samples
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: table_compute
-  license: null
-  name: table_compute
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: tabular_to_fasta
-  license: null
-  name: tabular_to_fasta
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: tagdust
-  bunya: null
-  description: TagDust, a program identifying artifactual sequences in large sequencing
-    runs. Given a user-defined cutoff for the false discovery rate (FDR), TagDust
-    identifies all reads explainable by combinations and partial matches to known
-    sequences used during library preparation.
-  edam-inputs: []
-  edam-operations:
-  - Sequencing quality control
-  edam-outputs: []
-  edam-topics:
-  - Data quality management
-  galaxy: null
-  homepage: http://genome.gsc.riken.jp/osc/english/software/
-  id: tagdust
-  license: GPL-3.0
-  name: tagdust
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: TagDust - A program to eliminate artifacts from next generation sequencing
-      data
-    url: https://doi.org/10.1093/bioinformatics/btp527
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
   biotools: targetfinder.org
   bunya: null
   description: Targetfinder.org provides a web based resource that allows users to
@@ -30837,66 +25519,6 @@
   publications:
   - title: 10.1093/nar/gkq374
     url: https://doi.org/10.1093/nar/gkq374
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: tassel
-  bunya: null
-  description: Software package to evaluate traits associations, evolutionary patterns,
-    and linkage disequilibrium.
-  edam-inputs: []
-  edam-operations:
-  - Linkage analysis
-  - Linkage disequilibrium calculation
-  edam-outputs: []
-  edam-topics:
-  - GWAS study
-  - Mapping
-  galaxy: null
-  homepage: http://www.maizegenetics.net/tassel
-  id: tassel
-  license: LGPL-2.1
-  name: tassel
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 'TASSEL: Software for association mapping of complex traits in diverse
-      samples'
-    url: https://doi.org/10.1093/bioinformatics/btm308
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: tax4fun2
-  bunya: null
-  description: Tax4Fun2 is a prediction of habitat-specific functional profiles and
-    functional redundancy based on 16S rRNA gene sequences.
-  edam-inputs: []
-  edam-operations:
-  - Gene expression profiling
-  - Taxonomic classification
-  - DNA barcoding
-  edam-outputs: []
-  edam-topics:
-  - Microbial ecology
-  - Metagenomics
-  - Functional, regulatory and non-coding RNA
-  - Sequence sites, features and motifs
-  - Biodiversity
-  galaxy: null
-  homepage: https://github.com/bwemheu/Tax4Fun2
-  id: tax4fun2
-  license: GPL-3.0
-  name: Tax4Fun2
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: 'Tax4Fun2: Prediction of habitat-specific functional profiles and functional
-      redundancy based on 16S rRNA gene sequences'
-    url: https://doi.org/10.1186/S40793-020-00358-7
   resources:
   - title: .nan
     url: .nan
@@ -31020,46 +25642,6 @@
   publications:
   - title: 10.1101/2021.09.23.21263983
     url: https://doi.org/10.1101/2021.09.23.21263983
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: tensorflow
-  bunya: null
-  description: 'Prediction of cognitive impairment via deep learning trained with
-    multi-center neuropsychological test data.
-
-
-    An end-to-end open source machine learning platform.
-
-
-    Announcing the TensorFlow Dev Summit 2020 Learn more.
-
-
-    TensorFlow is an end-to-end open source platform for machine learning. It has
-    a comprehensive, flexible ecosystem of tools, libraries and community resources
-    that lets researchers push the state-of-the-art in ML and developers easily build
-    and deploy ML powered applications'
-  edam-inputs: []
-  edam-operations:
-  - Standardisation and normalisation
-  edam-outputs: []
-  edam-topics:
-  - Machine learning
-  - Pathology
-  - Biomarkers
-  galaxy: null
-  homepage: https://www.tensorflow.org
-  id: tensorflow
-  license: null
-  name: TensorFlow
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: Prediction of cognitive impairment via deep learning trained with multi-center
-      neuropsychological test data
-    url: https://doi.org/10.1186/s12911-019-0974-x
   resources:
   - title: .nan
     url: .nan
@@ -31314,47 +25896,6 @@
   - title: .nan
     url: .nan
 - biocontainers: null
-  biotools: totalview
-  bunya: null
-  description: TotalView is a debugger for High Performance Computing applications.
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics:
-  - Computer science
-  galaxy: null
-  homepage: https://totalview.io/
-  id: totalview
-  license: Proprietary
-  name: TotalView
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: trams
-  license: null
-  name: trams
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
   biotools: TransDecoder
   bunya:
   - 5.5.0--pl5321hdfd78af_5
@@ -31430,26 +25971,6 @@
   publications:
   - title: TRANSIT - A Software Tool for Himar1 TnSeq Analysis
     url: https://doi.org/10.1371/journal.pcbi.1004401
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: translate_bed
-  license: null
-  name: translate_bed
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
   resources:
   - title: .nan
     url: .nan
@@ -31676,26 +26197,6 @@
   publications:
   - title: 10.5281/zenodo.7598955
     url: https://doi.org/10.5281/zenodo.7598955
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: trimmer
-  license: null
-  name: trimmer
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
   resources:
   - title: .nan
     url: .nan
@@ -31975,46 +26476,6 @@
   id: ucsc
   license: Other
   name: UCSC tools
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: ucsc_table_direct_archaea1
-  license: null
-  name: ucsc_table_direct_archaea1
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: ucsc_table_direct1
-  license: null
-  name: ucsc_table_direct1
   nci-gadi: null
   nci-if89: null
   pawsey: null
@@ -32402,68 +26863,6 @@
   - title: .nan
     url: .nan
 - biocontainers: null
-  biotools: vawk
-  bunya: null
-  description: vawk is an awk-like VCF parser.
-  edam-inputs: []
-  edam-operations:
-  - Parsing
-  edam-outputs: []
-  edam-topics:
-  - Sequencing
-  galaxy: null
-  homepage: https://github.com/cc2qe/vawk
-  id: vawk
-  license: MIT
-  name: vawk
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: vcf_to_maf_customtrack1
-  license: null
-  name: vcf_to_maf_customtrack1
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: vcf2maf
-  license: null
-  name: vcf2maf
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
   biotools: vcflib
   bunya:
   - 1.0.3-foss-2021a-r-4.1.0
@@ -32697,57 +27096,6 @@
   - title: .nan
     url: .nan
 - biocontainers: null
-  biotools: viennarna
-  bunya: null
-  description: The ViennaRNA Package consists of a C code library and several stand-alone
-    programs for the prediction and comparison of RNA secondary structures.
-  edam-inputs: []
-  edam-operations:
-  - RNA secondary structure prediction
-  - Nucleic acid folding analysis
-  - RNA secondary structure alignment
-  - Nucleic acid structure comparison
-  - Scaffolding
-  edam-outputs: []
-  edam-topics:
-  - Structure prediction
-  - Nucleic acid structure analysis
-  - RNA
-  galaxy: null
-  homepage: https://www.tbi.univie.ac.at/RNA/
-  id: viennarna
-  license: Freeware
-  name: ViennaRNA
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: ViennaRNA Package 2.0
-    url: https://doi.org/10.1186/1748-7188-6-26
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: https://wci.llnl.gov/simulation/computer-codes/visit/
-  id: visit
-  license: null
-  name: VisIt
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
   biotools: null
   bunya: null
   description: null
@@ -32763,26 +27111,6 @@
   id: vitessce
   license: null
   name: Vitessce
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: volcanoplot
-  license: null
-  name: volcanoplot
   nci-gadi: null
   nci-if89: null
   pawsey: null
@@ -32903,26 +27231,6 @@
   edam-operations: null
   edam-outputs: null
   edam-topics: null
-  galaxy: null
-  homepage: null
-  id: wc_gnu
-  license: null
-  name: wc_gnu
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
   galaxy:
   - description: 'Sequence Logo: generator for fasta (eg Clustal alignments)'
     title: Sequence Logo 3.5.0
@@ -32967,26 +27275,6 @@
     url: https://doi.org/10.1089/cmb.2014.0157
   - title: 10.1101/037101
     url: https://doi.org/10.1101/037101
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: wig_to_bigWig
-  license: null
-  name: wig_to_bigWig
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
   resources:
   - title: .nan
     url: .nan
@@ -33048,34 +27336,6 @@
     url: https://doi.org/10.1038/s41592-022-01457-8
   - title: Weighted minimizer sampling improves long read mapping
     url: https://doi.org/10.1093/bioinformatics/btaa435
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: wise
-  biotools: wise
-  bunya: null
-  description: Compare a protein sequences or protein HMMs to a genomic DNA sequence,
-    allowing for introns and frameshifting errors.
-  edam-inputs: []
-  edam-operations:
-  - Protein sequence analysis
-  edam-outputs: []
-  edam-topics:
-  - HMMs
-  - DNA
-  galaxy: null
-  homepage: http://www.ebi.ac.uk/Tools/Wise2/
-  id: wise
-  license: null
-  name: wise
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: Using GeneWise in the Drosophila annotation experiment
-    url: https://doi.org/10.1101/gr.10.4.547
-  - title: GeneWise and Genomewise
-    url: https://doi.org/10.1101/gr.1865504
   resources:
   - title: .nan
     url: .nan
@@ -33226,44 +27486,6 @@
   publications:
   - title: 10.1093/nar/gkt1063
     url: https://doi.org/10.1093/nar/gkt1063
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: wtdbg2
-  bunya: null
-  description: Wtdbg2 is a de novo sequence assembler for long noisy reads produced
-    by PacBio or Oxford Nanopore Technologies (ONT). It assembles raw reads without
-    error correction and then builds the consensus from intermediate assembly output.
-    Wtdbg2 is able to assemble the human and even the 32Gb Axolotl genome at a speed
-    tens of times faster than CANU and FALCON while producing contigs of comparable
-    base accuracy.
-  edam-inputs:
-  - formats:
-    - FASTA
-    - FASTQ
-    term: FASTQ
-  edam-operations:
-  - Genome assembly
-  - De-novo assembly
-  edam-outputs:
-  - formats:
-    - FASTA
-    term: FASTA
-  edam-topics:
-  - Sequence assembly
-  - Sequencing
-  galaxy: null
-  homepage: https://github.com/ruanjue/wtdbg2
-  id: wtdbg2
-  license: GPL-3.0
-  name: WTDBG2
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications:
-  - title: Fast and accurate long-read assembly with wtdbg2
-    url: https://doi.org/10.1038/s41592-019-0669-3
   resources:
   - title: .nan
     url: .nan
@@ -33517,26 +27739,6 @@
   id: xtb
   license: LGPL-3.0
   name: xtb
-  nci-gadi: null
-  nci-if89: null
-  pawsey: null
-  publications: null
-  resources:
-  - title: .nan
-    url: .nan
-- biocontainers: null
-  biotools: null
-  bunya: null
-  description: null
-  edam-inputs: null
-  edam-operations: null
-  edam-outputs: null
-  edam-topics: null
-  galaxy: null
-  homepage: null
-  id: xy_plot
-  license: null
-  name: xy_plot
   nci-gadi: null
   nci-if89: null
   pawsey: null
