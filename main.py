@@ -8,7 +8,7 @@ if __name__ == "__main__":
     mytooldb = toolfinder.ToolDB("./external/Matrix_of_Availability_of_Bioinformatics_Tools_across_BioCommons__deployment_version.xlsx")
     mytooldb.add_provider(ToolMatrixDataProvider("./external/Matrix_of_Availability_of_Bioinformatics_Tools_across_BioCommons__deployment_version.xlsx"))
     mytooldb.add_provider(SetonixDataProvider("./external/setonix.txt"))
-    mytooldb.add_provider(QriscloudDataProvider("external/bunya-modules-07March2025.txt"))
+    mytooldb.add_provider(QriscloudDataProvider("external/bunya-modules-2025-09-08.txt"))
     mytooldb.add_provider(GadiDataProvider("./external/gadi.key.hdr"))
     mytooldb.add_provider(if89DataProvider("./external/bioapps_token.txt"))
     gdp = GalaxyDataProvider(mytooldb, "external/galaxy_tools_curation - DATA.csv")
