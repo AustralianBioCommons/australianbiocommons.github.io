@@ -359,6 +359,7 @@ class if89DataProvider(Dataprovider):
                 tool_id = tool_id.replace("sratoolkit", "sra-tools")
                 tool_id = tool_id.replace("cdhit", "cd-hit")
                 tool_id = tool_id.replace("clustal-omega", "clustalo")
+                tool_id = tool_id.replace("ensembl-vep", "vep")
                 version = line[1]
                 if tool_id not in self.available_data:
                     self.available_data[tool_id] = []
