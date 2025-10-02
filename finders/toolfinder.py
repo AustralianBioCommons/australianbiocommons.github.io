@@ -272,7 +272,7 @@ class BiocontainersDataProvider(Dataprovider):
         unique_tool_ids.remove(np.nan)
 
         ### import BioContainers metadata via TRS implementation
-        biocontainers = get_request("https://api.biocontainers.pro/ga4gh/trs/v2/tools?limit=200000&sort_field=id&sort_order=asc")
+        biocontainers = get_request("https://api.biocontainers.pro/ga4gh/trs/v2/tools?limit=500000&sort_field=id&sort_order=asc")
         if biocontainers.status_code == 200:
             biocontainers_data = json.loads(biocontainers.text)
             ### create list of bio.tools IDs with their associated BioContainers IDs
