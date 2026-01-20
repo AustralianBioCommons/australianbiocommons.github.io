@@ -1,0 +1,100 @@
+// Include here all custom classes to add extra styling on top of what the theme and bootstrap variables offer. 
+
+//Example for highlighting the active page in the navigation:
+/*-----Top navigation-----*/
+
+.nav-link {
+    color: $white;
+}
+
+.navbar-nav .nav-item > a {
+    &.active {
+        color: $white;
+        background-color: $primary;
+        border-radius: $border-radius;
+    }
+}
+
+/* see https://github.com/ELIXIR-Belgium/elixir-toolkit-theme*/
+
+header .navbar {
+    background-color: $primary;
+    .navbar-brand {
+        font-size: 2.25rem;
+        color: $white !important;
+            img {
+                max-height: 80px;
+            }
+    }
+}
+
+img {
+    @extend .img-fluid;
+}
+
+h2 {
+    padding-top: 10px;
+    display: block;
+    border-top: 1px solid $table-border-color;
+}
+
+/*-----Copied and adapted from https://github.com/elixir-europe/infectious-diseases-toolkit/blob/main/_sass/_custom_classes.scss-----*/
+
+/*-----Section navigation tiles-----*/
+
+.navigation-tiles {
+    .card:hover {
+        box-shadow: $box-shadow;
+    }
+
+    .card-header {
+        a:hover {
+            text-decoration: none;
+        }
+        h3 {
+            font-size: 1.2rem;
+        }
+    }
+    .card-text {
+        font-size: 0.9rem;
+    }
+}
+
+a.no-link { color: inherit; text-decoration: none; cursor: default; pointer-events: none; }
+a.no-link:hover { color: inherit; text-decoration: none; }
+
+
+.simple-tile-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.simple-tile-item {
+    border-radius: 12px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: all 0.3s ease;
+    background: #f8f9fa;
+    width: 100%;
+}
+
+.simple-tile-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    border-color: #012152;
+}
+
+.simple-tile-title {
+    color: #205a86;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.simple-tile-desc {
+    color: #205a86;
+    font-weight: 400;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
