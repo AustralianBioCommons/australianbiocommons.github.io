@@ -1,0 +1,39 @@
+title: "Australian BioCommons GitHub Organisation"
+# This appears in the html browser tab for the site title (seen mostly by search engines, not users)
+
+#topnav_title:
+# Optional: this appears on the top navigation bar next to the main_logo.svg icon
+
+description: "Links to BioCommons technical docs and code repositories that support several of our activities and services"
+# Metadata description of the website
+
+remote_theme: ELIXIR-Belgium/elixir-toolkit-theme
+#gtag: G-T8GWK081T9
+
+theme_variables:
+  # biocommons blue
+  theme_color: 205a86
+  topnav:
+    brand_logo: assets/img/Australian-Biocommons-Logo-Horizontal-Reversed-RGB.png
+    search: false
+
+exclude:
+  - README.md
+  - vendor
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      permalink: /:basename
+      layout: "page"
+      sidebar: main
+
+plugins:
+  - jemoji
+  - jekyll-sitemap
+  - jekyll-github-metadata
+  - webrick
+  - elixir-toolkit-theme-plugins

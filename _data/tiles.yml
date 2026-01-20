@@ -1,0 +1,36 @@
+- id: ables
+  type: Compute
+  category: docs
+  description: Australian BioCommons Leadership Share - supports data-driven bioinformatics via access to compute allocations, expertise, and shared software resources.
+  url: https://australianbiocommons.github.io/ables/index
+  name: ABLeS
+- id: seqera-service
+  type: Workflows
+  category: docs
+  description: Documentation for the Australian Nextflow Seqera Service, including guides.
+  url: https://australianbiocommons.github.io/nextflow-seqera/
+  name: Australian Nextflow Seqera Service
+- id: how-to-hub
+  type: Guides
+  category: guide
+  description: Browse step-by-step How-to Guides prepared as part of BioCommons activities, including via collaborations with community members.
+  url: https://australianbiocommons.github.io/how-to-hub/index
+  name: How-to Hub
+- id: toolfinder
+  type: Find
+  category: docs
+  description: Find bioinformatics software that is installed on Australian BioCommons infrastructure partner systems.
+  url: https://australianbiocommons.github.io/toolfinder/
+  name: ToolFinder
+- id: community-library
+  type: Guides
+  category: guide
+  description: Themed collections to get you started in a new topic. Curated by the life sciences community in collaboration with Australian BioCommons.
+  url: https://australianbiocommons.github.io/Community-Library/
+  name: Community Library
+- id: workflowfinder
+  type: Find
+  category: docs
+  description: Find computational workflows registered by Australian BioCommons partners on WorkflowHub.
+  url: https://australianbiocommons.github.io/workflowfinder/
+  name: WorkflowFinder

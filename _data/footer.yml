@@ -1,0 +1,21 @@
+# see https://github.com/AustralianBioCommons/human-omics-data-sharing-field-guide/blob/main/_data/footer.yml
+copyright: 'This site uses cookies to help the website run effectively. To find out more, read our [cookies](https://www.biocommons.org.au/cookies) statement.
+<br>
+This site is subject to the Australian BioCommons [Code of Conduct](https://doi.org/10.5281/zenodo.4276854) and [Privacy Policy](https://www.biocommons.org.au/privacy).'
+#extra_line:
+columns:
+  - type: image
+    image_width: 200px
+    width: 3
+    src: 'assets/img/main_logo.png'
+    alt: Australian BioCommons logo
+  - type: image
+    image_width: 220px
+    width: 3
+    src: 'assets/img/BIO-RGB_Full-POS.png'
+    alt: Bioplatforms Australia logo
+  - type: image
+    image_width: 110px
+    width: 3
+    src: 'assets/img/NCRIS-PROVIDER.png'
+    alt: Logo for the Australian Government's National Collaborative Research Infrastructure Strategy
