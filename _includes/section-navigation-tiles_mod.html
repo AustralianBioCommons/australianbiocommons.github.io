@@ -1,0 +1,105 @@
+{% comment %}
+include source was modified from that available at https://github.com/Australian-Structural-Biology-Computing/australian-structural-biology-computing.github.io/blob/2ad8159cddd12b3ec4dfbf33fbbf310af9d686ba/_includes/section-navigation-tiles_mod.html
+{% endcomment %}
+
+{%- assign links_to_add_as_tiles = site.data.tiles -%}
+<div class="tiles">
+  <div class="tiles-container">
+    <div class="tiles-list">
+      {%- for item in links_to_add_as_tiles -%}
+      {%- if item.category == include.category -%}
+      <a href="{{ item.url | relative_url }}" class="tile-link">
+          <div class="tile-item">
+            <div class="tile-content">
+              {%- if item.type -%}
+              <div class="tile-category tile-item-{{ item.type | default: none }}">{{ item.type }}</div>
+              {%- endif -%}
+              <h3 class="tile-title" style="margin-top: 0.0rem">{{ item.name }}</h3>
+              {% if item.description %}
+              <p class="tile-description">{{ item.description }}</p>
+              {% endif %}
+            </div>
+          </div>
+      </a>
+      {% endif %}
+      {%- endfor -%}
+    </div>
+  </div>
+</div>
+
+<style>
+
+  .tile-category {
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: #fff;
+    border-radius: 4px;
+  }
+
+  .tiles-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+  }
+
+  .tile-link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+  }
+
+  .tile-item {
+    border-radius: 12px;
+    padding: 25px;
+    transition: all 0.3s ease;
+    background: #f0f3fa;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #ffffff;
+    color: #012152;
+  }
+
+  .tile-item-Guides {
+    background: #9c9c9c;
+  }
+
+  .tile-item-Workflows {
+    background: #D98B19;
+  }
+
+  .tile-item-Compute {
+    background: #056608;
+  }
+
+  .tile-item-Find {
+    background: #1155ccff;
+  }
+
+  .tile-item:hover {
+    background: #012152;
+    color: #ffffff;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    border: 1px solid #000000;
+  }
+
+  .tile-title {
+    color: inherit;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+
+  .tile-description {
+    color: inherit;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    flex-grow: 1;
+  }
+
+</style>
