@@ -5,10 +5,10 @@ sidebar: false
 toc: false
 ---
 
-[Australian BioCommons](https://www.biocommons.org.au/) establish community-scale bioinformatics services, in response to needs identified through our community engagement activities.
+[Australian BioCommons](https://www.biocommons.org.au/) establishes community-scale bioinformatics services, in response to needs identified through our community engagement activities.
 Here, you'll find links to the technical documentation and code repositories that support several of our services.
 
-If you need further help, or can't find what you're looking for here, let us know by emailing <contact@biocommons.org.au>. 
+If you need further help, or can't find what you're looking for here, please visit the [BioCommons website](https://www.biocommons.org.au/). 
 
 
 ## Service documentation websites
